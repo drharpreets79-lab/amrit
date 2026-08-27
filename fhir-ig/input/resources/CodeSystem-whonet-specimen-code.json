@@ -1,0 +1,47 @@
+{
+ "resourceType": "CodeSystem",
+ "id": "whonet-specimen-code",
+ "url": "urn:whonet:specimen-code",
+ "name": "WhonetSpecimenCode",
+ "title": "WHONET specimen groups",
+ "status": "active",
+ "experimental": false,
+ "caseSensitive": true,
+ "content": "complete",
+ "count": 8,
+ "description": "The specimen groups AMRIT reports on. Three of the eight carry a SNOMED concept; the rest are unmapped rather than approximated.",
+ "concept": [
+  {
+   "code": "URINE",
+   "display": "Urine"
+  },
+  {
+   "code": "BLOOD_STERILE",
+   "display": "Blood / normally sterile fluid"
+  },
+  {
+   "code": "CSF",
+   "display": "Cerebrospinal fluid"
+  },
+  {
+   "code": "LOWER_RESP",
+   "display": "Lower respiratory tract"
+  },
+  {
+   "code": "DEEP_TISSUE_WOUND",
+   "display": "Deep tissue / wound / musculoskeletal"
+  },
+  {
+   "code": "INTRA_ABDOMINAL_DEEP",
+   "display": "Intra-abdominal / deep sterile specimen"
+  },
+  {
+   "code": "ENTERIC_STOOL",
+   "display": "Stool / enteric"
+  },
+  {
+   "code": "SEXUAL_HEALTH_ISOLATE",
+   "display": "Genital / extragenital sexual-health isolate"
+  }
+ ]
+}

@@ -1,0 +1,123 @@
+{% extends "dashboard/base.html" %}
+{% block title %}{{ query.title|default:query.type }} · Query{% endblock %}
+
+{% block content %}
+<div class="flex flex-wrap items-end justify-between gap-3 mb-6">
+  <div>
+    <a href="{% url 'dashboard_queries' %}" class="text-xs text-brand-blue-700 hover:underline">← All queries</a>
+    <h1 class="font-display text-2xl md:text-3xl font-extrabold text-brand-navy-700 mt-1">{{ query.title|default:query.type }}</h1>
+    <p class="text-sm text-slate-500 mt-1 font-mono">{{ query.id }}</p>
+  </div>
+  <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold
+    {% if query.status == 'completed' %}bg-emerald-50 text-emerald-700
+    {% elif query.status == 'error' %}bg-rose-50 text-rose-700
+    {% elif query.status == 'expired' or query.status == 'cancelled' %}bg-slate-100 text-slate-600
+    {% else %}bg-brand-blue-50 text-brand-blue-700{% endif %}">{{ query.get_status_display }}</span>
+</div>
+
+<section class="grid grid-cols-1 lg:grid-cols-4 gap-4 mb-6">
+  <div class="bg-white rounded-xl border border-slate-200 shadow-card p-5">
+    <div class="text-xs uppercase tracking-wider text-slate-500 font-semibold">Type</div>
+    <div class="font-display text-lg font-bold text-brand-navy-700 mt-1">{{ query.get_type_display }}</div>
+  </div>
+  <div class="bg-white rounded-xl border border-slate-200 shadow-card p-5">
+    <div class="text-xs uppercase tracking-wider text-slate-500 font-semibold">Antibiotic</div>
+    <div class="font-display text-lg font-bold text-brand-navy-700 mt-1">{{ query.antibiotic_code|default:"—" }}</div>
+  </div>
+  <div class="bg-white rounded-xl border border-slate-200 shadow-card p-5">
+    <div class="text-xs uppercase tracking-wider text-slate-500 font-semibold">Sites dispatched</div>
+    <div class="font-display text-lg font-bold text-brand-navy-700 mt-1">{{ dispatches|length }}</div>
+  </div>
+  <div class="bg-white rounded-xl border border-slate-200 shadow-card p-5">
+    <div class="text-xs uppercase tracking-wider text-slate-500 font-semibold">Results received</div>
+    <div class="font-display text-lg font-bold text-brand-navy-700 mt-1">{{ results|length }}</div>
+  </div>
+</section>
+
+{% if agg.denominator %}
+<section class="rounded-2xl bg-gradient-to-br from-brand-blue-700 via-brand-blue-800 to-brand-navy-800 text-white p-6 shadow-card mb-6">
+  <div class="text-[11px] uppercase tracking-[0.2em] text-brand-blue-100 font-semibold">Aggregate result · {{ agg.n_sites }} site(s)</div>
+  <div class="flex flex-wrap items-end gap-6 mt-2">
+    <div>
+      <div class="font-display text-5xl font-extrabold">{{ agg.rate }}<span class="text-2xl">%</span></div>
+      <div class="text-brand-blue-100 text-sm">resistant / non-susceptible</div>
+    </div>
+    <div class="text-brand-blue-100">
+      <div class="text-sm">Numerator: <span class="font-mono text-white font-semibold">{{ agg.numerator }}</span></div>
+      <div class="text-sm">Denominator: <span class="font-mono text-white font-semibold">{{ agg.denominator }}</span></div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+  <div class="bg-white rounded-xl border border-slate-200 shadow-card">
+    <div class="px-5 py-4 border-b border-slate-100"><h2 class="font-display text-base font-bold text-brand-navy-700">Dispatches</h2></div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full text-sm">
+        <thead class="bg-slate-50 text-slate-500 text-xs uppercase tracking-wider">
+          <tr>
+            <th class="text-left px-5 py-2 font-semibold">Site</th>
+            <th class="text-left px-5 py-2 font-semibold">Status</th>
+            <th class="text-left px-5 py-2 font-semibold">Delivered</th>
+            <th class="text-left px-5 py-2 font-semibold">Answered</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-100">
+          {% for d in dispatches %}
+            <tr>
+              <td class="px-5 py-2">
+                <div class="text-slate-800 font-medium">{{ d.site.name }}</div>
+                <div class="text-xs text-slate-500 font-mono">{{ d.site.lab_code }}</div>
+              </td>
+              <td class="px-5 py-2"><span class="inline-block px-2 py-0.5 rounded text-xs bg-slate-100 text-slate-700 font-mono">{{ d.get_status_display }}</span></td>
+              <td class="px-5 py-2 text-xs font-mono text-slate-600">{% if d.delivered_at %}{{ d.delivered_at|date:"Y-m-d H:i" }}{% else %}—{% endif %}</td>
+              <td class="px-5 py-2 text-xs font-mono text-slate-600">{% if d.answered_at %}{{ d.answered_at|date:"Y-m-d H:i" }}{% else %}—{% endif %}</td>
+            </tr>
+          {% empty %}
+            <tr><td colspan="4" class="px-5 py-6 text-center text-slate-500">No dispatches.</td></tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="bg-white rounded-xl border border-slate-200 shadow-card">
+    <div class="px-5 py-4 border-b border-slate-100"><h2 class="font-display text-base font-bold text-brand-navy-700">Per-site results</h2></div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full text-sm">
+        <thead class="bg-slate-50 text-slate-500 text-xs uppercase tracking-wider">
+          <tr>
+            <th class="text-left px-5 py-2 font-semibold">Site</th>
+            <th class="text-left px-5 py-2 font-semibold">Received</th>
+            <th class="text-left px-5 py-2 font-semibold">Aggregate</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-100">
+          {% for r in results %}
+            <tr>
+              <td class="px-5 py-2"><div class="text-slate-800 font-medium">{{ r.site.lab_code }}</div></td>
+              <td class="px-5 py-2 text-xs font-mono text-slate-600">{{ r.received_at|date:"Y-m-d H:i" }}</td>
+              <td class="px-5 py-2 text-xs font-mono text-slate-700">
+                {% if r.ok %}
+                  {% with rj=r.result_json %}
+                    {% if rj.numerator is not None or rj.resistant is not None %}
+                      {{ rj.numerator|default:rj.resistant }} / {{ rj.denominator|default:rj.total }}
+                    {% else %}
+                      {{ rj|stringformat:"s"|truncatechars:80 }}
+                    {% endif %}
+                  {% endwith %}
+                {% else %}
+                  <span class="text-rose-600">{{ r.error|truncatechars:80 }}</span>
+                {% endif %}
+              </td>
+            </tr>
+          {% empty %}
+            <tr><td colspan="3" class="px-5 py-6 text-center text-slate-500">No results yet.</td></tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+{% endblock %}

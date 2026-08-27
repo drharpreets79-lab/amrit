@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMRIT map</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <style>
+    html, body { margin: 0; padding: 0; height: 100%; font-family: 'Inter', system-ui, sans-serif; background: #f6f7fb; }
+    /* Fix: Explicitly force full-height viewport metrics for Leaflet block layers */
+    #map { width: 100%; height: 100vh; display: block; }
+    .legend {
+      background: white; padding: 8px 10px; border-radius: 8px;
+      box-shadow: 0 4px 16px -8px rgba(15,23,42,.25); font-size: 11px;
+    }
+    .legend .row { display: flex; align-items: center; gap: 6px; margin: 2px 0; }
+    .legend .dot { width: 10px; height: 10px; border-radius: 50%; }
+    .leaflet-popup-content { font-family: 'Inter', system-ui, sans-serif; }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+
+<script>
+// Fix: Wrap the setup context inside a DOMContentLoaded listener to guarantee #map exists
+document.addEventListener('DOMContentLoaded', function() {
+  // Centre and zoom come from the country profile; a deployment outside India must not
+  // open on the wrong continent. The fallback is a whole-world view, not India.
+  const AMRIT_MAP_CENTER = {{ amrit_country.map.center|default:"null"|safe }} || [20, 0];
+  const AMRIT_MAP_ZOOM = {{ amrit_country.map.zoom|default:"2" }};
+  const map = L.map('map', { zoomControl: true, attributionControl: true }).setView(AMRIT_MAP_CENTER, AMRIT_MAP_ZOOM);
+  
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(map);
+
+  // Fix: Force container calculation pass directly after initialization
+  setTimeout(() => { map.invalidateSize(); }, 200);
+
+  const legend = L.control({ position: 'bottomright' });
+  legend.onAdd = function() {
+    const div = L.DomUtil.create('div', 'legend');
+    div.innerHTML = `
+      <div style="font-weight:600;color:#23376D;margin-bottom:3px;">Status</div>
+      <div class="row"><span class="dot" style="background:#10b981"></span>Online</div>
+      <div class="row"><span class="dot" style="background:#94a3b8"></span>Idle</div>
+      <div class="row"><span class="dot" style="background:#F15A29"></span>Provisioning</div>
+      <div class="row"><span class="dot" style="background:#e11d48"></span>Disabled</div>
+    `;
+    return div;
+  };
+  legend.addTo(map);
+
+  const colorFor = (s) => {
+    if (s.online) return '#10b981';
+    if (s.status === 'disabled') return '#e11d48';
+    if (s.status === 'provisioning') return '#F15A29';
+    return '#94a3b8';
+  };
+
+  fetch("{% url 'dashboard_map_json' %}", { credentials: 'same-origin' })
+    .then(r => r.json())
+    .then(data => {
+      const bounds = [];
+      (data.sites || []).forEach(s => {
+        // Fix: Validate coordinate structural integrity before pushing markers to Leaflet engine
+        if (s.lat === undefined || s.lon === undefined || s.lat === null || s.lon === null) return;
+        
+        const latNum = parseFloat(s.lat);
+        const lonNum = parseFloat(s.lon);
+        if (isNaN(latNum) || isNaN(lonNum)) return;
+
+        const m = L.circleMarker([latNum, lonNum], {
+          radius: s.online ? 8 : 6,
+          color: '#23376D', weight: 1.5,
+          fillColor: colorFor(s), fillOpacity: 0.85,
+        }).addTo(map);
+        
+        const lastSeen = s.last_seen ? new Date(s.last_seen).toLocaleString() : '—';
+        m.bindPopup(`
+          <div style="min-width:180px">
+            <div style="font-weight:700;color:#23376D">${s.name || s.lab_code}</div>
+            <div style="font-size:11px;color:#64748b;margin-bottom:4px">${s.lab_code}${s.place ? ' · ' + s.place : ''}</div>
+            <div style="font-size:12px"><b>Status:</b> ${s.online ? 'online' : s.status}</div>
+            <div style="font-size:12px"><b>Last seen:</b> ${lastSeen}</div>
+          </div>
+        `);
+        bounds.push([latNum, lonNum]);
+      });
+      
+      if (bounds.length) {
+        try { 
+          map.fitBounds(bounds, { padding: [20,20], maxZoom: 6 }); 
+        } catch(e) { console.error("Error setting map viewport bounds:", e); }
+      }
+    })
+    .catch(err => console.error("Error loading map coordinates endpoint configuration JSON payload:", err));
+});
+</script>
+</body>
+</html>

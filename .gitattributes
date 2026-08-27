@@ -1,0 +1,33 @@
+# Normalise line endings in the repository to LF.
+#
+# Phase 16 added Windows and Linux to the build matrix. Without this, a Windows checkout
+# with the default `core.autocrlf=true` rewrites every text file to CRLF on the way out,
+# and the golden fixtures both products compare byte-for-byte — address_reference.json,
+# geo_directory_reference.json, the contract schemas, the catalogue seed — stop matching.
+# That failure looks like a data bug and is a checkout bug.
+* text=auto eol=lf
+
+# HL7 v2 messages are exempt from normalisation, because in v2 the carriage return is not a
+# line ending — it is the segment separator, defined as such by the standard. `text=auto` exists
+# to rewrite line endings, and a format where CR is data is precisely where that must not
+# happen. The reference corpus is compared byte-for-byte by
+# `app/scripts/generate-reference-corpus.ts --check`, so a checkout that rewrote separators
+# would fail the gate on Windows and look like an exporter bug.
+*.hl7     -text
+
+# Binary, never touched.
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.gif     binary
+*.ico     binary
+*.icns    binary
+*.pdf     binary
+*.docx    binary
+*.xlsx    binary
+*.gz      binary
+*.zip     binary
+*.tgz     binary
+*.sqlite3 binary
+*.db      binary
+*.bak-*   binary

@@ -1,0 +1,122 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "AmritSusceptibilityObservation",
+  "url": "https://amrit.invalid/StructureDefinition/AmritSusceptibilityObservation",
+  "name": "AmritSusceptibilityObservation",
+  "title": "AMRIT antimicrobial susceptibility observation",
+  "status": "draft",
+  "description": "One organism tested against one antimicrobial agent.\n\nTwo codings are required, not one. The LOINC coding makes the observation interpretable to a\nreceiver that has never heard of WHONET; the WHONET coding is why a WHONET user can read the\nsame file. The LOINC concept depends on the method — an MIC and a disk diffusion of one drug\nare different concepts — so the method is what selects it.\n\n`valueQuantity` carries a UCUM unit whenever it is present at all. Before this IG existed the\nexporter sent a bare number, which made an MIC in mg/L and a zone diameter in mm identical to\nevery receiver.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "patternCode": "final"
+      },
+      {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "short": "laboratory",
+        "min": 1
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.code.coding:loinc",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc",
+        "short": "LOINC susceptibility concept for the agent and method. Absent only where LOINC has none, which the bundle records as a tag.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.code.coding:loinc.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.code.coding:whonet",
+        "path": "Observation.code.coding",
+        "sliceName": "whonet",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.code.coding:whonet.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "patternUri": "urn:whonet:antibiotic-code"
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "min": 1
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity",
+        "path": "Observation.value[x]",
+        "sliceName": "valueQuantity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.system",
+        "path": "Observation.value[x].system",
+        "fixedUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.code",
+        "path": "Observation.value[x].code",
+        "short": "mg/L for an MIC, mm for a zone diameter"
+      },
+      {
+        "id": "Observation.interpretation",
+        "path": "Observation.interpretation",
+        "short": "R, I or S from v3-ObservationInterpretation"
+      },
+      {
+        "id": "Observation.specimen",
+        "path": "Observation.specimen",
+        "min": 1
+      }
+    ]
+  }
+}

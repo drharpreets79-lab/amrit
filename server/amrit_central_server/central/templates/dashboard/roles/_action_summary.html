@@ -1,0 +1,40 @@
+{# Action-plan summary card. Expects: action_summary (may be None) #}
+<div class="bg-white rounded-xl border border-slate-200 shadow-card">
+  <div class="px-5 py-4 border-b border-slate-100 flex items-center justify-between">
+    <div>
+      <h2 class="font-display text-base font-bold text-brand-navy-700">Action plans for your scope</h2>
+      <p class="text-xs text-slate-500">Draft plans raised when indicators breach limits, plus points you own.</p>
+    </div>
+    {% if amrit_caps.track_action_points or amrit_caps.manage_action_plans %}
+      <a href="{% url 'action_inbox' %}" class="text-xs text-brand-blue-700 font-semibold hover:underline">Open inbox →</a>
+    {% endif %}
+  </div>
+
+  {% if action_summary %}
+    <div class="grid grid-cols-4 divide-x divide-slate-100 border-b border-slate-100">
+      <div class="px-4 py-3 text-center"><div class="font-display text-xl font-extrabold text-brand-navy-700">{{ action_summary.total }}</div><div class="text-[10px] uppercase tracking-wider text-slate-400">Total</div></div>
+      <div class="px-4 py-3 text-center"><div class="font-display text-xl font-extrabold text-amber-600">{{ action_summary.draft }}</div><div class="text-[10px] uppercase tracking-wider text-slate-400">Draft</div></div>
+      <div class="px-4 py-3 text-center"><div class="font-display text-xl font-extrabold text-brand-blue-700">{{ action_summary.in_progress }}</div><div class="text-[10px] uppercase tracking-wider text-slate-400">In&nbsp;progress</div></div>
+      <div class="px-4 py-3 text-center"><div class="font-display text-xl font-extrabold text-rose-600">{{ action_summary.open }}</div><div class="text-[10px] uppercase tracking-wider text-slate-400">Open</div></div>
+    </div>
+    <ul class="divide-y divide-slate-100">
+      {% for plan in action_summary.top %}
+        <li class="px-5 py-3 flex items-center justify-between gap-3">
+          <div class="min-w-0">
+            <a href="{% url 'action_plan_detail' plan.pk %}" class="font-medium text-brand-navy-700 hover:text-brand-accent-600 truncate block">{{ plan.title }}</a>
+            <div class="text-[11px] text-slate-500">{{ plan.get_scope_type_display }} · {{ plan.scope_value|default:"national" }} · {{ plan.get_status_display }}</div>
+          </div>
+          <span class="shrink-0 px-2 py-0.5 rounded text-[11px] font-semibold
+            {% if plan.severity == 'critical' %}bg-rose-100 text-rose-700
+            {% elif plan.severity == 'high' %}bg-orange-100 text-orange-700
+            {% elif plan.severity == 'moderate' %}bg-amber-100 text-amber-700
+            {% else %}bg-slate-100 text-slate-600{% endif %}">{{ plan.get_severity_display }}</span>
+        </li>
+      {% empty %}
+        <li class="px-5 py-6 text-center text-sm text-slate-400">No open action plans. Indicators within limits.</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p class="px-5 py-6 text-center text-sm text-slate-400">Action tracking is not enabled for this view.</p>
+  {% endif %}
+</div>

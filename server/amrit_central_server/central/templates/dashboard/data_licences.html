@@ -1,0 +1,68 @@
+{% extends "dashboard/base.html" %}
+{% block title %}Open data and licences{% endblock %}
+
+{% block content %}
+<div class="max-w-5xl mx-auto py-6 space-y-6">
+
+  <header class="space-y-1">
+    <h1 class="text-2xl font-bold text-brand-navy-900">Open data and licences</h1>
+    <p class="text-sm text-brand-navy-700">
+      The reference datasets this software bundles, and the terms they come under. None of
+      it is patient data.
+    </p>
+  </header>
+
+  {% if notices %}
+    <section class="rounded-lg border border-amber-300 bg-amber-50 p-4 space-y-3">
+      <h2 class="font-semibold text-amber-900">Requires action by this deployment</h2>
+      {% for entry in notices %}
+        <div class="text-sm text-amber-900">
+          <strong>{{ entry.name }}</strong> — {{ entry.licence }}
+          {% if entry.url %}
+            <a href="{{ entry.url }}" target="_blank" rel="noopener noreferrer" class="underline">Licensing details</a>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </section>
+  {% endif %}
+
+  <section class="rounded-lg border border-brand-grey bg-white overflow-x-auto">
+    <table class="w-full text-sm">
+      <thead class="bg-brand-bg text-left">
+        <tr>
+          <th class="p-3">Dataset</th>
+          <th class="p-3">Source</th>
+          <th class="p-3">Terms</th>
+          <th class="p-3">Bundled</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for entry in datasets %}
+          <tr class="border-t border-brand-grey align-top">
+            <td class="p-3">
+              <strong>{{ entry.name }}</strong>
+              {% if entry.detail %}<div class="text-xs text-brand-navy-700">{{ entry.detail }}</div>{% endif %}
+            </td>
+            <td class="p-3">{{ entry.source }}</td>
+            <td class="p-3">
+              {{ entry.licence }}
+              {% if entry.url %}
+                <div><a href="{{ entry.url }}" target="_blank" rel="noopener noreferrer" class="underline text-xs">Terms</a></div>
+              {% endif %}
+            </td>
+            <td class="p-3">{% if entry.bundled %}Yes{% else %}No — linked or imported only{% endif %}</td>
+          </tr>
+        {% empty %}
+          <tr><td class="p-3" colspan="4">No licence manifest is available in this build.</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </section>
+
+  <p class="text-xs text-brand-navy-700">
+    Deployments that redistribute this software should keep this page reachable: several of
+    these datasets require attribution.
+  </p>
+
+</div>
+{% endblock %}

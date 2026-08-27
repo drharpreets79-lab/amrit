@@ -1,0 +1,14 @@
+{% extends "dashboard/base.html" %}{% block title %}Portal administration · AMRIT{% endblock %}
+{% block content %}
+<div class="mb-6"><div class="text-xs uppercase tracking-widest text-slate-500 font-semibold">Access control</div><h1 class="text-3xl font-extrabold text-brand-navy-700">Portal administration</h1><p class="text-sm text-slate-500 mt-1">Manage accounts, passwords, role definitions, capabilities, dashboards, and geographic scope.</p></div>
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-7">
+  <div class="bg-white border rounded-xl p-4"><div class="text-xs text-slate-500">Users</div><div class="text-2xl font-bold">{{ user_count }}</div></div>
+  <div class="bg-white border rounded-xl p-4"><div class="text-xs text-slate-500">Active</div><div class="text-2xl font-bold text-emerald-700">{{ active_count }}</div></div>
+  <div class="bg-white border rounded-xl p-4"><div class="text-xs text-slate-500">Roles</div><div class="text-2xl font-bold">{{ role_count }}</div></div>
+  <div class="bg-white border rounded-xl p-4"><div class="text-xs text-slate-500">Sites</div><div class="text-2xl font-bold">{{ site_count }}</div></div>
+</div>
+<div class="grid md:grid-cols-2 gap-5">
+  <a href="{% url 'portal_admin_users' %}" class="bg-white border rounded-xl p-6 hover:border-brand-blue-500"><h2 class="font-bold text-xl text-brand-navy-700">Users</h2><p class="text-sm text-slate-500 mt-2">Create accounts, assign roles/sites, reset passwords, activate or deactivate.</p></a>
+  <a href="{% url 'portal_admin_roles' %}" class="bg-white border rounded-xl p-6 hover:border-brand-blue-500"><h2 class="font-bold text-xl text-brand-navy-700">Roles &amp; permissions</h2><p class="text-sm text-slate-500 mt-2">Create roles and define navigation, actions, dashboard, and data scope.</p></a>
+</div>
+{% endblock %}

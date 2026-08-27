@@ -1,0 +1,15 @@
+{
+  "description": "Reference WHO DDD and AWaRe calculation fixture",
+  "input": [
+    {"antimicrobial": "Drug A", "atc_code": "J01AA", "aware_group": "Access", "quantity_grams": 20, "who_ddd_grams": 2, "bed_days": 100},
+    {"antimicrobial": "Drug B", "atc_code": "J01BB", "aware_group": "Watch", "quantity_grams": 10, "who_ddd_grams": 2, "bed_days": 100}
+  ],
+  "expected": {
+    "quantity_grams": 30,
+    "ddd": 15,
+    "ddd_per_100_bed_days": 7.5,
+    "ddd_per_100_patient_days": null,
+    "ddd_per_1000_inhabitants_day": null,
+    "access_share_percent": 66.66666666666666
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "productFallback": "AMRIT",
+  "tagline": "AMR Intelligence Toolkit",
+  "taglineLong": "Antimicrobial Resistance Intelligence Toolkit",
+  "primaryNavigation": "Primary navigation",
+  "openNavigation": "Open navigation",
+  "closeNavigation": "Close navigation",
+  "expandNavigation": "Expand navigation",
+  "collapseNavigation": "Collapse navigation",
+  "settings": "Settings",
+  "activeLaboratory": "Active laboratory",
+  "notSelected": "Not selected",
+  "localFirst": "Local-first",
+  "aggregateOnlySync": "Aggregate-only sync",
+  "websocketConnected": "WebSocket connected",
+  "syncOffline": "Sync offline",
+  "groups": {
+    "Workspace": "Workspace",
+    "Surveillance": "Surveillance",
+    "Configuration": "Configuration",
+    "Governance": "Governance"
+  },
+  "nav": {
+    "dashboard": "Overview",
+    "laboratories": "Laboratories",
+    "records": "Isolate records",
+    "imports": "Batch import",
+    "analytics": "Analytics",
+    "exports": "Standards export",
+    "oneHealth": "One Health",
+    "masters": "Master Studio",
+    "breakpoints": "Breakpoint Centre",
+    "sync": "Sync Centre",
+    "ai": "AI assistant",
+    "deployment": "Deployment & country",
+    "audit": "Audit trail"
+  },
+  "boot": {
+    "opening": "Opening secure local workspace…",
+    "startFailed": "The application could not be started.",
+    "bootstrapInvalid": "Application bootstrap did not return a valid workspace."
+  },
+  "footer": {
+    "version": "{{product}} {{version}}",
+    "database": "Local database:",
+    "disclaimer": "For surveillance support—not autonomous clinical decision-making"
+  }
+}

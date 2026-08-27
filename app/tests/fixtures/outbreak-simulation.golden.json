@@ -1,0 +1,58 @@
+{
+  "generator_version": "1.0.0",
+  "seed": 4242,
+  "study_start": "2026-02-16",
+  "study_end": "2026-08-14",
+  "background_rate": "low",
+  "sites": [
+    "DEMO-DEL-01",
+    "DEMO-MUM-01",
+    "DEMO-KOL-01",
+    "DEMO-CHN-01"
+  ],
+  "background_records": 2844,
+  "total_records": 2862,
+  "records_sha256": "730c3562f7fb3ab48b01b23d8c7166021ff7988e5791d196a4e0d363f2d437ae",
+  "outbreaks": [
+    {
+      "outbreak_id": "DEMO-OB-001",
+      "type": "clonal-multidrug",
+      "ward": "Medical ICU",
+      "organism_code": "KPN",
+      "agents": [
+        "ETP",
+        "MEM",
+        "IPM"
+      ],
+      "observed_cases": 14,
+      "first_specimen_date": "2026-07-29",
+      "last_specimen_date": "2026-08-13"
+    },
+    {
+      "outbreak_id": "DEMO-OB-002",
+      "type": "single-agent",
+      "ward": "Neonatal ICU",
+      "organism_code": "ECO",
+      "agents": [
+        "COL"
+      ],
+      "observed_cases": 8,
+      "first_specimen_date": "2026-07-30",
+      "last_specimen_date": "2026-08-13"
+    },
+    {
+      "outbreak_id": "DEMO-OB-003",
+      "type": "proportion-shift",
+      "ward": "General medicine",
+      "organism_code": "ECO",
+      "agents": [
+        "CRO",
+        "CAZ",
+        "FEP"
+      ],
+      "observed_cases": 4,
+      "first_specimen_date": "2026-07-18",
+      "last_specimen_date": "2026-08-02"
+    }
+  ]
+}

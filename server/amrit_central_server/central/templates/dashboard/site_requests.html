@@ -1,0 +1,72 @@
+{% extends "dashboard/base.html" %}
+{% block title %}Registration requests · AMRIT Central{% endblock %}
+
+{% block content %}
+<div class="flex flex-wrap items-end justify-between gap-3 mb-6">
+  <div>
+    <div class="text-[11px] uppercase tracking-[0.18em] text-slate-500 font-semibold">Registry</div>
+    <h1 class="font-display text-2xl md:text-3xl font-extrabold text-brand-navy-700 mt-1">Registration requests</h1>
+    <p class="text-sm text-slate-500 mt-1">
+      Laboratories asking to join. Nothing is registered, and no token exists, until one is approved here.
+    </p>
+  </div>
+  <a href="{% url 'dashboard_sites' %}" class="px-3 py-2 rounded-md border border-slate-300 text-sm font-semibold text-slate-700 hover:bg-slate-50">
+    Registered sites
+  </a>
+</div>
+
+{% if messages %}
+  {% for message in messages %}
+    <div class="mb-4 rounded-lg border px-4 py-3 text-sm {% if message.tags == 'error' %}border-rose-200 bg-rose-50 text-rose-800{% else %}border-emerald-200 bg-emerald-50 text-emerald-800{% endif %}">{{ message }}</div>
+  {% endfor %}
+{% endif %}
+
+<div class="bg-white rounded-xl border border-slate-200 shadow-sm p-4 mb-6 flex flex-wrap gap-2 items-center">
+  <span class="text-xs uppercase tracking-wider text-slate-500 mr-1">Show</span>
+  {% for code, label in status_choices %}
+    <a href="?status={{ code }}"
+       class="px-3 py-1.5 rounded-md text-sm font-semibold {% if status == code %}bg-brand-navy-700 text-white{% else %}border border-slate-300 text-slate-700 hover:bg-slate-50{% endif %}">
+      {{ label }}{% if code == "pending" and pending_count %} ({{ pending_count }}){% endif %}
+    </a>
+  {% endfor %}
+  <a href="?status=" class="px-3 py-1.5 rounded-md text-sm font-semibold {% if not status %}bg-brand-navy-700 text-white{% else %}border border-slate-300 text-slate-700 hover:bg-slate-50{% endif %}">All</a>
+
+  {% comment %}
+    Clearing settled paperwork, not sites. Removing a request leaves the laboratory, its
+    tokens and its data exactly where they are; a pending request can never be cleared,
+    because that would drop an application nobody had decided on.
+  {% endcomment %}
+  <div class="ml-auto flex flex-wrap items-center gap-2">
+    <form method="post" action="{% url 'dashboard_site_requests_clear' %}" class="inline">
+      {% csrf_token %}
+      <input type="hidden" name="scope" value="collected">
+      <input type="hidden" name="next" value="{{ request.get_full_path }}">
+      <button {% if not collected_count %}disabled{% endif %}
+              onclick="return confirm('Remove {{ collected_count }} approved request(s) whose site has already collected its token? The sites themselves are not touched.')"
+              class="px-3 py-1.5 rounded-md text-sm font-semibold border border-slate-300 text-slate-700 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed">
+        Clear collected ({{ collected_count }})
+      </button>
+    </form>
+    <form method="post" action="{% url 'dashboard_site_requests_clear' %}" class="inline">
+      {% csrf_token %}
+      <input type="hidden" name="scope" value="settled">
+      <input type="hidden" name="next" value="{{ request.get_full_path }}">
+      <button {% if not settled_count %}disabled{% endif %}
+              onclick="return confirm('Remove all {{ settled_count }} approved and declined request(s)? Declined ones are the record that a code was turned down. The sites themselves are not touched.')"
+              class="px-3 py-1.5 rounded-md text-sm font-semibold border border-rose-300 bg-rose-50 text-rose-700 hover:bg-rose-100 disabled:opacity-40 disabled:cursor-not-allowed">
+        Clear all settled ({{ settled_count }})
+      </button>
+    </form>
+  </div>
+</div>
+
+<div class="space-y-4">
+  {% for r in requests %}
+    {% include "dashboard/_site_request_card.html" %}
+  {% empty %}
+    <div class="bg-white rounded-xl border border-slate-200 shadow-sm px-5 py-10 text-center text-slate-500">
+      No requests{% if status %} with that status{% endif %}.
+    </div>
+  {% endfor %}
+</div>
+{% endblock %}

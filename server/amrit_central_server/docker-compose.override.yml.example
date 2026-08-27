@@ -1,0 +1,7 @@
+# Copy to docker-compose.override.yml to expose Postgres on the host.
+# Compose merges this file automatically. Pick a port that does NOT clash
+# with an existing local Postgres (5432 is usually taken).
+services:
+  db:
+    ports:
+      - "${POSTGRES_PORT:-55432}:5432"

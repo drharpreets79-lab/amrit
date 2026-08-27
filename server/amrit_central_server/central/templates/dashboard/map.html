@@ -1,0 +1,110 @@
+{% extends "dashboard/base.html" %}
+{% block title %}Network map · AMRIT Central{% endblock %}
+
+{% block head_extra %}
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <style>
+    #map { height: calc(100vh - 220px); min-height: 480px; border-radius: 14px; }
+    .leaflet-container { font-family: 'Inter', system-ui, sans-serif; }
+    .legend {
+      background: white; padding: 10px 12px; border-radius: 10px;
+      box-shadow: 0 4px 16px -8px rgba(15,23,42,.25); font-size: 12px;
+    }
+    .legend .row { display: flex; align-items: center; gap: 8px; margin: 3px 0; }
+    .legend .dot { width: 12px; height: 12px; border-radius: 50%; }
+  </style>
+{% endblock %}
+
+{% block content %}
+<div class="flex flex-wrap items-end justify-between gap-3 mb-5">
+  <div>
+    <div class="text-[11px] uppercase tracking-[0.18em] text-slate-500 font-semibold">Geographic view</div>
+    <h1 class="font-display text-2xl md:text-3xl font-extrabold text-brand-navy-700 mt-1">AMRIT Network Map</h1>
+    <p class="text-sm text-slate-500 mt-1">Live locations of WHONET / AMRIT installations interacting with the central server. Tile data © OpenStreetMap contributors.</p>
+  </div>
+  <div id="map-counters" class="flex items-center gap-3 text-xs">
+    <span class="px-3 py-1.5 rounded-full bg-emerald-50 text-emerald-700 font-semibold"><span class="badge-dot bg-emerald-500 mr-1.5"></span><span id="cnt-online">0</span> online</span>
+    <span class="px-3 py-1.5 rounded-full bg-slate-100 text-slate-600 font-semibold"><span class="badge-dot bg-slate-400 mr-1.5"></span><span id="cnt-idle">0</span> idle</span>
+    <span class="px-3 py-1.5 rounded-full bg-rose-50 text-rose-700 font-semibold"><span class="badge-dot bg-rose-500 mr-1.5"></span><span id="cnt-disabled">0</span> disabled</span>
+  </div>
+</div>
+
+<div class="bg-white rounded-2xl border border-slate-200 shadow-card overflow-hidden p-3">
+  <div id="map"></div>
+</div>
+
+<script>
+(function(){
+  // Centre and zoom come from the country profile; a deployment outside India must not
+  // open on the wrong continent. The fallback is a whole-world view, not India.
+  const AMRIT_MAP_CENTER = {{ amrit_country.map.center|default:"null"|safe }} || [20, 0];
+  const AMRIT_MAP_ZOOM = {{ amrit_country.map.zoom|default:"2" }};
+  const map = L.map('map', { zoomControl: true }).setView(AMRIT_MAP_CENTER, AMRIT_MAP_ZOOM);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
+
+  const legend = L.control({ position: 'bottomright' });
+  legend.onAdd = function() {
+    const div = L.DomUtil.create('div', 'legend');
+    div.innerHTML = `
+      <div style="font-weight:600;color:#23376D;margin-bottom:4px;">Site status</div>
+      <div class="row"><span class="dot" style="background:#10b981"></span>Online (last 5 min)</div>
+      <div class="row"><span class="dot" style="background:#94a3b8"></span>Idle (active, quiet)</div>
+      <div class="row"><span class="dot" style="background:#F15A29"></span>Provisioning</div>
+      <div class="row"><span class="dot" style="background:#e11d48"></span>Disabled</div>
+    `;
+    return div;
+  };
+  legend.addTo(map);
+
+  const colorFor = (s) => {
+    if (s.online) return '#10b981';
+    if (s.status === 'disabled') return '#e11d48';
+    if (s.status === 'provisioning') return '#F15A29';
+    return '#94a3b8';
+  };
+
+  fetch("{% url 'dashboard_map_json' %}", { credentials: 'same-origin' })
+    .then(r => r.json())
+    .then(data => {
+      let online=0, idle=0, disabled=0;
+      const bounds = [];
+      (data.sites || []).forEach(s => {
+        if (s.status === 'disabled') disabled++;
+        else if (s.online) online++;
+        else idle++;
+
+        const m = L.circleMarker([s.lat, s.lon], {
+          radius: s.online ? 9 : 7,
+          color: '#23376D',
+          weight: 1.5,
+          fillColor: colorFor(s),
+          fillOpacity: 0.85,
+        }).addTo(map);
+        const lastSeen = s.last_seen ? new Date(s.last_seen).toLocaleString() : '—';
+        m.bindPopup(`
+          <div style="font-family:'Inter',system-ui,sans-serif;min-width:200px">
+            <div style="font-weight:700;color:#23376D">${s.name || s.lab_code}</div>
+            <div style="font-size:11px;color:#64748b;margin-bottom:6px">${s.lab_code} · ${[s.country, s.place].filter(Boolean).join(' · ')}</div>
+            <div style="font-size:12px"><b>Status:</b> ${s.online ? 'online' : s.status}</div>
+            <div style="font-size:12px"><b>Last seen:</b> ${lastSeen}</div>
+          </div>
+        `);
+        bounds.push([s.lat, s.lon]);
+      });
+      document.getElementById('cnt-online').textContent = online;
+      document.getElementById('cnt-idle').textContent = idle;
+      document.getElementById('cnt-disabled').textContent = disabled;
+      if (bounds.length) {
+        try { map.fitBounds(bounds, { padding: [30,30], maxZoom: 7 }); } catch(_) {}
+      }
+    })
+    .catch(err => console.error('map fetch failed', err));
+})();
+</script>
+{% endblock %}

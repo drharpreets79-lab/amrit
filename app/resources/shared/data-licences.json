@@ -1,0 +1,224 @@
+{
+  "schemaVersion": 1,
+  "description": "Machine-readable record of every reference dataset this software bundles, for the in-application licences view and for tools/check_data_licences.py. The narrative version is shared/DATA_LICENCES.md.",
+  "datasets": [
+    {
+      "id": "whonet-catalogue",
+      "name": "WHONET reference catalogue",
+      "detail": "Organisms, antimicrobials, expert rules, expected resistance, MIC panels, code values and field definitions.",
+      "source": "WHONET / WHO Collaborating Centre for Surveillance of Antimicrobial Resistance",
+      "licence": "Distributed for antimicrobial resistance surveillance use.",
+      "url": "https://whonet.org",
+      "bundled": true,
+      "attribution_required": true,
+      "asset": "app/resources/catalog-seed.v2.json"
+    },
+    {
+      "id": "snomed-ct",
+      "name": "SNOMED CT concept codes",
+      "detail": "Concept codes carried on organism rows. Supplementary: WHONET codes are the primary organism identifier, so the application functions with or without SNOMED in use.",
+      "source": "SNOMED International",
+      "licence": "Requires a licence. Free to use in a SNOMED International Member country or territory; an affiliate licence is required elsewhere. This software grants no SNOMED CT licence and a deployment must establish its own position.",
+      "url": "https://www.snomed.org/get-snomed",
+      "bundled": true,
+      "attribution_required": true,
+      "warn": true,
+      "asset": "app/resources/catalog-seed.v2.json"
+    },
+    {
+      "id": "loinc",
+      "name": "LOINC codes",
+      "detail": "Susceptibility and measurement codes on antimicrobial rows.",
+      "source": "Regenstrief Institute",
+      "licence": "Free to use under the LOINC licence, with attribution.",
+      "url": "https://loinc.org/license/",
+      "bundled": true,
+      "attribution_required": true,
+      "asset": "app/resources/catalog-seed.v2.json"
+    },
+    {
+      "id": "atc-ddd",
+      "name": "ATC codes and defined daily doses",
+      "detail": "Used for antimicrobial consumption measures.",
+      "source": "WHO Collaborating Centre for Drug Statistics Methodology",
+      "licence": "Free for non-commercial use; redistribution of the complete index is restricted.",
+      "url": "https://atcddd.fhi.no",
+      "bundled": true,
+      "attribution_required": true,
+      "asset": "app/resources/catalog-seed.v2.json"
+    },
+    {
+      "id": "who-aware",
+      "name": "WHO AWaRe classification",
+      "source": "World Health Organization",
+      "licence": "Published for public health use.",
+      "url": "https://www.who.int/publications/i/item/WHO-MHP-HPS-EML-2023.04",
+      "bundled": true,
+      "attribution_required": true,
+      "asset": "app/resources/catalog-seed.v2.json"
+    },
+    {
+      "id": "iso-3166-1",
+      "name": "ISO 3166-1 country list with WHO regions",
+      "detail": "Derived from the country code set already present in the WHONET catalogue, not copied from the ISO standard.",
+      "source": "Derived; WHO regions from WHONET",
+      "licence": "Country codes are not themselves copyrightable.",
+      "bundled": true,
+      "attribution_required": false,
+      "asset": "shared/country-profiles/reference/countries.json"
+    },
+    {
+      "id": "iso-3166-2",
+      "name": "ISO 3166-2 country subdivisions",
+      "detail": "First- and second-level administrative subdivisions for 200 countries, used when a country has no curated geo pack. Fifty territories have none in the standard and start with an empty tree.",
+      "source": "ISO 3166-2, via the tables bundled with pycountry (Debian iso-codes)",
+      "licence": "Used under the deploying organisation's ISO licence. Subdivision codes and names are reproduced from the standard, so a deployment redistributing this software needs its own ISO licence.",
+      "url": "https://www.iso.org/iso-3166-country-codes.html",
+      "bundled": true,
+      "attribution_required": true,
+      "warn": true,
+      "asset": "shared/geo-packs/_iso3166-2.json"
+    },
+    {
+      "id": "cldr",
+      "name": "CLDR locale defaults",
+      "detail": "Locale, text direction, numbering system, time zones, first day of week and date field order.",
+      "source": "Unicode CLDR, via the ICU data built into Node",
+      "licence": "Unicode Licence — permissive, with attribution.",
+      "url": "https://www.unicode.org/license.txt",
+      "bundled": true,
+      "attribution_required": true,
+      "asset": "shared/country-profiles/reference/countries.json"
+    },
+    {
+      "id": "india-lgd",
+      "name": "India administrative units (LGD codes)",
+      "source": "Local Government Directory, Ministry of Panchayati Raj, Government of India",
+      "licence": "Administrative codes published for public administrative use.",
+      "url": "https://lgdirectory.gov.in",
+      "bundled": true,
+      "attribution_required": true,
+      "asset": "shared/geo-packs/IN.json"
+    },
+    {
+      "id": "google-address-data",
+      "name": "Google Address Data Service address formats",
+      "detail": "Per-country postal address form metadata: which fields exist, which are required, their local names, write order, uppercasing and postal-code patterns. Subdivision names within the dataset are not used; administrative units come from the ISO 3166-2 pack.",
+      "source": "Google libaddressinput project, vendored by the google-i18n-address package",
+      "licence": "Apache License 2.0 (libaddressinput dataset). The google-i18n-address packaging is BSD-3-Clause and is a build-time dependency only. Redistribution is permitted with attribution and the licence text.",
+      "url": "https://github.com/google/libaddressinput",
+      "bundled": true,
+      "attribution_required": true,
+      "asset": "shared/address-formats/address-formats.v1.json"
+    },
+    {
+      "id": "geonames-geo-directory",
+      "name": "GeoNames postal codes and cities500 gazetteer",
+      "detail": "The bundled geographic directory: 1,080,715 postal codes across 121 countries and 235,285 settlements of 500 people or more across 246, used to resolve a facility's postal code or town to coordinates. Population-weighted subdivision centroids are derived from the same data as a last-resort fallback. Never applied to a patient's residence.",
+      "source": "GeoNames (www.geonames.org)",
+      "licence": "Creative Commons Attribution 4.0. Redistribution is permitted with attribution. The United Kingdom extract carries Royal Mail copyright and database right and is supplied without warranty of accuracy or completeness.",
+      "url": "https://download.geonames.org/export/",
+      "bundled": true,
+      "attribution_required": true,
+      "asset": "shared/geo-directory/"
+    },
+    {
+      "id": "genomic-markers",
+      "name": "Genomic AMR marker catalogue",
+      "detail": "Marker names are nomenclature; the selection is curated from published literature.",
+      "source": "Curated from published literature",
+      "licence": "Nomenclature and published findings.",
+      "bundled": true,
+      "attribution_required": false,
+      "asset": "app/resources/genomic-markers.v1.json"
+    },
+    {
+      "id": "clsi-breakpoints",
+      "name": "CLSI breakpoint tables",
+      "detail": "Linked and importable only. The application never redistributes these tables.",
+      "source": "CLSI",
+      "licence": "Paid standard; M100 requires a CLSI licence.",
+      "url": "https://clsi.org",
+      "bundled": false,
+      "attribution_required": true
+    },
+    {
+      "id": "eucast-breakpoints",
+      "name": "EUCAST breakpoint tables",
+      "detail": "The published table ships with the installer and is refreshed in place by the Breakpoint Centre's update button. Extracted from EUCAST's own workbook by tools/fetch_eucast_breakpoints.py; no value is derived or interpolated.",
+      "source": "EUCAST",
+      "licence": "Published free of charge; redistribution permitted with attribution.",
+      "url": "https://www.eucast.org/clinical_breakpoints",
+      "bundled": true,
+      "attribution_required": true,
+      "asset": "app/resources/breakpoints/eucast-breakpoints.json"
+    },
+    {
+      "id": "icd-10-diagnosis",
+      "name": "ICD-10 diagnosis starter value set",
+      "detail": "A small set of WHO ICD-10 category codes for the infection syndromes AMR surveillance reports on, seeded into the editable coded-value catalogue so diagnosis is captured as a code rather than free text. A deployment is expected to extend or replace it with its national value set.",
+      "source": "World Health Organization",
+      "licence": "ICD is published by WHO and is freely available for use. WHO retains copyright; reproduce with attribution and do not present a modified list as the classification itself.",
+      "url": "https://icd.who.int/browse10",
+      "bundled": true,
+      "attribution_required": true,
+      "asset": "app/resources/diagnosis-codes.v1.json"
+    },
+    {
+      "id": "icd-11-mms",
+      "name": "ICD-11 MMS starter value set (bundled subset)",
+      "detail": "40 ICD-11 Mortality and Morbidity Statistics codes covering the infection syndromes AMR surveillance reports on, plus WHO's MG50-MG54 antimicrobial-resistance findings. Retrieved from WHO's own ICD API (release 2026-01) by tools/fetch_icd11.py, not transcribed: every code was confirmed to exist and confirmed to carry the concept it was requested for, and WHO's title is the display. A subset of the linearisation, not the linearisation. No ICD-10 to ICD-11 mapping is bundled - WHO's API publishes none, and a mapping this repository invented would attach a guess to a patient diagnosis.",
+      "source": "World Health Organization, via the WHO ICD API",
+      "licence": "ICD-11 is published by WHO under CC BY-ND 3.0 IGO. Attribution is required and derivative works are not permitted, so this subset is reproduced unmodified - WHO's codes and WHO's titles, selected but never edited. A deployment that needs a modified list must take that up with WHO rather than change this asset.",
+      "url": "https://icd.who.int/icdapi",
+      "bundled": true,
+      "attribution_required": true,
+      "asset": "shared/terminology/icd11-mms.verified.json"
+    },
+    {
+      "id": "loinc-terminology-seed",
+      "name": "LOINC susceptibility concepts (bundled subset)",
+      "detail": "917 LOINC concepts from the ABXBACT class, plus the three observation codes AMRIT binds to (organism identification, susceptibility panel, microbiology report). A subset of the release, not the release: only the codes this software actually emits are bundled, retrieved from the HL7 public terminology server and pinned by content hash. The WHONET catalogue's own loinc_mlc/loinc_sbt columns are not used - they code minimum lethal concentration and serum bactericidal titer, neither of which AMRIT measures.",
+      "source": "Regenstrief Institute, via tx.fhir.org",
+      "licence": "Free to use under the LOINC licence, with attribution. This copyright notice and the LOINC terms travel with the subset; see https://loinc.org/license/.",
+      "url": "https://loinc.org/license/",
+      "bundled": true,
+      "attribution_required": true,
+      "asset": "shared/terminology/terminology-seed.v1.json"
+    },
+    {
+      "id": "ucum",
+      "name": "UCUM units",
+      "detail": "The three units AMRIT measures in: mg/L for an MIC, mm for a zone diameter, ug/mL where a legacy import carries it. Bundled as codes on quantities, not as the UCUM specification.",
+      "source": "Regenstrief Institute",
+      "licence": "Free and permissive: use, copy and distribute permitted with the copyright notice retained. No registration required.",
+      "url": "https://ucum.org/trac",
+      "bundled": true,
+      "attribution_required": true,
+      "asset": "shared/terminology/loinc-abxbact.expansion.json"
+    },
+    {
+      "id": "icd-10-who",
+      "name": "ICD-10 categories from the WHO ICD API",
+      "detail": "1,135 categories and subcategories from chapters I (infectious and parasitic diseases) and XXII (codes for special purposes, including U82-U85 antimicrobial resistance), plus the pneumonia and urinary-tract blocks AMR surveillance codes into. Titles are WHO's own, taken verbatim from the API. Not the whole classification: the chapters an AMR deployment uses.",
+      "source": "World Health Organization, ICD API (release 2019)",
+      "licence": "ICD is published by WHO and freely available for use. WHO retains copyright; reproduce with attribution and do not present a modified or extended list as the classification itself.",
+      "url": "https://icd.who.int/icdapi",
+      "bundled": true,
+      "attribution_required": true,
+      "asset": "shared/terminology/icd10-who.verified.json"
+    },
+    {
+      "id": "snomed-ct-descriptions",
+      "name": "SNOMED CT descriptions for bundled catalogue concepts",
+      "detail": "Fully specified names for the 2,089 SNOMED concepts the WHONET organism and specimen catalogue references, retrieved from a terminology server and gated by code_systems.snomed.enabled. 13 catalogue references do not resolve at all and are recorded as rejected rather than emitted - among them Candida auris, which matters because it is a WHO critical-priority pathogen.",
+      "source": "SNOMED International, via a terminology server",
+      "licence": "Requires a licence. Free to use in a SNOMED International Member country or territory (India is one); an affiliate licence is required elsewhere. This software grants no SNOMED CT licence, and a deployment that has not accepted one switches SNOMED off in its country profile, which omits these codes from output with a stated reason rather than substituting anything.",
+      "url": "https://www.snomed.org/get-snomed",
+      "bundled": true,
+      "warn": true,
+      "attribution_required": true,
+      "asset": "shared/terminology/snomed-catalogue.verified.json"
+    }
+  ]
+}

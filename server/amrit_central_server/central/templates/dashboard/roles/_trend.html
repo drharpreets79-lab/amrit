@@ -1,0 +1,38 @@
+{# Trend line. Expects: trend = {labels, values, metric} #}
+<div class="bg-white rounded-xl border border-slate-200 shadow-card p-5">
+  <div class="flex items-center justify-between mb-2">
+    <h3 class="font-display text-sm font-bold text-brand-navy-700 flex items-center gap-2">
+      Trend · {{ trend.metric.title }}
+      {% if trend.metric %}{% include "dashboard/roles/_definition_popover.html" with d=trend.metric %}{% endif %}
+    </h3>
+    <span class="text-[11px] text-slate-400">%R over successive snapshots</span>
+  </div>
+  {% if trend.labels|length > 1 %}
+    <canvas id="trend-chart" height="120"></canvas>
+    {{ trend.labels|json_script:"trend-labels" }}
+    {{ trend.values|json_script:"trend-values" }}
+    <script>
+      (function(){
+        var el = document.getElementById("trend-chart");
+        if(!el || !window.Chart) return;
+        var labels = JSON.parse(document.getElementById("trend-labels").textContent);
+        var values = JSON.parse(document.getElementById("trend-values").textContent);
+        new Chart(el, {
+          type: 'line',
+          data: { labels: labels, datasets: [{ data: values, borderColor: '#F15A29',
+                   backgroundColor: 'rgba(241,90,41,.10)', fill: true, tension: .3,
+                   pointRadius: 3, pointBackgroundColor: '#F15A29' }] },
+          options: { plugins: { legend: { display: false } },
+                     scales: { y: { beginAtZero: true, ticks: { callback: function(v){return v+'%';} } } } }
+        });
+      })();
+    </script>
+  {% else %}
+    <div class="py-8 text-center">
+      <div class="font-display text-2xl font-extrabold text-brand-navy-700">
+        {% if trend.values %}{{ trend.values.0|default:"—" }}{% if trend.values.0 is not None %}%{% endif %}{% else %}—{% endif %}
+      </div>
+      <p class="text-xs text-slate-400 mt-1">Only one snapshot so far — the trend line appears once more snapshots accrue.</p>
+    </div>
+  {% endif %}
+</div>

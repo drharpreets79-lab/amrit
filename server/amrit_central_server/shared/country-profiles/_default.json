@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "profile_id": "DEFAULT",
+  "source": "fallback",
+  "country_code": "ZZZ",
+  "country_code_2": "ZZ",
+  "country_name": "Unconfigured deployment",
+  "who_region": null,
+  "locale": "en",
+  "fallback_locales": [],
+  "text_direction": "ltr",
+  "numbering_system": "latn",
+  "timezone": "UTC",
+  "timezone_ambiguous": false,
+  "calendar": "gregory",
+  "date_input_order": "YMD",
+  "first_day_of_week": 1,
+  "epi_week_system": "iso",
+  "fiscal_year_start_month": 1,
+  "admin_levels": [
+    {
+      "level": 1,
+      "key": "admin1",
+      "label": "Administrative area",
+      "label_plural": "Administrative areas",
+      "code_system": "ISO3166-2",
+      "required": false
+    }
+  ],
+  "identifier_namespace": {
+    "base_uri": "https://amrit.invalid",
+    "urn_prefix": "urn:amrit:unconfigured"
+  },
+  "branding": {
+    "product_name": "AMRIT",
+    "authority_name": "Unconfigured deployment",
+    "logo": null,
+    "logo_reverse": null,
+    "colors": {}
+  },
+  "guidelines": {
+    "default": "EUCAST",
+    "available": [
+      "EUCAST",
+      "CLSI"
+    ],
+    "national_body": null
+  },
+  "code_systems": {
+    "snomed": {
+      "enabled": true,
+      "licence": "Requires a SNOMED CT licence: free in a SNOMED International Member country, an affiliate licence elsewhere. This software grants no licence; establish your position before relying on these codes."
+    }
+  },
+  "banned_identifier_keys": [],
+  "privacy": {
+    "k_anonymity_floor": 5,
+    "retention_days": null,
+    "residency_note": null,
+    "patient_postal_code_digits": 3
+  },
+  "map": {
+    "center": null,
+    "zoom": 2,
+    "tile_url": null
+  },
+  "reporting_frameworks": [
+    "GLASS"
+  ]
+}

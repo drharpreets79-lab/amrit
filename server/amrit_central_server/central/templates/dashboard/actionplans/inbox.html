@@ -1,0 +1,66 @@
+{% extends "dashboard/base.html" %}
+{% block title %}Action plans · AMRIT Central{% endblock %}
+
+{% block content %}
+<div class="flex flex-wrap items-end justify-between gap-4 mb-6">
+  <div>
+    <h1 class="font-display text-2xl font-extrabold text-brand-navy-700">Action plans</h1>
+    <p class="text-sm text-slate-500">Draft plans raised when indicators breach limits, plus plans addressed to your role &amp; scope.</p>
+  </div>
+  <div class="flex items-center gap-2">
+    <a href="{% url 'action_tracking' %}" class="px-3 py-1.5 rounded-md border border-slate-300 text-slate-700 hover:bg-slate-50 text-sm font-semibold">Tracking board</a>
+    {% if amrit_caps.manage_action_plans %}
+      <a href="{% url 'action_plan_new' %}" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-brand-accent-500 text-white hover:bg-brand-accent-600 text-sm font-semibold shadow-sm">+ New plan</a>
+    {% endif %}
+  </div>
+</div>
+
+<div class="flex items-center gap-2 mb-5 text-sm">
+  <a href="?status=open" class="px-3 py-1 rounded-full {% if status == 'open' %}bg-brand-navy-700 text-white{% else %}bg-white border border-slate-200 text-slate-600{% endif %}">Open ({{ counts.open }})</a>
+  <a href="?status=draft" class="px-3 py-1 rounded-full {% if status == 'draft' %}bg-brand-navy-700 text-white{% else %}bg-white border border-slate-200 text-slate-600{% endif %}">Draft ({{ counts.draft }})</a>
+  <a href="?status=all" class="px-3 py-1 rounded-full {% if status == 'all' %}bg-brand-navy-700 text-white{% else %}bg-white border border-slate-200 text-slate-600{% endif %}">All ({{ counts.all }})</a>
+</div>
+
+<div class="bg-white rounded-xl border border-slate-200 shadow-card overflow-hidden">
+  <div class="overflow-x-auto">
+    <table class="min-w-full text-sm">
+      <thead class="bg-slate-50 text-slate-500 text-xs uppercase tracking-wider">
+        <tr>
+          <th class="text-left px-5 py-2 font-semibold">Plan</th>
+          <th class="text-left px-5 py-2 font-semibold">Scope</th>
+          <th class="text-left px-5 py-2 font-semibold">Severity</th>
+          <th class="text-left px-5 py-2 font-semibold">Status</th>
+          <th class="text-left px-5 py-2 font-semibold">Progress</th>
+          <th class="text-left px-5 py-2 font-semibold">Raised</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-slate-100">
+        {% for plan in plans %}
+          <tr class="{% if plan.is_overdue %}bg-rose-50/40{% endif %}">
+            <td class="px-5 py-3">
+              <a href="{% url 'action_plan_detail' plan.pk %}" class="font-medium text-brand-navy-700 hover:text-brand-accent-600">{{ plan.title }}</a>
+              <div class="text-[11px] text-slate-500">{% if plan.is_auto %}⚙ auto-raised{% else %}✎ manual{% endif %}{% if plan.trigger_metric_key %} · {{ plan.trigger_metric_key }}{% if plan.observed_value is not None %} = {{ plan.observed_value }}%{% endif %}{% endif %}{% if plan.target_role %} · for {{ plan.target_role }}{% endif %}</div>
+            </td>
+            <td class="px-5 py-3 text-slate-600">{{ plan.get_scope_type_display }}{% if plan.scope_value %} · {{ plan.scope_value }}{% endif %}</td>
+            <td class="px-5 py-3"><span class="px-2 py-0.5 rounded text-[11px] font-semibold
+              {% if plan.severity == 'critical' %}bg-rose-100 text-rose-700
+              {% elif plan.severity == 'high' %}bg-orange-100 text-orange-700
+              {% elif plan.severity == 'moderate' %}bg-amber-100 text-amber-700
+              {% else %}bg-slate-100 text-slate-600{% endif %}">{{ plan.get_severity_display }}</span></td>
+            <td class="px-5 py-3"><span class="px-2 py-0.5 rounded text-[11px] font-semibold
+              {% if plan.status == 'completed' or plan.status == 'closed' %}bg-emerald-50 text-emerald-700
+              {% elif plan.status == 'dismissed' %}bg-slate-100 text-slate-500
+              {% elif plan.status == 'draft' %}bg-amber-50 text-amber-700
+              {% else %}bg-brand-blue-50 text-brand-blue-700{% endif %}">{{ plan.get_status_display }}</span>
+              {% if plan.is_overdue %}<span class="ml-1 text-[10px] text-rose-600 font-semibold">overdue</span>{% endif %}</td>
+            <td class="px-5 py-3 text-xs text-slate-600 font-mono">{{ plan.n_done }}/{{ plan.n_points }}</td>
+            <td class="px-5 py-3 text-xs text-slate-500 font-mono">{{ plan.created_at|date:"Y-m-d" }}</td>
+          </tr>
+        {% empty %}
+          <tr><td colspan="6" class="px-5 py-8 text-center text-slate-400">No action plans in this view. Indicators within limits.</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}

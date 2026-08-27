@@ -1,0 +1,68 @@
+{% extends "dashboard/base.html" %}
+{% block title %}{% if site %}Edit {{ site.lab_code }}{% else %}Add site{% endif %} · AMRIT Central{% endblock %}
+
+{% block content %}
+<div class="mb-6">
+  <div class="text-[11px] uppercase tracking-[0.18em] text-slate-500 font-semibold">Registry</div>
+  <h1 class="font-display text-2xl md:text-3xl font-extrabold text-brand-navy-700 mt-1">
+    {% if site %}Edit {{ site.lab_code }}{% else %}Register a site{% endif %}
+  </h1>
+  <p class="text-sm text-slate-500 mt-1">
+    {% if site %}
+      The laboratory code has its own screen:
+      <a href="{% url 'dashboard_site_rename' site.lab_code %}" class="underline font-semibold">rename it</a>
+      if the desktop is syncing under a different one.
+    {% else %}
+      For a laboratory the programme is setting up directly. One that asked to join appears under
+      <a href="{% url 'dashboard_site_requests' %}" class="underline font-semibold">requests</a> instead.
+    {% endif %}
+  </p>
+</div>
+
+<form method="post" class="bg-white rounded-xl border border-slate-200 shadow-sm p-6 max-w-3xl">
+  {% csrf_token %}
+
+  {% if form.non_field_errors %}
+    <div class="mb-4 rounded-lg border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-800">
+      {{ form.non_field_errors }}
+    </div>
+  {% endif %}
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+    {% for field in form %}
+      <div class="{% if field.name == 'notes' %}md:col-span-2{% endif %}">
+        <label for="{{ field.id_for_label }}" class="block text-xs uppercase tracking-wider text-slate-500 mb-1">
+          {{ field.label }}{% if field.field.required %} <span class="text-rose-500">*</span>{% endif %}
+        </label>
+        {{ field }}
+        {% if field.help_text %}<p class="mt-1 text-xs text-slate-500">{{ field.help_text }}</p>{% endif %}
+        {% for error in field.errors %}<p class="mt-1 text-xs font-semibold text-rose-600">{{ error }}</p>{% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="mt-6 flex items-center gap-3">
+    <button class="px-4 py-2 rounded-md bg-brand-navy-700 text-white text-sm font-semibold hover:bg-brand-navy-800">
+      {% if site %}Save changes{% else %}Register site{% endif %}
+    </button>
+    <a href="{% url 'dashboard_sites' %}" class="px-3 py-2 text-sm text-slate-600 hover:text-slate-900">Cancel</a>
+    {% if site %}
+      <a href="{% url 'dashboard_site_rename' site.lab_code %}" class="ml-auto px-3 py-2 text-sm font-semibold text-slate-600 hover:underline">
+        Rename code
+      </a>
+      <a href="{% url 'dashboard_site_token' site.lab_code %}" class="px-3 py-2 text-sm font-semibold text-brand-accent-700 hover:underline">
+        {% if site.auth_token_hash %}Rotate token{% else %}Issue token{% endif %}
+      </a>
+    {% endif %}
+  </div>
+</form>
+
+<style>
+  /* Django renders bare widgets; give them the same shape as the filter bar's controls. */
+  form input[type="text"], form input[type="email"], form select, form textarea {
+    width: 100%; border-radius: 0.375rem; border: 1px solid rgb(203 213 225);
+    padding: 0.5rem 0.75rem; font-size: 0.875rem;
+  }
+  form input:disabled { background: rgb(241 245 249); color: rgb(100 116 139); }
+</style>
+{% endblock %}

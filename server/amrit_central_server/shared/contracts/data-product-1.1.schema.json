@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.amrit-amr.org/data-product-1.1.json",
+  "title": "AMR aggregate data product 1.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contract",
+    "module",
+    "generated_at",
+    "record_count",
+    "metrics",
+    "quality",
+    "country_code"
+  ],
+  "properties": {
+    "contract": {
+      "const": "amr-data-product/1.1"
+    },
+    "module": {
+      "type": "string"
+    },
+    "facility_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "period_start": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "period_end": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "record_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "metrics": {
+      "type": "object"
+    },
+    "quality": {
+      "type": "object",
+      "required": [
+        "status",
+        "schema_version"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "provisional",
+            "validated",
+            "published"
+          ]
+        },
+        "schema_version": {
+          "type": "string"
+        }
+      }
+    },
+    "country_code": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$",
+      "description": "ISO 3166-1 alpha-3 of the reporting country."
+    },
+    "admin_path": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Materialised path of administrative codes, e.g. IND/28/583."
+    }
+  },
+  "description": "Adds country and administrative context. Version 1.0 is unchanged and still validates; a validator selects by the payload's own contract string."
+}

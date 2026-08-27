@@ -1,0 +1,10 @@
+Output File                                              Name                            Type     FSH File      Lines
+StructureDefinition-AmritCondition.json                  AmritCondition                  Profile  profiles.fsh  95 - 107
+StructureDefinition-AmritDiagnosticReport.json           AmritDiagnosticReport           Profile  profiles.fsh  109 - 123
+StructureDefinition-AmritMeasure.json                    AmritMeasure                    Profile  profiles.fsh  133 - 137
+StructureDefinition-AmritMeasureReport.json              AmritMeasureReport              Profile  profiles.fsh  139 - 143
+StructureDefinition-AmritOrganismObservation.json        AmritOrganismObservation        Profile  profiles.fsh  50 - 69
+StructureDefinition-AmritOrganization.json               AmritOrganization               Profile  profiles.fsh  125 - 131
+StructureDefinition-AmritPatient.json                    AmritPatient                    Profile  profiles.fsh  81 - 93
+StructureDefinition-AmritSpecimen.json                   AmritSpecimen                   Profile  profiles.fsh  71 - 79
+StructureDefinition-AmritSusceptibilityObservation.json  AmritSusceptibilityObservation  Profile  profiles.fsh  20 - 48

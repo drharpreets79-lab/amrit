@@ -1,0 +1,83 @@
+{% extends "dashboard/base.html" %}
+{% block title %}Rename {{ site.lab_code }} · AMRIT Central{% endblock %}
+
+{% block content %}
+<div class="mb-6">
+  <div class="text-[11px] uppercase tracking-[0.18em] text-slate-500 font-semibold">Registry</div>
+  <h1 class="font-display text-2xl md:text-3xl font-extrabold text-brand-navy-700 mt-1">
+    Rename <span class="font-mono">{{ site.lab_code }}</span>
+  </h1>
+  <p class="text-sm text-slate-500 mt-1">{{ site.name|default:"(no name)" }}{% if site.place_label %} · {{ site.place_label }}{% endif %}</p>
+</div>
+
+<div class="max-w-3xl space-y-5">
+  <div class="rounded-xl border border-brand-accent-200 bg-brand-accent-50 p-5 text-sm text-slate-700">
+    <h2 class="text-sm font-bold uppercase tracking-wider text-brand-navy-700">When to use this</h2>
+    <p class="mt-2">
+      A laboratory whose sync fails with <span class="font-mono text-xs">HTTP 403 {"error": "lab_code mismatch"}</span>
+      is sending a code this registry does not have under that name. Set the registry to the code the desktop
+      already uses, and the mismatch is gone without anyone touching the laboratory's own database — where the
+      code is the parent key of a dozen tables and is stamped on every isolate row.
+    </p>
+  </div>
+
+  {% if error %}
+    <div class="rounded-lg border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-800">{{ error }}</div>
+  {% endif %}
+
+  <form method="post" class="rounded-xl border border-slate-200 bg-white shadow-sm p-6">
+    {% csrf_token %}
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+      <div>
+        <label class="block text-xs uppercase tracking-wider text-slate-500 mb-1" for="new_lab_code">New laboratory code <span class="text-rose-500">*</span></label>
+        <input type="text" id="new_lab_code" name="new_lab_code" maxlength="32" required
+               value="{{ request.POST.new_lab_code|default:'' }}"
+               class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm font-mono focus:outline-none focus:ring-2 focus:ring-brand-blue-500 focus:border-brand-blue-500">
+        <p class="mt-1 text-xs text-slate-500">Exactly as the desktop sends it. Up to 32 characters.</p>
+      </div>
+      <div>
+        <label class="block text-xs uppercase tracking-wider text-slate-500 mb-1" for="confirm_lab_code">Type <span class="font-mono">{{ site.lab_code }}</span> to confirm <span class="text-rose-500">*</span></label>
+        <input type="text" id="confirm_lab_code" name="confirm_lab_code" required autocomplete="off"
+               class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm font-mono focus:outline-none focus:ring-2 focus:ring-brand-blue-500 focus:border-brand-blue-500">
+        <p class="mt-1 text-xs text-slate-500">So a rename cannot happen by accident.</p>
+      </div>
+      <div class="sm:col-span-2">
+        <label class="block text-xs uppercase tracking-wider text-slate-500 mb-1" for="note">Note (kept in the audit trail)</label>
+        <input type="text" id="note" name="note" value="{{ request.POST.note|default:'' }}"
+               placeholder="why the code changed"
+               class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue-500 focus:border-brand-blue-500">
+      </div>
+    </div>
+
+    <div class="mt-6 flex flex-wrap items-center gap-3">
+      <button class="px-4 py-2 rounded-md bg-brand-navy-700 text-white text-sm font-semibold hover:bg-brand-navy-800">Rename site</button>
+      <a href="{% url 'dashboard_site_edit' site.lab_code %}" class="px-3 py-2 text-sm text-slate-600 hover:text-slate-900">Cancel</a>
+    </div>
+  </form>
+
+  <div class="rounded-xl border border-slate-200 bg-white shadow-sm p-5">
+    <h2 class="text-sm font-bold uppercase tracking-wider text-slate-600">What the rename carries</h2>
+    <dl class="mt-3 space-y-2 text-sm">
+      <div class="flex items-start gap-3">
+        <dt class="w-40 shrink-0 text-slate-500">Bearer token</dt>
+        <dd class="text-slate-800">Unchanged. It authenticates the site, not the name — nothing is reconfigured at the laboratory.</dd>
+      </div>
+      <div class="flex items-start gap-3">
+        <dt class="w-40 shrink-0 text-slate-500">Results received</dt>
+        <dd class="text-slate-800"><strong>{{ result_count }}</strong> — follow the site; they refer to it by key, not by code.</dd>
+      </div>
+      <div class="flex items-start gap-3">
+        <dt class="w-40 shrink-0 text-slate-500">Queries addressed to it</dt>
+        <dd class="text-slate-800"><strong>{{ targeted_queries }}</strong> — retargeted to the new code, so pending queries keep reaching it.</dd>
+      </div>
+      <div class="flex items-start gap-3">
+        <dt class="w-40 shrink-0 text-slate-500">Audit rows</dt>
+        <dd class="text-slate-800">
+          <strong>{{ audit_count }}</strong> — left as they are. They record what was sent under the name in
+          use at the time; the rename is appended to the trail rather than written over it.
+        </dd>
+      </div>
+    </dl>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,44 @@
+{# Cumulative antibiogram grid. Expects: antibiogram = {antibiotics:[...], rows:[...]} #}
+<div class="bg-white rounded-xl border border-slate-200 shadow-card overflow-hidden">
+  <div class="px-5 py-4 border-b border-slate-100 flex items-center justify-between gap-2">
+    <div>
+      <h2 class="font-display text-base font-bold text-brand-navy-700 flex items-center gap-2">
+        Cumulative antibiogram
+        {% include "dashboard/roles/_definition_popover.html" with d=antibiogram_def %}
+      </h2>
+      <p class="text-xs text-slate-500">Percent susceptible (%S) per organism × antibiotic. Green = more susceptible.</p>
+    </div>
+    <span class="text-[11px] text-slate-400">† denominator &lt; 30 (CLSI M39: interpret with caution)</span>
+  </div>
+  <div class="overflow-x-auto">
+    <table class="min-w-full text-sm">
+      <thead class="bg-slate-50 text-slate-500 text-xs uppercase tracking-wider">
+        <tr>
+          <th class="text-left px-4 py-2 font-semibold sticky left-0 bg-slate-50">Organism</th>
+          {% for abx in antibiogram.antibiotics %}<th class="px-3 py-2 font-semibold text-center whitespace-nowrap">{{ abx }}</th>{% endfor %}
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-slate-100">
+        {% for row in antibiogram.rows %}
+          <tr>
+            <td class="px-4 py-2 font-medium text-slate-700 italic sticky left-0 bg-white whitespace-nowrap">{{ row.organism }}</td>
+            {% for cell in row.cells %}
+              <td class="px-3 py-2 text-center
+                {% if cell.pct_s is None %}text-slate-300
+                {% elif cell.pct_s >= 80 %}bg-emerald-50 text-emerald-700
+                {% elif cell.pct_s >= 60 %}bg-lime-50 text-lime-700
+                {% elif cell.pct_s >= 40 %}bg-amber-50 text-amber-700
+                {% elif cell.pct_s >= 20 %}bg-orange-50 text-orange-700
+                {% else %}bg-rose-50 text-rose-700{% endif %}">
+                {% if cell.pct_s is None %}—{% else %}
+                  <span class="font-semibold">{{ cell.pct_s }}</span>
+                  <span class="block text-[10px] text-slate-400">n={{ cell.denominator|default:0 }}{% if not cell.reliable %} †{% endif %}</span>
+                {% endif %}
+              </td>
+            {% endfor %}
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>

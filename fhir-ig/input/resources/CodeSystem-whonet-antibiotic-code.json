@@ -1,0 +1,1611 @@
+{
+ "resourceType": "CodeSystem",
+ "id": "whonet-antibiotic-code",
+ "url": "urn:whonet:antibiotic-code",
+ "name": "WhonetAntibioticCode",
+ "title": "WHONET antimicrobial codes",
+ "status": "active",
+ "experimental": false,
+ "caseSensitive": true,
+ "content": "complete",
+ "count": 399,
+ "description": "The antimicrobial code space AMRIT emits alongside LOINC on every susceptibility observation. It is the reason a WHONET user can read AMRIT's output at all.",
+ "concept": [
+  {
+   "code": "AMC",
+   "display": "Amoxicillin/Clavulanic acid"
+  },
+  {
+   "code": "APX",
+   "display": "Aspoxicillin"
+  },
+  {
+   "code": "BDP",
+   "display": "Brodimoprim"
+  },
+  {
+   "code": "BUT",
+   "display": "Butoconazole"
+  },
+  {
+   "code": "CAP",
+   "display": "Capreomycin"
+  },
+  {
+   "code": "CRB",
+   "display": "Carbenicillin"
+  },
+  {
+   "code": "CAR",
+   "display": "Carumonam"
+  },
+  {
+   "code": "CAS",
+   "display": "Caspofungin"
+  },
+  {
+   "code": "CAC",
+   "display": "Cefacetrile"
+  },
+  {
+   "code": "CEC",
+   "display": "Cefaclor"
+  },
+  {
+   "code": "BEK",
+   "display": "Bekanamycin"
+  },
+  {
+   "code": "SAM",
+   "display": "Ampicillin/Sulbactam"
+  },
+  {
+   "code": "AMR",
+   "display": "Amprolium"
+  },
+  {
+   "code": "ANI",
+   "display": "Anidulafungin"
+  },
+  {
+   "code": "APL",
+   "display": "Apalcillin"
+  },
+  {
+   "code": "APR",
+   "display": "Apramycin"
+  },
+  {
+   "code": "BAC",
+   "display": "Bacitracin zinc"
+  },
+  {
+   "code": "AMX",
+   "display": "Amoxicillin"
+  },
+  {
+   "code": "CPC",
+   "display": "Cefepime/Clavulanic acid"
+  },
+  {
+   "code": "CCP",
+   "display": "Cefcapene"
+  },
+  {
+   "code": "BES",
+   "display": "Besifloxacin"
+  },
+  {
+   "code": "BIA",
+   "display": "Biapenem"
+  },
+  {
+   "code": "BCZ",
+   "display": "Bicyclomycin (Bicozamycin)"
+  },
+  {
+   "code": "CTL",
+   "display": "Ceftezole"
+  },
+  {
+   "code": "CFR",
+   "display": "Cefadroxil"
+  },
+  {
+   "code": "RID",
+   "display": "Cefaloridine"
+  },
+  {
+   "code": "MAN",
+   "display": "Cefamandole"
+  },
+  {
+   "code": "CNX",
+   "display": "Cefminox"
+  },
+  {
+   "code": "CZO",
+   "display": "Cefazolin"
+  },
+  {
+   "code": "CFB",
+   "display": "Cefbuperazone"
+  },
+  {
+   "code": "CMZ",
+   "display": "Cefmetazole"
+  },
+  {
+   "code": "CCX",
+   "display": "Cefcapene pivoxil"
+  },
+  {
+   "code": "BAM",
+   "display": "Bacampicillin"
+  },
+  {
+   "code": "AXS",
+   "display": "Amoxicillin/Sulbactam"
+  },
+  {
+   "code": "AMB",
+   "display": "Amphotericin B"
+  },
+  {
+   "code": "AMP",
+   "display": "Ampicillin"
+  },
+  {
+   "code": "CRO",
+   "display": "Ceftriaxone"
+  },
+  {
+   "code": "CTB",
+   "display": "Ceftibuten"
+  },
+  {
+   "code": "CFM",
+   "display": "Cefixime"
+  },
+  {
+   "code": "CZP",
+   "display": "Ceftizoxime alapivoxil"
+  },
+  {
+   "code": "CMX",
+   "display": "Cefmenoxime"
+  },
+  {
+   "code": "CTE",
+   "display": "Chlortetracycline"
+  },
+  {
+   "code": "CIC",
+   "display": "Ciclacillin"
+  },
+  {
+   "code": "CIN",
+   "display": "Cinoxacin"
+  },
+  {
+   "code": "CIP",
+   "display": "Ciprofloxacin"
+  },
+  {
+   "code": "ARB",
+   "display": "Arbekacin"
+  },
+  {
+   "code": "CZD",
+   "display": "Cefazedone"
+  },
+  {
+   "code": "CLR",
+   "display": "Clarithromycin"
+  },
+  {
+   "code": "CTZ",
+   "display": "Cefatrizine"
+  },
+  {
+   "code": "CED",
+   "display": "Cephradine"
+  },
+  {
+   "code": "DIZ",
+   "display": "Cefodizime"
+  },
+  {
+   "code": "CHL",
+   "display": "Chloramphenicol"
+  },
+  {
+   "code": "AVO",
+   "display": "Avoparcin"
+  },
+  {
+   "code": "FOX",
+   "display": "Cefoxitin"
+  },
+  {
+   "code": "CPD",
+   "display": "Cefpodoxime"
+  },
+  {
+   "code": "AST",
+   "display": "Astromicin"
+  },
+  {
+   "code": "CLI",
+   "display": "Clindamycin"
+  },
+  {
+   "code": "CLF",
+   "display": "Clofazimine"
+  },
+  {
+   "code": "CTR",
+   "display": "Clotrimazole"
+  },
+  {
+   "code": "CLA",
+   "display": "Clavulanic acid"
+  },
+  {
+   "code": "CLX",
+   "display": "Clinafloxacin"
+  },
+  {
+   "code": "CTT",
+   "display": "Cefotetan"
+  },
+  {
+   "code": "CTF",
+   "display": "Cefotiam"
+  },
+  {
+   "code": "CHE",
+   "display": "Cefotiam hexetil"
+  },
+  {
+   "code": "FCT",
+   "display": "5-Fluorocytosine"
+  },
+  {
+   "code": "ACM",
+   "display": "Acetylmidecamycin"
+  },
+  {
+   "code": "ASP",
+   "display": "Acetylspiramycin"
+  },
+  {
+   "code": "CTO",
+   "display": "Cetocycline"
+  },
+  {
+   "code": "ATM",
+   "display": "Aztreonam"
+  },
+  {
+   "code": "CID",
+   "display": "Cefonicid"
+  },
+  {
+   "code": "CFP",
+   "display": "Cefoperazone"
+  },
+  {
+   "code": "CSL",
+   "display": "Cefoperazone/Sulbactam"
+  },
+  {
+   "code": "CND",
+   "display": "Ceforanide"
+  },
+  {
+   "code": "CSE",
+   "display": "Cefoselis"
+  },
+  {
+   "code": "AMK",
+   "display": "Amikacin"
+  },
+  {
+   "code": "AVB",
+   "display": "Avibactam"
+  },
+  {
+   "code": "AVI",
+   "display": "Avilamycin"
+  },
+  {
+   "code": "AZM",
+   "display": "Azithromycin"
+  },
+  {
+   "code": "AZL",
+   "display": "Azlocillin"
+  },
+  {
+   "code": "CDR",
+   "display": "Cefdinir"
+  },
+  {
+   "code": "DIT",
+   "display": "Cefditoren"
+  },
+  {
+   "code": "DIX",
+   "display": "Cefditoren pivoxil"
+  },
+  {
+   "code": "FEP",
+   "display": "Cefepime"
+  },
+  {
+   "code": "CTX",
+   "display": "Cefotaxime"
+  },
+  {
+   "code": "CTC",
+   "display": "Cefotaxime/Clavulanic acid"
+  },
+  {
+   "code": "CTS",
+   "display": "Cefotaxime/Sulbactam"
+  },
+  {
+   "code": "CAT",
+   "display": "Cefetamet"
+  },
+  {
+   "code": "CPI",
+   "display": "Cefetamet pivoxil"
+  },
+  {
+   "code": "CCL",
+   "display": "Cefetecol (Cefcatacol)"
+  },
+  {
+   "code": "CZL",
+   "display": "Cefetrizole"
+  },
+  {
+   "code": "CFS",
+   "display": "Cefsulodin"
+  },
+  {
+   "code": "CSU",
+   "display": "Cefsumide"
+  },
+  {
+   "code": "CPT",
+   "display": "Ceftaroline"
+  },
+  {
+   "code": "CPA",
+   "display": "Ceftaroline/Avibactam"
+  },
+  {
+   "code": "CZX",
+   "display": "Ceftizoxime"
+  },
+  {
+   "code": "CAZ",
+   "display": "Ceftazidime"
+  },
+  {
+   "code": "CZA",
+   "display": "Ceftazidime/Avibactam"
+  },
+  {
+   "code": "TIO",
+   "display": "Ceftiofur"
+  },
+  {
+   "code": "CZT",
+   "display": "Ceftolozane/Tazobactam"
+  },
+  {
+   "code": "CCV",
+   "display": "Ceftazidime/Clavulanic acid"
+  },
+  {
+   "code": "CEM",
+   "display": "Cefteram"
+  },
+  {
+   "code": "CPL",
+   "display": "Cefteram pivoxil"
+  },
+  {
+   "code": "CXM",
+   "display": "Cefuroxime"
+  },
+  {
+   "code": "CXA",
+   "display": "Cefuroxime axetil"
+  },
+  {
+   "code": "ZON",
+   "display": "Cefuzonam"
+  },
+  {
+   "code": "LEX",
+   "display": "Cephalexin"
+  },
+  {
+   "code": "CEP",
+   "display": "Cephalothin"
+  },
+  {
+   "code": "HAP",
+   "display": "Cephapirin"
+  },
+  {
+   "code": "GEH",
+   "display": "Gentamicin-High"
+  },
+  {
+   "code": "GRX",
+   "display": "Grepafloxacin"
+  },
+  {
+   "code": "GRI",
+   "display": "Griseofulvin"
+  },
+  {
+   "code": "HAB",
+   "display": "Habekacin"
+  },
+  {
+   "code": "CLO",
+   "display": "Cloxacillin"
+  },
+  {
+   "code": "ZOP",
+   "display": "Cefozopran"
+  },
+  {
+   "code": "CFZ",
+   "display": "Cefpimizole"
+  },
+  {
+   "code": "CPM",
+   "display": "Cefpiramide"
+  },
+  {
+   "code": "CPO",
+   "display": "Cefpirome"
+  },
+  {
+   "code": "COL",
+   "display": "Colistin"
+  },
+  {
+   "code": "CYC",
+   "display": "Cycloserine"
+  },
+  {
+   "code": "DAL",
+   "display": "Dalbavancin"
+  },
+  {
+   "code": "DAN",
+   "display": "Danofloxacin"
+  },
+  {
+   "code": "DAP",
+   "display": "Daptomycin"
+  },
+  {
+   "code": "DEM",
+   "display": "Demeclocycline"
+  },
+  {
+   "code": "DKB",
+   "display": "Dibekacin"
+  },
+  {
+   "code": "DIC",
+   "display": "Dicloxacillin"
+  },
+  {
+   "code": "DIF",
+   "display": "Difloxacin"
+  },
+  {
+   "code": "DIR",
+   "display": "Dirithromycin"
+  },
+  {
+   "code": "CPX",
+   "display": "Cefpodoxime proxetil"
+  },
+  {
+   "code": "CDC",
+   "display": "Cefpodoxime/Clavulanic acid"
+  },
+  {
+   "code": "CPR",
+   "display": "Cefprozil"
+  },
+  {
+   "code": "CEQ",
+   "display": "Cefquinome"
+  },
+  {
+   "code": "CRD",
+   "display": "Cefroxadine"
+  },
+  {
+   "code": "DOR",
+   "display": "Doripenem"
+  },
+  {
+   "code": "DOX",
+   "display": "Doxycycline"
+  },
+  {
+   "code": "ECO",
+   "display": "Econazole"
+  },
+  {
+   "code": "ENX",
+   "display": "Enoxacin"
+  },
+  {
+   "code": "GRN",
+   "display": "Garenoxacin"
+  },
+  {
+   "code": "GAT",
+   "display": "Gatifloxacin"
+  },
+  {
+   "code": "GEM",
+   "display": "Gemifloxacin"
+  },
+  {
+   "code": "GEN",
+   "display": "Gentamicin"
+  },
+  {
+   "code": "JOS",
+   "display": "Josamycin"
+  },
+  {
+   "code": "HET",
+   "display": "Hetacillin"
+  },
+  {
+   "code": "HYG",
+   "display": "Hygromycin"
+  },
+  {
+   "code": "ICL",
+   "display": "Iclaprim"
+  },
+  {
+   "code": "IPM",
+   "display": "Imipenem"
+  },
+  {
+   "code": "IPE",
+   "display": "Imipenem/EDTA"
+  },
+  {
+   "code": "ISE",
+   "display": "Isepamicin"
+  },
+  {
+   "code": "ISO",
+   "display": "Isoconazole"
+  },
+  {
+   "code": "INH",
+   "display": "Isoniazid"
+  },
+  {
+   "code": "ENR",
+   "display": "Enrofloxacin"
+  },
+  {
+   "code": "ENV",
+   "display": "Enviomycin (Tuberactinomycin)"
+  },
+  {
+   "code": "EPE",
+   "display": "Eperozolid"
+  },
+  {
+   "code": "EPP",
+   "display": "Epiroprim"
+  },
+  {
+   "code": "ETP",
+   "display": "Ertapenem"
+  },
+  {
+   "code": "ERY",
+   "display": "Erythromycin"
+  },
+  {
+   "code": "ETH",
+   "display": "Ethambutol"
+  },
+  {
+   "code": "ETI",
+   "display": "Ethionamide"
+  },
+  {
+   "code": "ETO",
+   "display": "Ethopabate"
+  },
+  {
+   "code": "FAR",
+   "display": "Faropenem"
+  },
+  {
+   "code": "FDX",
+   "display": "Fidaxomicin"
+  },
+  {
+   "code": "FIN",
+   "display": "Finafloxacin"
+  },
+  {
+   "code": "FLA",
+   "display": "Flavomycin"
+  },
+  {
+   "code": "FLE",
+   "display": "Fleroxacin"
+  },
+  {
+   "code": "FLO",
+   "display": "Flomoxef"
+  },
+  {
+   "code": "FLR",
+   "display": "Florfenicol"
+  },
+  {
+   "code": "FLC",
+   "display": "Flucloxacillin"
+  },
+  {
+   "code": "FLU",
+   "display": "Fluconazole"
+  },
+  {
+   "code": "FLM",
+   "display": "Flumequine"
+  },
+  {
+   "code": "FFL",
+   "display": "Fosfluconazole"
+  },
+  {
+   "code": "FOS",
+   "display": "Fosfomycin"
+  },
+  {
+   "code": "FMD",
+   "display": "Fosmidomycin"
+  },
+  {
+   "code": "FRM",
+   "display": "Framycetin"
+  },
+  {
+   "code": "FRZ",
+   "display": "Furazolidone"
+  },
+  {
+   "code": "FUS",
+   "display": "Fusidic acid"
+  },
+  {
+   "code": "KAN",
+   "display": "Kanamycin"
+  },
+  {
+   "code": "KAH",
+   "display": "Kanamycin-High"
+  },
+  {
+   "code": "KET",
+   "display": "Ketoconazole"
+  },
+  {
+   "code": "KIT",
+   "display": "Kitasamycin (Leucomycin)"
+  },
+  {
+   "code": "LAS",
+   "display": "Lasalocid"
+  },
+  {
+   "code": "LEN",
+   "display": "Lenampicillin"
+  },
+  {
+   "code": "LVX",
+   "display": "Levofloxacin"
+  },
+  {
+   "code": "LIN",
+   "display": "Lincomycin"
+  },
+  {
+   "code": "LSP",
+   "display": "Linco-spectin (lincomycin/spectinomycin)"
+  },
+  {
+   "code": "LNZ",
+   "display": "Linezolid"
+  },
+  {
+   "code": "LFE",
+   "display": "Linoprist-flopristin"
+  },
+  {
+   "code": "LOM",
+   "display": "Lomefloxacin"
+  },
+  {
+   "code": "LOR",
+   "display": "Loracarbef"
+  },
+  {
+   "code": "MAR",
+   "display": "Marbofloxacin"
+  },
+  {
+   "code": "MEC",
+   "display": "Mecillinam (Amdinocillin)"
+  },
+  {
+   "code": "MEL",
+   "display": "Meleumycin"
+  },
+  {
+   "code": "MEM",
+   "display": "Meropenem"
+  },
+  {
+   "code": "MES",
+   "display": "Mesulfamide"
+  },
+  {
+   "code": "MET",
+   "display": "Methicillin"
+  },
+  {
+   "code": "MTP",
+   "display": "Metioprim"
+  },
+  {
+   "code": "MXT",
+   "display": "Metioxate"
+  },
+  {
+   "code": "MTR",
+   "display": "Metronidazole"
+  },
+  {
+   "code": "MEZ",
+   "display": "Mezlocillin"
+  },
+  {
+   "code": "MSU",
+   "display": "Mezlocillin/Sulbactam"
+  },
+  {
+   "code": "MIF",
+   "display": "Micafungin"
+  },
+  {
+   "code": "MCZ",
+   "display": "Miconazole"
+  },
+  {
+   "code": "MCR",
+   "display": "Micronomicin"
+  },
+  {
+   "code": "MID",
+   "display": "Midecamycin"
+  },
+  {
+   "code": "MIL",
+   "display": "Miloxacin"
+  },
+  {
+   "code": "MNO",
+   "display": "Minocycline"
+  },
+  {
+   "code": "MON",
+   "display": "Monensin sodium"
+  },
+  {
+   "code": "MOX",
+   "display": "Moxalactam (Latamoxef)"
+  },
+  {
+   "code": "MFX",
+   "display": "Moxifloxacin"
+  },
+  {
+   "code": "MUP",
+   "display": "Mupirocin"
+  },
+  {
+   "code": "NAD",
+   "display": "Nadifloxacin"
+  },
+  {
+   "code": "NAF",
+   "display": "Nafcillin"
+  },
+  {
+   "code": "NAL",
+   "display": "Nalidixic acid"
+  },
+  {
+   "code": "NAR",
+   "display": "Narasin"
+  },
+  {
+   "code": "NEO",
+   "display": "Neomycin"
+  },
+  {
+   "code": "NET",
+   "display": "Netilmicin"
+  },
+  {
+   "code": "NIC",
+   "display": "Nicarbazin"
+  },
+  {
+   "code": "NIF",
+   "display": "Nifuroquine"
+  },
+  {
+   "code": "NTZ",
+   "display": "Nitazoxanide"
+  },
+  {
+   "code": "NIT",
+   "display": "Nitrofurantoin"
+  },
+  {
+   "code": "NIZ",
+   "display": "Nitrofurazone"
+  },
+  {
+   "code": "NTR",
+   "display": "Nitroxoline"
+  },
+  {
+   "code": "NOR",
+   "display": "Norfloxacin"
+  },
+  {
+   "code": "NVA",
+   "display": "Norvancomycin"
+  },
+  {
+   "code": "NOV",
+   "display": "Novobiocin"
+  },
+  {
+   "code": "NYS",
+   "display": "Nystatin"
+  },
+  {
+   "code": "OFX",
+   "display": "Ofloxacin"
+  },
+  {
+   "code": "OLE",
+   "display": "Oleandomycin"
+  },
+  {
+   "code": "OMC",
+   "display": "Omadacycline"
+  },
+  {
+   "code": "OPT",
+   "display": "Optochin"
+  },
+  {
+   "code": "ORB",
+   "display": "Orbifloxacin"
+  },
+  {
+   "code": "ORI",
+   "display": "Oritavancin"
+  },
+  {
+   "code": "ORS",
+   "display": "Ormetroprim/Sulfamethoxazole"
+  },
+  {
+   "code": "ORN",
+   "display": "Ornidazole"
+  },
+  {
+   "code": "OXA",
+   "display": "Oxacillin"
+  },
+  {
+   "code": "OXO",
+   "display": "Oxolinic acid"
+  },
+  {
+   "code": "OXY",
+   "display": "Oxytetracycline"
+  },
+  {
+   "code": "PAS",
+   "display": "P-Aminosalicylic acid"
+  },
+  {
+   "code": "PAN",
+   "display": "Panipenem"
+  },
+  {
+   "code": "PAR",
+   "display": "Paromomycin"
+  },
+  {
+   "code": "PAZ",
+   "display": "Pazufloxacin"
+  },
+  {
+   "code": "PEF",
+   "display": "Pefloxacin"
+  },
+  {
+   "code": "PEN",
+   "display": "Penicillin G"
+  },
+  {
+   "code": "PNV",
+   "display": "Penicillin V"
+  },
+  {
+   "code": "PNO",
+   "display": "Penicillin/Novobiocin"
+  },
+  {
+   "code": "PSU",
+   "display": "Penicillin/Sulbactam"
+  },
+  {
+   "code": "PIM",
+   "display": "Pentisomicin"
+  },
+  {
+   "code": "PTZ",
+   "display": "Pentizidone"
+  },
+  {
+   "code": "PHE",
+   "display": "Phenethicillin"
+  },
+  {
+   "code": "PMR",
+   "display": "Pimaricin (Natamycin)"
+  },
+  {
+   "code": "PPA",
+   "display": "Pipemidic acid"
+  },
+  {
+   "code": "PIP",
+   "display": "Piperacillin"
+  },
+  {
+   "code": "PIS",
+   "display": "Piperacillin/Sulbactam"
+  },
+  {
+   "code": "TZP",
+   "display": "Piperacillin/Tazobactam"
+  },
+  {
+   "code": "PRC",
+   "display": "Piridicillin"
+  },
+  {
+   "code": "PRL",
+   "display": "Pirlimycin"
+  },
+  {
+   "code": "PIR",
+   "display": "Piromidic acid"
+  },
+  {
+   "code": "PME",
+   "display": "Pivmecillinam (Amdinocillin pivoxil)"
+  },
+  {
+   "code": "PLZ",
+   "display": "Plazomicin"
+  },
+  {
+   "code": "POL",
+   "display": "Polymyxin B"
+  },
+  {
+   "code": "POS",
+   "display": "Posaconazole"
+  },
+  {
+   "code": "PRX",
+   "display": "Premafloxacin"
+  },
+  {
+   "code": "PRM",
+   "display": "Primycin"
+  },
+  {
+   "code": "PRI",
+   "display": "Pristinamycin"
+  },
+  {
+   "code": "PRP",
+   "display": "Propicillin"
+  },
+  {
+   "code": "PKA",
+   "display": "Propikacin"
+  },
+  {
+   "code": "PTH",
+   "display": "Prothionamide"
+  },
+  {
+   "code": "PRU",
+   "display": "Prulifloxacin"
+  },
+  {
+   "code": "PZA",
+   "display": "Pyrazinamide"
+  },
+  {
+   "code": "QDA",
+   "display": "Quinupristin/Dalfopristin"
+  },
+  {
+   "code": "RAC",
+   "display": "Ractopamine"
+  },
+  {
+   "code": "RAM",
+   "display": "Ramoplanin"
+  },
+  {
+   "code": "RZM",
+   "display": "Razupenem"
+  },
+  {
+   "code": "RST",
+   "display": "Ribostamycin"
+  },
+  {
+   "code": "RIB",
+   "display": "Rifabutin"
+  },
+  {
+   "code": "RIF",
+   "display": "Rifampin"
+  },
+  {
+   "code": "RFX",
+   "display": "Rifaximin"
+  },
+  {
+   "code": "RIT",
+   "display": "Ritipenem"
+  },
+  {
+   "code": "RIA",
+   "display": "Ritipenem acoxil"
+  },
+  {
+   "code": "ROK",
+   "display": "Rokitamycin"
+  },
+  {
+   "code": "ROS",
+   "display": "Rosoxacin"
+  },
+  {
+   "code": "RXT",
+   "display": "Roxithromicin"
+  },
+  {
+   "code": "SAL",
+   "display": "Salinomycin"
+  },
+  {
+   "code": "SAR",
+   "display": "Sarafloxacin"
+  },
+  {
+   "code": "SRX",
+   "display": "Sarmoxicillin"
+  },
+  {
+   "code": "SIS",
+   "display": "Sisomicin"
+  },
+  {
+   "code": "SIT",
+   "display": "Sitafloxacin"
+  },
+  {
+   "code": "SOL",
+   "display": "Solithromycin"
+  },
+  {
+   "code": "SPX",
+   "display": "Sparfloxacin"
+  },
+  {
+   "code": "SPT",
+   "display": "Spectinomycin"
+  },
+  {
+   "code": "SPI",
+   "display": "Spiramycin"
+  },
+  {
+   "code": "STR",
+   "display": "Streptomycin"
+  },
+  {
+   "code": "STH",
+   "display": "Streptomycin-High"
+  },
+  {
+   "code": "SUL",
+   "display": "Sulbactam"
+  },
+  {
+   "code": "SBC",
+   "display": "Sulbenicillin"
+  },
+  {
+   "code": "SUC",
+   "display": "Sulconazole"
+  },
+  {
+   "code": "SUP",
+   "display": "Sulfachlorpyridazine"
+  },
+  {
+   "code": "SDI",
+   "display": "Sulfadiazine"
+  },
+  {
+   "code": "SDM",
+   "display": "Sulfadimethoxine"
+  },
+  {
+   "code": "SZO",
+   "display": "Sulfamazone"
+  },
+  {
+   "code": "SUM",
+   "display": "Sulfamethazine"
+  },
+  {
+   "code": "SMX",
+   "display": "Sulfamethoxazole"
+  },
+  {
+   "code": "SNA",
+   "display": "Sulfasuccinamide"
+  },
+  {
+   "code": "SUT",
+   "display": "Sulfathiazole"
+  },
+  {
+   "code": "SOX",
+   "display": "Sulfisoxazole"
+  },
+  {
+   "code": "SSS",
+   "display": "Sulfonamides"
+  },
+  {
+   "code": "SLP",
+   "display": "Sulopenem"
+  },
+  {
+   "code": "TAL",
+   "display": "Talampicillin"
+  },
+  {
+   "code": "TLP",
+   "display": "Talmetoprim"
+  },
+  {
+   "code": "TAZ",
+   "display": "Tazobactam"
+  },
+  {
+   "code": "TZD",
+   "display": "Tedizolid"
+  },
+  {
+   "code": "TEC",
+   "display": "Teicoplanin"
+  },
+  {
+   "code": "TCM",
+   "display": "Teicoplanin-Macromethod"
+  },
+  {
+   "code": "TLV",
+   "display": "Telavancin"
+  },
+  {
+   "code": "TLT",
+   "display": "Telithromycin"
+  },
+  {
+   "code": "TMX",
+   "display": "Temafloxacin"
+  },
+  {
+   "code": "TEM",
+   "display": "Temocillin"
+  },
+  {
+   "code": "TRB",
+   "display": "Terbinafine"
+  },
+  {
+   "code": "TRC",
+   "display": "Terconazole"
+  },
+  {
+   "code": "TCY",
+   "display": "Tetracycline"
+  },
+  {
+   "code": "TET",
+   "display": "Tetroxoprim"
+  },
+  {
+   "code": "THA",
+   "display": "Thiacetazone"
+  },
+  {
+   "code": "THI",
+   "display": "Thiamphenicol"
+  },
+  {
+   "code": "TIA",
+   "display": "Tiamulin"
+  },
+  {
+   "code": "TIC",
+   "display": "Ticarcillin"
+  },
+  {
+   "code": "TCC",
+   "display": "Ticarcillin/Clavulanic acid"
+  },
+  {
+   "code": "TGC",
+   "display": "Tigecycline"
+  },
+  {
+   "code": "TBQ",
+   "display": "Tilbroquinol"
+  },
+  {
+   "code": "TIL",
+   "display": "Tilmicosin"
+  },
+  {
+   "code": "TIN",
+   "display": "Tinidazole"
+  },
+  {
+   "code": "TDC",
+   "display": "Tiodonium chloride"
+  },
+  {
+   "code": "TXC",
+   "display": "Tioxacin"
+  },
+  {
+   "code": "TIZ",
+   "display": "Tizoxanide"
+  },
+  {
+   "code": "TOB",
+   "display": "Tobramycin"
+  },
+  {
+   "code": "TFX",
+   "display": "Tosufloxacin"
+  },
+  {
+   "code": "TMP",
+   "display": "Trimethoprim"
+  },
+  {
+   "code": "SXT",
+   "display": "Trimethoprim/Sulfamethoxazole"
+  },
+  {
+   "code": "TRL",
+   "display": "Troleandomycin"
+  },
+  {
+   "code": "TRO",
+   "display": "Trospectomycin"
+  },
+  {
+   "code": "TVA",
+   "display": "Trovafloxacin"
+  },
+  {
+   "code": "TYL",
+   "display": "Tylosin"
+  },
+  {
+   "code": "VAN",
+   "display": "Vancomycin"
+  },
+  {
+   "code": "VAM",
+   "display": "Vancomycin-Macromethod"
+  },
+  {
+   "code": "VIO",
+   "display": "Viomycin"
+  },
+  {
+   "code": "VIR",
+   "display": "Virginiamycine"
+  },
+  {
+   "code": "VOR",
+   "display": "Voriconazole"
+  },
+  {
+   "code": "AZA",
+   "display": "Aztreonam/Avibactam"
+  },
+  {
+   "code": "POP",
+   "display": "Polymyxin B/Polysorbate 80"
+  },
+  {
+   "code": "SUR",
+   "display": "Surotomycin"
+  },
+  {
+   "code": "COP",
+   "display": "Colistin/Polysorbate"
+  },
+  {
+   "code": "ERV",
+   "display": "Eravacycline"
+  },
+  {
+   "code": "DLM",
+   "display": "Delamanid"
+  },
+  {
+   "code": "BDQ",
+   "display": "Bedaquiline"
+  },
+  {
+   "code": "FOV",
+   "display": "Cefovecin"
+  },
+  {
+   "code": "GAM",
+   "display": "Gamithromycin"
+  },
+  {
+   "code": "KAC",
+   "display": "Kanamycin/Cephalexin"
+  },
+  {
+   "code": "TIP",
+   "display": "Tildipirosin"
+  },
+  {
+   "code": "PRA",
+   "display": "Pradofloxacin"
+  },
+  {
+   "code": "TUL",
+   "display": "Tulathromycin"
+  },
+  {
+   "code": "TVN",
+   "display": "Tylvalosin"
+  },
+  {
+   "code": "AKF",
+   "display": "Amikacin/Fosfomycin"
+  },
+  {
+   "code": "CDZ",
+   "display": "Cadazolid"
+  },
+  {
+   "code": "FPT",
+   "display": "Cefepime/Tazobactam"
+  },
+  {
+   "code": "DFX",
+   "display": "Delafloxacin"
+  },
+  {
+   "code": "GEP",
+   "display": "Gepotidacin"
+  },
+  {
+   "code": "IMR",
+   "display": "Imipenem/Relebactam"
+  },
+  {
+   "code": "LMU",
+   "display": "Lefamulin"
+  },
+  {
+   "code": "LND",
+   "display": "Levonadifloxacin"
+  },
+  {
+   "code": "SEC",
+   "display": "Secnidazole"
+  },
+  {
+   "code": "ISV",
+   "display": "Isavuconazole"
+  },
+  {
+   "code": "MEV",
+   "display": "Meropenem/Vaborbactam"
+  },
+  {
+   "code": "ZWK",
+   "display": "Nafithromycin"
+  },
+  {
+   "code": "PEX",
+   "display": "Pexiganan"
+  },
+  {
+   "code": "RET",
+   "display": "Retapamulin"
+  },
+  {
+   "code": "RPT",
+   "display": "Rifapentine"
+  },
+  {
+   "code": "FDC",
+   "display": "Cefiderocol"
+  },
+  {
+   "code": "FPZ",
+   "display": "Cefepime/Zidebactam"
+  },
+  {
+   "code": "ZID",
+   "display": "Zidebactam"
+  },
+  {
+   "code": "RDZ",
+   "display": "Ridinilazole"
+  },
+  {
+   "code": "TBP",
+   "display": "Tebipenem"
+  },
+  {
+   "code": "MNC",
+   "display": "Meropenem/Nacubactam"
+  },
+  {
+   "code": "NAC",
+   "display": "Nacubactam"
+  },
+  {
+   "code": "ITR",
+   "display": "Itraconazole"
+  },
+  {
+   "code": "BPR",
+   "display": "Ceftobiprole"
+  },
+  {
+   "code": "ZFD",
+   "display": "Zoliflodacin"
+  },
+  {
+   "code": "OZN",
+   "display": "Ozenoxacin"
+  },
+  {
+   "code": "EXE",
+   "display": "Exebacase"
+  },
+  {
+   "code": "ANC",
+   "display": "Aztreonam/Nacubactam"
+  },
+  {
+   "code": "FNC",
+   "display": "Cefepime/Nacubactam"
+  },
+  {
+   "code": "IBX",
+   "display": "Ibrexafungerp"
+  },
+  {
+   "code": "MGX",
+   "display": "Manogepix"
+  },
+  {
+   "code": "RZF",
+   "display": "Rezafungin"
+  },
+  {
+   "code": "CLB",
+   "display": "Ceftibuten/Ledaborbactam"
+  },
+  {
+   "code": "CBA",
+   "display": "Ceftibuten/Avibactam"
+  },
+  {
+   "code": "XEM",
+   "display": "Meropenem/Xeruborbactam"
+  },
+  {
+   "code": "AMO",
+   "display": "Amorolfine"
+  },
+  {
+   "code": "SUD",
+   "display": "Sulbactam-durlobactam"
+  },
+  {
+   "code": "FPE",
+   "display": "Cefepime/Enmetazobactam"
+  },
+  {
+   "code": "FTB",
+   "display": "Cefepime/Taniborbactam"
+  },
+  {
+   "code": "DUR",
+   "display": "Durlobactam"
+  },
+  {
+   "code": "CBX",
+   "display": "Ceftibuten/Xeruborbactam"
+  }
+ ]
+}

@@ -1,0 +1,198 @@
+{
+  "eyebrow": "Integrated surveillance",
+  "title": "One Health workbench",
+  "purposeLoading": "Loading local governance status.",
+  "purposeSignIn": "Authenticated, role-gated capture for human, animal, food and environmental AMR surveillance.",
+  "purpose": "Capture and coordinate human, animal, environmental, food-chain, stewardship, IPC and genomic signals through auditable modules.",
+  "loadingIdentity": "Checking One Health identity…",
+  "loadingModules": "Loading One Health modules…",
+  "loadingModule": "Loading One Health module…",
+  "identityNotice": {
+    "title": "Local identity",
+    "body": "Passwords are PBKDF2-SHA256 hashed. The active session is memory-only and expires after inactivity."
+  },
+  "fields": {
+    "username": "Username",
+    "password": "Password",
+    "confirmPassword": "Confirm password",
+    "temporaryPassword": "Temporary password",
+    "usernameHint": "3–64 characters: letters, digits, dot, underscore or hyphen.",
+    "qualityStatus": "Quality status",
+    "sensitivity": "Sensitivity",
+    "linkedEvent": "Linked event",
+    "noLinkedEvent": "No linked event",
+    "owner": "Owner",
+    "dueDate": "Due date",
+    "priority": "Priority",
+    "initialEvidence": "Initial evidence",
+    "evidence": "Evidence",
+    "status": "Status",
+    "decision": "Decision",
+    "reviewNote": "Review note",
+    "actionTitle": "Title",
+    "doesNotMatch": "Does not match"
+  },
+  "hints": {
+    "reviewerStatus": "Reviewer-authorised status.",
+    "draftStatus": "Data-entry users save drafts for review.",
+    "temporaryPassword": "Minimum {{minimum}} characters — {{entered}} entered; communicate out of band.",
+    "moreNeeded": "{{count}} more needed",
+    "closureEvidence": "Closure requires evidence; other updates may also append evidence."
+  },
+  "sensitivityOptions": {
+    "restricted": "Restricted",
+    "internal": "Internal",
+    "aggregateOnly": "Aggregate only"
+  },
+  "reviewOptions": {
+    "reviewed": "Reviewed",
+    "dismissed": "Dismissed",
+    "escalated": "Escalated"
+  },
+  "exports": {
+    "label": "Export projection",
+    "aggregate": "Aggregate data product",
+    "glass": "WHO GLASS-compatible JSON",
+    "animuse": "WOAH ANIMUSE-aligned JSON",
+    "infarm": "FAO InFARM-compatible JSON"
+  },
+  "modules": {
+    "tabsLabel": "One Health modules",
+    "emptyTitle": "No One Health modules available",
+    "emptyMessage": "The local module registry returned no active definitions."
+  },
+  "sensitiveCapture": {
+    "title": "Sensitive capture",
+    "body": "Direct-care and regulatory events require an administrator or steward. Your role remains read-only for this module."
+  },
+  "metrics": {
+    "locallyCalculated": "Locally calculated"
+  },
+  "records": {
+    "emptyTitle": "No events in this module",
+    "emptyMessage": "Capture the first module-specific surveillance event.",
+    "noAccessTitle": "Record access is not assigned",
+    "noAccessMessage": "This role can operate exchange only; it cannot view row-level events."
+  },
+  "alerts": {
+    "sectionTitle": "Priority alerts",
+    "sectionDescription": "Deterministic rule signals requiring human review.",
+    "fallbackRule": "Surveillance alert",
+    "fallbackMessage": "Review the linked event.",
+    "review": "Review",
+    "emptyTitle": "No open alerts",
+    "emptyMessage": "Configured rule signals will appear here for review."
+  },
+  "actions": {
+    "sectionTitle": "Corrective actions",
+    "sectionDescription": "Owned actions retain status changes and append-only closure evidence.",
+    "add": "Add action",
+    "fallbackTitle": "Corrective action",
+    "unassigned": "Unassigned",
+    "update": "Update",
+    "emptyTitle": "No corrective actions",
+    "emptyMessage": "Create an action from a reviewed event or alert."
+  },
+  "outbox": {
+    "sectionTitle": "Aggregate federation outbox",
+    "sectionDescription": "Only aggregate summaries enter this sync outbox; row-level events do not.",
+    "fallbackKey": "Aggregate package",
+    "pendingTimestamp": "Pending timestamp",
+    "emptyTitle": "Outbox is empty",
+    "emptyMessage": "Use Enqueue aggregate to prepare an approved module summary."
+  },
+  "audit": {
+    "sectionTitle": "Tamper-evident audit chain",
+    "sectionDescription": "PBKDF2 identity actions are linked by SHA-256 hashes.",
+    "verify": "Verify chain",
+    "emptyTitle": "No audit entries",
+    "emptyMessage": "Governed actions will appear here."
+  },
+  "modals": {
+    "captureTitle": "Capture {{module}} event",
+    "captureFallback": "One Health",
+    "captureDescription": "{{eventType}} · Actor {{actor}}",
+    "cancel": "Cancel",
+    "close": "Close",
+    "validateAndSave": "Validate and save",
+    "usersTitle": "Manage One Health users",
+    "usersDescription": "Administrators create local identities; passwords are never displayed again.",
+    "createUser": "Create user",
+    "createActionTitle": "Create corrective action",
+    "createActionDescription": "Link to an event when possible. The authenticated actor owns this change.",
+    "createAction": "Create action",
+    "updateActionTitle": "Update corrective action",
+    "saveUpdate": "Save update",
+    "reviewAlertTitle": "Review rule alert",
+    "recordReview": "Record review"
+  },
+  "help": {
+    "governanceTitle": "One Health governance",
+    "governanceBody": "The first administrator is explicitly created on this device. AMRIT never installs or displays a default password.",
+    "title": "One Health workbench",
+    "actorBody": "Every governed mutation is bound to the authenticated main-process identity. Renderer fields cannot override the actor.",
+    "federationHeading": "Federation",
+    "federationBody": "Enqueue aggregate places only calculated summaries in the sync outbox. Named GLASS, ANIMUSE and InFARM projections are explicit local exports and are never automatically synchronized.",
+    "actionsHeading": "Actions and audit",
+    "actionsBody": "Stewards manage corrective actions; closure requires evidence. Reviewers resolve rule alerts. Auditors can independently verify the SHA-256 audit chain."
+  },
+  "toast": {
+    "checkUsername": "Check the username",
+    "checkUsernameBody": "Use 3 to 64 characters: letters, digits, dot, underscore or hyphen.",
+    "passwordShort": "Password too short",
+    "passwordShortFirst": "The first administrator needs at least {{minimum}} characters; this one has {{entered}}.",
+    "passwordShortNew": "A new identity needs at least {{minimum}} characters; this one has {{entered}}.",
+    "passwordsDiffer": "Passwords do not match",
+    "passwordsDifferBody": "Re-enter the first administrator password.",
+    "passwordRequired": "Password required",
+    "passwordRequiredBody": "Enter the password for this One Health identity.",
+    "administratorConfigured": "Administrator configured",
+    "signedIn": "Signed in",
+    "actor": "One Health actor: {{actor}}",
+    "authFailed": "Authentication failed",
+    "requiredMissing": "Required fields missing",
+    "requiredMissingBody": "Observation date and facility ID are required.",
+    "eventSaved": "One Health event saved",
+    "eventSavedBody": "{{module}} event signed by {{actor}}.",
+    "eventActorFallback": "the authenticated actor",
+    "eventSaveFailed": "Could not save One Health event",
+    "aggregateQueued": "Aggregate package queued",
+    "aggregateQueuedBody": "Approved module aggregate is ready for supervised sync.",
+    "aggregateFailed": "Could not enqueue aggregate",
+    "exportSaved": "One Health export saved",
+    "exportFailed": "Export failed",
+    "backupCreated": "Database backup created",
+    "backupFailed": "Backup failed",
+    "usersFailed": "Could not load users",
+    "roleRequired": "Select at least one role",
+    "roleRequiredBody": "An identity with no role cannot reach any One Health action.",
+    "userCreated": "One Health user created",
+    "userCreatedBody": "Password was hashed with PBKDF2 and was not stored as plaintext.",
+    "userCreateFailed": "Could not create user",
+    "actionCreated": "Corrective action created",
+    "actionCreatedBody": "The authenticated actor was recorded in the audit chain.",
+    "actionCreateFailed": "Could not create action",
+    "actionUpdated": "Action updated",
+    "actionUpdatedBody": "Status and evidence were appended to the audit trail.",
+    "actionUpdateFailed": "Could not update action",
+    "alertReviewed": "Alert reviewed",
+    "alertReviewedBody": "Reviewer identity and time were recorded.",
+    "alertReviewFailed": "Could not review alert",
+    "auditVerified": "Audit chain verified",
+    "auditProblem": "Audit chain problem",
+    "auditVerifyFailed": "Could not verify audit chain",
+    "auditIntact": "{{count}} entries are linked and intact.",
+    "auditBroken": "Break detected at entry {{entry}}."
+  },
+  "buttons": {
+    "users": "Users",
+    "backup": "Backup",
+    "signOut": "Sign out",
+    "refresh": "Refresh",
+    "export": "Export",
+    "enqueue": "Enqueue aggregate",
+    "captureEvent": "Capture event",
+    "createAdministrator": "Create administrator",
+    "signIn": "Sign in"
+  }
+}

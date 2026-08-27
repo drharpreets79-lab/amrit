@@ -1,0 +1,74 @@
+[
+  {
+    "outputFile": "StructureDefinition-AmritCondition.json",
+    "fshName": "AmritCondition",
+    "fshType": "Profile",
+    "fshFile": "profiles.fsh",
+    "startLine": 95,
+    "endLine": 107
+  },
+  {
+    "outputFile": "StructureDefinition-AmritDiagnosticReport.json",
+    "fshName": "AmritDiagnosticReport",
+    "fshType": "Profile",
+    "fshFile": "profiles.fsh",
+    "startLine": 109,
+    "endLine": 123
+  },
+  {
+    "outputFile": "StructureDefinition-AmritMeasure.json",
+    "fshName": "AmritMeasure",
+    "fshType": "Profile",
+    "fshFile": "profiles.fsh",
+    "startLine": 133,
+    "endLine": 137
+  },
+  {
+    "outputFile": "StructureDefinition-AmritMeasureReport.json",
+    "fshName": "AmritMeasureReport",
+    "fshType": "Profile",
+    "fshFile": "profiles.fsh",
+    "startLine": 139,
+    "endLine": 143
+  },
+  {
+    "outputFile": "StructureDefinition-AmritOrganismObservation.json",
+    "fshName": "AmritOrganismObservation",
+    "fshType": "Profile",
+    "fshFile": "profiles.fsh",
+    "startLine": 50,
+    "endLine": 69
+  },
+  {
+    "outputFile": "StructureDefinition-AmritOrganization.json",
+    "fshName": "AmritOrganization",
+    "fshType": "Profile",
+    "fshFile": "profiles.fsh",
+    "startLine": 125,
+    "endLine": 131
+  },
+  {
+    "outputFile": "StructureDefinition-AmritPatient.json",
+    "fshName": "AmritPatient",
+    "fshType": "Profile",
+    "fshFile": "profiles.fsh",
+    "startLine": 81,
+    "endLine": 93
+  },
+  {
+    "outputFile": "StructureDefinition-AmritSpecimen.json",
+    "fshName": "AmritSpecimen",
+    "fshType": "Profile",
+    "fshFile": "profiles.fsh",
+    "startLine": 71,
+    "endLine": 79
+  },
+  {
+    "outputFile": "StructureDefinition-AmritSusceptibilityObservation.json",
+    "fshName": "AmritSusceptibilityObservation",
+    "fshType": "Profile",
+    "fshFile": "profiles.fsh",
+    "startLine": 20,
+    "endLine": 48
+  }
+]

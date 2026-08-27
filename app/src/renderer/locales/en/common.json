@@ -1,0 +1,79 @@
+{
+  "help": "Help",
+  "cancel": "Cancel",
+  "save": "Save",
+  "search": "Search",
+  "searchPlaceholder": "Search…",
+  "selectPlaceholder": "Select…",
+  "custom": "Custom…",
+  "customValue": "{{label}} — custom value",
+  "clearAll": "Clear all",
+  "add": "Add",
+  "tryAgain": "Try again",
+  "closeDialog": "Close dialog",
+  "closeHelp": "Close help",
+  "contextualHelp": "Contextual help",
+  "loading": "Loading data…",
+  "pleaseWait": "Please wait a moment.",
+  "somethingNeedsAttention": "Something needs attention",
+  "unexpectedError": "An unexpected error occurred.",
+  "combobox": {
+    "clear": "Clear {{label}}",
+    "noMatch": "Nothing in the catalogue matches “{{query}}”.",
+    "useTyped": "Press Enter to record “{{value}}” as typed.",
+    "more": "…and {{count}} more. Keep typing to narrow the list."
+  },
+  "dateField": {
+    "open": "Open the calendar for {{label}}"
+  },
+  "countrySelect": {
+    "placeholder": "Search countries by name or ISO code…",
+    "hint": "The ISO 3166-1 alpha-3 code is stored with the name."
+  },
+  "multiSelect": {
+    "placeholder": "Search, or paste codes separated by commas…",
+    "empty": "Nothing selected yet.",
+    "remove": "Remove {{label}}",
+    "options": "{{label}} options",
+    "noMatch": "No catalogue entry matches “{{query}}”.",
+    "notInCatalogue": "Not in the catalogue: {{values}}",
+    "prompt": "Start typing to search {{count}} catalogue entries, or paste a list of codes and press Enter.",
+    "selected": "{{count}} selected.",
+    "selectedShowing": "{{count}} selected · showing {{visible}} of {{matches}} catalogue entries.",
+    "search": "Search {{label}}"
+  },
+  "table": {
+    "emptyTitle": "No records found",
+    "emptyMessage": "Try adjusting the filters or add a new record.",
+    "pages": "Table pages",
+    "previousPage": "Previous page",
+    "nextPage": "Next page",
+    "pageOf": "Page <1>{{page}}</1> of {{pageCount}}"
+  },
+  "toast": {
+    "dismiss": "Dismiss notification"
+  },
+  "schemaHints": {
+    "tooShort": "must be at least {{count}} characters long",
+    "tooLong": "must be at most {{count}} characters long",
+    "invalidPattern": "contains characters that are not allowed",
+    "required": "is required",
+    "invalidOption": "is not one of the accepted values"
+  },
+  "editor": {
+    "selected": "{{count}} selected",
+    "namePriorityStatus": "Name, priority and status",
+    "previous": "Previous",
+    "next": "Next",
+    "requirement": "Requirement",
+    "optionGroup": "Option group",
+    "order": "Order",
+    "fromSource": "{{value}} (from source)",
+    "add": "Add {{item}}",
+    "addProperty": "Add property",
+    "noneRecorded": "No {{item}} recorded.",
+    "noProperties": "No additional properties recorded.",
+    "notSet": "Not set",
+    "back": "Back"
+  }
+}

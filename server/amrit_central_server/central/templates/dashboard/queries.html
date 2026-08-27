@@ -1,0 +1,80 @@
+{% extends "dashboard/base.html" %}
+{% block title %}Queries · AMRIT Central{% endblock %}
+
+{% block content %}
+<div class="flex flex-wrap items-end justify-between gap-3 mb-6">
+  <div>
+    <h1 class="text-2xl font-semibold tracking-tight text-slate-900">Aggregate Queries</h1>
+    <p class="text-sm text-slate-500 mt-1">Queries dispatched to AMRIT sites; aggregate, de-identified results only.</p>
+  </div>
+</div>
+
+<form method="get" class="bg-white rounded-xl border border-slate-200 shadow-sm p-4 mb-6 flex flex-wrap gap-3 items-end">
+  <div>
+    <label class="block text-xs uppercase tracking-wider text-slate-500 mb-1">Status</label>
+    <select name="status" class="rounded-md border border-slate-300 px-3 py-2 text-sm">
+      <option value="">All</option>
+      {% for code, label in status_choices %}
+        <option value="{{ code }}" {% if status == code %}selected{% endif %}>{{ label }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  <div>
+    <label class="block text-xs uppercase tracking-wider text-slate-500 mb-1">Type</label>
+    <select name="type" class="rounded-md border border-slate-300 px-3 py-2 text-sm">
+      <option value="">All</option>
+      {% for code, label in type_choices %}
+        <option value="{{ code }}" {% if qtype == code %}selected{% endif %}>{{ label }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  <button class="px-4 py-2 rounded-md bg-brand-navy-700 text-white text-sm font-semibold hover:bg-brand-navy-800">Filter</button>
+  {% if status or qtype %}<a href="{% url 'dashboard_queries' %}" class="px-3 py-2 text-sm text-slate-600 hover:text-slate-900">Reset</a>{% endif %}
+</form>
+
+<div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-x-auto">
+  <table class="min-w-full text-sm">
+    <thead class="bg-slate-50 text-slate-500 text-xs uppercase tracking-wider">
+      <tr>
+        <th class="text-left px-5 py-2 font-medium">Title / Type</th>
+        <th class="text-left px-5 py-2 font-medium">Status</th>
+        <th class="text-left px-5 py-2 font-medium">Antibiotic</th>
+        <th class="text-left px-5 py-2 font-medium">Targets</th>
+        <th class="text-left px-5 py-2 font-medium">Dispatch</th>
+        <th class="text-left px-5 py-2 font-medium">Results</th>
+        <th class="text-left px-5 py-2 font-medium">Created</th>
+        <th class="text-left px-5 py-2 font-medium">Expires</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-slate-100">
+      {% for q in queries %}
+        <tr>
+          <td class="px-5 py-2">
+            <div class="font-medium text-slate-800">{{ q.title|default:"—" }}</div>
+            <div class="text-xs text-slate-500 font-mono">{{ q.type }}</div>
+          </td>
+          <td class="px-5 py-2">
+            <span class="inline-block px-2 py-0.5 rounded text-xs
+              {% if q.status == 'completed' %}bg-emerald-50 text-emerald-700
+              {% elif q.status == 'error' %}bg-rose-50 text-rose-700
+              {% elif q.status == 'expired' or q.status == 'cancelled' %}bg-slate-100 text-slate-600
+              {% else %}bg-brand-blue-50 text-brand-blue-700{% endif %}">
+              {{ q.get_status_display }}
+            </span>
+          </td>
+          <td class="px-5 py-2 text-xs font-mono text-slate-700">{{ q.antibiotic_code|default:"—" }}</td>
+          <td class="px-5 py-2 text-xs text-slate-600">
+            {% if q.target_lab_codes %}{{ q.target_lab_codes|length }} site{{ q.target_lab_codes|length|pluralize }}{% else %}<span class="text-slate-400">all active</span>{% endif %}
+          </td>
+          <td class="px-5 py-2 text-xs font-mono text-slate-700">{{ q.dispatch_count }}</td>
+          <td class="px-5 py-2 text-xs font-mono text-slate-700">{{ q.result_count }}</td>
+          <td class="px-5 py-2 text-xs text-slate-600 font-mono">{{ q.created_at|date:"Y-m-d H:i" }}</td>
+          <td class="px-5 py-2 text-xs text-slate-600 font-mono">{% if q.expires_at %}{{ q.expires_at|date:"Y-m-d H:i" }}{% else %}—{% endif %}</td>
+        </tr>
+      {% empty %}
+        <tr><td colspan="8" class="px-5 py-8 text-center text-slate-500">No queries match.</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

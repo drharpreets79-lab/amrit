@@ -1,0 +1,44 @@
+# AMRIT FHIR Implementation Guide — SUSHI configuration.
+#
+# Phase 25. The canonical is `https://amrit.invalid`, and that is deliberate rather than a
+# placeholder left behind: `.invalid` is reserved by RFC 2606 and can never resolve, so an
+# unpublished IG cannot be mistaken for a published one. A deployment that publishes this IG
+# sets its own canonical here and the same value in `identifier_namespace.base_uri`, which is
+# what the runtime stamps into `meta.profile` — the two are the same string by construction.
+id: amrit.fhir
+canonical: https://amrit.invalid
+name: AMRITImplementationGuide
+title: AMRIT Implementation Guide
+description: >-
+  Profiles, value sets and concept maps for the resources AMRIT emits from antimicrobial
+  resistance surveillance: susceptibility observations, organism identification, specimens,
+  coded diagnoses, microbiology reports and the aggregate measures that cross a federation
+  wire. The value sets and concept maps are generated from the same terminology seed the
+  exporter binds with, so the guide and the runtime cannot disagree.
+status: draft
+version: 0.1.0
+fhirVersion: 4.0.1
+copyrightYear: 2026+
+releaseLabel: ci-build
+publisher:
+  name: AMRIT
+license: CC0-1.0
+dependencies: {}
+parameters:
+  show-inherited-invariants: false
+  # Four of AMRIT's code systems are identified by URN rather than by a URL under this
+  # guide's canonical, and the publisher errors on each of them twice — *"the canonical URL
+  # (https://amrit.invalid/CodeSystem/whonet-organism-code) does not match the URL
+  # (urn:whonet:organism-code)"*. Those nine errors are the whole of the IG's error count.
+  #
+  # The URNs are kept and the rule is waived, rather than the other way round, because these
+  # are the strings AMRIT actually puts on the wire: `services.ts` stamps
+  # `urn:whonet:organism-code` on every organism observation and `urn:amrit:terminology-note`
+  # on every bundle tag. Renaming them here would leave the guide describing code systems no
+  # message uses, which is the one failure mode Phase 25 exists to prevent. `special-url` is
+  # the publisher's own escape hatch for exactly this case, named in its own error text.
+  special-url:
+    - urn:whonet:antibiotic-code
+    - urn:whonet:organism-code
+    - urn:whonet:specimen-code
+    - urn:amrit:terminology-note

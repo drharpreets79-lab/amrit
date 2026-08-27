@@ -1,0 +1,412 @@
+# AMRIT continuous integration — Phase 16 of docs/expansion/PLAN.md
+#
+# Before this file existed the repository had no CI at all, and macOS was the only platform
+# either product had ever been built on, despite `electron-builder` declaring Windows and
+# Linux targets. Three phases of work also reached "done" without being committed. Both
+# failures have the same cause and the same fix: nothing was checked automatically.
+#
+# What is gated here:
+#
+#   gates    the shared-vendoring, licence and country-neutrality checks that were run by
+#            hand until now
+#   app      TypeScript, lint and the desktop test suite on all three desktop platforms,
+#            under both the IN and TESTLAND country profiles
+#   package  a real electron-builder run per platform, uploaded, so a Windows regression is
+#            visible the day it lands rather than the day a user hits it
+#   server   the Django suite and the end-to-end smoke flow under both profiles
+#   audit    Python dependency audit and the OpenAPI schema
+#   docker   the server image actually builds
+#
+# A platform not tested here is not supported. Say so in the documentation before adding
+# one to `electron-builder`.
+
+name: CI
+
+on:
+  push:
+    branches: [master, main, 'phase-*']
+  pull_request:
+  workflow_dispatch:
+
+# Nothing in this workflow writes to the repository: it checks, builds and uploads
+# artefacts. The default token grants write, so it is narrowed here rather than trusted.
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  NODE_VERSION: '22'
+  PNPM_VERSION: '11.21.0'
+  PYTHON_VERSION: '3.13'
+
+jobs:
+  # ---------------------------------------------------------------------------
+  gates:
+    name: Repository gates
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      # shared/ is vendored into both products. Editing a vendored copy instead of the
+      # source is the mistake this catches.
+      - name: shared/ vendored copies in sync
+        run: python3 tools/sync_shared.py --check
+
+      - name: Reference-data licences recorded
+        run: python3 tools/check_data_licences.py
+
+      # No country's own values in code both countries run.
+      - name: Country-neutral
+        run: python3 tools/check_country_neutral.py
+
+      # The terminology seed, the classifications it was built from, and the IG resources
+      # generated out of it. These live here rather than in the desktop matrix for two
+      # reasons: they are platform-independent, so running them on six matrix legs would buy
+      # nothing; and the matrix has no Python, so `python3` on a Windows runner is not a
+      # command at all. That is a defect this workflow shipped with and Phase 16 found by
+      # reading it rather than by a Windows run, which has still never happened.
+      - name: Terminology and IG resources in sync
+        run: |
+          python3 tools/fetch_icd11.py --check
+          python3 tools/fetch_icd10.py --check
+          python3 tools/generate_terminology_seed.py --check
+          python3 tools/generate_ig_valuesets.py --check
+
+  # ---------------------------------------------------------------------------
+  app:
+    name: Desktop ${{ matrix.os }} · profile ${{ matrix.profile }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        profile: [IN, TESTLAND]
+    env:
+      AMRIT_COUNTRY_PROFILE: ${{ matrix.profile }}
+    defaults:
+      run:
+        working-directory: app
+    steps:
+      # The geographic directory plus a deep runner path exceeds the 260-character limit
+      # on Windows unless long paths are enabled before the checkout.
+      - name: Enable long paths (Windows)
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: git config --global core.longpaths true
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: ${{ env.PNPM_VERSION }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: pnpm
+          cache-dependency-path: app/pnpm-lock.yaml
+
+      - name: Install
+        run: pnpm install --frozen-lockfile
+
+      # tsc + eslint --max-warnings=0. Run on every platform: path handling and
+      # case-sensitivity differ, and this is where that shows up first.
+      - name: Typecheck and lint
+        run: pnpm run check
+
+      # The ICD-11 check is offline: it reads the committed cache and asserts every code
+      # carries a WHO title. Re-fetching needs WHO API credentials and is done deliberately
+      # by a human, not on every push.
+      - name: Reference corpus matches the exporter
+        run: npx jiti scripts/generate-reference-corpus.ts --check
+
+      - name: Test
+        run: pnpm test
+
+      # The reduced benchmark grid. Not a performance gate and not a source of published
+      # numbers: it runs a handful of cells on one background rate so that a change which
+      # breaks a detector, the calibration or the matching rule fails here on the day it
+      # lands rather than at Phase 34. The full grid is 960 cells and is run deliberately,
+      # not on every push. Linux only -- the arithmetic is platform-independent and the
+      # matrix is there to catch path and line-ending problems, which this cannot.
+      - name: Benchmark (reduced grid)
+        if: runner.os == 'Linux'
+        run: pnpm benchmark -- --out benchmark-out --reduced --types clonal-multidrug
+
+      # The Phase 31 ablation, bounded to one site and half a year so it costs under a minute.
+      # Same purpose as the grid above and not a source of numbers: it fails the day a component
+      # stops being switchable off, or the day PACE stops being the control arm with everything
+      # off. Its endpoints are meaningless at this size and the report says so.
+      - name: Benchmark (PACE ablation, bounded)
+        if: runner.os == 'Linux'
+        run: >-
+          pnpm benchmark -- --out ablation-out --ablation --reduced
+          --types clonal-multidrug --sites 1 --window-days 180 --null-replicates 2
+
+      - name: Upload benchmark report
+        if: runner.os == 'Linux'
+        uses: actions/upload-artifact@v4
+        with:
+          name: benchmark-reduced
+          path: |
+            app/benchmark-out/
+            app/ablation-out/
+          if-no-files-found: error
+
+  # ---------------------------------------------------------------------------
+  package:
+    name: Package ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    needs: app
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    defaults:
+      run:
+        working-directory: app
+    steps:
+      - name: Enable long paths (Windows)
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: git config --global core.longpaths true
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: ${{ env.PNPM_VERSION }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: pnpm
+          cache-dependency-path: app/pnpm-lock.yaml
+
+      - name: Install
+        run: pnpm install --frozen-lockfile
+
+      - name: Build renderer and main
+        run: pnpm run build
+
+      # --dir, not a full installer: unsigned artefacts are for catching build breakage,
+      # not for distribution. Signing lands with Phase 21.
+      - name: Package (unsigned)
+        run: pnpm exec electron-builder --dir
+        env:
+          CSC_IDENTITY_AUTO_DISCOVERY: 'false'
+
+      # An unpacked `--dir` tree is ~380 MB per platform (measured on macOS arm64), so the
+      # build runs on every commit but only a push to the trunk keeps the output. The value
+      # of the step is that packaging breaks loudly; retaining every branch's copy is not
+      # worth the storage.
+      - uses: actions/upload-artifact@v4
+        if: github.event_name == 'push' && (github.ref_name == 'master' || github.ref_name == 'main')
+        with:
+          name: amrit-desktop-${{ matrix.os }}
+          path: app/release/
+          retention-days: 14
+          if-no-files-found: error
+
+  # ---------------------------------------------------------------------------
+  server:
+    name: Server · profile ${{ matrix.profile }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        profile: [IN, TESTLAND]
+    defaults:
+      run:
+        working-directory: server/amrit_central_server
+    env:
+      DJANGO_SECRET_KEY: ci-only-not-a-real-secret
+      AMRIT_COUNTRY_PROFILE: ${{ matrix.profile }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: pip
+          cache-dependency-path: server/amrit_central_server/requirements.txt
+
+      - name: Install
+        run: pip install -r requirements.txt
+
+      - name: Django checks
+        run: python manage.py check
+
+      - name: Migrations are complete
+        run: python manage.py makemigrations --check --dry-run
+
+      - name: Test
+        run: python manage.py test
+
+      # smoke_e2e.py talks to a real database rather than a test one, and every *.sqlite3
+      # is gitignored, so a fresh checkout has nothing to talk to. Locally it appeared to
+      # pass only because a migrated smoke.sqlite3 was already sitting in the tree.
+        env:
+          DATABASE_URL: sqlite:///./ci-smoke.sqlite3
+
+      # The end-to-end flow: enrol a site, dispatch a query, poll, post an aggregate,
+      # and prove the PII guard refuses a payload carrying a patient identifier.
+      # No `manage.py migrate` step before this. There used to be one, added when Phase 16
+      # found that this script needed a migrated database — but it migrated `db.sqlite3`, the
+      # settings default, while the script points `DATABASE_URL` at `smoke.sqlite3`. The
+      # workflow looked fixed and a clean checkout still failed. The script now migrates its
+      # own database, which cannot drift from what the script actually opens.
+      - name: Smoke
+        run: python smoke_e2e.py
+        env:
+          DATABASE_URL: sqlite:///./ci-smoke.sqlite3
+
+  # ---------------------------------------------------------------------------
+  audit:
+    name: Dependency audit and OpenAPI
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: server/amrit_central_server
+    env:
+      DJANGO_SECRET_KEY: ci-only-not-a-real-secret
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install
+        run: |
+          pip install -r requirements.txt
+          pip install pip-audit
+
+      # Reports, does not fail the build: a new advisory against a pinned transitive
+      # dependency should be seen the day it lands, not block every unrelated commit. It
+      # becomes a merge gate when someone owns the response.
+      # `|| true` used to swallow the outcome entirely, which made this a step rather than a
+      # gate: a tool crash and a clean audit looked identical. The advisories themselves stay
+      # non-blocking — most are transitive and unfixable on the day they appear — but they are
+      # written to an artefact and counted, so "no advisories" and "the audit did not run" are
+      # different states in the log.
+      - name: Python dependency audit
+        run: |
+          pip-audit --requirement requirements.txt --format json --output /tmp/pip-audit.json \
+            || echo "pip-audit reported advisories; see the uploaded report"
+          python3 - <<'AUDIT'
+          import json, pathlib, sys
+          path = pathlib.Path('/tmp/pip-audit.json')
+          if not path.is_file():
+              sys.exit('FAIL - pip-audit produced no report at all, so nothing was audited.')
+          report = json.loads(path.read_text())
+          found = sum(len(entry.get('vulns', [])) for entry in report.get('dependencies', []))
+          print(f'{found} advisory/advisories across {len(report.get("dependencies", []))} dependencies')
+          AUDIT
+
+      - name: OpenAPI schema generates
+        run: python manage.py spectacular --file /tmp/openapi.yaml --validate
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: openapi-schema
+          path: /tmp/openapi.yaml
+          retention-days: 14
+
+  # ---------------------------------------------------------------------------
+  # Phase 25. The line the phase exists for: "the official HL7 FHIR validator runs in CI
+  # against a reference corpus, and zero errors is a merge gate. This converts 'we support
+  # FHIR' into a build that fails when we stop."
+  #
+  # Two gates, and they catch different things. The validator checks the corpus against the
+  # base spec, the AMRIT profiles and the real terminology server. The IG Publisher additionally
+  # applies business rules the validator does not reach — it was the publisher, not the
+  # validator, that found `measureScore` carrying a UCUM `%` on a proportion measure, and a
+  # stratifier the report declared and the measure did not.
+  #
+  # Both need a network. That is deliberate: the LOINC and UCUM codes AMRIT emits are checked
+  # against tx.fhir.org rather than against our own copy of it.
+  fhir:
+    name: FHIR IG and validator
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      # ~180 MB for the validator and a few hundred more for the FHIR packages. Keyed on the
+      # pinned validator version so a deliberate bump busts the cache and nothing else does.
+      - name: Cache the validator and FHIR packages
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/amrit/fhir-validator
+            ~/.fhir/packages
+          key: fhir-tools-${{ runner.os }}-${{ hashFiles('tools/validate_fhir_corpus.py') }}
+
+      # Gate one. Fails on any error; warnings are printed and reviewed in PHASE_STATUS.md.
+      - name: Official HL7 validator on the reference corpus
+        run: python3 tools/validate_fhir_corpus.py
+
+      # The publisher shells out to `sushi` and `jekyll` by name, so both must be on PATH.
+      # Jekyll needs Ruby >= 3.0: the ffi gem refuses to install on anything older, which is
+      # what blocked this build on a developer machine still using the system Ruby 2.6.
+      - name: Install the IG toolchain
+        run: |
+          gem install jekyll --no-document
+          npm install --prefix fhir-ig
+
+      - name: Build the IG
+        run: |
+          export PATH="$PWD/fhir-ig/node_modules/.bin:$PATH"
+          curl -sSL -o /tmp/publisher.jar \
+            https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar
+          java -jar /tmp/publisher.jar -ig fhir-ig
+
+      # Gate two. `qa.json` carries the counts the publisher printed; `errs` must be zero.
+      # Warnings are reported, not gated — the accepted ones and the reason for each are in
+      # fhir-ig/input/ignoreWarnings.txt, which the publisher itself applies.
+      - name: IG builds with zero errors
+        run: |
+          python3 - <<'PY'
+          import json, sys
+          qa = json.load(open('fhir-ig/output/qa.json'))
+          print(f"errors={qa['errs']} warnings={qa['warnings']} hints={qa['hints']}")
+          if qa['errs']:
+              sys.exit(f"FAIL - the IG has {qa['errs']} error(s). Zero errors is the gate.")
+          PY
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fhir-ig-qa
+          path: |
+            fhir-ig/output/qa.html
+            fhir-ig/output/qa.json
+            fhir-ig/output/qa-eslintcompact.txt
+          if-no-files-found: warn
+          retention-days: 14
+
+  # ---------------------------------------------------------------------------
+  docker:
+    name: Server image builds
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/setup-buildx-action@v3
+      - uses: docker/build-push-action@v6
+        with:
+          context: server/amrit_central_server
+          file: server/amrit_central_server/Dockerfile
+          push: false
+          load: false
+          cache-from: type=gha
+          cache-to: type=gha,mode=max

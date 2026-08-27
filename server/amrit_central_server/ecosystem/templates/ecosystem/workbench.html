@@ -1,0 +1,30 @@
+{% extends "dashboard/base.html" %}
+{% block title %}National AMR Ecosystem · AMRIT{% endblock %}
+{% block content %}
+<div class="flex flex-wrap items-end justify-between gap-4 mb-7">
+  <div><p class="text-xs font-bold uppercase tracking-[.2em] text-brand-accent">One Health control plane</p>
+    <h1 class="text-3xl font-extrabold text-brand-navy mt-1">National AMR Ecosystem</h1>
+    <p class="text-slate-600 mt-2">Aggregate data products, joint signals, programme delivery and governed access.</p></div>
+  <a href="{% url 'ecosystem_public' %}" class="px-4 py-2 rounded-lg bg-brand-navy text-white font-semibold">Transparency portal</a>
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-5 gap-4 mb-8">
+{% for label,value in stats %}{% endfor %}
+  <div class="stat-card bg-white rounded-xl border p-5"><div class="text-3xl font-bold text-brand-navy">{{ product_count }}</div><div class="text-sm text-slate-500">Data products</div></div>
+  <div class="stat-card bg-white rounded-xl border p-5"><div class="text-3xl font-bold text-brand-navy">{{ site_count }}</div><div class="text-sm text-slate-500">Reporting sites</div></div>
+  <div class="stat-card bg-white rounded-xl border p-5"><div class="text-3xl font-bold text-brand-accent">{{ open_alerts }}</div><div class="text-sm text-slate-500">Open alerts</div></div>
+  <div class="stat-card bg-white rounded-xl border p-5"><div class="text-3xl font-bold text-brand-navy">{{ milestone_count }}</div><div class="text-sm text-slate-500">NAP milestones</div></div>
+  <div class="stat-card bg-white rounded-xl border p-5"><div class="text-3xl font-bold text-brand-navy">{{ pending_access }}</div><div class="text-sm text-slate-500">Access reviews</div></div>
+</div>
+<div class="grid lg:grid-cols-3 gap-6">
+  <section class="lg:col-span-2 bg-white border rounded-xl shadow-card overflow-hidden"><h2 class="font-bold text-lg p-5 border-b">Recent aggregate products</h2>
+    <div class="overflow-x-auto"><table class="w-full text-sm"><thead class="bg-slate-50 text-left"><tr><th class="p-3">Sector</th><th>Module</th><th>Site</th><th>Records</th><th>Status</th></tr></thead><tbody>
+    {% for p in recent_products %}<tr class="border-t"><td class="p-3 font-medium">{{ p.get_sector_display }}</td><td>{{ p.module_key }}</td><td>{{ p.site.lab_code }}</td><td>{{ p.record_count }}</td><td>{{ p.status }}</td></tr>{% empty %}<tr><td colspan="5" class="p-6 text-slate-500">No products received.</td></tr>{% endfor %}
+    </tbody></table></div></section>
+  <section class="bg-white border rounded-xl shadow-card"><h2 class="font-bold text-lg p-5 border-b">Sector coverage</h2><div class="p-5 space-y-3">
+    {% for row in sector_counts %}<div class="flex justify-between"><span class="capitalize">{{ row.sector }}</span><strong>{{ row.total }}</strong></div>{% empty %}<p class="text-slate-500">No coverage yet.</p>{% endfor %}</div></section>
+</div>
+<div class="grid lg:grid-cols-2 gap-6 mt-6">
+  <section class="bg-white border rounded-xl shadow-card"><h2 class="font-bold text-lg p-5 border-b">Joint alerts</h2><div class="divide-y">{% for a in recent_alerts %}<div class="p-4"><span class="text-xs font-bold uppercase text-brand-accent">{{ a.severity }} · {{ a.sector }}</span><div class="font-semibold">{{ a.title }}</div><div class="text-sm text-slate-500">{{ a.scope_type }} {{ a.scope_value }} · {{ a.get_state_display }}</div></div>{% empty %}<p class="p-5 text-slate-500">No open alerts.</p>{% endfor %}</div></section>
+  <section class="bg-white border rounded-xl shadow-card"><h2 class="font-bold text-lg p-5 border-b">NAP-AMR delivery</h2><div class="divide-y">{% for m in milestones %}<div class="p-4"><div class="font-semibold">{{ m.objective_code }} · {{ m.title }}</div><div class="text-sm text-slate-500">{{ m.owner_organization.name }} · {{ m.status }} · due {{ m.due_at|default:"not set" }}</div></div>{% empty %}<p class="p-5 text-slate-500">No milestones configured.</p>{% endfor %}</div></section>
+</div>
+{% endblock %}

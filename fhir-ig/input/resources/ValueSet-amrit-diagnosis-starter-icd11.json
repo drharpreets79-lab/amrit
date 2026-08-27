@@ -1,0 +1,179 @@
+{
+ "resourceType": "ValueSet",
+ "id": "amrit-diagnosis-starter-icd11",
+ "url": "https://amrit.invalid/ValueSet/amrit-diagnosis-starter-icd11",
+ "name": "AmritDiagnosisStarterIcd11",
+ "title": "AMRIT diagnosis starter value set (ICD-11 MMS)",
+ "status": "active",
+ "experimental": false,
+ "description": "The same infection syndromes expressed in ICD-11 MMS, plus WHO's MG50-MG54 antimicrobial-resistance findings. Taken from WHO's own ICD API, every code confirmed to exist and confirmed to carry the concept it was requested for. No ConceptMap to the ICD-10 set is published: WHO's API exposes no mapping between the revisions, and a record states which revision it used.",
+ "compose": {
+  "include": [
+   {
+    "system": "http://id.who.int/icd/release/11/mms",
+    "concept": [
+     {
+      "code": "1A00",
+      "display": "Cholera"
+     },
+     {
+      "code": "1A02",
+      "display": "Intestinal infections due to Shigella"
+     },
+     {
+      "code": "1A03",
+      "display": "Intestinal infections due to Escherichia coli"
+     },
+     {
+      "code": "1A04",
+      "display": "Intestinal infections due to Clostridioides difficile"
+     },
+     {
+      "code": "1A06",
+      "display": "Gastroenteritis due to Campylobacter"
+     },
+     {
+      "code": "1A07",
+      "display": "Typhoid fever"
+     },
+     {
+      "code": "1A09",
+      "display": "Infections due to other Salmonella"
+     },
+     {
+      "code": "1A0Z",
+      "display": "Bacterial intestinal infections, unspecified"
+     },
+     {
+      "code": "1A40",
+      "display": "Gastroenteritis or colitis without specification of infectious agent"
+     },
+     {
+      "code": "1B10",
+      "display": "Tuberculosis of the respiratory system"
+     },
+     {
+      "code": "1B1Z",
+      "display": "Tuberculosis, unspecified"
+     },
+     {
+      "code": "1B70",
+      "display": "Bacterial cellulitis, erysipelas or lymphangitis"
+     },
+     {
+      "code": "1B72",
+      "display": "Impetigo"
+     },
+     {
+      "code": "1B7Y",
+      "display": "Other specified pyogenic bacterial infection of skin or subcutaneous tissue"
+     },
+     {
+      "code": "1C1C",
+      "display": "Meningococcal disease"
+     },
+     {
+      "code": "1D00",
+      "display": "Infectious encephalitis, not elsewhere classified"
+     },
+     {
+      "code": "1D01",
+      "display": "Infectious meningitis, not elsewhere classified"
+     },
+     {
+      "code": "1D01.0Z",
+      "display": "Bacterial meningitis, unspecified"
+     },
+     {
+      "code": "1G40",
+      "display": "Sepsis without septic shock"
+     },
+     {
+      "code": "1G41",
+      "display": "Sepsis with septic shock"
+     },
+     {
+      "code": "BB40",
+      "display": "Acute or subacute infectious endocarditis"
+     },
+     {
+      "code": "CA40",
+      "display": "Pneumonia"
+     },
+     {
+      "code": "CA42",
+      "display": "Acute bronchitis"
+     },
+     {
+      "code": "CA44",
+      "display": "Pyothorax"
+     },
+     {
+      "code": "DC12",
+      "display": "Cholecystitis"
+     },
+     {
+      "code": "DC50",
+      "display": "Peritonitis"
+     },
+     {
+      "code": "FA10",
+      "display": "Direct infections of joint"
+     },
+     {
+      "code": "FB84",
+      "display": "Osteomyelitis or osteitis"
+     },
+     {
+      "code": "GB51",
+      "display": "Acute pyelonephritis"
+     },
+     {
+      "code": "GC08",
+      "display": "Urinary tract infection, site not specified"
+     },
+     {
+      "code": "JB40.0",
+      "display": "Puerperal sepsis"
+     },
+     {
+      "code": "KA60",
+      "display": "Sepsis of fetus or newborn"
+     },
+     {
+      "code": "MA15.0",
+      "display": "Bacteraemia"
+     },
+     {
+      "code": "MG50",
+      "display": "Finding of gram negative bacteria resistant to antimicrobial drugs"
+     },
+     {
+      "code": "MG51",
+      "display": "Finding of gram positive bacteria resistant to antimicrobial drugs"
+     },
+     {
+      "code": "MG52",
+      "display": "Finding of bacteria, neither gram negative nor positive, resistant to antimicrobial drugs"
+     },
+     {
+      "code": "MG53",
+      "display": "Finding of virus resistant to antimicrobial drugs"
+     },
+     {
+      "code": "MG54",
+      "display": "Finding of fungus resistant to antimicrobial drugs"
+     },
+     {
+      "code": "NE81.2",
+      "display": "Surgical site infection"
+     },
+     {
+      "code": "QD0Z",
+      "display": "Carrier of infectious disease agent, unspecified"
+     }
+    ]
+   }
+  ]
+ }
+}

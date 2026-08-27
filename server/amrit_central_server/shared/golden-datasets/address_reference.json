@@ -1,0 +1,221 @@
+{
+  "description": "Postal-address rendering and validation fixture, shared by both runtimes. An address that renders one way on the desktop and another on the portal is the same defect as not storing it, so both products read this file and must produce these exact strings and problem codes. Expected values follow the per-country format pack (shared/address-formats/), which is the authority on what each country writes and in what order. Label expectations are the English fallback `labelFor` / `label_for` produces: the pack's own token in sentence case. The renderer translates the token instead, via the `address` catalogue, so \"pin\" appears as \"PIN code\" on screen.",
+  "cases": [
+    {
+      "name": "India puts the post town and the code on one line, the state under it, and uppercases the town",
+      "address": {
+        "country_code": "IND",
+        "address_lines": [
+          "12 Hospital Road",
+          "Ansari Nagar"
+        ],
+        "locality": "Kochi",
+        "admin_area": "Kerala",
+        "postal_code": "682011"
+      },
+      "formatted": "12 Hospital Road\nAnsari Nagar\nKOCHI 682011\nKerala",
+      "problems": []
+    },
+    {
+      "name": "Japan writes the largest unit first and leads with the postal mark",
+      "address": {
+        "country_code": "JPN",
+        "address_lines": [
+          "3-2-1 Roppongi"
+        ],
+        "admin_area": "Tokyo",
+        "postal_code": "106-0032"
+      },
+      "formatted": "〒106-0032\nTOKYO\n3-2-1 Roppongi",
+      "problems": []
+    },
+    {
+      "name": "A field the country's format cannot place is refused at entry, not lost quietly",
+      "address": {
+        "country_code": "JPN",
+        "address_lines": [
+          "3-2-1 Roppongi"
+        ],
+        "admin_area": "Tokyo",
+        "locality": "Minato-ku",
+        "postal_code": "106-0032"
+      },
+      "problems": [
+        {
+          "field": "locality",
+          "code": "unsupported"
+        }
+      ]
+    },
+    {
+      "name": "The United Arab Emirates has no postal code at all, and calls its level-1 unit an emirate",
+      "address": {
+        "country_code": "ARE",
+        "address_lines": [
+          "Al Karama"
+        ],
+        "admin_area": "Dubai"
+      },
+      "formatted": "Al Karama\nDubai",
+      "labels": {
+        "admin_area": "Emirate"
+      },
+      "problems": []
+    },
+    {
+      "name": "Ireland calls its postal code an eircode and does not insist on one",
+      "address": {
+        "country_code": "IRL",
+        "address_lines": [
+          "St James's Hospital"
+        ],
+        "locality": "Dublin",
+        "postal_code": "D08 NHY1"
+      },
+      "formatted": "St James's Hospital\nDUBLIN\nD08 NHY1",
+      "labels": {
+        "postal_code": "Eircode"
+      },
+      "problems": []
+    },
+    {
+      "name": "A postal code that does not match its country's pattern is refused",
+      "address": {
+        "country_code": "IND",
+        "address_lines": [
+          "12 Hospital Road"
+        ],
+        "locality": "Kochi",
+        "admin_area": "Kerala",
+        "postal_code": "NOT-A-PIN"
+      },
+      "problems": [
+        {
+          "field": "postal_code",
+          "code": "postal_code_pattern"
+        }
+      ]
+    },
+    {
+      "name": "An unanchored pattern would accept this, so the check anchors both ends",
+      "address": {
+        "country_code": "IND",
+        "address_lines": [
+          "12 Hospital Road"
+        ],
+        "locality": "Kochi",
+        "admin_area": "Kerala",
+        "postal_code": "XX682011XX"
+      },
+      "problems": [
+        {
+          "field": "postal_code",
+          "code": "postal_code_pattern"
+        }
+      ]
+    },
+    {
+      "name": "A line whose every field is empty is dropped, literal text and all: no bare SINGAPORE",
+      "address": {
+        "country_code": "SGP",
+        "address_lines": [
+          "1 Hospital Drive"
+        ],
+        "postal_code": "169608"
+      },
+      "formatted": "1 Hospital Drive\nSINGAPORE 169608",
+      "problems": []
+    },
+    {
+      "name": "Separators belonging to a field that is present are kept, and the country uppercases both",
+      "address": {
+        "country_code": "USA",
+        "address_lines": [
+          "1600 Clifton Road"
+        ],
+        "locality": "Atlanta",
+        "admin_area": "GA",
+        "postal_code": "30329"
+      },
+      "formatted": "1600 Clifton Road\nATLANTA, GA 30329",
+      "problems": []
+    },
+    {
+      "name": "Every field a country insists on is named when missing, all at once rather than one per attempt",
+      "address": {
+        "country_code": "USA",
+        "address_lines": [
+          "1600 Clifton Road"
+        ],
+        "postal_code": "30329"
+      },
+      "problems": [
+        {
+          "field": "locality",
+          "code": "required"
+        },
+        {
+          "field": "admin_area",
+          "code": "required"
+        }
+      ]
+    },
+    {
+      "name": "Kosovo, a user-assigned code, is a full entry rather than a fallback",
+      "address": {
+        "country_code": "XKX",
+        "address_lines": [
+          "Rruga B"
+        ],
+        "locality": "Pristina"
+      },
+      "formatted": "Rruga B\nPRISTINA",
+      "problems": []
+    },
+    {
+      "name": "The country code is the one field every address must have",
+      "address": {
+        "address_lines": [
+          "Somewhere"
+        ]
+      },
+      "problems": [
+        {
+          "field": "country_code",
+          "code": "country_code"
+        },
+        {
+          "field": "locality",
+          "code": "required"
+        }
+      ]
+    }
+  ],
+  "fhir": {
+    "description": "The field set maps one-to-one onto FHIR R4 Address, except sorting_code, which FHIR has no element for and which therefore travels as an extension rather than being dropped. The address is normalised first, so text is what the country actually renders.",
+    "address": {
+      "country_code": "FRA",
+      "address_lines": [
+        "10 Rue Example"
+      ],
+      "locality": "Paris",
+      "postal_code": "75001",
+      "sorting_code": "CEDEX 1"
+    },
+    "expected": {
+      "line": [
+        "10 Rue Example"
+      ],
+      "city": "PARIS",
+      "postalCode": "75001",
+      "country": "FRA",
+      "text": "10 Rue Example\n75001 PARIS",
+      "extension": [
+        {
+          "url": "https://schemas.amrit-amr.org/fhir/StructureDefinition/address-sorting-code",
+          "valueString": "CEDEX 1"
+        }
+      ]
+    }
+  }
+}

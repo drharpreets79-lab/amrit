@@ -1,0 +1,375 @@
+{
+ "source": "https://id.who.int/icd/release/11/2026-01/mms",
+ "api": "https://icd.who.int/icdapi",
+ "system": "http://id.who.int/icd/release/11/mms",
+ "release": "2026-01",
+ "language": "en",
+ "retrieved": "2026-08-14",
+ "licence": "ICD-11 is published by WHO under CC BY-ND 3.0 IGO. Attribution is required and derivative works are not permitted; this cache is an unmodified subset of WHO's codes and titles.",
+ "mappingNote": "WHO's ICD API exposes no ICD-10 to ICD-11 mapping endpoint, so no ConceptMap between the revisions is generated. Each record states which system its diagnosis code came from.",
+ "candidates": 40,
+ "withChildren": false,
+ "verified": [
+  {
+   "code": "1A00",
+   "display": "Cholera",
+   "classKind": "category",
+   "uri": "http://id.who.int/icd/release/11/2026-01/mms/257068234",
+   "browserUrl": "https://icd.who.int/browse/2026-01/mms/en#257068234",
+   "purpose": "Cholera",
+   "parallelsIcd10": "A00"
+  },
+  {
+   "code": "1A02",
+   "display": "Intestinal infections due to Shigella",
+   "classKind": "category",
+   "uri": "http://id.who.int/icd/release/11/2026-01/mms/2080365623",
+   "browserUrl": "https://icd.who.int/browse/2026-01/mms/en#2080365623",
+   "purpose": "Intestinal infections due to Shigella",
+   "parallelsIcd10": "A03"
+  },
+  {
+   "code": "1A03",
+   "display": "Intestinal infections due to Escherichia coli",
+   "classKind": "category",
+   "uri": "http://id.who.int/icd/release/11/2026-01/mms/344162786",
+   "browserUrl": "https://icd.who.int/browse/2026-01/mms/en#344162786",
+   "purpose": "Intestinal infections due to Escherichia coli",
+   "parallelsIcd10": "A04"
+  },
+  {
+   "code": "1A04",
+   "display": "Intestinal infections due to Clostridioides difficile",
+   "classKind": "category",
+   "uri": "http://id.who.int/icd/release/11/2026-01/mms/250688797",
+   "browserUrl": "https://icd.who.int/browse/2026-01/mms/en#250688797",
+   "purpose": "Intestinal infections due to Clostridioides difficile",
+   "parallelsIcd10": "A04.7"
+  },
+  {
+   "code": "1A06",
+   "display": "Gastroenteritis due to Campylobacter",
+   "classKind": "category",
+   "uri": "http://id.who.int/icd/release/11/2026-01/mms/794462570",
+   "browserUrl": "https://icd.who.int/browse/2026-01/mms/en#794462570",
+   "purpose": "Gastroenteritis due to Campylobacter",
+   "parallelsIcd10": "A04.5"
+  },
+  {
+   "code": "1A07",
+   "display": "Typhoid fever",
+   "classKind": "category",
+   "uri": "http://id.who.int/icd/release/11/2026-01/mms/1528414070",
+   "browserUrl": "https://icd.who.int/browse/2026-01/mms/en#1528414070",
+   "purpose": "Typhoid fever",
+   "parallelsIcd10": "A01"
+  },
+  {
+   "code": "1A09",
+   "display": "Infections due to other Salmonella",
+   "classKind": "category",
+   "uri": "http://id.who.int/icd/release/11/2026-01/mms/515117475",
+   "browserUrl": "https://icd.who.int/browse/2026-01/mms/en#515117475",
+   "purpose": "Infections due to other Salmonella",
+   "parallelsIcd10": "A02"
+  },
+  {
+   "code": "1A0Z",
+   "display": "Bacterial intestinal infections, unspecified",
+   "classKind": "category",
+   "uri": "http://id.who.int/icd/release/11/2026-01/mms/135352227/unspecified",
+   "browserUrl": "https://icd.who.int/browse/2026-01/mms/en#135352227/unspecified",
+   "purpose": "Bacterial intestinal infections, unspecified",
+   "parallelsIcd10": "A04"
+  },
+  {
+   "code": "1A40",
+   "display": "Gastroenteritis or colitis without specification of infectious agent",
+   "classKind": "category",
+   "uri": "http://id.who.int/icd/release/11/2026-01/mms/1688127370",
+   "browserUrl": "https://icd.who.int/browse/2026-01/mms/en#1688127370",
+   "purpose": "Gastroenteritis or colitis, agent unspecified",
+   "parallelsIcd10": "A09"
+  },
+  {
+   "code": "1B10",
+   "display": "Tuberculosis of the respiratory system",
+   "classKind": "category",
+   "uri": "http://id.who.int/icd/release/11/2026-01/mms/882244568",
+   "browserUrl": "https://icd.who.int/browse/2026-01/mms/en#882244568",
+   "purpose": "Tuberculosis of the respiratory system",
+   "parallelsIcd10": "A15"
+  },
+  {
+   "code": "1B1Z",
+   "display": "Tuberculosis, unspecified",
+   "classKind": "category",
+   "uri": "http://id.who.int/icd/release/11/2026-01/mms/2072728114/unspecified",
+   "browserUrl": "https://icd.who.int/browse/2026-01/mms/en#2072728114/unspecified",
+   "purpose": "Tuberculosis, unspecified",
+   "parallelsIcd10": "A16"
+  },
+  {
+   "code": "1B70",
+   "display": "Bacterial cellulitis, erysipelas or lymphangitis",
+   "classKind": "category",
+   "uri": "http://id.who.int/icd/release/11/2026-01/mms/2144774073",
+   "browserUrl": "https://icd.who.int/browse/2026-01/mms/en#2144774073",
+   "purpose": "Bacterial cellulitis, erysipelas or lymphangitis",
+   "parallelsIcd10": "L03"
+  },
+  {
+   "code": "1B72",
+   "display": "Impetigo",
+   "classKind": "category",
+   "uri": "http://id.who.int/icd/release/11/2026-01/mms/971176543",
+   "browserUrl": "https://icd.who.int/browse/2026-01/mms/en#971176543",
+   "purpose": "Impetigo",
+   "parallelsIcd10": "L01"
+  },
+  {
+   "code": "1B7Y",
+   "display": "Other specified pyogenic bacterial infection of skin or subcutaneous tissue",
+   "classKind": "category",
+   "uri": "http://id.who.int/icd/release/11/2026-01/mms/1412960686/other",
+   "browserUrl": "https://icd.who.int/browse/2026-01/mms/en#1412960686/other",
+   "purpose": "Other specified pyogenic bacterial infection of skin",
+   "parallelsIcd10": "L08"
+  },
+  {
+   "code": "1C1C",
+   "display": "Meningococcal disease",
+   "classKind": "category",
+   "uri": "http://id.who.int/icd/release/11/2026-01/mms/1664016479",
+   "browserUrl": "https://icd.who.int/browse/2026-01/mms/en#1664016479",
+   "purpose": "Meningococcal disease",
+   "parallelsIcd10": "A39"
+  },
+  {
+   "code": "1D00",
+   "display": "Infectious encephalitis, not elsewhere classified",
+   "classKind": "category",
+   "uri": "http://id.who.int/icd/release/11/2026-01/mms/62637936",
+   "browserUrl": "https://icd.who.int/browse/2026-01/mms/en#62637936",
+   "purpose": "Infectious encephalitis, not elsewhere classified",
+   "parallelsIcd10": "G04"
+  },
+  {
+   "code": "1D01",
+   "display": "Infectious meningitis, not elsewhere classified",
+   "classKind": "category",
+   "uri": "http://id.who.int/icd/release/11/2026-01/mms/121670633",
+   "browserUrl": "https://icd.who.int/browse/2026-01/mms/en#121670633",
+   "purpose": "Infectious meningitis, not elsewhere classified",
+   "parallelsIcd10": "G00"
+  },
+  {
+   "code": "1D01.0Z",
+   "display": "Bacterial meningitis, unspecified",
+   "classKind": "category",
+   "uri": "http://id.who.int/icd/release/11/2026-01/mms/684930313/unspecified",
+   "browserUrl": "https://icd.who.int/browse/2026-01/mms/en#684930313/unspecified",
+   "purpose": "Bacterial meningitis, unspecified",
+   "parallelsIcd10": "G00.9"
+  },
+  {
+   "code": "1G40",
+   "display": "Sepsis without septic shock",
+   "classKind": "category",
+   "uri": "http://id.who.int/icd/release/11/2026-01/mms/622600769",
+   "browserUrl": "https://icd.who.int/browse/2026-01/mms/en#622600769",
+   "purpose": "Sepsis without septic shock",
+   "parallelsIcd10": "A41"
+  },
+  {
+   "code": "1G41",
+   "display": "Sepsis with septic shock",
+   "classKind": "category",
+   "uri": "http://id.who.int/icd/release/11/2026-01/mms/1683090852",
+   "browserUrl": "https://icd.who.int/browse/2026-01/mms/en#1683090852",
+   "purpose": "Sepsis with septic shock",
+   "parallelsIcd10": "A41.9"
+  },
+  {
+   "code": "BB40",
+   "display": "Acute or subacute infectious endocarditis",
+   "classKind": "category",
+   "uri": "http://id.who.int/icd/release/11/2026-01/mms/512128824",
+   "browserUrl": "https://icd.who.int/browse/2026-01/mms/en#512128824",
+   "purpose": "Acute or subacute infectious endocarditis",
+   "parallelsIcd10": "I33"
+  },
+  {
+   "code": "CA40",
+   "display": "Pneumonia",
+   "classKind": "category",
+   "uri": "http://id.who.int/icd/release/11/2026-01/mms/142052508",
+   "browserUrl": "https://icd.who.int/browse/2026-01/mms/en#142052508",
+   "purpose": "Pneumonia",
+   "parallelsIcd10": "J18"
+  },
+  {
+   "code": "CA42",
+   "display": "Acute bronchitis",
+   "classKind": "category",
+   "uri": "http://id.who.int/icd/release/11/2026-01/mms/727572936",
+   "browserUrl": "https://icd.who.int/browse/2026-01/mms/en#727572936",
+   "purpose": "Acute bronchitis",
+   "parallelsIcd10": "J20"
+  },
+  {
+   "code": "CA44",
+   "display": "Pyothorax",
+   "classKind": "category",
+   "uri": "http://id.who.int/icd/release/11/2026-01/mms/1103848959",
+   "browserUrl": "https://icd.who.int/browse/2026-01/mms/en#1103848959",
+   "purpose": "Pyothorax",
+   "parallelsIcd10": "J86"
+  },
+  {
+   "code": "DC12",
+   "display": "Cholecystitis",
+   "classKind": "category",
+   "uri": "http://id.who.int/icd/release/11/2026-01/mms/786251500",
+   "browserUrl": "https://icd.who.int/browse/2026-01/mms/en#786251500",
+   "purpose": "Cholecystitis",
+   "parallelsIcd10": "K81"
+  },
+  {
+   "code": "DC50",
+   "display": "Peritonitis",
+   "classKind": "category",
+   "uri": "http://id.who.int/icd/release/11/2026-01/mms/775356003",
+   "browserUrl": "https://icd.who.int/browse/2026-01/mms/en#775356003",
+   "purpose": "Peritonitis",
+   "parallelsIcd10": "K65"
+  },
+  {
+   "code": "FA10",
+   "display": "Direct infections of joint",
+   "classKind": "category",
+   "uri": "http://id.who.int/icd/release/11/2026-01/mms/622473950",
+   "browserUrl": "https://icd.who.int/browse/2026-01/mms/en#622473950",
+   "purpose": "Direct infections of joint",
+   "parallelsIcd10": "M00"
+  },
+  {
+   "code": "FB84",
+   "display": "Osteomyelitis or osteitis",
+   "classKind": "category",
+   "uri": "http://id.who.int/icd/release/11/2026-01/mms/2058491071",
+   "browserUrl": "https://icd.who.int/browse/2026-01/mms/en#2058491071",
+   "purpose": "Osteomyelitis or osteitis",
+   "parallelsIcd10": "M86"
+  },
+  {
+   "code": "GB51",
+   "display": "Acute pyelonephritis",
+   "classKind": "category",
+   "uri": "http://id.who.int/icd/release/11/2026-01/mms/441183088",
+   "browserUrl": "https://icd.who.int/browse/2026-01/mms/en#441183088",
+   "purpose": "Acute pyelonephritis",
+   "parallelsIcd10": "N10"
+  },
+  {
+   "code": "GC08",
+   "display": "Urinary tract infection, site not specified",
+   "classKind": "category",
+   "uri": "http://id.who.int/icd/release/11/2026-01/mms/1848472780",
+   "browserUrl": "https://icd.who.int/browse/2026-01/mms/en#1848472780",
+   "purpose": "Urinary tract infection, site not specified",
+   "parallelsIcd10": "N39.0"
+  },
+  {
+   "code": "JB40.0",
+   "display": "Puerperal sepsis",
+   "classKind": "category",
+   "uri": "http://id.who.int/icd/release/11/2026-01/mms/325070079",
+   "browserUrl": "https://icd.who.int/browse/2026-01/mms/en#325070079",
+   "purpose": "Puerperal sepsis",
+   "parallelsIcd10": "O85"
+  },
+  {
+   "code": "KA60",
+   "display": "Sepsis of fetus or newborn",
+   "classKind": "category",
+   "uri": "http://id.who.int/icd/release/11/2026-01/mms/381388700",
+   "browserUrl": "https://icd.who.int/browse/2026-01/mms/en#381388700",
+   "purpose": "Sepsis of fetus or newborn",
+   "parallelsIcd10": "P36"
+  },
+  {
+   "code": "MA15.0",
+   "display": "Bacteraemia",
+   "classKind": "category",
+   "uri": "http://id.who.int/icd/release/11/2026-01/mms/770483821",
+   "browserUrl": "https://icd.who.int/browse/2026-01/mms/en#770483821",
+   "purpose": "Bacteraemia",
+   "parallelsIcd10": "A49.9"
+  },
+  {
+   "code": "MG50",
+   "display": "Finding of gram negative bacteria resistant to antimicrobial drugs",
+   "classKind": "category",
+   "uri": "http://id.who.int/icd/release/11/2026-01/mms/1215034670",
+   "browserUrl": "https://icd.who.int/browse/2026-01/mms/en#1215034670",
+   "purpose": "Gram negative bacteria resistant to antimicrobial drugs",
+   "parallelsIcd10": "U82-U88"
+  },
+  {
+   "code": "MG51",
+   "display": "Finding of gram positive bacteria resistant to antimicrobial drugs",
+   "classKind": "category",
+   "uri": "http://id.who.int/icd/release/11/2026-01/mms/1839638766",
+   "browserUrl": "https://icd.who.int/browse/2026-01/mms/en#1839638766",
+   "purpose": "Gram positive bacteria resistant to antimicrobial drugs",
+   "parallelsIcd10": "U82-U88"
+  },
+  {
+   "code": "MG52",
+   "display": "Finding of bacteria, neither gram negative nor positive, resistant to antimicrobial drugs",
+   "classKind": "category",
+   "uri": "http://id.who.int/icd/release/11/2026-01/mms/501791005",
+   "browserUrl": "https://icd.who.int/browse/2026-01/mms/en#501791005",
+   "purpose": "Bacteria neither gram negative nor positive, resistant to antimicrobial drugs",
+   "parallelsIcd10": "U82-U88"
+  },
+  {
+   "code": "MG53",
+   "display": "Finding of virus resistant to antimicrobial drugs",
+   "classKind": "category",
+   "uri": "http://id.who.int/icd/release/11/2026-01/mms/1975056531",
+   "browserUrl": "https://icd.who.int/browse/2026-01/mms/en#1975056531",
+   "purpose": "Virus resistant to antimicrobial drugs",
+   "parallelsIcd10": "U82-U88"
+  },
+  {
+   "code": "MG54",
+   "display": "Finding of fungus resistant to antimicrobial drugs",
+   "classKind": "category",
+   "uri": "http://id.who.int/icd/release/11/2026-01/mms/828922344",
+   "browserUrl": "https://icd.who.int/browse/2026-01/mms/en#828922344",
+   "purpose": "Fungus resistant to antimicrobial drugs",
+   "parallelsIcd10": "U82-U88"
+  },
+  {
+   "code": "NE81.2",
+   "display": "Surgical site infection",
+   "classKind": "category",
+   "uri": "http://id.who.int/icd/release/11/2026-01/mms/1634086968",
+   "browserUrl": "https://icd.who.int/browse/2026-01/mms/en#1634086968",
+   "purpose": "Surgical site infection",
+   "parallelsIcd10": "T81.4"
+  },
+  {
+   "code": "QD0Z",
+   "display": "Carrier of infectious disease agent, unspecified",
+   "classKind": "category",
+   "uri": "http://id.who.int/icd/release/11/2026-01/mms/784320171/unspecified",
+   "browserUrl": "https://icd.who.int/browse/2026-01/mms/en#784320171/unspecified",
+   "purpose": "Carrier of infectious disease agent, unspecified",
+   "parallelsIcd10": "Z22"
+  }
+ ],
+ "rejected": []
+}

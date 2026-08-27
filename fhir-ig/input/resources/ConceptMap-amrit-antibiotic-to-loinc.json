@@ -1,0 +1,6388 @@
+{
+ "resourceType": "ConceptMap",
+ "id": "amrit-antibiotic-to-loinc",
+ "url": "https://amrit.invalid/ConceptMap/amrit-antibiotic-to-loinc",
+ "name": "AmritAntibioticToLoinc",
+ "title": "AMRIT antibiotic to LOINC",
+ "status": "active",
+ "experimental": false,
+ "description": "Built by matching catalogue substance names to the LOINC ABXBACT class. The method variant is part of the target: an MIC and a disk result are different LOINC codes for the same drug.",
+ "group": [
+  {
+   "source": "urn:whonet:antibiotic-code",
+   "target": "http://loinc.org",
+   "element": [
+    {
+     "code": "AMB",
+     "target": [
+      {
+       "code": "25-7",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "6978-1",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "24-0",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18863-1",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "AMC",
+     "target": [
+      {
+       "code": "21-6",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "6977-3",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "20-8",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18862-3",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "AMK",
+     "target": [
+      {
+       "code": "13-3",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "6975-7",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "12-5",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18860-7",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "AMP",
+     "target": [
+      {
+       "code": "29-9",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "6979-9",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "28-1",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18864-9",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "AMX",
+     "target": [
+      {
+       "code": "17-4",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "6976-5",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "16-6",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18861-5",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "ANI",
+     "target": [
+      {
+       "code": "77162-6",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "55343-8",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "57095-2",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "APR",
+     "target": [
+      {
+       "code": "73653-8",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "73652-0",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "23659-6",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "ARB",
+     "target": [
+      {
+       "code": "54173-0",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "53818-1",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "32373-3",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "ATM",
+     "target": [
+      {
+       "code": "45-5",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "6982-3",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "44-8",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18868-0",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "AVI",
+     "target": [
+      {
+       "code": "35754-1",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55619-1",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "35755-8",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "35756-6",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "AXS",
+     "target": [
+      {
+       "code": "55616-7",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55615-9",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "55614-2",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "AZA",
+     "target": [
+      {
+       "code": "107195-0",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "105179-6",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "106434-4",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      }
+     ]
+    },
+    {
+     "code": "AZL",
+     "target": [
+      {
+       "code": "41-4",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "41661-0",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "40-6",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18867-2",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "AZM",
+     "target": [
+      {
+       "code": "37-2",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "6981-5",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "36-4",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18866-4",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "BAC",
+     "target": [
+      {
+       "code": "10868-8",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "6983-1",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "6827-0",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18870-6",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "BAM",
+     "target": [
+      {
+       "code": "49-7",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55620-9",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "48-9",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18869-8",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "BDQ",
+     "target": [
+      {
+       "code": "88703-4",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "94274-8",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "BES",
+     "target": [
+      {
+       "code": "73651-2",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "73628-0",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "73606-6",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "BIA",
+     "target": [
+      {
+       "code": "41666-9",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "41667-7",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "41665-1",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "41728-7",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "BPR",
+     "target": [
+      {
+       "code": "43269-0",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "85052-9",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "43271-6",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "43272-4",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CAC",
+     "target": [
+      {
+       "code": "55626-6",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55627-4",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "55624-1",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "55625-8",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CAP",
+     "target": [
+      {
+       "code": "57-0",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55623-3",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "56-2",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18872-2",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CAR",
+     "target": [
+      {
+       "code": "51694-8",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CAS",
+     "target": [
+      {
+       "code": "54175-5",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "54185-4",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "54176-3",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "32378-2",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CAT",
+     "target": [
+      {
+       "code": "35764-0",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55640-7",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "35765-7",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "32377-4",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CAZ",
+     "target": [
+      {
+       "code": "134-7",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "6995-5",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "133-9",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18893-8",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CCP",
+     "target": [
+      {
+       "code": "76143-7",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "100044-7",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CCV",
+     "target": [
+      {
+       "code": "35774-9",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "42352-5",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "35775-6",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "35776-4",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CCX",
+     "target": [
+      {
+       "code": "76143-7",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "100044-7",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CDC",
+     "target": [
+      {
+       "code": "41680-0",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "41678-4",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "41679-2",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "41731-1",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CDR",
+     "target": [
+      {
+       "code": "35758-2",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "35757-4",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "23637-2",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "23636-4",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CEC",
+     "target": [
+      {
+       "code": "85-1",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "6986-4",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "84-4",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18874-8",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CED",
+     "target": [
+      {
+       "code": "170-1",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55646-4",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "169-3",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18902-7",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CEM",
+     "target": [
+      {
+       "code": "76144-5",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "100047-0",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CEP",
+     "target": [
+      {
+       "code": "162-8",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7000-3",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "161-0",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18900-1",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CEQ",
+     "target": [
+      {
+       "code": "76150-2",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "100046-2",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CFM",
+     "target": [
+      {
+       "code": "81-0",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "35766-5",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "80-2",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18880-5",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CFP",
+     "target": [
+      {
+       "code": "101-6",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "35767-3",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "100-8",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18884-7",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CFR",
+     "target": [
+      {
+       "code": "65-3",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55628-2",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "64-6",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18875-5",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CFS",
+     "target": [
+      {
+       "code": "129-7",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55647-2",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "128-9",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18892-0",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CHE",
+     "target": [
+      {
+       "code": "55739-7",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55740-5",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "55737-1",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "55738-9",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CHL",
+     "target": [
+      {
+       "code": "174-3",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7001-1",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "173-5",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18903-5",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CIC",
+     "target": [
+      {
+       "code": "210-5",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55666-2",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "209-7",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18913-4",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CID",
+     "target": [
+      {
+       "code": "97-6",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55642-3",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "96-8",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18883-9",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CIN",
+     "target": [
+      {
+       "code": "182-6",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55656-3",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "181-8",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18905-0",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CIP",
+     "target": [
+      {
+       "code": "186-7",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7002-9",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "185-9",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18906-8",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CLA",
+     "target": [
+      {
+       "code": "41686-7",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "41685-9",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "41687-5",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "41733-7",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CLF",
+     "target": [
+      {
+       "code": "55661-3",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55662-1",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "16623-1",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "23627-3",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CLI",
+     "target": [
+      {
+       "code": "194-1",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7005-2",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "193-3",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18908-4",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CLO",
+     "target": [
+      {
+       "code": "198-2",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55664-7",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "197-4",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18910-0",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CLR",
+     "target": [
+      {
+       "code": "190-9",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7003-7",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "189-1",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18907-6",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CLX",
+     "target": [
+      {
+       "code": "35785-5",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7004-5",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "35786-3",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "32376-6",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CMX",
+     "target": [
+      {
+       "code": "54174-8",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55641-5",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "54203-5",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "32375-8",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CMZ",
+     "target": [
+      {
+       "code": "89-3",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "11575-8",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "88-5",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18881-3",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CND",
+     "target": [
+      {
+       "code": "105-7",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55643-1",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "104-0",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18885-4",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CNX",
+     "target": [
+      {
+       "code": "54908-9",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "COL",
+     "target": [
+      {
+       "code": "206-3",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "33333-6",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "205-5",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18912-6",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CPA",
+     "target": [
+      {
+       "code": "73649-6",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "73626-4",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "73604-1",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CPC",
+     "target": [
+      {
+       "code": "42350-9",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "35763-2",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "42351-7",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "42353-3",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CPD",
+     "target": [
+      {
+       "code": "121-4",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "6993-0",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "120-6",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18890-4",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CPI",
+     "target": [
+      {
+       "code": "35764-0",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55640-7",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "35765-7",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "32377-4",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CPL",
+     "target": [
+      {
+       "code": "76144-5",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "100047-0",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CPO",
+     "target": [
+      {
+       "code": "8276-8",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "6992-2",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "8275-0",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18889-6",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CPR",
+     "target": [
+      {
+       "code": "125-5",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "6994-8",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "124-8",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18891-2",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CPT",
+     "target": [
+      {
+       "code": "73650-4",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "74170-2",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "73627-2",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "73605-8",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CPX",
+     "target": [
+      {
+       "code": "121-4",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "6993-0",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "120-6",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18890-4",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CRB",
+     "target": [
+      {
+       "code": "61-2",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "41668-5",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "60-4",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18873-0",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CRO",
+     "target": [
+      {
+       "code": "142-0",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "6998-9",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "141-2",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18895-3",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CSL",
+     "target": [
+      {
+       "code": "54168-0",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "35768-1",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "54167-2",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "54166-4",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CTB",
+     "target": [
+      {
+       "code": "35777-2",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "6996-3",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "35778-0",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "35779-8",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CTC",
+     "target": [
+      {
+       "code": "35769-9",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "41671-9",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "35770-7",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "35771-5",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CTE",
+     "target": [
+      {
+       "code": "178-4",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55655-5",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "177-6",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18904-3",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CTF",
+     "target": [
+      {
+       "code": "35772-3",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55645-6",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "35773-1",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "32374-1",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CTR",
+     "target": [
+      {
+       "code": "54177-1",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55663-9",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "10653-4",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18909-2",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CTS",
+     "target": [
+      {
+       "code": "54193-8",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55644-9",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "54192-0",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "54191-2",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CTT",
+     "target": [
+      {
+       "code": "113-1",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "6990-6",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "112-3",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18887-0",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CTX",
+     "target": [
+      {
+       "code": "109-9",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "6989-8",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "108-1",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18886-2",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CTZ",
+     "target": [
+      {
+       "code": "73-7",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55639-9",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "72-9",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18877-1",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CXA",
+     "target": [
+      {
+       "code": "74699-0",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55654-8",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "51774-8",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "51724-3",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CXM",
+     "target": [
+      {
+       "code": "74699-0",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55654-8",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "51774-8",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "51724-3",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CYC",
+     "target": [
+      {
+       "code": "214-7",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55667-0",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "213-9",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18914-2",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CZA",
+     "target": [
+      {
+       "code": "73648-8",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "87734-0",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "73625-6",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "73603-3",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CZO",
+     "target": [
+      {
+       "code": "77-8",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "41670-1",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "76-0",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18878-9",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CZP",
+     "target": [
+      {
+       "code": "138-8",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "6997-1",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "137-0",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18894-6",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CZT",
+     "target": [
+      {
+       "code": "73647-0",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "87735-7",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "73624-9",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "73602-5",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "CZX",
+     "target": [
+      {
+       "code": "138-8",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "6997-1",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "137-0",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18894-6",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "DAL",
+     "target": [
+      {
+       "code": "41688-3",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "41690-9",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "41689-1",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "41734-5",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "DAN",
+     "target": [
+      {
+       "code": "73646-2",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "73623-1",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "73601-7",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "DAP",
+     "target": [
+      {
+       "code": "35787-1",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "41691-7",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "35788-9",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "35789-7",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "DEM",
+     "target": [
+      {
+       "code": "218-8",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7006-0",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "217-0",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18915-9",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "DIC",
+     "target": [
+      {
+       "code": "222-0",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55668-8",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "221-2",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18916-7",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "DIF",
+     "target": [
+      {
+       "code": "35790-5",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "35791-3",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "35792-1",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "DIR",
+     "target": [
+      {
+       "code": "35793-9",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7007-8",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "35794-7",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "35795-4",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "DIT",
+     "target": [
+      {
+       "code": "35759-0",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "35760-8",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "35761-6",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "35762-4",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "DIX",
+     "target": [
+      {
+       "code": "35759-0",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "35760-8",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "35761-6",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "35762-4",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "DIZ",
+     "target": [
+      {
+       "code": "93-5",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "6988-0",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "92-7",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18882-1",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "DKB",
+     "target": [
+      {
+       "code": "55671-2",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55672-0",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "55669-6",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "55670-4",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "DLM",
+     "target": [
+      {
+       "code": "93851-4",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "DOR",
+     "target": [
+      {
+       "code": "72893-1",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "58711-3",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "56031-8",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "60535-2",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "DOX",
+     "target": [
+      {
+       "code": "226-1",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7008-6",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "225-3",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18917-5",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "ECO",
+     "target": [
+      {
+       "code": "54178-9",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55673-8",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "25637-0",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "25595-0",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "ENR",
+     "target": [
+      {
+       "code": "35797-0",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "35796-2",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "35798-8",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "23712-3",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "ENX",
+     "target": [
+      {
+       "code": "230-3",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "41692-5",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "229-5",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18918-3",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "ERV",
+     "target": [
+      {
+       "code": "93767-2",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "85423-2",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "100049-6",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "ERY",
+     "target": [
+      {
+       "code": "234-5",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7009-4",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "233-7",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18919-1",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "ETH",
+     "target": [
+      {
+       "code": "242-8",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7010-2",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "241-0",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18921-7",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "ETI",
+     "target": [
+      {
+       "code": "41693-3",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7011-0",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "16099-4",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18922-5",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "ETP",
+     "target": [
+      {
+       "code": "35799-6",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "35800-2",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "35801-0",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "35802-8",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "FAR",
+     "target": [
+      {
+       "code": "73645-4",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "73622-3",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "73600-9",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "FCT",
+     "target": [
+      {
+       "code": "254-3",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7014-4",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "253-5",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18855-7",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "FDC",
+     "target": [
+      {
+       "code": "95767-0",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "99503-5",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "99280-0",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "FDX",
+     "target": [
+      {
+       "code": "73644-7",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "73621-5",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "73599-3",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "FEP",
+     "target": [
+      {
+       "code": "8272-7",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "6987-2",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "6644-9",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18879-7",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "FIN",
+     "target": [
+      {
+       "code": "73643-9",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "73620-7",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "73598-5",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "FLA",
+     "target": [
+      {
+       "code": "35803-6",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55621-7",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "35804-4",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "35805-1",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "FLC",
+     "target": [
+      {
+       "code": "246-9",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "245-1",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18923-3",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "FLE",
+     "target": [
+      {
+       "code": "35806-9",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7012-8",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "25411-0",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "32372-5",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "FLM",
+     "target": [
+      {
+       "code": "55677-9",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55678-7",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "55675-3",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "55676-1",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "FLO",
+     "target": [
+      {
+       "code": "53822-3",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "100052-0",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "FLR",
+     "target": [
+      {
+       "code": "35807-7",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "35808-5",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "23740-4",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "FLU",
+     "target": [
+      {
+       "code": "250-1",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7013-6",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "249-3",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18924-1",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "FOS",
+     "target": [
+      {
+       "code": "35810-1",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "35809-3",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "25653-7",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "25596-8",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "FOV",
+     "target": [
+      {
+       "code": "76147-8",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "87792-8",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "FOX",
+     "target": [
+      {
+       "code": "117-2",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "6991-4",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "116-4",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18888-8",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "FRM",
+     "target": [
+      {
+       "code": "259-2",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55679-5",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "258-4",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18926-6",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "FRZ",
+     "target": [
+      {
+       "code": "87794-4",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "69574-2",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "FUS",
+     "target": [
+      {
+       "code": "263-4",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7015-1",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "262-6",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18927-4",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "GAM",
+     "target": [
+      {
+       "code": "88376-9",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "88378-5",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "100054-6",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "GAT",
+     "target": [
+      {
+       "code": "31040-9",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "31042-5",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "31036-7",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "31038-3",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "GEM",
+     "target": [
+      {
+       "code": "35814-3",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "41697-4",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "35815-0",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "35816-8",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "GEN",
+     "target": [
+      {
+       "code": "268-3",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7016-9",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "267-5",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18928-2",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "GRI",
+     "target": [
+      {
+       "code": "54202-7",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "54201-9",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "54200-1",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "GRN",
+     "target": [
+      {
+       "code": "35811-9",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "35812-7",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "35813-5",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "GRX",
+     "target": [
+      {
+       "code": "35818-4",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "21316-5",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "23639-8",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "23638-0",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "HAB",
+     "target": [
+      {
+       "code": "54173-0",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "53818-1",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "32373-3",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "HAP",
+     "target": [
+      {
+       "code": "166-9",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55638-1",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "165-1",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18901-9",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "HET",
+     "target": [
+      {
+       "code": "276-6",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "275-8",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18931-6",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "ICL",
+     "target": [
+      {
+       "code": "73642-1",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "73619-9",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "73597-7",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "IMR",
+     "target": [
+      {
+       "code": "93232-7",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "85424-0",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "96372-8",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "INH",
+     "target": [
+      {
+       "code": "288-1",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7020-1",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "287-3",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18934-0",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "IPE",
+     "target": [
+      {
+       "code": "54172-2",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "35819-2",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "54171-4",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "54170-6",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "IPM",
+     "target": [
+      {
+       "code": "280-8",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7019-3",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "279-0",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18932-4",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "ISE",
+     "target": [
+      {
+       "code": "35820-0",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55680-3",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "35821-8",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "32381-6",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "ISO",
+     "target": [
+      {
+       "code": "55683-7",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55684-5",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "55681-1",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "55682-9",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "ISV",
+     "target": [
+      {
+       "code": "85381-2",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "88887-5",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "ITR",
+     "target": [
+      {
+       "code": "54179-7",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7021-9",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "25452-4",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "32603-3",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "KAN",
+     "target": [
+      {
+       "code": "292-3",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7022-7",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "291-5",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18935-7",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "KET",
+     "target": [
+      {
+       "code": "296-4",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7025-0",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "295-6",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18937-3",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "LEX",
+     "target": [
+      {
+       "code": "150-3",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "35784-8",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "149-5",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18897-9",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "LIN",
+     "target": [
+      {
+       "code": "300-4",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "41700-6",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "299-8",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18938-1",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "LMU",
+     "target": [
+      {
+       "code": "85425-7",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "99281-8",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "LNZ",
+     "target": [
+      {
+       "code": "29255-7",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "33332-8",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "29254-0",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "29258-1",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "LOM",
+     "target": [
+      {
+       "code": "304-6",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "41701-4",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "303-8",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18939-9",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "LOR",
+     "target": [
+      {
+       "code": "308-7",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7027-6",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "307-9",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18940-7",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "LVX",
+     "target": [
+      {
+       "code": "21367-8",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7026-8",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "20396-8",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "20629-2",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "MAN",
+     "target": [
+      {
+       "code": "69-5",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "41669-3",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "68-7",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18876-3",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "MAR",
+     "target": [
+      {
+       "code": "73641-3",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "73618-1",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "73596-9",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "MCZ",
+     "target": [
+      {
+       "code": "54180-5",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55686-0",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "25722-0",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "25607-3",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "MEC",
+     "target": [
+      {
+       "code": "9-1",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7028-4",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "8-3",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18859-9",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "MEM",
+     "target": [
+      {
+       "code": "6653-0",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7029-2",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "6652-2",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18943-1",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "MET",
+     "target": [
+      {
+       "code": "324-4",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7030-0",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "323-6",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18945-6",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "MEV",
+     "target": [
+      {
+       "code": "101222-8",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "90980-4",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "85427-3",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "88892-5",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "MEZ",
+     "target": [
+      {
+       "code": "332-7",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "41702-2",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "331-9",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18947-2",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "MFX",
+     "target": [
+      {
+       "code": "31041-7",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "31043-3",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "31037-5",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "31039-1",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "MID",
+     "target": [
+      {
+       "code": "340-0",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55687-8",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "339-2",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18949-8",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "MIF",
+     "target": [
+      {
+       "code": "85048-7",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "53812-4",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "65340-2",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "MNO",
+     "target": [
+      {
+       "code": "336-8",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7032-6",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "335-0",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18948-0",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "MOX",
+     "target": [
+      {
+       "code": "344-2",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "41703-0",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "343-4",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18950-6",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "MSU",
+     "target": [
+      {
+       "code": "54196-1",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "54195-3",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "54194-6",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "MTR",
+     "target": [
+      {
+       "code": "328-5",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7031-8",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "327-7",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18946-4",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "MUP",
+     "target": [
+      {
+       "code": "35822-6",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7033-4",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "35823-4",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "20389-3",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "NAF",
+     "target": [
+      {
+       "code": "348-3",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "41704-8",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "347-5",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18951-4",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "NAL",
+     "target": [
+      {
+       "code": "352-5",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7034-2",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "351-7",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18952-2",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "NEO",
+     "target": [
+      {
+       "code": "356-6",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "41705-5",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "355-8",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18953-0",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "NET",
+     "target": [
+      {
+       "code": "360-8",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7035-9",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "359-0",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18954-8",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "NIT",
+     "target": [
+      {
+       "code": "364-0",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7036-7",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "363-2",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18955-5",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "NIZ",
+     "target": [
+      {
+       "code": "87793-6",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "20388-5",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "NOR",
+     "target": [
+      {
+       "code": "368-1",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7037-5",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "367-3",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18956-3",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "NOV",
+     "target": [
+      {
+       "code": "372-3",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "41706-3",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "371-5",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18957-1",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "NTR",
+     "target": [
+      {
+       "code": "54181-3",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55688-6",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "25723-8",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "25608-1",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "NTZ",
+     "target": [
+      {
+       "code": "73640-5",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "73617-3",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "73595-1",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "NYS",
+     "target": [
+      {
+       "code": "35824-2",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55689-4",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "10697-1",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18958-9",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "OFX",
+     "target": [
+      {
+       "code": "376-4",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7038-3",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "375-6",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18959-7",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "OLE",
+     "target": [
+      {
+       "code": "380-6",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55690-2",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "379-8",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18960-5",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "OMC",
+     "target": [
+      {
+       "code": "73639-7",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "73616-5",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "73594-4",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "OPT",
+     "target": [
+      {
+       "code": "73665-2",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "100055-3",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "ORB",
+     "target": [
+      {
+       "code": "35825-9",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "35826-7",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "35827-5",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "ORI",
+     "target": [
+      {
+       "code": "41707-1",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "41709-7",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "41708-9",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "41736-0",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "ORN",
+     "target": [
+      {
+       "code": "55693-6",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55692-8",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "55694-4",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "55691-0",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "ORS",
+     "target": [
+      {
+       "code": "73638-9",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "73615-7",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "73593-6",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "OXA",
+     "target": [
+      {
+       "code": "384-8",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7039-1",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "383-0",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18961-3",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "OXO",
+     "target": [
+      {
+       "code": "55697-7",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55698-5",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "55695-1",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "55696-9",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "OXY",
+     "target": [
+      {
+       "code": "388-9",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55699-3",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "387-1",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18962-1",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "PAN",
+     "target": [
+      {
+       "code": "53823-1",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "100056-1",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "PAR",
+     "target": [
+      {
+       "code": "55701-7",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55702-5",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "53824-9",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "51719-3",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "PEF",
+     "target": [
+      {
+       "code": "35828-3",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7040-9",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "390-5",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18963-9",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "PEN",
+     "target": [
+      {
+       "code": "393-9",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7041-7",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "392-1",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18965-4",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "PHE",
+     "target": [
+      {
+       "code": "401-0",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "400-2",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18967-0",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "PIP",
+     "target": [
+      {
+       "code": "409-3",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7043-3",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "408-5",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18969-6",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "PIR",
+     "target": [
+      {
+       "code": "55707-4",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55708-2",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "55705-8",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "55706-6",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "PIS",
+     "target": [
+      {
+       "code": "54199-5",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55704-1",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "54198-7",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "54197-9",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "PLZ",
+     "target": [
+      {
+       "code": "73637-1",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "94719-2",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "73614-0",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "73592-8",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "PME",
+     "target": [
+      {
+       "code": "9-1",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7028-4",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "8-3",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18859-9",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "PMR",
+     "target": [
+      {
+       "code": "32597-7",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "PNO",
+     "target": [
+      {
+       "code": "35872-1",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "35873-9",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "35874-7",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "PNV",
+     "target": [
+      {
+       "code": "397-0",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7042-5",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "396-2",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18966-2",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "POL",
+     "target": [
+      {
+       "code": "421-8",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "35832-5",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "420-0",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18972-0",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "POS",
+     "target": [
+      {
+       "code": "54189-6",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "54186-2",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "54187-0",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "54188-8",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "PPA",
+     "target": [
+      {
+       "code": "405-1",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55703-3",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "404-4",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18968-8",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "PRA",
+     "target": [
+      {
+       "code": "76148-6",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "87800-9",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "PRI",
+     "target": [
+      {
+       "code": "35833-3",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55709-0",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "35834-1",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "32383-2",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "PRL",
+     "target": [
+      {
+       "code": "35829-1",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "35830-9",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "35831-7",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "PRU",
+     "target": [
+      {
+       "code": "76145-2",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "100058-7",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "PRX",
+     "target": [
+      {
+       "code": "73636-3",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "73613-2",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "73591-0",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "PTH",
+     "target": [
+      {
+       "code": "100057-9",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "PZA",
+     "target": [
+      {
+       "code": "425-9",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55710-8",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "424-2",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18973-8",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "QDA",
+     "target": [
+      {
+       "code": "35835-8",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "33334-4",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "23641-4",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "23640-6",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "RAM",
+     "target": [
+      {
+       "code": "41712-1",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "41711-3",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "41710-5",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "41737-8",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "RFX",
+     "target": [
+      {
+       "code": "73634-8",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "73611-6",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "73589-4",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "RIB",
+     "target": [
+      {
+       "code": "54183-9",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "16100-0",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "19149-4",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "RIF",
+     "target": [
+      {
+       "code": "429-1",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7045-8",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "428-3",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18974-6",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "ROS",
+     "target": [
+      {
+       "code": "441-6",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55713-2",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "440-8",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18977-9",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "RPT",
+     "target": [
+      {
+       "code": "100059-5",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "RZF",
+     "target": [
+      {
+       "code": "106858-4",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "RZM",
+     "target": [
+      {
+       "code": "73635-5",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "73612-4",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "73590-2",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "SAL",
+     "target": [
+      {
+       "code": "35836-6",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "35837-4",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "35838-2",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "SAM",
+     "target": [
+      {
+       "code": "33-1",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "6980-7",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "32-3",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18865-6",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "SAR",
+     "target": [
+      {
+       "code": "73633-0",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "73610-8",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "73588-6",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "SDI",
+     "target": [
+      {
+       "code": "465-5",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7050-8",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "464-8",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18984-5",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "SDM",
+     "target": [
+      {
+       "code": "87799-3",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "87803-3",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "SIS",
+     "target": [
+      {
+       "code": "449-9",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55714-0",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "448-1",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18979-5",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "SLP",
+     "target": [
+      {
+       "code": "55291-9",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55290-1",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "55289-3",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "SMX",
+     "target": [
+      {
+       "code": "469-7",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "11577-4",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "468-9",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18985-2",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "SOL",
+     "target": [
+      {
+       "code": "73632-2",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "73609-0",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "73587-8",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "SOX",
+     "target": [
+      {
+       "code": "473-9",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "11578-2",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "472-1",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18986-0",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "SPI",
+     "target": [
+      {
+       "code": "457-2",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55715-7",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "456-4",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18981-1",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "SPT",
+     "target": [
+      {
+       "code": "453-1",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "35840-8",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "452-3",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18980-3",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "SPX",
+     "target": [
+      {
+       "code": "35839-0",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7047-4",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "20397-6",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "23628-1",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "SSS",
+     "target": [
+      {
+       "code": "477-0",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "35842-4",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "476-2",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18987-8",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "STR",
+     "target": [
+      {
+       "code": "461-4",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7048-2",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "460-6",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18982-9",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "SUL",
+     "target": [
+      {
+       "code": "41716-2",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "41717-0",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "41718-8",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "41739-4",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "SUP",
+     "target": [
+      {
+       "code": "87804-1",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "87802-5",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "SUT",
+     "target": [
+      {
+       "code": "87796-9",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "87797-7",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "SXT",
+     "target": [
+      {
+       "code": "517-3",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7057-3",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "516-5",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18998-5",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "TAL",
+     "target": [
+      {
+       "code": "481-2",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "480-4",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18988-6",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "TAZ",
+     "target": [
+      {
+       "code": "41719-6",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "41720-4",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "41721-2",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "41740-2",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "TCC",
+     "target": [
+      {
+       "code": "505-8",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7054-0",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "504-1",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18995-1",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "TCY",
+     "target": [
+      {
+       "code": "497-8",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7052-4",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "496-0",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18993-6",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "TEC",
+     "target": [
+      {
+       "code": "485-3",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7051-6",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "484-6",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18989-4",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "TEM",
+     "target": [
+      {
+       "code": "493-7",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "54190-4",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "492-9",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18991-0",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "TFX",
+     "target": [
+      {
+       "code": "76146-0",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "100061-1",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "TGC",
+     "target": [
+      {
+       "code": "42356-6",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "42354-1",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "42355-8",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "42357-4",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "THA",
+     "target": [
+      {
+       "code": "54184-7",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "54204-3",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "32384-0",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "THI",
+     "target": [
+      {
+       "code": "41723-8",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "41724-6",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "41725-3",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "54169-8",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "TIA",
+     "target": [
+      {
+       "code": "35846-5",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "35847-3",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "35848-1",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "TIC",
+     "target": [
+      {
+       "code": "501-7",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7053-2",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "500-9",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18994-4",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "TIL",
+     "target": [
+      {
+       "code": "35849-9",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "35850-7",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "35851-5",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "TIN",
+     "target": [
+      {
+       "code": "55721-5",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55722-3",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "55720-7",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "54928-7",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "TIO",
+     "target": [
+      {
+       "code": "35780-6",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "55652-2",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "35781-4",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "23709-9",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "TIP",
+     "target": [
+      {
+       "code": "88375-1",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "88377-7",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "100060-3",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "TIZ",
+     "target": [
+      {
+       "code": "73629-8",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "73607-4",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "73585-2",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "TLT",
+     "target": [
+      {
+       "code": "35843-2",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "41722-0",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "35844-0",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "35845-7",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "TLV",
+     "target": [
+      {
+       "code": "73630-6",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "85051-1",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "72894-9",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "88886-7",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "TMP",
+     "target": [
+      {
+       "code": "513-2",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7056-5",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "512-4",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18997-7",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "TMX",
+     "target": [
+      {
+       "code": "489-5",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "488-7",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18990-2",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "TOB",
+     "target": [
+      {
+       "code": "509-0",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7055-7",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "508-2",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18996-9",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "TRB",
+     "target": [
+      {
+       "code": "10720-1",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18992-8",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "TRC",
+     "target": [
+      {
+       "code": "55196-0",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "TRL",
+     "target": [
+      {
+       "code": "521-5",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "520-7",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18999-3",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "TRO",
+     "target": [
+      {
+       "code": "35852-3",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "35853-1",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "35854-9",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "TUL",
+     "target": [
+      {
+       "code": "76149-4",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "87798-5",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "TVA",
+     "target": [
+      {
+       "code": "35855-6",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7058-1",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "23643-0",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "23642-2",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "TVN",
+     "target": [
+      {
+       "code": "101526-2",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      }
+     ]
+    },
+    {
+     "code": "TYL",
+     "target": [
+      {
+       "code": "35856-4",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "35857-2",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "35858-0",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "TZD",
+     "target": [
+      {
+       "code": "73631-4",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "73608-2",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "73586-0",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "TZP",
+     "target": [
+      {
+       "code": "413-5",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7044-1",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "412-7",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "18970-4",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "VAN",
+     "target": [
+      {
+       "code": "525-6",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "7059-9",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "524-9",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "19000-9",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "VIO",
+     "target": [
+      {
+       "code": "529-8",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "528-0",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "19001-7",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "VOR",
+     "target": [
+      {
+       "code": "41200-7",
+       "equivalence": "relatedto",
+       "comment": "disk"
+      },
+      {
+       "code": "35862-2",
+       "equivalence": "relatedto",
+       "comment": "gradient"
+      },
+      {
+       "code": "35863-0",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "32379-0",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    },
+    {
+     "code": "ZOP",
+     "target": [
+      {
+       "code": "53820-7",
+       "equivalence": "relatedto",
+       "comment": "mic"
+      },
+      {
+       "code": "100045-4",
+       "equivalence": "relatedto",
+       "comment": "plain"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,236 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "amrit.fhir",
+  "url": "https://amrit.invalid/ImplementationGuide/amrit.fhir",
+  "version": "0.1.0",
+  "name": "AMRITImplementationGuide",
+  "title": "AMRIT Implementation Guide",
+  "status": "draft",
+  "publisher": "AMRIT",
+  "description": "Profiles, value sets and concept maps for the resources AMRIT emits from antimicrobial resistance surveillance: susceptibility observations, organism identification, specimens, coded diagnoses, microbiology reports and the aggregate measures that cross a federation wire. The value sets and concept maps are generated from the same terminology seed the exporter binds with, so the guide and the runtime cannot disagree.",
+  "packageId": "amrit.fhir",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "ConceptMap/amrit-antibiotic-to-loinc"
+        },
+        "description": "Built by matching catalogue substance names to the LOINC ABXBACT class. The method variant is part of the target: an MIC and a disk result are different LOINC codes for the same drug.",
+        "exampleBoolean": false,
+        "name": "AMRIT antibiotic to LOINC"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AmritSusceptibilityObservation"
+        },
+        "name": "AMRIT antimicrobial susceptibility observation",
+        "description": "One organism tested against one antimicrobial agent.\n\nTwo codings are required, not one. The LOINC coding makes the observation interpretable to a\nreceiver that has never heard of WHONET; the WHONET coding is why a WHONET user can read the\nsame file. The LOINC concept depends on the method — an MIC and a disk diffusion of one drug\nare different concepts — so the method is what selects it.\n\n`valueQuantity` carries a UCUM unit whenever it is present at all. Before this IG existed the\nexporter sent a bare number, which made an MIC in mg/L and a zone diameter in mm identical to\nevery receiver.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AmritCondition"
+        },
+        "name": "AMRIT coded diagnosis",
+        "description": "Why the specimen was taken.\n\n`code.coding` is present only where a *code* was recorded. A free-text diagnosis produces\n`code.text` and no coding: what a clinician wrote is not a classification, and coercing it into\none would put a code into another system's database that no one chose.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/amrit-diagnosis-starter"
+        },
+        "description": "The infection syndromes AMR surveillance reports on, every code verified against the terminology server. This is the default value set, not the only codes a deployment may use: a deployment extends it or replaces it with its national set.",
+        "exampleBoolean": false,
+        "name": "AMRIT diagnosis starter value set"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/amrit-diagnosis-starter-icd11"
+        },
+        "description": "The same infection syndromes expressed in ICD-11 MMS, plus WHO's MG50-MG54 antimicrobial-resistance findings. Taken from WHO's own ICD API, every code confirmed to exist and confirmed to carry the concept it was requested for. No ConceptMap to the ICD-10 set is published: WHO's API exposes no mapping between the revisions, and a record states which revision it used.",
+        "exampleBoolean": false,
+        "name": "AMRIT diagnosis starter value set (ICD-11 MMS)"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AmritOrganization"
+        },
+        "name": "AMRIT laboratory",
+        "description": "The reporting laboratory, identified by its WHONET laboratory code.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AmritDiagnosticReport"
+        },
+        "name": "AMRIT microbiology report",
+        "description": "The culture and susceptibility report: LOINC 18725-2, every observation referenced, the coded diagnosis in conclusionCode.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/amrit-observation-loinc"
+        },
+        "description": "The three LOINC concepts AMRIT uses to say what kind of thing it is reporting: organism identification, the susceptibility panel, and the microbiology report.",
+        "exampleBoolean": false,
+        "name": "AMRIT observation and report LOINC concepts"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AmritOrganismObservation"
+        },
+        "name": "AMRIT organism identification observation",
+        "description": "What grew. LOINC 11475-1 for the observation itself, the organism as the value.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/amrit-organism-to-snomed"
+        },
+        "description": "The SNOMED codes the WHONET catalogue already carries. Gated by the deployment's SNOMED licence position, like every other SNOMED use here.",
+        "exampleBoolean": false,
+        "name": "AMRIT organism to SNOMED"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AmritPatient"
+        },
+        "name": "AMRIT patient",
+        "description": "The patient, carrying only what surveillance needs.\n\nResidence is coarsened on the way out by the deployment's own setting: a full postal code plus a\nbirth date is a re-identification kit in most countries. The profile does not forbid a full\naddress because the constraint belongs to the exporter and the deployment, but it records that\nwhat AMRIT sends is generalised.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AmritMeasure"
+        },
+        "name": "AMRIT resistance measure",
+        "description": "A resistance-rate measure definition, as the aggregate wire carries it.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AmritMeasureReport"
+        },
+        "name": "AMRIT resistance measure report",
+        "description": "A resistance rate for one agent over one population. Aggregate only: no patient-level data crosses the federation wire.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AmritSpecimen"
+        },
+        "name": "AMRIT specimen",
+        "description": "The specimen the isolate came from, coded in WHONET's specimen groups and in SNOMED where one exists.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/amrit-specimen-to-snomed"
+        },
+        "description": "Only the specimen groups the catalogue codes. Five of eight carry no concept and are left unmapped rather than approximated.",
+        "exampleBoolean": false,
+        "name": "AMRIT specimen to SNOMED"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/amrit-susceptibility-loinc"
+        },
+        "description": "Every LOINC concept AMRIT can put on a susceptibility observation, one per agent and method. Generated from the terminology seed; 135 catalogue agents have no LOINC concept and are exported with the WHONET coding alone.",
+        "exampleBoolean": false,
+        "name": "AMRIT susceptibility LOINC concepts"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/amrit-terminology-note"
+        },
+        "description": "Why a standard coding is absent from a bundle that would otherwise carry one. The tag is present so that a missing code is a stated gap rather than a silent one; the specific reason travels in the tag's display text.",
+        "exampleBoolean": false,
+        "name": "AMRIT terminology notes"
+      },
+      {
+        "reference": {
+          "reference": "Bundle/eba273c1-f6aa-52ea-9fae-ccf002cc5a11"
+        },
+        "name": "eba273c1-f6aa-52ea-9fae-ccf002cc5a11",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/fc2256fb-51e6-55f5-a740-44f2311df5ba"
+        },
+        "name": "fc2256fb-51e6-55f5-a740-44f2311df5ba",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/whonet-antibiotic-code"
+        },
+        "description": "The antimicrobial code space AMRIT emits alongside LOINC on every susceptibility observation. It is the reason a WHONET user can read AMRIT's output at all.",
+        "exampleBoolean": false,
+        "name": "WHONET antimicrobial codes"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/whonet-organism-code"
+        },
+        "description": "The organism code space. SNOMED concepts are carried alongside where the deployment is licensed for them; this one is always present.",
+        "exampleBoolean": false,
+        "name": "WHONET organism codes"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/whonet-specimen-code"
+        },
+        "description": "The specimen groups AMRIT reports on. Three of the eight carry a SNOMED concept; the rest are unmapped rather than approximated.",
+        "exampleBoolean": false,
+        "name": "WHONET specimen groups"
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2026+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      },
+      {
+        "code": "show-inherited-invariants",
+        "value": "false"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:whonet:antibiotic-code"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:whonet:organism-code"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:whonet:specimen-code"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:amrit:terminology-note"
+      }
+    ]
+  }
+}

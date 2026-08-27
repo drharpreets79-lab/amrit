@@ -1,0 +1,263 @@
+{
+ "resourceType": "Bundle",
+ "id": "eba273c1-f6aa-52ea-9fae-ccf002cc5a11",
+ "type": "collection",
+ "timestamp": "2026-01-06T09:00:00Z",
+ "entry": [
+  {
+   "fullUrl": "urn:uuid:fb9d96d3-0d0c-5b9e-b5df-b94d66d8f43c",
+   "resource": {
+    "resourceType": "Organization",
+    "id": "fb9d96d3-0d0c-5b9e-b5df-b94d66d8f43c",
+    "identifier": [
+     {
+      "system": "urn:whonet:lab-code",
+      "value": "LAB01"
+     },
+     {
+      "system": "urn:whonet:site-group",
+      "value": "Region A"
+     }
+    ],
+    "name": "Reference Laboratory",
+    "meta": {
+     "profile": [
+      "https://amrit.invalid/StructureDefinition/AmritOrganization"
+     ]
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Reporting laboratory Reference Laboratory (LAB01).</p></div>"
+    }
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:fcb156cc-73fd-510d-9da0-abd6be0452c3",
+   "resource": {
+    "resourceType": "Measure",
+    "id": "fcb156cc-73fd-510d-9da0-abd6be0452c3",
+    "url": "urn:whonet:measure:amr-resistance-rate:MEM",
+    "version": "1.0.0",
+    "name": "AMRResistanceRateMEM",
+    "title": "AMR resistance rate for MEM",
+    "status": "active",
+    "experimental": false,
+    "publisher": "Unconfigured deployment",
+    "description": "Percentage of tested isolates with a resistant interpretation. The denominator contains S, I and R results.",
+    "scoring": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/measure-scoring",
+       "code": "proportion"
+      }
+     ]
+    },
+    "group": [
+     {
+      "population": [
+       {
+        "code": {
+         "coding": [
+          {
+           "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+           "code": "initial-population"
+          }
+         ]
+        },
+        "criteria": {
+         "language": "text/plain",
+         "description": "Final isolate records in the period, whatever was tested",
+         "expression": "Final isolate records in the period, whatever was tested"
+        }
+       },
+       {
+        "code": {
+         "coding": [
+          {
+           "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+           "code": "denominator"
+          }
+         ]
+        },
+        "criteria": {
+         "language": "text/plain",
+         "description": "Isolates with an S, I or R interpretation recorded for MEM",
+         "expression": "Isolates with an S, I or R interpretation recorded for MEM"
+        }
+       },
+       {
+        "code": {
+         "coding": [
+          {
+           "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+           "code": "numerator"
+          }
+         ]
+        },
+        "criteria": {
+         "language": "text/plain",
+         "description": "Isolates with an R interpretation recorded for MEM",
+         "expression": "Isolates with an R interpretation recorded for MEM"
+        }
+       }
+      ],
+      "stratifier": [
+       {
+        "code": {
+         "text": "Organism"
+        },
+        "criteria": {
+         "language": "text/plain",
+         "description": "The organism the isolate was identified as",
+         "expression": "The organism the isolate was identified as"
+        }
+       }
+      ]
+     }
+    ],
+    "supplementalData": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "urn:whonet:antibiotic-code",
+         "code": "MEM"
+        }
+       ]
+      },
+      "criteria": {
+       "language": "text/plain",
+       "description": "The antimicrobial agent the rate is reported for: MEM",
+       "expression": "The antimicrobial agent the rate is reported for: MEM"
+      }
+     }
+    ],
+    "meta": {
+     "profile": [
+      "https://amrit.invalid/StructureDefinition/AmritMeasure"
+     ]
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Resistance-rate measure for MEM: resistant isolates over tested isolates.</p></div>"
+    }
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:99526ffe-6138-52c5-bebc-70e19ebff05d",
+   "resource": {
+    "resourceType": "MeasureReport",
+    "id": "99526ffe-6138-52c5-bebc-70e19ebff05d",
+    "status": "complete",
+    "type": "summary",
+    "measure": "urn:whonet:measure:amr-resistance-rate:MEM",
+    "date": "2026-01-06T09:00:00Z",
+    "reporter": {
+     "reference": "urn:uuid:fb9d96d3-0d0c-5b9e-b5df-b94d66d8f43c",
+     "display": "Reference Laboratory"
+    },
+    "period": {
+     "start": "2026-01-01",
+     "end": "2026-01-31"
+    },
+    "group": [
+     {
+      "code": {
+       "text": "MEM resistance"
+      },
+      "population": [
+       {
+        "code": {
+         "coding": [
+          {
+           "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+           "code": "initial-population"
+          }
+         ]
+        },
+        "count": 3
+       },
+       {
+        "code": {
+         "coding": [
+          {
+           "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+           "code": "denominator"
+          }
+         ]
+        },
+        "count": 1
+       },
+       {
+        "code": {
+         "coding": [
+          {
+           "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+           "code": "numerator"
+          }
+         ]
+        },
+        "count": 1
+       }
+      ],
+      "measureScore": {
+       "value": 1
+      },
+      "stratifier": [
+       {
+        "code": [
+         {
+          "text": "Organism"
+         }
+        ],
+        "stratum": [
+         {
+          "value": {
+           "text": "Klebsiella pneumoniae"
+          },
+          "population": [
+           {
+            "code": {
+             "coding": [
+              {
+               "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+               "code": "denominator"
+              }
+             ]
+            },
+            "count": 1
+           },
+           {
+            "code": {
+             "coding": [
+              {
+               "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+               "code": "numerator"
+              }
+             ]
+            },
+            "count": 1
+           }
+          ],
+          "measureScore": {
+           "value": 1
+          }
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "meta": {
+     "profile": [
+      "https://amrit.invalid/StructureDefinition/AmritMeasureReport"
+     ]
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MEM resistance 1/1 (100%), 2026-01-01 to 2026-01-31.</p></div>"
+    }
+   }
+  }
+ ]
+}

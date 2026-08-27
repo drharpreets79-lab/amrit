@@ -1,0 +1,61 @@
+{% extends "dashboard/base.html" %}
+{% block title %}Public summary · {{ amrit_country.branding.product_name|default:"AMRIT" }}{% endblock %}
+
+{% block content %}
+<section class="rounded-2xl bg-gradient-to-br from-brand-navy-700 via-brand-navy-800 to-brand-blue-700 text-white p-7 mb-8 shadow-card">
+  <div class="text-[11px] uppercase tracking-[0.2em] text-brand-blue-100 font-semibold">Public summary</div>
+  <h1 class="font-display text-3xl md:text-4xl font-extrabold mt-1">Antimicrobial resistance surveillance, {{ amrit_country.country_name|default:"this deployment" }}</h1>
+  <p class="text-brand-blue-100 mt-2 max-w-2xl">Aggregate, de-identified surveillance metrics from connected laboratories across {{ amrit_country.country_name|default:"this deployment" }}. No patient-level data is exposed.</p>
+  <p class="text-brand-blue-100/90 text-xs mt-3 max-w-2xl">
+    Figures covering fewer than {{ amrit_k_anonymity_floor }} isolates are suppressed rather than published.
+    {% if amrit_residency_note %}{{ amrit_residency_note }}{% endif %}
+  </p>
+</section>
+
+<section class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+  <div class="bg-white rounded-xl border border-slate-200 shadow-card p-5">
+    <div class="text-xs uppercase tracking-wider text-slate-500 font-semibold">Active labs</div>
+    <div class="font-display text-3xl font-extrabold text-brand-navy-700 mt-1">{{ active_sites }}</div>
+  </div>
+  <div class="bg-white rounded-xl border border-emerald-200 shadow-card p-5">
+    <div class="text-xs uppercase tracking-wider text-emerald-700 font-semibold">Online now</div>
+    <div class="font-display text-3xl font-extrabold text-emerald-700 mt-1">{{ online_sites }}</div>
+  </div>
+  <div class="bg-white rounded-xl border border-brand-blue-200 shadow-card p-5">
+    <div class="text-xs uppercase tracking-wider text-brand-blue-700 font-semibold">{{ amrit_country.admin_levels.0.label_plural|default:"Areas" }} covered</div>
+    <div class="font-display text-3xl font-extrabold text-brand-blue-700 mt-1">{{ units_covered }}</div>
+  </div>
+  <div class="bg-white rounded-xl border border-brand-accent-200 shadow-card p-5">
+    <div class="text-xs uppercase tracking-wider text-brand-accent-700 font-semibold">Completed studies</div>
+    <div class="font-display text-3xl font-extrabold text-brand-accent-700 mt-1">{{ completed_queries }}</div>
+  </div>
+</section>
+
+<section class="bg-white rounded-xl border border-slate-200 shadow-card">
+  <div class="px-5 py-4 border-b border-slate-100"><h2 class="font-display text-base font-bold text-brand-navy-700">Recent completed studies</h2></div>
+  <div class="overflow-x-auto">
+    <table class="min-w-full text-sm">
+      <thead class="bg-slate-50 text-slate-500 text-xs uppercase tracking-wider">
+        <tr>
+          <th class="text-left px-5 py-2 font-semibold">Title</th>
+          <th class="text-left px-5 py-2 font-semibold">Type</th>
+          <th class="text-left px-5 py-2 font-semibold">Antibiotic</th>
+          <th class="text-left px-5 py-2 font-semibold">Completed</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-slate-100">
+        {% for q in completed_recent %}
+          <tr>
+            <td class="px-5 py-2 text-slate-800 font-medium">{{ q.title|default:"—" }}</td>
+            <td class="px-5 py-2 text-xs font-mono">{{ q.type }}</td>
+            <td class="px-5 py-2 text-xs font-mono">{{ q.antibiotic_code|default:"—" }}</td>
+            <td class="px-5 py-2 text-xs font-mono text-slate-600">{% if q.completed_at %}{{ q.completed_at|date:"Y-m-d" }}{% else %}—{% endif %}</td>
+          </tr>
+        {% empty %}
+          <tr><td colspan="4" class="px-5 py-6 text-center text-slate-500">No completed studies yet.</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,82 @@
+{% extends "dashboard/base.html" %}
+{% block title %}Remove {{ site.lab_code }} · AMRIT Central{% endblock %}
+
+{% block content %}
+<div class="mb-6">
+  <div class="text-[11px] uppercase tracking-[0.18em] text-slate-500 font-semibold">Registry</div>
+  <h1 class="font-display text-2xl md:text-3xl font-extrabold text-brand-navy-700 mt-1">
+    Remove <span class="font-mono">{{ site.lab_code }}</span>?
+  </h1>
+  <p class="text-sm text-slate-500 mt-1">{{ site.name|default:"(no name)" }}{% if site.place_label %} · {{ site.place_label }}{% endif %}</p>
+</div>
+
+<div class="max-w-3xl space-y-5">
+  <div class="rounded-xl border border-rose-200 bg-rose-50 p-5">
+    <h2 class="text-sm font-bold uppercase tracking-wider text-rose-800">What removing does</h2>
+    <ul class="mt-2 space-y-1 text-sm text-rose-900 list-disc pl-5">
+      <li>The laboratory leaves the registry and its token stops authenticating. Its next sync gets 401.</li>
+      <li>It can register again, which files a fresh request for someone to approve.</li>
+      {% if result_count %}
+        <li><strong>{{ result_count }}</strong> aggregate result{{ result_count|pluralize }} this laboratory has
+          already reported {{ result_count|pluralize:"is,are" }} <strong>deleted with it</strong>. Nothing else holds
+          {{ result_count|pluralize:"it,them" }}. Disable the site instead if the reported figures matter.</li>
+      {% else %}
+        <li>This laboratory has reported no results yet, so no surveillance data goes with it.</li>
+      {% endif %}
+      <li>The audit trail of its polls and responses survives — those rows keep the code they were written under.</li>
+      {% if profile_count %}
+        <li><strong>{{ profile_count }}</strong> operator account{{ profile_count|pluralize }} scoped to this site
+          {{ profile_count|pluralize:"loses,lose" }} that scope and {{ profile_count|pluralize:"sees,see" }} nothing until reassigned.</li>
+      {% endif %}
+      {% if dispatch_count %}
+        <li><strong>{{ dispatch_count }}</strong> query dispatch{{ dispatch_count|pluralize:"es" }} addressed to it
+          {{ dispatch_count|pluralize:"is,are" }} removed with it.</li>
+      {% endif %}
+    </ul>
+  </div>
+
+  {% if error %}
+    <div class="rounded-lg border border-rose-200 bg-rose-50 px-4 py-3 text-sm font-semibold text-rose-800">{{ error }}</div>
+  {% endif %}
+
+  <div class="rounded-xl border border-slate-200 bg-white shadow-sm p-5">
+    <h2 class="text-sm font-bold uppercase tracking-wider text-slate-600">Disable instead</h2>
+    <p class="mt-2 text-sm text-slate-600">
+      Disabling is what most of these decisions want: the site stops syncing immediately, its history stays joined
+      up to it, and turning it back on is one click. Removing is for a row that should never have existed.
+    </p>
+    <form method="post" class="mt-4">
+      {% csrf_token %}
+      <button name="action" value="disable"
+              class="px-4 py-2 rounded-md bg-brand-navy-700 text-white text-sm font-semibold hover:bg-brand-navy-800">
+        Disable {{ site.lab_code }}
+      </button>
+    </form>
+  </div>
+
+  <div class="rounded-xl border border-slate-200 bg-white shadow-sm p-5">
+    <h2 class="text-sm font-bold uppercase tracking-wider text-slate-600">Or remove it permanently</h2>
+    <p class="mt-2 text-sm text-slate-600">This cannot be undone from the portal.</p>
+    <form method="post" class="mt-4">
+      {% csrf_token %}
+      {% if result_count %}
+        <div class="mb-4 max-w-sm">
+          <label class="block text-xs uppercase tracking-wider text-slate-500 mb-1" for="confirm_lab_code">
+            Type <span class="font-mono">{{ site.lab_code }}</span> to confirm
+          </label>
+          <input type="text" id="confirm_lab_code" name="confirm_lab_code" autocomplete="off" required
+                 class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm font-mono focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-rose-500">
+          <p class="mt-1 text-xs text-slate-500">Required because reported results go with it.</p>
+        </div>
+      {% endif %}
+      <div class="flex flex-wrap items-center gap-3">
+        <button name="action" value="delete"
+                class="px-4 py-2 rounded-md bg-rose-600 text-white text-sm font-semibold hover:bg-rose-700">
+          Remove from registry
+        </button>
+        <a href="{% url 'dashboard_sites' %}" class="px-3 py-2 text-sm text-slate-600 hover:text-slate-900">Cancel</a>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}

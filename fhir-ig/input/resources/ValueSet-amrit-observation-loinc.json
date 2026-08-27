@@ -1,0 +1,31 @@
+{
+ "resourceType": "ValueSet",
+ "id": "amrit-observation-loinc",
+ "url": "https://amrit.invalid/ValueSet/amrit-observation-loinc",
+ "name": "AmritObservationLoinc",
+ "title": "AMRIT observation and report LOINC concepts",
+ "status": "active",
+ "experimental": false,
+ "description": "The three LOINC concepts AMRIT uses to say what kind of thing it is reporting: organism identification, the susceptibility panel, and the microbiology report.",
+ "compose": {
+  "include": [
+   {
+    "system": "http://loinc.org",
+    "concept": [
+     {
+      "code": "11475-1",
+      "display": "Microorganism identified in Specimen by Culture"
+     },
+     {
+      "code": "18725-2",
+      "display": "Microbiology studies (set)"
+     },
+     {
+      "code": "18769-0",
+      "display": "Microbial susceptibility tests Set"
+     }
+    ]
+   }
+  ]
+ }
+}

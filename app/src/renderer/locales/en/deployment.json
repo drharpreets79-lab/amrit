@@ -1,0 +1,112 @@
+{
+  "eyebrow": "Deployment",
+  "title": "Deployment and country",
+  "purpose": "Country-varying behaviour for {{country}} ({{code}}). Changes take effect immediately; no restart and no file editing.",
+  "loading": "Reading deployment settings…",
+  "unreadable": "Deployment settings could not be read.",
+  "restricted": "These settings are restricted to a One Health administrator — sign in on the One Health page first.",
+  "unsaved": "Unsaved changes. Nothing is stored until you save.",
+  "actions": {
+    "import": "Import",
+    "export": "Export",
+    "save": "Save changes",
+    "cancel": "Cancel",
+    "reset": "Reset",
+    "resetAll": "Reset every setting to the base profile"
+  },
+  "toast": {
+    "unchangedTitle": "Deployment settings unchanged",
+    "savedTitle": "Deployment settings saved",
+    "savedBody": "In effect now — no restart is needed.",
+    "revertedTitle": "Customisation reverted",
+    "revertedBody": "{{field}} now follows the base profile.",
+    "logoTitle": "Logo accepted",
+    "logoBody": "Validated by its content and re-encoded before storage.",
+    "exportedTitle": "Effective profile exported",
+    "adoptedTitle": "Profile adopted",
+    "adoptedBody": "Build-time fields in that file were ignored — they belong to the build that produced it.",
+    "resetTitle": "Reset to the base profile",
+    "resetBody": "Every customisation on this installation was discarded.",
+    "countryTitle": "Deployment country changed",
+    "countryBody": "{{country}} is now the base profile. Previous country-specific customisations were cleared."
+  },
+  "country": {
+    "title": "Base country",
+    "description": "Select the country whose postal rules, administrative vocabulary, map defaults and export identifiers this installation follows.",
+    "label": "Deployment country",
+    "hint": "Stored as ISO 3166-1 alpha-3. Existing records retain the country already written on them.",
+    "requiredTitle": "Choose a country before configuring this deployment",
+    "requiredBody": "A new international installation starts neutral. It will not silently use another country's state, district or postal rules.",
+    "modalTitle": "Change the deployment country?",
+    "modalDescription": "Switch the base profile to {{country}}.",
+    "modalBody": "This changes address validation, administrative labels, map defaults and export identifiers, and clears customisations made against the previous country. Existing clinical records are not rewritten.",
+    "confirm": "Change country"
+  },
+  "buildTime": {
+    "title": "Fixed when this application was built",
+    "description": "These are operating-system facts about the installed bundle, not settings. Export this profile and rebuild with it to change them."
+  },
+  "resetModal": {
+    "title": "Reset every deployment setting?",
+    "description": "This discards every customisation on this installation and returns to the profile it resolves by country. Nothing else is deleted.",
+    "body": "The identifier namespace returns to its base value too. Bundles already exported keep the URIs they were exported with."
+  },
+  "filePicker": {
+    "image": "Image",
+    "profile": "Country profile"
+  },
+  "sections": {
+    "noLogo": "No logo set",
+    "logo": "Logo",
+    "logoHint": "PNG or JPEG, up to 2 MB and 4096 px on the longest side. SVG is refused: it is an executable document and this image is rendered inside the application. The file is identified by its content rather than its name, and is re-encoded before it is stored.",
+    "addLevel": "Add level",
+    "needOneLevel": "A country needs at least one administrative level.",
+    "removeLevel": "Remove level {{level}}",
+    "ltr": "Left to right",
+    "rtl": "Right to left",
+    "dmy": "Day / Month / Year",
+    "mdy": "Month / Day / Year",
+    "ymd": "Year / Month / Day",
+    "epiIso": "ISO-8601 (Monday start)",
+    "epiMmwr": "MMWR (Sunday start)",
+    "irreversibleTitle": "Changing these cannot be undone for data already exported",
+    "irreversibleBody": "Bundles already sent carry the previous system URIs, so downstream consumers will see two identifier systems for this deployment. The change is stamped with an effective-from timestamp so past exports stay explainable, but it cannot be recalled.",
+    "nothingCustomised": "Nothing is customised — this deployment uses the base profile exactly.",
+    "revert": "Revert to base",
+    "remove": "Remove"
+  },
+  "retention": {
+    "title": "Retention and erasure",
+    "description": "Expiry of row-level data, and removal of a subject's details from the audit log. Both are irreversible; take a backup first.",
+    "unset": "No retention period is set, so nothing expires. Set one under Privacy above to enable expiry.",
+    "configured": "Records older than {{days}} days expire. The cutoff is {{cutoff}}.",
+    "preview": "Preview what would expire",
+    "previewing": "Checking…",
+    "purge": "Purge expired data",
+    "purging": "Purging…",
+    "nothingExpired": "Nothing is old enough to expire.",
+    "wouldRemove": "{{count}} in {{label}}",
+    "purgeModalTitle": "Purge expired data?",
+    "purgeModalDescription": "This permanently deletes the rows listed above and everything that depends on them. It cannot be undone from inside the application.",
+    "purgeModalBody": "The One Health audit chain is not purged: removing entries would destroy the evidence that the log is intact. Use erasure below to remove a subject's details from it.",
+    "eraseTitle": "Erase a subject from the audit log",
+    "eraseBody": "The entry, its time, its actor and its digest remain, so the chain still proves the log was not altered. Only the payload is destroyed, and the erasure is itself recorded.",
+    "objectType": "Record type",
+    "objectTypeHint": "As it appears in the audit trail, e.g. user or event.",
+    "objectId": "Record identifier",
+    "reason": "Reason for erasure",
+    "reasonHint": "Recorded with the erasure. Required.",
+    "erase": "Erase details",
+    "erasing": "Erasing…",
+    "eraseModalTitle": "Erase these audit details?",
+    "eraseModalDescription": "The payload of every audit entry naming this record is destroyed. This cannot be undone.",
+    "toast": {
+      "previewTitle": "Retention preview",
+      "purgedTitle": "Expired data removed",
+      "purgedBody": "{{count}} rows deleted.",
+      "erasedTitle": "Audit details erased",
+      "erasedBody": "{{erased}} entries shredded, {{alreadyErased}} were already erased.",
+      "failedTitle": "Nothing was changed"
+    }
+  }
+}

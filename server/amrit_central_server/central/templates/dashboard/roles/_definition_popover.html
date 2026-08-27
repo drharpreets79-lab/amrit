@@ -1,0 +1,20 @@
+{# Reusable "ⓘ Definition" disclosure. Expects: d = MetricDef.as_definition_dict() #}
+<details class="def group relative inline-block align-middle">
+  <summary class="list-none cursor-pointer inline-flex items-center justify-center h-5 w-5 rounded-full border border-slate-300 text-slate-500 text-[11px] font-bold hover:bg-slate-100 hover:text-brand-navy-700 select-none" title="Definition &amp; calculation">i</summary>
+  <div class="absolute z-30 mt-2 w-80 max-w-[85vw] left-0 rounded-xl border border-slate-200 bg-white shadow-xl p-4 text-left">
+    <div class="font-display font-bold text-brand-navy-700 text-sm mb-1">{{ d.title }}</div>
+    <p class="text-xs text-slate-600 leading-relaxed">{{ d.definition }}</p>
+    <div class="mt-2 rounded-md bg-slate-50 border border-slate-100 px-3 py-2">
+      <div class="text-[10px] uppercase tracking-wider text-slate-400 font-semibold mb-0.5">Calculation</div>
+      <div class="text-xs font-mono text-slate-700">{{ d.formula }}</div>
+      {% if d.numerator %}<div class="text-[11px] text-slate-500 mt-1"><span class="font-semibold">Numerator:</span> {{ d.numerator }}</div>{% endif %}
+      {% if d.denominator %}<div class="text-[11px] text-slate-500"><span class="font-semibold">Denominator:</span> {{ d.denominator }}</div>{% endif %}
+    </div>
+    <dl class="mt-2 grid grid-cols-1 gap-1 text-[11px] text-slate-500">
+      {% if d.data_source %}<div><span class="font-semibold text-slate-600">Source:</span> {{ d.data_source }}</div>{% endif %}
+      {% if d.guideline_ref %}<div><span class="font-semibold text-slate-600">Guideline:</span> {{ d.guideline_ref }}</div>{% endif %}
+      {% if d.who_priority %}<div><span class="font-semibold text-slate-600">WHO priority:</span> {{ d.who_priority }}</div>{% endif %}
+      {% if d.caveats %}<div class="text-amber-700"><span class="font-semibold">Caveat:</span> {{ d.caveats }}</div>{% endif %}
+    </dl>
+  </div>
+</details>

@@ -1,0 +1,119 @@
+# Development stack, run from this directory. The deployment stack is ../docker-compose.yml.
+#
+# Every secret here is required rather than defaulted. A default POSTGRES_PASSWORD of "amrit"
+# is not merely weak: Postgres only reads POSTGRES_PASSWORD when it initialises an *empty*
+# data directory, so a first boot without one silently baked "amrit" into the volume, and the
+# day a real password was put in .env every boot after that died with
+# `FATAL: password authentication failed for user "amrit"` and no clue as to why.
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-amrit_central}
+      POSTGRES_USER: ${POSTGRES_USER:-amrit}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env — it is baked into the db volume on first boot and cannot be changed by editing .env later}
+    volumes:
+      - amrit_pg_data:/var/lib/postgresql/data
+    # No host port mapping by default. The web container reaches the DB on
+    # db:5432 inside the Docker network. To expose Postgres on the host
+    # (e.g. for a SQL client), create docker-compose.override.yml — see the
+    # "Expose Postgres on host" snippet in README.md.
+    healthcheck:
+      test:
+        - "CMD-SHELL"
+        - "pg_isready -U ${POSTGRES_USER:-amrit} -d ${POSTGRES_DB:-amrit_central}"
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  # Channels backend for the WebSocket bridge (desktop live pulls + dashboard streams).
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  web:
+    build: .
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    environment:
+      DJANGO_SECRET_KEY: ${DJANGO_SECRET_KEY:?set DJANGO_SECRET_KEY in .env}
+      DJANGO_DEBUG: ${DJANGO_DEBUG:-0}
+      DJANGO_ALLOWED_HOSTS: ${DJANGO_ALLOWED_HOSTS:?set DJANGO_ALLOWED_HOSTS to the public portal host name}
+      DATABASE_URL: postgres://${POSTGRES_USER:-amrit}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-amrit_central}
+      REDIS_URL: ${REDIS_URL:-redis://redis:6379/0}
+      AMRIT_CACHE_URL: ${AMRIT_CACHE_URL:-redis://redis:6379/1}
+      AMRIT_TRUST_PROXY_HEADERS: ${AMRIT_TRUST_PROXY_HEADERS:-1}
+      DJANGO_SECURE_COOKIES: ${DJANGO_SECURE_COOKIES:-1}
+      DJANGO_SECURE_SSL_REDIRECT: ${DJANGO_SECURE_SSL_REDIRECT:-1}
+      DJANGO_SECURE_HSTS_SECONDS: ${DJANGO_SECURE_HSTS_SECONDS:-31536000}
+      DJANGO_CSRF_TRUSTED_ORIGINS: ${DJANGO_CSRF_TRUSTED_ORIGINS:-}
+      # Off unless asked. Creating an administrator is not something a stack should do because
+      # nobody said otherwise, and the old default password of "admin" was an open door on any
+      # reachable deployment.
+      DJANGO_CREATE_SUPERUSER: ${DJANGO_CREATE_SUPERUSER:-0}
+      DJANGO_SUPERUSER_USERNAME: ${DJANGO_SUPERUSER_USERNAME:-admin}
+      DJANGO_SUPERUSER_EMAIL: ${DJANGO_SUPERUSER_EMAIL:-admin@example.com}
+      DJANGO_SUPERUSER_PASSWORD: ${DJANGO_SUPERUSER_PASSWORD:-}
+      # Off unless asked, for the same reason: the demo seeds eleven accounts whose passwords
+      # are published in this repository, so anyone who has read the source can sign in.
+      AMRIT_SEED_DEMO: ${AMRIT_SEED_DEMO:-0}
+      # The country this deployment is for. Documented in .env.example but never passed
+      # through, so every container resolved the neutral fallback profile (ZZZ) whatever
+      # .env said — which is why a demo seed configured for India refused to run and took
+      # the boot down with it. Empty is still valid: it means the neutral profile.
+      AMRIT_COUNTRY_PROFILE: ${AMRIT_COUNTRY_PROFILE:-}
+      AMRIT_QUERY_TTL_SECONDS: ${AMRIT_QUERY_TTL_SECONDS:-3600}
+      AMRIT_LONGPOLL_MAX_WAIT: ${AMRIT_LONGPOLL_MAX_WAIT:-90}
+      # How often a parked long-poll looks for work: the floor on how long a dashboard
+      # refresh takes to reach a site that is already waiting.
+      AMRIT_LONGPOLL_TICK: ${AMRIT_LONGPOLL_TICK:-0.5}
+      # One-time desktop pickup proof. Default 24 h: long enough for human approval, short
+      # enough that an abandoned request is not a permanent credential-collection handle.
+      AMRIT_ENROLMENT_PICKUP_TTL_SECONDS: ${AMRIT_ENROLMENT_PICKUP_TTL_SECONDS:-86400}
+      AMRIT_K_ANONYMITY_FLOOR: ${AMRIT_K_ANONYMITY_FLOOR:-5}
+      AMRIT_SNAPSHOT_TTL_SECONDS: ${AMRIT_SNAPSHOT_TTL_SECONDS:-21600}
+    ports:
+      # Loopback only. Nothing here terminates TLS, and both the operator sign-in and site
+      # enrolment carry credentials, so publishing on every interface put those on the wire in
+      # clear for anyone on the network. Put a reverse proxy in front to expose this.
+      - "127.0.0.1:${WEB_PORT:-8000}:8000"
+
+  # Keeps KPI snapshots warm: every 30 min pull live + roll up all scopes.
+  # Scale to 0 to disable (docker compose up --scale scheduler=0).
+  scheduler:
+    build: .
+    restart: unless-stopped
+    depends_on:
+      web:
+        condition: service_started
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    environment:
+      DJANGO_SECRET_KEY: ${DJANGO_SECRET_KEY:?set DJANGO_SECRET_KEY in .env}
+      DATABASE_URL: postgres://${POSTGRES_USER:-amrit}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-amrit_central}
+      REDIS_URL: ${REDIS_URL:-redis://redis:6379/0}
+      AMRIT_CACHE_URL: ${AMRIT_CACHE_URL:-redis://redis:6379/1}
+      AMRIT_SEED_DEMO: "0"
+      # The roll-up computes scopes from the country's administrative levels, so it has to
+      # agree with the web container about which country this is.
+      AMRIT_COUNTRY_PROFILE: ${AMRIT_COUNTRY_PROFILE:-}
+    # Bypasses the web entrypoint (no migrate/seed here) — web owns those.
+    # Lead sleep lets web finish migrating before the first roll-up.
+    entrypoint: ["/bin/sh", "-c"]
+    command:
+      - "sleep 45; while true; do python manage.py refresh_snapshots --live || true; sleep ${AMRIT_REFRESH_INTERVAL_SECONDS:-1800}; done"
+
+volumes:
+  amrit_pg_data:

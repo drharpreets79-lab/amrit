@@ -1,0 +1,59 @@
+{% extends "dashboard/base.html" %}
+{% block title %}Audit · AMRIT Central{% endblock %}
+
+{% block content %}
+<div class="flex flex-wrap items-end justify-between gap-3 mb-6">
+  <div>
+    <h1 class="text-2xl font-semibold tracking-tight text-slate-900">Audit Log</h1>
+    <p class="text-sm text-slate-500 mt-1">Server-side mirror of every site poll, dispatch, and response.</p>
+  </div>
+</div>
+
+<form method="get" class="bg-white rounded-xl border border-slate-200 shadow-sm p-4 mb-6 flex flex-wrap gap-3 items-end">
+  <div>
+    <label class="block text-xs uppercase tracking-wider text-slate-500 mb-1">Action</label>
+    <select name="action" class="rounded-md border border-slate-300 px-3 py-2 text-sm">
+      <option value="">All</option>
+      {% for a in actions %}
+        <option value="{{ a }}" {% if action == a %}selected{% endif %}>{{ a }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  <div class="flex-1 min-w-[220px]">
+    <label class="block text-xs uppercase tracking-wider text-slate-500 mb-1">Lab code</label>
+    <input type="text" name="lab_code" value="{{ lab_code }}" placeholder="e.g. LAB-001"
+           class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue-500 focus:border-brand-blue-500">
+  </div>
+  <button class="px-4 py-2 rounded-md bg-brand-navy-700 text-white text-sm font-semibold hover:bg-brand-navy-800">Filter</button>
+  {% if action or lab_code %}<a href="{% url 'dashboard_audit' %}" class="px-3 py-2 text-sm text-slate-600 hover:text-slate-900">Reset</a>{% endif %}
+</form>
+
+<div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-x-auto">
+  <table class="min-w-full text-sm">
+    <thead class="bg-slate-50 text-slate-500 text-xs uppercase tracking-wider">
+      <tr>
+        <th class="text-left px-5 py-2 font-medium">Time</th>
+        <th class="text-left px-5 py-2 font-medium">Lab</th>
+        <th class="text-left px-5 py-2 font-medium">Action</th>
+        <th class="text-left px-5 py-2 font-medium">Query</th>
+        <th class="text-left px-5 py-2 font-medium">Detail</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-slate-100">
+      {% for e in entries %}
+        <tr>
+          <td class="px-5 py-2 text-xs text-slate-600 font-mono whitespace-nowrap">{{ e.created_at|date:"Y-m-d H:i:s" }}</td>
+          <td class="px-5 py-2 text-xs font-mono text-slate-700">{{ e.lab_code|default:"—" }}</td>
+          <td class="px-5 py-2"><span class="inline-block px-2 py-0.5 rounded bg-slate-100 text-slate-700 text-xs font-mono">{{ e.action }}</span></td>
+          <td class="px-5 py-2 text-xs font-mono text-slate-500">{% if e.query_id %}{{ e.query_id|stringformat:"s"|slice:":8" }}…{% else %}—{% endif %}</td>
+          <td class="px-5 py-2 text-xs text-slate-600">
+            {% if e.error %}<span class="text-rose-600">{{ e.error|truncatechars:200 }}</span>{% else %}{{ e.detail|truncatechars:200|default:"—" }}{% endif %}
+          </td>
+        </tr>
+      {% empty %}
+        <tr><td colspan="5" class="px-5 py-8 text-center text-slate-500">No audit events match.</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

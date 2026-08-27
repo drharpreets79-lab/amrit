@@ -1,0 +1,81 @@
+{
+  "sections": {
+    "placement": "Reporting placement",
+    "placementHint": "Which administrative unit this facility reports under. This is not necessarily the same place as its postal address — a hospital's postal town and its reporting district frequently differ.",
+    "postal": "Postal address",
+    "postalHint": "The address as it is written on an envelope in this country. Which fields appear, what they are called and the order they are asked in all come from the country, not from this form."
+  },
+  "labels": {
+    "address_lines": "Street address",
+    "organization": "Organisation",
+    "sorting_code": "Sorting code",
+    "area": "Area",
+    "city": "City",
+    "county": "County",
+    "department": "Department",
+    "district": "District",
+    "do_si": "Do / Si",
+    "eircode": "Eircode",
+    "emirate": "Emirate",
+    "island": "Island",
+    "neighborhood": "Neighbourhood",
+    "oblast": "Oblast",
+    "parish": "Parish",
+    "pin": "PIN code",
+    "post_town": "Post town",
+    "postal": "Postal code",
+    "prefecture": "Prefecture",
+    "province": "Province",
+    "state": "State",
+    "suburb": "Suburb",
+    "townland": "Townland",
+    "village_township": "Village / township",
+    "zip": "ZIP code"
+  },
+  "postalCodeExample": "For example {{example}}",
+  "postalCodeExamples": "For example {{examples}}",
+  "plusCode": {
+    "label": "Plus Code",
+    "hint": "Optional full Google Open Location Code. It works offline and can place a facility where postal or street addressing is unavailable. Short local codes are not accepted.",
+    "placeholder": "For example 7J3Q2M8Q+P9"
+  },
+  "lookup": {
+    "searching": "Looking up…",
+    "unknownTitle": "Not in the postal directory",
+    "unknownBody": "{{code}} is not in the bundled directory for {{country}}. That is not an error — new codes are issued before a directory catches up — but check it before saving.",
+    "noDirectoryTitle": "No postal directory for {{country}}",
+    "noDirectoryBody": "This country has no postal-code directory in the bundle. Type the town and pick it from the list to place this facility on the map.",
+    "suggestionsTitle": "Places with this code",
+    "suggestionsHint": "Choosing one fills the town and administrative area, and places the facility on the map. Nothing you have already typed is replaced.",
+    "localityPlaceholder": "Type a town or city to place this facility…",
+    "localityNoMatches": "No place of that name in {{country}}.",
+    "apply": "Use this place",
+    "clear": "Clear the location"
+  },
+  "point": {
+    "title": "Location",
+    "coordinates": "{{latitude}}, {{longitude}}",
+    "none": "No coordinates yet",
+    "manual": "Entered by hand",
+    "precision": {
+      "device": "Reported by the installation",
+      "manual": "Entered by hand",
+      "plus_code": "Plus Code area",
+      "postal_area": "Postal code area",
+      "locality": "Town centre",
+      "subdivision": "Administrative area centre",
+      "country": "Country centre"
+    },
+    "precisionHint": "How exact this point is. It is stored with the coordinates so a map can show only the points precise enough for what it is being used for.",
+    "source": "Source: {{source}}",
+    "mapAlt": "Map showing the resolved location of this facility",
+    "mapUnavailable": "The map needs a network connection. The coordinates above are stored either way."
+  },
+  "derived": {
+    "title": "Filled in from the postal code",
+    "body": "{{values}}. This form does not ask for it, but it is stored and exported with the address."
+  },
+  "problems": {
+    "title": "This address cannot be filed in this country"
+  }
+}

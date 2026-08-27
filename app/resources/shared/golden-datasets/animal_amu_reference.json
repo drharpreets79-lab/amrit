@@ -1,0 +1,5 @@
+{
+  "description": "Reference active-ingredient quantity per population biomass fixture",
+  "input": [{"host_species": "Chicken", "quantity_mg": 500, "biomass_kg": 100}],
+  "expected": {"quantity_mg": 500, "biomass_kg": 100, "mg_per_pcu_kg": 5}
+}

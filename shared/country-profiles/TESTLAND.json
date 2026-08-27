@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "profile_id": "TESTLAND",
+  "source": "curated",
+  "country_code": "TST",
+  "country_code_2": "TS",
+  "country_name": "تستلاند (Testland)",
+  "who_region": "EMRO",
+  "locale": "ar",
+  "fallback_locales": [
+    "en"
+  ],
+  "text_direction": "rtl",
+  "numbering_system": "arab",
+  "timezone": "Asia/Baghdad",
+  "timezone_ambiguous": false,
+  "calendar": "islamic",
+  "date_input_order": "DMY",
+  "first_day_of_week": 6,
+  "epi_week_system": "mmwr",
+  "fiscal_year_start_month": 10,
+  "admin_levels": [
+    {
+      "level": 1,
+      "key": "governorate",
+      "label": "محافظة",
+      "label_plural": "المحافظات",
+      "code_system": "ISO3166-2",
+      "required": true
+    },
+    {
+      "level": 2,
+      "key": "district",
+      "label": "قضاء",
+      "label_plural": "الأقضية",
+      "code_system": "GeoNames",
+      "required": true
+    },
+    {
+      "level": 3,
+      "key": "subdistrict",
+      "label": "ناحية",
+      "label_plural": "النواحي",
+      "code_system": "GeoNames",
+      "required": false
+    }
+  ],
+  "identifier_namespace": {
+    "base_uri": "https://amr.testland.example",
+    "urn_prefix": "urn:testland:amr"
+  },
+  "branding": {
+    "product_name": "AMR Testland",
+    "app_id": "example.testland.amr",
+    "authority_name": "وزارة الصحة",
+    "logo": null,
+    "logo_reverse": null,
+    "colors": {
+      "navy": "#0B3D2E",
+      "blue": "#137A63",
+      "orange": "#C9762B"
+    }
+  },
+  "guidelines": {
+    "default": "EUCAST",
+    "available": [
+      "EUCAST"
+    ],
+    "national_body": null
+  },
+  "code_systems": {
+    "snomed": {
+      "enabled": true,
+      "licence": "Requires a SNOMED CT licence: free in a SNOMED International Member country, an affiliate licence elsewhere. This software grants no licence; establish your position before relying on these codes."
+    }
+  },
+  "banned_identifier_keys": [
+    "national_id"
+  ],
+  "privacy": {
+    "k_anonymity_floor": 10,
+    "retention_days": 1825,
+    "residency_note": "Row-level data must remain within national borders.",
+    "patient_postal_code_digits": 3
+  },
+  "map": {
+    "center": [
+      33.3152,
+      44.3661
+    ],
+    "zoom": 6,
+    "tile_url": null
+  },
+  "reporting_frameworks": [
+    "GLASS"
+  ]
+}

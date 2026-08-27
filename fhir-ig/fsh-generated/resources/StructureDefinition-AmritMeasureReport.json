@@ -1,0 +1,23 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "AmritMeasureReport",
+  "url": "https://amrit.invalid/StructureDefinition/AmritMeasureReport",
+  "name": "AmritMeasureReport",
+  "title": "AMRIT resistance measure report",
+  "status": "draft",
+  "description": "A resistance rate for one agent over one population. Aggregate only: no patient-level data crosses the federation wire.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "MeasureReport",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MeasureReport",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MeasureReport",
+        "path": "MeasureReport"
+      }
+    ]
+  }
+}

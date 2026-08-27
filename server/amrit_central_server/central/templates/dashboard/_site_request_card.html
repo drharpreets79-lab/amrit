@@ -1,0 +1,92 @@
+{% comment %}
+  One laboratory's request to join, with its decision buttons.
+
+  Shared by the registry list and the requests queue rather than written twice: a decision
+  this consequential should not be able to differ between two screens because someone edited
+  one copy. `r` is the SiteEnrolmentRequest; `decide_next` is where to return after a
+  decision, so buttons pressed on the sites page come back to the sites page.
+{% endcomment %}
+<div class="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
+  <div class="flex flex-wrap items-start justify-between gap-3">
+    <div>
+      <div class="flex items-center gap-2">
+        <span class="font-mono text-base font-bold text-brand-navy-700">{{ r.lab_code }}</span>
+        {% if r.status == "pending" %}
+          <span class="text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-amber-100 text-amber-800">awaiting decision</span>
+        {% elif r.status == "approved" %}
+          <span class="text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800">approved</span>
+        {% else %}
+          <span class="text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-rose-100 text-rose-800">declined</span>
+        {% endif %}
+      </div>
+      <div class="text-sm text-slate-800 mt-1">{{ r.name|default:"(no name given)" }}</div>
+    </div>
+    <div class="text-xs text-slate-500 font-mono text-right">
+      asked {{ r.created_at|date:"Y-m-d H:i:s" }}
+      {% if r.source_ip %}<div>from {{ r.source_ip }}</div>{% endif %}
+      {% if r.app_version %}<div>app {{ r.app_version }}</div>{% endif %}
+    </div>
+  </div>
+
+  <dl class="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
+    <div>
+      <dt class="text-xs uppercase tracking-wider text-slate-500">Country</dt>
+      <dd class="text-slate-800">{{ r.country|default:"—" }}{% if r.country_code %} <span class="font-mono text-xs text-slate-500">({{ r.country_code }})</span>{% endif %}</dd>
+    </div>
+    <div>
+      <dt class="text-xs uppercase tracking-wider text-slate-500">Reports from</dt>
+      <dd class="text-slate-800">
+        {% for unit in r.admin_units %}
+          <span class="font-mono text-xs">L{{ unit.level }}:{{ unit.code }}</span>{% if not forloop.last %} · {% endif %}
+        {% empty %}—{% endfor %}
+      </dd>
+    </div>
+    <div>
+      <dt class="text-xs uppercase tracking-wider text-slate-500">Contact</dt>
+      <dd class="text-slate-800 break-all">{{ r.contact_email|default:"—" }}</dd>
+    </div>
+    <div>
+      <dt class="text-xs uppercase tracking-wider text-slate-500">Address</dt>
+      {% comment %}
+        The rendering cached by clean_address, in the country's own field order. Never
+        assembled from the raw fields here: address_lines is a list, and joining the
+        dictionary's values put a Python list repr on the screen.
+      {% endcomment %}
+      <dd class="text-slate-800 text-xs whitespace-pre-line">{{ r.address.formatted|default:"—" }}</dd>
+    </div>
+  </dl>
+
+  {% if r.status == "pending" %}
+    <form method="post" action="{% url 'dashboard_site_request_decide' r.pk %}"
+          class="mt-5 pt-4 border-t border-slate-100 flex flex-wrap items-end gap-3">
+      {% csrf_token %}
+      {% if decide_next %}<input type="hidden" name="next" value="{{ decide_next }}">{% endif %}
+      <div class="flex-1 min-w-[240px]">
+        <label class="block text-xs uppercase tracking-wider text-slate-500 mb-1" for="note-{{ r.pk }}">Note (kept on the record)</label>
+        <input type="text" id="note-{{ r.pk }}" name="note" placeholder="why this was approved or declined"
+               class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue-500 focus:border-brand-blue-500">
+      </div>
+      <button name="decision" value="approve"
+              class="px-4 py-2 rounded-md bg-brand-navy-700 text-white text-sm font-semibold hover:bg-brand-navy-800">
+        Approve
+      </button>
+      <button name="decision" value="reject"
+              class="px-4 py-2 rounded-md border border-rose-300 bg-rose-50 text-rose-700 text-sm font-semibold hover:bg-rose-100">
+        Decline
+      </button>
+    </form>
+    <p class="mt-2 text-xs text-slate-500">
+      Approving registers the laboratory. It still cannot sync until you issue its token on the next screen.
+    </p>
+  {% else %}
+    <div class="mt-5 pt-4 border-t border-slate-100 text-xs text-slate-500">
+      {{ r.get_status_display }}
+      {% if r.decided_by %}by {{ r.decided_by.get_username }}{% endif %}
+      {% if r.decided_at %}on <span class="font-mono">{{ r.decided_at|date:"Y-m-d H:i:s" }}</span>{% endif %}
+      {% if r.decision_note %}<div class="mt-1 text-slate-700">“{{ r.decision_note }}”</div>{% endif %}
+      {% if r.site %}
+        <a href="{% url 'dashboard_site_edit' r.site.lab_code %}" class="font-semibold text-brand-accent-700 hover:underline">Open {{ r.site.lab_code }}</a>
+      {% endif %}
+    </div>
+  {% endif %}
+</div>

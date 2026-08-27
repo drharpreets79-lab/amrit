@@ -1,0 +1,78 @@
+{
+  "eyebrow": "Operational overview",
+  "title": "AMR surveillance at a glance",
+  "purpose": "Monitor laboratory readiness, isolate workflow, master coverage and secure federation from one local-first workspace.",
+  "refresh": "Refresh dashboard",
+  "onboarding": {
+    "eyebrow": "Start here",
+    "title": "Select or register a laboratory",
+    "body": "Records, panels and sync are scoped to the active laboratory. Master catalogues remain centrally configurable.",
+    "action": "Open laboratories"
+  },
+  "stats": {
+    "isolates": "All isolates",
+    "isolatesDetail": "{{final}} final · {{draft}} draft",
+    "antibiotics": "Antibiotics",
+    "antibioticsDetail": "Configurable master entries",
+    "organisms": "Organisms",
+    "organismsDetail": "Coded surveillance catalogue",
+    "breakpoints": "Breakpoint rules",
+    "breakpointsDetail": "Across active guideline sets"
+  },
+  "workflow": {
+    "title": "Workflow queue",
+    "description": "Direct access to the work that needs attention.",
+    "drafts": "{{count}} draft records",
+    "draftsDetail": "Validate and finalise incomplete isolates",
+    "import": "Import a laboratory batch",
+    "importDetail": "Map, validate and commit CSV or Excel data",
+    "panels": "{{count}} AST panels configured",
+    "panelsDetail": "Review master-driven workflow coverage",
+    "laboratories": "{{count}} laboratories",
+    "laboratoriesDetail": "Manage sites and select the active context"
+  },
+  "readiness": {
+    "title": "System readiness",
+    "description": "A transparent check of core local services.",
+    "database": "Local database",
+    "ready": "Ready",
+    "labContext": "Laboratory context",
+    "selected": "Selected",
+    "required": "Required",
+    "token": "Federation token",
+    "configured": "Configured",
+    "notConfigured": "Not configured",
+    "websocket": "WebSocket channel",
+    "reviewSync": "Review Sync Centre"
+  },
+  "activity": {
+    "title": "Recent isolate activity",
+    "description": "Latest records in the active laboratory.",
+    "viewAll": "View all",
+    "loading": "Loading recent records…",
+    "organismPending": "Organism pending",
+    "noSpecimenNumber": "No specimen number",
+    "specimenPending": "Specimen pending",
+    "emptyTitle": "No isolate activity yet",
+    "emptyMessage": "Add a record manually or import a validated batch.",
+    "emptyAction": "Create first record"
+  },
+  "audit": {
+    "title": "Recent audit events",
+    "description": "Traceable actions performed in this installation.",
+    "viewTrail": "View trail",
+    "loading": "Loading audit trail…",
+    "emptyTitle": "No audit events",
+    "emptyMessage": "Actions will appear here as the application is used."
+  },
+  "help": {
+    "title": "Dashboard",
+    "intro": "This screen summarises local operational state. Counts use the active local database; no row-level data leaves the computer from this screen.",
+    "sequenceTitle": "Recommended sequence",
+    "step1": "Select a laboratory.",
+    "step2": "Review master catalogue coverage.",
+    "step3": "Enter or import isolates.",
+    "step4": "Validate drafts before analysis and export.",
+    "outro": "The readiness panel reports configuration state, not server approval or data quality certification."
+  }
+}

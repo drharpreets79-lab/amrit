@@ -1,0 +1,48 @@
+{
+ "resourceType": "ConceptMap",
+ "id": "amrit-specimen-to-snomed",
+ "url": "https://amrit.invalid/ConceptMap/amrit-specimen-to-snomed",
+ "name": "AmritSpecimenToSnomed",
+ "title": "AMRIT specimen to SNOMED",
+ "status": "active",
+ "experimental": false,
+ "description": "Only the specimen groups the catalogue codes. Five of eight carry no concept and are left unmapped rather than approximated.",
+ "group": [
+  {
+   "source": "urn:whonet:specimen-code",
+   "target": "http://snomed.info/sct",
+   "element": [
+    {
+     "code": "CSF",
+     "target": [
+      {
+       "code": "258450006",
+       "equivalence": "equivalent",
+       "comment": "equivalent"
+      }
+     ]
+    },
+    {
+     "code": "ENTERIC_STOOL",
+     "target": [
+      {
+       "code": "119339001",
+       "equivalence": "equivalent",
+       "comment": "equivalent"
+      }
+     ]
+    },
+    {
+     "code": "URINE",
+     "target": [
+      {
+       "code": "122575003",
+       "equivalence": "equivalent",
+       "comment": "equivalent"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

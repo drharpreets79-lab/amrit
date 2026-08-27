@@ -1,0 +1,178 @@
+{
+ "source": "https://tx.fhir.org/r4",
+ "system": "http://hl7.org/fhir/sid/icd-10",
+ "retrieved": "2026-08-14",
+ "verified": [
+  {
+   "code": "A04",
+   "display": "Other bacterial intestinal infections",
+   "localDescription": "Other bacterial intestinal infections"
+  },
+  {
+   "code": "A09",
+   "display": "Other gastroenteritis and colitis of infectious and unspecified origin",
+   "localDescription": "Infectious gastroenteritis and colitis, unspecified"
+  },
+  {
+   "code": "A15",
+   "display": "Respiratory tuberculosis, bacteriologically and histologically confirmed",
+   "localDescription": "Respiratory tuberculosis"
+  },
+  {
+   "code": "A39",
+   "display": "Meningococcal infection",
+   "localDescription": "Meningococcal infection"
+  },
+  {
+   "code": "A40",
+   "display": "Streptococcal sepsis",
+   "localDescription": "Streptococcal sepsis"
+  },
+  {
+   "code": "A41",
+   "display": "Other sepsis",
+   "localDescription": "Other sepsis"
+  },
+  {
+   "code": "A49",
+   "display": "Bacterial infection of unspecified site",
+   "localDescription": "Bacterial infection of unspecified site"
+  },
+  {
+   "code": "B95",
+   "display": "Streptococcus and staphylococcus as the cause of diseases classified to other chapters",
+   "localDescription": "Streptococcus and staphylococcus as the cause of diseases classified elsewhere"
+  },
+  {
+   "code": "B96",
+   "display": "Other specified bacterial agents as the cause of diseases classified to other chapters",
+   "localDescription": "Other specified bacterial agents as the cause of diseases classified elsewhere"
+  },
+  {
+   "code": "B99",
+   "display": "Other and unspecified infectious diseases",
+   "localDescription": "Other and unspecified infectious diseases"
+  },
+  {
+   "code": "G00",
+   "display": "Bacterial meningitis, not elsewhere classified",
+   "localDescription": "Bacterial meningitis, not elsewhere classified"
+  },
+  {
+   "code": "I33",
+   "display": "Acute and subacute endocarditis",
+   "localDescription": "Acute and subacute endocarditis"
+  },
+  {
+   "code": "J15",
+   "display": "Bacterial pneumonia, not elsewhere classified",
+   "localDescription": "Bacterial pneumonia, not elsewhere classified"
+  },
+  {
+   "code": "J18",
+   "display": "Pneumonia, organism unspecified",
+   "localDescription": "Pneumonia, organism unspecified"
+  },
+  {
+   "code": "J20",
+   "display": "Acute bronchitis",
+   "localDescription": "Acute bronchitis"
+  },
+  {
+   "code": "J86",
+   "display": "Pyothorax",
+   "localDescription": "Pyothorax"
+  },
+  {
+   "code": "K65",
+   "display": "Peritonitis",
+   "localDescription": "Peritonitis"
+  },
+  {
+   "code": "K81",
+   "display": "Cholecystitis",
+   "localDescription": "Cholecystitis"
+  },
+  {
+   "code": "L03",
+   "display": "Cellulitis",
+   "localDescription": "Cellulitis"
+  },
+  {
+   "code": "L08",
+   "display": "Other local infections of skin and subcutaneous tissue",
+   "localDescription": "Other local infections of skin and subcutaneous tissue"
+  },
+  {
+   "code": "M00",
+   "display": "Pyogenic arthritis",
+   "localDescription": "Pyogenic arthritis"
+  },
+  {
+   "code": "M86",
+   "display": "Osteomyelitis",
+   "localDescription": "Osteomyelitis"
+  },
+  {
+   "code": "N10",
+   "display": "Acute tubulo-interstitial nephritis",
+   "localDescription": "Acute tubulo-interstitial nephritis"
+  },
+  {
+   "code": "N39.0",
+   "display": "Urinary tract infection, site not specified",
+   "localDescription": "Urinary tract infection, site not specified"
+  },
+  {
+   "code": "O85",
+   "display": "Puerperal sepsis",
+   "localDescription": "Puerperal sepsis"
+  },
+  {
+   "code": "P36",
+   "display": "Bacterial sepsis of newborn",
+   "localDescription": "Bacterial sepsis of newborn"
+  },
+  {
+   "code": "T80.2",
+   "display": "Infections following infusion, transfusion and therapeutic injection",
+   "localDescription": "Infections following infusion, transfusion and therapeutic injection"
+  },
+  {
+   "code": "T81.4",
+   "display": "Infection following a procedure, not elsewhere classified",
+   "localDescription": "Infection following a procedure, not elsewhere classified"
+  },
+  {
+   "code": "T83",
+   "display": "Complications of genitourinary prosthetic devices, implants and grafts",
+   "localDescription": "Complications of genitourinary prosthetic devices, implants and grafts"
+  },
+  {
+   "code": "U82",
+   "display": "Resistance to betalactam antibiotics",
+   "localDescription": "Resistance to beta-lactam antibiotics"
+  },
+  {
+   "code": "U83",
+   "display": "Resistance to other antibiotics",
+   "localDescription": "Resistance to other antibiotics"
+  },
+  {
+   "code": "U84",
+   "display": "Resistance to other antimicrobial drugs",
+   "localDescription": "Resistance to other antimicrobial drugs"
+  },
+  {
+   "code": "Z22",
+   "display": "Carrier of infectious disease",
+   "localDescription": "Carrier of infectious disease"
+  }
+ ],
+ "rejected": [
+  {
+   "code": "U88",
+   "reason": "lookup failed: HTTP Error 404: Not Found"
+  }
+ ]
+}

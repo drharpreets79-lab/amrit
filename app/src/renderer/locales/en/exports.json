@@ -1,0 +1,39 @@
+{
+  "eyebrow": "Interoperability",
+  "title": "Standards export",
+  "purpose": "Create traceable WHONET, FHIR, HL7 and analysis files from a clearly filtered local cohort.",
+  "noLabTitle": "Select a laboratory first",
+  "noLabMessage": "Exports require an explicit source laboratory.",
+  "noLabHelp": "Choose a site to create an export.",
+  "cohortTitle": "Export cohort",
+  "cohortDescription": "Leave dates blank for all available records at the active laboratory.",
+  "periodStart": "Period start",
+  "periodEnd": "Period end",
+  "generating": "Generating…",
+  "saveExport": "Save export",
+  "saved": "{{format}} export saved",
+  "failed": "{{format}} export failed",
+  "lastSaved": "Last export saved",
+  "formats": {
+    "whonet": { "title": "WHONET", "description": "WHONET-compatible isolate/AST table for established AMR workflows." },
+    "fhir": { "title": "FHIR R4 Bundle", "description": "Standards-coded diagnostic report and observation resources." },
+    "hl7": { "title": "HL7 v2.5.1", "description": "ORU-style pipe-delimited laboratory messages with OBX interpretation." },
+    "measure": { "title": "FHIR MeasureReport", "description": "Aggregate surveillance measures suitable for federated reporting." },
+    "csv": { "title": "Analysis CSV", "description": "Flat, analysis-ready export of the filtered local cohort." },
+    "json": { "title": "AMRIT JSON", "description": "Loss-minimising structured backup/interchange representation." }
+  },
+  "safeguards": {
+    "title": "Interoperability safeguards",
+    "description": "What the export pipeline preserves.",
+    "codedTitle": "Coded identities",
+    "codedBody": "Organism, specimen and antibiotic codes remain attached where the target format supports them.",
+    "astTitle": "Format-specific AST",
+    "astBody": "Structured exports retain detailed AST fields; WHONET CSV emits result and measurement columns.",
+    "cohortTitle": "Explicit cohort",
+    "cohortBody": "Laboratory and date filters are audited with the export."
+  },
+  "help": {
+    "formats": "WHONET, FHIR R4 and HL7 v2.5.1 formats support different consumers. Validate exported files in the receiving system before operational exchange.",
+    "aggregate": "MeasureReport is aggregate-oriented. Row-level exports should be shared only under an authorised data-governance process."
+  }
+}

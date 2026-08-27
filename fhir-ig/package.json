@@ -1,0 +1,12 @@
+{
+  "name": "amrit-fhir-ig",
+  "private": true,
+  "description": "Build dependencies for the AMRIT FHIR Implementation Guide. SUSHI compiles input/fsh into fsh-generated/; the HL7 IG Publisher (Java) invokes it by name, which is why it is a project dependency rather than a global install.",
+  "scripts": {
+    "compile": "sushi .",
+    "build": "sushi . && java -jar publisher.jar -ig ."
+  },
+  "devDependencies": {
+    "fsh-sushi": "3.16.4"
+  }
+}

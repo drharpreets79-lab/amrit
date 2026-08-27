@@ -1,0 +1,242 @@
+{% extends "dashboard/base.html" %}
+{% block title %}Overview · AMRIT Central{% endblock %}
+
+{% block content %}
+<section class="rounded-2xl bg-gradient-to-br from-brand-navy-700 via-brand-navy-800 to-brand-navy-900 text-white shadow-card p-7 mb-8 relative overflow-hidden">
+  <div class="absolute -right-10 -bottom-10 h-56 w-56 rounded-full bg-brand-accent/20 blur-3xl"></div>
+  <div class="absolute -left-12 -top-12 h-44 w-44 rounded-full bg-brand-blue/30 blur-3xl"></div>
+  <div class="relative flex flex-wrap items-end justify-between gap-4">
+    <div>
+      <div class="text-[11px] uppercase tracking-[0.2em] text-brand-navy-100/80 font-semibold">Operations Overview</div>
+      <h1 class="font-display text-3xl md:text-4xl font-extrabold mt-1">
+        Welcome{% if user.is_authenticated %}, {{ amrit_profile.full_name|default:user.get_username }}{% endif %}
+      </h1>
+      <p class="text-sm text-brand-navy-100/90 mt-2 max-w-2xl">
+        Real-time view of registered AMRIT sites, dispatched aggregate queries, and de-identified results.
+        Online window: last {{ online_window_minutes }} minutes. Role: <span class="font-semibold text-white">{{ amrit_role_label }}</span>.
+      </p>
+    </div>
+    <div class="text-xs text-brand-navy-100/85 text-right">
+      <div>Server time</div>
+      <div class="font-mono text-white">{{ now|date:"Y-m-d H:i:s T" }}</div>
+    </div>
+  </div>
+</section>
+
+<section class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+  <div class="stat-card bg-white rounded-xl border border-slate-200 p-5 shadow-card">
+    <div class="flex items-center justify-between">
+      <span class="text-xs uppercase tracking-wider text-slate-500 font-semibold">Sites in scope</span>
+      <span class="badge-dot bg-brand-navy-300"></span>
+    </div>
+    <div class="mt-2 font-display text-3xl font-extrabold text-brand-navy-700">{{ site_totals.total }}</div>
+    <div class="mt-1 text-xs text-slate-500">{{ site_totals.active }} active · {{ site_totals.disabled }} disabled</div>
+  </div>
+  <div class="stat-card bg-white rounded-xl border border-emerald-200 p-5 shadow-card">
+    <div class="flex items-center justify-between">
+      <span class="text-xs uppercase tracking-wider text-emerald-700 font-semibold">Online now</span>
+      <span class="badge-dot bg-emerald-500 animate-pulse"></span>
+    </div>
+    <div class="mt-2 font-display text-3xl font-extrabold text-emerald-700">{{ site_totals.online }}</div>
+    <div class="mt-1 text-xs text-slate-500">{{ site_totals.offline }} offline (active &amp; quiet)</div>
+  </div>
+  <div class="stat-card bg-white rounded-xl border border-brand-blue-200 p-5 shadow-card">
+    <div class="flex items-center justify-between">
+      <span class="text-xs uppercase tracking-wider text-brand-blue-700 font-semibold">Queries (24h)</span>
+      <span class="badge-dot bg-brand-blue-500"></span>
+    </div>
+    <div class="mt-2 font-display text-3xl font-extrabold text-brand-blue-700">{{ query_totals.recent }}</div>
+    <div class="mt-1 text-xs text-slate-500">{{ query_totals.total }} total · {{ query_totals.completed }} completed</div>
+  </div>
+  <div class="stat-card bg-white rounded-xl border border-brand-accent-200 p-5 shadow-card">
+    <div class="flex items-center justify-between">
+      <span class="text-xs uppercase tracking-wider text-brand-accent-700 font-semibold">Results (24h)</span>
+      <span class="badge-dot bg-brand-accent-500"></span>
+    </div>
+    <div class="mt-2 font-display text-3xl font-extrabold text-brand-accent-700">{{ result_totals.total_24h }}</div>
+    <div class="mt-1 text-xs text-slate-500">{{ result_totals.ok_24h }} ok · {{ result_totals.err_24h }} err</div>
+  </div>
+</section>
+
+{% if amrit_caps.view_map %}
+<section class="bg-white rounded-2xl border border-slate-200 shadow-card mb-8 overflow-hidden">
+  <div class="px-5 py-4 border-b border-slate-100 flex items-center justify-between">
+    <div>
+      <h2 class="font-display text-lg font-bold text-brand-navy-700">Network map</h2>
+      <p class="text-xs text-slate-500">Active AMRIT installations · OpenStreetMap</p>
+    </div>
+    <a href="{% url 'dashboard_map' %}" class="text-xs text-brand-blue-700 font-semibold hover:underline">Open full map →</a>
+  </div>
+  <iframe src="{% url 'dashboard_map' %}?embed=1" class="w-full" style="height: 360px; border: 0;"></iframe>
+</section>
+{% endif %}
+
+<section class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+  <div class="bg-white rounded-xl border border-slate-200 shadow-card p-5">
+    <h2 class="font-display text-base font-bold text-brand-navy-700 mb-3">Query pipeline</h2>
+    <ul class="space-y-2 text-sm">
+      <li class="flex items-center justify-between"><span class="text-slate-600">Queued</span><span class="font-mono font-semibold">{{ query_totals.queued }}</span></li>
+      <li class="flex items-center justify-between"><span class="text-slate-600">Dispatched</span><span class="font-mono font-semibold">{{ query_totals.dispatched }}</span></li>
+      <li class="flex items-center justify-between"><span class="text-slate-600">Partial</span><span class="font-mono font-semibold">{{ query_totals.partial }}</span></li>
+      <li class="flex items-center justify-between"><span class="text-slate-600">Completed</span><span class="font-mono font-semibold text-emerald-700">{{ query_totals.completed }}</span></li>
+      <li class="flex items-center justify-between"><span class="text-slate-600">Expired</span><span class="font-mono font-semibold text-slate-500">{{ query_totals.expired }}</span></li>
+      <li class="flex items-center justify-between"><span class="text-slate-600">Error</span><span class="font-mono font-semibold text-rose-600">{{ query_totals.error }}</span></li>
+    </ul>
+  </div>
+
+  <div class="bg-white rounded-xl border border-slate-200 shadow-card p-5">
+    <h2 class="font-display text-base font-bold text-brand-navy-700 mb-3">Dispatch state</h2>
+    <ul class="space-y-2 text-sm">
+      <li class="flex items-center justify-between"><span class="text-slate-600">Pending</span><span class="font-mono font-semibold">{{ dispatch_totals.pending }}</span></li>
+      <li class="flex items-center justify-between"><span class="text-slate-600">Delivered</span><span class="font-mono font-semibold">{{ dispatch_totals.delivered }}</span></li>
+      <li class="flex items-center justify-between"><span class="text-slate-600">Answered</span><span class="font-mono font-semibold text-emerald-700">{{ dispatch_totals.answered }}</span></li>
+      <li class="flex items-center justify-between"><span class="text-slate-600">Expired</span><span class="font-mono font-semibold text-slate-500">{{ dispatch_totals.expired }}</span></li>
+      <li class="flex items-center justify-between"><span class="text-slate-600">Error</span><span class="font-mono font-semibold text-rose-600">{{ dispatch_totals.error }}</span></li>
+    </ul>
+  </div>
+
+  <div class="bg-white rounded-xl border border-slate-200 shadow-card p-5">
+    <h2 class="font-display text-base font-bold text-brand-navy-700 mb-3">Top query types</h2>
+    {% if type_breakdown %}
+      <ul class="space-y-2 text-sm">
+        {% for row in type_breakdown %}
+          <li>
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-slate-600 truncate">{{ row.type }}</span>
+              <span class="font-mono font-semibold">{{ row.n }}</span>
+            </div>
+            <div class="h-1.5 bg-slate-100 rounded">
+              <div class="h-1.5 rounded bg-brand-blue-500" style="width: {% widthratio row.n type_breakdown.0.n 100 %}%"></div>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p class="text-sm text-slate-500">No queries yet.</p>
+    {% endif %}
+  </div>
+</section>
+
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+  <div class="bg-white rounded-xl border border-slate-200 shadow-card">
+    <div class="px-5 py-4 border-b border-slate-100 flex items-center justify-between">
+      <h2 class="font-display text-base font-bold text-brand-navy-700">Sites · most recent activity</h2>
+      <a href="{% url 'dashboard_sites' %}" class="text-xs text-brand-blue-700 font-semibold hover:underline">View all →</a>
+    </div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full text-sm">
+        <thead class="bg-slate-50 text-slate-500 text-xs uppercase tracking-wider">
+          <tr>
+            <th class="text-left px-5 py-2 font-semibold">Lab</th>
+            <th class="text-left px-5 py-2 font-semibold">Name</th>
+            <th class="text-left px-5 py-2 font-semibold">Status</th>
+            <th class="text-left px-5 py-2 font-semibold">Last seen</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-100">
+          {% for s in sites %}
+            <tr>
+              <td class="px-5 py-2 font-mono text-slate-700">{{ s.lab_code }}</td>
+              <td class="px-5 py-2">
+                <div class="text-slate-800 font-medium">{{ s.name|default:"—" }}</div>
+                <div class="text-xs text-slate-500">{{ s.country }}{% if s.place_label %} · {{ s.place_label }}{% endif %}</div>
+              </td>
+              <td class="px-5 py-2">
+                {% if s.is_online %}
+                  <span class="inline-flex items-center gap-1 text-emerald-700 text-xs"><span class="badge-dot bg-emerald-500"></span>online</span>
+                {% elif s.status == "active" %}
+                  <span class="inline-flex items-center gap-1 text-slate-500 text-xs"><span class="badge-dot bg-slate-400"></span>idle</span>
+                {% elif s.status == "disabled" %}
+                  <span class="inline-flex items-center gap-1 text-rose-600 text-xs"><span class="badge-dot bg-rose-500"></span>disabled</span>
+                {% else %}
+                  <span class="inline-flex items-center gap-1 text-brand-accent-600 text-xs"><span class="badge-dot bg-brand-accent-500"></span>{{ s.status }}</span>
+                {% endif %}
+              </td>
+              <td class="px-5 py-2 text-slate-600 font-mono text-xs">
+                {% if s.last_seen_at %}{{ s.last_seen_at|date:"Y-m-d H:i:s" }}{% else %}—{% endif %}
+              </td>
+            </tr>
+          {% empty %}
+            <tr><td colspan="4" class="px-5 py-6 text-center text-slate-500">No sites in your scope yet.</td></tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="bg-white rounded-xl border border-slate-200 shadow-card">
+    <div class="px-5 py-4 border-b border-slate-100 flex items-center justify-between">
+      <h2 class="font-display text-base font-bold text-brand-navy-700">Recent queries</h2>
+      {% if amrit_caps.view_queries %}<a href="{% url 'dashboard_queries' %}" class="text-xs text-brand-blue-700 font-semibold hover:underline">View all →</a>{% endif %}
+    </div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full text-sm">
+        <thead class="bg-slate-50 text-slate-500 text-xs uppercase tracking-wider">
+          <tr>
+            <th class="text-left px-5 py-2 font-semibold">Type</th>
+            <th class="text-left px-5 py-2 font-semibold">Status</th>
+            <th class="text-left px-5 py-2 font-semibold">Sites</th>
+            <th class="text-left px-5 py-2 font-semibold">Created</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-100">
+          {% for q in recent_queries %}
+            <tr>
+              <td class="px-5 py-2">
+                <a href="{% url 'query_detail' q.id %}" class="font-medium text-brand-navy-700 hover:text-brand-accent-600">{{ q.title|default:q.type }}</a>
+                <div class="text-xs text-slate-500 font-mono">{{ q.type }}{% if q.antibiotic_code %} · {{ q.antibiotic_code }}{% endif %}</div>
+              </td>
+              <td class="px-5 py-2">
+                <span class="inline-block px-2 py-0.5 rounded text-xs font-semibold
+                  {% if q.status == 'completed' %}bg-emerald-50 text-emerald-700
+                  {% elif q.status == 'error' %}bg-rose-50 text-rose-700
+                  {% elif q.status == 'expired' or q.status == 'cancelled' %}bg-slate-100 text-slate-600
+                  {% else %}bg-brand-blue-50 text-brand-blue-700{% endif %}">{{ q.get_status_display }}</span>
+              </td>
+              <td class="px-5 py-2 text-xs font-mono text-slate-700">{{ q.dispatch_count }} / {{ q.result_count }}</td>
+              <td class="px-5 py-2 text-xs text-slate-600 font-mono">{{ q.created_at|date:"Y-m-d H:i" }}</td>
+            </tr>
+          {% empty %}
+            <tr><td colspan="4" class="px-5 py-6 text-center text-slate-500">No queries yet.</td></tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+{% if amrit_caps.view_audit %}
+<section class="bg-white rounded-xl border border-slate-200 shadow-card">
+  <div class="px-5 py-4 border-b border-slate-100 flex items-center justify-between">
+    <h2 class="font-display text-base font-bold text-brand-navy-700">Latest audit events</h2>
+    <a href="{% url 'dashboard_audit' %}" class="text-xs text-brand-blue-700 font-semibold hover:underline">View all →</a>
+  </div>
+  <div class="overflow-x-auto">
+    <table class="min-w-full text-sm">
+      <thead class="bg-slate-50 text-slate-500 text-xs uppercase tracking-wider">
+        <tr>
+          <th class="text-left px-5 py-2 font-semibold">Time</th>
+          <th class="text-left px-5 py-2 font-semibold">Lab</th>
+          <th class="text-left px-5 py-2 font-semibold">Action</th>
+          <th class="text-left px-5 py-2 font-semibold">Detail</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-slate-100">
+        {% for e in audit_entries %}
+          <tr>
+            <td class="px-5 py-2 text-xs text-slate-600 font-mono whitespace-nowrap">{{ e.created_at|date:"Y-m-d H:i:s" }}</td>
+            <td class="px-5 py-2 text-xs font-mono text-slate-700">{{ e.lab_code|default:"—" }}</td>
+            <td class="px-5 py-2"><span class="inline-block px-2 py-0.5 rounded bg-slate-100 text-slate-700 text-xs font-mono">{{ e.action }}</span></td>
+            <td class="px-5 py-2 text-xs text-slate-600">
+              {% if e.error %}<span class="text-rose-600">{{ e.error|truncatechars:120 }}</span>{% else %}{{ e.detail|truncatechars:120|default:"—" }}{% endif %}
+            </td>
+          </tr>
+        {% empty %}
+          <tr><td colspan="4" class="px-5 py-6 text-center text-slate-500">No audit events yet.</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+{% endif %}
+{% endblock %}

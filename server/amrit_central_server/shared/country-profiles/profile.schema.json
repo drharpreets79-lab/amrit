@@ -1,0 +1,362 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.amrit-amr.org/country-profile-1.0.json",
+  "title": "AMRIT country profile",
+  "description": "The single source of country-varying behaviour for both the desktop application and the web server. A profile is either curated (checked in beside this schema) or synthesized at runtime from shared/country-profiles/reference/countries.json.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "profile_id",
+    "country_code",
+    "country_name",
+    "admin_levels"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "profile_id": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 32,
+      "pattern": "^[A-Z0-9_]+$",
+      "description": "Stable identifier. Curated profiles use the ISO 3166-1 alpha-2 code; synthesized profiles use the alpha-3."
+    },
+    "source": {
+      "enum": [
+        "curated",
+        "synthesized",
+        "fallback"
+      ],
+      "description": "How this profile was produced. Set by the registry, not by hand."
+    },
+    "country_code": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$",
+      "description": "ISO 3166-1 alpha-3. This is what exporters emit."
+    },
+    "country_code_2": {
+      "type": "string",
+      "pattern": "^[A-Z]{2}$"
+    },
+    "country_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "who_region": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "AFRO, AMRO/PAHO, EMRO, EURO, SEARO, WPRO, or Other."
+    },
+    "locale": {
+      "type": "string",
+      "minLength": 2,
+      "description": "BCP 47 tag used for formatting and translation lookup."
+    },
+    "fallback_locales": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "text_direction": {
+      "enum": [
+        "ltr",
+        "rtl"
+      ]
+    },
+    "numbering_system": {
+      "type": "string",
+      "description": "CLDR numbering system, e.g. latn, arab, arabext, deva. Drives display AND input normalisation."
+    },
+    "timezone": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Canonical IANA identifier, the deployment default only. Null when the country spans several zones and an explicit choice is required. Individual sites may always override."
+    },
+    "timezone_ambiguous": {
+      "type": "boolean",
+      "description": "True when the country spans more than one IANA zone, so a country-level default would mis-stamp dates at day boundaries."
+    },
+    "calendar": {
+      "enum": [
+        "gregory",
+        "buddhist",
+        "ethiopic",
+        "islamic",
+        "islamic-umalqura",
+        "nepali",
+        "persian",
+        "roc"
+      ],
+      "description": "Civil calendar for DISPLAY only. Storage is always ISO-8601 Gregorian UTC."
+    },
+    "date_input_order": {
+      "enum": [
+        "DMY",
+        "MDY",
+        "YMD"
+      ],
+      "description": "How to disambiguate a typed date such as 03/04/2026."
+    },
+    "first_day_of_week": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 7,
+      "description": "ISO-8601 numbering: 1 = Monday .. 7 = Sunday."
+    },
+    "epi_week_system": {
+      "enum": [
+        "iso",
+        "mmwr"
+      ],
+      "description": "Epidemiological week definition. ISO-8601 weeks and US MMWR weeks can differ by a week and will otherwise mis-bucket surveillance counts."
+    },
+    "fiscal_year_start_month": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 12,
+      "description": "Reporting-year start. India 4, United States 10, most countries 1."
+    },
+    "admin_levels": {
+      "type": "array",
+      "maxItems": 6,
+      "description": "Sub-national hierarchy, outermost first. An empty array is valid for a city-state with no subdivisions.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "level",
+          "key",
+          "label",
+          "label_plural",
+          "code_system"
+        ],
+        "properties": {
+          "level": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 6
+          },
+          "key": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]*$"
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "label_plural": {
+            "type": "string",
+            "minLength": 1
+          },
+          "code_system": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Authority for the codes at this level, e.g. ISO3166-2, LGD, GeoNames, FIPS, or a national scheme."
+          },
+          "required": {
+            "type": "boolean",
+            "default": false
+          }
+        }
+      }
+    },
+    "identifier_namespace": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "base_uri",
+        "urn_prefix"
+      ],
+      "description": "Written into every FHIR resource this deployment emits. Changing it after export splits identifier continuity for downstream consumers.",
+      "properties": {
+        "base_uri": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://"
+        },
+        "urn_prefix": {
+          "type": "string",
+          "pattern": "^urn:[a-z0-9][a-z0-9-]*(:[a-z0-9][a-z0-9-]*)*$"
+        },
+        "effective_from": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When this namespace took effect. Recorded because bundles exported before it carry the previous system URIs, so past exports stay explainable."
+        }
+      }
+    },
+    "branding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "product_name",
+        "authority_name"
+      ],
+      "properties": {
+        "product_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "app_id": {
+          "type": "string",
+          "description": "OS bundle identifier. Build-time only — it cannot be changed at runtime."
+        },
+        "authority_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "logo": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Filename of a bundled mark, or an uploaded data URI. A bundled name must exist under both products' asset roots — app/src/renderer/public/resources/ and central/static/img/ — because the profile does not know which product is reading it. tools/generate_brand_assets.py writes both."
+        },
+        "logo_reverse": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "The same mark reversed for dark backgrounds, such as the desktop application's navy sidebar. Optional: where it is absent the interface falls back to placing the light-background mark on a plate, which is legible but heavier."
+        },
+        "colors": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "pattern": "^#[0-9A-Fa-f]{6}$"
+          }
+        }
+      }
+    },
+    "guidelines": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "default",
+        "available"
+      ],
+      "properties": {
+        "default": {
+          "type": "string",
+          "minLength": 1
+        },
+        "available": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "national_body": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "code_systems": {
+      "type": "object",
+      "description": "Per-vocabulary gating. Some vocabularies are licence-restricted and must not ship enabled everywhere.",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "enabled"
+        ],
+        "properties": {
+          "enabled": {
+            "type": "boolean"
+          },
+          "licence": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "banned_identifier_keys": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "National identifier field names that must never appear in an ingested payload or an LLM prompt."
+    },
+    "privacy": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "k_anonymity_floor": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "retention_days": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "residency_note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "patient_postal_code_digits": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "description": "Leading characters of a patient's postal code kept in anything that leaves the deployment; 0 drops it entirely. Null means the built-in default (3). What counts as identifying depends on population density and local law, so this is the deployment's call."
+        }
+      }
+    },
+    "map": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "center": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "number"
+          },
+          "description": "[latitude, longitude]"
+        },
+        "zoom": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 20
+        },
+        "tile_url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Basemap tiles. Null means use the built-in offline fallback — several deployments cannot reach a public tile CDN."
+        }
+      }
+    },
+    "reporting_frameworks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

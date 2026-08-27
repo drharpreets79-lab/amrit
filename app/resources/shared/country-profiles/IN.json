@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "profile_id": "IN",
+  "source": "curated",
+  "country_code": "IND",
+  "country_code_2": "IN",
+  "country_name": "India",
+  "who_region": "SEARO",
+  "locale": "en-IN",
+  "fallback_locales": [
+    "en"
+  ],
+  "text_direction": "ltr",
+  "numbering_system": "latn",
+  "timezone": "Asia/Kolkata",
+  "timezone_ambiguous": false,
+  "calendar": "gregory",
+  "date_input_order": "DMY",
+  "first_day_of_week": 7,
+  "epi_week_system": "iso",
+  "fiscal_year_start_month": 4,
+  "admin_levels": [
+    {
+      "level": 1,
+      "key": "state",
+      "label": "State / UT",
+      "label_plural": "States & UTs",
+      "code_system": "LGD",
+      "required": true
+    },
+    {
+      "level": 2,
+      "key": "district",
+      "label": "District",
+      "label_plural": "Districts",
+      "code_system": "LGD",
+      "required": false
+    }
+  ],
+  "identifier_namespace": {
+    "base_uri": "https://amrit.icmr.gov.in",
+    "urn_prefix": "urn:icmr:amrit"
+  },
+  "branding": {
+    "product_name": "ICMR AMRIT",
+    "app_id": "in.gov.icmr.amrit",
+    "authority_name": "Indian Council of Medical Research",
+    "logo": "icmr-emblem.png",
+    "logo_reverse": "icmr-emblem-light.png",
+    "colors": {
+      "navy": "#23376D",
+      "blue": "#1B75BC",
+      "orange": "#F15A29"
+    }
+  },
+  "guidelines": {
+    "default": "CLSI",
+    "available": [
+      "CLSI",
+      "EUCAST"
+    ],
+    "national_body": "ICMR"
+  },
+  "code_systems": {
+    "snomed": {
+      "enabled": true,
+      "licence": "Requires a SNOMED CT licence: free in a SNOMED International Member country, an affiliate licence elsewhere. This software grants no licence; establish your position before relying on these codes."
+    }
+  },
+  "banned_identifier_keys": [
+    "aadhaar",
+    "aadhar",
+    "abha",
+    "uhid"
+  ],
+  "privacy": {
+    "k_anonymity_floor": 5,
+    "retention_days": null,
+    "residency_note": null,
+    "patient_postal_code_digits": 3
+  },
+  "map": {
+    "center": [
+      22.9734,
+      78.6569
+    ],
+    "zoom": 4,
+    "tile_url": null
+  },
+  "reporting_frameworks": [
+    "GLASS",
+    "ANIMUSE",
+    "InFARM",
+    "NAP-AMR"
+  ]
+}

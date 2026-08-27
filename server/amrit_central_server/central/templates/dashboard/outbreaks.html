@@ -1,0 +1,64 @@
+{% extends "dashboard/base.html" %}
+{% block title %}Outbreak detection · AMRIT{% endblock %}
+{% block content %}
+<div class="space-y-6">
+  <div class="flex flex-wrap items-start justify-between gap-4">
+    <div>
+      <p class="text-xs font-extrabold uppercase tracking-widest text-brand-accent-600">Restricted epidemiology workspace</p>
+      <h1 class="mt-1 font-display text-3xl font-extrabold text-brand-navy-900">Organism & resistance outbreak detection</h1>
+      <p class="mt-2 max-w-3xl text-sm text-slate-600">WHONET-compatible Kulldorff space-time permutation scan over aggregate daily counts. Expected values condition on site and time marginals; Monte Carlo maximum-statistic testing controls overlapping windows and signals.</p>
+    </div>
+    <span class="rounded-full border border-brand-navy-200 bg-brand-navy-50 px-3 py-1.5 text-xs font-bold text-brand-navy-800">{{ reporting_sites }}/{{ visible_site_count }} sites reporting</span>
+  </div>
+
+  <div class="rounded-xl border border-amber-300 bg-amber-50 p-4 text-sm text-amber-950">
+    <strong>Statistical signal ≠ confirmed outbreak.</strong>
+    Infection-prevention staff must review patient overlap locally, specimen and testing changes, contamination, epidemiological links, typing/WGS, and plausible transmission before action or external reporting.
+  </div>
+
+  {% if can_dispatch %}
+  <section class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+    <h2 class="font-display text-lg font-bold text-slate-900">1 · Collect fresh aggregate inputs</h2>
+    <p class="mt-1 text-sm text-slate-500">Each site returns daily organism and recorded-resistant (R) phenotype counts after rolling patient-organism de-duplication. No patient, specimen, ward, or free-text identifier leaves the site.</p>
+    <form method="post" class="mt-4 grid gap-4 md:grid-cols-4">
+      {% csrf_token %}
+      <label class="text-sm font-semibold text-slate-700">Start date<input name="period_start" type="date" required value="{{ default_period_start }}" class="mt-1 block w-full rounded-lg border-slate-300"></label>
+      <label class="text-sm font-semibold text-slate-700">End date<input name="period_end" type="date" required value="{{ default_period_end }}" class="mt-1 block w-full rounded-lg border-slate-300"></label>
+      <label class="text-sm font-semibold text-slate-700">Repeat-isolate interval<input name="deduplication_days" type="number" min="0" max="365" value="30" class="mt-1 block w-full rounded-lg border-slate-300"><span class="text-xs font-normal text-slate-500">days; WHONET-style</span></label>
+      <div class="flex items-end"><button class="w-full rounded-lg bg-brand-accent-600 px-4 py-2.5 text-sm font-bold text-white hover:bg-brand-accent-700">Queue for visible sites</button></div>
+    </form>
+  </section>
+  {% endif %}
+
+  <section class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+    <h2 class="font-display text-lg font-bold text-slate-900">2 · Configure statistical scan</h2>
+    <form method="get" class="mt-4 grid gap-4 md:grid-cols-4">
+      <label class="text-sm font-semibold text-slate-700">Input query<select name="query" class="mt-1 block w-full rounded-lg border-slate-300">{% for query in queries %}<option value="{{ query.pk }}" {% if selected_query.pk == query.pk %}selected{% endif %}>{{ query.created_at|date:"Y-m-d H:i" }} · {{ query.status }}</option>{% empty %}<option value="">No outbreak queries</option>{% endfor %}</select></label>
+      <label class="text-sm font-semibold text-slate-700">Analysis type<select name="analysis_type" class="mt-1 block w-full rounded-lg border-slate-300"><option value="prospective" {% if settings.analysis_type == 'prospective' %}selected{% endif %}>Prospective · ongoing only</option><option value="retrospective" {% if settings.analysis_type == 'retrospective' %}selected{% endif %}>Retrospective · any time</option></select></label>
+      <label class="text-sm font-semibold text-slate-700">Target<select name="target" class="mt-1 block w-full rounded-lg border-slate-300"><option value="both" {% if settings.target == 'both' %}selected{% endif %}>Organisms + resistance</option><option value="organism" {% if settings.target == 'organism' %}selected{% endif %}>Organisms</option><option value="resistance" {% if settings.target == 'resistance' %}selected{% endif %}>Recorded-resistant phenotypes (R)</option></select></label>
+      <label class="text-sm font-semibold text-slate-700">Baseline days<input name="baseline_days" type="number" min="30" max="3650" value="{{ settings.baseline_days }}" class="mt-1 block w-full rounded-lg border-slate-300"></label>
+      <label class="text-sm font-semibold text-slate-700">Max cluster days<input name="max_cluster_days" type="number" min="1" max="365" value="{{ settings.max_cluster_days }}" class="mt-1 block w-full rounded-lg border-slate-300"></label>
+      <label class="text-sm font-semibold text-slate-700">Minimum cases<input name="minimum_cases" type="number" min="2" max="100" value="{{ settings.minimum_cases }}" class="mt-1 block w-full rounded-lg border-slate-300"></label>
+      <label class="text-sm font-semibold text-slate-700">Monte Carlo replications<select name="permutations" class="mt-1 block w-full rounded-lg border-slate-300"><option value="99" {% if settings.permutations == 99 %}selected{% endif %}>99 · exploratory</option><option value="999" {% if settings.permutations == 999 %}selected{% endif %}>999 · standard</option><option value="9999" {% if settings.permutations == 9999 %}selected{% endif %}>9,999 · high precision</option></select></label>
+      <label class="text-sm font-semibold text-slate-700">Alert recurrence threshold<input name="recurrence_threshold_days" type="number" min="20" max="100000" value="{{ settings.recurrence_threshold_days }}" class="mt-1 block w-full rounded-lg border-slate-300"><span class="text-xs font-normal text-slate-500">days under null</span></label>
+      <div class="md:col-span-4"><button class="rounded-lg bg-brand-navy-700 px-5 py-2.5 text-sm font-bold text-white hover:bg-brand-navy-800">Run scan</button></div>
+    </form>
+  </section>
+
+  {% if selected_query and not scan %}<div class="rounded-xl border border-slate-200 bg-white p-8 text-center text-slate-500">Waiting for aggregate site results.</div>{% endif %}
+  {% if scan %}
+    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+      <div class="rounded-xl border bg-white p-4"><span class="text-xs font-bold uppercase text-slate-500">Eligible events</span><strong class="mt-1 block text-2xl text-brand-navy-900">{{ scan.eligible_events }}</strong></div>
+      <div class="rounded-xl border bg-white p-4"><span class="text-xs font-bold uppercase text-slate-500">Locations</span><strong class="mt-1 block text-2xl text-brand-navy-900">{{ scan.locations }}</strong></div>
+      <div class="rounded-xl border bg-white p-4"><span class="text-xs font-bold uppercase text-slate-500">Signals tested</span><strong class="mt-1 block text-2xl text-brand-navy-900">{{ scan.signals_tested }}</strong></div>
+      <div class="rounded-xl border bg-white p-4"><span class="text-xs font-bold uppercase text-slate-500">Review signals</span><strong class="mt-1 block text-2xl text-brand-navy-900">{{ scan.signals|length }}</strong></div>
+      <div class="rounded-xl border bg-white p-4"><span class="text-xs font-bold uppercase text-slate-500">Study window</span><strong class="mt-1 block text-sm text-brand-navy-900">{{ scan.study_start|default:"—" }}<br>{{ scan.study_end|default:"—" }}</strong></div>
+    </div>
+    {% for warning in scan.warnings %}<div class="rounded-lg border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-900">{{ warning }}</div>{% endfor %}
+    <section class="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
+      <div class="border-b border-slate-200 p-5"><h2 class="font-display text-lg font-bold text-slate-900">Multiplicity-adjusted signals</h2><p class="mt-1 text-sm text-slate-500">P-values compare each candidate with simulated maximum statistic across every tested window, location and signal. “Alert” meets recurrence threshold; “monitor” has p ≤ 0.05.</p></div>
+      <div class="overflow-x-auto"><table class="min-w-full divide-y divide-slate-200 text-sm"><thead class="bg-slate-50 text-left text-xs uppercase text-slate-500"><tr><th class="px-4 py-3">Status</th><th class="px-4 py-3">Signal</th><th class="px-4 py-3">Scope/location</th><th class="px-4 py-3">Dates</th><th class="px-4 py-3">Observed / expected</th><th class="px-4 py-3">p</th><th class="px-4 py-3">Recurrence</th></tr></thead><tbody class="divide-y divide-slate-100">{% for signal in scan.signals %}<tr><td class="px-4 py-3"><span class="rounded-full px-2 py-1 text-xs font-bold {% if signal.status == 'alert' %}bg-rose-100 text-rose-800{% else %}bg-amber-100 text-amber-800{% endif %}">{{ signal.status|upper }}</span></td><td class="px-4 py-3"><strong>{{ signal.organism }}</strong>{% if signal.antibiotic %}<div class="text-xs text-slate-500">Recorded resistant: {{ signal.antibiotic }}</div>{% endif %}</td><td class="px-4 py-3">{{ signal.scope }}<div class="text-xs text-slate-500">{{ signal.location }}</div></td><td class="px-4 py-3 whitespace-nowrap">{{ signal.start_date }}<br>{{ signal.end_date }}</td><td class="px-4 py-3">{{ signal.observed }} / {{ signal.expected }}<div class="text-xs text-slate-500">O/E {{ signal.observed_expected_ratio }}</div></td><td class="px-4 py-3">{{ signal.p_value }}</td><td class="px-4 py-3">{{ signal.recurrence_interval_days }} days</td></tr>{% empty %}<tr><td colspan="7" class="px-4 py-10 text-center text-slate-500">No multiplicity-adjusted signal met p ≤ 0.05.</td></tr>{% endfor %}</tbody></table></div>
+    </section>
+  {% endif %}
+</div>
+{% endblock %}

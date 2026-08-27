@@ -1,0 +1,5 @@
+{
+  "description": "Reference device-associated HAI rate fixture",
+  "input": [{"hai_type": "CLABSI", "case_count": 2, "denominator_type": "central-line-days", "denominator": 1000}],
+  "expected": {"by_hai_type": {"CLABSI": {"cases": 2, "denominator": 1000, "rate_per_1000": 2}}}
+}

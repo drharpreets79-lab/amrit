@@ -1,0 +1,34 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "AmritPatient",
+  "url": "https://amrit.invalid/StructureDefinition/AmritPatient",
+  "name": "AmritPatient",
+  "title": "AMRIT patient",
+  "status": "draft",
+  "description": "The patient, carrying only what surveillance needs.\n\nResidence is coarsened on the way out by the deployment's own setting: a full postal code plus a\nbirth date is a re-identification kit in most countries. The profile does not forbid a full\naddress because the constraint belongs to the exporter and the deployment, but it records that\nwhat AMRIT sends is generalised.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Patient",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Patient.identifier",
+        "path": "Patient.identifier",
+        "short": "Local patient identifier, namespaced per laboratory"
+      },
+      {
+        "id": "Patient.gender",
+        "path": "Patient.gender",
+        "min": 1
+      },
+      {
+        "id": "Patient.address",
+        "path": "Patient.address",
+        "short": "Generalised residence; never a street"
+      }
+    ]
+  }
+}

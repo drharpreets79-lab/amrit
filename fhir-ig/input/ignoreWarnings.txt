@@ -1,0 +1,29 @@
+== Suppressed Messages ==
+
+# The publisher requires this file in its "new format": the header line above, then each
+# suppressed message preceded by the reason it is suppressed. Without the file at all it errors
+# with "Supressed messages file not found"; with the old format, "not using the new format".
+# It matches on the *whole* message text, so these lines are copied from what the publisher
+# actually emitted rather than abbreviated.
+#
+# The rule for adding a line here: a warning is suppressed when the thing it asks for would be
+# wrong to provide, never because it is inconvenient to fix. Everything the publisher asked for
+# that AMRIT could honestly give, it now gives - the three ConceptMaps carry titles, the missing
+# template fragments are included from index.md, the nine profiles have worked examples, and
+# `Measure.experimental` is set. What is left is one class.
+
+# OIDs on the terminology resources. AMRIT has no OID arc. An OID is an assigned identifier from
+# a registered node, not a well-formed string: minting one under someone else's arc, or inventing
+# a plausible-looking 2.16.840.1.113883.*, would publish an identifier that either belongs to
+# another organisation or resolves nowhere, and would do so under the appearance of registration.
+# A deployment that has its own arc sets auto-oid-root in sushi-config and these are assigned on
+# the next build. Same reasoning as the https://amrit.invalid canonical: an unassigned identifier
+# is stated as unassigned rather than filled in with something that looks official.
+The resource CodeSystem/amrit-terminology-note should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+The resource CodeSystem/whonet-antibiotic-code should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+The resource CodeSystem/whonet-organism-code should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+The resource CodeSystem/whonet-specimen-code should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+The resource ValueSet/amrit-diagnosis-starter should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+The resource ValueSet/amrit-diagnosis-starter-icd11 should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+The resource ValueSet/amrit-observation-loinc should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+The resource ValueSet/amrit-susceptibility-loinc should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)

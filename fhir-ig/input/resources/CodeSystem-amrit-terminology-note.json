@@ -1,0 +1,19 @@
+{
+ "resourceType": "CodeSystem",
+ "id": "amrit-terminology-note",
+ "url": "urn:amrit:terminology-note",
+ "name": "AmritTerminologyNote",
+ "title": "AMRIT terminology notes",
+ "status": "active",
+ "experimental": false,
+ "caseSensitive": true,
+ "content": "complete",
+ "count": 1,
+ "description": "Why a standard coding is absent from a bundle that would otherwise carry one. The tag is present so that a missing code is a stated gap rather than a silent one; the specific reason travels in the tag's display text.",
+ "concept": [
+  {
+   "code": "coding-omitted",
+   "display": "A standard coding was not emitted; see the OperationOutcome in this bundle for the reasons"
+  }
+ ]
+}

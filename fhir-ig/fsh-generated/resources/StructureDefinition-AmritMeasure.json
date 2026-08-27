@@ -1,0 +1,23 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "AmritMeasure",
+  "url": "https://amrit.invalid/StructureDefinition/AmritMeasure",
+  "name": "AmritMeasure",
+  "title": "AMRIT resistance measure",
+  "status": "draft",
+  "description": "A resistance-rate measure definition, as the aggregate wire carries it.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Measure",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Measure",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Measure",
+        "path": "Measure"
+      }
+    ]
+  }
+}

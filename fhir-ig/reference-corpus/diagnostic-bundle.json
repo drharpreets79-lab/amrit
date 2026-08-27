@@ -1,0 +1,1290 @@
+{
+ "resourceType": "Bundle",
+ "id": "fc2256fb-51e6-55f5-a740-44f2311df5ba",
+ "meta": {
+  "tag": [
+   {
+    "system": "urn:amrit:terminology-note",
+    "code": "coding-omitted",
+    "display": "A standard coding was not emitted; see the OperationOutcome in this bundle for the reasons"
+   }
+  ]
+ },
+ "type": "collection",
+ "timestamp": "2026-01-06T09:00:00Z",
+ "entry": [
+  {
+   "fullUrl": "urn:uuid:d8386ee0-1523-5e00-9a31-34fbe09ac015",
+   "resource": {
+    "resourceType": "Organization",
+    "id": "d8386ee0-1523-5e00-9a31-34fbe09ac015",
+    "identifier": [
+     {
+      "system": "urn:whonet:lab-code",
+      "value": "LAB01"
+     },
+     {
+      "system": "urn:whonet:site-group",
+      "value": "Region A"
+     }
+    ],
+    "name": "Reference Laboratory",
+    "meta": {
+     "profile": [
+      "https://amrit.invalid/StructureDefinition/AmritOrganization"
+     ]
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Reporting laboratory Reference Laboratory (LAB01).</p></div>"
+    }
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:f9fac381-39ba-58bd-9767-209199aaae5c",
+   "resource": {
+    "resourceType": "Patient",
+    "id": "f9fac381-39ba-58bd-9767-209199aaae5c",
+    "identifier": [
+     {
+      "system": "urn:amrit:patient:LAB01",
+      "value": "P-001"
+     }
+    ],
+    "gender": "female",
+    "meta": {
+     "profile": [
+      "https://amrit.invalid/StructureDefinition/AmritPatient"
+     ]
+    }
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:e1a914ef-6bd4-5590-a1bc-f013ff90285f",
+   "resource": {
+    "resourceType": "Specimen",
+    "id": "e1a914ef-6bd4-5590-a1bc-f013ff90285f",
+    "identifier": [
+     {
+      "system": "urn:amrit:specimen:LAB01",
+      "value": "S-001"
+     }
+    ],
+    "subject": {
+     "reference": "urn:uuid:f9fac381-39ba-58bd-9767-209199aaae5c"
+    },
+    "type": {
+     "coding": [
+      {
+       "system": "urn:whonet:specimen-code",
+       "code": "BLOOD_STERILE",
+       "display": "Blood / normally sterile fluid"
+      }
+     ],
+     "text": "Blood"
+    },
+    "collection": {
+     "collectedDateTime": "2026-01-02T00:00:00Z"
+    },
+    "meta": {
+     "profile": [
+      "https://amrit.invalid/StructureDefinition/AmritSpecimen"
+     ]
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Blood collected 2026-01-02.</p></div>"
+    }
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:730e1bc2-39d9-55b4-9195-5a4b15299c72",
+   "resource": {
+    "resourceType": "Observation",
+    "id": "730e1bc2-39d9-55b4-9195-5a4b15299c72",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "laboratory",
+        "display": "Laboratory"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "11475-1",
+       "display": "Microorganism identified in Specimen by Culture"
+      }
+     ],
+     "text": "Organism identified"
+    },
+    "subject": {
+     "reference": "urn:uuid:f9fac381-39ba-58bd-9767-209199aaae5c"
+    },
+    "specimen": {
+     "reference": "urn:uuid:e1a914ef-6bd4-5590-a1bc-f013ff90285f"
+    },
+    "effectiveDateTime": "2026-01-02T00:00:00Z",
+    "performer": [
+     {
+      "reference": "urn:uuid:d8386ee0-1523-5e00-9a31-34fbe09ac015"
+     }
+    ],
+    "valueCodeableConcept": {
+     "coding": [
+      {
+       "system": "urn:whonet:organism-code",
+       "code": "KPN",
+       "display": "Klebsiella pneumoniae complex"
+      }
+     ],
+     "text": "Klebsiella pneumoniae"
+    },
+    "meta": {
+     "profile": [
+      "https://amrit.invalid/StructureDefinition/AmritOrganismObservation"
+     ]
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Klebsiella pneumoniae identified by culture.</p></div>"
+    }
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:98878ee7-c300-502b-a689-918006b26733",
+   "resource": {
+    "resourceType": "Observation",
+    "id": "98878ee7-c300-502b-a689-918006b26733",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "laboratory"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "186-7",
+       "display": "Ciprofloxacin [Susceptibility] by Disk diffusion (KB)"
+      },
+      {
+       "system": "urn:whonet:antibiotic-code",
+       "code": "CIP",
+       "display": "Ciprofloxacin"
+      }
+     ],
+     "text": "CIP susceptibility"
+    },
+    "subject": {
+     "reference": "urn:uuid:f9fac381-39ba-58bd-9767-209199aaae5c"
+    },
+    "specimen": {
+     "reference": "urn:uuid:e1a914ef-6bd4-5590-a1bc-f013ff90285f"
+    },
+    "effectiveDateTime": "2026-01-02T00:00:00Z",
+    "performer": [
+     {
+      "reference": "urn:uuid:d8386ee0-1523-5e00-9a31-34fbe09ac015"
+     }
+    ],
+    "interpretation": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+        "code": "S",
+        "display": "Susceptible"
+       }
+      ]
+     }
+    ],
+    "valueQuantity": {
+     "value": 22,
+     "unit": "mm",
+     "system": "http://unitsofmeasure.org",
+     "code": "mm"
+    },
+    "meta": {
+     "profile": [
+      "https://amrit.invalid/StructureDefinition/AmritSusceptibilityObservation"
+     ]
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>CIP susceptibility: susceptible (22 mm).</p></div>"
+    }
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:e34cb163-4da9-5f6e-97fd-449aa41711f7",
+   "resource": {
+    "resourceType": "Observation",
+    "id": "e34cb163-4da9-5f6e-97fd-449aa41711f7",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "laboratory"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "205-5",
+       "display": "Colistin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+       "system": "urn:whonet:antibiotic-code",
+       "code": "COL",
+       "display": "Colistin"
+      }
+     ],
+     "text": "COL susceptibility"
+    },
+    "subject": {
+     "reference": "urn:uuid:f9fac381-39ba-58bd-9767-209199aaae5c"
+    },
+    "specimen": {
+     "reference": "urn:uuid:e1a914ef-6bd4-5590-a1bc-f013ff90285f"
+    },
+    "effectiveDateTime": "2026-01-02T00:00:00Z",
+    "performer": [
+     {
+      "reference": "urn:uuid:d8386ee0-1523-5e00-9a31-34fbe09ac015"
+     }
+    ],
+    "interpretation": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+        "code": "S",
+        "display": "Susceptible"
+       }
+      ]
+     }
+    ],
+    "valueQuantity": {
+     "value": 1,
+     "unit": "mg/L",
+     "system": "http://unitsofmeasure.org",
+     "code": "mg/L"
+    },
+    "meta": {
+     "profile": [
+      "https://amrit.invalid/StructureDefinition/AmritSusceptibilityObservation"
+     ]
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>COL susceptibility: susceptible (1 mg/L).</p></div>"
+    }
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:981d8778-19cd-591e-b7b5-e8d93d6f80a9",
+   "resource": {
+    "resourceType": "Observation",
+    "id": "981d8778-19cd-591e-b7b5-e8d93d6f80a9",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "laboratory"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "6652-2",
+       "display": "Meropenem [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+       "system": "urn:whonet:antibiotic-code",
+       "code": "MEM",
+       "display": "Meropenem"
+      }
+     ],
+     "text": "MEM susceptibility"
+    },
+    "subject": {
+     "reference": "urn:uuid:f9fac381-39ba-58bd-9767-209199aaae5c"
+    },
+    "specimen": {
+     "reference": "urn:uuid:e1a914ef-6bd4-5590-a1bc-f013ff90285f"
+    },
+    "effectiveDateTime": "2026-01-02T00:00:00Z",
+    "performer": [
+     {
+      "reference": "urn:uuid:d8386ee0-1523-5e00-9a31-34fbe09ac015"
+     }
+    ],
+    "interpretation": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+        "code": "R",
+        "display": "Resistant"
+       }
+      ]
+     }
+    ],
+    "valueQuantity": {
+     "value": 8,
+     "unit": "mg/L",
+     "system": "http://unitsofmeasure.org",
+     "code": "mg/L"
+    },
+    "meta": {
+     "profile": [
+      "https://amrit.invalid/StructureDefinition/AmritSusceptibilityObservation"
+     ]
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MEM susceptibility: resistant (8 mg/L).</p></div>"
+    }
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:2e490ee4-8a9b-57ec-9a09-a93659a4b370",
+   "resource": {
+    "resourceType": "Condition",
+    "id": "2e490ee4-8a9b-57ec-9a09-a93659a4b370",
+    "verificationStatus": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+       "code": "unconfirmed",
+       "display": "Unconfirmed"
+      }
+     ]
+    },
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+        "code": "encounter-diagnosis",
+        "display": "Encounter Diagnosis"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/sid/icd-10",
+       "code": "A41.9",
+       "display": "Sepsis, unspecified"
+      }
+     ],
+     "text": "Sepsis"
+    },
+    "subject": {
+     "reference": "urn:uuid:f9fac381-39ba-58bd-9767-209199aaae5c"
+    },
+    "recordedDate": "2026-01-02T00:00:00Z",
+    "meta": {
+     "profile": [
+      "https://amrit.invalid/StructureDefinition/AmritCondition"
+     ]
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Recorded diagnosis: Sepsis.</p></div>"
+    }
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:9a7ec015-ac4e-5dfa-a3e9-38f97d2fe014",
+   "resource": {
+    "resourceType": "DiagnosticReport",
+    "id": "9a7ec015-ac4e-5dfa-a3e9-38f97d2fe014",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+        "code": "MB",
+        "display": "Microbiology"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "18725-2",
+       "display": "Microbiology studies (set)"
+      }
+     ],
+     "text": "Microbiology culture and antimicrobial susceptibility"
+    },
+    "subject": {
+     "reference": "urn:uuid:f9fac381-39ba-58bd-9767-209199aaae5c"
+    },
+    "effectiveDateTime": "2026-01-02T00:00:00Z",
+    "issued": "2026-01-06T09:00:00Z",
+    "performer": [
+     {
+      "reference": "urn:uuid:d8386ee0-1523-5e00-9a31-34fbe09ac015"
+     }
+    ],
+    "specimen": [
+     {
+      "reference": "urn:uuid:e1a914ef-6bd4-5590-a1bc-f013ff90285f"
+     }
+    ],
+    "result": [
+     {
+      "reference": "urn:uuid:730e1bc2-39d9-55b4-9195-5a4b15299c72"
+     },
+     {
+      "reference": "urn:uuid:98878ee7-c300-502b-a689-918006b26733"
+     },
+     {
+      "reference": "urn:uuid:e34cb163-4da9-5f6e-97fd-449aa41711f7"
+     },
+     {
+      "reference": "urn:uuid:981d8778-19cd-591e-b7b5-e8d93d6f80a9"
+     }
+    ],
+    "conclusionCode": [
+     {
+      "coding": [
+       {
+        "system": "http://hl7.org/fhir/sid/icd-10",
+        "code": "A41.9",
+        "display": "Sepsis, unspecified"
+       }
+      ]
+     }
+    ],
+    "meta": {
+     "profile": [
+      "https://amrit.invalid/StructureDefinition/AmritDiagnosticReport"
+     ]
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Microbiology culture and antimicrobial susceptibility report, 4 result(s).</p></div>"
+    }
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:b257ec03-f3ab-5a30-83ab-7538322a8ee9",
+   "resource": {
+    "resourceType": "Patient",
+    "id": "b257ec03-f3ab-5a30-83ab-7538322a8ee9",
+    "identifier": [
+     {
+      "system": "urn:amrit:patient:LAB01",
+      "value": "P-002"
+     }
+    ],
+    "gender": "male",
+    "meta": {
+     "profile": [
+      "https://amrit.invalid/StructureDefinition/AmritPatient"
+     ]
+    }
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:a7753fb4-f17e-5d7c-a084-fbea8228b6d0",
+   "resource": {
+    "resourceType": "Specimen",
+    "id": "a7753fb4-f17e-5d7c-a084-fbea8228b6d0",
+    "identifier": [
+     {
+      "system": "urn:amrit:specimen:LAB01",
+      "value": "S-002"
+     }
+    ],
+    "subject": {
+     "reference": "urn:uuid:b257ec03-f3ab-5a30-83ab-7538322a8ee9"
+    },
+    "type": {
+     "coding": [
+      {
+       "system": "urn:whonet:specimen-code",
+       "code": "URINE",
+       "display": "Urine"
+      },
+      {
+       "system": "http://snomed.info/sct",
+       "code": "122575003",
+       "display": "Urine specimen"
+      }
+     ],
+     "text": "Urine"
+    },
+    "collection": {
+     "collectedDateTime": "2026-01-05T00:00:00Z"
+    },
+    "meta": {
+     "profile": [
+      "https://amrit.invalid/StructureDefinition/AmritSpecimen"
+     ]
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Urine collected 2026-01-05.</p></div>"
+    }
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:ee818b75-5e79-5d2a-9156-849d274fb241",
+   "resource": {
+    "resourceType": "Observation",
+    "id": "ee818b75-5e79-5d2a-9156-849d274fb241",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "laboratory",
+        "display": "Laboratory"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "11475-1",
+       "display": "Microorganism identified in Specimen by Culture"
+      }
+     ],
+     "text": "Organism identified"
+    },
+    "subject": {
+     "reference": "urn:uuid:b257ec03-f3ab-5a30-83ab-7538322a8ee9"
+    },
+    "specimen": {
+     "reference": "urn:uuid:a7753fb4-f17e-5d7c-a084-fbea8228b6d0"
+    },
+    "effectiveDateTime": "2026-01-05T00:00:00Z",
+    "performer": [
+     {
+      "reference": "urn:uuid:d8386ee0-1523-5e00-9a31-34fbe09ac015"
+     }
+    ],
+    "valueCodeableConcept": {
+     "coding": [
+      {
+       "system": "urn:whonet:organism-code",
+       "code": "ECO",
+       "display": "Escherichia coli"
+      },
+      {
+       "system": "http://snomed.info/sct",
+       "code": "112283007",
+       "display": "Escherichia coli"
+      }
+     ],
+     "text": "Escherichia coli"
+    },
+    "meta": {
+     "profile": [
+      "https://amrit.invalid/StructureDefinition/AmritOrganismObservation"
+     ]
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Escherichia coli identified by culture.</p></div>"
+    }
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:b6683460-cab4-52dd-a4b0-8a178f5d12e2",
+   "resource": {
+    "resourceType": "Observation",
+    "id": "b6683460-cab4-52dd-a4b0-8a178f5d12e2",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "laboratory"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "urn:whonet:antibiotic-code",
+       "code": "ACM",
+       "display": "Acetylmidecamycin"
+      }
+     ],
+     "text": "ACM susceptibility"
+    },
+    "subject": {
+     "reference": "urn:uuid:b257ec03-f3ab-5a30-83ab-7538322a8ee9"
+    },
+    "specimen": {
+     "reference": "urn:uuid:a7753fb4-f17e-5d7c-a084-fbea8228b6d0"
+    },
+    "effectiveDateTime": "2026-01-05T00:00:00Z",
+    "performer": [
+     {
+      "reference": "urn:uuid:d8386ee0-1523-5e00-9a31-34fbe09ac015"
+     }
+    ],
+    "interpretation": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+        "code": "R",
+        "display": "Resistant"
+       }
+      ]
+     }
+    ],
+    "meta": {
+     "profile": [
+      "https://amrit.invalid/StructureDefinition/AmritSusceptibilityObservation"
+     ]
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>ACM susceptibility: resistant.</p></div>"
+    }
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:34d916cd-6e9d-502b-bc68-fd64d5b81b06",
+   "resource": {
+    "resourceType": "Observation",
+    "id": "34d916cd-6e9d-502b-bc68-fd64d5b81b06",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "laboratory"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "28-1",
+       "display": "Ampicillin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+       "system": "urn:whonet:antibiotic-code",
+       "code": "AMP",
+       "display": "Ampicillin"
+      }
+     ],
+     "text": "AMP susceptibility"
+    },
+    "subject": {
+     "reference": "urn:uuid:b257ec03-f3ab-5a30-83ab-7538322a8ee9"
+    },
+    "specimen": {
+     "reference": "urn:uuid:a7753fb4-f17e-5d7c-a084-fbea8228b6d0"
+    },
+    "effectiveDateTime": "2026-01-05T00:00:00Z",
+    "performer": [
+     {
+      "reference": "urn:uuid:d8386ee0-1523-5e00-9a31-34fbe09ac015"
+     }
+    ],
+    "interpretation": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+        "code": "R",
+        "display": "Resistant"
+       }
+      ]
+     }
+    ],
+    "valueQuantity": {
+     "value": 32,
+     "unit": "mg/L",
+     "system": "http://unitsofmeasure.org",
+     "code": "mg/L"
+    },
+    "meta": {
+     "profile": [
+      "https://amrit.invalid/StructureDefinition/AmritSusceptibilityObservation"
+     ]
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>AMP susceptibility: resistant (32 mg/L).</p></div>"
+    }
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:52a3814d-343f-5252-b189-f5a638b29e3f",
+   "resource": {
+    "resourceType": "Condition",
+    "id": "52a3814d-343f-5252-b189-f5a638b29e3f",
+    "verificationStatus": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+       "code": "unconfirmed",
+       "display": "Unconfirmed"
+      }
+     ]
+    },
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+        "code": "encounter-diagnosis",
+        "display": "Encounter Diagnosis"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "text": "suspected urinary source, not yet coded"
+    },
+    "subject": {
+     "reference": "urn:uuid:b257ec03-f3ab-5a30-83ab-7538322a8ee9"
+    },
+    "recordedDate": "2026-01-05T00:00:00Z",
+    "meta": {
+     "profile": [
+      "https://amrit.invalid/StructureDefinition/AmritCondition"
+     ]
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Recorded diagnosis: suspected urinary source, not yet coded.</p></div>"
+    }
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:728301f4-6890-5200-a386-74c610ece273",
+   "resource": {
+    "resourceType": "DiagnosticReport",
+    "id": "728301f4-6890-5200-a386-74c610ece273",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+        "code": "MB",
+        "display": "Microbiology"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "18725-2",
+       "display": "Microbiology studies (set)"
+      }
+     ],
+     "text": "Microbiology culture and antimicrobial susceptibility"
+    },
+    "subject": {
+     "reference": "urn:uuid:b257ec03-f3ab-5a30-83ab-7538322a8ee9"
+    },
+    "effectiveDateTime": "2026-01-05T00:00:00Z",
+    "issued": "2026-01-06T09:00:00Z",
+    "performer": [
+     {
+      "reference": "urn:uuid:d8386ee0-1523-5e00-9a31-34fbe09ac015"
+     }
+    ],
+    "specimen": [
+     {
+      "reference": "urn:uuid:a7753fb4-f17e-5d7c-a084-fbea8228b6d0"
+     }
+    ],
+    "result": [
+     {
+      "reference": "urn:uuid:ee818b75-5e79-5d2a-9156-849d274fb241"
+     },
+     {
+      "reference": "urn:uuid:b6683460-cab4-52dd-a4b0-8a178f5d12e2"
+     },
+     {
+      "reference": "urn:uuid:34d916cd-6e9d-502b-bc68-fd64d5b81b06"
+     }
+    ],
+    "meta": {
+     "profile": [
+      "https://amrit.invalid/StructureDefinition/AmritDiagnosticReport"
+     ]
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Microbiology culture and antimicrobial susceptibility report, 3 result(s).</p></div>"
+    }
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:1a488183-1add-533b-850d-663859aceb46",
+   "resource": {
+    "resourceType": "Patient",
+    "id": "1a488183-1add-533b-850d-663859aceb46",
+    "identifier": [
+     {
+      "system": "urn:amrit:patient:LAB01",
+      "value": "P-003"
+     }
+    ],
+    "gender": "female",
+    "meta": {
+     "profile": [
+      "https://amrit.invalid/StructureDefinition/AmritPatient"
+     ]
+    }
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:e150eae4-0726-5fd3-beb3-cae32eadd5aa",
+   "resource": {
+    "resourceType": "Specimen",
+    "id": "e150eae4-0726-5fd3-beb3-cae32eadd5aa",
+    "identifier": [
+     {
+      "system": "urn:amrit:specimen:LAB01",
+      "value": "S-003"
+     }
+    ],
+    "subject": {
+     "reference": "urn:uuid:1a488183-1add-533b-850d-663859aceb46"
+    },
+    "type": {
+     "coding": [
+      {
+       "system": "urn:whonet:specimen-code",
+       "code": "BLOOD_STERILE",
+       "display": "Blood / normally sterile fluid"
+      }
+     ],
+     "text": "Blood"
+    },
+    "collection": {
+     "collectedDateTime": "2026-01-08T00:00:00Z"
+    },
+    "meta": {
+     "profile": [
+      "https://amrit.invalid/StructureDefinition/AmritSpecimen"
+     ]
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Blood collected 2026-01-08.</p></div>"
+    }
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:011be14b-b477-53b5-be5c-439f8aa2f770",
+   "resource": {
+    "resourceType": "Observation",
+    "id": "011be14b-b477-53b5-be5c-439f8aa2f770",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "laboratory",
+        "display": "Laboratory"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "11475-1",
+       "display": "Microorganism identified in Specimen by Culture"
+      }
+     ],
+     "text": "Organism identified"
+    },
+    "subject": {
+     "reference": "urn:uuid:1a488183-1add-533b-850d-663859aceb46"
+    },
+    "specimen": {
+     "reference": "urn:uuid:e150eae4-0726-5fd3-beb3-cae32eadd5aa"
+    },
+    "effectiveDateTime": "2026-01-08T00:00:00Z",
+    "performer": [
+     {
+      "reference": "urn:uuid:d8386ee0-1523-5e00-9a31-34fbe09ac015"
+     }
+    ],
+    "valueCodeableConcept": {
+     "coding": [
+      {
+       "system": "urn:whonet:organism-code",
+       "code": "SAU",
+       "display": "Staphylococcus aureus"
+      },
+      {
+       "system": "http://snomed.info/sct",
+       "code": "113961008",
+       "display": "Staphylococcus aureus ss aureus"
+      }
+     ],
+     "text": "Staphylococcus aureus"
+    },
+    "meta": {
+     "profile": [
+      "https://amrit.invalid/StructureDefinition/AmritOrganismObservation"
+     ]
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Staphylococcus aureus identified by culture.</p></div>"
+    }
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:24b865d7-5a18-5457-8abf-a538e78f8a4a",
+   "resource": {
+    "resourceType": "Observation",
+    "id": "24b865d7-5a18-5457-8abf-a538e78f8a4a",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "laboratory"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "383-0",
+       "display": "Oxacillin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+       "system": "urn:whonet:antibiotic-code",
+       "code": "OXA",
+       "display": "Oxacillin"
+      }
+     ],
+     "text": "OXA susceptibility"
+    },
+    "subject": {
+     "reference": "urn:uuid:1a488183-1add-533b-850d-663859aceb46"
+    },
+    "specimen": {
+     "reference": "urn:uuid:e150eae4-0726-5fd3-beb3-cae32eadd5aa"
+    },
+    "effectiveDateTime": "2026-01-08T00:00:00Z",
+    "performer": [
+     {
+      "reference": "urn:uuid:d8386ee0-1523-5e00-9a31-34fbe09ac015"
+     }
+    ],
+    "interpretation": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+        "code": "R",
+        "display": "Resistant"
+       }
+      ]
+     }
+    ],
+    "valueQuantity": {
+     "value": 4,
+     "unit": "mg/L",
+     "system": "http://unitsofmeasure.org",
+     "code": "mg/L"
+    },
+    "meta": {
+     "profile": [
+      "https://amrit.invalid/StructureDefinition/AmritSusceptibilityObservation"
+     ]
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>OXA susceptibility: resistant (4 mg/L).</p></div>"
+    }
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:570879d6-c02e-595e-9a6e-bb5ad6d51e4b",
+   "resource": {
+    "resourceType": "Observation",
+    "id": "570879d6-c02e-595e-9a6e-bb5ad6d51e4b",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "laboratory"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "524-9",
+       "display": "Vancomycin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+       "system": "urn:whonet:antibiotic-code",
+       "code": "VAN",
+       "display": "Vancomycin"
+      }
+     ],
+     "text": "VAN susceptibility"
+    },
+    "subject": {
+     "reference": "urn:uuid:1a488183-1add-533b-850d-663859aceb46"
+    },
+    "specimen": {
+     "reference": "urn:uuid:e150eae4-0726-5fd3-beb3-cae32eadd5aa"
+    },
+    "effectiveDateTime": "2026-01-08T00:00:00Z",
+    "performer": [
+     {
+      "reference": "urn:uuid:d8386ee0-1523-5e00-9a31-34fbe09ac015"
+     }
+    ],
+    "interpretation": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+        "code": "S",
+        "display": "Susceptible"
+       }
+      ]
+     }
+    ],
+    "valueQuantity": {
+     "value": 1,
+     "unit": "mg/L",
+     "system": "http://unitsofmeasure.org",
+     "code": "mg/L"
+    },
+    "meta": {
+     "profile": [
+      "https://amrit.invalid/StructureDefinition/AmritSusceptibilityObservation"
+     ]
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>VAN susceptibility: susceptible (1 mg/L).</p></div>"
+    }
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:b4838f05-2ce0-5882-8f5b-67a318c25542",
+   "resource": {
+    "resourceType": "Condition",
+    "id": "b4838f05-2ce0-5882-8f5b-67a318c25542",
+    "verificationStatus": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+       "code": "unconfirmed",
+       "display": "Unconfirmed"
+      }
+     ]
+    },
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+        "code": "encounter-diagnosis",
+        "display": "Encounter Diagnosis"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://id.who.int/icd/release/11/mms",
+       "code": "1G40",
+       "display": "Sepsis without septic shock"
+      }
+     ],
+     "text": "Sepsis without septic shock"
+    },
+    "subject": {
+     "reference": "urn:uuid:1a488183-1add-533b-850d-663859aceb46"
+    },
+    "recordedDate": "2026-01-08T00:00:00Z",
+    "meta": {
+     "profile": [
+      "https://amrit.invalid/StructureDefinition/AmritCondition"
+     ]
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Recorded diagnosis: Sepsis without septic shock.</p></div>"
+    }
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:6b0fa82a-f05a-5749-8608-7b5f63303fba",
+   "resource": {
+    "resourceType": "DiagnosticReport",
+    "id": "6b0fa82a-f05a-5749-8608-7b5f63303fba",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+        "code": "MB",
+        "display": "Microbiology"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "18725-2",
+       "display": "Microbiology studies (set)"
+      }
+     ],
+     "text": "Microbiology culture and antimicrobial susceptibility"
+    },
+    "subject": {
+     "reference": "urn:uuid:1a488183-1add-533b-850d-663859aceb46"
+    },
+    "effectiveDateTime": "2026-01-08T00:00:00Z",
+    "issued": "2026-01-06T09:00:00Z",
+    "performer": [
+     {
+      "reference": "urn:uuid:d8386ee0-1523-5e00-9a31-34fbe09ac015"
+     }
+    ],
+    "specimen": [
+     {
+      "reference": "urn:uuid:e150eae4-0726-5fd3-beb3-cae32eadd5aa"
+     }
+    ],
+    "result": [
+     {
+      "reference": "urn:uuid:011be14b-b477-53b5-be5c-439f8aa2f770"
+     },
+     {
+      "reference": "urn:uuid:24b865d7-5a18-5457-8abf-a538e78f8a4a"
+     },
+     {
+      "reference": "urn:uuid:570879d6-c02e-595e-9a6e-bb5ad6d51e4b"
+     }
+    ],
+    "conclusionCode": [
+     {
+      "coding": [
+       {
+        "system": "http://id.who.int/icd/release/11/mms",
+        "code": "1G40",
+        "display": "Sepsis without septic shock"
+       }
+      ]
+     }
+    ],
+    "meta": {
+     "profile": [
+      "https://amrit.invalid/StructureDefinition/AmritDiagnosticReport"
+     ]
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Microbiology culture and antimicrobial susceptibility report, 3 result(s).</p></div>"
+    }
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:440a56b4-5a63-54ef-b79d-413406737287",
+   "resource": {
+    "resourceType": "OperationOutcome",
+    "id": "440a56b4-5a63-54ef-b79d-413406737287",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>3 standard coding(s) omitted, each with its reason.</p></div>"
+    },
+    "issue": [
+     {
+      "severity": "information",
+      "code": "incomplete",
+      "details": {
+       "text": "No mapping for BLOOD_STERILE in amrit-specimen-to-snomed. Unmapped is recorded as unmapped; nothing is guessed."
+      }
+     },
+     {
+      "severity": "information",
+      "code": "incomplete",
+      "details": {
+       "text": "No mapping for KPN in amrit-organism-to-snomed. Unmapped is recorded as unmapped; nothing is guessed."
+      }
+     },
+     {
+      "severity": "information",
+      "code": "incomplete",
+      "details": {
+       "text": "ACM (Acetylmidecamycin) has no LOINC susceptibility concept: No LOINC ABXBACT concept whose substance name matches. Left uncoded: a wrong susceptibility code is a defect, a missing one is a gap."
+      }
+     }
+    ]
+   }
+  }
+ ]
+}

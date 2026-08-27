@@ -1,0 +1,75 @@
+# AMRIT Central Server.
+#
+#   cp amrit_central_server/.env.example .env   # then edit it
+#   docker compose up -d
+#
+# Postgres is defined here because psycopg2 was already a requirement and .env.example
+# already declared POSTGRES_* — the service itself was simply missing, so a deployment
+# following the documented setup silently fell back to SQLite.
+#
+# Nothing here terminates TLS, and the web port is published on the loopback interface
+# only. Put a reverse proxy in front before this is reachable from anywhere else: site
+# enrolment and the admin sign-in both carry credentials.
+# See docs/globalization/DEPLOYMENT.md.
+
+services:
+  db:
+    image: postgres:17-alpine
+    container_name: amrit_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-amrit_central}
+      POSTGRES_USER: ${POSTGRES_USER:-amrit}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
+    volumes:
+      - amrit_db:/var/lib/postgresql/data
+    # Not published: the database is reachable from the other containers and nowhere else.
+    # Expose it deliberately in docker-compose.override.yml if you need to.
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-amrit} -d ${POSTGRES_DB:-amrit_central}"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
+
+  redis:
+    image: redis:7-alpine
+    container_name: amrit_redis
+    restart: unless-stopped
+    # The channel layer is a transport, not a store; nothing here needs to survive a restart.
+    command: ["redis-server", "--save", "", "--appendonly", "no"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  web:
+    build:
+      context: ./amrit_central_server
+      dockerfile: Dockerfile
+    container_name: amrit_web
+    restart: unless-stopped
+    # daphne, not gunicorn: the desktop bridge is a WebSocket, and a WSGI server drops it.
+    command: ["daphne", "-b", "0.0.0.0", "-p", "8000", "central.asgi:application"]
+    env_file:
+      - .env
+    environment:
+      DJANGO_SETTINGS_MODULE: central.settings
+      DATABASE_URL: postgres://${POSTGRES_USER:-amrit}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-amrit_central}
+      REDIS_URL: redis://redis:6379/0
+    ports:
+      - "127.0.0.1:${WEB_PORT:-8000}:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    volumes:
+      - amrit_static:/app/staticfiles
+      - amrit_media:/app/media
+
+volumes:
+  amrit_db:
+  amrit_static:
+  amrit_media:

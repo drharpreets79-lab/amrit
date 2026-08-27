@@ -1,0 +1,36 @@
+{# Bar-chart distribution. Expects: dist, chart_id, title #}
+<div class="bg-white rounded-xl border border-slate-200 shadow-card p-5">
+  <div class="flex items-center justify-between mb-2">
+    <h3 class="font-display text-sm font-bold text-brand-navy-700 flex items-center gap-2">
+      {{ title }}
+      {% if dist.definition %}{% include "dashboard/roles/_definition_popover.html" with d=dist.definition %}{% endif %}
+    </h3>
+    {% if dist.as_of %}<span class="text-[10px] text-slate-400">as of {{ dist.as_of|date:"M j, H:i" }}</span>{% endif %}
+  </div>
+  {% if dist.labels %}
+    <canvas id="{{ chart_id }}" height="160"></canvas>
+    {% with lid=chart_id|add:"-labels" vid=chart_id|add:"-values" %}
+    {{ dist.labels|json_script:lid }}
+    {{ dist.values|json_script:vid }}
+    {% endwith %}
+    <script>
+      (function(){
+        var el = document.getElementById("{{ chart_id }}");
+        if(!el || !window.Chart) return;
+        var labels = JSON.parse(document.getElementById("{{ chart_id }}-labels").textContent);
+        var values = JSON.parse(document.getElementById("{{ chart_id }}-values").textContent);
+        new Chart(el, {
+          type: 'bar',
+          data: { labels: labels, datasets: [{ data: values, backgroundColor: '#1B75BC', borderRadius: 4 }] },
+          options: {
+            indexAxis: 'y',
+            plugins: { legend: { display: false } },
+            scales: { x: { beginAtZero: true, ticks: { precision: 0 } } }
+          }
+        });
+      })();
+    </script>
+  {% else %}
+    <p class="text-sm text-slate-400 py-6 text-center">No data yet — run a live refresh.</p>
+  {% endif %}
+</div>

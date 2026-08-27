@@ -1,0 +1,61 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "AmritSpecimen",
+  "url": "https://amrit.invalid/StructureDefinition/AmritSpecimen",
+  "name": "AmritSpecimen",
+  "title": "AMRIT specimen",
+  "status": "draft",
+  "description": "The specimen the isolate came from, coded in WHONET's specimen groups and in SNOMED where one exists.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Specimen",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Specimen",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Specimen.type",
+        "path": "Specimen.type",
+        "min": 1
+      },
+      {
+        "id": "Specimen.type.coding",
+        "path": "Specimen.type.coding",
+        "short": "WHONET specimen code; SNOMED concept where the catalogue carries one"
+      },
+      {
+        "id": "Specimen.subject",
+        "path": "Specimen.subject",
+        "min": 1
+      },
+      {
+        "id": "Specimen.collection.collected[x]",
+        "path": "Specimen.collection.collected[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Specimen.collection.collected[x]:collectedDateTime",
+        "path": "Specimen.collection.collected[x]",
+        "sliceName": "collectedDateTime",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      }
+    ]
+  }
+}

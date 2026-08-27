@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.amrit-amr.org/canonical-event-2.0.json",
+  "title": "AMR canonical event envelope 2.0",
+  "description": "Removes state_code and district_code. Those two fields encoded one country's administrative hierarchy in the wire format itself: a country with three sub-national levels could not express the third, and a country with one had to leave a field called 'district' empty forever. 2.0 carries country_code plus the administrative chain, which describes any country's hierarchy without naming any country's levels.\n\nThis is a breaking change and it is meant to be. 1.0 and 1.1 are withdrawn; a producer on either must move to 2.0. Migration is mechanical: state_code becomes admin_codes[level 1].code and district_code becomes admin_codes[level 2].code.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "event_id", "module", "event_type", "purpose", "facility_id", "country_code", "observed_at", "payload"],
+  "properties": {
+    "schema_version": { "const": "2.0" },
+    "event_id": { "type": "string", "format": "uuid" },
+    "module": { "enum": ["human_quality", "amc", "stewardship", "ipc_hai", "veterinary", "food", "environment", "genomics"] },
+    "event_type": { "type": "string", "minLength": 1 },
+    "purpose": { "enum": ["direct-care", "surveillance", "stewardship", "regulatory", "research", "programme-monitoring"] },
+    "facility_id": { "type": "string", "minLength": 1 },
+
+    "country_code": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$",
+      "description": "ISO 3166-1 alpha-3. Without it an event cannot be placed once more than one country reports."
+    },
+    "admin_codes": {
+      "type": "array",
+      "maxItems": 6,
+      "description": "The administrative chain, outermost first. Levels are numbered, never named, so the same envelope carries a two-level country and a five-level one. An event that is national or aggregate carries none, which is why this is not required.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["level", "code"],
+        "properties": {
+          "level": { "type": "integer", "minimum": 1, "maximum": 6 },
+          "code": { "type": "string", "minLength": 1 },
+          "code_system": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Authority for the code at this level — ISO3166-2, GeoNames, or a national scheme. Stated per level because a country may draw its levels from different authorities."
+          }
+        }
+      }
+    },
+    "admin_path": {
+      "type": ["string", "null"],
+      "description": "Materialised path of codes, e.g. IND/28/583. Redundant with admin_codes; carried so a consumer can filter by prefix without reassembling it."
+    },
+
+    "observed_at": { "type": "string", "format": "date-time" },
+    "reporting_period": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "How the event's period was derived. Epidemiological weeks differ between systems, so the system used is stated rather than assumed.",
+      "properties": {
+        "start": { "type": "string", "format": "date" },
+        "end": { "type": "string", "format": "date" },
+        "epi_week": { "type": "integer", "minimum": 1, "maximum": 53 },
+        "epi_year": { "type": "integer" },
+        "epi_week_system": { "enum": ["iso", "mmwr"] }
+      }
+    },
+    "timezone": {
+      "type": ["string", "null"],
+      "description": "IANA zone the observation was recorded in. Set where a country spans several, since a country-level default mis-stamps day boundaries."
+    },
+
+    "quality_status": { "enum": ["draft", "validated", "rejected", "superseded"] },
+    "sensitivity": { "enum": ["operational", "restricted", "aggregate", "public"] },
+    "payload": { "type": "object" }
+  }
+}

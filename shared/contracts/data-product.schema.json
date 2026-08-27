@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://amrit.gov.in/schemas/data-product-1.0.json",
+  "title": "National AMR aggregate data product",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["contract", "module", "generated_at", "record_count", "metrics", "quality"],
+  "properties": {
+    "contract": {"const": "national-amr-data-product/1.0"},
+    "module": {"type": "string"},
+    "facility_id": {"type": ["string", "null"]},
+    "period_start": {"type": ["string", "null"], "format": "date"},
+    "period_end": {"type": ["string", "null"], "format": "date"},
+    "generated_at": {"type": "string", "format": "date-time"},
+    "record_count": {"type": "integer", "minimum": 0},
+    "metrics": {"type": "object"},
+    "quality": {
+      "type": "object",
+      "required": ["status", "schema_version"],
+      "properties": {"status": {"enum": ["provisional", "validated", "published"]}, "schema_version": {"type": "string"}}
+    }
+  }
+}

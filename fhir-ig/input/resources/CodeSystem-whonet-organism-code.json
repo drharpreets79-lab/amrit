@@ -1,0 +1,9535 @@
+{
+ "resourceType": "CodeSystem",
+ "id": "whonet-organism-code",
+ "url": "urn:whonet:organism-code",
+ "name": "WhonetOrganismCode",
+ "title": "WHONET organism codes",
+ "status": "active",
+ "experimental": false,
+ "caseSensitive": true,
+ "content": "complete",
+ "count": 2380,
+ "description": "The organism code space. SNOMED concepts are carried alongside where the deployment is licensed for them; this one is always present.",
+ "concept": [
+  {
+   "code": "SAJ",
+   "display": "Abiotrophia adiacens"
+  },
+  {
+   "code": "KPN",
+   "display": "Klebsiella pneumoniae complex"
+  },
+  {
+   "code": "SDF",
+   "display": "Abiotrophia defectiva"
+  },
+  {
+   "code": "ABI",
+   "display": "Abiotrophia sp."
+  },
+  {
+   "code": "ACF",
+   "display": "Absidia corimbifera"
+  },
+  {
+   "code": "ABS",
+   "display": "Absidia sp."
+  },
+  {
+   "code": "EAE",
+   "display": "Klebsiella aerogenes"
+  },
+  {
+   "code": "ACN",
+   "display": "Acanthamoeba sp."
+  },
+  {
+   "code": "AVB",
+   "display": "Acetivibrio sp."
+  },
+  {
+   "code": "ACE",
+   "display": "Acetobacterium sp."
+  },
+  {
+   "code": "ACP",
+   "display": "Acholeplasma sp."
+  },
+  {
+   "code": "ADE",
+   "display": "Achromobacter denitrificans"
+  },
+  {
+   "code": "ABX",
+   "display": "Acinetobacter baumannii-calcoaceticus complex"
+  },
+  {
+   "code": "API",
+   "display": "Achromobacter piechaudii"
+  },
+  {
+   "code": "ACH",
+   "display": "Achromobacter sp."
+  },
+  {
+   "code": "PMA",
+   "display": "Stenotrophomonas maltophilia"
+  },
+  {
+   "code": "AXY",
+   "display": "Achromobacter xylosoxidans ss. xylosoxidans"
+  },
+  {
+   "code": "AFB",
+   "display": "Acid fast bacilli"
+  },
+  {
+   "code": "AFE",
+   "display": "Acidaminococcus fermentans"
+  },
+  {
+   "code": "ACD",
+   "display": "Acidaminococcus sp."
+  },
+  {
+   "code": "ADF",
+   "display": "Acidovorax delafieldii"
+  },
+  {
+   "code": "SGC",
+   "display": "Streptococcus agalactiae"
+  },
+  {
+   "code": "AFC",
+   "display": "Acidovorax facilis"
+  },
+  {
+   "code": "ACX",
+   "display": "Acidovorax sp."
+  },
+  {
+   "code": "ATM",
+   "display": "Acidovorax temperans"
+  },
+  {
+   "code": "AAN",
+   "display": "Acinetobacter anitratus"
+  },
+  {
+   "code": "ABA",
+   "display": "Acinetobacter baumannii"
+  },
+  {
+   "code": "ABY",
+   "display": "Acinetobacter baylyi"
+  },
+  {
+   "code": "ACA",
+   "display": "Acinetobacter calcoaceticus"
+  },
+  {
+   "code": "ALW",
+   "display": "Acinetobacter calcoaceticus var. lwoffii"
+  },
+  {
+   "code": "XTP",
+   "display": "Non-typhoidal Salmonella spp."
+  },
+  {
+   "code": "ADI",
+   "display": "Acinetobacter dijkshoorniae"
+  },
+  {
+   "code": "ANO",
+   "display": "Acinetobacter genospecies 13TU"
+  },
+  {
+   "code": "AHA",
+   "display": "Acinetobacter haemolyticus"
+  },
+  {
+   "code": "AJO",
+   "display": "Acinetobacter johnsonii"
+  },
+  {
+   "code": "AJU",
+   "display": "Acinetobacter junii"
+  },
+  {
+   "code": "EEH",
+   "display": "Shiga toxin-producing Escherichia coli (STEC/EHEC)"
+  },
+  {
+   "code": "APA",
+   "display": "Acinetobacter parvus"
+  },
+  {
+   "code": "NGO",
+   "display": "Neisseria gonorrhoeae"
+  },
+  {
+   "code": "APT",
+   "display": "Acinetobacter pittii"
+  },
+  {
+   "code": "ARO",
+   "display": "Acinetobacter radioresistens"
+  },
+  {
+   "code": "ASD",
+   "display": "Acinetobacter schindleri"
+  },
+  {
+   "code": "ASE",
+   "display": "Acinetobacter seifertti"
+  },
+  {
+   "code": "AC-",
+   "display": "Acinetobacter sp."
+  },
+  {
+   "code": "AUG",
+   "display": "Acinetobacter ursingii"
+  },
+  {
+   "code": "AFF",
+   "display": "Acremonium falciforme"
+  },
+  {
+   "code": "AKI",
+   "display": "Acremonium kiliense"
+  },
+  {
+   "code": "ARF",
+   "display": "Acremonium recifei"
+  },
+  {
+   "code": "ACR",
+   "display": "Acremonium sp."
+  },
+  {
+   "code": "HAC",
+   "display": "Actinobacillus actinomycetemcomitans"
+  },
+  {
+   "code": "AEQ",
+   "display": "Actinobacillus equuli"
+  },
+  {
+   "code": "ALI",
+   "display": "Actinobacillus lignieresii"
+  },
+  {
+   "code": "APL",
+   "display": "Actinobacillus pleuropneumoniae"
+  },
+  {
+   "code": "ATS",
+   "display": "Actinobacillus seminis"
+  },
+  {
+   "code": "ACB",
+   "display": "Actinobacillus sp."
+  },
+  {
+   "code": "ASU",
+   "display": "Actinobacillus suis"
+  },
+  {
+   "code": "AUR",
+   "display": "Actinobacillus ureae"
+  },
+  {
+   "code": "AAM",
+   "display": "Actinobaculum sp."
+  },
+  {
+   "code": "ATI",
+   "display": "Actinobaculum suis"
+  },
+  {
+   "code": "AMU",
+   "display": "Actinomadura madurae"
+  },
+  {
+   "code": "ACM",
+   "display": "Actinomadura sp."
+  },
+  {
+   "code": "ABE",
+   "display": "Actinomyces bernardiae"
+  },
+  {
+   "code": "ABO",
+   "display": "Actinomyces bovis"
+  },
+  {
+   "code": "AGG",
+   "display": "Actinomyces georgiae"
+  },
+  {
+   "code": "AGE",
+   "display": "Actinomyces gerencseriae"
+  },
+  {
+   "code": "AIS",
+   "display": "Actinomyces israelii"
+  },
+  {
+   "code": "AME",
+   "display": "Actinomyces meyeri"
+  },
+  {
+   "code": "ANE",
+   "display": "Actinomyces naeslundii"
+  },
+  {
+   "code": "AAT",
+   "display": "Actinomyces neuii ss. anitratus"
+  },
+  {
+   "code": "ANU",
+   "display": "Actinomyces neuii ss. neuii"
+  },
+  {
+   "code": "AOD",
+   "display": "Actinomyces odontolyticus"
+  },
+  {
+   "code": "APY",
+   "display": "Actinomyces pyogenes"
+  },
+  {
+   "code": "APK",
+   "display": "Actinomyces pyogenes-like bacteria"
+  },
+  {
+   "code": "ACT",
+   "display": "Actinomyces sp."
+  },
+  {
+   "code": "ATC",
+   "display": "Actinomyces turicensis"
+  },
+  {
+   "code": "AVS",
+   "display": "Actinomyces viscosus"
+  },
+  {
+   "code": "ADV",
+   "display": "Adenovirus"
+  },
+  {
+   "code": "AEC",
+   "display": "Aerococcus sp."
+  },
+  {
+   "code": "AUN",
+   "display": "Aerococcus urinae"
+  },
+  {
+   "code": "AVI",
+   "display": "Aerococcus viridans"
+  },
+  {
+   "code": "AVH",
+   "display": "Aerococcus viridans var. homari"
+  },
+  {
+   "code": "ACV",
+   "display": "Aeromonas caviae"
+  },
+  {
+   "code": "ADH",
+   "display": "Aeromonas dhakensis"
+  },
+  {
+   "code": "ATR",
+   "display": "Aeromonas enteropelogenes"
+  },
+  {
+   "code": "AEU",
+   "display": "Aeromonas eucrenophila"
+  },
+  {
+   "code": "AEH",
+   "display": "Aeromonas hydrophila"
+  },
+  {
+   "code": "AJA",
+   "display": "Aeromonas jandaei"
+  },
+  {
+   "code": "AMD",
+   "display": "Aeromonas media"
+  },
+  {
+   "code": "APN",
+   "display": "Aeromonas punctata"
+  },
+  {
+   "code": "ASA",
+   "display": "Aeromonas salmonicida"
+  },
+  {
+   "code": "ASH",
+   "display": "Aeromonas schubertii"
+  },
+  {
+   "code": "ASO",
+   "display": "Aeromonas sobria"
+  },
+  {
+   "code": "AER",
+   "display": "Aeromonas sp."
+  },
+  {
+   "code": "AVE",
+   "display": "Aeromonas veronii"
+  },
+  {
+   "code": "ASB",
+   "display": "Aeromonas veronii biovar sobria"
+  },
+  {
+   "code": "AVV",
+   "display": "Aeromonas veronii biovar veronii"
+  },
+  {
+   "code": "AFO",
+   "display": "Afipia broomeae"
+  },
+  {
+   "code": "AFD",
+   "display": "Afipia clevelandensis"
+  },
+  {
+   "code": "APF",
+   "display": "Afipia felis"
+  },
+  {
+   "code": "AFI",
+   "display": "Afipia sp."
+  },
+  {
+   "code": "ADU",
+   "display": "Agchylostoma duodenale"
+  },
+  {
+   "code": "HAP",
+   "display": "Aggregatibacter aphrophilus"
+  },
+  {
+   "code": "HSE",
+   "display": "Aggregatibacter segnis"
+  },
+  {
+   "code": "AGT",
+   "display": "Aggregatibacter sp."
+  },
+  {
+   "code": "ATU",
+   "display": "Agrobacterium radiobacter"
+  },
+  {
+   "code": "AGR",
+   "display": "Agrobacterium sp."
+  },
+  {
+   "code": "AJC",
+   "display": "Ajellomyces capsulatus"
+  },
+  {
+   "code": "CPR",
+   "display": "Ajellomyces crescens"
+  },
+  {
+   "code": "AJE",
+   "display": "Ajellomyces sp."
+  },
+  {
+   "code": "AFA",
+   "display": "Alcaligenes faecalis (odorans)"
+  },
+  {
+   "code": "ALC",
+   "display": "Alcaligenes sp."
+  },
+  {
+   "code": "AIL",
+   "display": "Aliivibrio salmonicida"
+  },
+  {
+   "code": "AII",
+   "display": "Aliivibrio sp."
+  },
+  {
+   "code": "BPU",
+   "display": "Alistipes putredinis"
+  },
+  {
+   "code": "AOI",
+   "display": "Alloiococcus otitis"
+  },
+  {
+   "code": "ALO",
+   "display": "Alloiococcus sp."
+  },
+  {
+   "code": "AAL",
+   "display": "Alternaria alternata"
+  },
+  {
+   "code": "ALT",
+   "display": "Alternaria sp."
+  },
+  {
+   "code": "SHN",
+   "display": "Alteromonas hanedai"
+  },
+  {
+   "code": "ALM",
+   "display": "Alteromonas sp."
+  },
+  {
+   "code": "ALY",
+   "display": "Alysiella sp."
+  },
+  {
+   "code": "ANC",
+   "display": "Anaerobic Gram negative cocci"
+  },
+  {
+   "code": "ANB",
+   "display": "Anaerobic Gram negative coccobacilli"
+  },
+  {
+   "code": "AN-",
+   "display": "Anaerobic Gram negative organisms"
+  },
+  {
+   "code": "ANR",
+   "display": "Anaerobic Gram negative rods"
+  },
+  {
+   "code": "APC",
+   "display": "Anaerobic Gram positive cocci"
+  },
+  {
+   "code": "APB",
+   "display": "Anaerobic Gram positive coccobacilli"
+  },
+  {
+   "code": "AN+",
+   "display": "Anaerobic Gram positive organisms"
+  },
+  {
+   "code": "APR",
+   "display": "Anaerobic Gram positive rods"
+  },
+  {
+   "code": "AVC",
+   "display": "Anaerobic Gram variable cocci"
+  },
+  {
+   "code": "AGB",
+   "display": "Anaerobic Gram variable coccobacilli"
+  },
+  {
+   "code": "AVR",
+   "display": "Anaerobic Gram variable rods"
+  },
+  {
+   "code": "ANA",
+   "display": "Anaerobic organisms"
+  },
+  {
+   "code": "ANS",
+   "display": "Anaerobic streptococci"
+  },
+  {
+   "code": "ANP",
+   "display": "Anaerobiospirillum sp."
+  },
+  {
+   "code": "ASN",
+   "display": "Anaerobiospirillum succiniciproducens"
+  },
+  {
+   "code": "AAD",
+   "display": "Anaerococcus degeneri"
+  },
+  {
+   "code": "PHY",
+   "display": "Anaerococcus hydrogenalis"
+  },
+  {
+   "code": "PLT",
+   "display": "Anaerococcus lactolyticus"
+  },
+  {
+   "code": "PPP",
+   "display": "Anaerococcus prevotii"
+  },
+  {
+   "code": "PTE",
+   "display": "Anaerococcus tetradius"
+  },
+  {
+   "code": "PVA",
+   "display": "Anaerococcus vaginalis"
+  },
+  {
+   "code": "AFR",
+   "display": "Anaerorhabdus furcosa"
+  },
+  {
+   "code": "ARH",
+   "display": "Anaerorhabdus sp."
+  },
+  {
+   "code": "ANV",
+   "display": "Anaerovibrio sp."
+  },
+  {
+   "code": "AMC",
+   "display": "Anaplasma centrale"
+  },
+  {
+   "code": "AMA",
+   "display": "Anaplasma marginale"
+  },
+  {
+   "code": "APM",
+   "display": "Anaplasma mesaeterum"
+  },
+  {
+   "code": "APO",
+   "display": "Anaplasma ovis"
+  },
+  {
+   "code": "AAP",
+   "display": "Anaplasma phagocytophilum"
+  },
+  {
+   "code": "AAS",
+   "display": "Anaplasma sp."
+  },
+  {
+   "code": "ABR",
+   "display": "Ancylostoma braziliense"
+  },
+  {
+   "code": "ACU",
+   "display": "Ancylostoma caninum"
+  },
+  {
+   "code": "ANY",
+   "display": "Ancylostoma sp."
+  },
+  {
+   "code": "ACS",
+   "display": "Angiostrongylus cantonensis"
+  },
+  {
+   "code": "ACO",
+   "display": "Angiostrongylus costaricensis"
+  },
+  {
+   "code": "ANG",
+   "display": "Angiostrongylus sp."
+  },
+  {
+   "code": "ANK",
+   "display": "Anisakis sp."
+  },
+  {
+   "code": "AFN",
+   "display": "Aphanoascus fulvescens"
+  },
+  {
+   "code": "APH",
+   "display": "Aphanoascus sp."
+  },
+  {
+   "code": "AIM",
+   "display": "Apiotrichum montevideense"
+  },
+  {
+   "code": "AIT",
+   "display": "Apiotrichum sp."
+  },
+  {
+   "code": "PPR",
+   "display": "Arachnia propionica"
+  },
+  {
+   "code": "TBN",
+   "display": "Arcanobacterium bernardiae"
+  },
+  {
+   "code": "AHE",
+   "display": "Arcanobacterium haemolyticum"
+  },
+  {
+   "code": "ARB",
+   "display": "Arcanobacterium sp."
+  },
+  {
+   "code": "ABU",
+   "display": "Arcobacter butzleri"
+  },
+  {
+   "code": "ACY",
+   "display": "Arcobacter cryaerophilus"
+  },
+  {
+   "code": "ANT",
+   "display": "Arcobacter nitrofigilis"
+  },
+  {
+   "code": "ARC",
+   "display": "Arcobacter sp."
+  },
+  {
+   "code": "ARR",
+   "display": "Arthrinium sp."
+  },
+  {
+   "code": "ATB",
+   "display": "Arthrobacter sp."
+  },
+  {
+   "code": "ABL",
+   "display": "Arthroderma borellii"
+  },
+  {
+   "code": "ACJ",
+   "display": "Arthroderma cajetani"
+  },
+  {
+   "code": "ACK",
+   "display": "Arthroderma cookiellum"
+  },
+  {
+   "code": "ACC",
+   "display": "Arthroderma corniculatum"
+  },
+  {
+   "code": "AFM",
+   "display": "Arthroderma fulvum"
+  },
+  {
+   "code": "AGU",
+   "display": "Arthroderma grubyi"
+  },
+  {
+   "code": "AGY",
+   "display": "Arthroderma gypseum"
+  },
+  {
+   "code": "AIN",
+   "display": "Arthroderma incurvatum"
+  },
+  {
+   "code": "AOB",
+   "display": "Arthroderma obtusum"
+  },
+  {
+   "code": "AOT",
+   "display": "Arthroderma otae"
+  },
+  {
+   "code": "APE",
+   "display": "Arthroderma persicolor"
+  },
+  {
+   "code": "ARA",
+   "display": "Arthroderma racemosum"
+  },
+  {
+   "code": "ARD",
+   "display": "Arthroderma sp."
+  },
+  {
+   "code": "AKA",
+   "display": "Arthrographis kalrae"
+  },
+  {
+   "code": "ART",
+   "display": "Arthrographis sp."
+  },
+  {
+   "code": "ARX",
+   "display": "Arxiozyma sp."
+  },
+  {
+   "code": "TPI",
+   "display": "Arxiozyma telluris"
+  },
+  {
+   "code": "CIG",
+   "display": "Asaccharospora irregularis"
+  },
+  {
+   "code": "ALU",
+   "display": "Ascaris lumbricoides"
+  },
+  {
+   "code": "ASC",
+   "display": "Ascaris sp."
+  },
+  {
+   "code": "ACL",
+   "display": "Aspergillus clavatus"
+  },
+  {
+   "code": "AFS",
+   "display": "Aspergillus fischerianus"
+  },
+  {
+   "code": "AFV",
+   "display": "Aspergillus flavipes"
+  },
+  {
+   "code": "AFL",
+   "display": "Aspergillus flavus"
+  },
+  {
+   "code": "AFU",
+   "display": "Aspergillus fumigatus"
+  },
+  {
+   "code": "AFP",
+   "display": "Aspergillus fumigatus var. phialiseptus"
+  },
+  {
+   "code": "AGL",
+   "display": "Aspergillus glaucus complex"
+  },
+  {
+   "code": "AND",
+   "display": "Aspergillus nidulans"
+  },
+  {
+   "code": "ANI",
+   "display": "Aspergillus niger"
+  },
+  {
+   "code": "ARS",
+   "display": "Aspergillus restrictus"
+  },
+  {
+   "code": "ASP",
+   "display": "Aspergillus sp."
+  },
+  {
+   "code": "ASY",
+   "display": "Aspergillus sydowii"
+  },
+  {
+   "code": "ATE",
+   "display": "Aspergillus terreus"
+  },
+  {
+   "code": "AVL",
+   "display": "Aspergillus versicolor"
+  },
+  {
+   "code": "ASV",
+   "display": "Astrovirus"
+  },
+  {
+   "code": "LMI",
+   "display": "Atopobium minutum"
+  },
+  {
+   "code": "APV",
+   "display": "Atopobium parvulum"
+  },
+  {
+   "code": "ARM",
+   "display": "Atopobium rimae"
+  },
+  {
+   "code": "ATO",
+   "display": "Atopobium sp."
+  },
+  {
+   "code": "AUB",
+   "display": "Aureobacterium sp."
+  },
+  {
+   "code": "APU",
+   "display": "Aureobasidium pullulans (H. dematioides)"
+  },
+  {
+   "code": "ARE",
+   "display": "Aureobasidium sp."
+  },
+  {
+   "code": "PAV",
+   "display": "Avibacterium avium"
+  },
+  {
+   "code": "PGL",
+   "display": "Avibacterium gallinarum"
+  },
+  {
+   "code": "HPG",
+   "display": "Avibacterium paragallinarum"
+  },
+  {
+   "code": "AVA",
+   "display": "Avibacterium sp."
+  },
+  {
+   "code": "PVO",
+   "display": "Avibacterium volantium"
+  },
+  {
+   "code": "RFA",
+   "display": "Azospirillum brasilense"
+  },
+  {
+   "code": "BKV",
+   "display": "BK virus"
+  },
+  {
+   "code": "BBB",
+   "display": "Babesia bigemina"
+  },
+  {
+   "code": "BBO",
+   "display": "Babesia bovis"
+  },
+  {
+   "code": "BBD",
+   "display": "Babesia divergens"
+  },
+  {
+   "code": "BBS",
+   "display": "Babesia sp."
+  },
+  {
+   "code": "BAL",
+   "display": "Bacillus alvei"
+  },
+  {
+   "code": "BAN",
+   "display": "Bacillus anthracis"
+  },
+  {
+   "code": "BBE",
+   "display": "Bacillus brevis"
+  },
+  {
+   "code": "BCE",
+   "display": "Bacillus cereus"
+  },
+  {
+   "code": "BCI",
+   "display": "Bacillus circulans"
+  },
+  {
+   "code": "BCG",
+   "display": "Bacillus coagulans"
+  },
+  {
+   "code": "BFI",
+   "display": "Bacillus firmus"
+  },
+  {
+   "code": "BLT",
+   "display": "Bacillus laterosporus"
+  },
+  {
+   "code": "BLN",
+   "display": "Bacillus lentus"
+  },
+  {
+   "code": "BLI",
+   "display": "Bacillus licheniformis"
+  },
+  {
+   "code": "BMC",
+   "display": "Bacillus macerans"
+  },
+  {
+   "code": "BMG",
+   "display": "Bacillus megaterium"
+  },
+  {
+   "code": "BMY",
+   "display": "Bacillus mycoides"
+  },
+  {
+   "code": "BPN",
+   "display": "Bacillus pantothenticus"
+  },
+  {
+   "code": "BPO",
+   "display": "Bacillus polymyxa"
+  },
+  {
+   "code": "BPM",
+   "display": "Bacillus pumilus"
+  },
+  {
+   "code": "BCS",
+   "display": "Bacillus sp."
+  },
+  {
+   "code": "BSH",
+   "display": "Bacillus sphaericus"
+  },
+  {
+   "code": "BSR",
+   "display": "Bacillus stearothermophilus"
+  },
+  {
+   "code": "BSL",
+   "display": "Bacillus subtilis"
+  },
+  {
+   "code": "BTU",
+   "display": "Bacillus thuringiensis"
+  },
+  {
+   "code": "PAA",
+   "display": "Bacteroides asaccharolyticus"
+  },
+  {
+   "code": "BBI",
+   "display": "Bacteroides bivius"
+  },
+  {
+   "code": "PBU",
+   "display": "Bacteroides buccae"
+  },
+  {
+   "code": "PBC",
+   "display": "Bacteroides buccalis"
+  },
+  {
+   "code": "BCC",
+   "display": "Bacteroides caccae"
+  },
+  {
+   "code": "BCP",
+   "display": "Bacteroides capillosus"
+  },
+  {
+   "code": "BCO",
+   "display": "Bacteroides coagulans"
+  },
+  {
+   "code": "PCO",
+   "display": "Bacteroides corporis"
+  },
+  {
+   "code": "BDE",
+   "display": "Bacteroides denticola"
+  },
+  {
+   "code": "BDI",
+   "display": "Bacteroides disiens"
+  },
+  {
+   "code": "BDS",
+   "display": "Bacteroides distasonis"
+  },
+  {
+   "code": "BEG",
+   "display": "Bacteroides eggerthii"
+  },
+  {
+   "code": "PEO",
+   "display": "Bacteroides endodontalis"
+  },
+  {
+   "code": "BFO",
+   "display": "Bacteroides forsythus"
+  },
+  {
+   "code": "BFR",
+   "display": "Bacteroides fragilis"
+  },
+  {
+   "code": "BFG",
+   "display": "Bacteroides fragilis group"
+  },
+  {
+   "code": "PGI",
+   "display": "Bacteroides gingivalis"
+  },
+  {
+   "code": "BGR",
+   "display": "Bacteroides gracilis"
+  },
+  {
+   "code": "PIN",
+   "display": "Bacteroides intermedius"
+  },
+  {
+   "code": "BLE",
+   "display": "Bacteroides levii"
+  },
+  {
+   "code": "PLO",
+   "display": "Bacteroides loescheii"
+  },
+  {
+   "code": "BME",
+   "display": "Bacteroides melaninogenicus"
+  },
+  {
+   "code": "BMR",
+   "display": "Bacteroides merdae"
+  },
+  {
+   "code": "BTN",
+   "display": "Bacteroides nordii"
+  },
+  {
+   "code": "BOC",
+   "display": "Bacteroides ochraceus"
+  },
+  {
+   "code": "POL",
+   "display": "Bacteroides oralis"
+  },
+  {
+   "code": "POI",
+   "display": "Bacteroides oris"
+  },
+  {
+   "code": "BOV",
+   "display": "Bacteroides ovatus"
+  },
+  {
+   "code": "DPN",
+   "display": "Bacteroides pneumosintes"
+  },
+  {
+   "code": "BTE",
+   "display": "Bacteroides pyogenes"
+  },
+  {
+   "code": "PRU",
+   "display": "Bacteroides ruminicola"
+  },
+  {
+   "code": "PRB",
+   "display": "Bacteroides ruminicola ss. brevis"
+  },
+  {
+   "code": "BAC",
+   "display": "Bacteroides sp."
+  },
+  {
+   "code": "BSP",
+   "display": "Bacteroides splanchnicus"
+  },
+  {
+   "code": "BST",
+   "display": "Bacteroides stercoris"
+  },
+  {
+   "code": "BTH",
+   "display": "Bacteroides thetaiotaomicron"
+  },
+  {
+   "code": "BUN",
+   "display": "Bacteroides uniformis"
+  },
+  {
+   "code": "BUR",
+   "display": "Bacteroides ureolyticus"
+  },
+  {
+   "code": "BVU",
+   "display": "Bacteroides vulgatus"
+  },
+  {
+   "code": "BCL",
+   "display": "Balantidium coli"
+  },
+  {
+   "code": "BAT",
+   "display": "Balantidium sp."
+  },
+  {
+   "code": "BBA",
+   "display": "Bartonella bacilliformis"
+  },
+  {
+   "code": "BEZ",
+   "display": "Bartonella elizabethae"
+  },
+  {
+   "code": "BHE",
+   "display": "Bartonella henselae"
+  },
+  {
+   "code": "BQU",
+   "display": "Bartonella quintana"
+  },
+  {
+   "code": "BAR",
+   "display": "Bartonella sp."
+  },
+  {
+   "code": "BVI",
+   "display": "Bartonella vinsonii"
+  },
+  {
+   "code": "BRA",
+   "display": "Basidiobolus ranarum"
+  },
+  {
+   "code": "BAS",
+   "display": "Basidiobolus sp."
+  },
+  {
+   "code": "BEA",
+   "display": "Beauveria sp."
+  },
+  {
+   "code": "NDE",
+   "display": "Bergeriella denitrificans"
+  },
+  {
+   "code": "BER",
+   "display": "Bergeyella sp."
+  },
+  {
+   "code": "WZO",
+   "display": "Bergeyella zoohelcum"
+  },
+  {
+   "code": "PTR",
+   "display": "Bibersteinia trehalosi"
+  },
+  {
+   "code": "BAD",
+   "display": "Bifidobacterium adolescentis"
+  },
+  {
+   "code": "BBF",
+   "display": "Bifidobacterium bifidum"
+  },
+  {
+   "code": "BBV",
+   "display": "Bifidobacterium breve"
+  },
+  {
+   "code": "BCT",
+   "display": "Bifidobacterium catenulatum"
+  },
+  {
+   "code": "BCR",
+   "display": "Bifidobacterium coryneforme"
+  },
+  {
+   "code": "BDN",
+   "display": "Bifidobacterium dentium"
+  },
+  {
+   "code": "BIN",
+   "display": "Bifidobacterium infantis"
+  },
+  {
+   "code": "BLO",
+   "display": "Bifidobacterium longum"
+  },
+  {
+   "code": "BMN",
+   "display": "Bifidobacterium magnum"
+  },
+  {
+   "code": "BPS",
+   "display": "Bifidobacterium pseudolongum"
+  },
+  {
+   "code": "BIF",
+   "display": "Bifidobacterium sp."
+  },
+  {
+   "code": "BIL",
+   "display": "Bilophila sp."
+  },
+  {
+   "code": "BWA",
+   "display": "Bilophila wadsworthia"
+  },
+  {
+   "code": "BAU",
+   "display": "Bipolaris australiensis"
+  },
+  {
+   "code": "BHA",
+   "display": "Bipolaris hawaiiensis"
+  },
+  {
+   "code": "BIP",
+   "display": "Bipolaris sp."
+  },
+  {
+   "code": "BSI",
+   "display": "Bipolaris spicifera"
+  },
+  {
+   "code": "FDI",
+   "display": "Bisifusarium dimerum"
+  },
+  {
+   "code": "BHO",
+   "display": "Blastocystis hominis"
+  },
+  {
+   "code": "BLS",
+   "display": "Blastocystis sp."
+  },
+  {
+   "code": "BDR",
+   "display": "Blastomyces dermatitidis"
+  },
+  {
+   "code": "BLA",
+   "display": "Blastomyces sp."
+  },
+  {
+   "code": "GCA",
+   "display": "Blastoschizomyces capitatus"
+  },
+  {
+   "code": "BSZ",
+   "display": "Blastoschizomyces sp."
+  },
+  {
+   "code": "RHA",
+   "display": "Blautia hansenii"
+  },
+  {
+   "code": "RPR",
+   "display": "Blautia producta"
+  },
+  {
+   "code": "BAV",
+   "display": "Bordetella avium"
+  },
+  {
+   "code": "BBR",
+   "display": "Bordetella bronchiseptica"
+  },
+  {
+   "code": "BHZ",
+   "display": "Bordetella hinzii"
+  },
+  {
+   "code": "BHM",
+   "display": "Bordetella holmesii"
+  },
+  {
+   "code": "BPA",
+   "display": "Bordetella parapertussis"
+  },
+  {
+   "code": "BPE",
+   "display": "Bordetella pertussis"
+  },
+  {
+   "code": "BD-",
+   "display": "Bordetella sp."
+  },
+  {
+   "code": "E26",
+   "display": "Bordetella-like species"
+  },
+  {
+   "code": "BAF",
+   "display": "Borrelia afzelii"
+  },
+  {
+   "code": "BOA",
+   "display": "Borrelia anserina"
+  },
+  {
+   "code": "BBU",
+   "display": "Borrelia burgdorferi"
+  },
+  {
+   "code": "BDU",
+   "display": "Borrelia duttonii"
+  },
+  {
+   "code": "BGA",
+   "display": "Borrelia garinii"
+  },
+  {
+   "code": "BHR",
+   "display": "Borrelia hermsii"
+  },
+  {
+   "code": "BPK",
+   "display": "Borrelia parkeri"
+  },
+  {
+   "code": "BRC",
+   "display": "Borrelia recurrentis"
+  },
+  {
+   "code": "BOL",
+   "display": "Borrelia sp."
+  },
+  {
+   "code": "BOS",
+   "display": "Borrelia suilla"
+  },
+  {
+   "code": "BTR",
+   "display": "Borrelia turicatae"
+  },
+  {
+   "code": "SEU",
+   "display": "Brachyspira"
+  },
+  {
+   "code": "BAA",
+   "display": "Brachyspira aalborgi"
+  },
+  {
+   "code": "BRL",
+   "display": "Brachyspira alvinipulli"
+  },
+  {
+   "code": "BRH",
+   "display": "Brachyspira hyodysenteriae"
+  },
+  {
+   "code": "BRI",
+   "display": "Brachyspira intermedia"
+  },
+  {
+   "code": "BYP",
+   "display": "Brachyspira pilosicoli"
+  },
+  {
+   "code": "BRS",
+   "display": "Brachyspira sp."
+  },
+  {
+   "code": "BCA",
+   "display": "Branhamella catarrhalis"
+  },
+  {
+   "code": "MO-",
+   "display": "Branhamella sp."
+  },
+  {
+   "code": "BAY",
+   "display": "Brevibacterium acetylicum"
+  },
+  {
+   "code": "BVC",
+   "display": "Brevibacterium casei"
+  },
+  {
+   "code": "BEP",
+   "display": "Brevibacterium epidermidis"
+  },
+  {
+   "code": "BMB",
+   "display": "Brevibacterium mcbrellneri"
+  },
+  {
+   "code": "BRE",
+   "display": "Brevibacterium sp."
+  },
+  {
+   "code": "PDI",
+   "display": "Brevundimonas diminuta"
+  },
+  {
+   "code": "BRV",
+   "display": "Brevundimonas sp."
+  },
+  {
+   "code": "PVE",
+   "display": "Brevundimonas vesicularis"
+  },
+  {
+   "code": "BRO",
+   "display": "Brochothrix sp."
+  },
+  {
+   "code": "BOI",
+   "display": "Brucella melitensis biovar ovis"
+  },
+  {
+   "code": "BMT",
+   "display": "Brucella melitensis"
+  },
+  {
+   "code": "BAB",
+   "display": "Brucella melitensis biovar abortus"
+  },
+  {
+   "code": "BCN",
+   "display": "Brucella melitensis biovar canis"
+  },
+  {
+   "code": "BSU",
+   "display": "Brucella melitensis biovar suis"
+  },
+  {
+   "code": "BR-",
+   "display": "Brucella sp."
+  },
+  {
+   "code": "BML",
+   "display": "Brugia malayi"
+  },
+  {
+   "code": "BRG",
+   "display": "Brugia sp."
+  },
+  {
+   "code": "BTI",
+   "display": "Brugia timori"
+  },
+  {
+   "code": "BAQ",
+   "display": "Budvicia aquatica"
+  },
+  {
+   "code": "BUD",
+   "display": "Budvicia sp."
+  },
+  {
+   "code": "BAM",
+   "display": "Burkholderia ambifaria (genomovar VII)"
+  },
+  {
+   "code": "BAH",
+   "display": "Burkholderia anthina (genomovar VIII)"
+  },
+  {
+   "code": "BNC",
+   "display": "Burkholderia cenocepacia (genomovar III)"
+  },
+  {
+   "code": "PCE",
+   "display": "Burkholderia cepacia"
+  },
+  {
+   "code": "BCX",
+   "display": "Burkholderia cepacia complex"
+  },
+  {
+   "code": "BDO",
+   "display": "Burkholderia dolosa (genomovar VI)"
+  },
+  {
+   "code": "BGL",
+   "display": "Burkholderia gladioli"
+  },
+  {
+   "code": "BMA",
+   "display": "Burkholderia mallei"
+  },
+  {
+   "code": "BMU",
+   "display": "Burkholderia multivorans (genomovar II)"
+  },
+  {
+   "code": "PPI",
+   "display": "Burkholderia pickettii"
+  },
+  {
+   "code": "PPM",
+   "display": "Burkholderia pseudomallei"
+  },
+  {
+   "code": "BPY",
+   "display": "Burkholderia pyrrocinia (genomovar IX)"
+  },
+  {
+   "code": "BUK",
+   "display": "Burkholderia sp."
+  },
+  {
+   "code": "BTB",
+   "display": "Burkholderia stabilis (genomovar IV)"
+  },
+  {
+   "code": "BUB",
+   "display": "Burkholderia ubonensis (genomovar X)"
+  },
+  {
+   "code": "BVT",
+   "display": "Burkholderia vietnamiensis (genomovar V)"
+  },
+  {
+   "code": "C63",
+   "display": "Buttiauxella ferragutiae"
+  },
+  {
+   "code": "C64",
+   "display": "Buttiauxella gaviniae"
+  },
+  {
+   "code": "C59",
+   "display": "Buttiauxella noackiae"
+  },
+  {
+   "code": "BUA",
+   "display": "Buttiauxella sp."
+  },
+  {
+   "code": "BUT",
+   "display": "Butyrivibrio sp."
+  },
+  {
+   "code": "DHO",
+   "display": "CDC Coryneform Group 3"
+  },
+  {
+   "code": "MIB",
+   "display": "CDC Coryneform Group A-4"
+  },
+  {
+   "code": "CAF",
+   "display": "CDC Coryneform Group ANF-1"
+  },
+  {
+   "code": "CD2",
+   "display": "CDC Coryneform Group D-2"
+  },
+  {
+   "code": "CF1",
+   "display": "CDC Coryneform Group F-1"
+  },
+  {
+   "code": "CI2",
+   "display": "CDC Coryneform Group F-2"
+  },
+  {
+   "code": "CMC",
+   "display": "CDC Coryneform Group G-1"
+  },
+  {
+   "code": "CG2",
+   "display": "CDC Coryneform Group G-2"
+  },
+  {
+   "code": "CI1",
+   "display": "CDC Coryneform Group I-1"
+  },
+  {
+   "code": "CJK",
+   "display": "CDC Coryneform Group JK"
+  },
+  {
+   "code": "CAP",
+   "display": "CDC DF-1"
+  },
+  {
+   "code": "CCM",
+   "display": "CDC DF-2"
+  },
+  {
+   "code": "CCY",
+   "display": "CDC DF-2-like"
+  },
+  {
+   "code": "CD3",
+   "display": "CDC DF-3"
+  },
+  {
+   "code": "C4D",
+   "display": "CDC EF-1"
+  },
+  {
+   "code": "VHO",
+   "display": "CDC EF-13"
+  },
+  {
+   "code": "CTG",
+   "display": "CDC EF-19"
+  },
+  {
+   "code": "CCN",
+   "display": "CDC EF-22"
+  },
+  {
+   "code": "VVU",
+   "display": "CDC EF-3"
+  },
+  {
+   "code": "EF4",
+   "display": "CDC EF-4"
+  },
+  {
+   "code": "E4A",
+   "display": "CDC EF-4a"
+  },
+  {
+   "code": "E4B",
+   "display": "CDC EF-4b"
+  },
+  {
+   "code": "PDM",
+   "display": "CDC EF-5"
+  },
+  {
+   "code": "VFL",
+   "display": "CDC EF-6"
+  },
+  {
+   "code": "TPT",
+   "display": "CDC EF-9"
+  },
+  {
+   "code": "EO2",
+   "display": "CDC EO-2"
+  },
+  {
+   "code": "EO3",
+   "display": "CDC EO-3"
+  },
+  {
+   "code": "EVU",
+   "display": "CDC Enteric Group 1"
+  },
+  {
+   "code": "EFE",
+   "display": "CDC Enteric Group 10"
+  },
+  {
+   "code": "EHE",
+   "display": "CDC Enteric Group 11"
+  },
+  {
+   "code": "CDA",
+   "display": "CDC Enteric Group 15"
+  },
+  {
+   "code": "VME",
+   "display": "CDC Enteric Group 16"
+  },
+  {
+   "code": "EAS",
+   "display": "CDC Enteric Group 17"
+  },
+  {
+   "code": "LAD",
+   "display": "CDC Enteric Group 41"
+  },
+  {
+   "code": "YRE",
+   "display": "CDC Enteric Group 45"
+  },
+  {
+   "code": "MWI",
+   "display": "CDC Enteric Group 46"
+  },
+  {
+   "code": "LGR",
+   "display": "CDC Enteric Group 57"
+  },
+  {
+   "code": "C58",
+   "display": "CDC Enteric Group 58"
+  },
+  {
+   "code": "C60",
+   "display": "CDC Enteric Group 60"
+  },
+  {
+   "code": "C68",
+   "display": "CDC Enteric Group 68"
+  },
+  {
+   "code": "C69",
+   "display": "CDC Enteric Group 69"
+  },
+  {
+   "code": "EHM",
+   "display": "CDC Enteric Group 75"
+  },
+  {
+   "code": "KAS",
+   "display": "CDC Enteric Group 8"
+  },
+  {
+   "code": "TGU",
+   "display": "CDC Enteric Group 90"
+  },
+  {
+   "code": "ECR",
+   "display": "CDC HB-1"
+  },
+  {
+   "code": "PBE",
+   "display": "CDC HB-5"
+  },
+  {
+   "code": "FME",
+   "display": "CDC IIa"
+  },
+  {
+   "code": "FIN",
+   "display": "CDC IIb"
+  },
+  {
+   "code": "C2C",
+   "display": "CDC IIc"
+  },
+  {
+   "code": "CHO",
+   "display": "CDC IId"
+  },
+  {
+   "code": "C2E",
+   "display": "CDC IIe"
+  },
+  {
+   "code": "WVI",
+   "display": "CDC IIf"
+  },
+  {
+   "code": "C2H",
+   "display": "CDC IIh"
+  },
+  {
+   "code": "C2I",
+   "display": "CDC IIi"
+  },
+  {
+   "code": "SPA",
+   "display": "CDC IIk-1"
+  },
+  {
+   "code": "SML",
+   "display": "CDC IIk-2"
+  },
+  {
+   "code": "SSV",
+   "display": "CDC IIk-3"
+  },
+  {
+   "code": "C4C",
+   "display": "CDC IVc"
+  },
+  {
+   "code": "4C2",
+   "display": "CDC IVc-2"
+  },
+  {
+   "code": "OUL",
+   "display": "CDC IVe"
+  },
+  {
+   "code": "SPF",
+   "display": "CDC Ib-1"
+  },
+  {
+   "code": "KKI",
+   "display": "CDC M-1"
+  },
+  {
+   "code": "MPP",
+   "display": "CDC M-2"
+  },
+  {
+   "code": "MAT",
+   "display": "CDC M-3"
+  },
+  {
+   "code": "OUR",
+   "display": "CDC M-4"
+  },
+  {
+   "code": "FOD",
+   "display": "CDC M-4f"
+  },
+  {
+   "code": "NWE",
+   "display": "CDC M-5"
+  },
+  {
+   "code": "NNI",
+   "display": "CDC M-6"
+  },
+  {
+   "code": "KDE",
+   "display": "CDC TM-1"
+  },
+  {
+   "code": "PSZ",
+   "display": "CDC Vb-1"
+  },
+  {
+   "code": "PME",
+   "display": "CDC Vb-2"
+  },
+  {
+   "code": "CVB",
+   "display": "CDC Vb-3"
+  },
+  {
+   "code": "OAN",
+   "display": "CDC Vd-1"
+  },
+  {
+   "code": "CLT",
+   "display": "CDC Ve-1"
+  },
+  {
+   "code": "FOR",
+   "display": "CDC Ve-2"
+  },
+  {
+   "code": "C19",
+   "display": "COVID-19"
+  },
+  {
+   "code": "CHP",
+   "display": "Calodium hepaticum"
+  },
+  {
+   "code": "CGR",
+   "display": "Calymmatobacterium granulomatis"
+  },
+  {
+   "code": "CMB",
+   "display": "Calymmatobacterium sp."
+  },
+  {
+   "code": "CCO",
+   "display": "Campylobacter coli"
+  },
+  {
+   "code": "CCU",
+   "display": "Campylobacter curvus"
+  },
+  {
+   "code": "HFN",
+   "display": "Campylobacter fennelliae"
+  },
+  {
+   "code": "CFE",
+   "display": "Campylobacter fetus ss. fetus"
+  },
+  {
+   "code": "CFV",
+   "display": "Campylobacter fetus ss. venerealis"
+  },
+  {
+   "code": "CHY",
+   "display": "Campylobacter hyointestinalis"
+  },
+  {
+   "code": "CAJ",
+   "display": "Campylobacter jejuni"
+  },
+  {
+   "code": "CJ1",
+   "display": "Campylobacter jejuni biotype 1"
+  },
+  {
+   "code": "CJ2",
+   "display": "Campylobacter jejuni biotype 2"
+  },
+  {
+   "code": "CJD",
+   "display": "Campylobacter jejuni ss. doylei"
+  },
+  {
+   "code": "CLR",
+   "display": "Campylobacter lari"
+  },
+  {
+   "code": "CMU",
+   "display": "Campylobacter mucosalis"
+  },
+  {
+   "code": "CRE",
+   "display": "Campylobacter rectus"
+  },
+  {
+   "code": "CSH",
+   "display": "Campylobacter showae"
+  },
+  {
+   "code": "CAM",
+   "display": "Campylobacter sp."
+  },
+  {
+   "code": "CSP",
+   "display": "Campylobacter sputorum"
+  },
+  {
+   "code": "CBB",
+   "display": "Campylobacter sputorum ss. bubulus"
+  },
+  {
+   "code": "CUP",
+   "display": "Campylobacter upsaliensis"
+  },
+  {
+   "code": "CFN",
+   "display": "Candida africana"
+  },
+  {
+   "code": "CAL",
+   "display": "Candida albicans"
+  },
+  {
+   "code": "CAX",
+   "display": "Candida albicans complex"
+  },
+  {
+   "code": "CRS",
+   "display": "Candida auris"
+  },
+  {
+   "code": "KII",
+   "display": "Candida blankii"
+  },
+  {
+   "code": "CUI",
+   "display": "Candida bracarensis"
+  },
+  {
+   "code": "YZH",
+   "display": "Candida carpophila"
+  },
+  {
+   "code": "CCT",
+   "display": "Candida catenulata"
+  },
+  {
+   "code": "CCI",
+   "display": "Candida ciferrii"
+  },
+  {
+   "code": "COL",
+   "display": "Candida colliculosa"
+  },
+  {
+   "code": "CDU",
+   "display": "Candida dubliniensis"
+  },
+  {
+   "code": "CDH",
+   "display": "Candida duobushaemulonii"
+  },
+  {
+   "code": "CFB",
+   "display": "Candida fabianii"
+  },
+  {
+   "code": "TCA",
+   "display": "Candida famata"
+  },
+  {
+   "code": "YZB",
+   "display": "Candida fermentati"
+  },
+  {
+   "code": "CGL",
+   "display": "Candida glabrata"
+  },
+  {
+   "code": "CGX",
+   "display": "Candida glabrata complex"
+  },
+  {
+   "code": "CGU",
+   "display": "Candida guilliermondii"
+  },
+  {
+   "code": "THA",
+   "display": "Candida haemulonii"
+  },
+  {
+   "code": "THX",
+   "display": "Candida haemulonii complex"
+  },
+  {
+   "code": "CHU",
+   "display": "Candida humicola"
+  },
+  {
+   "code": "TIN",
+   "display": "Candida inconspicua"
+  },
+  {
+   "code": "CIN",
+   "display": "Candida intermedia"
+  },
+  {
+   "code": "CPS",
+   "display": "Candida kefyr"
+  },
+  {
+   "code": "CKR",
+   "display": "Candida krusei"
+  },
+  {
+   "code": "CLM",
+   "display": "Candida lambica"
+  },
+  {
+   "code": "CLP",
+   "display": "Candida lipolytica"
+  },
+  {
+   "code": "CLU",
+   "display": "Candida lusitaniae"
+  },
+  {
+   "code": "CMN",
+   "display": "Candida magnoliae"
+  },
+  {
+   "code": "CTA",
+   "display": "Candida metapsilosis"
+  },
+  {
+   "code": "CNR",
+   "display": "Candida nivariensis"
+  },
+  {
+   "code": "CNV",
+   "display": "Candida norvegensis"
+  },
+  {
+   "code": "CTH",
+   "display": "Candida orthopsilosis"
+  },
+  {
+   "code": "MIO",
+   "display": "Candida palmioleophila"
+  },
+  {
+   "code": "CPA",
+   "display": "Candida parapsilosis"
+  },
+  {
+   "code": "CPX",
+   "display": "Candida parapsilosis complex"
+  },
+  {
+   "code": "CRP",
+   "display": "Candida pararugosa"
+  },
+  {
+   "code": "CTR",
+   "display": "Candida paratropicalis"
+  },
+  {
+   "code": "CNP",
+   "display": "Candida pelliculosa"
+  },
+  {
+   "code": "THS",
+   "display": "Candida pseudohaemulonii"
+  },
+  {
+   "code": "CGO",
+   "display": "Candida pseudorugosa"
+  },
+  {
+   "code": "CPL",
+   "display": "Candida pulcherrima"
+  },
+  {
+   "code": "CRU",
+   "display": "Candida rugosa"
+  },
+  {
+   "code": "SAK",
+   "display": "Candida sake"
+  },
+  {
+   "code": "CAN",
+   "display": "Candida sp."
+  },
+  {
+   "code": "CSL",
+   "display": "Candida stellatoidea"
+  },
+  {
+   "code": "CTN",
+   "display": "Candida tenuis"
+  },
+  {
+   "code": "CUT",
+   "display": "Candida utilis"
+  },
+  {
+   "code": "CVN",
+   "display": "Candida vini"
+  },
+  {
+   "code": "CVW",
+   "display": "Candida viswanathii"
+  },
+  {
+   "code": "CZE",
+   "display": "Candida zeylanoides"
+  },
+  {
+   "code": "CXA",
+   "display": "Candida, not albicans"
+  },
+  {
+   "code": "HPN",
+   "display": "Candidatus Hepatobacter penaei"
+  },
+  {
+   "code": "HEP",
+   "display": "Candidatus Hepatobacter sp."
+  },
+  {
+   "code": "XCL",
+   "display": "Candidatus Xenohaliotis californiensis"
+  },
+  {
+   "code": "XEN",
+   "display": "Candidatus Xenohaliotis sp."
+  },
+  {
+   "code": "CPH",
+   "display": "Capillaria philippinensis"
+  },
+  {
+   "code": "CAI",
+   "display": "Capillaria sp."
+  },
+  {
+   "code": "CGI",
+   "display": "Capnocytophaga gingivalis"
+  },
+  {
+   "code": "CGN",
+   "display": "Capnocytophaga granulosa"
+  },
+  {
+   "code": "CHC",
+   "display": "Capnocytophaga haemolytica"
+  },
+  {
+   "code": "CAS",
+   "display": "Capnocytophaga sputigena"
+  },
+  {
+   "code": "CAR",
+   "display": "Cardiobacterium sp."
+  },
+  {
+   "code": "CAY",
+   "display": "Caryophanon sp."
+  },
+  {
+   "code": "CMO",
+   "display": "Catonella morbi"
+  },
+  {
+   "code": "CAT",
+   "display": "Catonella sp."
+  },
+  {
+   "code": "CLE",
+   "display": "Cedecea lapagei"
+  },
+  {
+   "code": "CNT",
+   "display": "Cedecea neteri"
+  },
+  {
+   "code": "CED",
+   "display": "Cedecea sp."
+  },
+  {
+   "code": "CE3",
+   "display": "Cedecea sp. 3"
+  },
+  {
+   "code": "CE5",
+   "display": "Cedecea sp. 5"
+  },
+  {
+   "code": "CCE",
+   "display": "Cellulomonas cellulans (O. xanthineolytica)"
+  },
+  {
+   "code": "CEL",
+   "display": "Cellulomonas sp."
+  },
+  {
+   "code": "OTU",
+   "display": "Cellulomonas turbata"
+  },
+  {
+   "code": "CEM",
+   "display": "Cellulosimicrobium sp."
+  },
+  {
+   "code": "CPO",
+   "display": "Centipeda periodontii"
+  },
+  {
+   "code": "CEN",
+   "display": "Centipeda sp."
+  },
+  {
+   "code": "CES",
+   "display": "Cestode"
+  },
+  {
+   "code": "CEO",
+   "display": "Cetobacterium somerae"
+  },
+  {
+   "code": "CET",
+   "display": "Cetobacterium sp."
+  },
+  {
+   "code": "CHA",
+   "display": "Chaetomium sp."
+  },
+  {
+   "code": "CKY",
+   "display": "Chikungunya virus"
+  },
+  {
+   "code": "CME",
+   "display": "Chilomastix mesnili"
+  },
+  {
+   "code": "CHX",
+   "display": "Chilomastix sp."
+  },
+  {
+   "code": "CYA",
+   "display": "Chlamydia abortus"
+  },
+  {
+   "code": "CFL",
+   "display": "Chlamydia felis"
+  },
+  {
+   "code": "CPN",
+   "display": "Chlamydia pneumoniae"
+  },
+  {
+   "code": "CPT",
+   "display": "Chlamydia psittaci"
+  },
+  {
+   "code": "CHL",
+   "display": "Chlamydia sp."
+  },
+  {
+   "code": "CHT",
+   "display": "Chlamydia trachomatis"
+  },
+  {
+   "code": "CPM",
+   "display": "Chlamydophila pecorum"
+  },
+  {
+   "code": "CHD",
+   "display": "Chlamydophila sp."
+  },
+  {
+   "code": "CHM",
+   "display": "Chromobacterium sp."
+  },
+  {
+   "code": "CVI",
+   "display": "Chromobacterium violaceum"
+  },
+  {
+   "code": "CRT",
+   "display": "Chryseobacterium arthrosphaerae"
+  },
+  {
+   "code": "FGL",
+   "display": "Chryseobacterium gleum"
+  },
+  {
+   "code": "CHB",
+   "display": "Chryseobacterium sp."
+  },
+  {
+   "code": "CHR",
+   "display": "Chryseomonas sp."
+  },
+  {
+   "code": "CCR",
+   "display": "Chrysosporium parvum var. crescens"
+  },
+  {
+   "code": "CHS",
+   "display": "Chrysosporium sp."
+  },
+  {
+   "code": "CMX",
+   "display": "Cimex (bed bugs) sp."
+  },
+  {
+   "code": "CIR",
+   "display": "Circinella sp."
+  },
+  {
+   "code": "CML",
+   "display": "Citrobacter amalonaticus"
+  },
+  {
+   "code": "CIX",
+   "display": "Citrobacter amalonaticus group"
+  },
+  {
+   "code": "CBK",
+   "display": "Citrobacter braakii"
+  },
+  {
+   "code": "CDI",
+   "display": "Citrobacter diversus"
+  },
+  {
+   "code": "CDL",
+   "display": "Citrobacter diversus-levinea"
+  },
+  {
+   "code": "CFA",
+   "display": "Citrobacter farmeri"
+  },
+  {
+   "code": "CFR",
+   "display": "Citrobacter freundii"
+  },
+  {
+   "code": "C10",
+   "display": "Citrobacter genomospecies 10"
+  },
+  {
+   "code": "C11",
+   "display": "Citrobacter genomospecies 11"
+  },
+  {
+   "code": "CI9",
+   "display": "Citrobacter genomospecies 9"
+  },
+  {
+   "code": "CSK",
+   "display": "Citrobacter sedlakii"
+  },
+  {
+   "code": "CI-",
+   "display": "Citrobacter sp."
+  },
+  {
+   "code": "CWE",
+   "display": "Citrobacter werkmanii"
+  },
+  {
+   "code": "CYO",
+   "display": "Citrobacter youngae"
+  },
+  {
+   "code": "CDN",
+   "display": "Cittotaenia denticulata"
+  },
+  {
+   "code": "CTO",
+   "display": "Cittotaenia sp."
+  },
+  {
+   "code": "CBN",
+   "display": "Cladophialophora bantiana"
+  },
+  {
+   "code": "CBP",
+   "display": "Cladophialophora boppii"
+  },
+  {
+   "code": "CRR",
+   "display": "Cladophialophora carrionii"
+  },
+  {
+   "code": "CDE",
+   "display": "Cladophialophora devriesii"
+  },
+  {
+   "code": "XEM",
+   "display": "Cladophialophora emmonsii"
+  },
+  {
+   "code": "CLD",
+   "display": "Cladophialophora sp."
+  },
+  {
+   "code": "CLA",
+   "display": "Cladosporium sp."
+  },
+  {
+   "code": "PWR",
+   "display": "Cladosporium werneckii"
+  },
+  {
+   "code": "CMG",
+   "display": "Clavibacter michiganense ss. michiganense"
+  },
+  {
+   "code": "CLV",
+   "display": "Clavibacter sp."
+  },
+  {
+   "code": "CVS",
+   "display": "Clavispora sp."
+  },
+  {
+   "code": "HCI",
+   "display": "Clo-1"
+  },
+  {
+   "code": "CSI",
+   "display": "Clonorchis sinensis"
+  },
+  {
+   "code": "CLC",
+   "display": "Clonorchis sp."
+  },
+  {
+   "code": "CDF",
+   "display": "Clostridioides difficile"
+  },
+  {
+   "code": "CD-",
+   "display": "Clostridioides difficile, toxin-nonproducing"
+  },
+  {
+   "code": "CD+",
+   "display": "Clostridioides difficile, toxin-producing"
+  },
+  {
+   "code": "CLS",
+   "display": "Clostridioides sp."
+  },
+  {
+   "code": "CAU",
+   "display": "Clostridium absonum"
+  },
+  {
+   "code": "CAB",
+   "display": "Clostridium acetobutylicum"
+  },
+  {
+   "code": "CAV",
+   "display": "Clostridium aminovalericum"
+  },
+  {
+   "code": "CAG",
+   "display": "Clostridium argentinense"
+  },
+  {
+   "code": "CBA",
+   "display": "Clostridium baratii"
+  },
+  {
+   "code": "CBE",
+   "display": "Clostridium beijerinckii"
+  },
+  {
+   "code": "CBI",
+   "display": "Clostridium bifermentans"
+  },
+  {
+   "code": "CBO",
+   "display": "Clostridium botulinum"
+  },
+  {
+   "code": "CBU",
+   "display": "Clostridium butyricum"
+  },
+  {
+   "code": "CCD",
+   "display": "Clostridium cadaveris"
+  },
+  {
+   "code": "CCA",
+   "display": "Clostridium carnis"
+  },
+  {
+   "code": "CCH",
+   "display": "Clostridium chauvoei"
+  },
+  {
+   "code": "CCL",
+   "display": "Clostridium clostridiiforme"
+  },
+  {
+   "code": "CCC",
+   "display": "Clostridium cochlearium"
+  },
+  {
+   "code": "CDC",
+   "display": "Clostridium colinum"
+  },
+  {
+   "code": "CFX",
+   "display": "Clostridium fallax"
+  },
+  {
+   "code": "CGH",
+   "display": "Clostridium ghoni"
+  },
+  {
+   "code": "CGC",
+   "display": "Clostridium glycolicum"
+  },
+  {
+   "code": "CHE",
+   "display": "Clostridium haemolyticum"
+  },
+  {
+   "code": "CHF",
+   "display": "Clostridium hastiforme"
+  },
+  {
+   "code": "CHI",
+   "display": "Clostridium histolyticum"
+  },
+  {
+   "code": "CID",
+   "display": "Clostridium indolis"
+  },
+  {
+   "code": "CIC",
+   "display": "Clostridium innocuum"
+  },
+  {
+   "code": "CLI",
+   "display": "Clostridium limosum"
+  },
+  {
+   "code": "CMA",
+   "display": "Clostridium malenominatum"
+  },
+  {
+   "code": "CNX",
+   "display": "Clostridium nexile"
+  },
+  {
+   "code": "CNO",
+   "display": "Clostridium novyi"
+  },
+  {
+   "code": "CNA",
+   "display": "Clostridium novyi type A"
+  },
+  {
+   "code": "CNB",
+   "display": "Clostridium novyi type B"
+  },
+  {
+   "code": "COU",
+   "display": "Clostridium oroticum"
+  },
+  {
+   "code": "CPP",
+   "display": "Clostridium paraputrificum"
+  },
+  {
+   "code": "CPE",
+   "display": "Clostridium perfringens"
+  },
+  {
+   "code": "CPF",
+   "display": "Clostridium piliforme"
+  },
+  {
+   "code": "CLF",
+   "display": "Clostridium putrefaciens"
+  },
+  {
+   "code": "CPU",
+   "display": "Clostridium putrificum"
+  },
+  {
+   "code": "CRA",
+   "display": "Clostridium ramosum"
+  },
+  {
+   "code": "CSA",
+   "display": "Clostridium sartagoforme"
+  },
+  {
+   "code": "CSC",
+   "display": "Clostridium scatologenes"
+  },
+  {
+   "code": "CSE",
+   "display": "Clostridium septicum"
+  },
+  {
+   "code": "CSO",
+   "display": "Clostridium sordellii"
+  },
+  {
+   "code": "CLO",
+   "display": "Clostridium sp."
+  },
+  {
+   "code": "CSN",
+   "display": "Clostridium sphenoides"
+  },
+  {
+   "code": "CSG",
+   "display": "Clostridium sporogenes"
+  },
+  {
+   "code": "CSS",
+   "display": "Clostridium sporosphaeroides"
+  },
+  {
+   "code": "CSU",
+   "display": "Clostridium subterminale"
+  },
+  {
+   "code": "CSY",
+   "display": "Clostridium symbiosum"
+  },
+  {
+   "code": "CTT",
+   "display": "Clostridium tertium"
+  },
+  {
+   "code": "CTE",
+   "display": "Clostridium tetani"
+  },
+  {
+   "code": "CIM",
+   "display": "Coccidioides immitis"
+  },
+  {
+   "code": "COC",
+   "display": "Coccidioides sp."
+  },
+  {
+   "code": "EAF",
+   "display": "Collinsella aerofaciens"
+  },
+  {
+   "code": "CAC",
+   "display": "Comamonas acidovorans"
+  },
+  {
+   "code": "COM",
+   "display": "Comamonas sp."
+  },
+  {
+   "code": "CTS",
+   "display": "Comamonas testosteroni"
+  },
+  {
+   "code": "CBC",
+   "display": "Conidiobolus coronatus"
+  },
+  {
+   "code": "COD",
+   "display": "Conidiobolus sp."
+  },
+  {
+   "code": "LHO",
+   "display": "Coniochaeta hoffmannii"
+  },
+  {
+   "code": "LMU",
+   "display": "Coniochaeta mutabilis"
+  },
+  {
+   "code": "CON",
+   "display": "Contaminated specimen"
+  },
+  {
+   "code": "COT",
+   "display": "Contracaecum sp."
+  },
+  {
+   "code": "CPC",
+   "display": "Coprococcus sp."
+  },
+  {
+   "code": "COV",
+   "display": "Coronavirus"
+  },
+  {
+   "code": "CAO",
+   "display": "Corynebacterium accolens"
+  },
+  {
+   "code": "CAQ",
+   "display": "Corynebacterium aquaticum"
+  },
+  {
+   "code": "CRG",
+   "display": "Corynebacterium argentoratense"
+  },
+  {
+   "code": "CRM",
+   "display": "Corynebacterium aurimucosum"
+  },
+  {
+   "code": "AUS",
+   "display": "Corynebacterium auris"
+  },
+  {
+   "code": "CBV",
+   "display": "Corynebacterium bovis"
+  },
+  {
+   "code": "CYE",
+   "display": "Corynebacterium coyleae"
+  },
+  {
+   "code": "CRC",
+   "display": "Corynebacterium cystitidis"
+  },
+  {
+   "code": "CDT",
+   "display": "Corynebacterium diphtheriae"
+  },
+  {
+   "code": "REQ",
+   "display": "Corynebacterium equi"
+  },
+  {
+   "code": "CGY",
+   "display": "Corynebacterium glucuronolyticum"
+  },
+  {
+   "code": "CGM",
+   "display": "Corynebacterium glutamicum"
+  },
+  {
+   "code": "CKU",
+   "display": "Corynebacterium kutscheri"
+  },
+  {
+   "code": "CMT",
+   "display": "Corynebacterium matruchotii"
+  },
+  {
+   "code": "CMI",
+   "display": "Corynebacterium minutissimum"
+  },
+  {
+   "code": "CMF",
+   "display": "Corynebacterium mucifaciens"
+  },
+  {
+   "code": "CMY",
+   "display": "Corynebacterium mycetoides"
+  },
+  {
+   "code": "CNI",
+   "display": "Corynebacterium nigricans"
+  },
+  {
+   "code": "CPI",
+   "display": "Corynebacterium pilosum"
+  },
+  {
+   "code": "CPQ",
+   "display": "Corynebacterium propinquum"
+  },
+  {
+   "code": "CPD",
+   "display": "Corynebacterium pseudodiphtheriticum"
+  },
+  {
+   "code": "CPB",
+   "display": "Corynebacterium pseudotuberculosis"
+  },
+  {
+   "code": "CRN",
+   "display": "Corynebacterium renale"
+  },
+  {
+   "code": "COR",
+   "display": "Corynebacterium sp."
+  },
+  {
+   "code": "CDP",
+   "display": "Corynebacterium sp. (diphtheroids)"
+  },
+  {
+   "code": "CST",
+   "display": "Corynebacterium striatum"
+  },
+  {
+   "code": "CUL",
+   "display": "Corynebacterium ulcerans"
+  },
+  {
+   "code": "CXE",
+   "display": "Corynebacterium xerosis"
+  },
+  {
+   "code": "PMY",
+   "display": "Cosenzaea myxofaciens"
+  },
+  {
+   "code": "ERU",
+   "display": "Cowdria ruminantium"
+  },
+  {
+   "code": "CBT",
+   "display": "Coxiella burnetii"
+  },
+  {
+   "code": "COX",
+   "display": "Coxiella sp."
+  },
+  {
+   "code": "CXV",
+   "display": "Coxsackievirus"
+  },
+  {
+   "code": "CRI",
+   "display": "Cristispira sp."
+  },
+  {
+   "code": "ESA",
+   "display": "Cronobacter sakazakii"
+  },
+  {
+   "code": "CRO",
+   "display": "Cronobacter sp."
+  },
+  {
+   "code": "CAA",
+   "display": "Cryptococcus albidus"
+  },
+  {
+   "code": "CAD",
+   "display": "Cryptococcus albidus var. diffluens"
+  },
+  {
+   "code": "CAE",
+   "display": "Cryptococcus ater"
+  },
+  {
+   "code": "CYR",
+   "display": "Cryptococcus cereanus"
+  },
+  {
+   "code": "CYD",
+   "display": "Cryptococcus deuterogattii"
+  },
+  {
+   "code": "CGA",
+   "display": "Cryptococcus gastricus"
+  },
+  {
+   "code": "CGT",
+   "display": "Cryptococcus gattii"
+  },
+  {
+   "code": "SLT",
+   "display": "Cryptococcus lactativorus"
+  },
+  {
+   "code": "CLN",
+   "display": "Cryptococcus laurentii"
+  },
+  {
+   "code": "CLL",
+   "display": "Cryptococcus luteolus"
+  },
+  {
+   "code": "MYM",
+   "display": "Cryptococcus melibiosum"
+  },
+  {
+   "code": "CNE",
+   "display": "Cryptococcus neoformans"
+  },
+  {
+   "code": "CRY",
+   "display": "Cryptococcus sp."
+  },
+  {
+   "code": "CTU",
+   "display": "Cryptococcus terreus"
+  },
+  {
+   "code": "CUG",
+   "display": "Cryptococcus uniguttulatus"
+  },
+  {
+   "code": "CPV",
+   "display": "Cryptosporidium parvum"
+  },
+  {
+   "code": "COO",
+   "display": "Cryptosporidium sp."
+  },
+  {
+   "code": "CBR",
+   "display": "Cunninghamella bertholletiae"
+  },
+  {
+   "code": "CUN",
+   "display": "Cunninghamella sp."
+  },
+  {
+   "code": "CUV",
+   "display": "Cupriavidus sp."
+  },
+  {
+   "code": "CUR",
+   "display": "Curvularia sp."
+  },
+  {
+   "code": "TMU",
+   "display": "Cutaneotrichosporon mucoides"
+  },
+  {
+   "code": "PRO",
+   "display": "Cutibacterium acnes"
+  },
+  {
+   "code": "CUB",
+   "display": "Cutibacterium sp."
+  },
+  {
+   "code": "CYB",
+   "display": "Cyberlindnera sp."
+  },
+  {
+   "code": "CCS",
+   "display": "Cyclospora cayetanensis"
+  },
+  {
+   "code": "CYC",
+   "display": "Cyclospora sp."
+  },
+  {
+   "code": "CYN",
+   "display": "Cylindrocarpon cyanescens"
+  },
+  {
+   "code": "CLH",
+   "display": "Cylindrocarpon lichenicola"
+  },
+  {
+   "code": "CYL",
+   "display": "Cylindrocarpon sp."
+  },
+  {
+   "code": "RMI",
+   "display": "Cystobasidium minutum"
+  },
+  {
+   "code": "CMV",
+   "display": "Cytomegalovirus"
+  },
+  {
+   "code": "DBY",
+   "display": "Debaryomyces sp."
+  },
+  {
+   "code": "DEI",
+   "display": "Deinococcus sp."
+  },
+  {
+   "code": "DEF",
+   "display": "Delftia sp."
+  },
+  {
+   "code": "DEN",
+   "display": "Dendrostilbella sp."
+  },
+  {
+   "code": "DGV",
+   "display": "Dengue virus"
+  },
+  {
+   "code": "DER",
+   "display": "Dermabacter sp."
+  },
+  {
+   "code": "DRM",
+   "display": "Dermacentor sp."
+  },
+  {
+   "code": "DNI",
+   "display": "Dermacoccus nishinomiyaensis"
+  },
+  {
+   "code": "DCC",
+   "display": "Dermacoccus sp."
+  },
+  {
+   "code": "DCO",
+   "display": "Dermatophilus congolensis"
+  },
+  {
+   "code": "DET",
+   "display": "Dermatophilus sp."
+  },
+  {
+   "code": "DEP",
+   "display": "Dermatophyte"
+  },
+  {
+   "code": "DEB",
+   "display": "Desulfobacter sp."
+  },
+  {
+   "code": "DEL",
+   "display": "Desulfobulbus sp."
+  },
+  {
+   "code": "DEC",
+   "display": "Desulfococcus sp."
+  },
+  {
+   "code": "DPG",
+   "display": "Desulfomonas pigra"
+  },
+  {
+   "code": "DEM",
+   "display": "Desulfomonas sp."
+  },
+  {
+   "code": "DES",
+   "display": "Desulfosarcina sp."
+  },
+  {
+   "code": "DAE",
+   "display": "Desulfovibrio desulfuricans ss. aestuarii"
+  },
+  {
+   "code": "DDE",
+   "display": "Desulfovibrio desulfuricans ss. desulfuricans"
+  },
+  {
+   "code": "DEV",
+   "display": "Desulfovibrio sp."
+  },
+  {
+   "code": "DIA",
+   "display": "Dialister sp."
+  },
+  {
+   "code": "DNO",
+   "display": "Dichelobacter nodosus"
+  },
+  {
+   "code": "DIC",
+   "display": "Dichelobacter sp."
+  },
+  {
+   "code": "DFR",
+   "display": "Dientamoeba fragilis"
+  },
+  {
+   "code": "DIE",
+   "display": "Dientamoeba sp."
+  },
+  {
+   "code": "DIP",
+   "display": "Dipetalonema sp."
+  },
+  {
+   "code": "DLA",
+   "display": "Diphyllobothrium latum"
+  },
+  {
+   "code": "DPB",
+   "display": "Diphyllobothrium sp."
+  },
+  {
+   "code": "GCN",
+   "display": "Dipodascus geotrichum"
+  },
+  {
+   "code": "GPE",
+   "display": "Dipodascus klebahnii"
+  },
+  {
+   "code": "DCA",
+   "display": "Dipylidium caninum"
+  },
+  {
+   "code": "DPD",
+   "display": "Dipylidium sp."
+  },
+  {
+   "code": "DIM",
+   "display": "Dirofilaria immitis"
+  },
+  {
+   "code": "DIR",
+   "display": "Dirofilaria sp."
+  },
+  {
+   "code": "DIU",
+   "display": "Diutina sp."
+  },
+  {
+   "code": "DPI",
+   "display": "Dolosigranulum pigrum"
+  },
+  {
+   "code": "DOL",
+   "display": "Dolosigranulum sp."
+  },
+  {
+   "code": "DME",
+   "display": "Dracunculus medinensis"
+  },
+  {
+   "code": "DRA",
+   "display": "Dracunculus sp."
+  },
+  {
+   "code": "DRE",
+   "display": "Drechslera sp."
+  },
+  {
+   "code": "EGR",
+   "display": "Echinococcus granulosus"
+  },
+  {
+   "code": "EMU",
+   "display": "Echinococcus multilocularis"
+  },
+  {
+   "code": "ECH",
+   "display": "Echinococcus sp."
+  },
+  {
+   "code": "EIL",
+   "display": "Echinostoma ilocanum"
+  },
+  {
+   "code": "ECS",
+   "display": "Echinostoma sp."
+  },
+  {
+   "code": "ECV",
+   "display": "Echovirus"
+  },
+  {
+   "code": "EDA",
+   "display": "Edwardsiella anguillarum"
+  },
+  {
+   "code": "EHO",
+   "display": "Edwardsiella hoshinae"
+  },
+  {
+   "code": "EIC",
+   "display": "Edwardsiella ictaluri"
+  },
+  {
+   "code": "EDC",
+   "display": "Edwardsiella piscicida"
+  },
+  {
+   "code": "EDW",
+   "display": "Edwardsiella sp."
+  },
+  {
+   "code": "ETA",
+   "display": "Edwardsiella tarda"
+  },
+  {
+   "code": "ELE",
+   "display": "Eggerthella lenta"
+  },
+  {
+   "code": "EGT",
+   "display": "Eggerthella sp."
+  },
+  {
+   "code": "LCA",
+   "display": "Eggerthia catenaformis"
+  },
+  {
+   "code": "EHC",
+   "display": "Ehrlichia canis"
+  },
+  {
+   "code": "EHF",
+   "display": "Ehrlichia chaffeensis"
+  },
+  {
+   "code": "EHS",
+   "display": "Ehrlichia sennetsu"
+  },
+  {
+   "code": "EHR",
+   "display": "Ehrlichia sp."
+  },
+  {
+   "code": "EIK",
+   "display": "Eikenella sp."
+  },
+  {
+   "code": "EIM",
+   "display": "Eimeria sp."
+  },
+  {
+   "code": "ELA",
+   "display": "Elizabethkingia anophelis"
+  },
+  {
+   "code": "ELZ",
+   "display": "Elizabethkingia sp."
+  },
+  {
+   "code": "EBR",
+   "display": "Empedobacter brevis"
+  },
+  {
+   "code": "EMP",
+   "display": "Empedobacter sp."
+  },
+  {
+   "code": "SET",
+   "display": "Encephalitozoon"
+  },
+  {
+   "code": "EBI",
+   "display": "Encephalitozoon bieneusi"
+  },
+  {
+   "code": "SIE",
+   "display": "Encephalitozoon intestinalis"
+  },
+  {
+   "code": "ENC",
+   "display": "Encephalitozoon sp."
+  },
+  {
+   "code": "ENA",
+   "display": "Endolimax nana"
+  },
+  {
+   "code": "END",
+   "display": "Endolimax sp."
+  },
+  {
+   "code": "ECI",
+   "display": "Entamoeba coli"
+  },
+  {
+   "code": "EDP",
+   "display": "Entamoeba dispar"
+  },
+  {
+   "code": "EGI",
+   "display": "Entamoeba gingivalis"
+  },
+  {
+   "code": "EHA",
+   "display": "Entamoeba hartmanni"
+  },
+  {
+   "code": "EHI",
+   "display": "Entamoeba histolytica"
+  },
+  {
+   "code": "EPO",
+   "display": "Entamoeba polecki"
+  },
+  {
+   "code": "ENM",
+   "display": "Entamoeba sp."
+  },
+  {
+   "code": "EAG",
+   "display": "Enterobacter agglomerans"
+  },
+  {
+   "code": "EAM",
+   "display": "Enterobacter amnigenus"
+  },
+  {
+   "code": "EA1",
+   "display": "Enterobacter amnigenus 1"
+  },
+  {
+   "code": "EA2",
+   "display": "Enterobacter amnigenus 2"
+  },
+  {
+   "code": "ECG",
+   "display": "Enterobacter cancerogenus (taylorae)"
+  },
+  {
+   "code": "EAT",
+   "display": "Enterobacter catenibacterium"
+  },
+  {
+   "code": "ECL",
+   "display": "Enterobacter cloacae"
+  },
+  {
+   "code": "ECX",
+   "display": "Enterobacter cloacae complex"
+  },
+  {
+   "code": "EDI",
+   "display": "Enterobacter cloacae ss. dissolvens"
+  },
+  {
+   "code": "EGG",
+   "display": "Enterobacter gergoviae"
+  },
+  {
+   "code": "HAL",
+   "display": "Enterobacter hafnia"
+  },
+  {
+   "code": "EIN",
+   "display": "Enterobacter intermedius"
+  },
+  {
+   "code": "ENK",
+   "display": "Enterobacter kobei"
+  },
+  {
+   "code": "ENL",
+   "display": "Enterobacter ludwigii"
+  },
+  {
+   "code": "ENP",
+   "display": "Enterobacter nimipressuralis"
+  },
+  {
+   "code": "EN-",
+   "display": "Enterobacter sp."
+  },
+  {
+   "code": "ENX",
+   "display": "Enterobacter xiangfangensis"
+  },
+  {
+   "code": "ENB",
+   "display": "Enterobius sp."
+  },
+  {
+   "code": "EVE",
+   "display": "Enterobius vermicularis"
+  },
+  {
+   "code": "EAN",
+   "display": "Enterococcus asini"
+  },
+  {
+   "code": "EAV",
+   "display": "Enterococcus avium"
+  },
+  {
+   "code": "ECA",
+   "display": "Enterococcus casseliflavus"
+  },
+  {
+   "code": "ECC",
+   "display": "Enterococcus cecorum"
+  },
+  {
+   "code": "ECB",
+   "display": "Enterococcus columbae"
+  },
+  {
+   "code": "EDS",
+   "display": "Enterococcus dispar"
+  },
+  {
+   "code": "EDU",
+   "display": "Enterococcus durans"
+  },
+  {
+   "code": "EFA",
+   "display": "Enterococcus faecalis"
+  },
+  {
+   "code": "EFM",
+   "display": "Enterococcus faecium"
+  },
+  {
+   "code": "EFV",
+   "display": "Enterococcus flavescens"
+  },
+  {
+   "code": "EGA",
+   "display": "Enterococcus gallinarum"
+  },
+  {
+   "code": "EGV",
+   "display": "Enterococcus gilvus"
+  },
+  {
+   "code": "ENH",
+   "display": "Enterococcus hirae"
+  },
+  {
+   "code": "EMA",
+   "display": "Enterococcus malodoratus"
+  },
+  {
+   "code": "EMN",
+   "display": "Enterococcus mundtii"
+  },
+  {
+   "code": "EPA",
+   "display": "Enterococcus pallens"
+  },
+  {
+   "code": "EVI",
+   "display": "Enterococcus porcinus"
+  },
+  {
+   "code": "EPS",
+   "display": "Enterococcus pseudoavium"
+  },
+  {
+   "code": "ERA",
+   "display": "Enterococcus raffinosus"
+  },
+  {
+   "code": "ESH",
+   "display": "Enterococcus saccharolyticus"
+  },
+  {
+   "code": "ESE",
+   "display": "Enterococcus seriolicida"
+  },
+  {
+   "code": "ESO",
+   "display": "Enterococcus solitarius"
+  },
+  {
+   "code": "ENT",
+   "display": "Enterococcus sp."
+  },
+  {
+   "code": "ESU",
+   "display": "Enterococcus sulfureus"
+  },
+  {
+   "code": "ENZ",
+   "display": "Enterocytozoon sp."
+  },
+  {
+   "code": "EHN",
+   "display": "Enteromonas hominis"
+  },
+  {
+   "code": "ENR",
+   "display": "Enteromonas sp."
+  },
+  {
+   "code": "ENV",
+   "display": "Enterovirus"
+  },
+  {
+   "code": "EPC",
+   "display": "Epicoccum sp."
+  },
+  {
+   "code": "EFL",
+   "display": "Epidermophyton floccosum"
+  },
+  {
+   "code": "EPI",
+   "display": "Epidermophyton sp."
+  },
+  {
+   "code": "EST",
+   "display": "Epidermophyton stockdaleae"
+  },
+  {
+   "code": "EBV",
+   "display": "Epstein-Barr virus"
+  },
+  {
+   "code": "EAL",
+   "display": "Erwinia amylovora"
+  },
+  {
+   "code": "ECE",
+   "display": "Erwinia carnegieana"
+  },
+  {
+   "code": "ECT",
+   "display": "Erwinia carotovora"
+  },
+  {
+   "code": "ERW",
+   "display": "Erwinia sp."
+  },
+  {
+   "code": "ERH",
+   "display": "Erysipelothrix rhusiopathiae"
+  },
+  {
+   "code": "ERY",
+   "display": "Erysipelothrix sp."
+  },
+  {
+   "code": "EBL",
+   "display": "Escherichia blattae"
+  },
+  {
+   "code": "ECO",
+   "display": "Escherichia coli"
+  },
+  {
+   "code": "EAD",
+   "display": "Escherichia coli (alkalescens-dispar)"
+  },
+  {
+   "code": "K99",
+   "display": "Escherichia coli K99"
+  },
+  {
+   "code": "103",
+   "display": "Escherichia coli O103"
+  },
+  {
+   "code": "111",
+   "display": "Escherichia coli O111"
+  },
+  {
+   "code": "145",
+   "display": "Escherichia coli O145"
+  },
+  {
+   "code": "149",
+   "display": "Escherichia coli O149"
+  },
+  {
+   "code": "OF4",
+   "display": "Escherichia coli O149:F4"
+  },
+  {
+   "code": "157",
+   "display": "Escherichia coli O157:H7"
+  },
+  {
+   "code": "1K1",
+   "display": "Escherichia coli O1:K1"
+  },
+  {
+   "code": "O1K",
+   "display": "Escherichia coli O1K1"
+  },
+  {
+   "code": "O26",
+   "display": "Escherichia coli O26"
+  },
+  {
+   "code": "2K2",
+   "display": "Escherichia coli O2:K2"
+  },
+  {
+   "code": "O2K",
+   "display": "Escherichia coli O2K2"
+  },
+  {
+   "code": "788",
+   "display": "Escherichia coli O78:K80"
+  },
+  {
+   "code": "O78",
+   "display": "Escherichia coli O78K80"
+  },
+  {
+   "code": "AEE",
+   "display": "Escherichia coli, attaching and effacing (AEEC)"
+  },
+  {
+   "code": "EAA",
+   "display": "Escherichia coli, enteroaggregative (EAEC)"
+  },
+  {
+   "code": "EEI",
+   "display": "Escherichia coli, enteroinvasive (EIEC)"
+  },
+  {
+   "code": "EEP",
+   "display": "Escherichia coli, enteropathogenic (EPEC)"
+  },
+  {
+   "code": "EET",
+   "display": "Escherichia coli, enterotoxigenic (ETEC)"
+  },
+  {
+   "code": "VEC",
+   "display": "Escherichia coli, verocytotoxigenic (VTEC)"
+  },
+  {
+   "code": "ESC",
+   "display": "Escherichia sp."
+  },
+  {
+   "code": "EAC",
+   "display": "Eubacterium alactolyticum"
+  },
+  {
+   "code": "EBY",
+   "display": "Eubacterium brachy"
+  },
+  {
+   "code": "ECM",
+   "display": "Eubacterium combesii"
+  },
+  {
+   "code": "ECN",
+   "display": "Eubacterium contortum"
+  },
+  {
+   "code": "ECY",
+   "display": "Eubacterium cylindroides"
+  },
+  {
+   "code": "ELI",
+   "display": "Eubacterium limosum"
+  },
+  {
+   "code": "EMO",
+   "display": "Eubacterium moniliforme"
+  },
+  {
+   "code": "ENI",
+   "display": "Eubacterium nitritogenes"
+  },
+  {
+   "code": "ENO",
+   "display": "Eubacterium nodatum"
+  },
+  {
+   "code": "ERE",
+   "display": "Eubacterium rectale"
+  },
+  {
+   "code": "ESB",
+   "display": "Eubacterium saburreum"
+  },
+  {
+   "code": "ESN",
+   "display": "Eubacterium saphenum"
+  },
+  {
+   "code": "ESK",
+   "display": "Eubacterium schtitka"
+  },
+  {
+   "code": "EUB",
+   "display": "Eubacterium sp."
+  },
+  {
+   "code": "FSU",
+   "display": "Eubacterium sulci"
+  },
+  {
+   "code": "ETE",
+   "display": "Eubacterium tenue"
+  },
+  {
+   "code": "ETI",
+   "display": "Eubacterium timidum"
+  },
+  {
+   "code": "EMG",
+   "display": "Eubacterium yurii ss. margaretiae"
+  },
+  {
+   "code": "EYU",
+   "display": "Eubacterium yurii ss. yurii"
+  },
+  {
+   "code": "EAR",
+   "display": "Ewingella americana"
+  },
+  {
+   "code": "EWI",
+   "display": "Ewingella sp."
+  },
+  {
+   "code": "EXI",
+   "display": "Exiguobacterium sp."
+  },
+  {
+   "code": "WDE",
+   "display": "Exophiala dermatitidis"
+  },
+  {
+   "code": "PEX",
+   "display": "Exophiala exophialae"
+  },
+  {
+   "code": "EJE",
+   "display": "Exophiala jeanselmei"
+  },
+  {
+   "code": "ERO",
+   "display": "Exophiala rostratum"
+  },
+  {
+   "code": "EXO",
+   "display": "Exophiala sp."
+  },
+  {
+   "code": "ESP",
+   "display": "Exophiala spinifera"
+  },
+  {
+   "code": "EXS",
+   "display": "Exserohilum sp."
+  },
+  {
+   "code": "FPR",
+   "display": "Faecalibacterium prausnitzii"
+  },
+  {
+   "code": "FHE",
+   "display": "Fasciola hepatica"
+  },
+  {
+   "code": "FAS",
+   "display": "Fasciola sp."
+  },
+  {
+   "code": "FBU",
+   "display": "Fasciolopsis buski"
+  },
+  {
+   "code": "FAC",
+   "display": "Fasciolopsis sp."
+  },
+  {
+   "code": "FIB",
+   "display": "Fibrobacter sp."
+  },
+  {
+   "code": "FAL",
+   "display": "Filifactor alocis"
+  },
+  {
+   "code": "FIL",
+   "display": "Filifactor sp."
+  },
+  {
+   "code": "FVL",
+   "display": "Filifactor villosus"
+  },
+  {
+   "code": "FNF",
+   "display": "Filobasidiella neoformans"
+  },
+  {
+   "code": "FBA",
+   "display": "Filobasidiella neoformans var. bacillispora"
+  },
+  {
+   "code": "FBD",
+   "display": "Filobasidiella sp."
+  },
+  {
+   "code": "PMG",
+   "display": "Finegoldia magna"
+  },
+  {
+   "code": "FIG",
+   "display": "Finegoldia sp."
+  },
+  {
+   "code": "FLV",
+   "display": "Flavimonas sp."
+  },
+  {
+   "code": "FLB",
+   "display": "Flavobacterium branchiophilum"
+  },
+  {
+   "code": "FLC",
+   "display": "Flavobacterium columnare"
+  },
+  {
+   "code": "FMZ",
+   "display": "Flavobacterium mizutaii"
+  },
+  {
+   "code": "FLP",
+   "display": "Flavobacterium psychrophilum"
+  },
+  {
+   "code": "FLA",
+   "display": "Flavobacterium sp."
+  },
+  {
+   "code": "FTH",
+   "display": "Flavobacterium thalpophilum"
+  },
+  {
+   "code": "LBO",
+   "display": "Fluoribacter bozemanae"
+  },
+  {
+   "code": "LDU",
+   "display": "Fluoribacter dumoffii"
+  },
+  {
+   "code": "LGO",
+   "display": "Fluoribacter gormanii"
+  },
+  {
+   "code": "FLU",
+   "display": "Fluoribacter sp."
+  },
+  {
+   "code": "FCO",
+   "display": "Fonsecaea compacta"
+  },
+  {
+   "code": "FPD",
+   "display": "Fonsecaea pedrosoi"
+  },
+  {
+   "code": "FON",
+   "display": "Fonsecaea sp."
+  },
+  {
+   "code": "FRN",
+   "display": "Francisella noatunensis"
+  },
+  {
+   "code": "FNV",
+   "display": "Francisella novicida"
+  },
+  {
+   "code": "FPH",
+   "display": "Francisella philomiragia"
+  },
+  {
+   "code": "FRA",
+   "display": "Francisella sp."
+  },
+  {
+   "code": "FTU",
+   "display": "Francisella tularensis"
+  },
+  {
+   "code": "FPL",
+   "display": "Francisella tularensis Type B"
+  },
+  {
+   "code": "FHO",
+   "display": "Francisella tularensis ss. holarctica"
+  },
+  {
+   "code": "FMD",
+   "display": "Francisella tularensis ss. mediasiatica"
+  },
+  {
+   "code": "FUN",
+   "display": "Fungus"
+  },
+  {
+   "code": "FCR",
+   "display": "Fusarium coeruleum"
+  },
+  {
+   "code": "FMN",
+   "display": "Fusarium fujikuroi"
+  },
+  {
+   "code": "FPA",
+   "display": "Fusarium pallidoroseum"
+  },
+  {
+   "code": "FSO",
+   "display": "Fusarium solani"
+  },
+  {
+   "code": "FUS",
+   "display": "Fusarium sp."
+  },
+  {
+   "code": "FCF",
+   "display": "Fusobacterium canifelinum"
+  },
+  {
+   "code": "FGO",
+   "display": "Fusobacterium gonidiaformans"
+  },
+  {
+   "code": "FMO",
+   "display": "Fusobacterium mortiferum"
+  },
+  {
+   "code": "FNA",
+   "display": "Fusobacterium naviforme"
+  },
+  {
+   "code": "FNG",
+   "display": "Fusobacterium necrogenes"
+  },
+  {
+   "code": "FNE",
+   "display": "Fusobacterium necrophorum"
+  },
+  {
+   "code": "FFU",
+   "display": "Fusobacterium necrophorum ss. funduliforme"
+  },
+  {
+   "code": "FNU",
+   "display": "Fusobacterium nucleatum"
+  },
+  {
+   "code": "FFS",
+   "display": "Fusobacterium nucleatum ss. fusiforme"
+  },
+  {
+   "code": "FPO",
+   "display": "Fusobacterium nucleatum ss. polymorphum"
+  },
+  {
+   "code": "FVI",
+   "display": "Fusobacterium nucleatum ss. vincentii"
+  },
+  {
+   "code": "FPE",
+   "display": "Fusobacterium periodonticum"
+  },
+  {
+   "code": "FRU",
+   "display": "Fusobacterium russii"
+  },
+  {
+   "code": "FU-",
+   "display": "Fusobacterium sp."
+  },
+  {
+   "code": "FUL",
+   "display": "Fusobacterium ulcerans"
+  },
+  {
+   "code": "FVA",
+   "display": "Fusobacterium varium"
+  },
+  {
+   "code": "GBC",
+   "display": "GB virus C"
+  },
+  {
+   "code": "GGE",
+   "display": "Galactomyces geotrichum"
+  },
+  {
+   "code": "GAL",
+   "display": "Galactomyces sp."
+  },
+  {
+   "code": "PAT",
+   "display": "Gallibacterium anatis"
+  },
+  {
+   "code": "GLH",
+   "display": "Gallibacterium anatis biovar haemolytica"
+  },
+  {
+   "code": "GLL",
+   "display": "Gallibacterium sp."
+  },
+  {
+   "code": "GAR",
+   "display": "Gardnerella sp."
+  },
+  {
+   "code": "GVA",
+   "display": "Gardnerella vaginalis"
+  },
+  {
+   "code": "GHA",
+   "display": "Gemella haemolysans"
+  },
+  {
+   "code": "GMO",
+   "display": "Gemella morbillorum"
+  },
+  {
+   "code": "GEM",
+   "display": "Gemella sp."
+  },
+  {
+   "code": "GPA",
+   "display": "Geomyces pannorum"
+  },
+  {
+   "code": "GEC",
+   "display": "Geomyces sp."
+  },
+  {
+   "code": "TBE",
+   "display": "Geotrichum beigelii"
+  },
+  {
+   "code": "GEO",
+   "display": "Geotrichum sp."
+  },
+  {
+   "code": "GLA",
+   "display": "Giardia lamblia"
+  },
+  {
+   "code": "GIA",
+   "display": "Giardia sp."
+  },
+  {
+   "code": "GIL",
+   "display": "Gilmaniella sp."
+  },
+  {
+   "code": "GLC",
+   "display": "Gliocladium sp."
+  },
+  {
+   "code": "GLI",
+   "display": "Gliomastix sp."
+  },
+  {
+   "code": "GSA",
+   "display": "Globicatella sanguinis"
+  },
+  {
+   "code": "GLO",
+   "display": "Globicatella sp."
+  },
+  {
+   "code": "GNA",
+   "display": "Gnathostoma sp."
+  },
+  {
+   "code": "GSP",
+   "display": "Gnathostoma spinigerum"
+  },
+  {
+   "code": "GAI",
+   "display": "Gordonia aichiensis"
+  },
+  {
+   "code": "GBR",
+   "display": "Gordonia bronchialis"
+  },
+  {
+   "code": "GBP",
+   "display": "Gordonia rubripertincta"
+  },
+  {
+   "code": "GOR",
+   "display": "Gordonia sp."
+  },
+  {
+   "code": "GSU",
+   "display": "Gordonia sputi"
+  },
+  {
+   "code": "GTE",
+   "display": "Gordonia terrae"
+  },
+  {
+   "code": "GM-",
+   "display": "Gram negative bacteria"
+  },
+  {
+   "code": "GNC",
+   "display": "Gram negative cocci"
+  },
+  {
+   "code": "NCB",
+   "display": "Gram negative coccobacilli"
+  },
+  {
+   "code": "GNE",
+   "display": "Gram negative enteric organism"
+  },
+  {
+   "code": "GNR",
+   "display": "Gram negative rods"
+  },
+  {
+   "code": "GM+",
+   "display": "Gram positive bacteria"
+  },
+  {
+   "code": "GPC",
+   "display": "Gram positive cocci"
+  },
+  {
+   "code": "PCB",
+   "display": "Gram positive coccobacilli"
+  },
+  {
+   "code": "GPR",
+   "display": "Gram positive rods"
+  },
+  {
+   "code": "GVC",
+   "display": "Gram variable cocci"
+  },
+  {
+   "code": "GVB",
+   "display": "Gram variable coccobacilli"
+  },
+  {
+   "code": "GVR",
+   "display": "Gram variable rods"
+  },
+  {
+   "code": "GCT",
+   "display": "Granulicatella sp."
+  },
+  {
+   "code": "MHC",
+   "display": "Haemobartonella canis"
+  },
+  {
+   "code": "MHF",
+   "display": "Haemobartonella felis"
+  },
+  {
+   "code": "HCO",
+   "display": "Haemonchus contortus"
+  },
+  {
+   "code": "HAU",
+   "display": "Haemonchus sp."
+  },
+  {
+   "code": "HAG",
+   "display": "Haemophilus aegyptius"
+  },
+  {
+   "code": "HDU",
+   "display": "Haemophilus ducreyi"
+  },
+  {
+   "code": "HEQ",
+   "display": "Haemophilus equigenitalis"
+  },
+  {
+   "code": "HHA",
+   "display": "Haemophilus haemoglobinophilus"
+  },
+  {
+   "code": "HHE",
+   "display": "Haemophilus haemolyticus"
+  },
+  {
+   "code": "HIN",
+   "display": "Haemophilus influenzae"
+  },
+  {
+   "code": "HXT",
+   "display": "Haemophilus influenzae (not typable)"
+  },
+  {
+   "code": "HXB",
+   "display": "Haemophilus influenzae (not type b)"
+  },
+  {
+   "code": "HIB",
+   "display": "Haemophilus influenzae (type b)"
+  },
+  {
+   "code": "HPC",
+   "display": "Haemophilus paracuniculus"
+  },
+  {
+   "code": "HPH",
+   "display": "Haemophilus parahaemolyticus"
+  },
+  {
+   "code": "HPI",
+   "display": "Haemophilus parainfluenzae"
+  },
+  {
+   "code": "HPL",
+   "display": "Haemophilus paraphrohaemolyticus"
+  },
+  {
+   "code": "HPR",
+   "display": "Haemophilus parasuis"
+  },
+  {
+   "code": "HSO",
+   "display": "Haemophilus somnus"
+  },
+  {
+   "code": "HA-",
+   "display": "Haemophilus sp."
+  },
+  {
+   "code": "HFV",
+   "display": "Hafnia paralvei"
+  },
+  {
+   "code": "HAF",
+   "display": "Hafnia sp."
+  },
+  {
+   "code": "HSR",
+   "display": "Hallella seregens"
+  },
+  {
+   "code": "HAA",
+   "display": "Hallella sp."
+  },
+  {
+   "code": "HAI",
+   "display": "Hamigera insecticola"
+  },
+  {
+   "code": "HSP",
+   "display": "Hanseniaspora sp."
+  },
+  {
+   "code": "HUV",
+   "display": "Hanseniaspora uvarum"
+  },
+  {
+   "code": "HAM",
+   "display": "Hansenula anomala"
+  },
+  {
+   "code": "HPO",
+   "display": "Hansenula polymorpha"
+  },
+  {
+   "code": "HAN",
+   "display": "Hansenula sp."
+  },
+  {
+   "code": "HVI",
+   "display": "Hantavirus"
+  },
+  {
+   "code": "HAR",
+   "display": "Hartmannella sp."
+  },
+  {
+   "code": "HAT",
+   "display": "Hathewaya sp."
+  },
+  {
+   "code": "HKU",
+   "display": "Helcococcus kunzii"
+  },
+  {
+   "code": "HEC",
+   "display": "Helcococcus sp."
+  },
+  {
+   "code": "HFE",
+   "display": "Helicobacter felis"
+  },
+  {
+   "code": "HMU",
+   "display": "Helicobacter mustelae"
+  },
+  {
+   "code": "HNE",
+   "display": "Helicobacter nemestrinae"
+  },
+  {
+   "code": "HPU",
+   "display": "Helicobacter pullorum"
+  },
+  {
+   "code": "HPY",
+   "display": "Helicobacter pylori"
+  },
+  {
+   "code": "HEL",
+   "display": "Helicobacter sp."
+  },
+  {
+   "code": "HEM",
+   "display": "Helminthosporium sp."
+  },
+  {
+   "code": "WAL",
+   "display": "Hemispora sp."
+  },
+  {
+   "code": "HAV",
+   "display": "Hepatitis A virus"
+  },
+  {
+   "code": "HBV",
+   "display": "Hepatitis B virus"
+  },
+  {
+   "code": "HCV",
+   "display": "Hepatitis C virus"
+  },
+  {
+   "code": "HDV",
+   "display": "Hepatitis D virus"
+  },
+  {
+   "code": "HEV",
+   "display": "Hepatitis E virus"
+  },
+  {
+   "code": "HRB",
+   "display": "Herbaspirillum sp."
+  },
+  {
+   "code": "HSV",
+   "display": "Herpes simplex virus"
+  },
+  {
+   "code": "HS1",
+   "display": "Herpes simplex virus 1"
+  },
+  {
+   "code": "HS2",
+   "display": "Herpes simplex virus 2"
+  },
+  {
+   "code": "HHT",
+   "display": "Heterophyes heterophyes"
+  },
+  {
+   "code": "HET",
+   "display": "Heterophyes sp."
+  },
+  {
+   "code": "HIT",
+   "display": "Histophilus sp."
+  },
+  {
+   "code": "HCA",
+   "display": "Histoplasma capsulatum"
+  },
+  {
+   "code": "HDB",
+   "display": "Histoplasma capsulatum var. duboisii"
+  },
+  {
+   "code": "HFA",
+   "display": "Histoplasma capsulatum var. farciminosum"
+  },
+  {
+   "code": "HIS",
+   "display": "Histoplasma sp."
+  },
+  {
+   "code": "HOO",
+   "display": "Hookworm"
+  },
+  {
+   "code": "HOR",
+   "display": "Hormonema sp."
+  },
+  {
+   "code": "HOT",
+   "display": "Hortaea sp."
+  },
+  {
+   "code": "HTV",
+   "display": "Human T-lymphotropic virus"
+  },
+  {
+   "code": "HHV",
+   "display": "Human herpesvirus"
+  },
+  {
+   "code": "MPV",
+   "display": "Human metapneumovirus"
+  },
+  {
+   "code": "HPV",
+   "display": "Human papillomavirus"
+  },
+  {
+   "code": "HDI",
+   "display": "Hymenolepis diminuta"
+  },
+  {
+   "code": "HNA",
+   "display": "Hymenolepis nana"
+  },
+  {
+   "code": "HYM",
+   "display": "Hymenolepis sp."
+  },
+  {
+   "code": "ILY",
+   "display": "Ilyobacter sp."
+  },
+  {
+   "code": "IVA",
+   "display": "Influenza A virus"
+  },
+  {
+   "code": "IVB",
+   "display": "Influenza B virus"
+  },
+  {
+   "code": "IVC",
+   "display": "Influenza C virus"
+  },
+  {
+   "code": "INV",
+   "display": "Influenza virus"
+  },
+  {
+   "code": "INS",
+   "display": "Insect"
+  },
+  {
+   "code": "IBU",
+   "display": "Iodamoeba buetschlii"
+  },
+  {
+   "code": "IOD",
+   "display": "Iodamoeba sp."
+  },
+  {
+   "code": "IBE",
+   "display": "Isospora belli"
+  },
+  {
+   "code": "ISO",
+   "display": "Isospora sp."
+  },
+  {
+   "code": "ISS",
+   "display": "Isospora suis"
+  },
+  {
+   "code": "IXO",
+   "display": "Ixodes sp."
+  },
+  {
+   "code": "JCV",
+   "display": "JC virus"
+  },
+  {
+   "code": "JIG",
+   "display": "Johnsonella ignava"
+  },
+  {
+   "code": "JOH",
+   "display": "Johnsonella sp."
+  },
+  {
+   "code": "SID",
+   "display": "Kingella indologenes"
+  },
+  {
+   "code": "KOL",
+   "display": "Kingella oralis"
+  },
+  {
+   "code": "KIN",
+   "display": "Kingella sp."
+  },
+  {
+   "code": "KOR",
+   "display": "Klebsiella Enteric Group 47"
+  },
+  {
+   "code": "KOX",
+   "display": "Klebsiella oxytoca"
+  },
+  {
+   "code": "KOZ",
+   "display": "Klebsiella ozaenae"
+  },
+  {
+   "code": "KPL",
+   "display": "Klebsiella planticola (trevisanii)"
+  },
+  {
+   "code": "KRN",
+   "display": "Klebsiella pneumoniae ss. rhinoscleromatis"
+  },
+  {
+   "code": "KQP",
+   "display": "Klebsiella quasipneumoniae"
+  },
+  {
+   "code": "KL-",
+   "display": "Klebsiella sp."
+  },
+  {
+   "code": "KTE",
+   "display": "Klebsiella terrigena"
+  },
+  {
+   "code": "KVI",
+   "display": "Klebsiella variicola"
+  },
+  {
+   "code": "KCR",
+   "display": "Kluyvera cryocrescens"
+  },
+  {
+   "code": "KLU",
+   "display": "Kluyvera sp."
+  },
+  {
+   "code": "KMA",
+   "display": "Kluyveromyces fragilis"
+  },
+  {
+   "code": "KLA",
+   "display": "Kluyveromyces lactis"
+  },
+  {
+   "code": "KLV",
+   "display": "Kluyveromyces sp."
+  },
+  {
+   "code": "KKR",
+   "display": "Kocuria kristinae"
+  },
+  {
+   "code": "KRO",
+   "display": "Kocuria rosea"
+  },
+  {
+   "code": "KOC",
+   "display": "Kocuria sp."
+  },
+  {
+   "code": "KVA",
+   "display": "Kocuria varians"
+  },
+  {
+   "code": "POH",
+   "display": "Kodamaea ohmeri"
+  },
+  {
+   "code": "YOK",
+   "display": "Koserella sp."
+  },
+  {
+   "code": "KUV",
+   "display": "Kukoppevirus???"
+  },
+  {
+   "code": "KUR",
+   "display": "Kurthia sp."
+  },
+  {
+   "code": "LAP",
+   "display": "Lactobacillus acidophilus"
+  },
+  {
+   "code": "LAM",
+   "display": "Lactobacillus amylovorus"
+  },
+  {
+   "code": "LBV",
+   "display": "Lactobacillus brevis"
+  },
+  {
+   "code": "LCS",
+   "display": "Lactobacillus casei"
+  },
+  {
+   "code": "LCE",
+   "display": "Lactobacillus cellobiosus"
+  },
+  {
+   "code": "WCO",
+   "display": "Lactobacillus confusus"
+  },
+  {
+   "code": "LCP",
+   "display": "Lactobacillus crispatus"
+  },
+  {
+   "code": "PDX",
+   "display": "Lactobacillus dextrinicus"
+  },
+  {
+   "code": "LFE",
+   "display": "Lactobacillus fermentum"
+  },
+  {
+   "code": "LGS",
+   "display": "Lactobacillus gasseri"
+  },
+  {
+   "code": "LJE",
+   "display": "Lactobacillus jensenii"
+  },
+  {
+   "code": "LJO",
+   "display": "Lactobacillus johnsonii"
+  },
+  {
+   "code": "LOR",
+   "display": "Lactobacillus oris"
+  },
+  {
+   "code": "LPL",
+   "display": "Lactobacillus plantarum"
+  },
+  {
+   "code": "LRE",
+   "display": "Lactobacillus reuteri"
+  },
+  {
+   "code": "LAH",
+   "display": "Lactobacillus rhamnosus"
+  },
+  {
+   "code": "LSA",
+   "display": "Lactobacillus salivarius"
+  },
+  {
+   "code": "LAC",
+   "display": "Lactobacillus sp."
+  },
+  {
+   "code": "LUL",
+   "display": "Lactobacillus uli"
+  },
+  {
+   "code": "LVA",
+   "display": "Lactobacillus vaginalis"
+  },
+  {
+   "code": "LGA",
+   "display": "Lactococcus garvieae"
+  },
+  {
+   "code": "LLA",
+   "display": "Lactococcus lactis"
+  },
+  {
+   "code": "SCR",
+   "display": "Lactococcus lactis ss. cremoris"
+  },
+  {
+   "code": "LAT",
+   "display": "Lactococcus sp."
+  },
+  {
+   "code": "LAS",
+   "display": "Lasiodiplodia sp."
+  },
+  {
+   "code": "LTH",
+   "display": "Lasiodiplodia theobromae"
+  },
+  {
+   "code": "LAI",
+   "display": "Lawsonia intracellularis"
+  },
+  {
+   "code": "LAW",
+   "display": "Lawsonia sp."
+  },
+  {
+   "code": "LEC",
+   "display": "Leclercia sp."
+  },
+  {
+   "code": "LET",
+   "display": "Lecythophora sp."
+  },
+  {
+   "code": "LAA",
+   "display": "Legionella anisa"
+  },
+  {
+   "code": "LBI",
+   "display": "Legionella birminghamensis"
+  },
+  {
+   "code": "LBN",
+   "display": "Legionella brunensis"
+  },
+  {
+   "code": "LCH",
+   "display": "Legionella cherrii"
+  },
+  {
+   "code": "LCN",
+   "display": "Legionella cincinnatiensis"
+  },
+  {
+   "code": "LER",
+   "display": "Legionella erythra"
+  },
+  {
+   "code": "LGE",
+   "display": "Legionella geestiana"
+  },
+  {
+   "code": "LHA",
+   "display": "Legionella hackeliae"
+  },
+  {
+   "code": "LAU",
+   "display": "Legionella interrogans serovar autumnalis"
+  },
+  {
+   "code": "LBA",
+   "display": "Legionella interrogans serovar ballum"
+  },
+  {
+   "code": "LBT",
+   "display": "Legionella interrogans serovar bataviae"
+  },
+  {
+   "code": "LCC",
+   "display": "Legionella interrogans serovar canicola"
+  },
+  {
+   "code": "LGP",
+   "display": "Legionella interrogans serovar grippotyphosa"
+  },
+  {
+   "code": "LIC",
+   "display": "Legionella interrogans serovar icterohaemorrhagiae"
+  },
+  {
+   "code": "LIR",
+   "display": "Legionella israelensis"
+  },
+  {
+   "code": "LJA",
+   "display": "Legionella jamestowniensis"
+  },
+  {
+   "code": "LJR",
+   "display": "Legionella jordanis"
+  },
+  {
+   "code": "LLG",
+   "display": "Legionella lansingensis"
+  },
+  {
+   "code": "LLN",
+   "display": "Legionella londiniensis"
+  },
+  {
+   "code": "LLO",
+   "display": "Legionella longbeachae"
+  },
+  {
+   "code": "LMA",
+   "display": "Legionella maceachernii"
+  },
+  {
+   "code": "LMC",
+   "display": "Legionella micdadei"
+  },
+  {
+   "code": "LMR",
+   "display": "Legionella moravica"
+  },
+  {
+   "code": "LNA",
+   "display": "Legionella nautarum"
+  },
+  {
+   "code": "LOK",
+   "display": "Legionella oakridgensis"
+  },
+  {
+   "code": "LPA",
+   "display": "Legionella parisiensis"
+  },
+  {
+   "code": "LEN",
+   "display": "Legionella pneumophila"
+  },
+  {
+   "code": "LFR",
+   "display": "Legionella pneumophila ss. fraseri"
+  },
+  {
+   "code": "LPC",
+   "display": "Legionella pneumophila ss. pascullei"
+  },
+  {
+   "code": "LQU",
+   "display": "Legionella quateirensis"
+  },
+  {
+   "code": "LQI",
+   "display": "Legionella quinlivanii"
+  },
+  {
+   "code": "LRU",
+   "display": "Legionella rubrilucens"
+  },
+  {
+   "code": "LSH",
+   "display": "Legionella sainthelensi"
+  },
+  {
+   "code": "LSC",
+   "display": "Legionella santicrucis"
+  },
+  {
+   "code": "LSK",
+   "display": "Legionella shakespearei"
+  },
+  {
+   "code": "LEG",
+   "display": "Legionella sp."
+  },
+  {
+   "code": "LSP",
+   "display": "Legionella spiritensis"
+  },
+  {
+   "code": "LST",
+   "display": "Legionella steigerwaltii"
+  },
+  {
+   "code": "LTU",
+   "display": "Legionella tucsonensis"
+  },
+  {
+   "code": "LWA",
+   "display": "Legionella wadsworthii"
+  },
+  {
+   "code": "LWO",
+   "display": "Legionella worsleiensis"
+  },
+  {
+   "code": "LEF",
+   "display": "Leifsonia sp."
+  },
+  {
+   "code": "LME",
+   "display": "Leishmania amazonensis"
+  },
+  {
+   "code": "LBR",
+   "display": "Leishmania braziliensis"
+  },
+  {
+   "code": "LDO",
+   "display": "Leishmania donovani"
+  },
+  {
+   "code": "LPR",
+   "display": "Leishmania peruviana"
+  },
+  {
+   "code": "LEI",
+   "display": "Leishmania sp."
+  },
+  {
+   "code": "LTR",
+   "display": "Leishmania tropica"
+  },
+  {
+   "code": "LRI",
+   "display": "Leminorella richardii"
+  },
+  {
+   "code": "LEM",
+   "display": "Leminorella sp."
+  },
+  {
+   "code": "LBP",
+   "display": "Leptospira borgpetersenii"
+  },
+  {
+   "code": "LID",
+   "display": "Leptospira inadai"
+  },
+  {
+   "code": "LIN",
+   "display": "Leptospira interrogans"
+  },
+  {
+   "code": "LEB",
+   "display": "Leptospira interrogans serovar Ballum"
+  },
+  {
+   "code": "LEA",
+   "display": "Leptospira interrogans serovar Bratislava"
+  },
+  {
+   "code": "LRC",
+   "display": "Leptospira interrogans serovar Canicola"
+  },
+  {
+   "code": "LEY",
+   "display": "Leptospira interrogans serovar Grippotyphosa"
+  },
+  {
+   "code": "LEH",
+   "display": "Leptospira interrogans serovar Hardjo"
+  },
+  {
+   "code": "LPI",
+   "display": "Leptospira interrogans serovar Icterohaemorrhagiae"
+  },
+  {
+   "code": "LPP",
+   "display": "Leptospira interrogans serovar Pomona"
+  },
+  {
+   "code": "LPJ",
+   "display": "Leptospira interrogans serovar Sejroe"
+  },
+  {
+   "code": "LPT",
+   "display": "Leptospira interrogans serovar Tarassovi"
+  },
+  {
+   "code": "LKI",
+   "display": "Leptospira kirschneri"
+  },
+  {
+   "code": "LNO",
+   "display": "Leptospira noguchii"
+  },
+  {
+   "code": "LSR",
+   "display": "Leptospira santarosai"
+  },
+  {
+   "code": "LES",
+   "display": "Leptospira sp."
+  },
+  {
+   "code": "LWE",
+   "display": "Leptospira weilii"
+  },
+  {
+   "code": "LBU",
+   "display": "Leptotrichia buccalis"
+  },
+  {
+   "code": "LEP",
+   "display": "Leptotrichia sp."
+  },
+  {
+   "code": "LCI",
+   "display": "Leuconostoc citreum"
+  },
+  {
+   "code": "LCR",
+   "display": "Leuconostoc cremoris"
+  },
+  {
+   "code": "LDE",
+   "display": "Leuconostoc dextranicum"
+  },
+  {
+   "code": "LLC",
+   "display": "Leuconostoc lactis"
+  },
+  {
+   "code": "LMS",
+   "display": "Leuconostoc mesenteroides"
+  },
+  {
+   "code": "OOE",
+   "display": "Leuconostoc oenos"
+  },
+  {
+   "code": "LPS",
+   "display": "Leuconostoc pseudomesenteroides"
+  },
+  {
+   "code": "LEU",
+   "display": "Leuconostoc sp."
+  },
+  {
+   "code": "LGY",
+   "display": "Listeria grayi"
+  },
+  {
+   "code": "LIO",
+   "display": "Listeria innocua"
+  },
+  {
+   "code": "LIV",
+   "display": "Listeria ivanovii"
+  },
+  {
+   "code": "LMO",
+   "display": "Listeria monocytogenes"
+  },
+  {
+   "code": "LSE",
+   "display": "Listeria seeligeri"
+  },
+  {
+   "code": "LIS",
+   "display": "Listeria sp."
+  },
+  {
+   "code": "LWL",
+   "display": "Listeria welshimeri"
+  },
+  {
+   "code": "LAN",
+   "display": "Listonella anguillarum"
+  },
+  {
+   "code": "LPE",
+   "display": "Listonella pelagia"
+  },
+  {
+   "code": "LIT",
+   "display": "Listonella sp."
+  },
+  {
+   "code": "LOA",
+   "display": "Loa loa"
+  },
+  {
+   "code": "LLB",
+   "display": "Loboa loboi"
+  },
+  {
+   "code": "LOB",
+   "display": "Loboa sp."
+  },
+  {
+   "code": "LYS",
+   "display": "Lysinibacillus sp."
+  },
+  {
+   "code": "SCL",
+   "display": "Macrococcus caseolyticus"
+  },
+  {
+   "code": "MCC",
+   "display": "Macrococcus sp."
+  },
+  {
+   "code": "MMY",
+   "display": "Madurella mycetomatis"
+  },
+  {
+   "code": "MAD",
+   "display": "Madurella sp."
+  },
+  {
+   "code": "MFU",
+   "display": "Malassezia furfur"
+  },
+  {
+   "code": "MPY",
+   "display": "Malassezia pachydermatis"
+  },
+  {
+   "code": "MAL",
+   "display": "Malassezia sp."
+  },
+  {
+   "code": "MAR",
+   "display": "Malbranchea sp."
+  },
+  {
+   "code": "PHA",
+   "display": "Mannheimia haemolytica"
+  },
+  {
+   "code": "MAH",
+   "display": "Mannheimia sp."
+  },
+  {
+   "code": "MNV",
+   "display": "Mannheimia varigena"
+  },
+  {
+   "code": "MOZ",
+   "display": "Mansonella ozzardi"
+  },
+  {
+   "code": "MPR",
+   "display": "Mansonella perstans"
+  },
+  {
+   "code": "MAN",
+   "display": "Mansonella sp."
+  },
+  {
+   "code": "MNS",
+   "display": "Mansonella streptocerca"
+  },
+  {
+   "code": "MEV",
+   "display": "Measles virus"
+  },
+  {
+   "code": "MHY",
+   "display": "Megamonas hypermegale"
+  },
+  {
+   "code": "MEG",
+   "display": "Megamonas sp."
+  },
+  {
+   "code": "MEL",
+   "display": "Megasphaera elsdenii"
+  },
+  {
+   "code": "MES",
+   "display": "Megasphaera sp."
+  },
+  {
+   "code": "MPL",
+   "display": "Melissococcus plutonius"
+  },
+  {
+   "code": "MLS",
+   "display": "Melissococcus sp."
+  },
+  {
+   "code": "MEA",
+   "display": "Metagonimus sp."
+  },
+  {
+   "code": "MYO",
+   "display": "Metagonimus yokogawai"
+  },
+  {
+   "code": "MET",
+   "display": "Methanobacterium sp."
+  },
+  {
+   "code": "MEX",
+   "display": "Methylobacterium extorquens"
+  },
+  {
+   "code": "MME",
+   "display": "Methylobacterium mesophilicum"
+  },
+  {
+   "code": "MEB",
+   "display": "Methylobacterium sp."
+  },
+  {
+   "code": "MTK",
+   "display": "Metschnikowia sp."
+  },
+  {
+   "code": "MZC",
+   "display": "Meyerozyma caribbica"
+  },
+  {
+   "code": "YZG",
+   "display": "Meyerozyma guilliermondii complex"
+  },
+  {
+   "code": "MEY",
+   "display": "Meyerozyma sp."
+  },
+  {
+   "code": "MBA",
+   "display": "Microbacterium arborescens"
+  },
+  {
+   "code": "MIM",
+   "display": "Microbacterium imperiale"
+  },
+  {
+   "code": "MLQ",
+   "display": "Microbacterium liquefaciens"
+  },
+  {
+   "code": "MOX",
+   "display": "Microbacterium oxydans"
+  },
+  {
+   "code": "MLU",
+   "display": "Micrococcus luteus"
+  },
+  {
+   "code": "MIC",
+   "display": "Micrococcus sp."
+  },
+  {
+   "code": "MIF",
+   "display": "Microfilaria sp."
+  },
+  {
+   "code": "MRE",
+   "display": "Micropolyspora faeni"
+  },
+  {
+   "code": "MIP",
+   "display": "Micropolyspora sp."
+  },
+  {
+   "code": "MSP",
+   "display": "Microsporidium sp."
+  },
+  {
+   "code": "MAO",
+   "display": "Microsporum audouinii"
+  },
+  {
+   "code": "MCA",
+   "display": "Microsporum canis"
+  },
+  {
+   "code": "MCO",
+   "display": "Microsporum cookei"
+  },
+  {
+   "code": "MDI",
+   "display": "Microsporum distortum"
+  },
+  {
+   "code": "MFR",
+   "display": "Microsporum ferrugineum"
+  },
+  {
+   "code": "MFV",
+   "display": "Microsporum fulvum"
+  },
+  {
+   "code": "MGL",
+   "display": "Microsporum gallinae"
+  },
+  {
+   "code": "MGY",
+   "display": "Microsporum gypseum"
+  },
+  {
+   "code": "MNA",
+   "display": "Microsporum nanum"
+  },
+  {
+   "code": "MPE",
+   "display": "Microsporum persicolor"
+  },
+  {
+   "code": "MIS",
+   "display": "Microsporum sp."
+  },
+  {
+   "code": "MVB",
+   "display": "Microsporum vanbreuseghemii"
+  },
+  {
+   "code": "PDE",
+   "display": "Mitsuokella dentalis"
+  },
+  {
+   "code": "MMT",
+   "display": "Mitsuokella multacida"
+  },
+  {
+   "code": "MIT",
+   "display": "Mitsuokella sp."
+  },
+  {
+   "code": "MIX",
+   "display": "Mixed bacterial species present"
+  },
+  {
+   "code": "MCU",
+   "display": "Mobiluncus curtisii"
+  },
+  {
+   "code": "MHL",
+   "display": "Mobiluncus curtisii ss. holmesii"
+  },
+  {
+   "code": "MMU",
+   "display": "Mobiluncus mulieris"
+  },
+  {
+   "code": "MOB",
+   "display": "Mobiluncus sp."
+  },
+  {
+   "code": "MOE",
+   "display": "Moellerella sp."
+  },
+  {
+   "code": "MOL",
+   "display": "Mold"
+  },
+  {
+   "code": "MCV",
+   "display": "Molluscum contagiosum virus"
+  },
+  {
+   "code": "MST",
+   "display": "Monilia sitophila"
+  },
+  {
+   "code": "MON",
+   "display": "Monilia sp."
+  },
+  {
+   "code": "SAS",
+   "display": "Monosporium apoispermum"
+  },
+  {
+   "code": "MBV",
+   "display": "Moraxella bovis"
+  },
+  {
+   "code": "MXC",
+   "display": "Moraxella canis"
+  },
+  {
+   "code": "MLA",
+   "display": "Moraxella lacunata"
+  },
+  {
+   "code": "MPO",
+   "display": "Moraxella mima polymorpha (var. oxidans)"
+  },
+  {
+   "code": "MNL",
+   "display": "Moraxella nonliquefaciens"
+  },
+  {
+   "code": "MOS",
+   "display": "Moraxella osloensis"
+  },
+  {
+   "code": "MOO",
+   "display": "Moraxella ovis"
+  },
+  {
+   "code": "MUT",
+   "display": "Moraxella urethralis"
+  },
+  {
+   "code": "MMO",
+   "display": "Morganella morganii"
+  },
+  {
+   "code": "MSB",
+   "display": "Morganella morganii ss. sibonii"
+  },
+  {
+   "code": "MOR",
+   "display": "Morganella sp."
+  },
+  {
+   "code": "MOI",
+   "display": "Moritella sp."
+  },
+  {
+   "code": "MVI",
+   "display": "Moritella viscosa"
+  },
+  {
+   "code": "MOT",
+   "display": "Mortierella sp."
+  },
+  {
+   "code": "RPU",
+   "display": "Mucor pusillus"
+  },
+  {
+   "code": "MUC",
+   "display": "Mucor sp."
+  },
+  {
+   "code": "MUM",
+   "display": "Multiceps multiceps"
+  },
+  {
+   "code": "MUL",
+   "display": "Multiceps sp."
+  },
+  {
+   "code": "MUP",
+   "display": "Mumps virus"
+  },
+  {
+   "code": "MSR",
+   "display": "Mycelia sterilia"
+  },
+  {
+   "code": "MAB",
+   "display": "Mycobacterium abscessus"
+  },
+  {
+   "code": "MAF",
+   "display": "Mycobacterium africanum"
+  },
+  {
+   "code": "MAG",
+   "display": "Mycobacterium agri"
+  },
+  {
+   "code": "MAK",
+   "display": "Mycobacterium aichiense"
+  },
+  {
+   "code": "MAE",
+   "display": "Mycobacterium alvei"
+  },
+  {
+   "code": "MAS",
+   "display": "Mycobacterium asiaticum"
+  },
+  {
+   "code": "MAU",
+   "display": "Mycobacterium aurum"
+  },
+  {
+   "code": "MAA",
+   "display": "Mycobacterium austroafricanum"
+  },
+  {
+   "code": "MAV",
+   "display": "Mycobacterium avium"
+  },
+  {
+   "code": "MAC",
+   "display": "Mycobacterium avium complex"
+  },
+  {
+   "code": "MPA",
+   "display": "Mycobacterium avium ss. paratuberculosis"
+  },
+  {
+   "code": "MAI",
+   "display": "Mycobacterium avium-intracellulare complex"
+  },
+  {
+   "code": "MBO",
+   "display": "Mycobacterium bovis"
+  },
+  {
+   "code": "MBR",
+   "display": "Mycobacterium brumae"
+  },
+  {
+   "code": "MYN",
+   "display": "Mycobacterium canetti"
+  },
+  {
+   "code": "MYE",
+   "display": "Mycobacterium caprae"
+  },
+  {
+   "code": "MCE",
+   "display": "Mycobacterium celatum"
+  },
+  {
+   "code": "MCH",
+   "display": "Mycobacterium chelonae"
+  },
+  {
+   "code": "MMC",
+   "display": "Mycobacterium chelonae-like organism (MCLO)"
+  },
+  {
+   "code": "MCI",
+   "display": "Mycobacterium chimaera"
+  },
+  {
+   "code": "MCT",
+   "display": "Mycobacterium chitae"
+  },
+  {
+   "code": "MCB",
+   "display": "Mycobacterium chubuense"
+  },
+  {
+   "code": "MCN",
+   "display": "Mycobacterium confluentis"
+  },
+  {
+   "code": "MDE",
+   "display": "Mycobacterium diernhoferi"
+  },
+  {
+   "code": "MDU",
+   "display": "Mycobacterium duvalii"
+  },
+  {
+   "code": "MFX",
+   "display": "Mycobacterium fallax"
+  },
+  {
+   "code": "MFA",
+   "display": "Mycobacterium farcinogenes"
+  },
+  {
+   "code": "MFL",
+   "display": "Mycobacterium flavescens"
+  },
+  {
+   "code": "MFO",
+   "display": "Mycobacterium fortuitum"
+  },
+  {
+   "code": "MGD",
+   "display": "Mycobacterium gadium"
+  },
+  {
+   "code": "MGA",
+   "display": "Mycobacterium gastri"
+  },
+  {
+   "code": "MGE",
+   "display": "Mycobacterium genavense"
+  },
+  {
+   "code": "MGI",
+   "display": "Mycobacterium gilvum"
+  },
+  {
+   "code": "MGO",
+   "display": "Mycobacterium gordonae"
+  },
+  {
+   "code": "MHA",
+   "display": "Mycobacterium haemophilum"
+  },
+  {
+   "code": "MIJ",
+   "display": "Mycobacterium interjectum"
+  },
+  {
+   "code": "MIN",
+   "display": "Mycobacterium intracellulare"
+  },
+  {
+   "code": "MKA",
+   "display": "Mycobacterium kansasii"
+  },
+  {
+   "code": "MKO",
+   "display": "Mycobacterium komossense"
+  },
+  {
+   "code": "MLF",
+   "display": "Mycobacterium lentiflavum"
+  },
+  {
+   "code": "MLE",
+   "display": "Mycobacterium leprae"
+  },
+  {
+   "code": "MLP",
+   "display": "Mycobacterium lepraemurium"
+  },
+  {
+   "code": "MML",
+   "display": "Mycobacterium malmoense"
+  },
+  {
+   "code": "MMA",
+   "display": "Mycobacterium marinum"
+  },
+  {
+   "code": "MMI",
+   "display": "Mycobacterium microti"
+  },
+  {
+   "code": "MYG",
+   "display": "Mycobacterium mungi"
+  },
+  {
+   "code": "MNE",
+   "display": "Mycobacterium neoaurum"
+  },
+  {
+   "code": "MNO",
+   "display": "Mycobacterium nonchromogenicum"
+  },
+  {
+   "code": "MOU",
+   "display": "Mycobacterium obuense"
+  },
+  {
+   "code": "MYY",
+   "display": "Mycobacterium orygis"
+  },
+  {
+   "code": "MPF",
+   "display": "Mycobacterium parafortuitum"
+  },
+  {
+   "code": "MPG",
+   "display": "Mycobacterium peregrinum"
+  },
+  {
+   "code": "MPH",
+   "display": "Mycobacterium phlei"
+  },
+  {
+   "code": "MYI",
+   "display": "Mycobacterium pinnipedii"
+  },
+  {
+   "code": "MPC",
+   "display": "Mycobacterium porcinum"
+  },
+  {
+   "code": "MRD",
+   "display": "Mycobacterium rhodesiae"
+  },
+  {
+   "code": "MSC",
+   "display": "Mycobacterium scrofulaceum"
+  },
+  {
+   "code": "MSE",
+   "display": "Mycobacterium senegalense"
+  },
+  {
+   "code": "MSH",
+   "display": "Mycobacterium shimoidei"
+  },
+  {
+   "code": "MSI",
+   "display": "Mycobacterium simiae"
+  },
+  {
+   "code": "MSM",
+   "display": "Mycobacterium smegmatis"
+  },
+  {
+   "code": "MYC",
+   "display": "Mycobacterium sp."
+  },
+  {
+   "code": "MSG",
+   "display": "Mycobacterium sphagni"
+  },
+  {
+   "code": "MYS",
+   "display": "Mycobacterium suricattae"
+  },
+  {
+   "code": "MSZ",
+   "display": "Mycobacterium szulgai"
+  },
+  {
+   "code": "MTE",
+   "display": "Mycobacterium terrae"
+  },
+  {
+   "code": "MTH",
+   "display": "Mycobacterium thermoresistibile"
+  },
+  {
+   "code": "MTO",
+   "display": "Mycobacterium tokaiense"
+  },
+  {
+   "code": "MTR",
+   "display": "Mycobacterium triviale"
+  },
+  {
+   "code": "MTU",
+   "display": "Mycobacterium tuberculosis"
+  },
+  {
+   "code": "MTC",
+   "display": "Mycobacterium tuberculosis complex"
+  },
+  {
+   "code": "MUR",
+   "display": "Mycobacterium ulcerans"
+  },
+  {
+   "code": "MVA",
+   "display": "Mycobacterium vaccae"
+  },
+  {
+   "code": "MXE",
+   "display": "Mycobacterium xenopi"
+  },
+  {
+   "code": "MGC",
+   "display": "Mycoplasma agalactiae"
+  },
+  {
+   "code": "MYA",
+   "display": "Mycoplasma arginini"
+  },
+  {
+   "code": "MBB",
+   "display": "Mycoplasma bovis"
+  },
+  {
+   "code": "MBU",
+   "display": "Mycoplasma buccale"
+  },
+  {
+   "code": "MCR",
+   "display": "Mycoplasma capricolum"
+  },
+  {
+   "code": "MCP",
+   "display": "Mycoplasma capricolum ss. capripneumoniae"
+  },
+  {
+   "code": "MYJ",
+   "display": "Mycoplasma conjunctivae"
+  },
+  {
+   "code": "MYD",
+   "display": "Mycoplasma dispar"
+  },
+  {
+   "code": "MFC",
+   "display": "Mycoplasma faucium"
+  },
+  {
+   "code": "MFE",
+   "display": "Mycoplasma fermentans"
+  },
+  {
+   "code": "MGS",
+   "display": "Mycoplasma gallisepticum"
+  },
+  {
+   "code": "MGN",
+   "display": "Mycoplasma genitalium"
+  },
+  {
+   "code": "MLH",
+   "display": "Mycoplasma haemosuis"
+  },
+  {
+   "code": "MHO",
+   "display": "Mycoplasma hominis"
+  },
+  {
+   "code": "MYH",
+   "display": "Mycoplasma hyopneumoniae"
+  },
+  {
+   "code": "MPI",
+   "display": "Mycoplasma hyorhinis"
+  },
+  {
+   "code": "MYV",
+   "display": "Mycoplasma hyosynoviae"
+  },
+  {
+   "code": "MLW",
+   "display": "Mycoplasma iowae"
+  },
+  {
+   "code": "MLI",
+   "display": "Mycoplasma lipophilum"
+  },
+  {
+   "code": "MMG",
+   "display": "Mycoplasma meleagridis"
+  },
+  {
+   "code": "MMD",
+   "display": "Mycoplasma mycoides ss. mycoides"
+  },
+  {
+   "code": "MOA",
+   "display": "Mycoplasma orale"
+  },
+  {
+   "code": "MYU",
+   "display": "Mycoplasma ovipneumoniae"
+  },
+  {
+   "code": "MPT",
+   "display": "Mycoplasma penetrans"
+  },
+  {
+   "code": "MPN",
+   "display": "Mycoplasma pneumoniae"
+  },
+  {
+   "code": "MPM",
+   "display": "Mycoplasma primatum"
+  },
+  {
+   "code": "MPU",
+   "display": "Mycoplasma putrefaciens"
+  },
+  {
+   "code": "MSA",
+   "display": "Mycoplasma salivarium"
+  },
+  {
+   "code": "MYP",
+   "display": "Mycoplasma sp."
+  },
+  {
+   "code": "MSL",
+   "display": "Mycoplasma spermatophilum"
+  },
+  {
+   "code": "MCS",
+   "display": "Mycoplasma suis"
+  },
+  {
+   "code": "MSY",
+   "display": "Mycoplasma synoviae"
+  },
+  {
+   "code": "MGP",
+   "display": "Mycoplasmoides gallisepticum"
+  },
+  {
+   "code": "MYL",
+   "display": "Mycoplasmoides sp."
+  },
+  {
+   "code": "MYR",
+   "display": "Myroides sp."
+  },
+  {
+   "code": "MYX",
+   "display": "Myxozyma sp."
+  },
+  {
+   "code": "NFO",
+   "display": "Naegleria fowleri"
+  },
+  {
+   "code": "NAE",
+   "display": "Naegleria sp."
+  },
+  {
+   "code": "NAG",
+   "display": "Naganishia sp."
+  },
+  {
+   "code": "NAN",
+   "display": "Nannizzia sp."
+  },
+  {
+   "code": "NMG",
+   "display": "Nattrassia mangiferae"
+  },
+  {
+   "code": "NAT",
+   "display": "Nattrassia sp."
+  },
+  {
+   "code": "NAM",
+   "display": "Necator americanus"
+  },
+  {
+   "code": "NEC",
+   "display": "Necator sp."
+  },
+  {
+   "code": "NCA",
+   "display": "Neisseria canis"
+  },
+  {
+   "code": "NCI",
+   "display": "Neisseria cinerea"
+  },
+  {
+   "code": "NEL",
+   "display": "Neisseria elongata"
+  },
+  {
+   "code": "NGL",
+   "display": "Neisseria elongata ss. glycolytica"
+  },
+  {
+   "code": "NFL",
+   "display": "Neisseria flavescens"
+  },
+  {
+   "code": "NKO",
+   "display": "Neisseria gonorrhoeae ss. kochii"
+  },
+  {
+   "code": "NLA",
+   "display": "Neisseria lactamica"
+  },
+  {
+   "code": "NME",
+   "display": "Neisseria meningitidis"
+  },
+  {
+   "code": "NMO",
+   "display": "Neisseria meningitidis, other serogroups"
+  },
+  {
+   "code": "135",
+   "display": "Neisseria meningitidis, serogroup W135"
+  },
+  {
+   "code": "NMY",
+   "display": "Neisseria meningitidis, serogroup Y"
+  },
+  {
+   "code": "NMA",
+   "display": "Neisseria meningitidis, serogroup a"
+  },
+  {
+   "code": "NMB",
+   "display": "Neisseria meningitidis, serogroup b"
+  },
+  {
+   "code": "NMC",
+   "display": "Neisseria meningitidis, serogroup c"
+  },
+  {
+   "code": "NMU",
+   "display": "Neisseria mucosa"
+  },
+  {
+   "code": "NPO",
+   "display": "Neisseria polysaccharea"
+  },
+  {
+   "code": "NSI",
+   "display": "Neisseria sicca"
+  },
+  {
+   "code": "NE-",
+   "display": "Neisseria sp."
+  },
+  {
+   "code": "NSU",
+   "display": "Neisseria subflava"
+  },
+  {
+   "code": "NFV",
+   "display": "Neisseria subflava biovar flava"
+  },
+  {
+   "code": "NPE",
+   "display": "Neisseria subflava biovar perflava"
+  },
+  {
+   "code": "NSB",
+   "display": "Neisseria subflava biovar subflava"
+  },
+  {
+   "code": "NEM",
+   "display": "Nematode"
+  },
+  {
+   "code": "SDM",
+   "display": "Neoscytalidium dimidiatum"
+  },
+  {
+   "code": "NSC",
+   "display": "Neospora caninum"
+  },
+  {
+   "code": "NSP",
+   "display": "Neospora sp."
+  },
+  {
+   "code": "NRO",
+   "display": "Neotestudina rosatii"
+  },
+  {
+   "code": "NEO",
+   "display": "Neotestudina sp."
+  },
+  {
+   "code": "NIG",
+   "display": "Nigrospora sp."
+  },
+  {
+   "code": "XCD",
+   "display": "No C. difficile found"
+  },
+  {
+   "code": "X19",
+   "display": "No COVID-19 found"
+  },
+  {
+   "code": "XCA",
+   "display": "No Campylobacter found"
+  },
+  {
+   "code": "XCH",
+   "display": "No Chlamydia found"
+  },
+  {
+   "code": "XCV",
+   "display": "No Coronavirus found"
+  },
+  {
+   "code": "XIA",
+   "display": "No Influenza A virus found"
+  },
+  {
+   "code": "XIB",
+   "display": "No Influenza B virus found"
+  },
+  {
+   "code": "XIC",
+   "display": "No Influenza C virus found"
+  },
+  {
+   "code": "XIV",
+   "display": "No Influenza virus found"
+  },
+  {
+   "code": "XLE",
+   "display": "No Legionella found"
+  },
+  {
+   "code": "XMR",
+   "display": "No MRSA found"
+  },
+  {
+   "code": "XGO",
+   "display": "No N. gonorrhoeae found"
+  },
+  {
+   "code": "XGC",
+   "display": "No N. gonorrhoeae or Chlamydia found"
+  },
+  {
+   "code": "XPL",
+   "display": "No Plasmodium found"
+  },
+  {
+   "code": "XSA",
+   "display": "No Salmonella found"
+  },
+  {
+   "code": "XVR",
+   "display": "No VRE were found"
+  },
+  {
+   "code": "XAF",
+   "display": "No acid-fast bacilli found"
+  },
+  {
+   "code": "XAB",
+   "display": "No anaerobes found"
+  },
+  {
+   "code": "XEP",
+   "display": "No enteric pathogens found"
+  },
+  {
+   "code": "XFU",
+   "display": "No fungi found"
+  },
+  {
+   "code": "XXX",
+   "display": "No growth"
+  },
+  {
+   "code": "XMY",
+   "display": "No mycobacteria found"
+  },
+  {
+   "code": "XOP",
+   "display": "No parasites found"
+  },
+  {
+   "code": "XPA",
+   "display": "No pathogens found"
+  },
+  {
+   "code": "XSG",
+   "display": "No significant growth found"
+  },
+  {
+   "code": "NAS",
+   "display": "Nocardia asteroides"
+  },
+  {
+   "code": "NBR",
+   "display": "Nocardia brasiliensis"
+  },
+  {
+   "code": "NCR",
+   "display": "Nocardia carnea"
+  },
+  {
+   "code": "NCO",
+   "display": "Nocardia coeliaca"
+  },
+  {
+   "code": "NCC",
+   "display": "Nocardia crassostreae"
+  },
+  {
+   "code": "NFA",
+   "display": "Nocardia farcinica"
+  },
+  {
+   "code": "NNO",
+   "display": "Nocardia nova"
+  },
+  {
+   "code": "NOT",
+   "display": "Nocardia otitidiscaviarum"
+  },
+  {
+   "code": "NCS",
+   "display": "Nocardia seriolae"
+  },
+  {
+   "code": "NOC",
+   "display": "Nocardia sp."
+  },
+  {
+   "code": "NTR",
+   "display": "Nocardia transvalensis"
+  },
+  {
+   "code": "NDA",
+   "display": "Nocardiopsis dassonvillei"
+  },
+  {
+   "code": "NOD",
+   "display": "Nocardiopsis sp."
+  },
+  {
+   "code": "NFR",
+   "display": "Non-fermenting Gram negative rods"
+  },
+  {
+   "code": "NOR",
+   "display": "Normal flora"
+  },
+  {
+   "code": "ORA",
+   "display": "Normal oral flora"
+  },
+  {
+   "code": "VAG",
+   "display": "Normal vaginal flora"
+  },
+  {
+   "code": "NOV",
+   "display": "Norovirus"
+  },
+  {
+   "code": "NOS",
+   "display": "Nosema sp."
+  },
+  {
+   "code": "OCH",
+   "display": "Ochrobactrum sp."
+  },
+  {
+   "code": "OCR",
+   "display": "Ochroconis sp."
+  },
+  {
+   "code": "STW",
+   "display": "Ochroconis tshawytschae"
+  },
+  {
+   "code": "OBV",
+   "display": "Ockelbovirus???"
+  },
+  {
+   "code": "OEN",
+   "display": "Oenococcus sp."
+  },
+  {
+   "code": "OER",
+   "display": "Oerskovia sp."
+  },
+  {
+   "code": "OLI",
+   "display": "Oligella sp."
+  },
+  {
+   "code": "ONC",
+   "display": "Onchocerca sp."
+  },
+  {
+   "code": "OVO",
+   "display": "Onchocerca volvulus"
+  },
+  {
+   "code": "OPH",
+   "display": "Ophiostoma sp."
+  },
+  {
+   "code": "OST",
+   "display": "Ophiostoma stenoceras"
+  },
+  {
+   "code": "OFE",
+   "display": "Opisthorchis felineus"
+  },
+  {
+   "code": "OPI",
+   "display": "Opisthorchis sp."
+  },
+  {
+   "code": "OVI",
+   "display": "Opisthorchis viverrini"
+  },
+  {
+   "code": "ORV",
+   "display": "Orf virus"
+  },
+  {
+   "code": "OCA",
+   "display": "Oribaculum catoniae"
+  },
+  {
+   "code": "POR",
+   "display": "Oribaculum sp."
+  },
+  {
+   "code": "ORI",
+   "display": "Orientia sp."
+  },
+  {
+   "code": "OTS",
+   "display": "Orientia tsutsugamushi"
+  },
+  {
+   "code": "ORH",
+   "display": "Ornithobacterium rhinotracheale"
+  },
+  {
+   "code": "ORN",
+   "display": "Ornithobacterium sp."
+  },
+  {
+   "code": "OTH",
+   "display": "Other"
+  },
+  {
+   "code": "PLI",
+   "display": "Paecilomyces lilacinus"
+  },
+  {
+   "code": "PAC",
+   "display": "Paecilomyces sp."
+  },
+  {
+   "code": "PBL",
+   "display": "Paenibacillus larvae"
+  },
+  {
+   "code": "PAB",
+   "display": "Paenibacillus sp."
+  },
+  {
+   "code": "PND",
+   "display": "Pandoraea sp."
+  },
+  {
+   "code": "PAN",
+   "display": "Pantoea sp."
+  },
+  {
+   "code": "PBR",
+   "display": "Paracoccidioides brasiliensis"
+  },
+  {
+   "code": "PCC",
+   "display": "Paracoccidioides sp."
+  },
+  {
+   "code": "PCU",
+   "display": "Paracoccus sp."
+  },
+  {
+   "code": "PMX",
+   "display": "Paragonimus mexicanus"
+  },
+  {
+   "code": "PAO",
+   "display": "Paragonimus sp."
+  },
+  {
+   "code": "PWE",
+   "display": "Paragonimus westermani"
+  },
+  {
+   "code": "PIV",
+   "display": "Parainfluenza virus"
+  },
+  {
+   "code": "PPY",
+   "display": "Paraphyton sp."
+  },
+  {
+   "code": "PAR",
+   "display": "Parasite"
+  },
+  {
+   "code": "PMC",
+   "display": "Parvimonas micra"
+  },
+  {
+   "code": "PVM",
+   "display": "Parvimonas sp."
+  },
+  {
+   "code": "B19",
+   "display": "Parvovirus B19"
+  },
+  {
+   "code": "ABG",
+   "display": "Passalurus ambiguus"
+  },
+  {
+   "code": "PSS",
+   "display": "Passalurus sp."
+  },
+  {
+   "code": "POG",
+   "display": "Pasteurella aerogenes"
+  },
+  {
+   "code": "RAN",
+   "display": "Pasteurella anatipestifer"
+  },
+  {
+   "code": "PCN",
+   "display": "Pasteurella canis"
+  },
+  {
+   "code": "PDA",
+   "display": "Pasteurella dagmatis"
+  },
+  {
+   "code": "PGA",
+   "display": "Pasteurella gallicida"
+  },
+  {
+   "code": "PLN",
+   "display": "Pasteurella langaaensis"
+  },
+  {
+   "code": "PLY",
+   "display": "Pasteurella lymphangitidis"
+  },
+  {
+   "code": "PMR",
+   "display": "Pasteurella mairii"
+  },
+  {
+   "code": "PAM",
+   "display": "Pasteurella multocida"
+  },
+  {
+   "code": "PSP",
+   "display": "Pasteurella multocida ss. septica"
+  },
+  {
+   "code": "PPN",
+   "display": "Pasteurella pneumotropica"
+  },
+  {
+   "code": "PAS",
+   "display": "Pasteurella sp."
+  },
+  {
+   "code": "PSM",
+   "display": "Pasteurella stomatis"
+  },
+  {
+   "code": "PTS",
+   "display": "Pasteurella testudinis"
+  },
+  {
+   "code": "PET",
+   "display": "Pectinatus sp."
+  },
+  {
+   "code": "PEC",
+   "display": "Pectobacterium sp."
+  },
+  {
+   "code": "PCP",
+   "display": "Pediculus capitis"
+  },
+  {
+   "code": "PHU",
+   "display": "Pediculus humanus"
+  },
+  {
+   "code": "PEU",
+   "display": "Pediculus sp."
+  },
+  {
+   "code": "PAI",
+   "display": "Pediococcus acidilactici"
+  },
+  {
+   "code": "PDN",
+   "display": "Pediococcus damnosus"
+  },
+  {
+   "code": "PPV",
+   "display": "Pediococcus parvulus"
+  },
+  {
+   "code": "PPO",
+   "display": "Pediococcus pentosaceus"
+  },
+  {
+   "code": "PED",
+   "display": "Pediococcus sp."
+  },
+  {
+   "code": "PEL",
+   "display": "Pelobacter sp."
+  },
+  {
+   "code": "PMN",
+   "display": "Penicillium marneffei"
+  },
+  {
+   "code": "PEN",
+   "display": "Penicillium sp."
+  },
+  {
+   "code": "PNI",
+   "display": "Peptococcus niger"
+  },
+  {
+   "code": "PPS",
+   "display": "Peptococcus saccharolyticus"
+  },
+  {
+   "code": "PEP",
+   "display": "Peptococcus sp."
+  },
+  {
+   "code": "PPA",
+   "display": "Peptoniphilus asaccharolyticus"
+  },
+  {
+   "code": "PID",
+   "display": "Peptoniphilus indolicus"
+  },
+  {
+   "code": "PLL",
+   "display": "Peptoniphilus lacrimalis"
+  },
+  {
+   "code": "PES",
+   "display": "Peptostreptococcus anaerobius"
+  },
+  {
+   "code": "PPT",
+   "display": "Peptostreptococcus sp."
+  },
+  {
+   "code": "PER",
+   "display": "Periconia sp."
+  },
+  {
+   "code": "PHN",
+   "display": "Phaeoannellomyces sp."
+  },
+  {
+   "code": "PHC",
+   "display": "Phaeococcomyces sp."
+  },
+  {
+   "code": "PHI",
+   "display": "Phialophora sp."
+  },
+  {
+   "code": "PVC",
+   "display": "Phialophora verrucosa"
+  },
+  {
+   "code": "PHO",
+   "display": "Phocanema sp."
+  },
+  {
+   "code": "PHM",
+   "display": "Phoma sp."
+  },
+  {
+   "code": "PDP",
+   "display": "Photobacterium damselae ss. piscicida"
+  },
+  {
+   "code": "PHB",
+   "display": "Photobacterium sp."
+  },
+  {
+   "code": "PPB",
+   "display": "Phthirus pubis"
+  },
+  {
+   "code": "PFN",
+   "display": "Pichia farinosa"
+  },
+  {
+   "code": "PIC",
+   "display": "Pichia sp."
+  },
+  {
+   "code": "PHR",
+   "display": "Piedraia hortae"
+  },
+  {
+   "code": "PIE",
+   "display": "Piedraia sp."
+  },
+  {
+   "code": "PKS",
+   "display": "Piscirickettsia salmonis"
+  },
+  {
+   "code": "PRK",
+   "display": "Piscirickettsia sp."
+  },
+  {
+   "code": "PIT",
+   "display": "Pityrosporum sp."
+  },
+  {
+   "code": "PLC",
+   "display": "Planococcus sp."
+  },
+  {
+   "code": "PFA",
+   "display": "Plasmodium falciparum"
+  },
+  {
+   "code": "PML",
+   "display": "Plasmodium malariae"
+  },
+  {
+   "code": "POV",
+   "display": "Plasmodium ovale"
+  },
+  {
+   "code": "PLA",
+   "display": "Plasmodium sp."
+  },
+  {
+   "code": "PVI",
+   "display": "Plasmodium vivax"
+  },
+  {
+   "code": "PLS",
+   "display": "Pleistophora sp."
+  },
+  {
+   "code": "PSH",
+   "display": "Plesiomonas shigelloides"
+  },
+  {
+   "code": "PLE",
+   "display": "Plesiomonas sp."
+  },
+  {
+   "code": "ROV",
+   "display": "Pleurothecium obovoideum"
+  },
+  {
+   "code": "PCA",
+   "display": "Pneumocystis carinii"
+  },
+  {
+   "code": "PNE",
+   "display": "Pneumocystis sp."
+  },
+  {
+   "code": "PLV",
+   "display": "Poliovirus"
+  },
+  {
+   "code": "PGG",
+   "display": "Porphyromonas gingivicanis"
+  },
+  {
+   "code": "PMM",
+   "display": "Porphyromonas macacae"
+  },
+  {
+   "code": "PEA",
+   "display": "Prevotella enoeca"
+  },
+  {
+   "code": "PHP",
+   "display": "Prevotella heparinolytica"
+  },
+  {
+   "code": "PNG",
+   "display": "Prevotella nigrescens"
+  },
+  {
+   "code": "POU",
+   "display": "Prevotella oulorum"
+  },
+  {
+   "code": "PRT",
+   "display": "Prevotella sp."
+  },
+  {
+   "code": "PTA",
+   "display": "Prevotella tannerae"
+  },
+  {
+   "code": "PVR",
+   "display": "Prevotella veroralis"
+  },
+  {
+   "code": "PZG",
+   "display": "Prevotella zoogleoformans"
+  },
+  {
+   "code": "PAD",
+   "display": "Propionibacterium avidum"
+  },
+  {
+   "code": "PFR",
+   "display": "Propionibacterium freudenreichii"
+  },
+  {
+   "code": "PGR",
+   "display": "Propionibacterium granulosum"
+  },
+  {
+   "code": "PJE",
+   "display": "Propionibacterium jensenii"
+  },
+  {
+   "code": "PLM",
+   "display": "Propionibacterium lymphophilum"
+  },
+  {
+   "code": "PRP",
+   "display": "Propionibacterium sp."
+  },
+  {
+   "code": "PTH",
+   "display": "Propionibacterium thoenii"
+  },
+  {
+   "code": "PRN",
+   "display": "Propionigenium sp."
+  },
+  {
+   "code": "PRS",
+   "display": "Propionispira sp."
+  },
+  {
+   "code": "PHS",
+   "display": "Proteus hauseri"
+  },
+  {
+   "code": "PAL",
+   "display": "Proteus inconstans"
+  },
+  {
+   "code": "PMI",
+   "display": "Proteus mirabilis"
+  },
+  {
+   "code": "PPE",
+   "display": "Proteus penneri"
+  },
+  {
+   "code": "PRE",
+   "display": "Proteus rettgeri"
+  },
+  {
+   "code": "PR-",
+   "display": "Proteus sp."
+  },
+  {
+   "code": "PVU",
+   "display": "Proteus vulgaris"
+  },
+  {
+   "code": "PRC",
+   "display": "Prototheca sp."
+  },
+  {
+   "code": "PSG",
+   "display": "Prototheca stagnorum"
+  },
+  {
+   "code": "PWI",
+   "display": "Prototheca wickerhamii"
+  },
+  {
+   "code": "PZO",
+   "display": "Prototheca zopfii"
+  },
+  {
+   "code": "PHE",
+   "display": "Providencia heimbachae"
+  },
+  {
+   "code": "PRG",
+   "display": "Providencia rustigianii"
+  },
+  {
+   "code": "PRV",
+   "display": "Providencia sp."
+  },
+  {
+   "code": "PST",
+   "display": "Providencia stuartii"
+  },
+  {
+   "code": "PSU",
+   "display": "Providencia stuartii urea +"
+  },
+  {
+   "code": "PBO",
+   "display": "Pseudallescheria boydii"
+  },
+  {
+   "code": "PSA",
+   "display": "Pseudallescheria sp."
+  },
+  {
+   "code": "PLR",
+   "display": "Pseudochaetosphaeronema larense"
+  },
+  {
+   "code": "PSC",
+   "display": "Pseudochaetosphaeronema sp."
+  },
+  {
+   "code": "PAE",
+   "display": "Pseudomonas aeruginosa"
+  },
+  {
+   "code": "PAG",
+   "display": "Pseudomonas alcaligenes"
+  },
+  {
+   "code": "PSE",
+   "display": "Pseudomonas anguilliseptica"
+  },
+  {
+   "code": "PCH",
+   "display": "Pseudomonas chlororaphis"
+  },
+  {
+   "code": "PFL",
+   "display": "Pseudomonas fluorescens"
+  },
+  {
+   "code": "PSI",
+   "display": "Pseudomonas indigofera"
+  },
+  {
+   "code": "POD",
+   "display": "Pseudomonas otitidis"
+  },
+  {
+   "code": "PPG",
+   "display": "Pseudomonas pertucinogena"
+  },
+  {
+   "code": "PPL",
+   "display": "Pseudomonas pseudoalcaligenes"
+  },
+  {
+   "code": "PPU",
+   "display": "Pseudomonas putida"
+  },
+  {
+   "code": "PS-",
+   "display": "Pseudomonas sp."
+  },
+  {
+   "code": "PG1",
+   "display": "Pseudomonas sp. group 1"
+  },
+  {
+   "code": "PVD",
+   "display": "Pseudomonas viridiflava"
+  },
+  {
+   "code": "PUP",
+   "display": "Pseudopropionibacterium sp."
+  },
+  {
+   "code": "PIM",
+   "display": "Psychrobacter immobilis"
+  },
+  {
+   "code": "PSY",
+   "display": "Psychrobacter sp."
+  },
+  {
+   "code": "PHT",
+   "display": "Pthirus sp."
+  },
+  {
+   "code": "PIS",
+   "display": "Pythium insidiosum"
+  },
+  {
+   "code": "PYT",
+   "display": "Pythium sp."
+  },
+  {
+   "code": "RAV",
+   "display": "Rabies virus"
+  },
+  {
+   "code": "RAQ",
+   "display": "Rahnella aquatilis"
+  },
+  {
+   "code": "RAH",
+   "display": "Rahnella sp."
+  },
+  {
+   "code": "REU",
+   "display": "Ralstonia euphora"
+  },
+  {
+   "code": "RAL",
+   "display": "Ralstonia sp."
+  },
+  {
+   "code": "RAC",
+   "display": "Ramichloridium sp."
+  },
+  {
+   "code": "RAM",
+   "display": "Ramularia sp."
+  },
+  {
+   "code": "RAO",
+   "display": "Raoultella sp."
+  },
+  {
+   "code": "REJ",
+   "display": "Rejected sample"
+  },
+  {
+   "code": "RES",
+   "display": "Renibacterium salmoninarum"
+  },
+  {
+   "code": "REN",
+   "display": "Renibacterium sp."
+  },
+  {
+   "code": "REV",
+   "display": "Reovirus"
+  },
+  {
+   "code": "RSV",
+   "display": "Respiratory syncytial virus"
+  },
+  {
+   "code": "RIN",
+   "display": "Retortamonas intestinalis"
+  },
+  {
+   "code": "RET",
+   "display": "Retortamonas sp."
+  },
+  {
+   "code": "RAS",
+   "display": "Rhinocladiella aquaspersa"
+  },
+  {
+   "code": "RHN",
+   "display": "Rhinocladiella sp."
+  },
+  {
+   "code": "RHV",
+   "display": "Rhinovirus"
+  },
+  {
+   "code": "RZO",
+   "display": "Rhizobium sp."
+  },
+  {
+   "code": "RHI",
+   "display": "Rhizomucor sp."
+  },
+  {
+   "code": "RAR",
+   "display": "Rhizopus arrhizus"
+  },
+  {
+   "code": "ROL",
+   "display": "Rhizopus microsporus"
+  },
+  {
+   "code": "RRZ",
+   "display": "Rhizopus microsporus var. rhizopodiformis"
+  },
+  {
+   "code": "ROR",
+   "display": "Rhizopus oryzae"
+  },
+  {
+   "code": "RHZ",
+   "display": "Rhizopus sp."
+  },
+  {
+   "code": "RST",
+   "display": "Rhizopus stolonifer"
+  },
+  {
+   "code": "RRH",
+   "display": "Rhodococcus rhodochrous"
+  },
+  {
+   "code": "RHD",
+   "display": "Rhodococcus sp."
+  },
+  {
+   "code": "RGL",
+   "display": "Rhodotorula glutinis"
+  },
+  {
+   "code": "RMU",
+   "display": "Rhodotorula mucilaginosa"
+  },
+  {
+   "code": "RPI",
+   "display": "Rhodotorula pilimanae"
+  },
+  {
+   "code": "RRU",
+   "display": "Rhodotorula rubra"
+  },
+  {
+   "code": "RHO",
+   "display": "Rhodotorula sp."
+  },
+  {
+   "code": "RAK",
+   "display": "Rickettsia akari"
+  },
+  {
+   "code": "RCO",
+   "display": "Rickettsia conorii"
+  },
+  {
+   "code": "RJA",
+   "display": "Rickettsia japonica"
+  },
+  {
+   "code": "RPW",
+   "display": "Rickettsia prowazekii"
+  },
+  {
+   "code": "RRI",
+   "display": "Rickettsia rickettsii"
+  },
+  {
+   "code": "RIC",
+   "display": "Rickettsia sp."
+  },
+  {
+   "code": "RIE",
+   "display": "Riemerella sp."
+  },
+  {
+   "code": "RIK",
+   "display": "Rikenella sp."
+  },
+  {
+   "code": "ROB",
+   "display": "Roseburia sp."
+  },
+  {
+   "code": "RCE",
+   "display": "Roseomonas cervicalis"
+  },
+  {
+   "code": "RO4",
+   "display": "Roseomonas genomospecies 4"
+  },
+  {
+   "code": "RO5",
+   "display": "Roseomonas genomospecies 5"
+  },
+  {
+   "code": "RO6",
+   "display": "Roseomonas genomospecies 6"
+  },
+  {
+   "code": "RGI",
+   "display": "Roseomonas gilardii"
+  },
+  {
+   "code": "ROS",
+   "display": "Roseomonas sp."
+  },
+  {
+   "code": "RTV",
+   "display": "Rotavirus"
+  },
+  {
+   "code": "RDE",
+   "display": "Rothia dentocariosa"
+  },
+  {
+   "code": "SMG",
+   "display": "Rothia mucilaginosa"
+  },
+  {
+   "code": "ROT",
+   "display": "Rothia sp."
+  },
+  {
+   "code": "RUV",
+   "display": "Rubella virus"
+  },
+  {
+   "code": "RUB",
+   "display": "Ruminobacter sp."
+  },
+  {
+   "code": "RUM",
+   "display": "Ruminococcus sp."
+  },
+  {
+   "code": "SRV",
+   "display": "SARS coronavirus"
+  },
+  {
+   "code": "SMP",
+   "display": "Saccharomonospora sp."
+  },
+  {
+   "code": "SVD",
+   "display": "Saccharomonospora viridis"
+  },
+  {
+   "code": "SCE",
+   "display": "Saccharomyces cerevisiae"
+  },
+  {
+   "code": "SMY",
+   "display": "Saccharomyces sp."
+  },
+  {
+   "code": "SAH",
+   "display": "Saccharopolyspora sp."
+  },
+  {
+   "code": "AOV",
+   "display": "Salmonella Abortusovis"
+  },
+  {
+   "code": "SAG",
+   "display": "Salmonella Agona"
+  },
+  {
+   "code": "AMS",
+   "display": "Salmonella Amsterdam"
+  },
+  {
+   "code": "SLA",
+   "display": "Salmonella Anatum"
+  },
+  {
+   "code": "SAV",
+   "display": "Salmonella Arechavaleta"
+  },
+  {
+   "code": "SBA",
+   "display": "Salmonella Bareilly"
+  },
+  {
+   "code": "SBL",
+   "display": "Salmonella Blockley"
+  },
+  {
+   "code": "BON",
+   "display": "Salmonella Bonn"
+  },
+  {
+   "code": "SBM",
+   "display": "Salmonella Bovismorbificans"
+  },
+  {
+   "code": "SBR",
+   "display": "Salmonella Braenderup"
+  },
+  {
+   "code": "SBN",
+   "display": "Salmonella Brandenburg"
+  },
+  {
+   "code": "BRD",
+   "display": "Salmonella Bredeney"
+  },
+  {
+   "code": "CER",
+   "display": "Salmonella Cerro"
+  },
+  {
+   "code": "HES",
+   "display": "Salmonella Chester"
+  },
+  {
+   "code": "SCH",
+   "display": "Salmonella Choleraesuis"
+  },
+  {
+   "code": "COP",
+   "display": "Salmonella Copenhagen"
+  },
+  {
+   "code": "DRB",
+   "display": "Salmonella Derby"
+  },
+  {
+   "code": "SDU",
+   "display": "Salmonella Dublin"
+  },
+  {
+   "code": "EMK",
+   "display": "Salmonella Emek"
+  },
+  {
+   "code": "SEN",
+   "display": "Salmonella Enteritidis"
+  },
+  {
+   "code": "SFA",
+   "display": "Salmonella Falkensee"
+  },
+  {
+   "code": "SGA",
+   "display": "Salmonella Gallinarum"
+  },
+  {
+   "code": "SGP",
+   "display": "Salmonella Gallinarum biovar Pullorum"
+  },
+  {
+   "code": "SGI",
+   "display": "Salmonella Give"
+  },
+  {
+   "code": "GOL",
+   "display": "Salmonella Goldcoast"
+  },
+  {
+   "code": "G51",
+   "display": "Salmonella Group 51 (O:51)"
+  },
+  {
+   "code": "G52",
+   "display": "Salmonella Group 52 (O:52)"
+  },
+  {
+   "code": "G53",
+   "display": "Salmonella Group 53 (O:53)"
+  },
+  {
+   "code": "G54",
+   "display": "Salmonella Group 54 (O:54)"
+  },
+  {
+   "code": "G55",
+   "display": "Salmonella Group 55 (O:55)"
+  },
+  {
+   "code": "G56",
+   "display": "Salmonella Group 56 (O:56)"
+  },
+  {
+   "code": "G57",
+   "display": "Salmonella Group 57 (O:57)"
+  },
+  {
+   "code": "G58",
+   "display": "Salmonella Group 58 (O:58)"
+  },
+  {
+   "code": "G59",
+   "display": "Salmonella Group 59 (O:59)"
+  },
+  {
+   "code": "G60",
+   "display": "Salmonella Group 60 (O:60)"
+  },
+  {
+   "code": "G61",
+   "display": "Salmonella Group 61 (O:61)"
+  },
+  {
+   "code": "G62",
+   "display": "Salmonella Group 62 (O:62)"
+  },
+  {
+   "code": "G63",
+   "display": "Salmonella Group 63 (O:63)"
+  },
+  {
+   "code": "G64",
+   "display": "Salmonella Group 64 (O:64)"
+  },
+  {
+   "code": "G65",
+   "display": "Salmonella Group 65 (O:65)"
+  },
+  {
+   "code": "G66",
+   "display": "Salmonella Group 66 (O:66)"
+  },
+  {
+   "code": "G67",
+   "display": "Salmonella Group 67 (O:67)"
+  },
+  {
+   "code": "GRA",
+   "display": "Salmonella Group A (O:2)"
+  },
+  {
+   "code": "GRB",
+   "display": "Salmonella Group B (O:4)"
+  },
+  {
+   "code": "GRC",
+   "display": "Salmonella Group C (C1-C4, C2-C3)"
+  },
+  {
+   "code": "GC1",
+   "display": "Salmonella Group C1 (O:7)"
+  },
+  {
+   "code": "GC2",
+   "display": "Salmonella Group C2 (O:6,8)"
+  },
+  {
+   "code": "GC3",
+   "display": "Salmonella Group C3 (O:8)"
+  },
+  {
+   "code": "GC4",
+   "display": "Salmonella Group C4 (O:7,14)"
+  },
+  {
+   "code": "GRD",
+   "display": "Salmonella Group D (D1, D2, D3)"
+  },
+  {
+   "code": "GD1",
+   "display": "Salmonella Group D1 (O:9)"
+  },
+  {
+   "code": "GD2",
+   "display": "Salmonella Group D2 (O:9,46)"
+  },
+  {
+   "code": "GD3",
+   "display": "Salmonella Group D3 (O:9,46,27)"
+  },
+  {
+   "code": "GRE",
+   "display": "Salmonella Group E (E1-E2-E3)"
+  },
+  {
+   "code": "GE1",
+   "display": "Salmonella Group E1 (O:3,10)"
+  },
+  {
+   "code": "GE2",
+   "display": "Salmonella Group E2 (O:3,15)"
+  },
+  {
+   "code": "GE3",
+   "display": "Salmonella Group E3 (O:3,15,14)"
+  },
+  {
+   "code": "GE4",
+   "display": "Salmonella Group E4 (O:1,3,19)"
+  },
+  {
+   "code": "GRF",
+   "display": "Salmonella Group F (O:11)"
+  },
+  {
+   "code": "GRG",
+   "display": "Salmonella Group G (O:13) (G1-G2)"
+  },
+  {
+   "code": "GG1",
+   "display": "Salmonella Group G1 (O:13,22)"
+  },
+  {
+   "code": "GG2",
+   "display": "Salmonella Group G2 (O:13,23)"
+  },
+  {
+   "code": "GRH",
+   "display": "Salmonella Group H (O:6,14)"
+  },
+  {
+   "code": "GRI",
+   "display": "Salmonella Group I (O:16)"
+  },
+  {
+   "code": "GRJ",
+   "display": "Salmonella Group J (O:17)"
+  },
+  {
+   "code": "GRK",
+   "display": "Salmonella Group K (O:18)"
+  },
+  {
+   "code": "GRL",
+   "display": "Salmonella Group L (O:21)"
+  },
+  {
+   "code": "GRM",
+   "display": "Salmonella Group M (O:28)"
+  },
+  {
+   "code": "GRN",
+   "display": "Salmonella Group N (O:30)"
+  },
+  {
+   "code": "GRO",
+   "display": "Salmonella Group O (O:35)"
+  },
+  {
+   "code": "GRP",
+   "display": "Salmonella Group P (O:38)"
+  },
+  {
+   "code": "GRQ",
+   "display": "Salmonella Group Q (O:39)"
+  },
+  {
+   "code": "GRR",
+   "display": "Salmonella Group R (O:40)"
+  },
+  {
+   "code": "GRS",
+   "display": "Salmonella Group S (O:41)"
+  },
+  {
+   "code": "GRT",
+   "display": "Salmonella Group T (O:42)"
+  },
+  {
+   "code": "GRU",
+   "display": "Salmonella Group U (O:43)"
+  },
+  {
+   "code": "GRV",
+   "display": "Salmonella Group V (O:44)"
+  },
+  {
+   "code": "GRW",
+   "display": "Salmonella Group W (O:45)"
+  },
+  {
+   "code": "GRX",
+   "display": "Salmonella Group X (O:47)"
+  },
+  {
+   "code": "GRY",
+   "display": "Salmonella Group Y (O:48)"
+  },
+  {
+   "code": "GRZ",
+   "display": "Salmonella Group Z (O:50)"
+  },
+  {
+   "code": "SHR",
+   "display": "Salmonella Hadar"
+  },
+  {
+   "code": "SHG",
+   "display": "Salmonella Heidelberg"
+  },
+  {
+   "code": "SAC",
+   "display": "Salmonella Hirschfeldii (S. Paratyphi C)"
+  },
+  {
+   "code": "IND",
+   "display": "Salmonella Indiana"
+  },
+  {
+   "code": "INF",
+   "display": "Salmonella Infantis"
+  },
+  {
+   "code": "ISA",
+   "display": "Salmonella Isangi"
+  },
+  {
+   "code": "JAV",
+   "display": "Salmonella Java (Salmonella Paratyphi B)"
+  },
+  {
+   "code": "SJV",
+   "display": "Salmonella Javiana"
+  },
+  {
+   "code": "SKA",
+   "display": "Salmonella Kaapstad"
+  },
+  {
+   "code": "SKD",
+   "display": "Salmonella Kedougou"
+  },
+  {
+   "code": "SKE",
+   "display": "Salmonella Kentucky"
+  },
+  {
+   "code": "SKO",
+   "display": "Salmonella Kottbus"
+  },
+  {
+   "code": "SKR",
+   "display": "Salmonella Krefeld"
+  },
+  {
+   "code": "LAR",
+   "display": "Salmonella Larochelle"
+  },
+  {
+   "code": "SLX",
+   "display": "Salmonella Lexington"
+  },
+  {
+   "code": "SLI",
+   "display": "Salmonella Litchfield"
+  },
+  {
+   "code": "SLV",
+   "display": "Salmonella Livingstone"
+  },
+  {
+   "code": "LOM",
+   "display": "Salmonella Lomita"
+  },
+  {
+   "code": "SLO",
+   "display": "Salmonella London"
+  },
+  {
+   "code": "SMH",
+   "display": "Salmonella Manhattan"
+  },
+  {
+   "code": "SMB",
+   "display": "Salmonella Mbandaka"
+  },
+  {
+   "code": "SMO",
+   "display": "Salmonella Montevideo"
+  },
+  {
+   "code": "SMN",
+   "display": "Salmonella Muenchen"
+  },
+  {
+   "code": "SMR",
+   "display": "Salmonella Muenster"
+  },
+  {
+   "code": "SNA",
+   "display": "Salmonella Narashino"
+  },
+  {
+   "code": "SNE",
+   "display": "Salmonella Newport"
+  },
+  {
+   "code": "SOH",
+   "display": "Salmonella Ohio"
+  },
+  {
+   "code": "SOR",
+   "display": "Salmonella Oranienburg"
+  },
+  {
+   "code": "SOI",
+   "display": "Salmonella Orion"
+  },
+  {
+   "code": "SOU",
+   "display": "Salmonella Ouakam"
+  },
+  {
+   "code": "SPM",
+   "display": "Salmonella Panama"
+  },
+  {
+   "code": "PTY",
+   "display": "Salmonella Paratyphi"
+  },
+  {
+   "code": "SAA",
+   "display": "Salmonella Paratyphi A"
+  },
+  {
+   "code": "SAB",
+   "display": "Salmonella Paratyphi B"
+  },
+  {
+   "code": "SPO",
+   "display": "Salmonella Poona"
+  },
+  {
+   "code": "POT",
+   "display": "Salmonella Potsdam"
+  },
+  {
+   "code": "SRE",
+   "display": "Salmonella Reading"
+  },
+  {
+   "code": "SRI",
+   "display": "Salmonella Rissen"
+  },
+  {
+   "code": "PAU",
+   "display": "Salmonella Saintpaul"
+  },
+  {
+   "code": "SSD",
+   "display": "Salmonella Sandiego"
+  },
+  {
+   "code": "SSW",
+   "display": "Salmonella Schwarzengrund"
+  },
+  {
+   "code": "SSE",
+   "display": "Salmonella Senftenberg"
+  },
+  {
+   "code": "SSY",
+   "display": "Salmonella Stanley"
+  },
+  {
+   "code": "TNS",
+   "display": "Salmonella Tennessee"
+  },
+  {
+   "code": "THM",
+   "display": "Salmonella Thompson"
+  },
+  {
+   "code": "SAT",
+   "display": "Salmonella Typhi"
+  },
+  {
+   "code": "SAM",
+   "display": "Salmonella Typhimurium"
+  },
+  {
+   "code": "104",
+   "display": "Salmonella Typhimurium DT 104"
+  },
+  {
+   "code": "SVC",
+   "display": "Salmonella Typhimurium var. Copenhagen"
+  },
+  {
+   "code": "STS",
+   "display": "Salmonella Typhisuis"
+  },
+  {
+   "code": "SVR",
+   "display": "Salmonella Virchow"
+  },
+  {
+   "code": "SVG",
+   "display": "Salmonella Virginia"
+  },
+  {
+   "code": "SWD",
+   "display": "Salmonella Wandsworth"
+  },
+  {
+   "code": "SWE",
+   "display": "Salmonella Weltevreden"
+  },
+  {
+   "code": "SWY",
+   "display": "Salmonella Weybridge"
+  },
+  {
+   "code": "SWO",
+   "display": "Salmonella Worthington"
+  },
+  {
+   "code": "SBG",
+   "display": "Salmonella bongori"
+  },
+  {
+   "code": "ARI",
+   "display": "Salmonella enterica ss. arizonae (Subgroup IIIa)"
+  },
+  {
+   "code": "SDI",
+   "display": "Salmonella enterica ss. diarizonae (Subgroup IIIb)"
+  },
+  {
+   "code": "SEC",
+   "display": "Salmonella enterica ss. enterica (Subgroup I)"
+  },
+  {
+   "code": "SHT",
+   "display": "Salmonella enterica ss. houtenae (Subgroup IV)"
+  },
+  {
+   "code": "SII",
+   "display": "Salmonella enterica ss. indica (Subgoup VI)"
+  },
+  {
+   "code": "SSL",
+   "display": "Salmonella enterica ss. salamae (Subgroup II)"
+  },
+  {
+   "code": "SAL",
+   "display": "Salmonella sp."
+  },
+  {
+   "code": "SRO",
+   "display": "Salmonella sp. (rough)"
+  },
+  {
+   "code": "SNT",
+   "display": "Salmonella sp., non-Typhi"
+  },
+  {
+   "code": "SNO",
+   "display": "Salmonella sp., nontypable"
+  },
+  {
+   "code": "STY",
+   "display": "Salmonella sp., typhoidal"
+  },
+  {
+   "code": "SUN",
+   "display": "Salmonella sp., unnamed"
+  },
+  {
+   "code": "SBT",
+   "display": "Salmonella subterranea"
+  },
+  {
+   "code": "SAR",
+   "display": "Sarcina sp."
+  },
+  {
+   "code": "SVN",
+   "display": "Sarcina ventriculi"
+  },
+  {
+   "code": "SIK",
+   "display": "Sarcinosporon inkin"
+  },
+  {
+   "code": "SAO",
+   "display": "Sarcinosporon sp."
+  },
+  {
+   "code": "SHS",
+   "display": "Sarcocystis hominis"
+  },
+  {
+   "code": "SAY",
+   "display": "Sarcocystis sp."
+  },
+  {
+   "code": "SSU",
+   "display": "Sarcocystis suihominis"
+  },
+  {
+   "code": "SSS",
+   "display": "Sarcoptes scabiei"
+  },
+  {
+   "code": "SRP",
+   "display": "Sarcoptes sp."
+  },
+  {
+   "code": "SIF",
+   "display": "Scedosporium inflatum"
+  },
+  {
+   "code": "SCD",
+   "display": "Scedosporium sp."
+  },
+  {
+   "code": "SHM",
+   "display": "Schistosoma haematobium"
+  },
+  {
+   "code": "SIC",
+   "display": "Schistosoma intercalatum"
+  },
+  {
+   "code": "SJA",
+   "display": "Schistosoma japonicum"
+  },
+  {
+   "code": "SCM",
+   "display": "Schistosoma mansoni"
+  },
+  {
+   "code": "SME",
+   "display": "Schistosoma mekongi"
+  },
+  {
+   "code": "SCI",
+   "display": "Schistosoma sp."
+  },
+  {
+   "code": "SCS",
+   "display": "Scolecobasidium constrictum"
+  },
+  {
+   "code": "SHU",
+   "display": "Scolecobasidium humicola"
+  },
+  {
+   "code": "SCB",
+   "display": "Scolecobasidium sp."
+  },
+  {
+   "code": "SCO",
+   "display": "Scopulariopsis sp."
+  },
+  {
+   "code": "SCY",
+   "display": "Scytalidium sp."
+  },
+  {
+   "code": "SEB",
+   "display": "Sebaldella sp."
+  },
+  {
+   "code": "SEA",
+   "display": "Selenomonas artemidis"
+  },
+  {
+   "code": "SDN",
+   "display": "Selenomonas dianae"
+  },
+  {
+   "code": "SFL",
+   "display": "Selenomonas flueggei"
+  },
+  {
+   "code": "SIX",
+   "display": "Selenomonas infelix"
+  },
+  {
+   "code": "SNX",
+   "display": "Selenomonas noxia"
+  },
+  {
+   "code": "SEL",
+   "display": "Selenomonas sp."
+  },
+  {
+   "code": "SLS",
+   "display": "Selenomonas sputigena"
+  },
+  {
+   "code": "SPD",
+   "display": "Sepedonium sp."
+  },
+  {
+   "code": "SEM",
+   "display": "Serratia entomophila"
+  },
+  {
+   "code": "SFI",
+   "display": "Serratia ficaria"
+  },
+  {
+   "code": "SFO",
+   "display": "Serratia fonticola"
+  },
+  {
+   "code": "SGR",
+   "display": "Serratia grimesii"
+  },
+  {
+   "code": "SLQ",
+   "display": "Serratia liquefaciens"
+  },
+  {
+   "code": "SMA",
+   "display": "Serratia marcescens"
+  },
+  {
+   "code": "SOD",
+   "display": "Serratia odorifera"
+  },
+  {
+   "code": "SO1",
+   "display": "Serratia odorifera 1"
+  },
+  {
+   "code": "SO2",
+   "display": "Serratia odorifera 2"
+  },
+  {
+   "code": "SPL",
+   "display": "Serratia plymuthica"
+  },
+  {
+   "code": "SPC",
+   "display": "Serratia proteamaculans"
+  },
+  {
+   "code": "SQV",
+   "display": "Serratia proteamaculans ss. quinovora"
+  },
+  {
+   "code": "SRU",
+   "display": "Serratia rubidaea"
+  },
+  {
+   "code": "SE-",
+   "display": "Serratia sp."
+  },
+  {
+   "code": "SWL",
+   "display": "Shewanella algae"
+  },
+  {
+   "code": "SBE",
+   "display": "Shewanella benthica"
+  },
+  {
+   "code": "SHE",
+   "display": "Shewanella sp."
+  },
+  {
+   "code": "SHC",
+   "display": "Shigella boydii"
+  },
+  {
+   "code": "B01",
+   "display": "Shigella boydii serotype 1"
+  },
+  {
+   "code": "B10",
+   "display": "Shigella boydii serotype 10"
+  },
+  {
+   "code": "B11",
+   "display": "Shigella boydii serotype 11"
+  },
+  {
+   "code": "B12",
+   "display": "Shigella boydii serotype 12"
+  },
+  {
+   "code": "B13",
+   "display": "Shigella boydii serotype 13"
+  },
+  {
+   "code": "B14",
+   "display": "Shigella boydii serotype 14"
+  },
+  {
+   "code": "B15",
+   "display": "Shigella boydii serotype 15"
+  },
+  {
+   "code": "B16",
+   "display": "Shigella boydii serotype 16"
+  },
+  {
+   "code": "B17",
+   "display": "Shigella boydii serotype 17"
+  },
+  {
+   "code": "B18",
+   "display": "Shigella boydii serotype 18"
+  },
+  {
+   "code": "B02",
+   "display": "Shigella boydii serotype 2"
+  },
+  {
+   "code": "B03",
+   "display": "Shigella boydii serotype 3"
+  },
+  {
+   "code": "B04",
+   "display": "Shigella boydii serotype 4"
+  },
+  {
+   "code": "B05",
+   "display": "Shigella boydii serotype 5"
+  },
+  {
+   "code": "B06",
+   "display": "Shigella boydii serotype 6"
+  },
+  {
+   "code": "B07",
+   "display": "Shigella boydii serotype 7"
+  },
+  {
+   "code": "B08",
+   "display": "Shigella boydii serotype 8"
+  },
+  {
+   "code": "B09",
+   "display": "Shigella boydii serotype 9"
+  },
+  {
+   "code": "BXX",
+   "display": "Shigella boydii, nontypable"
+  },
+  {
+   "code": "SHA",
+   "display": "Shigella dysenteriae"
+  },
+  {
+   "code": "SD1",
+   "display": "Shigella dysenteriae Type 1"
+  },
+  {
+   "code": "D01",
+   "display": "Shigella dysenteriae serotype 1"
+  },
+  {
+   "code": "D10",
+   "display": "Shigella dysenteriae serotype 10"
+  },
+  {
+   "code": "D11",
+   "display": "Shigella dysenteriae serotype 11"
+  },
+  {
+   "code": "D12",
+   "display": "Shigella dysenteriae serotype 12"
+  },
+  {
+   "code": "D13",
+   "display": "Shigella dysenteriae serotype 13"
+  },
+  {
+   "code": "D14",
+   "display": "Shigella dysenteriae serotype 14"
+  },
+  {
+   "code": "D15",
+   "display": "Shigella dysenteriae serotype 15"
+  },
+  {
+   "code": "D02",
+   "display": "Shigella dysenteriae serotype 2"
+  },
+  {
+   "code": "D03",
+   "display": "Shigella dysenteriae serotype 3"
+  },
+  {
+   "code": "D04",
+   "display": "Shigella dysenteriae serotype 4"
+  },
+  {
+   "code": "D05",
+   "display": "Shigella dysenteriae serotype 5"
+  },
+  {
+   "code": "D06",
+   "display": "Shigella dysenteriae serotype 6"
+  },
+  {
+   "code": "D07",
+   "display": "Shigella dysenteriae serotype 7"
+  },
+  {
+   "code": "D08",
+   "display": "Shigella dysenteriae serotype 8"
+  },
+  {
+   "code": "D09",
+   "display": "Shigella dysenteriae serotype 9"
+  },
+  {
+   "code": "DXX",
+   "display": "Shigella dysenteriae, nontypable"
+  },
+  {
+   "code": "SN1",
+   "display": "Shigella dysenteriae, not Type 1"
+  },
+  {
+   "code": "SHB",
+   "display": "Shigella flexneri"
+  },
+  {
+   "code": "F01",
+   "display": "Shigella flexneri serotype 1"
+  },
+  {
+   "code": "F1A",
+   "display": "Shigella flexneri serotype 1a"
+  },
+  {
+   "code": "F1B",
+   "display": "Shigella flexneri serotype 1b"
+  },
+  {
+   "code": "F02",
+   "display": "Shigella flexneri serotype 2"
+  },
+  {
+   "code": "F2A",
+   "display": "Shigella flexneri serotype 2a"
+  },
+  {
+   "code": "F2B",
+   "display": "Shigella flexneri serotype 2b"
+  },
+  {
+   "code": "F03",
+   "display": "Shigella flexneri serotype 3"
+  },
+  {
+   "code": "F3A",
+   "display": "Shigella flexneri serotype 3a"
+  },
+  {
+   "code": "F3B",
+   "display": "Shigella flexneri serotype 3b"
+  },
+  {
+   "code": "F04",
+   "display": "Shigella flexneri serotype 4"
+  },
+  {
+   "code": "F4A",
+   "display": "Shigella flexneri serotype 4a"
+  },
+  {
+   "code": "F4B",
+   "display": "Shigella flexneri serotype 4b"
+  },
+  {
+   "code": "F4C",
+   "display": "Shigella flexneri serotype 4c"
+  },
+  {
+   "code": "F05",
+   "display": "Shigella flexneri serotype 5"
+  },
+  {
+   "code": "F5A",
+   "display": "Shigella flexneri serotype 5a"
+  },
+  {
+   "code": "F5B",
+   "display": "Shigella flexneri serotype 5b"
+  },
+  {
+   "code": "F06",
+   "display": "Shigella flexneri serotype 6"
+  },
+  {
+   "code": "FXX",
+   "display": "Shigella flexneri, nontypable"
+  },
+  {
+   "code": "479",
+   "display": "Shigella flexneri, serogroup AA479"
+  },
+  {
+   "code": "FVX",
+   "display": "Shigella flexneri, variant X"
+  },
+  {
+   "code": "FVY",
+   "display": "Shigella flexneri, variant Y"
+  },
+  {
+   "code": "SHD",
+   "display": "Shigella sonnei"
+  },
+  {
+   "code": "S01",
+   "display": "Shigella sonnei Form I"
+  },
+  {
+   "code": "S02",
+   "display": "Shigella sonnei Form II"
+  },
+  {
+   "code": "SHI",
+   "display": "Shigella sp."
+  },
+  {
+   "code": "SND",
+   "display": "Shigella, non-dysenteriae"
+  },
+  {
+   "code": "SIM",
+   "display": "Simonsiella sp."
+  },
+  {
+   "code": "SOM",
+   "display": "Solobacterium moorei"
+  },
+  {
+   "code": "SOB",
+   "display": "Solobacterium sp."
+  },
+  {
+   "code": "SPB",
+   "display": "Sphingobacterium sp."
+  },
+  {
+   "code": "SPH",
+   "display": "Sphingomonas sp."
+  },
+  {
+   "code": "SYC",
+   "display": "Spilopsyllus cuniculi"
+  },
+  {
+   "code": "PSL",
+   "display": "Spilopsyllus sp."
+  },
+  {
+   "code": "SRM",
+   "display": "Spirillum minor"
+  },
+  {
+   "code": "SPR",
+   "display": "Spirillum sp."
+  },
+  {
+   "code": "SVO",
+   "display": "Spirillum volutans"
+  },
+  {
+   "code": "SLP",
+   "display": "Spirocerca lupi"
+  },
+  {
+   "code": "PIR",
+   "display": "Spirocerca sp."
+  },
+  {
+   "code": "SMD",
+   "display": "Spirometra mansonoides"
+  },
+  {
+   "code": "SPI",
+   "display": "Spirometra sp."
+  },
+  {
+   "code": "PNU",
+   "display": "Spironucleus sp."
+  },
+  {
+   "code": "SSC",
+   "display": "Sporobolomyces salmonicolor"
+  },
+  {
+   "code": "SPE",
+   "display": "Sporobolomyces sp."
+  },
+  {
+   "code": "SYD",
+   "display": "Sporopachydermia sp."
+  },
+  {
+   "code": "SSK",
+   "display": "Sporothrix schenckii"
+  },
+  {
+   "code": "SPX",
+   "display": "Sporothrix sp."
+  },
+  {
+   "code": "SPT",
+   "display": "Sporotrichum sp."
+  },
+  {
+   "code": "SBY",
+   "display": "Stachybotrys sp."
+  },
+  {
+   "code": "SEP",
+   "display": "Staphylococcus albus"
+  },
+  {
+   "code": "SRG",
+   "display": "Staphylococcus argenteus"
+  },
+  {
+   "code": "SAE",
+   "display": "Staphylococcus arlettae"
+  },
+  {
+   "code": "SAU",
+   "display": "Staphylococcus aureus"
+  },
+  {
+   "code": "SAI",
+   "display": "Staphylococcus auricularis"
+  },
+  {
+   "code": "SCA",
+   "display": "Staphylococcus capitis"
+  },
+  {
+   "code": "SUR",
+   "display": "Staphylococcus capitis ss. ureolyticus"
+  },
+  {
+   "code": "SCP",
+   "display": "Staphylococcus caprae"
+  },
+  {
+   "code": "SCU",
+   "display": "Staphylococcus carnosus"
+  },
+  {
+   "code": "SCG",
+   "display": "Staphylococcus chromogenes"
+  },
+  {
+   "code": "SLC",
+   "display": "Staphylococcus coagulans"
+  },
+  {
+   "code": "STC",
+   "display": "Staphylococcus cohnii"
+  },
+  {
+   "code": "SUL",
+   "display": "Staphylococcus cohnii ss. urealyticus"
+  },
+  {
+   "code": "SDE",
+   "display": "Staphylococcus delphini"
+  },
+  {
+   "code": "SEQ",
+   "display": "Staphylococcus equorum"
+  },
+  {
+   "code": "SFE",
+   "display": "Staphylococcus felis"
+  },
+  {
+   "code": "SGL",
+   "display": "Staphylococcus gallinarum"
+  },
+  {
+   "code": "SHL",
+   "display": "Staphylococcus haemolyticus"
+  },
+  {
+   "code": "SHO",
+   "display": "Staphylococcus hominis"
+  },
+  {
+   "code": "SNB",
+   "display": "Staphylococcus hominis ss. novobiosepticus"
+  },
+  {
+   "code": "SHY",
+   "display": "Staphylococcus hyicus"
+  },
+  {
+   "code": "SIT",
+   "display": "Staphylococcus intermedius"
+  },
+  {
+   "code": "SKL",
+   "display": "Staphylococcus kloosii"
+  },
+  {
+   "code": "SLE",
+   "display": "Staphylococcus lentus"
+  },
+  {
+   "code": "SLU",
+   "display": "Staphylococcus lugdunensis"
+  },
+  {
+   "code": "SMS",
+   "display": "Staphylococcus muscae"
+  },
+  {
+   "code": "STT",
+   "display": "Staphylococcus pasteuri"
+  },
+  {
+   "code": "SPS",
+   "display": "Staphylococcus piscifermentans"
+  },
+  {
+   "code": "PSD",
+   "display": "Staphylococcus pseudintermedius"
+  },
+  {
+   "code": "SPV",
+   "display": "Staphylococcus pulvereri"
+  },
+  {
+   "code": "SAP",
+   "display": "Staphylococcus saprophyticus"
+  },
+  {
+   "code": "SSB",
+   "display": "Staphylococcus saprophyticus ss. bovis"
+  },
+  {
+   "code": "SSF",
+   "display": "Staphylococcus schleiferi ss. schleiferi"
+  },
+  {
+   "code": "SSR",
+   "display": "Staphylococcus sciuri"
+  },
+  {
+   "code": "SSI",
+   "display": "Staphylococcus simulans"
+  },
+  {
+   "code": "STA",
+   "display": "Staphylococcus sp."
+  },
+  {
+   "code": "SWA",
+   "display": "Staphylococcus warneri"
+  },
+  {
+   "code": "SXY",
+   "display": "Staphylococcus xylosus"
+  },
+  {
+   "code": "SCN",
+   "display": "Staphylococcus, coagulase negative"
+  },
+  {
+   "code": "SC+",
+   "display": "Staphylococcus, coagulase positive"
+  },
+  {
+   "code": "STL",
+   "display": "Stemphylium sp."
+  },
+  {
+   "code": "STU",
+   "display": "Stenella araguata"
+  },
+  {
+   "code": "STN",
+   "display": "Stenella sp."
+  },
+  {
+   "code": "STE",
+   "display": "Stenotrophomonas sp."
+  },
+  {
+   "code": "STO",
+   "display": "Stomatococcus sp."
+  },
+  {
+   "code": "SMF",
+   "display": "Streptobacillus moniliformis"
+  },
+  {
+   "code": "STB",
+   "display": "Streptobacillus sp."
+  },
+  {
+   "code": "SAD",
+   "display": "Streptococcus acidominimus"
+  },
+  {
+   "code": "SLY",
+   "display": "Streptococcus alactolyticus"
+  },
+  {
+   "code": "SAN",
+   "display": "Streptococcus anginosus"
+  },
+  {
+   "code": "SBO",
+   "display": "Streptococcus bovis"
+  },
+  {
+   "code": "SGY",
+   "display": "Streptococcus bovis I"
+  },
+  {
+   "code": "SB2",
+   "display": "Streptococcus bovis II"
+  },
+  {
+   "code": "SBV",
+   "display": "Streptococcus bovis-variant"
+  },
+  {
+   "code": "TCN",
+   "display": "Streptococcus canis"
+  },
+  {
+   "code": "SCT",
+   "display": "Streptococcus constellatus"
+  },
+  {
+   "code": "SCC",
+   "display": "Streptococcus criceti"
+  },
+  {
+   "code": "SRC",
+   "display": "Streptococcus crista"
+  },
+  {
+   "code": "SDO",
+   "display": "Streptococcus downei"
+  },
+  {
+   "code": "SDY",
+   "display": "Streptococcus dysgalactiae"
+  },
+  {
+   "code": "SQM",
+   "display": "Streptococcus dysgalactiae ss. equisimilis"
+  },
+  {
+   "code": "SQU",
+   "display": "Streptococcus equi"
+  },
+  {
+   "code": "SZO",
+   "display": "Streptococcus equi ss. zooepidemicus"
+  },
+  {
+   "code": "SQN",
+   "display": "Streptococcus equinus"
+  },
+  {
+   "code": "SFR",
+   "display": "Streptococcus ferus"
+  },
+  {
+   "code": "SPU",
+   "display": "Streptococcus gallolyticus ss. pasteurianus"
+  },
+  {
+   "code": "SGO",
+   "display": "Streptococcus gordonii"
+  },
+  {
+   "code": "SHF",
+   "display": "Streptococcus hyointestinalis"
+  },
+  {
+   "code": "SIA",
+   "display": "Streptococcus infantarius"
+  },
+  {
+   "code": "SIL",
+   "display": "Streptococcus infantarius ss. coli"
+  },
+  {
+   "code": "SIR",
+   "display": "Streptococcus infantarius ss. infantarius"
+  },
+  {
+   "code": "SEI",
+   "display": "Streptococcus infantis"
+  },
+  {
+   "code": "STD",
+   "display": "Streptococcus iniae"
+  },
+  {
+   "code": "SIN",
+   "display": "Streptococcus intermedius"
+  },
+  {
+   "code": "LUT",
+   "display": "Streptococcus lutetiensis"
+  },
+  {
+   "code": "SMC",
+   "display": "Streptococcus macacae"
+  },
+  {
+   "code": "SMI",
+   "display": "Streptococcus milleri"
+  },
+  {
+   "code": "SMT",
+   "display": "Streptococcus mitis"
+  },
+  {
+   "code": "SMU",
+   "display": "Streptococcus mutans"
+  },
+  {
+   "code": "SOL",
+   "display": "Streptococcus oralis"
+  },
+  {
+   "code": "SGU",
+   "display": "Streptococcus parasanguinis"
+  },
+  {
+   "code": "SPP",
+   "display": "Streptococcus pleomorphus"
+  },
+  {
+   "code": "SPN",
+   "display": "Streptococcus pneumoniae"
+  },
+  {
+   "code": "STI",
+   "display": "Streptococcus porcinus"
+  },
+  {
+   "code": "PDO",
+   "display": "Streptococcus pseudopneumoniae"
+  },
+  {
+   "code": "SPY",
+   "display": "Streptococcus pyogenes"
+  },
+  {
+   "code": "SRT",
+   "display": "Streptococcus ratti"
+  },
+  {
+   "code": "SSA",
+   "display": "Streptococcus salivarius"
+  },
+  {
+   "code": "SSN",
+   "display": "Streptococcus sanguinis"
+  },
+  {
+   "code": "SS1",
+   "display": "Streptococcus sanguinis I"
+  },
+  {
+   "code": "SS2",
+   "display": "Streptococcus sanguinis II"
+  },
+  {
+   "code": "SS3",
+   "display": "Streptococcus sanguinis III"
+  },
+  {
+   "code": "SSO",
+   "display": "Streptococcus sobrinus"
+  },
+  {
+   "code": "STR",
+   "display": "Streptococcus sp."
+  },
+  {
+   "code": "SUI",
+   "display": "Streptococcus suis"
+  },
+  {
+   "code": "STH",
+   "display": "Streptococcus thoraltensis"
+  },
+  {
+   "code": "SUB",
+   "display": "Streptococcus uberis"
+  },
+  {
+   "code": "SVE",
+   "display": "Streptococcus vestibularis"
+  },
+  {
+   "code": "SVI",
+   "display": "Streptococcus viridans, alpha-hem."
+  },
+  {
+   "code": "DXE",
+   "display": "Streptococcus, Group D (non-enterococcal)"
+  },
+  {
+   "code": "BSA",
+   "display": "Streptococcus, beta-haem. Group A"
+  },
+  {
+   "code": "BSB",
+   "display": "Streptococcus, beta-haem. Group B"
+  },
+  {
+   "code": "BSC",
+   "display": "Streptococcus, beta-haem. Group C"
+  },
+  {
+   "code": "BSE",
+   "display": "Streptococcus, beta-haem. Group E"
+  },
+  {
+   "code": "BSF",
+   "display": "Streptococcus, beta-haem. Group F"
+  },
+  {
+   "code": "BSG",
+   "display": "Streptococcus, beta-haem. Group G"
+  },
+  {
+   "code": "BS-",
+   "display": "Streptococcus, beta-haemolytic"
+  },
+  {
+   "code": "SXA",
+   "display": "Streptococcus, beta-haemolytic (not Group A)"
+  },
+  {
+   "code": "MAP",
+   "display": "Streptococcus, microaerophilic"
+  },
+  {
+   "code": "SGM",
+   "display": "Streptococcus, non-haemolytic (gamma)"
+  },
+  {
+   "code": "SNV",
+   "display": "Streptococcus, nutritionally variant"
+  },
+  {
+   "code": "SGS",
+   "display": "Streptomyces griseus"
+  },
+  {
+   "code": "SPG",
+   "display": "Streptomyces paraguayensis"
+  },
+  {
+   "code": "SSM",
+   "display": "Streptomyces somaliensis"
+  },
+  {
+   "code": "STP",
+   "display": "Streptomyces sp."
+  },
+  {
+   "code": "STG",
+   "display": "Strongyloides sp."
+  },
+  {
+   "code": "SST",
+   "display": "Strongyloides stercoralis"
+  },
+  {
+   "code": "SUA",
+   "display": "Succinimonas amylolytica"
+  },
+  {
+   "code": "SUM",
+   "display": "Succinimonas sp."
+  },
+  {
+   "code": "SUC",
+   "display": "Succinivibrio sp."
+  },
+  {
+   "code": "SUT",
+   "display": "Suttonella sp."
+  },
+  {
+   "code": "SYN",
+   "display": "Syncephalastrum sp."
+  },
+  {
+   "code": "TTV",
+   "display": "TT virus"
+  },
+  {
+   "code": "TSA",
+   "display": "Taenia saginata"
+  },
+  {
+   "code": "TSO",
+   "display": "Taenia solium"
+  },
+  {
+   "code": "TAE",
+   "display": "Taenia sp."
+  },
+  {
+   "code": "TAL",
+   "display": "Tatlockia sp."
+  },
+  {
+   "code": "TAT",
+   "display": "Tatumella sp."
+  },
+  {
+   "code": "TPU",
+   "display": "Tausonia pullulans"
+  },
+  {
+   "code": "TAY",
+   "display": "Taylorella sp."
+  },
+  {
+   "code": "TNM",
+   "display": "Tenacibaculum maritimum"
+  },
+  {
+   "code": "TNB",
+   "display": "Tenacibaculum sp."
+  },
+  {
+   "code": "TIA",
+   "display": "Theileria annulata"
+  },
+  {
+   "code": "TIL",
+   "display": "Theileria lestoquardi"
+  },
+  {
+   "code": "TIR",
+   "display": "Theileria orientalis"
+  },
+  {
+   "code": "TIO",
+   "display": "Theileria ovis"
+  },
+  {
+   "code": "TIP",
+   "display": "Theileria parva"
+  },
+  {
+   "code": "TIE",
+   "display": "Theileria separata"
+  },
+  {
+   "code": "THI",
+   "display": "Theileria sp."
+  },
+  {
+   "code": "THE",
+   "display": "Thelazia sp."
+  },
+  {
+   "code": "TBV",
+   "display": "Tick-borne encephalitis virus"
+  },
+  {
+   "code": "TPR",
+   "display": "Tissierella praeacuta"
+  },
+  {
+   "code": "TIS",
+   "display": "Tissierella sp."
+  },
+  {
+   "code": "TOR",
+   "display": "Torulopsis sp."
+  },
+  {
+   "code": "TXS",
+   "display": "Toxocara canis"
+  },
+  {
+   "code": "TXC",
+   "display": "Toxocara cati"
+  },
+  {
+   "code": "TOX",
+   "display": "Toxocara sp."
+  },
+  {
+   "code": "TGO",
+   "display": "Toxoplasma gondii"
+  },
+  {
+   "code": "TOP",
+   "display": "Toxoplasma sp."
+  },
+  {
+   "code": "TRB",
+   "display": "Trabulsiella sp."
+  },
+  {
+   "code": "TMD",
+   "display": "Trematode"
+  },
+  {
+   "code": "TCT",
+   "display": "Treponema carateum"
+  },
+  {
+   "code": "TDE",
+   "display": "Treponema denticola"
+  },
+  {
+   "code": "TEN",
+   "display": "Treponema pallidum ss. endemicum"
+  },
+  {
+   "code": "TPA",
+   "display": "Treponema pallidum ss. pallidum"
+  },
+  {
+   "code": "TPP",
+   "display": "Treponema pallidum ss. pertenue"
+  },
+  {
+   "code": "TPH",
+   "display": "Treponema phagedensis"
+  },
+  {
+   "code": "TRF",
+   "display": "Treponema refringens"
+  },
+  {
+   "code": "TRE",
+   "display": "Treponema sp."
+  },
+  {
+   "code": "TRN",
+   "display": "Trichinella sp."
+  },
+  {
+   "code": "TSP",
+   "display": "Trichinella spiralis"
+  },
+  {
+   "code": "TRD",
+   "display": "Trichoderma sp."
+  },
+  {
+   "code": "TGA",
+   "display": "Trichomonas gallinae"
+  },
+  {
+   "code": "THO",
+   "display": "Trichomonas hominis"
+  },
+  {
+   "code": "TRM",
+   "display": "Trichomonas sp."
+  },
+  {
+   "code": "TTN",
+   "display": "Trichomonas tenax"
+  },
+  {
+   "code": "TVA",
+   "display": "Trichomonas vaginalis"
+  },
+  {
+   "code": "TMS",
+   "display": "Trichomonascus sp."
+  },
+  {
+   "code": "TAJ",
+   "display": "Trichophyton ajelloi"
+  },
+  {
+   "code": "TCO",
+   "display": "Trichophyton concentricum"
+  },
+  {
+   "code": "TEQ",
+   "display": "Trichophyton equinum"
+  },
+  {
+   "code": "TMG",
+   "display": "Trichophyton megninii"
+  },
+  {
+   "code": "TME",
+   "display": "Trichophyton mentagrophytes"
+  },
+  {
+   "code": "TRU",
+   "display": "Trichophyton rubrum"
+  },
+  {
+   "code": "TSC",
+   "display": "Trichophyton schoenleinii"
+  },
+  {
+   "code": "TSU",
+   "display": "Trichophyton soudanense"
+  },
+  {
+   "code": "TRY",
+   "display": "Trichophyton sp."
+  },
+  {
+   "code": "TTE",
+   "display": "Trichophyton terrestre"
+  },
+  {
+   "code": "TTO",
+   "display": "Trichophyton tonsurans"
+  },
+  {
+   "code": "TVE",
+   "display": "Trichophyton verrucosum"
+  },
+  {
+   "code": "TVI",
+   "display": "Trichophyton violaceum"
+  },
+  {
+   "code": "TYA",
+   "display": "Trichophyton yaoundei"
+  },
+  {
+   "code": "TAS",
+   "display": "Trichosporon asahii"
+  },
+  {
+   "code": "TRI",
+   "display": "Trichosporon sp."
+  },
+  {
+   "code": "TRS",
+   "display": "Trichostrongylus sp."
+  },
+  {
+   "code": "TRC",
+   "display": "Trichuris sp."
+  },
+  {
+   "code": "TTR",
+   "display": "Trichuris trichiura"
+  },
+  {
+   "code": "TRO",
+   "display": "Tricothecium roseum"
+  },
+  {
+   "code": "TRT",
+   "display": "Tricothecium sp."
+  },
+  {
+   "code": "TFO",
+   "display": "Tritrichomonas foetus"
+  },
+  {
+   "code": "TTC",
+   "display": "Tritrichomonas sp."
+  },
+  {
+   "code": "TRL",
+   "display": "Trueperella sp."
+  },
+  {
+   "code": "TRR",
+   "display": "Trypanosoma brucei ss. brucei"
+  },
+  {
+   "code": "TBR",
+   "display": "Trypanosoma brucei ss. gambiense"
+  },
+  {
+   "code": "TRH",
+   "display": "Trypanosoma brucei ss. rhodesiense"
+  },
+  {
+   "code": "TRG",
+   "display": "Trypanosoma congolense"
+  },
+  {
+   "code": "TCR",
+   "display": "Trypanosoma cruzi"
+  },
+  {
+   "code": "TYE",
+   "display": "Trypanosoma evansi"
+  },
+  {
+   "code": "TRA",
+   "display": "Trypanosoma rangeli"
+  },
+  {
+   "code": "TRP",
+   "display": "Trypanosoma sp."
+  },
+  {
+   "code": "TRV",
+   "display": "Trypanosoma vivax"
+  },
+  {
+   "code": "TPM",
+   "display": "Tsukamurella paurometabola"
+  },
+  {
+   "code": "TSK",
+   "display": "Tsukamurella sp."
+  },
+  {
+   "code": "TOT",
+   "display": "Turicella otitidis"
+  },
+  {
+   "code": "TUR",
+   "display": "Turicella sp."
+  },
+  {
+   "code": "ULO",
+   "display": "Ulocladium sp."
+  },
+  {
+   "code": "UNK",
+   "display": "Unknown"
+  },
+  {
+   "code": "URE",
+   "display": "Ureaplasma sp."
+  },
+  {
+   "code": "UUR",
+   "display": "Ureaplasma urealyticum"
+  },
+  {
+   "code": "VVI",
+   "display": "Vaccinia virus"
+  },
+  {
+   "code": "VAN",
+   "display": "Vanrija sp."
+  },
+  {
+   "code": "VZV",
+   "display": "Varicella zoster virus"
+  },
+  {
+   "code": "VPA",
+   "display": "Veillonella parvula"
+  },
+  {
+   "code": "VEI",
+   "display": "Veillonella sp."
+  },
+  {
+   "code": "VER",
+   "display": "Verticillium sp."
+  },
+  {
+   "code": "VIE",
+   "display": "Vibrio aestuarianus"
+  },
+  {
+   "code": "VAL",
+   "display": "Vibrio alginolyticus"
+  },
+  {
+   "code": "VIA",
+   "display": "Vibrio anguillarum"
+  },
+  {
+   "code": "VCA",
+   "display": "Vibrio carchariae"
+  },
+  {
+   "code": "VIC",
+   "display": "Vibrio cholerae"
+  },
+  {
+   "code": "VEL",
+   "display": "Vibrio cholerae El Tor"
+  },
+  {
+   "code": "VO1",
+   "display": "Vibrio cholerae O1"
+  },
+  {
+   "code": "VHI",
+   "display": "Vibrio cholerae O1 Hikojima"
+  },
+  {
+   "code": "VIN",
+   "display": "Vibrio cholerae O1 Inaba"
+  },
+  {
+   "code": "VOG",
+   "display": "Vibrio cholerae O1 Ogawa"
+  },
+  {
+   "code": "139",
+   "display": "Vibrio cholerae O139"
+  },
+  {
+   "code": "VX1",
+   "display": "Vibrio cholerae non O1, non O139"
+  },
+  {
+   "code": "VCI",
+   "display": "Vibrio cincinnatiensis"
+  },
+  {
+   "code": "VFU",
+   "display": "Vibrio furnissii"
+  },
+  {
+   "code": "VMI",
+   "display": "Vibrio mimicus"
+  },
+  {
+   "code": "VIP",
+   "display": "Vibrio parahaemolyticus"
+  },
+  {
+   "code": "VI-",
+   "display": "Vibrio sp."
+  },
+  {
+   "code": "VSG",
+   "display": "Vogesella sp."
+  },
+  {
+   "code": "WAN",
+   "display": "Wangiella sp."
+  },
+  {
+   "code": "WEE",
+   "display": "Weeksella sp."
+  },
+  {
+   "code": "WEI",
+   "display": "Weissella sp."
+  },
+  {
+   "code": "WNV",
+   "display": "West Nile virus"
+  },
+  {
+   "code": "WIC",
+   "display": "Wickerhamomyces sp."
+  },
+  {
+   "code": "WOL",
+   "display": "Wolinella sp."
+  },
+  {
+   "code": "WSU",
+   "display": "Wolinella succinogenes"
+  },
+  {
+   "code": "WBA",
+   "display": "Wuchereria bancrofti"
+  },
+  {
+   "code": "WUC",
+   "display": "Wuchereria sp."
+  },
+  {
+   "code": "XAN",
+   "display": "Xanthomonas sp."
+  },
+  {
+   "code": "XYL",
+   "display": "Xylohypha sp."
+  },
+  {
+   "code": "YAM",
+   "display": "Yamadazyma sp."
+  },
+  {
+   "code": "YAR",
+   "display": "Yarrowia sp."
+  },
+  {
+   "code": "YEA",
+   "display": "Yeast"
+  },
+  {
+   "code": "YXA",
+   "display": "Yeast, not C. albicans"
+  },
+  {
+   "code": "YAL",
+   "display": "Yersinia aldovae"
+  },
+  {
+   "code": "YBE",
+   "display": "Yersinia bercovieri"
+  },
+  {
+   "code": "YEN",
+   "display": "Yersinia enterocolitica"
+  },
+  {
+   "code": "YFR",
+   "display": "Yersinia frederiksenii"
+  },
+  {
+   "code": "YIN",
+   "display": "Yersinia intermedia"
+  },
+  {
+   "code": "YKR",
+   "display": "Yersinia kristensenii"
+  },
+  {
+   "code": "YMO",
+   "display": "Yersinia mollaretii"
+  },
+  {
+   "code": "YEP",
+   "display": "Yersinia pestis"
+  },
+  {
+   "code": "YES",
+   "display": "Yersinia pseudotuberculosis"
+  },
+  {
+   "code": "YRO",
+   "display": "Yersinia rohdei"
+  },
+  {
+   "code": "YRU",
+   "display": "Yersinia ruckeri"
+  },
+  {
+   "code": "YER",
+   "display": "Yersinia sp."
+  },
+  {
+   "code": "ZIK",
+   "display": "Zika virus"
+  },
+  {
+   "code": "XGA",
+   "display": "No Group A streptococci found"
+  },
+  {
+   "code": "NRC",
+   "display": "Anaerococcus sp."
+  },
+  {
+   "code": "NOA",
+   "display": "Nocardia abscessus"
+  },
+  {
+   "code": "NOY",
+   "display": "Nocardia cyriacigeorgica"
+  },
+  {
+   "code": "NOP",
+   "display": "Nocardia pseudobrasiliensis"
+  },
+  {
+   "code": "ACZ",
+   "display": "Acinetobacter bereziniae"
+  },
+  {
+   "code": "SRH",
+   "display": "Streptococcus phocae"
+  },
+  {
+   "code": "PBI",
+   "display": "Parabacteroides spp."
+  },
+  {
+   "code": "PHL",
+   "display": "Phocaeicola spp."
+  },
+  {
+   "code": "ACG",
+   "display": "Acinetobacter guillouiae"
+  },
+  {
+   "code": "ANL",
+   "display": "Acinetobacter lactucae"
+  },
+  {
+   "code": "PSR",
+   "display": "Pseudomonas gessardii"
+  },
+  {
+   "code": "ENQ",
+   "display": "Enterococcus aquimarinus"
+  },
+  {
+   "code": "ARN",
+   "display": "Carnobacterium sp."
+  },
+  {
+   "code": "CBM",
+   "display": "Carnobacterium maltaromaticum"
+  },
+  {
+   "code": "VGC",
+   "display": "Vagococcus sp."
+  },
+  {
+   "code": "VGS",
+   "display": "Vagococcus salmoninarum"
+  },
+  {
+   "code": "ENU",
+   "display": "Enterococcus thailandicus"
+  },
+  {
+   "code": "TYI",
+   "display": "Trichophyton indotineae"
+  },
+  {
+   "code": "ASK",
+   "display": "Arcobacter skirrowii"
+  },
+  {
+   "code": "AES",
+   "display": "Aerococcus sanguinicola"
+  },
+  {
+   "code": "PSO",
+   "display": "Pseudomonas plecoglossicida"
+  },
+  {
+   "code": "EBG",
+   "display": "Enterobacter bugandensis"
+  },
+  {
+   "code": "SBS",
+   "display": "Staphylococcus borealis"
+  },
+  {
+   "code": "PCL",
+   "display": "Pseudomonas citronellolis"
+  },
+  {
+   "code": "ENN",
+   "display": "Enterobacter roggenkampii"
+  },
+  {
+   "code": "PNR",
+   "display": "Pseudomonas nitroreducens"
+  },
+  {
+   "code": "SBI",
+   "display": "Solibacillus silvestris"
+  },
+  {
+   "code": "SBC",
+   "display": "Solibacillus sp."
+  },
+  {
+   "code": "LRF",
+   "display": "Lactococcus raffinolactis"
+  },
+  {
+   "code": "ROK",
+   "display": "Rothia kristinae"
+  },
+  {
+   "code": "GLS",
+   "display": "Glaesserella sp."
+  },
+  {
+   "code": "PSB",
+   "display": "Pseudoclavibacter sp."
+  },
+  {
+   "code": "PBA",
+   "display": "Pseudoclavibacter alba"
+  },
+  {
+   "code": "SVS",
+   "display": "Sapovirus"
+  },
+  {
+   "code": "MPX",
+   "display": "Mpox"
+  },
+  {
+   "code": "TYM",
+   "display": "Tropheryma sp."
+  },
+  {
+   "code": "TYW",
+   "display": "Tropheryma whipplei"
+  },
+  {
+   "code": "URP",
+   "display": "Ureaplasma parvum"
+  },
+  {
+   "code": "FUO",
+   "display": "Fusarium oxysporum"
+  },
+  {
+   "code": "PI1",
+   "display": "Parainfluenza virus 1"
+  },
+  {
+   "code": "PI2",
+   "display": "Parainfluenza virus 2"
+  },
+  {
+   "code": "PI3",
+   "display": "Parainfluenza virus 3"
+  },
+  {
+   "code": "PI4",
+   "display": "Parainfluenza virus 4"
+  },
+  {
+   "code": "SCV",
+   "display": "Scopulariopsis brevicaulis"
+  },
+  {
+   "code": "TBH",
+   "display": "Trichophyton benhamiae"
+  },
+  {
+   "code": "MNT",
+   "display": "Mycobacterium sp., nontuberculous mycobacteria"
+  },
+  {
+   "code": "RAI",
+   "display": "Ralstonia insidiosa"
+  }
+ ]
+}

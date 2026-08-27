@@ -1,0 +1,3185 @@
+{
+  "schemaVersion": 1,
+  "dataset": "geonames-geo-directory",
+  "generated": "2026-08-13",
+  "source": "GeoNames postal codes and cities500 gazetteer",
+  "sourceUrl": "https://download.geonames.org",
+  "licence": "Creative Commons Attribution 4.0",
+  "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "attribution": "Contains data from GeoNames (www.geonames.org), CC BY 4.0.",
+  "countries": {
+    "AND": {
+      "alpha2": "AD",
+      "postalCodes": 7,
+      "localities": 20,
+      "subdivisionCentroids": 7,
+      "subdivisionsUnmatched": [],
+      "bytes": 714,
+      "sha256": "4868099631ada9b372a3f4bc5b99fe8e00904938a25fac974db400445b295ee5"
+    },
+    "ARE": {
+      "alpha2": "AE",
+      "postalCodes": 178171,
+      "localities": 107,
+      "subdivisionCentroids": 1,
+      "subdivisionsUnmatched": [
+        "AE-AZ",
+        "AE-DU",
+        "AE-FU",
+        "AE-RK",
+        "AE-SH",
+        "AE-UQ"
+      ],
+      "bytes": 1365166,
+      "sha256": "2f00060b6b223e3afa3dc3191a1f233022e4678c22b0e0df471644cf52eb91cc"
+    },
+    "AFG": {
+      "alpha2": "AF",
+      "postalCodes": 0,
+      "localities": 319,
+      "subdivisionCentroids": 27,
+      "subdivisionsUnmatched": [
+        "AF-GHO",
+        "AF-KHO",
+        "AF-PAN",
+        "AF-PIA",
+        "AF-SAR",
+        "AF-URU",
+        "AF-WAR"
+      ],
+      "bytes": 8092,
+      "sha256": "2c389ac3c0eb445367e4565e18a75f011e3f98c2bb2d9eacb9f77c00d36f35ac"
+    },
+    "ATG": {
+      "alpha2": "AG",
+      "postalCodes": 0,
+      "localities": 41,
+      "subdivisionCentroids": 7,
+      "subdivisionsUnmatched": [
+        "AG-11"
+      ],
+      "bytes": 1013,
+      "sha256": "4c94f38bf69a74febbba1c69d8a67a565d0eadf581e0c20e70dc7304f399b4f7"
+    },
+    "AIA": {
+      "alpha2": "AI",
+      "postalCodes": 1,
+      "localities": 14,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 474,
+      "sha256": "f9f5de84cf90e69a6f3451690cc67e96cdc70f630e901450990c02906110fc0c"
+    },
+    "ALB": {
+      "alpha2": "AL",
+      "postalCodes": 489,
+      "localities": 419,
+      "subdivisionCentroids": 11,
+      "subdivisionsUnmatched": [
+        "AL-11"
+      ],
+      "bytes": 14064,
+      "sha256": "5bf5d5414fa161c9124f3b740bb2f4dfa04d751ecd6aba6fe94061cbbbb531d7"
+    },
+    "ARM": {
+      "alpha2": "AM",
+      "postalCodes": 0,
+      "localities": 625,
+      "subdivisionCentroids": 5,
+      "subdivisionsUnmatched": [
+        "AM-AG",
+        "AM-ER",
+        "AM-GR",
+        "AM-SH",
+        "AM-TV",
+        "AM-VD"
+      ],
+      "bytes": 11046,
+      "sha256": "fac3c5534b121c681e38d41a50ccfdcd20f9dab43d6f332182ab126083928fbd"
+    },
+    "AGO": {
+      "alpha2": "AO",
+      "postalCodes": 0,
+      "localities": 565,
+      "subdivisionCentroids": 14,
+      "subdivisionsUnmatched": [
+        "AO-CCU",
+        "AO-CUS",
+        "AO-LNO",
+        "AO-MAL"
+      ],
+      "bytes": 9817,
+      "sha256": "f3a58c7c32d2d9fccf1bee8c2731add6e0f7d658d8aef7b6eed4487969c5bde3"
+    },
+    "ARG": {
+      "alpha2": "AR",
+      "postalCodes": 1976,
+      "localities": 1199,
+      "subdivisionCentroids": 23,
+      "subdivisionsUnmatched": [
+        "AR-C"
+      ],
+      "bytes": 231165,
+      "sha256": "2654c1c47bf8ee5a3e77e8c46e16bf52d79d42976412d5ca9a84a813482682e6"
+    },
+    "ASM": {
+      "alpha2": "AS",
+      "postalCodes": 1,
+      "localities": 28,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 707,
+      "sha256": "6038edd33cbfb5b3854c1881a6c14bed68c2890847aa8a388ff0cc4be36e7ef3"
+    },
+    "AUT": {
+      "alpha2": "AT",
+      "postalCodes": 2501,
+      "localities": 3045,
+      "subdivisionCentroids": 9,
+      "subdivisionsUnmatched": [],
+      "bytes": 249627,
+      "sha256": "a3e4292665248b2845e6e19944c58c7f101aa3b77f3be2f3ebb524d4f7b03397"
+    },
+    "AUS": {
+      "alpha2": "AU",
+      "postalCodes": 3171,
+      "localities": 4901,
+      "subdivisionCentroids": 8,
+      "subdivisionsUnmatched": [],
+      "bytes": 315435,
+      "sha256": "5bc855f904da820c368c22e51cd54cc721aaa9ed794653c9485a527028ad8d2c"
+    },
+    "ABW": {
+      "alpha2": "AW",
+      "postalCodes": 0,
+      "localities": 14,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 440,
+      "sha256": "a585620f66be4bf45e4578a8c584cc1dfaac4e45458cefa1d2247e79183a4880"
+    },
+    "ALA": {
+      "alpha2": "AX",
+      "postalCodes": 37,
+      "localities": 21,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 1183,
+      "sha256": "6d4161365c9ac25bf27548d99def88d2ee6f377bb2cf455bb4879c8c6aac0976"
+    },
+    "AZE": {
+      "alpha2": "AZ",
+      "postalCodes": 1186,
+      "localities": 245,
+      "subdivisionCentroids": 58,
+      "subdivisionsUnmatched": [
+        "AZ-BA",
+        "AZ-CAB",
+        "AZ-GYG",
+        "AZ-ISM",
+        "AZ-LAC",
+        "AZ-MAS",
+        "AZ-NX",
+        "AZ-SM",
+        "AZ-SUS",
+        "AZ-TAR",
+        "AZ-XCI",
+        "AZ-YAR"
+      ],
+      "bytes": 22955,
+      "sha256": "e171cffbc83c5187b3cf09a7fb66104daa183c9a987db599ee0d1998ddeb0d70"
+    },
+    "BIH": {
+      "alpha2": "BA",
+      "postalCodes": 0,
+      "localities": 313,
+      "subdivisionCentroids": 1,
+      "subdivisionsUnmatched": [
+        "BA-BIH",
+        "BA-SRP"
+      ],
+      "bytes": 5876,
+      "sha256": "e63affa265dad8be30a1251c3e9c9969c0afd64409e7f5cd195226d3d52811d9"
+    },
+    "BRB": {
+      "alpha2": "BB",
+      "postalCodes": 0,
+      "localities": 16,
+      "subdivisionCentroids": 10,
+      "subdivisionsUnmatched": [
+        "BB-03"
+      ],
+      "bytes": 569,
+      "sha256": "5bf851b8f0979d80ac1bbbe46893ff2f4ece451e34b4536888717f44ac54a203"
+    },
+    "BGD": {
+      "alpha2": "BD",
+      "postalCodes": 1349,
+      "localities": 161,
+      "subdivisionCentroids": 6,
+      "subdivisionsUnmatched": [
+        "BD-A",
+        "BD-B"
+      ],
+      "bytes": 23784,
+      "sha256": "8adae11089778b4ef959343dcc960e021dcfed85ec6afaeed358e0513cbc8b81"
+    },
+    "BEL": {
+      "alpha2": "BE",
+      "postalCodes": 1146,
+      "localities": 2256,
+      "subdivisionCentroids": 3,
+      "subdivisionsUnmatched": [],
+      "bytes": 70057,
+      "sha256": "a94d1fe43ef35a7b66793f02c1c9a14730231b7b8dac95734ee2b60ae317f22f"
+    },
+    "BFA": {
+      "alpha2": "BF",
+      "postalCodes": 0,
+      "localities": 118,
+      "subdivisionCentroids": 13,
+      "subdivisionsUnmatched": [],
+      "bytes": 2712,
+      "sha256": "3c8c25c4cd459742608a53fea78f157299a5de046fcacc669894735ba3c31691"
+    },
+    "BGR": {
+      "alpha2": "BG",
+      "postalCodes": 4359,
+      "localities": 333,
+      "subdivisionCentroids": 27,
+      "subdivisionsUnmatched": [
+        "BG-22"
+      ],
+      "bytes": 101356,
+      "sha256": "eb37ba02bfa8c5766d4819d07f3901047159a7c88ac51b19a21bdde116c2dd4a"
+    },
+    "BHR": {
+      "alpha2": "BH",
+      "postalCodes": 0,
+      "localities": 11,
+      "subdivisionCentroids": 2,
+      "subdivisionsUnmatched": [
+        "BH-13",
+        "BH-14"
+      ],
+      "bytes": 449,
+      "sha256": "f72148872fb3870b56b17278f3dbd99164352e0f3a598619f81cd5b438b2fcfe"
+    },
+    "BDI": {
+      "alpha2": "BI",
+      "postalCodes": 0,
+      "localities": 33,
+      "subdivisionCentroids": 15,
+      "subdivisionsUnmatched": [
+        "BI-KR",
+        "BI-MU",
+        "BI-MW"
+      ],
+      "bytes": 1100,
+      "sha256": "b87501037e7609af0787d87d121697ad897d905ed71d960a6b19e0946b71b33b"
+    },
+    "BEN": {
+      "alpha2": "BJ",
+      "postalCodes": 0,
+      "localities": 87,
+      "subdivisionCentroids": 10,
+      "subdivisionsUnmatched": [
+        "BJ-AK",
+        "BJ-KO"
+      ],
+      "bytes": 2245,
+      "sha256": "88b94c86c30e4648af5714f78a17027072199e5de182b06e1e977d81f71115d4"
+    },
+    "BLM": {
+      "alpha2": "BL",
+      "postalCodes": 0,
+      "localities": 1,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 164,
+      "sha256": "614495c9ca03a664ab848f7d8336a7e59c669e60e9b101aba6a7a7ad25186032"
+    },
+    "BMU": {
+      "alpha2": "BM",
+      "postalCodes": 81,
+      "localities": 12,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 952,
+      "sha256": "e31985fa9b42a15c1f7fc271e8109dabd753c54ef6ee0269810d32ecd9c9265a"
+    },
+    "BRN": {
+      "alpha2": "BN",
+      "postalCodes": 0,
+      "localities": 63,
+      "subdivisionCentroids": 4,
+      "subdivisionsUnmatched": [],
+      "bytes": 1453,
+      "sha256": "a1df2b030ec7e1f71c5da4963c3ac0bfa176e5c2abfbea9d13012ef7b5ab6025"
+    },
+    "BOL": {
+      "alpha2": "BO",
+      "postalCodes": 0,
+      "localities": 183,
+      "subdivisionCentroids": 9,
+      "subdivisionsUnmatched": [],
+      "bytes": 3911,
+      "sha256": "e1a6ddc10081660fb8f429138245ef281c42f24cbf5a7b33d4a7062cde8c7b8d"
+    },
+    "BES": {
+      "alpha2": "BQ",
+      "postalCodes": 0,
+      "localities": 10,
+      "subdivisionCentroids": 3,
+      "subdivisionsUnmatched": [],
+      "bytes": 419,
+      "sha256": "e60ae020c80c638fd41863536a0c1eaecc1f97a70afed87a2c1ad403a787a928"
+    },
+    "BRA": {
+      "alpha2": "BR",
+      "postalCodes": 5525,
+      "localities": 5889,
+      "subdivisionCentroids": 27,
+      "subdivisionsUnmatched": [],
+      "bytes": 226758,
+      "sha256": "0a7bd2cb23b9c060290d890c909657904593d4de9e54d8413f60db353ec4cd8f"
+    },
+    "BHS": {
+      "alpha2": "BS",
+      "postalCodes": 0,
+      "localities": 28,
+      "subdivisionCentroids": 24,
+      "subdivisionsUnmatched": [
+        "BS-BY",
+        "BS-CS",
+        "BS-GC",
+        "BS-HT",
+        "BS-MC",
+        "BS-NE",
+        "BS-SA",
+        "BS-SO"
+      ],
+      "bytes": 992,
+      "sha256": "08dca662aa8c85f526bf292d1aa5ccdd4328ec456ecc993392a1c763c0aae074"
+    },
+    "BTN": {
+      "alpha2": "BT",
+      "postalCodes": 0,
+      "localities": 34,
+      "subdivisionCentroids": 15,
+      "subdivisionsUnmatched": [
+        "BT-32",
+        "BT-42",
+        "BT-43",
+        "BT-44",
+        "BT-TY"
+      ],
+      "bytes": 965,
+      "sha256": "47740735b66ddedab627efb620fee7fcc484682c6522d88d6b429636aae23c66"
+    },
+    "BWA": {
+      "alpha2": "BW",
+      "postalCodes": 0,
+      "localities": 139,
+      "subdivisionCentroids": 15,
+      "subdivisionsUnmatched": [
+        "BW-SO"
+      ],
+      "bytes": 2990,
+      "sha256": "f29cb1d8918f44d431434ed3904c5831081dd869c0902e5748a4c021acdd3558"
+    },
+    "BLR": {
+      "alpha2": "BY",
+      "postalCodes": 3123,
+      "localities": 314,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [
+        "BY-BR",
+        "BY-HM",
+        "BY-HO",
+        "BY-HR",
+        "BY-MA",
+        "BY-MI",
+        "BY-VI"
+      ],
+      "bytes": 59072,
+      "sha256": "428380e768a5149bfae17024bbcee54ffdfa485a959a7fc01ba81c7645c02794"
+    },
+    "BLZ": {
+      "alpha2": "BZ",
+      "postalCodes": 0,
+      "localities": 138,
+      "subdivisionCentroids": 5,
+      "subdivisionsUnmatched": [
+        "BZ-SC"
+      ],
+      "bytes": 2877,
+      "sha256": "39fe9da9a97666eeabafeec5c56a890c3c1f12e95612b4ee17d1f36534e92f19"
+    },
+    "CAN": {
+      "alpha2": "CA",
+      "postalCodes": 1653,
+      "localities": 3295,
+      "subdivisionCentroids": 13,
+      "subdivisionsUnmatched": [],
+      "bytes": 98140,
+      "sha256": "ce334a067e360e7882ac03eb6d5da9b91827d25b34a0712402d1d154ae24f6ee"
+    },
+    "CCK": {
+      "alpha2": "CC",
+      "postalCodes": 1,
+      "localities": 1,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 215,
+      "sha256": "cddcfffbd13d21c9d72d3831e6a35538f49352a041ebdeb77a5a1d5adb203608"
+    },
+    "COD": {
+      "alpha2": "CD",
+      "postalCodes": 0,
+      "localities": 118,
+      "subdivisionCentroids": 22,
+      "subdivisionsUnmatched": [
+        "CD-BC",
+        "CD-KE",
+        "CD-NK",
+        "CD-SK"
+      ],
+      "bytes": 2957,
+      "sha256": "52ebc5554617fb9811be50c42d2333f0d5f63c6c40bbaf5691ef6beb71a83400"
+    },
+    "CAF": {
+      "alpha2": "CF",
+      "postalCodes": 0,
+      "localities": 51,
+      "subdivisionCentroids": 12,
+      "subdivisionsUnmatched": [
+        "CF-HS",
+        "CF-KB",
+        "CF-KG",
+        "CF-MP",
+        "CF-SE"
+      ],
+      "bytes": 1550,
+      "sha256": "be025fc957ddb3f61c36c8f4db9a50f1c5a131505a5e547771462853666756d5"
+    },
+    "COG": {
+      "alpha2": "CG",
+      "postalCodes": 0,
+      "localities": 60,
+      "subdivisionCentroids": 12,
+      "subdivisionsUnmatched": [],
+      "bytes": 1490,
+      "sha256": "da722baa1f1a0c351d77116f14a0cd59b6d052addf77284e90917151ca6885da"
+    },
+    "CHE": {
+      "alpha2": "CH",
+      "postalCodes": 3362,
+      "localities": 1897,
+      "subdivisionCentroids": 26,
+      "subdivisionsUnmatched": [],
+      "bytes": 100093,
+      "sha256": "3a65b3ea054b82d1737d576d2fe24c533d32bebfb3acb5055fbb43fc953f9fab"
+    },
+    "CIV": {
+      "alpha2": "CI",
+      "postalCodes": 0,
+      "localities": 5136,
+      "subdivisionCentroids": 14,
+      "subdivisionsUnmatched": [],
+      "bytes": 84415,
+      "sha256": "ad08679494e2b8b32b1f26e778714864b1eb856334e12345f92ad7d24b502018"
+    },
+    "COK": {
+      "alpha2": "CK",
+      "postalCodes": 0,
+      "localities": 2,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 197,
+      "sha256": "53b95abef74114db74e98aa004f5dc6bfd5ec688704caff2cf720a6627367961"
+    },
+    "CHL": {
+      "alpha2": "CL",
+      "postalCodes": 346,
+      "localities": 315,
+      "subdivisionCentroids": 14,
+      "subdivisionsUnmatched": [
+        "CL-AI",
+        "CL-RM"
+      ],
+      "bytes": 12826,
+      "sha256": "cdf297d0e2c8541b1cbd6c05ea1da1823bdb8927f0683dd7464ac51447325576"
+    },
+    "CMR": {
+      "alpha2": "CM",
+      "postalCodes": 0,
+      "localities": 145,
+      "subdivisionCentroids": 10,
+      "subdivisionsUnmatched": [],
+      "bytes": 2905,
+      "sha256": "e9345c94c7e46b7a58ad434a1fe71ce1414961a777035897a4002a2f19c0e082"
+    },
+    "CHN": {
+      "alpha2": "CN",
+      "postalCodes": 2349,
+      "localities": 16049,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [
+        "CN-AH",
+        "CN-BJ",
+        "CN-CQ",
+        "CN-FJ",
+        "CN-GD",
+        "CN-GS",
+        "CN-GX",
+        "CN-GZ",
+        "CN-HA",
+        "CN-HB",
+        "CN-HE",
+        "CN-HI",
+        "CN-HK",
+        "CN-HL",
+        "CN-HN",
+        "CN-JL",
+        "CN-JS",
+        "CN-JX",
+        "CN-LN",
+        "CN-MO",
+        "CN-NM",
+        "CN-NX",
+        "CN-QH",
+        "CN-SC",
+        "CN-SD",
+        "CN-SH",
+        "CN-SN",
+        "CN-SX",
+        "CN-TJ",
+        "CN-TW",
+        "CN-XJ",
+        "CN-XZ",
+        "CN-YN",
+        "CN-ZJ"
+      ],
+      "bytes": 259454,
+      "sha256": "224e9320b598ba0850000301f4d64d8d3a1daa57876f7e746cad9f606ad7d43d"
+    },
+    "COL": {
+      "alpha2": "CO",
+      "postalCodes": 3681,
+      "localities": 1179,
+      "subdivisionCentroids": 31,
+      "subdivisionsUnmatched": [
+        "CO-DC",
+        "CO-SAP"
+      ],
+      "bytes": 55416,
+      "sha256": "93a99f8ec9603f12540125c5c7ec7a1338e52488c32150d8dd217cafbdf80be2"
+    },
+    "CRI": {
+      "alpha2": "CR",
+      "postalCodes": 473,
+      "localities": 137,
+      "subdivisionCentroids": 7,
+      "subdivisionsUnmatched": [],
+      "bytes": 10703,
+      "sha256": "8b28fee65139bcb743dde43ce5400b41cef8c0c12ccc732546a20cbfab741631"
+    },
+    "CUB": {
+      "alpha2": "CU",
+      "postalCodes": 0,
+      "localities": 211,
+      "subdivisionCentroids": 16,
+      "subdivisionsUnmatched": [],
+      "bytes": 5471,
+      "sha256": "af9c778d5d1a8c3dd2cd21b00ad596b558a89d53090e4a48d6fc7ec5df6ae267"
+    },
+    "CPV": {
+      "alpha2": "CV",
+      "postalCodes": 0,
+      "localities": 228,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [
+        "CV-B",
+        "CV-S"
+      ],
+      "bytes": 4646,
+      "sha256": "06f7f625f841d78e224c5712e08851c04140f4ad9f9858aef331a00db004c186"
+    },
+    "CUW": {
+      "alpha2": "CW",
+      "postalCodes": 0,
+      "localities": 14,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 444,
+      "sha256": "9e38220a48dd4efecdb9f2f8c9974f0f647e13de486aa03e2afb26155d9023b4"
+    },
+    "CXR": {
+      "alpha2": "CX",
+      "postalCodes": 1,
+      "localities": 1,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 216,
+      "sha256": "e3f9eb3934367ea04bef38bb66eff2d7c1d1313bc3f9134515407dca6c767014"
+    },
+    "CYP": {
+      "alpha2": "CY",
+      "postalCodes": 1125,
+      "localities": 132,
+      "subdivisionCentroids": 6,
+      "subdivisionsUnmatched": [],
+      "bytes": 16848,
+      "sha256": "356295b813a861059b89aead9b12e830894fd2c7be0648d62269d467e5f0ba7e"
+    },
+    "CZE": {
+      "alpha2": "CZ",
+      "postalCodes": 2694,
+      "localities": 2756,
+      "subdivisionCentroids": 13,
+      "subdivisionsUnmatched": [
+        "CZ-10"
+      ],
+      "bytes": 228088,
+      "sha256": "904e58596f6c4163e82ff19666fde435f92c3399f46a3faec990f25e5fa3aa05"
+    },
+    "DEU": {
+      "alpha2": "DE",
+      "postalCodes": 10813,
+      "localities": 11912,
+      "subdivisionCentroids": 11,
+      "subdivisionsUnmatched": [
+        "DE-BY",
+        "DE-NI",
+        "DE-SN",
+        "DE-ST",
+        "DE-TH"
+      ],
+      "bytes": 503095,
+      "sha256": "92913e430d167503b69aaafcdbf7dfbc2069960d591499cf95448d821cce8e96"
+    },
+    "DJI": {
+      "alpha2": "DJ",
+      "postalCodes": 0,
+      "localities": 32,
+      "subdivisionCentroids": 6,
+      "subdivisionsUnmatched": [],
+      "bytes": 907,
+      "sha256": "e1d033978ce73b4c037d2e0fde941bfa52ba10446ef7a1f41a2f9a1d1ba8a31e"
+    },
+    "DNK": {
+      "alpha2": "DK",
+      "postalCodes": 1159,
+      "localities": 505,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [
+        "DK-81",
+        "DK-82",
+        "DK-83",
+        "DK-84",
+        "DK-85"
+      ],
+      "bytes": 23621,
+      "sha256": "fd89e9f72f5f7e47a12fce0b427cedd2e63c187cc12e313412a09c1b2d205897"
+    },
+    "DMA": {
+      "alpha2": "DM",
+      "postalCodes": 0,
+      "localities": 20,
+      "subdivisionCentroids": 10,
+      "subdivisionsUnmatched": [],
+      "bytes": 646,
+      "sha256": "d3c521f003522d6d3aab85ff296bb28a6b4405b4b3bb943f0db1c925e1199465"
+    },
+    "DOM": {
+      "alpha2": "DO",
+      "postalCodes": 207,
+      "localities": 214,
+      "subdivisionCentroids": 5,
+      "subdivisionsUnmatched": [
+        "DO-38",
+        "DO-39",
+        "DO-40",
+        "DO-41",
+        "DO-42"
+      ],
+      "bytes": 11548,
+      "sha256": "dbefcd9b29c122a67692fd7886d18dceeb19b1fff9549b03d4b457f5133a6a0a"
+    },
+    "DZA": {
+      "alpha2": "DZ",
+      "postalCodes": 3162,
+      "localities": 351,
+      "subdivisionCentroids": 55,
+      "subdivisionsUnmatched": [
+        "DZ-16",
+        "DZ-57",
+        "DZ-58"
+      ],
+      "bytes": 157234,
+      "sha256": "b8d20cd3476725e96d5e96fe8317955ead88b97c06aefadfe99973d4add2174b"
+    },
+    "ECU": {
+      "alpha2": "EC",
+      "postalCodes": 1225,
+      "localities": 542,
+      "subdivisionCentroids": 24,
+      "subdivisionsUnmatched": [],
+      "bytes": 30407,
+      "sha256": "6ee6a0d97b1a1548b0179427a69e3d2f118999dfa8ccb497e61b9dfbbed1fd5d"
+    },
+    "EST": {
+      "alpha2": "EE",
+      "postalCodes": 5293,
+      "localities": 218,
+      "subdivisionCentroids": 12,
+      "subdivisionsUnmatched": [
+        "EE-56",
+        "EE-74",
+        "EE-79"
+      ],
+      "bytes": 81084,
+      "sha256": "2c999acf58a1fc0ade1074523fffdd8844f3281f4fd58255899541a0eb2da9b6"
+    },
+    "EGY": {
+      "alpha2": "EG",
+      "postalCodes": 0,
+      "localities": 260,
+      "subdivisionCentroids": 3,
+      "subdivisionsUnmatched": [
+        "EG-ALX",
+        "EG-BA",
+        "EG-BH",
+        "EG-BNS",
+        "EG-C",
+        "EG-DK",
+        "EG-DT",
+        "EG-FYM",
+        "EG-GH",
+        "EG-GZ",
+        "EG-IS",
+        "EG-JS",
+        "EG-KB",
+        "EG-KFS",
+        "EG-KN",
+        "EG-LX",
+        "EG-MN",
+        "EG-MNF",
+        "EG-PTS",
+        "EG-SHG",
+        "EG-SHR",
+        "EG-SIN",
+        "EG-SUZ",
+        "EG-WAD"
+      ],
+      "bytes": 5852,
+      "sha256": "059074dcd79c226a7e69b891833318fd6e1ed4845d94c37c398981562a5b9412"
+    },
+    "ESH": {
+      "alpha2": "EH",
+      "postalCodes": 0,
+      "localities": 27,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 730,
+      "sha256": "3bb87ed55965ab2912faada9458eba8e1aca0ce4e94756daf43dd0a31a612534"
+    },
+    "ERI": {
+      "alpha2": "ER",
+      "postalCodes": 0,
+      "localities": 18,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [
+        "ER-AN",
+        "ER-DK",
+        "ER-DU",
+        "ER-GB",
+        "ER-MA",
+        "ER-SK"
+      ],
+      "bytes": 611,
+      "sha256": "164637aa43cff5d088f8df9cd202059bc8c667b692f416a9614c0490c9c58214"
+    },
+    "ESP": {
+      "alpha2": "ES",
+      "postalCodes": 11150,
+      "localities": 7399,
+      "subdivisionCentroids": 7,
+      "subdivisionsUnmatched": [
+        "ES-AN",
+        "ES-AS",
+        "ES-CL",
+        "ES-CM",
+        "ES-CN",
+        "ES-CT",
+        "ES-GA",
+        "ES-IB",
+        "ES-MD",
+        "ES-NC",
+        "ES-PV",
+        "ES-VC"
+      ],
+      "bytes": 599115,
+      "sha256": "40360d5e821506ffb08d2cc7fcaaf64f33bd32c8a710b2affbcd433ae26d848e"
+    },
+    "ETH": {
+      "alpha2": "ET",
+      "postalCodes": 0,
+      "localities": 255,
+      "subdivisionCentroids": 6,
+      "subdivisionsUnmatched": [
+        "ET-AM",
+        "ET-BE",
+        "ET-GA",
+        "ET-HA",
+        "ET-OR",
+        "ET-SN",
+        "ET-TI"
+      ],
+      "bytes": 4801,
+      "sha256": "b77fff7c4fba31fdcde1defa381cda9c78db327f6d148d1178520b8c7e4ed150"
+    },
+    "FIN": {
+      "alpha2": "FI",
+      "postalCodes": 3576,
+      "localities": 930,
+      "subdivisionCentroids": 18,
+      "subdivisionsUnmatched": [
+        "FI-03"
+      ],
+      "bytes": 65710,
+      "sha256": "61e0b8e30fc71cfe9cf9c0bde5fb7db48b6d1cd48dc1897ff414ef7eccdc538f"
+    },
+    "FJI": {
+      "alpha2": "FJ",
+      "postalCodes": 0,
+      "localities": 16,
+      "subdivisionCentroids": 5,
+      "subdivisionsUnmatched": [],
+      "bytes": 548,
+      "sha256": "82ddbfbeb3e3b15557e0bf846f33563d5d98bed6ccae1d9b9f4e466ff983d126"
+    },
+    "FLK": {
+      "alpha2": "FK",
+      "postalCodes": 1,
+      "localities": 1,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 204,
+      "sha256": "50c9579c907543606ab95d9ad68c297d22a94de60e03eac83689b13adff5216c"
+    },
+    "FSM": {
+      "alpha2": "FM",
+      "postalCodes": 4,
+      "localities": 61,
+      "subdivisionCentroids": 4,
+      "subdivisionsUnmatched": [],
+      "bytes": 1499,
+      "sha256": "8c9593d42b0c6b9c495712216e1f93694592ce3e80285310b23bd55b7dfe824d"
+    },
+    "FRO": {
+      "alpha2": "FO",
+      "postalCodes": 130,
+      "localities": 35,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 2501,
+      "sha256": "2b5bd1cc97ca67c270a5e7a266929327419ab54f8d73edfd170f7d2f517f2f3c"
+    },
+    "FRA": {
+      "alpha2": "FR",
+      "postalCodes": 20418,
+      "localities": 15363,
+      "subdivisionCentroids": 13,
+      "subdivisionsUnmatched": [
+        "FR-971",
+        "FR-972",
+        "FR-973",
+        "FR-974",
+        "FR-976",
+        "FR-BL",
+        "FR-CP",
+        "FR-MF",
+        "FR-NC",
+        "FR-PF",
+        "FR-PM",
+        "FR-TF",
+        "FR-WF"
+      ],
+      "bytes": 792971,
+      "sha256": "c78124a5d82405326ce79bdb53b263c01be41c049b3570ea62868f4da2149118"
+    },
+    "GAB": {
+      "alpha2": "GA",
+      "postalCodes": 0,
+      "localities": 50,
+      "subdivisionCentroids": 8,
+      "subdivisionsUnmatched": [
+        "GA-4"
+      ],
+      "bytes": 1261,
+      "sha256": "16550e3be02c6e6247f02366d565f51d4516b21ce4823fc1f244a67247206974"
+    },
+    "GBR": {
+      "alpha2": "GB",
+      "postalCodes": 3002,
+      "localities": 5913,
+      "subdivisionCentroids": 4,
+      "subdivisionsUnmatched": [],
+      "bytes": 395481,
+      "sha256": "597f8b0f8f441c07a361d326719c7e0498de0f8f6ad152c2542f964b4ac59c77"
+    },
+    "GRD": {
+      "alpha2": "GD",
+      "postalCodes": 0,
+      "localities": 10,
+      "subdivisionCentroids": 7,
+      "subdivisionsUnmatched": [],
+      "bytes": 437,
+      "sha256": "6352076768955cdb402916093171d5fe8fe9a359f77f8be924d08e49148f8c74"
+    },
+    "GEO": {
+      "alpha2": "GE",
+      "postalCodes": 0,
+      "localities": 218,
+      "subdivisionCentroids": 9,
+      "subdivisionsUnmatched": [
+        "GE-AJ",
+        "GE-KA",
+        "GE-RL"
+      ],
+      "bytes": 4857,
+      "sha256": "686deb28b1d7b2ffe09957b7bd70917c5f55b8589a693432360eac2b7c6ec9a6"
+    },
+    "GUF": {
+      "alpha2": "GF",
+      "postalCodes": 77,
+      "localities": 20,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 1106,
+      "sha256": "4d09f6bd165e51ae7bb6f7598446f8a70fdfedfc748f3ff3c95701b5e13f527e"
+    },
+    "GGY": {
+      "alpha2": "GG",
+      "postalCodes": 10,
+      "localities": 12,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 583,
+      "sha256": "914b479a61ebf6bf7c4a55bb4d221cdd166226b56fe53262e50d4414fc673e93"
+    },
+    "GHA": {
+      "alpha2": "GH",
+      "postalCodes": 0,
+      "localities": 120,
+      "subdivisionCentroids": 16,
+      "subdivisionsUnmatched": [],
+      "bytes": 3104,
+      "sha256": "ae0c4c1b4ad9c1f0f13df3febbe97c63753f8e631507fc9fabe3e652204c1c7d"
+    },
+    "GIB": {
+      "alpha2": "GI",
+      "postalCodes": 1,
+      "localities": 7,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 323,
+      "sha256": "82731471237050af842c081cec3bed2554167d9f5ff0c60976d25df44e350d95"
+    },
+    "GRL": {
+      "alpha2": "GL",
+      "postalCodes": 33,
+      "localities": 18,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [
+        "GL-AV",
+        "GL-KU",
+        "GL-QE",
+        "GL-QT",
+        "GL-SM"
+      ],
+      "bytes": 1114,
+      "sha256": "1691d81babd3f99da2b0734c8b8c93ce8880e8be1d5450b328f263774c5dbf07"
+    },
+    "GMB": {
+      "alpha2": "GM",
+      "postalCodes": 0,
+      "localities": 180,
+      "subdivisionCentroids": 6,
+      "subdivisionsUnmatched": [],
+      "bytes": 3093,
+      "sha256": "0cded300ed36e314723030e1796b5e3d153903048b00e3c633cc4e8ba7c9cb75"
+    },
+    "GIN": {
+      "alpha2": "GN",
+      "postalCodes": 0,
+      "localities": 83,
+      "subdivisionCentroids": 8,
+      "subdivisionsUnmatched": [],
+      "bytes": 1954,
+      "sha256": "da1964c4303a83c3bd6fe4592e148c299eaf003a8b0d38d57f3420b89d7f3b9e"
+    },
+    "GLP": {
+      "alpha2": "GP",
+      "postalCodes": 105,
+      "localities": 25,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 1416,
+      "sha256": "47bd8e7600e02fed2da7572f3dc2b7f8a71a4918161824014ff27e36e8962926"
+    },
+    "GNQ": {
+      "alpha2": "GQ",
+      "postalCodes": 0,
+      "localities": 27,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [
+        "GQ-C",
+        "GQ-I"
+      ],
+      "bytes": 718,
+      "sha256": "2af394fca0c55892ee5774e5b8cc388538bb6fc1ce2ac83a706984cb9eb0cd07"
+    },
+    "GRC": {
+      "alpha2": "GR",
+      "postalCodes": 0,
+      "localities": 1986,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [
+        "GR-69",
+        "GR-A",
+        "GR-B",
+        "GR-C",
+        "GR-D",
+        "GR-E",
+        "GR-F",
+        "GR-G",
+        "GR-H",
+        "GR-I",
+        "GR-J",
+        "GR-K",
+        "GR-L",
+        "GR-M"
+      ],
+      "bytes": 35235,
+      "sha256": "0c61fa44eea3576475ee8c399e8ac74ce5d1d84be0bd36312f2c7ee04d6d1ce3"
+    },
+    "SGS": {
+      "alpha2": "GS",
+      "postalCodes": 1,
+      "localities": 1,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 221,
+      "sha256": "1cb1a08ab49307d94e79562745c57dba1b6867dde3c424bb3d055b5c5356b17b"
+    },
+    "GTM": {
+      "alpha2": "GT",
+      "postalCodes": 548,
+      "localities": 340,
+      "subdivisionCentroids": 22,
+      "subdivisionsUnmatched": [],
+      "bytes": 17110,
+      "sha256": "7f6dace37e3dd1a74f323ede987e1e8637fb498ad3db3b59595feef67bb433af"
+    },
+    "GUM": {
+      "alpha2": "GU",
+      "postalCodes": 21,
+      "localities": 28,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 999,
+      "sha256": "c7447657b3e138ecdf98b85099d3e2af2d69823fdcf3831572023247dd613e50"
+    },
+    "GNB": {
+      "alpha2": "GW",
+      "postalCodes": 0,
+      "localities": 52,
+      "subdivisionCentroids": 1,
+      "subdivisionsUnmatched": [
+        "GW-L",
+        "GW-N",
+        "GW-S"
+      ],
+      "bytes": 1236,
+      "sha256": "ee90331149fb5de02c5bd53b209dfa9ea6120825be98de524f91dc48ce0d47df"
+    },
+    "GUY": {
+      "alpha2": "GY",
+      "postalCodes": 0,
+      "localities": 23,
+      "subdivisionCentroids": 10,
+      "subdivisionsUnmatched": [],
+      "bytes": 754,
+      "sha256": "35bcdcb36de148dd8df908e5751a98dc28f5fb0cdb1d616dae4b2bb43753b4e5"
+    },
+    "HKG": {
+      "alpha2": "HK",
+      "postalCodes": 1,
+      "localities": 325,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 6078,
+      "sha256": "862cdb5ba60d7e7384194ffa46c6e4defec4c299d5db1802f84d47a4d8ca3ced"
+    },
+    "HMD": {
+      "alpha2": "HM",
+      "postalCodes": 1,
+      "localities": 0,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 189,
+      "sha256": "e83de6ec0ae4701433ec802eacd2a658190429918574d2a2125a8111d05c6372"
+    },
+    "HND": {
+      "alpha2": "HN",
+      "postalCodes": 37,
+      "localities": 544,
+      "subdivisionCentroids": 18,
+      "subdivisionsUnmatched": [],
+      "bytes": 11574,
+      "sha256": "af4bfea81e951d7da4b32e23368b78a3c4724e96351b2ae0772d778f7915e034"
+    },
+    "HRV": {
+      "alpha2": "HR",
+      "postalCodes": 309,
+      "localities": 1215,
+      "subdivisionCentroids": 21,
+      "subdivisionsUnmatched": [],
+      "bytes": 98618,
+      "sha256": "cf1827bb629ef36e8c67bc8f387462a19fa8d874f34301892a1cd5f24e5b6774"
+    },
+    "HTI": {
+      "alpha2": "HT",
+      "postalCodes": 230,
+      "localities": 114,
+      "subdivisionCentroids": 10,
+      "subdivisionsUnmatched": [],
+      "bytes": 6581,
+      "sha256": "95a53078855594761ca584ec7f681f4723b5b1192b82c3b96c848e9c119a904a"
+    },
+    "HUN": {
+      "alpha2": "HU",
+      "postalCodes": 3046,
+      "localities": 1226,
+      "subdivisionCentroids": 20,
+      "subdivisionsUnmatched": [
+        "HU-BC",
+        "HU-CS",
+        "HU-DE",
+        "HU-DU",
+        "HU-EG",
+        "HU-ER",
+        "HU-GY",
+        "HU-HV",
+        "HU-KM",
+        "HU-KV",
+        "HU-MI",
+        "HU-NK",
+        "HU-NY",
+        "HU-PS",
+        "HU-SD",
+        "HU-SF",
+        "HU-SH",
+        "HU-SK",
+        "HU-SN",
+        "HU-SS",
+        "HU-ST",
+        "HU-TB",
+        "HU-ZE"
+      ],
+      "bytes": 67975,
+      "sha256": "38e1fa25241b8fc2556fd91ef2a2c9170be9dada294f4b238d16a2cab3111e5c"
+    },
+    "IDN": {
+      "alpha2": "ID",
+      "postalCodes": 8266,
+      "localities": 9301,
+      "subdivisionCentroids": 2,
+      "subdivisionsUnmatched": [
+        "ID-JW",
+        "ID-KA",
+        "ID-NU",
+        "ID-SL",
+        "ID-SM"
+      ],
+      "bytes": 883442,
+      "sha256": "5aa4ac411c71d8806bc751cae572c4628ee0b8ddfc9ac3449a063ba0fa98b5ce"
+    },
+    "IRL": {
+      "alpha2": "IE",
+      "postalCodes": 139,
+      "localities": 566,
+      "subdivisionCentroids": 4,
+      "subdivisionsUnmatched": [],
+      "bytes": 12116,
+      "sha256": "a8986c01a361ad9797734022d29b6bd3903f41dace75f1c03dde8375fda62f21"
+    },
+    "ISR": {
+      "alpha2": "IL",
+      "postalCodes": 0,
+      "localities": 724,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [
+        "IL-D",
+        "IL-HA",
+        "IL-JM",
+        "IL-M",
+        "IL-TA",
+        "IL-Z"
+      ],
+      "bytes": 13121,
+      "sha256": "93387a03f2519fbf55f1c36deeba9d4f028cc485be9623e3fc088eb1cdf7871f"
+    },
+    "IMN": {
+      "alpha2": "IM",
+      "postalCodes": 9,
+      "localities": 21,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 1345,
+      "sha256": "7a764552ef23b46823d7b0aaae112c9eb29e1fe4408adac5952ff2a40da8ec9a"
+    },
+    "IND": {
+      "alpha2": "IN",
+      "postalCodes": 19238,
+      "localities": 7100,
+      "subdivisionCentroids": 36,
+      "subdivisionsUnmatched": [],
+      "bytes": 1661426,
+      "sha256": "8f9089e5b76f08ec29f76ef0807e016633c4dad72db7a9c3719e0e2e690bb828"
+    },
+    "IOT": {
+      "alpha2": "IO",
+      "postalCodes": 1,
+      "localities": 2,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 244,
+      "sha256": "ff1387774ba5acab215df3888d1f2387875dc807ffd2e4f88d2444f12f5cea86"
+    },
+    "IRQ": {
+      "alpha2": "IQ",
+      "postalCodes": 0,
+      "localities": 172,
+      "subdivisionCentroids": 10,
+      "subdivisionsUnmatched": [
+        "IQ-AN",
+        "IQ-BA",
+        "IQ-KR",
+        "IQ-MU",
+        "IQ-NA",
+        "IQ-NI"
+      ],
+      "bytes": 4456,
+      "sha256": "4edeb5e3947a38340686bf7af2718d4185ea49a6139639e79b234bb243f1c1ba"
+    },
+    "IRN": {
+      "alpha2": "IR",
+      "postalCodes": 0,
+      "localities": 2542,
+      "subdivisionCentroids": 28,
+      "subdivisionsUnmatched": [
+        "IR-12",
+        "IR-14",
+        "IR-17"
+      ],
+      "bytes": 46467,
+      "sha256": "1b859cc41a82f1f58a61c821a3fd4739f3763a2489e20a1c7c23d3cecbe81fce"
+    },
+    "ISL": {
+      "alpha2": "IS",
+      "postalCodes": 195,
+      "localities": 50,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [
+        "IS-1",
+        "IS-2",
+        "IS-3",
+        "IS-4",
+        "IS-5",
+        "IS-6",
+        "IS-7",
+        "IS-8"
+      ],
+      "bytes": 3211,
+      "sha256": "ff7d11ab6a55499f4f9528a423989218d8f33e50f4d7d4c9ac2b99a1c383126e"
+    },
+    "ITA": {
+      "alpha2": "IT",
+      "postalCodes": 4735,
+      "localities": 11855,
+      "subdivisionCentroids": 20,
+      "subdivisionsUnmatched": [],
+      "bytes": 421123,
+      "sha256": "ee2323fb975ace1fd176601216210a45417dffee8a3d2f4243f99101a6dab8db"
+    },
+    "JEY": {
+      "alpha2": "JE",
+      "postalCodes": 4,
+      "localities": 6,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 371,
+      "sha256": "048db59bba70459381b3552b1fa1bd0eb0d9111b959e229da16b9ecb1446bee8"
+    },
+    "JAM": {
+      "alpha2": "JM",
+      "postalCodes": 0,
+      "localities": 104,
+      "subdivisionCentroids": 14,
+      "subdivisionsUnmatched": [],
+      "bytes": 2888,
+      "sha256": "1cb8a18b59a5ac54a44c996c29b2dac14f99e006d78a56a44e54305b1a503355"
+    },
+    "JOR": {
+      "alpha2": "JO",
+      "postalCodes": 0,
+      "localities": 148,
+      "subdivisionCentroids": 3,
+      "subdivisionsUnmatched": [
+        "JO-AJ",
+        "JO-AM",
+        "JO-AQ",
+        "JO-AT",
+        "JO-AZ",
+        "JO-BA",
+        "JO-JA",
+        "JO-KA",
+        "JO-MA"
+      ],
+      "bytes": 3037,
+      "sha256": "ef23d884bd6b7fa5c9a0787b433860a543f2a46edd4564333575abc9c977f658"
+    },
+    "JPN": {
+      "alpha2": "JP",
+      "postalCodes": 142577,
+      "localities": 2188,
+      "subdivisionCentroids": 47,
+      "subdivisionsUnmatched": [],
+      "bytes": 1731868,
+      "sha256": "4323fcc53736e4534bb960aa05189a5598d0bf895e581a9f0053022cf9b397e4"
+    },
+    "KEN": {
+      "alpha2": "KE",
+      "postalCodes": 877,
+      "localities": 336,
+      "subdivisionCentroids": 47,
+      "subdivisionsUnmatched": [],
+      "bytes": 20280,
+      "sha256": "6ddab2a492d1962d90f09a34e070f1e289d20d484ec5b83a75f2715eae76cf57"
+    },
+    "KGZ": {
+      "alpha2": "KG",
+      "postalCodes": 0,
+      "localities": 111,
+      "subdivisionCentroids": 6,
+      "subdivisionsUnmatched": [
+        "KG-GB",
+        "KG-GO",
+        "KG-Y"
+      ],
+      "bytes": 2368,
+      "sha256": "39e0639b9de59f4928b960802894c07a421fcecc1e956c02245a930678ec2116"
+    },
+    "KHM": {
+      "alpha2": "KH",
+      "postalCodes": 0,
+      "localities": 337,
+      "subdivisionCentroids": 14,
+      "subdivisionsUnmatched": [
+        "KH-1",
+        "KH-11",
+        "KH-15",
+        "KH-16",
+        "KH-2",
+        "KH-20",
+        "KH-3",
+        "KH-5",
+        "KH-6",
+        "KH-8",
+        "KH-9"
+      ],
+      "bytes": 7459,
+      "sha256": "e349cd1b3c6688d722a07bccbe7de9e0fa1f95c91469c29b7ee6221330b449c1"
+    },
+    "KIR": {
+      "alpha2": "KI",
+      "postalCodes": 0,
+      "localities": 37,
+      "subdivisionCentroids": 2,
+      "subdivisionsUnmatched": [
+        "KI-P"
+      ],
+      "bytes": 918,
+      "sha256": "a7e2c25d16007a396ac86c9538f23eeaf7f85d33d8ceb5d1fec2b6e96454ec01"
+    },
+    "COM": {
+      "alpha2": "KM",
+      "postalCodes": 0,
+      "localities": 119,
+      "subdivisionCentroids": 3,
+      "subdivisionsUnmatched": [],
+      "bytes": 2199,
+      "sha256": "8568619198b424c48a2ae23427106501d4eb4883cc67747b5b7b459ad0627b9a"
+    },
+    "KNA": {
+      "alpha2": "KN",
+      "postalCodes": 0,
+      "localities": 18,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [
+        "KN-K",
+        "KN-N"
+      ],
+      "bytes": 551,
+      "sha256": "249043328ead9c4c8e212f08811d45517847282d363fd7bc8a0a2b29b998825c"
+    },
+    "PRK": {
+      "alpha2": "KP",
+      "postalCodes": 0,
+      "localities": 127,
+      "subdivisionCentroids": 8,
+      "subdivisionsUnmatched": [
+        "KP-02",
+        "KP-04",
+        "KP-05",
+        "KP-08",
+        "KP-10"
+      ],
+      "bytes": 2812,
+      "sha256": "49cf20fcd42ef84650da2abe15767e75f098c7ba8f66efd2973e188d531f872d"
+    },
+    "KOR": {
+      "alpha2": "KR",
+      "postalCodes": 34249,
+      "localities": 311,
+      "subdivisionCentroids": 7,
+      "subdivisionsUnmatched": [
+        "KR-26",
+        "KR-27",
+        "KR-28",
+        "KR-29",
+        "KR-30",
+        "KR-31",
+        "KR-42",
+        "KR-43",
+        "KR-49",
+        "KR-50"
+      ],
+      "bytes": 302341,
+      "sha256": "35ba319f77632b2f0f8b2fd84a865a53a99a951580d4ae5183b34f01930f9550"
+    },
+    "KWT": {
+      "alpha2": "KW",
+      "postalCodes": 0,
+      "localities": 28,
+      "subdivisionCentroids": 6,
+      "subdivisionsUnmatched": [],
+      "bytes": 860,
+      "sha256": "9661f5bb8e60325eabf2f6511809b2763dc280f9c9331764e6e2529d2912c5de"
+    },
+    "CYM": {
+      "alpha2": "KY",
+      "postalCodes": 0,
+      "localities": 72,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 1552,
+      "sha256": "de21c658f42ba4b5f225886b76c62aa35bad9f399a7a891cf693092f31d5cc0d"
+    },
+    "KAZ": {
+      "alpha2": "KZ",
+      "postalCodes": 0,
+      "localities": 352,
+      "subdivisionCentroids": 6,
+      "subdivisionsUnmatched": [
+        "KZ-19",
+        "KZ-23",
+        "KZ-27",
+        "KZ-31",
+        "KZ-33",
+        "KZ-35",
+        "KZ-39",
+        "KZ-43",
+        "KZ-47",
+        "KZ-55",
+        "KZ-59",
+        "KZ-61",
+        "KZ-62",
+        "KZ-63"
+      ],
+      "bytes": 7273,
+      "sha256": "5358786792b186f721bc21cffacf8ea1727bcf7ce4031564ba1b3fc8099942ad"
+    },
+    "LAO": {
+      "alpha2": "LA",
+      "postalCodes": 0,
+      "localities": 111,
+      "subdivisionCentroids": 9,
+      "subdivisionsUnmatched": [
+        "LA-BL",
+        "LA-KH",
+        "LA-LM",
+        "LA-LP",
+        "LA-VI",
+        "LA-VT",
+        "LA-XA",
+        "LA-XI",
+        "LA-XS"
+      ],
+      "bytes": 2382,
+      "sha256": "713c6b73c3ba7b64cb52382be6982820fbbf9ba41b0011c9195864cff299f96d"
+    },
+    "LBN": {
+      "alpha2": "LB",
+      "postalCodes": 0,
+      "localities": 52,
+      "subdivisionCentroids": 1,
+      "subdivisionsUnmatched": [
+        "LB-AS",
+        "LB-BA",
+        "LB-BH",
+        "LB-BI",
+        "LB-JA",
+        "LB-JL",
+        "LB-NA"
+      ],
+      "bytes": 1241,
+      "sha256": "b91f7c013156666e0b8f87090bd789e7a6b0ae4a223ecd30e8bba287533fb238"
+    },
+    "LCA": {
+      "alpha2": "LC",
+      "postalCodes": 0,
+      "localities": 38,
+      "subdivisionCentroids": 9,
+      "subdivisionsUnmatched": [
+        "LC-12"
+      ],
+      "bytes": 1139,
+      "sha256": "1898754e436d7ce44bf566f757b2fa05fba8f0432dcfaad282b60c5db0679a04"
+    },
+    "LIE": {
+      "alpha2": "LI",
+      "postalCodes": 13,
+      "localities": 14,
+      "subdivisionCentroids": 11,
+      "subdivisionsUnmatched": [],
+      "bytes": 677,
+      "sha256": "5a82c335f2f072c88a0603a7cce75a43c40a00bdac15d41513eada8a494a4ecb"
+    },
+    "LKA": {
+      "alpha2": "LK",
+      "postalCodes": 1833,
+      "localities": 89,
+      "subdivisionCentroids": 9,
+      "subdivisionsUnmatched": [],
+      "bytes": 31292,
+      "sha256": "b7330b950516f59a1b74368a4a589f4d0a4362b95790c03d1c503ff5fd306465"
+    },
+    "LBR": {
+      "alpha2": "LR",
+      "postalCodes": 0,
+      "localities": 27,
+      "subdivisionCentroids": 15,
+      "subdivisionsUnmatched": [],
+      "bytes": 892,
+      "sha256": "2361284478f1c1e25b5d9dac29366351d64fe4b1879ea5891fc00570270386f7"
+    },
+    "LSO": {
+      "alpha2": "LS",
+      "postalCodes": 0,
+      "localities": 47,
+      "subdivisionCentroids": 9,
+      "subdivisionsUnmatched": [
+        "LS-B"
+      ],
+      "bytes": 1182,
+      "sha256": "eed68968fdaf621657e29005bcafffa2e17c1d334526abf42e65c7656a0ac90a"
+    },
+    "LTU": {
+      "alpha2": "LT",
+      "postalCodes": 2023,
+      "localities": 164,
+      "subdivisionCentroids": 2,
+      "subdivisionsUnmatched": [
+        "LT-AL",
+        "LT-KL",
+        "LT-KU",
+        "LT-MR",
+        "LT-PN",
+        "LT-SA",
+        "LT-TA",
+        "LT-UT"
+      ],
+      "bytes": 152387,
+      "sha256": "538a387f39d15ed9f40f4530974d3296a9016e83b77361d2d06e7b55a9037e89"
+    },
+    "LUX": {
+      "alpha2": "LU",
+      "postalCodes": 4330,
+      "localities": 235,
+      "subdivisionCentroids": 12,
+      "subdivisionsUnmatched": [],
+      "bytes": 44500,
+      "sha256": "e20cb853fe723dd06a0136f8ec71891abc1981c07ca05c75a7bfafdf4373ddeb"
+    },
+    "LVA": {
+      "alpha2": "LV",
+      "postalCodes": 697,
+      "localities": 147,
+      "subdivisionCentroids": 10,
+      "subdivisionsUnmatched": [
+        "LV-002",
+        "LV-007",
+        "LV-011",
+        "LV-015",
+        "LV-016",
+        "LV-022",
+        "LV-026",
+        "LV-033",
+        "LV-041",
+        "LV-042",
+        "LV-047",
+        "LV-050",
+        "LV-052",
+        "LV-054",
+        "LV-056",
+        "LV-058",
+        "LV-062",
+        "LV-067",
+        "LV-068",
+        "LV-077",
+        "LV-080",
+        "LV-087",
+        "LV-088",
+        "LV-089",
+        "LV-091",
+        "LV-094",
+        "LV-099",
+        "LV-101",
+        "LV-102",
+        "LV-106",
+        "LV-111",
+        "LV-112",
+        "LV-113"
+      ],
+      "bytes": 68201,
+      "sha256": "aff0ca7dd8e6feaab0139ef9e2df253bd2fb66ae9241f6decc632f1bba2143ba"
+    },
+    "LBY": {
+      "alpha2": "LY",
+      "postalCodes": 0,
+      "localities": 119,
+      "subdivisionCentroids": 20,
+      "subdivisionsUnmatched": [
+        "LY-JG",
+        "LY-TB"
+      ],
+      "bytes": 2914,
+      "sha256": "835771679f85718d1839c5fc20fe368c9455213726905fcc07f69fb46fb25bb0"
+    },
+    "MAR": {
+      "alpha2": "MA",
+      "postalCodes": 1325,
+      "localities": 480,
+      "subdivisionCentroids": 12,
+      "subdivisionsUnmatched": [],
+      "bytes": 30265,
+      "sha256": "78d8541f3834824d996cc60b9fc116f36921db3c526cb7fd62b2775c401e6c1a"
+    },
+    "MCO": {
+      "alpha2": "MC",
+      "postalCodes": 1,
+      "localities": 10,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [
+        "MC-CL",
+        "MC-CO",
+        "MC-FO",
+        "MC-GA",
+        "MC-JE",
+        "MC-LA",
+        "MC-MA",
+        "MC-MC",
+        "MC-MG",
+        "MC-MO",
+        "MC-MU",
+        "MC-PH",
+        "MC-SD",
+        "MC-SO",
+        "MC-SP",
+        "MC-SR",
+        "MC-VR"
+      ],
+      "bytes": 682,
+      "sha256": "76f26340cddeb66f8fb5db5bd65ed80606375443a4373569e9b59302a1f7c076"
+    },
+    "MDA": {
+      "alpha2": "MD",
+      "postalCodes": 1215,
+      "localities": 94,
+      "subdivisionCentroids": 34,
+      "subdivisionsUnmatched": [
+        "MD-BD",
+        "MD-GA",
+        "MD-SN"
+      ],
+      "bytes": 28875,
+      "sha256": "b5a58ac3448698b196b8d5a8e371370caa7c0c8ef70e434f9f70040424deafe5"
+    },
+    "MNE": {
+      "alpha2": "ME",
+      "postalCodes": 0,
+      "localities": 66,
+      "subdivisionCentroids": 25,
+      "subdivisionsUnmatched": [],
+      "bytes": 1617,
+      "sha256": "c988de1dfe38363aa13bea848b56bc984588832edb6eb007fdb905815ac32386"
+    },
+    "MAF": {
+      "alpha2": "MF",
+      "postalCodes": 0,
+      "localities": 9,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 361,
+      "sha256": "c3fa781b088ae5aa1cd1b07bb0f015805e9cdc3650b250748660f8a2c1f0b6e1"
+    },
+    "MDG": {
+      "alpha2": "MG",
+      "postalCodes": 0,
+      "localities": 152,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [
+        "MG-A",
+        "MG-D",
+        "MG-F",
+        "MG-M",
+        "MG-T",
+        "MG-U"
+      ],
+      "bytes": 3457,
+      "sha256": "e02d5fe708467b946cd42f196393f45425800cb5d36ea5915753b292ad4ed61e"
+    },
+    "MHL": {
+      "alpha2": "MH",
+      "postalCodes": 2,
+      "localities": 26,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [
+        "MH-L",
+        "MH-T"
+      ],
+      "bytes": 733,
+      "sha256": "1ebf6782d818609a419550e3b95845efcddbe5b1295d541e3a8664ec9f046b86"
+    },
+    "MKD": {
+      "alpha2": "MK",
+      "postalCodes": 220,
+      "localities": 302,
+      "subdivisionCentroids": 49,
+      "subdivisionsUnmatched": [
+        "MK-109",
+        "MK-203",
+        "MK-206",
+        "MK-208",
+        "MK-209",
+        "MK-211",
+        "MK-301",
+        "MK-304",
+        "MK-307",
+        "MK-313",
+        "MK-407",
+        "MK-409",
+        "MK-504",
+        "MK-505",
+        "MK-603",
+        "MK-605",
+        "MK-607",
+        "MK-706",
+        "MK-801",
+        "MK-802",
+        "MK-803",
+        "MK-804",
+        "MK-805",
+        "MK-808",
+        "MK-809",
+        "MK-811",
+        "MK-813",
+        "MK-814",
+        "MK-815",
+        "MK-816",
+        "MK-817"
+      ],
+      "bytes": 9373,
+      "sha256": "306226a20740ff3dea9fb0c833595d4fdba9a7c40d1acdd6856adcc86f622231"
+    },
+    "MLI": {
+      "alpha2": "ML",
+      "postalCodes": 0,
+      "localities": 94,
+      "subdivisionCentroids": 11,
+      "subdivisionsUnmatched": [],
+      "bytes": 2263,
+      "sha256": "f12f8fa01fce2e7bf73fb69cac24c900791a420cf5225bcf1a5203037980435a"
+    },
+    "MMR": {
+      "alpha2": "MM",
+      "postalCodes": 0,
+      "localities": 576,
+      "subdivisionCentroids": 15,
+      "subdivisionsUnmatched": [],
+      "bytes": 11316,
+      "sha256": "3c51ba8214d1bde680aabb352d691870f1e3a2d11852f65d5ae410b53b87903f"
+    },
+    "MNG": {
+      "alpha2": "MN",
+      "postalCodes": 0,
+      "localities": 332,
+      "subdivisionCentroids": 12,
+      "subdivisionsUnmatched": [
+        "MN-041",
+        "MN-047",
+        "MN-057",
+        "MN-059",
+        "MN-061",
+        "MN-063",
+        "MN-065",
+        "MN-069",
+        "MN-071",
+        "MN-073"
+      ],
+      "bytes": 5249,
+      "sha256": "01589f89b72f7bb7f21422350707fd9e268a00cad79347cf5ab6d3397023fe5f"
+    },
+    "MAC": {
+      "alpha2": "MO",
+      "postalCodes": 1,
+      "localities": 8,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 375,
+      "sha256": "b4c555cd210c9344f35424a861ad43c074463258d6220a1b249d117467e37b64"
+    },
+    "MNP": {
+      "alpha2": "MP",
+      "postalCodes": 3,
+      "localities": 10,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 427,
+      "sha256": "668f38a77250f13dd9464797e4ecb9d8fa2e37df7f9446e42c8a53e52e80e2eb"
+    },
+    "MTQ": {
+      "alpha2": "MQ",
+      "postalCodes": 95,
+      "localities": 23,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 1339,
+      "sha256": "98451258abf7deecd00e04617a7a47bba489cd2e5df59e84476d4ddf2a393ad2"
+    },
+    "MRT": {
+      "alpha2": "MR",
+      "postalCodes": 0,
+      "localities": 88,
+      "subdivisionCentroids": 15,
+      "subdivisionsUnmatched": [],
+      "bytes": 2294,
+      "sha256": "2e9c538d7a340ddf0d4d56aa2f54c78cf69bd95f09d75237e8fe5ef970024fe4"
+    },
+    "MSR": {
+      "alpha2": "MS",
+      "postalCodes": 0,
+      "localities": 4,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 230,
+      "sha256": "ac46d7901fcdcc990ad8fed4c4bef296ca4abb5877c95b6dffc41537fde37d3c"
+    },
+    "MLT": {
+      "alpha2": "MT",
+      "postalCodes": 73,
+      "localities": 70,
+      "subdivisionCentroids": 68,
+      "subdivisionsUnmatched": [],
+      "bytes": 3185,
+      "sha256": "93fdd7a48c6b8e4fc80f1e6ceb601126d42e1eaede90ccb84ce29b94b9253d2e"
+    },
+    "MUS": {
+      "alpha2": "MU",
+      "postalCodes": 0,
+      "localities": 116,
+      "subdivisionCentroids": 11,
+      "subdivisionsUnmatched": [
+        "MU-CC"
+      ],
+      "bytes": 2607,
+      "sha256": "9885c73acc423ae66899ffa5f40cec0f8635160662f9649af84905e2c7e12fe2"
+    },
+    "MDV": {
+      "alpha2": "MV",
+      "postalCodes": 0,
+      "localities": 34,
+      "subdivisionCentroids": 2,
+      "subdivisionsUnmatched": [
+        "MV-00",
+        "MV-02",
+        "MV-03",
+        "MV-04",
+        "MV-07",
+        "MV-08",
+        "MV-12",
+        "MV-13",
+        "MV-14",
+        "MV-17",
+        "MV-20",
+        "MV-23",
+        "MV-24",
+        "MV-25",
+        "MV-26",
+        "MV-27",
+        "MV-28",
+        "MV-29",
+        "MV-MLE"
+      ],
+      "bytes": 845,
+      "sha256": "4ccbd3c06167954c6768b27217d8f0b05d08e99a25987547261dfaa295f2f0a0"
+    },
+    "MWI": {
+      "alpha2": "MW",
+      "postalCodes": 491,
+      "localities": 39,
+      "subdivisionCentroids": 3,
+      "subdivisionsUnmatched": [],
+      "bytes": 7928,
+      "sha256": "689c65f7336bef191133fa2845ef161aacba8b652ca8c85364be2ec5ead29788"
+    },
+    "MEX": {
+      "alpha2": "MX",
+      "postalCodes": 32448,
+      "localities": 16880,
+      "subdivisionCentroids": 31,
+      "subdivisionsUnmatched": [
+        "MX-CMX"
+      ],
+      "bytes": 1921477,
+      "sha256": "610e9fb9bce2b0c906bc99166c87fb47d219c284826674fee95d8b332ebf8ea2"
+    },
+    "MYS": {
+      "alpha2": "MY",
+      "postalCodes": 2757,
+      "localities": 740,
+      "subdivisionCentroids": 15,
+      "subdivisionsUnmatched": [
+        "MY-07"
+      ],
+      "bytes": 33585,
+      "sha256": "3aea7c3b2d061781263d1c0b78ef2cb79dbf6ad402f49eb4565e2959b7ce1e7e"
+    },
+    "MOZ": {
+      "alpha2": "MZ",
+      "postalCodes": 0,
+      "localities": 94,
+      "subdivisionCentroids": 11,
+      "subdivisionsUnmatched": [],
+      "bytes": 2326,
+      "sha256": "8a9edfbcb41198c245d8e3790ec216c4f01325f94b4145aab118fbeb718d10ef"
+    },
+    "NAM": {
+      "alpha2": "NA",
+      "postalCodes": 0,
+      "localities": 93,
+      "subdivisionCentroids": 14,
+      "subdivisionsUnmatched": [],
+      "bytes": 2230,
+      "sha256": "3230c5df1d45e10ad3676018725f62a30d9f3c919e5a7ff9684a580a5d7a8f7a"
+    },
+    "NCL": {
+      "alpha2": "NC",
+      "postalCodes": 50,
+      "localities": 63,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 2282,
+      "sha256": "e454ecb6ea18dd672f6ac748fc3da85d53ce28060312de97d678eaeca3d04aa3"
+    },
+    "NER": {
+      "alpha2": "NE",
+      "postalCodes": 0,
+      "localities": 74,
+      "subdivisionCentroids": 8,
+      "subdivisionsUnmatched": [],
+      "bytes": 1776,
+      "sha256": "50e90705b4bef0d636a454c6b3b99f1f12a801119ee3baa8bd8720cdb3e95e0c"
+    },
+    "NFK": {
+      "alpha2": "NF",
+      "postalCodes": 1,
+      "localities": 1,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 209,
+      "sha256": "189de960e459f388860ce281b688b98397c507f5cb413cab3b085a72b013da06"
+    },
+    "NGA": {
+      "alpha2": "NG",
+      "postalCodes": 0,
+      "localities": 927,
+      "subdivisionCentroids": 36,
+      "subdivisionsUnmatched": [
+        "NG-FC"
+      ],
+      "bytes": 20200,
+      "sha256": "8230657649d89a1877b0a889f2ec19b68c413197d052957aad1afeb6474127e9"
+    },
+    "NIC": {
+      "alpha2": "NI",
+      "postalCodes": 0,
+      "localities": 168,
+      "subdivisionCentroids": 15,
+      "subdivisionsUnmatched": [
+        "NI-AN",
+        "NI-AS"
+      ],
+      "bytes": 3953,
+      "sha256": "3265b1909f4057df5246599a01f51a2942f731de62e9d6743cb4025d57583929"
+    },
+    "NLD": {
+      "alpha2": "NL",
+      "postalCodes": 4086,
+      "localities": 1974,
+      "subdivisionCentroids": 8,
+      "subdivisionsUnmatched": [
+        "NL-AW",
+        "NL-BQ1",
+        "NL-BQ2",
+        "NL-BQ3",
+        "NL-CW",
+        "NL-FR",
+        "NL-NB",
+        "NL-NH",
+        "NL-SX",
+        "NL-ZH"
+      ],
+      "bytes": 90346,
+      "sha256": "ded5a925064bda336e5e1cacf057f9db69e08d530c37652c647855352cd3ccca"
+    },
+    "NOR": {
+      "alpha2": "NO",
+      "postalCodes": 5132,
+      "localities": 625,
+      "subdivisionCentroids": 9,
+      "subdivisionsUnmatched": [
+        "NO-22",
+        "NO-30",
+        "NO-38",
+        "NO-54"
+      ],
+      "bytes": 57608,
+      "sha256": "7a4585614fb56cf785a5898d949e4a22e03b02e845f34f3303ee9268fadc3d36"
+    },
+    "NPL": {
+      "alpha2": "NP",
+      "postalCodes": 0,
+      "localities": 84,
+      "subdivisionCentroids": 4,
+      "subdivisionsUnmatched": [
+        "NP-P4",
+        "NP-P6",
+        "NP-P7"
+      ],
+      "bytes": 2175,
+      "sha256": "64cd79609819a199f4059b754fed92c4681423f53dfc1a1c877169bddbbb8904"
+    },
+    "NRU": {
+      "alpha2": "NR",
+      "postalCodes": 1,
+      "localities": 15,
+      "subdivisionCentroids": 14,
+      "subdivisionsUnmatched": [],
+      "bytes": 532,
+      "sha256": "9a4eac145455e07e3996d270826a8b6b9e55811056eeef0c3fd93e82db95f4c2"
+    },
+    "NIU": {
+      "alpha2": "NU",
+      "postalCodes": 1,
+      "localities": 1,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 189,
+      "sha256": "e373d25e49a3a238f187249b29a8b70a4d81d11b2ff950cc9b59cf5dfdd0ada1"
+    },
+    "NZL": {
+      "alpha2": "NZ",
+      "postalCodes": 1737,
+      "localities": 732,
+      "subdivisionCentroids": 15,
+      "subdivisionsUnmatched": [
+        "NZ-MWT",
+        "NZ-WGN"
+      ],
+      "bytes": 31810,
+      "sha256": "13aa0f90cb0a3f14d7e34d41d61d587673ee047f29db492a96084b7f63bd02c2"
+    },
+    "OMN": {
+      "alpha2": "OM",
+      "postalCodes": 0,
+      "localities": 39,
+      "subdivisionCentroids": 3,
+      "subdivisionsUnmatched": [
+        "OM-BJ",
+        "OM-BS",
+        "OM-BU",
+        "OM-MA",
+        "OM-SJ",
+        "OM-SS",
+        "OM-ZA",
+        "OM-ZU"
+      ],
+      "bytes": 1053,
+      "sha256": "170c633ee07ffd0237ef9b2ae1acb28ed2624afa97413db1cc7423ac29d49f44"
+    },
+    "PAN": {
+      "alpha2": "PA",
+      "postalCodes": 729,
+      "localities": 801,
+      "subdivisionCentroids": 12,
+      "subdivisionsUnmatched": [
+        "PA-NB",
+        "PA-NT"
+      ],
+      "bytes": 24852,
+      "sha256": "1a91ea64a0ceddb41c8fc82aa47d9f15d293c917f74055177d762a95b2d1984b"
+    },
+    "PER": {
+      "alpha2": "PE",
+      "postalCodes": 2669,
+      "localities": 2296,
+      "subdivisionCentroids": 25,
+      "subdivisionsUnmatched": [
+        "PE-CUS"
+      ],
+      "bytes": 981771,
+      "sha256": "8e5a028ab08560407939d26f22054e0078926a012a2c2427b428316ace76070f"
+    },
+    "PYF": {
+      "alpha2": "PF",
+      "postalCodes": 83,
+      "localities": 45,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 4264,
+      "sha256": "f5779c4a8b3c3ce0857d69b945f822053dd58763b8f4be2788c882eca356fafc"
+    },
+    "PNG": {
+      "alpha2": "PG",
+      "postalCodes": 0,
+      "localities": 53,
+      "subdivisionCentroids": 19,
+      "subdivisionsUnmatched": [
+        "PG-NCD",
+        "PG-NPP",
+        "PG-SAN"
+      ],
+      "bytes": 1559,
+      "sha256": "eb7b378befc2c11d0b26d2470980eccc40c30130743992ebb6502e99c53aa918"
+    },
+    "PHL": {
+      "alpha2": "PH",
+      "postalCodes": 2190,
+      "localities": 4529,
+      "subdivisionCentroids": 17,
+      "subdivisionsUnmatched": [],
+      "bytes": 105691,
+      "sha256": "3285becb5d5f33600dd1ce9af11e0cb302584aaa94e66a0e0e3a21a9ca05ae1e"
+    },
+    "PAK": {
+      "alpha2": "PK",
+      "postalCodes": 2560,
+      "localities": 572,
+      "subdivisionCentroids": 7,
+      "subdivisionsUnmatched": [],
+      "bytes": 51981,
+      "sha256": "8d235ad50060457b4bad75431dfa0e4d5e678515ff5f0189ee4044bad258fd96"
+    },
+    "POL": {
+      "alpha2": "PL",
+      "postalCodes": 20299,
+      "localities": 3868,
+      "subdivisionCentroids": 2,
+      "subdivisionsUnmatched": [
+        "PL-02",
+        "PL-06",
+        "PL-08",
+        "PL-10",
+        "PL-12",
+        "PL-14",
+        "PL-16",
+        "PL-18",
+        "PL-20",
+        "PL-22",
+        "PL-24",
+        "PL-28",
+        "PL-30",
+        "PL-32"
+      ],
+      "bytes": 868461,
+      "sha256": "8656faea1cde72c92f57dfda11562701e72a3e96e0235657032b31bb0a25f35d"
+    },
+    "SPM": {
+      "alpha2": "PM",
+      "postalCodes": 1,
+      "localities": 2,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 240,
+      "sha256": "45494a647c81caebe4b292bdd6adf9a74dcf6148bd544ea13eb4f4753265a13e"
+    },
+    "PCN": {
+      "alpha2": "PN",
+      "postalCodes": 1,
+      "localities": 1,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 221,
+      "sha256": "922c2c4196d2917269e09461e4c29a9e2796906ba6e2360daa4d34c401edbd77"
+    },
+    "PRI": {
+      "alpha2": "PR",
+      "postalCodes": 177,
+      "localities": 227,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 7068,
+      "sha256": "e119b6bac986e2037c9c035cbeec0941731401a3394fa497c6836ce013ca153f"
+    },
+    "PSE": {
+      "alpha2": "PS",
+      "postalCodes": 0,
+      "localities": 448,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [
+        "PS-BTH",
+        "PS-DEB",
+        "PS-GZA",
+        "PS-HBN",
+        "PS-JEM",
+        "PS-JEN",
+        "PS-JRH",
+        "PS-KYS",
+        "PS-NBS",
+        "PS-NGZ",
+        "PS-QQA",
+        "PS-RBH",
+        "PS-RFH",
+        "PS-SLT",
+        "PS-TBS",
+        "PS-TKM"
+      ],
+      "bytes": 8576,
+      "sha256": "4f56ed6fc85dad6a09878051c73e7515930ddecae4011cd8be9ff60cff7bfd20"
+    },
+    "PRT": {
+      "alpha2": "PT",
+      "postalCodes": 197772,
+      "localities": 1079,
+      "subdivisionCentroids": 19,
+      "subdivisionsUnmatched": [
+        "PT-30"
+      ],
+      "bytes": 899517,
+      "sha256": "5e097a11277560768b7bbe4dec389d4c7e3944bca896c89cc75b6fec6a0b3537"
+    },
+    "PLW": {
+      "alpha2": "PW",
+      "postalCodes": 1,
+      "localities": 29,
+      "subdivisionCentroids": 16,
+      "subdivisionsUnmatched": [],
+      "bytes": 845,
+      "sha256": "621f3d7f10f8e92759598dabcb29a3060b7bf2b9d085c7c92c78a3642ac4c9fd"
+    },
+    "PRY": {
+      "alpha2": "PY",
+      "postalCodes": 0,
+      "localities": 173,
+      "subdivisionCentroids": 18,
+      "subdivisionsUnmatched": [],
+      "bytes": 4880,
+      "sha256": "3aabdd3e20ec74caf24bfd6570eedd99b702a3d3538c1421927b0b6caf591bd6"
+    },
+    "QAT": {
+      "alpha2": "QA",
+      "postalCodes": 0,
+      "localities": 43,
+      "subdivisionCentroids": 2,
+      "subdivisionsUnmatched": [
+        "QA-DA",
+        "QA-KH",
+        "QA-MS",
+        "QA-RA",
+        "QA-SH",
+        "QA-ZA"
+      ],
+      "bytes": 1150,
+      "sha256": "01190861e1dbd2b5f3360ec1e1e7e87022539ee8ec975493b2a2ae00ac906159"
+    },
+    "REU": {
+      "alpha2": "RE",
+      "postalCodes": 151,
+      "localities": 28,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 1495,
+      "sha256": "64a814a21a46154538a1a68defddc4a049b22b9f143e5b6a4b27076f08353bad"
+    },
+    "ROU": {
+      "alpha2": "RO",
+      "postalCodes": 37914,
+      "localities": 7149,
+      "subdivisionCentroids": 42,
+      "subdivisionsUnmatched": [],
+      "bytes": 400988,
+      "sha256": "4df9851e40ec30b024960c79f42cac9aedc85f2c5664ee9004ae2cfa4a122a7f"
+    },
+    "SRB": {
+      "alpha2": "RS",
+      "postalCodes": 1149,
+      "localities": 492,
+      "subdivisionCentroids": 1,
+      "subdivisionsUnmatched": [
+        "RS-00",
+        "RS-08",
+        "RS-09",
+        "RS-10",
+        "RS-11",
+        "RS-12",
+        "RS-13",
+        "RS-14",
+        "RS-15",
+        "RS-16",
+        "RS-17",
+        "RS-18",
+        "RS-19",
+        "RS-20",
+        "RS-21",
+        "RS-22",
+        "RS-23",
+        "RS-24",
+        "RS-KM"
+      ],
+      "bytes": 25719,
+      "sha256": "24ed4acf3eddd758fb8f27438afc9c6b84ac0a3f9599c6618f4b6e8f0f139f18"
+    },
+    "RUS": {
+      "alpha2": "RU",
+      "postalCodes": 43538,
+      "localities": 5320,
+      "subdivisionCentroids": 1,
+      "subdivisionsUnmatched": [
+        "RU-AD",
+        "RU-AL",
+        "RU-ALT",
+        "RU-AMU",
+        "RU-ARK",
+        "RU-AST",
+        "RU-BA",
+        "RU-BEL",
+        "RU-BRY",
+        "RU-BU",
+        "RU-CE",
+        "RU-CHE",
+        "RU-CHU",
+        "RU-CU",
+        "RU-DA",
+        "RU-IN",
+        "RU-IRK",
+        "RU-IVA",
+        "RU-KAM",
+        "RU-KB",
+        "RU-KC",
+        "RU-KDA",
+        "RU-KEM",
+        "RU-KGD",
+        "RU-KGN",
+        "RU-KHA",
+        "RU-KHM",
+        "RU-KIR",
+        "RU-KK",
+        "RU-KL",
+        "RU-KLU",
+        "RU-KO",
+        "RU-KOS",
+        "RU-KR",
+        "RU-KRS",
+        "RU-KYA",
+        "RU-LIP",
+        "RU-MAG",
+        "RU-ME",
+        "RU-MO",
+        "RU-MOS",
+        "RU-MOW",
+        "RU-MUR",
+        "RU-NEN",
+        "RU-NGR",
+        "RU-NIZ",
+        "RU-NVS",
+        "RU-OMS",
+        "RU-ORE",
+        "RU-ORL",
+        "RU-PER",
+        "RU-PNZ",
+        "RU-PRI",
+        "RU-PSK",
+        "RU-ROS",
+        "RU-RYA",
+        "RU-SA",
+        "RU-SAK",
+        "RU-SAM",
+        "RU-SAR",
+        "RU-SE",
+        "RU-SMO",
+        "RU-SPE",
+        "RU-STA",
+        "RU-SVE",
+        "RU-TA",
+        "RU-TAM",
+        "RU-TOM",
+        "RU-TUL",
+        "RU-TVE",
+        "RU-TY",
+        "RU-TYU",
+        "RU-UD",
+        "RU-ULY",
+        "RU-VGG",
+        "RU-VLA",
+        "RU-VLG",
+        "RU-VOR",
+        "RU-YAN",
+        "RU-YAR",
+        "RU-YEV",
+        "RU-ZAB"
+      ],
+      "bytes": 759343,
+      "sha256": "c7f19d42b187e5d73eb04f4ce349225768a0fdbf053b162d68822ec3c13fc86e"
+    },
+    "RWA": {
+      "alpha2": "RW",
+      "postalCodes": 0,
+      "localities": 51,
+      "subdivisionCentroids": 5,
+      "subdivisionsUnmatched": [],
+      "bytes": 1271,
+      "sha256": "953a64794c5d1cff8066f2d9d74f9f55bed8ff31516dc76e8f3cce02002120fa"
+    },
+    "SAU": {
+      "alpha2": "SA",
+      "postalCodes": 0,
+      "localities": 160,
+      "subdivisionCentroids": 10,
+      "subdivisionsUnmatched": [
+        "SA-01",
+        "SA-03",
+        "SA-04"
+      ],
+      "bytes": 3718,
+      "sha256": "40f7bdf922ce553069b555d6b0aeea90df3c7d674b121f30033dd8cc065adaed"
+    },
+    "SLB": {
+      "alpha2": "SB",
+      "postalCodes": 0,
+      "localities": 23,
+      "subdivisionCentroids": 9,
+      "subdivisionsUnmatched": [
+        "SB-RB"
+      ],
+      "bytes": 780,
+      "sha256": "2cb0b25dec9e726f120fb0c747226e6e335f2a6fb6e94731b001e96c1a5a2e09"
+    },
+    "SYC": {
+      "alpha2": "SC",
+      "postalCodes": 0,
+      "localities": 26,
+      "subdivisionCentroids": 20,
+      "subdivisionsUnmatched": [
+        "SC-03",
+        "SC-04",
+        "SC-15",
+        "SC-16",
+        "SC-19",
+        "SC-26",
+        "SC-27"
+      ],
+      "bytes": 838,
+      "sha256": "f18b581d0778932ec2ca73e75769be2e17cd6e0694f414b4eb40120724bfd291"
+    },
+    "SDN": {
+      "alpha2": "SD",
+      "postalCodes": 0,
+      "localities": 112,
+      "subdivisionCentroids": 11,
+      "subdivisionsUnmatched": [
+        "SD-DE",
+        "SD-DN",
+        "SD-DS",
+        "SD-DW",
+        "SD-GD",
+        "SD-GZ",
+        "SD-KS"
+      ],
+      "bytes": 2696,
+      "sha256": "ebec81b17b64b56d8ac0b57e8a7c82d3479243bd9e746f95dbfd8ea0f32a9dbd"
+    },
+    "SWE": {
+      "alpha2": "SE",
+      "postalCodes": 18887,
+      "localities": 1326,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [
+        "SE-AB",
+        "SE-AC",
+        "SE-BD",
+        "SE-C",
+        "SE-D",
+        "SE-E",
+        "SE-F",
+        "SE-G",
+        "SE-H",
+        "SE-I",
+        "SE-K",
+        "SE-M",
+        "SE-N",
+        "SE-O",
+        "SE-S",
+        "SE-T",
+        "SE-U",
+        "SE-W",
+        "SE-X",
+        "SE-Y",
+        "SE-Z"
+      ],
+      "bytes": 104651,
+      "sha256": "bfa7da9ebdd6a6cfff4b8f289997596de03ad1131d88af1e99d5d6c45b28c95c"
+    },
+    "SGP": {
+      "alpha2": "SG",
+      "postalCodes": 121135,
+      "localities": 121,
+      "subdivisionCentroids": 5,
+      "subdivisionsUnmatched": [],
+      "bytes": 680307,
+      "sha256": "97e0f735bb7a9766c90c767a9f64e242589e8e56992f6fc28654e139953fc7bf"
+    },
+    "SHN": {
+      "alpha2": "SH",
+      "postalCodes": 0,
+      "localities": 6,
+      "subdivisionCentroids": 3,
+      "subdivisionsUnmatched": [],
+      "bytes": 345,
+      "sha256": "de53eb2d662a12c331153fc0d3dc0d0cfc70ce5308964b753a1abc87729ccd43"
+    },
+    "SVN": {
+      "alpha2": "SI",
+      "postalCodes": 556,
+      "localities": 602,
+      "subdivisionCentroids": 201,
+      "subdivisionsUnmatched": [
+        "SI-011",
+        "SI-050",
+        "SI-052",
+        "SI-054",
+        "SI-070",
+        "SI-080",
+        "SI-084",
+        "SI-085",
+        "SI-096",
+        "SI-112",
+        "SI-133"
+      ],
+      "bytes": 19729,
+      "sha256": "81fe0da409450e28ec114630ba7918d75237ba2dccbcb480c14dcc8d2cb628dc"
+    },
+    "SJM": {
+      "alpha2": "SJ",
+      "postalCodes": 8,
+      "localities": 2,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 370,
+      "sha256": "e64e69578ad2a928d025940cc03d09f1f57f7fd04a46dc420536edb58234748b"
+    },
+    "SVK": {
+      "alpha2": "SK",
+      "postalCodes": 3480,
+      "localities": 788,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [
+        "SK-BC",
+        "SK-BL",
+        "SK-KI",
+        "SK-NI",
+        "SK-PV",
+        "SK-TA",
+        "SK-TC",
+        "SK-ZI"
+      ],
+      "bytes": 68316,
+      "sha256": "7b1e202c2226c0667a54d169d6e025168b523667183192ab3a4cd203ae6d6488"
+    },
+    "SLE": {
+      "alpha2": "SL",
+      "postalCodes": 0,
+      "localities": 88,
+      "subdivisionCentroids": 3,
+      "subdivisionsUnmatched": [
+        "SL-NW",
+        "SL-W"
+      ],
+      "bytes": 1807,
+      "sha256": "3e186264dda96e9391976c2d0282424d9ee589cc725413706071b7f321cdbb9b"
+    },
+    "SMR": {
+      "alpha2": "SM",
+      "postalCodes": 10,
+      "localities": 15,
+      "subdivisionCentroids": 9,
+      "subdivisionsUnmatched": [],
+      "bytes": 786,
+      "sha256": "b189169160a8a01b074cf59c42aace7254ffa70c6fb5d719a3cfdb8e4cdf7f5f"
+    },
+    "SEN": {
+      "alpha2": "SN",
+      "postalCodes": 0,
+      "localities": 153,
+      "subdivisionCentroids": 14,
+      "subdivisionsUnmatched": [],
+      "bytes": 3398,
+      "sha256": "181b2b038cb8ebe077d9156ecf23515431f00b41c1dad0f734eb5dc5ead89e23"
+    },
+    "SOM": {
+      "alpha2": "SO",
+      "postalCodes": 0,
+      "localities": 76,
+      "subdivisionCentroids": 14,
+      "subdivisionsUnmatched": [
+        "SO-JD",
+        "SO-JH",
+        "SO-SD",
+        "SO-SH"
+      ],
+      "bytes": 1921,
+      "sha256": "e32f9e4939b0f610b54d84720fc4d314ee5fde13e932a1e820ce913504b8aa4e"
+    },
+    "SUR": {
+      "alpha2": "SR",
+      "postalCodes": 0,
+      "localities": 35,
+      "subdivisionCentroids": 10,
+      "subdivisionsUnmatched": [],
+      "bytes": 1023,
+      "sha256": "2040e3b49d3888a4ccfcbe7bdf01aec1be75e4ffbdf0da8db4ae81c4b6bdf311"
+    },
+    "SSD": {
+      "alpha2": "SS",
+      "postalCodes": 0,
+      "localities": 23,
+      "subdivisionCentroids": 8,
+      "subdivisionsUnmatched": [
+        "SS-BN",
+        "SS-BW"
+      ],
+      "bytes": 714,
+      "sha256": "523f40efb0098db659443ea9e215a4bbb9efc714dccc7fabc19bf07d2014305f"
+    },
+    "STP": {
+      "alpha2": "ST",
+      "postalCodes": 0,
+      "localities": 51,
+      "subdivisionCentroids": 3,
+      "subdivisionsUnmatched": [
+        "ST-03",
+        "ST-04",
+        "ST-05",
+        "ST-06"
+      ],
+      "bytes": 1187,
+      "sha256": "21f4766f9d416f61c47fab40483cf7f45af686752a797edb95ac642725d1ebc8"
+    },
+    "SLV": {
+      "alpha2": "SV",
+      "postalCodes": 0,
+      "localities": 102,
+      "subdivisionCentroids": 14,
+      "subdivisionsUnmatched": [],
+      "bytes": 2338,
+      "sha256": "774f9c2fc369ce6e99b09cddf8a384a930897f4dc9e56294748793853e2db02c"
+    },
+    "SXM": {
+      "alpha2": "SX",
+      "postalCodes": 0,
+      "localities": 7,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 320,
+      "sha256": "5aa7e766b42e0444137bc164bc71f2b911fc6394d40719855c525be0c1fbfd7f"
+    },
+    "SYR": {
+      "alpha2": "SY",
+      "postalCodes": 0,
+      "localities": 310,
+      "subdivisionCentroids": 4,
+      "subdivisionsUnmatched": [
+        "SY-DI",
+        "SY-DR",
+        "SY-DY",
+        "SY-HI",
+        "SY-HL",
+        "SY-HM",
+        "SY-LA",
+        "SY-QU",
+        "SY-RA",
+        "SY-SU"
+      ],
+      "bytes": 6036,
+      "sha256": "a52a41bb72a643b013bfc6321dd0361865066f63d1478a7e76ac52d7a1e5f85e"
+    },
+    "SWZ": {
+      "alpha2": "SZ",
+      "postalCodes": 0,
+      "localities": 25,
+      "subdivisionCentroids": 4,
+      "subdivisionsUnmatched": [],
+      "bytes": 708,
+      "sha256": "4ca278cf95caf56563baf0e829acdb60c274429ac08ce25c67ac0f59c31dd683"
+    },
+    "TCA": {
+      "alpha2": "TC",
+      "postalCodes": 1,
+      "localities": 11,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 450,
+      "sha256": "e3d86edb28b533cd5fe2c8ff6f4e772a3e344f4efd6f1505785398c4fa688fac"
+    },
+    "TCD": {
+      "alpha2": "TD",
+      "postalCodes": 0,
+      "localities": 74,
+      "subdivisionCentroids": 20,
+      "subdivisionsUnmatched": [
+        "TD-BG",
+        "TD-ND",
+        "TD-OD"
+      ],
+      "bytes": 1878,
+      "sha256": "5dda83750dfb4bc756805fc50fa96648bc1a2a5629924c5a4cb2944f4522d25b"
+    },
+    "ATF": {
+      "alpha2": "TF",
+      "postalCodes": 0,
+      "localities": 1,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 176,
+      "sha256": "1d1ec5f1dfe95b718d793379a9e514637999993e55d56054455e248d01217f38"
+    },
+    "TGO": {
+      "alpha2": "TG",
+      "postalCodes": 0,
+      "localities": 35,
+      "subdivisionCentroids": 5,
+      "subdivisionsUnmatched": [],
+      "bytes": 897,
+      "sha256": "581bd7604f7bcf912aa1543fc971899f6700afb94dd92d0d1645a9345ec77845"
+    },
+    "THA": {
+      "alpha2": "TH",
+      "postalCodes": 771,
+      "localities": 1084,
+      "subdivisionCentroids": 76,
+      "subdivisionsUnmatched": [
+        "TH-82",
+        "TH-S"
+      ],
+      "bytes": 35037,
+      "sha256": "0404dfb31a1724aa363fde5e87adec723e8b1d84dc39e7844ab8cd8ae72662fd"
+    },
+    "TJK": {
+      "alpha2": "TJ",
+      "postalCodes": 0,
+      "localities": 103,
+      "subdivisionCentroids": 3,
+      "subdivisionsUnmatched": [
+        "TJ-GB",
+        "TJ-RA"
+      ],
+      "bytes": 2226,
+      "sha256": "b5bee6a6f187c37cc5eaaf4ce2c676d741fadb56da75101bd373a6cd2010b426"
+    },
+    "TKL": {
+      "alpha2": "TK",
+      "postalCodes": 0,
+      "localities": 3,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 237,
+      "sha256": "83cf9b43ca3ad335feb8a299a7af9c8b2d71bebcc83bafc2c59251268e032352"
+    },
+    "TLS": {
+      "alpha2": "TL",
+      "postalCodes": 0,
+      "localities": 32,
+      "subdivisionCentroids": 13,
+      "subdivisionsUnmatched": [],
+      "bytes": 1053,
+      "sha256": "742559fd456d7a59fa0b605e2b9755dd354e9813f3452a8d29ea4f60a9c326df"
+    },
+    "TKM": {
+      "alpha2": "TM",
+      "postalCodes": 0,
+      "localities": 123,
+      "subdivisionCentroids": 6,
+      "subdivisionsUnmatched": [],
+      "bytes": 2689,
+      "sha256": "ad5bb07b41a74adeefddebbdd8d2e1de69570fc3ec4e53a414baa447b80d831c"
+    },
+    "TUN": {
+      "alpha2": "TN",
+      "postalCodes": 0,
+      "localities": 286,
+      "subdivisionCentroids": 23,
+      "subdivisionsUnmatched": [
+        "TN-12"
+      ],
+      "bytes": 7143,
+      "sha256": "f8957bc5d335b72ca892b57260d4681fbfba2ab591e78537cb44768514a040fe"
+    },
+    "TON": {
+      "alpha2": "TO",
+      "postalCodes": 0,
+      "localities": 47,
+      "subdivisionCentroids": 4,
+      "subdivisionsUnmatched": [
+        "TO-05"
+      ],
+      "bytes": 1092,
+      "sha256": "18c0e4ac2bee40d17b6342f3912692c8f9b08fb3e572a5f01489f5e910e89e9b"
+    },
+    "TUR": {
+      "alpha2": "TR",
+      "postalCodes": 2953,
+      "localities": 3970,
+      "subdivisionCentroids": 81,
+      "subdivisionsUnmatched": [],
+      "bytes": 473297,
+      "sha256": "a0f6c56d93349ab02d7ddde484a5d25a8ac0245a74fc312d9720532072216a22"
+    },
+    "TTO": {
+      "alpha2": "TT",
+      "postalCodes": 0,
+      "localities": 27,
+      "subdivisionCentroids": 13,
+      "subdivisionsUnmatched": [
+        "TT-ARI",
+        "TT-MRC"
+      ],
+      "bytes": 881,
+      "sha256": "7b4da1978561b269405271083085e63997445f8b149d619e724a394715a58263"
+    },
+    "TUV": {
+      "alpha2": "TV",
+      "postalCodes": 0,
+      "localities": 12,
+      "subdivisionCentroids": 6,
+      "subdivisionsUnmatched": [
+        "TV-NKL",
+        "TV-NMA"
+      ],
+      "bytes": 468,
+      "sha256": "909963c211bfeb33c6645cf4c0957147448a76bcd0aff6cfac3ec08df5fbe1a2"
+    },
+    "TWN": {
+      "alpha2": "TW",
+      "postalCodes": 0,
+      "localities": 89,
+      "subdivisionCentroids": 1,
+      "subdivisionsUnmatched": [
+        "TW-CHA",
+        "TW-CYI",
+        "TW-CYQ",
+        "TW-HSQ",
+        "TW-HSZ",
+        "TW-HUA",
+        "TW-ILA",
+        "TW-KEE",
+        "TW-KHH",
+        "TW-KIN",
+        "TW-LIE",
+        "TW-MIA",
+        "TW-NAN",
+        "TW-NWT",
+        "TW-PEN",
+        "TW-PIF",
+        "TW-TAO",
+        "TW-TNN",
+        "TW-TTT",
+        "TW-TXG",
+        "TW-YUN"
+      ],
+      "bytes": 1941,
+      "sha256": "992ee0fc642e8b97ac66d43da02546ff95e9ee3820906bbee0376650234dcedd"
+    },
+    "TZA": {
+      "alpha2": "TZ",
+      "postalCodes": 0,
+      "localities": 320,
+      "subdivisionCentroids": 31,
+      "subdivisionsUnmatched": [],
+      "bytes": 6745,
+      "sha256": "f363299e1138167f585749cd5bc323e1716beb647d96d5a930cd5b03a878229d"
+    },
+    "UKR": {
+      "alpha2": "UA",
+      "postalCodes": 26579,
+      "localities": 5534,
+      "subdivisionCentroids": 26,
+      "subdivisionsUnmatched": [
+        "UA-43"
+      ],
+      "bytes": 508912,
+      "sha256": "90dd0a18397d8bb2d63cd4116616880cd17a4cc577b71cca7e19e8e3f660328b"
+    },
+    "UGA": {
+      "alpha2": "UG",
+      "postalCodes": 0,
+      "localities": 212,
+      "subdivisionCentroids": 4,
+      "subdivisionsUnmatched": [],
+      "bytes": 4377,
+      "sha256": "48b8614595748d420a8327d18b23e5031434d6fc9b4c771280a8699c4e7d55f3"
+    },
+    "USA": {
+      "alpha2": "US",
+      "postalCodes": 41488,
+      "localities": 21782,
+      "subdivisionCentroids": 51,
+      "subdivisionsUnmatched": [
+        "US-AS",
+        "US-GU",
+        "US-MP",
+        "US-PR",
+        "US-UM",
+        "US-VI"
+      ],
+      "bytes": 906868,
+      "sha256": "ee1a0f51be33ca288bb645b70a515a442e3430a6e90abb33749399b6117c8a9e"
+    },
+    "URY": {
+      "alpha2": "UY",
+      "postalCodes": 122,
+      "localities": 154,
+      "subdivisionCentroids": 19,
+      "subdivisionsUnmatched": [],
+      "bytes": 26493,
+      "sha256": "c2f3bc7b6c824383a8bc6d83944ac3e877779398f1ed7f24347a5c13678ef01e"
+    },
+    "UZB": {
+      "alpha2": "UZ",
+      "postalCodes": 0,
+      "localities": 221,
+      "subdivisionCentroids": 7,
+      "subdivisionsUnmatched": [
+        "UZ-AN",
+        "UZ-BU",
+        "UZ-FA",
+        "UZ-JI",
+        "UZ-QR",
+        "UZ-TK",
+        "UZ-TO"
+      ],
+      "bytes": 4388,
+      "sha256": "a65936e011858c992102a75ca1809668a14acf9008f761721e4199908097fb06"
+    },
+    "VAT": {
+      "alpha2": "VA",
+      "postalCodes": 1,
+      "localities": 1,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 195,
+      "sha256": "8fdc93880e7de24549e5569433b76fa3dfeb11eb71b43f726605a0b85b4a43b9"
+    },
+    "VCT": {
+      "alpha2": "VC",
+      "postalCodes": 0,
+      "localities": 25,
+      "subdivisionCentroids": 6,
+      "subdivisionsUnmatched": [],
+      "bytes": 727,
+      "sha256": "e3d2fea2386552906b84cc224738849d9a39650494a0b8b90f70ea546cd07b05"
+    },
+    "VEN": {
+      "alpha2": "VE",
+      "postalCodes": 0,
+      "localities": 414,
+      "subdivisionCentroids": 24,
+      "subdivisionsUnmatched": [
+        "VE-X"
+      ],
+      "bytes": 10003,
+      "sha256": "ebf809ae2b748929032f3b08cee86fe5566b24a937c3b3a1c5c9495bfbf6df33"
+    },
+    "VGB": {
+      "alpha2": "VG",
+      "postalCodes": 0,
+      "localities": 2,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 197,
+      "sha256": "a7447bc45baae45e57cffee3037abd3707014503f8c4bc44c981e9f63e2f18f0"
+    },
+    "VIR": {
+      "alpha2": "VI",
+      "postalCodes": 16,
+      "localities": 8,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 552,
+      "sha256": "984c3ce0b1d82bef825fc555ccf9799c7df98fbffce08af41c62ab70c6047da1"
+    },
+    "VNM": {
+      "alpha2": "VN",
+      "postalCodes": 0,
+      "localities": 913,
+      "subdivisionCentroids": 36,
+      "subdivisionsUnmatched": [
+        "VN-03",
+        "VN-06",
+        "VN-27",
+        "VN-28",
+        "VN-32",
+        "VN-35",
+        "VN-36",
+        "VN-39",
+        "VN-41",
+        "VN-43",
+        "VN-45",
+        "VN-47",
+        "VN-50",
+        "VN-53",
+        "VN-54",
+        "VN-55",
+        "VN-57",
+        "VN-58",
+        "VN-61",
+        "VN-63",
+        "VN-67",
+        "VN-70",
+        "VN-72",
+        "VN-73",
+        "VN-DN",
+        "VN-HN",
+        "VN-SG"
+      ],
+      "bytes": 20014,
+      "sha256": "312d302a69ec4c7525435d824b40699412c7e6cc7711538d48daa52aa546a495"
+    },
+    "VUT": {
+      "alpha2": "VU",
+      "postalCodes": 0,
+      "localities": 10,
+      "subdivisionCentroids": 6,
+      "subdivisionsUnmatched": [],
+      "bytes": 438,
+      "sha256": "6258f2eb46846fc2459c24c41460228df83700f753972398803bdd4a91152c1a"
+    },
+    "WLF": {
+      "alpha2": "WF",
+      "postalCodes": 3,
+      "localities": 8,
+      "subdivisionCentroids": 3,
+      "subdivisionsUnmatched": [],
+      "bytes": 423,
+      "sha256": "71a2650f6327f1ba7780c8d219b103b2a802bf4a7910b7b0f9bc4b6bc86f1927"
+    },
+    "WSM": {
+      "alpha2": "WS",
+      "postalCodes": 1,
+      "localities": 74,
+      "subdivisionCentroids": 10,
+      "subdivisionsUnmatched": [
+        "WS-GI"
+      ],
+      "bytes": 1605,
+      "sha256": "c0a26db1334093cd26d9b2ed27888f3c8e5cbbe4c7d94b1e411c52da8cf7b818"
+    },
+    "XKX": {
+      "alpha2": "XK",
+      "postalCodes": 0,
+      "localities": 77,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 1802,
+      "sha256": "03731df31f4bd729d7b1625156090de7b5f3af93760fa7f178c2970788acdab1"
+    },
+    "YEM": {
+      "alpha2": "YE",
+      "postalCodes": 0,
+      "localities": 316,
+      "subdivisionCentroids": 14,
+      "subdivisionsUnmatched": [
+        "YE-AD",
+        "YE-AM",
+        "YE-HD",
+        "YE-SA",
+        "YE-SD",
+        "YE-SN",
+        "YE-SU",
+        "YE-TA"
+      ],
+      "bytes": 7244,
+      "sha256": "561793db692cf6abe26e2301e3e28c410cce0592d96d08441b7f699a30a6dc53"
+    },
+    "MYT": {
+      "alpha2": "YT",
+      "postalCodes": 11,
+      "localities": 66,
+      "subdivisionCentroids": 0,
+      "subdivisionsUnmatched": [],
+      "bytes": 1569,
+      "sha256": "1f828e1c2987f6191a770200fe92ca0619b7a1a0d2b8d0c78b8489a15c3b985a"
+    },
+    "ZAF": {
+      "alpha2": "ZA",
+      "postalCodes": 3266,
+      "localities": 989,
+      "subdivisionCentroids": 9,
+      "subdivisionsUnmatched": [],
+      "bytes": 43482,
+      "sha256": "b028519f03d54f544025326e1a1d4732b23a4ce6d5568505898fb752432fbaa5"
+    },
+    "ZMB": {
+      "alpha2": "ZM",
+      "postalCodes": 0,
+      "localities": 98,
+      "subdivisionCentroids": 10,
+      "subdivisionsUnmatched": [],
+      "bytes": 2200,
+      "sha256": "b5b32fbfdd017d05c962b28f998d27ebbee3202a41a443fe08d336f9b0ee8399"
+    },
+    "ZWE": {
+      "alpha2": "ZW",
+      "postalCodes": 0,
+      "localities": 69,
+      "subdivisionCentroids": 10,
+      "subdivisionsUnmatched": [],
+      "bytes": 1660,
+      "sha256": "10be76b517d80c52dfe11a499420ed955d626a672509054dc97865e0916242ed"
+    }
+  }
+}

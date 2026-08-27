@@ -1,0 +1,187 @@
+{% load static %}<!DOCTYPE html>
+<html lang="en" class="h-full bg-brand-bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{{ amrit_country.branding.product_name|default:"AMRIT" }} · central server{% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-navy':   { DEFAULT: '{{ amrit_country.branding.colors.navy|default:"#23376D" }}', 50:'#eef0f7', 100:'#dde1ef', 200:'#b8c0db', 300:'#8d99c2', 400:'#5e6da4', 500:'#3c4d8a', 600:'#2e3f78', 700:'#23376D', 800:'#1b2c5a', 900:'#13204a' },
+              'brand-blue':   { DEFAULT: '#1B75BC', 50:'#eef7fd', 100:'#d6ecfa', 200:'#aed7f3', 300:'#7cbeec', 400:'#479fdf', 500:'#2585cb', 600:'#1B75BC', 700:'#175e98', 800:'#154e7c', 900:'#143f64' },
+              'brand-accent': { DEFAULT: '#F15A29', 50:'#fff2ec', 100:'#ffe1d3', 200:'#ffbe9e', 300:'#ff8f5d', 400:'#ff6e35', 500:'#F15A29', 600:'#d8420f', 700:'#b1320d', 800:'#8d2810', 900:'#722313' },
+              'brand-yellow': { DEFAULT: '#FFCB05' },
+              'brand-bg':     '#f6f7fb',
+              'brand-grey':   '#BCBEC0',
+            },
+            fontFamily: {
+              sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+              display: ['Montserrat', 'Inter', 'system-ui', 'sans-serif'],
+            },
+            boxShadow: {
+              card: '0 1px 2px rgba(15,23,42,.04), 0 8px 24px -16px rgba(15,23,42,.10)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body { font-family: 'Inter', system-ui, sans-serif; }
+      h1,h2,h3,h4,.font-display { font-family: 'Montserrat', 'Inter', sans-serif; letter-spacing: -0.01em; }
+      .stat-card { transition: transform .15s ease, box-shadow .15s ease; }
+      .stat-card:hover { transform: translateY(-1px); box-shadow: 0 12px 32px -16px rgba(35,55,109,.25); }
+      .nav-link { position: relative; }
+      .nav-link.active::after {
+        content: ''; position: absolute; left: 12px; right: 12px; bottom: -1px; height: 3px;
+        background: #F15A29; border-radius: 3px 3px 0 0;
+      }
+      .badge-dot { width: 0.5rem; height: 0.5rem; border-radius: 9999px; display: inline-block; }
+      .ring-orange { box-shadow: inset 0 0 0 2px #F15A29; }
+    </style>
+    {% block head_extra %}{% endblock %}
+</head>
+<body class="h-full text-slate-800">
+  <div class="min-h-full flex flex-col">
+    {# top utility strip #}
+    <div class="bg-brand-navy-900 text-brand-navy-100 text-xs">
+      <div class="max-w-7xl mx-auto px-6 py-1.5 flex flex-wrap items-center justify-between gap-2">
+{% comment %}The strip names the deployment, from its own country profile. It used to
+        name one country's government on every installation on earth.{% endcomment %}
+        <div>{{ amrit_country.country_name|default:"" }}{% if amrit_country.country_name and amrit_country.branding.authority_name %} · {% endif %}{{ amrit_country.branding.authority_name|default:"" }}</div>
+        <div class="flex items-center gap-3">
+          <span class="hidden sm:inline">{{ amrit_country.branding.product_name|default:"AMRIT" }} — antimicrobial resistance surveillance</span>
+          {% if amrit_residency_note %}<span class="text-brand-accent">●</span><span class="hidden md:inline">{{ amrit_residency_note }}</span>{% endif %}
+        </div>
+      </div>
+    </div>
+
+    {# brand + nav #}
+    <header class="bg-white border-b border-slate-200 shadow-sm sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-6 py-2.5 flex items-center justify-between gap-4">
+        
+        {% comment %}The emblem never appears alone: on its own it names the authority but
+        not the product, and a visitor landing on a sub-page could not tell what they are
+        looking at. Both come from the country profile, so neither is another country's.
+        {% endcomment %}
+        <a href="{% url 'dashboard' %}" class="flex items-center gap-3 group shrink-0 py-1">
+          {% if amrit_logo %}
+            <img src="{{ amrit_logo }}" alt="{{ amrit_country.branding.authority_name|default:'AMRIT' }}"
+                 class="h-11 w-11 object-contain transition-transform duration-200 group-hover:scale-[1.02]">
+          {% endif %}
+          <span class="flex flex-col leading-tight">
+            <span class="font-display text-lg font-extrabold text-brand-navy-700">{{ amrit_country.branding.product_name|default:'AMRIT' }}</span>
+            {% if amrit_country.branding.authority_name %}
+              <span class="hidden sm:inline text-[11px] font-medium text-slate-500">{{ amrit_country.branding.authority_name }}</span>
+            {% endif %}
+          </span>
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-x-0.5 text-sm font-semibold text-slate-600">
+          {% url 'dashboard' as u_dash %}
+          {% url 'dashboard_sites' as u_sites %}
+          {% url 'dashboard_map' as u_map %}
+          {% url 'dashboard_queries' as u_queries %}
+          {% url 'query_new' as u_new %}
+          {% url 'dashboard_audit' as u_audit %}
+          {% url 'public_summary' as u_pub %}
+
+          <a href="{{ u_dash }}" class="nav-link px-2.5 py-3 transition-colors hover:text-brand-navy-700 {% if request.path == u_dash %}active text-brand-navy-900 font-bold{% endif %}">Overview</a>
+          
+          {% if amrit_caps.view_basic_dashboard %}
+            <a href="{% url 'dashboard_home' %}" class="nav-link px-2.5 py-3 transition-colors hover:text-brand-navy-700 {% if '/dashboard/roles/' in request.path %}active text-brand-navy-900 font-bold{% endif %}">My Dashboard</a>
+          {% endif %}
+          
+          {% if amrit_caps.track_action_points or amrit_caps.manage_action_plans %}
+            <a href="{% url 'action_inbox' %}" class="nav-link px-2.5 py-3 transition-colors hover:text-brand-navy-700 {% if '/actions/' in request.path %}active text-brand-navy-900 font-bold{% endif %}">Action Plans</a>
+          {% endif %}
+          
+          {% if amrit_caps.view_all_sites or amrit_caps.view_scoped_sites or amrit_caps.view_own_site %}
+            <a href="{{ u_sites }}" class="nav-link px-2.5 py-3 transition-colors hover:text-brand-navy-700 {% if request.path == u_sites %}active text-brand-navy-900 font-bold{% endif %}">
+              Sites{% if amrit_pending_site_requests %}<span title="Laboratories waiting to be approved" class="ml-1 inline-flex items-center justify-center rounded-full bg-amber-500 text-white text-[11px] font-bold px-1.5 align-middle">{{ amrit_pending_site_requests }}</span>{% endif %}
+            </a>
+          {% endif %}
+          
+          {% if amrit_caps.view_map %}
+            <a href="{{ u_map }}" class="nav-link px-2.5 py-3 transition-colors hover:text-brand-navy-700 {% if request.path == u_map %}active text-brand-navy-900 font-bold{% endif %}">Map</a>
+          {% endif %}
+          
+          {% if amrit_caps.view_queries %}
+            <a href="{{ u_queries }}" class="nav-link px-2.5 py-3 transition-colors hover:text-brand-navy-700 {% if request.path == u_queries %}active text-brand-navy-900 font-bold{% endif %}">Queries</a>
+          {% endif %}
+
+          {% if amrit_caps.view_advanced_dashboard %}
+            <a href="{% url 'outbreak_dashboard' %}" class="nav-link px-2.5 py-3 transition-colors hover:text-brand-navy-700 {% if '/dashboard/outbreaks/' in request.path %}active text-brand-navy-900 font-bold{% endif %}">Outbreaks</a>
+          {% endif %}
+
+          {% if amrit_caps.run_query %}
+            <a href="{{ u_new }}" class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-brand-accent-500 text-white hover:bg-brand-accent-600 text-xs font-bold tracking-wide shadow-sm transition duration-150">
+              <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"><path d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"/></svg>
+              NEW QUERY
+            </a>
+          {% endif %}
+
+          {% if amrit_caps.view_audit %}
+            <a href="{{ u_audit }}" class="nav-link px-2.5 py-3 transition-colors hover:text-brand-navy-700 {% if request.path == u_audit %}active text-brand-navy-900 font-bold{% endif %}">Audit</a>
+          {% endif %}
+          
+          {% if amrit_caps.view_public_summary %}
+            <a href="{{ u_pub }}" class="nav-link px-2.5 py-3 transition-colors hover:text-brand-navy-700 {% if request.path == u_pub %}active text-brand-navy-900 font-bold{% endif %}">Public</a>
+          {% endif %}
+          
+          {% if amrit_caps.manage_users %}
+            <a href="{% url 'portal_admin_home' %}" class="nav-link px-2.5 py-3 transition-colors hover:text-brand-navy-700 {% if '/portal-admin/' in request.path %}active text-brand-navy-900 font-bold{% endif %}">Portal Admin</a>
+          {% endif %}
+        </nav>
+
+        <div class="flex items-center gap-3.5 shrink-0">
+          {% if user.is_authenticated %}
+            <div class="hidden md:flex flex-col items-end border-l border-slate-200 pl-3.5 h-8 justify-center">
+              <span class="text-[10px] text-brand-accent-600 font-extrabold uppercase tracking-wider leading-none">{{ amrit_role_label|default:"User" }}</span>
+            </div>
+            <form method="post" action="{% url 'logout' %}" class="inline">
+              {% csrf_token %}
+              <button class="px-3 py-1.5 rounded-md border border-slate-300 text-slate-600 hover:text-slate-900 hover:bg-slate-50 text-xs font-semibold transition">Sign out</button>
+            </form>
+          {% else %}
+            <a href="{% url 'login' %}" class="px-3 py-1.5 rounded-md bg-brand-navy-700 text-white hover:bg-brand-navy-800 text-xs font-semibold transition">Sign in</a>
+          {% endif %}
+        </div>
+      </div>
+    </header>
+    <main class="flex-1">
+      <div class="max-w-7xl mx-auto px-6 py-8">
+        {% if messages %}
+          <div class="mb-6 space-y-2">
+            {% for message in messages %}
+              <div class="rounded-lg px-4 py-3 text-sm border
+                {% if message.tags == 'error' %}bg-rose-50 border-rose-200 text-rose-800
+                {% elif message.tags == 'warning' %}bg-amber-50 border-amber-200 text-amber-800
+                {% else %}bg-emerald-50 border-emerald-200 text-emerald-800{% endif %}">{{ message }}</div>
+            {% endfor %}
+          </div>
+        {% endif %}
+        {% block content %}{% endblock %}
+      </div>
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white">
+      <div class="max-w-7xl mx-auto px-6 py-5 text-xs text-slate-500 flex flex-wrap items-center justify-between gap-3">
+        <div>
+          <div class="font-semibold text-slate-700">{{ amrit_country.branding.authority_name|default:"Unconfigured deployment" }}</div>
+          <div>{{ amrit_country.country_name|default:"" }}{% if amrit_country.country_code %} · {{ amrit_country.country_code }}{% endif %}</div>
+        </div>
+        <div class="text-right">
+          <div>{{ amrit_country.branding.product_name|default:"AMRIT" }} · central aggregation server</div>
+          <div>Aggregate, de-identified results only · k-anonymity floor enforced</div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

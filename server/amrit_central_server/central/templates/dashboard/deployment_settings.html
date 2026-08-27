@@ -1,0 +1,286 @@
+{% extends "dashboard/base.html" %}
+{% block title %}Deployment settings{% endblock %}
+
+{% comment %}Same sections, in the same order, as the desktop app's Deployment & country
+screen. An administrator who has configured one product should recognise the other.
+{% endcomment %}
+{% block content %}
+<div class="max-w-5xl mx-auto py-6 space-y-6">
+
+  <header class="space-y-1">
+    <h1 class="text-2xl font-bold text-brand-navy-900">Deployment settings</h1>
+    <p class="text-sm text-brand-navy-700">
+      Country-varying behaviour for <strong>{{ profile.country_name }}</strong> ({{ country_code }}).
+      Changes take effect immediately; no restart is required.
+    </p>
+  </header>
+
+  {% if messages %}
+    <div class="space-y-2">
+      {% for message in messages %}
+        <div class="rounded border px-3 py-2 text-sm
+          {% if message.tags == 'error' %}border-red-300 bg-red-50 text-red-800
+          {% else %}border-green-300 bg-green-50 text-green-800{% endif %}">{{ message }}</div>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  <form method="post" action="{% url 'dashboard_deployment_save' %}" class="space-y-6">
+    {% csrf_token %}
+    <input type="hidden" name="country" value="{{ country_code }}">
+
+    <section class="rounded-lg border border-brand-grey bg-white p-4 space-y-3">
+      <h2 class="font-semibold text-brand-navy-900">Identity and branding</h2>
+      <div class="grid gap-3 sm:grid-cols-2">
+        <label class="block text-sm">Country name
+          <input name="country_name" value="{{ profile.country_name }}" class="mt-1 w-full rounded border border-brand-grey p-2 text-sm"></label>
+        <label class="block text-sm">Product name
+          <input name="product_name" value="{{ profile.branding.product_name }}" class="mt-1 w-full rounded border border-brand-grey p-2 text-sm"></label>
+        <label class="block text-sm">Authority name
+          <input name="authority_name" value="{{ profile.branding.authority_name }}" class="mt-1 w-full rounded border border-brand-grey p-2 text-sm"></label>
+      </div>
+      <div class="grid gap-3 sm:grid-cols-3">
+        <label class="block text-sm">Brand navy
+          <input type="color" name="colour_navy" value="{{ profile.branding.colors.navy|default:'#23376D' }}" class="mt-1 h-9 w-full rounded border border-brand-grey"></label>
+        <label class="block text-sm">Brand blue
+          <input type="color" name="colour_blue" value="{{ profile.branding.colors.blue|default:'#1B75BC' }}" class="mt-1 h-9 w-full rounded border border-brand-grey"></label>
+        <label class="block text-sm">Brand accent
+          <input type="color" name="colour_orange" value="{{ profile.branding.colors.orange|default:'#F15A29' }}" class="mt-1 h-9 w-full rounded border border-brand-grey"></label>
+      </div>
+    </section>
+
+    <section class="rounded-lg border border-brand-grey bg-white p-4 space-y-3">
+      <h2 class="font-semibold text-brand-navy-900">Administrative levels</h2>
+      <p class="text-xs text-brand-navy-700">
+        This country's sub-national hierarchy, outermost first. Site scoping, RBAC and every
+        dashboard drill-down follow it. Tick <em>Remove</em> and save to delete a level; the
+        remaining levels are renumbered.
+      </p>
+      {% for level in profile.admin_levels %}
+        <div class="grid gap-2 sm:grid-cols-5 items-end border-t border-brand-grey pt-3 first:border-t-0 first:pt-0">
+          <label class="block text-xs">Key
+            <input name="level_key" value="{{ level.key }}" class="mt-1 w-full rounded border border-brand-grey p-1.5 text-sm"></label>
+          <label class="block text-xs">Label
+            <input name="level_label" value="{{ level.label }}" class="mt-1 w-full rounded border border-brand-grey p-1.5 text-sm"></label>
+          <label class="block text-xs">Label (plural)
+            <input name="level_label_plural" value="{{ level.label_plural }}" class="mt-1 w-full rounded border border-brand-grey p-1.5 text-sm"></label>
+          <label class="block text-xs">Code system
+            <input name="level_code_system" value="{{ level.code_system }}" class="mt-1 w-full rounded border border-brand-grey p-1.5 text-sm"></label>
+          <div class="flex gap-3 text-xs pb-1.5">
+            <label class="flex items-center gap-1">
+              <input type="checkbox" name="level_required" value="{{ forloop.counter0 }}" {% if level.required %}checked{% endif %}> Required
+            </label>
+            <label class="flex items-center gap-1 text-red-700">
+              <input type="checkbox" name="level_removed" value="{{ forloop.counter0 }}"> Remove
+            </label>
+          </div>
+        </div>
+      {% endfor %}
+    </section>
+
+    <section class="rounded-lg border border-brand-grey bg-white p-4 space-y-3">
+      <h2 class="font-semibold text-brand-navy-900">Locale and time</h2>
+      <p class="text-xs text-brand-navy-700">
+        Display and input only — stored values stay ISO-8601 Gregorian UTC whatever is chosen here.
+      </p>
+      <div class="grid gap-3 sm:grid-cols-3">
+        <label class="block text-sm">Locale
+          <input name="locale" value="{{ profile.locale|default:'' }}" class="mt-1 w-full rounded border border-brand-grey p-2 text-sm"></label>
+        <label class="block text-sm">Fallback locales
+          <input name="fallback_locales" value="{{ profile.fallback_locales|join:', ' }}" class="mt-1 w-full rounded border border-brand-grey p-2 text-sm"></label>
+        <label class="block text-sm">Text direction
+          <select name="text_direction" class="mt-1 w-full rounded border border-brand-grey p-2 text-sm">
+            <option value="ltr" {% if profile.text_direction == 'ltr' %}selected{% endif %}>Left to right</option>
+            <option value="rtl" {% if profile.text_direction == 'rtl' %}selected{% endif %}>Right to left</option>
+          </select></label>
+        <label class="block text-sm">Numbering system
+          <input name="numbering_system" value="{{ profile.numbering_system|default:'latn' }}" class="mt-1 w-full rounded border border-brand-grey p-2 text-sm"></label>
+        <label class="block text-sm">Timezone
+          <input name="timezone" value="{{ profile.timezone|default_if_none:'' }}" class="mt-1 w-full rounded border border-brand-grey p-2 text-sm">
+          {% if profile.timezone_ambiguous %}<span class="text-xs text-amber-800">This country spans several zones; each site may override it.</span>{% endif %}</label>
+        <label class="block text-sm">Display calendar
+          <input name="calendar" value="{{ profile.calendar|default:'gregory' }}" class="mt-1 w-full rounded border border-brand-grey p-2 text-sm"></label>
+        <label class="block text-sm">Date input order
+          <select name="date_input_order" class="mt-1 w-full rounded border border-brand-grey p-2 text-sm">
+            <option value="DMY" {% if profile.date_input_order == 'DMY' %}selected{% endif %}>Day / Month / Year</option>
+            <option value="MDY" {% if profile.date_input_order == 'MDY' %}selected{% endif %}>Month / Day / Year</option>
+            <option value="YMD" {% if profile.date_input_order == 'YMD' %}selected{% endif %}>Year / Month / Day</option>
+          </select></label>
+        <label class="block text-sm">First day of week
+          <input type="number" min="1" max="7" name="first_day_of_week" value="{{ profile.first_day_of_week|default:1 }}" class="mt-1 w-full rounded border border-brand-grey p-2 text-sm"></label>
+        <label class="block text-sm">Epidemiological week
+          <select name="epi_week_system" class="mt-1 w-full rounded border border-brand-grey p-2 text-sm">
+            <option value="iso" {% if profile.epi_week_system == 'iso' %}selected{% endif %}>ISO-8601 (Monday start)</option>
+            <option value="mmwr" {% if profile.epi_week_system == 'mmwr' %}selected{% endif %}>MMWR (Sunday start)</option>
+          </select></label>
+        <label class="block text-sm">Reporting year starts (month)
+          <input type="number" min="1" max="12" name="fiscal_year_start_month" value="{{ profile.fiscal_year_start_month|default:1 }}" class="mt-1 w-full rounded border border-brand-grey p-2 text-sm"></label>
+      </div>
+    </section>
+
+    <section class="rounded-lg border border-brand-grey bg-white p-4 space-y-3">
+      <h2 class="font-semibold text-brand-navy-900">Standards and guidelines</h2>
+      <div class="grid gap-3 sm:grid-cols-3">
+        <label class="block text-sm">Default guideline
+          <input name="guideline_default" value="{{ profile.guidelines.default }}" class="mt-1 w-full rounded border border-brand-grey p-2 text-sm"></label>
+        <label class="block text-sm">Available guidelines
+          <input name="guideline_available" value="{{ profile.guidelines.available|join:', ' }}" class="mt-1 w-full rounded border border-brand-grey p-2 text-sm"></label>
+        <label class="block text-sm">National standards body
+          <input name="guideline_body" value="{{ profile.guidelines.national_body|default_if_none:'' }}" class="mt-1 w-full rounded border border-brand-grey p-2 text-sm"></label>
+      </div>
+      <label class="block text-sm">Reporting frameworks
+        <input name="reporting_frameworks" value="{{ profile.reporting_frameworks|join:', ' }}" class="mt-1 w-full rounded border border-brand-grey p-2 text-sm"></label>
+      {% if profile.code_systems %}
+        <input type="hidden" name="code_systems_present" value="yes">
+        <div class="space-y-1">
+          {% for name, entry in profile.code_systems.items %}
+            <label class="flex items-start gap-2 text-sm">
+              <input type="checkbox" name="code_system_{{ name }}" {% if entry.enabled %}checked{% endif %} class="mt-1">
+              <span>{{ name|upper }}
+                {% if entry.licence %}<span class="block text-xs text-brand-navy-700">Licence: {{ entry.licence }}. Enable only if this deployment holds it.</span>{% endif %}
+              </span>
+            </label>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </section>
+
+    <section class="rounded-lg border border-brand-grey bg-white p-4 space-y-3">
+      <h2 class="font-semibold text-brand-navy-900">Privacy</h2>
+      <div class="grid gap-3 sm:grid-cols-3">
+        <label class="block text-sm">k-anonymity floor
+          <input type="number" min="1" name="k_anonymity_floor" value="{{ profile.privacy.k_anonymity_floor|default:5 }}" class="mt-1 w-full rounded border border-brand-grey p-2 text-sm"></label>
+        <label class="block text-sm">Retention (days)
+          <input type="number" min="0" name="retention_days" value="{{ profile.privacy.retention_days|default_if_none:'' }}" class="mt-1 w-full rounded border border-brand-grey p-2 text-sm">
+          <span class="text-xs text-brand-navy-700">Blank means no automatic expiry.</span></label>
+        <label class="block text-sm">Residency note
+          <input name="residency_note" value="{{ profile.privacy.residency_note|default_if_none:'' }}" class="mt-1 w-full rounded border border-brand-grey p-2 text-sm"></label>
+      </div>
+      <label class="block text-sm">Banned identifier keys
+        <input name="banned_identifier_keys" value="{{ profile.banned_identifier_keys|join:', ' }}" class="mt-1 w-full rounded border border-brand-grey p-2 text-sm">
+        <span class="text-xs text-brand-navy-700">Merged into the generic blocklist, which always applies — this list can only make the guard stricter.</span></label>
+    </section>
+
+    <section class="rounded-lg border border-brand-grey bg-white p-4 space-y-3">
+      <h2 class="font-semibold text-brand-navy-900">Map</h2>
+      <div class="grid gap-3 sm:grid-cols-4">
+        <label class="block text-sm">Centre latitude
+          <input type="number" step="0.0001" name="map_lat" value="{{ profile.map.center.0|default_if_none:0 }}" class="mt-1 w-full rounded border border-brand-grey p-2 text-sm"></label>
+        <label class="block text-sm">Centre longitude
+          <input type="number" step="0.0001" name="map_lng" value="{{ profile.map.center.1|default_if_none:0 }}" class="mt-1 w-full rounded border border-brand-grey p-2 text-sm"></label>
+        <label class="block text-sm">Zoom
+          <input type="number" min="1" max="18" name="map_zoom" value="{{ profile.map.zoom|default:2 }}" class="mt-1 w-full rounded border border-brand-grey p-2 text-sm"></label>
+        <label class="block text-sm">Tile URL
+          <input name="map_tile_url" value="{{ profile.map.tile_url|default_if_none:'' }}" class="mt-1 w-full rounded border border-brand-grey p-2 text-sm">
+          <span class="text-xs text-brand-navy-700">Absolute https only.</span></label>
+      </div>
+    </section>
+
+    <section class="rounded-lg border border-brand-grey bg-white p-4 space-y-3">
+      <h2 class="font-semibold text-brand-navy-900">Identifier namespace</h2>
+      <div class="rounded border border-amber-300 bg-amber-50 p-3 text-xs text-amber-900">
+        <strong>Changing these cannot be undone for data already exported.</strong>
+        FHIR bundles already sent carry the previous system URIs, so downstream consumers
+        will see two identifier systems for this deployment. The change is recorded with an
+        effective-from timestamp so past exports stay explainable.
+        <label class="mt-2 flex items-center gap-2">
+          <input type="checkbox" name="confirm_irreversible" value="yes">
+          I understand, and want to change the identifier namespace.
+        </label>
+      </div>
+      <div class="grid gap-3 sm:grid-cols-2">
+        <label class="block text-sm">Base URI
+          <input name="base_uri" value="{{ profile.identifier_namespace.base_uri }}" class="mt-1 w-full rounded border border-brand-grey p-2 text-sm"></label>
+        <label class="block text-sm">URN prefix
+          <input name="urn_prefix" value="{{ profile.identifier_namespace.urn_prefix }}" class="mt-1 w-full rounded border border-brand-grey p-2 text-sm"></label>
+      </div>
+    </section>
+
+    <div class="flex gap-2">
+      <button type="submit" class="rounded bg-brand-navy-700 px-3 py-1.5 text-sm text-white">Save changes</button>
+      <a href="{% url 'dashboard_deployment_export' %}?country={{ country_code }}"
+         class="rounded border border-brand-grey px-3 py-1.5 text-sm">Export effective profile</a>
+    </div>
+  </form>
+
+  <section class="rounded-lg border border-brand-grey bg-white p-4 space-y-3">
+    <h2 class="font-semibold text-brand-navy-900">Logo</h2>
+    <p class="text-xs text-brand-navy-700">
+      PNG, JPEG or WebP, up to 2&nbsp;MB and 4096&nbsp;px. SVG is not accepted: it is an
+      executable document and this image is rendered on the public dashboard. Uploads are
+      checked by their content, not their filename, and re-encoded before being stored.
+    </p>
+    {% if profile.branding.logo %}
+      <img src="{{ profile.branding.logo }}" alt="Current logo" class="h-12">
+    {% endif %}
+    <form method="post" action="{% url 'dashboard_deployment_logo' %}" enctype="multipart/form-data" class="flex items-center gap-3">
+      {% csrf_token %}
+      <input type="hidden" name="country" value="{{ country_code }}">
+      <input type="file" name="logo" accept="image/png,image/jpeg,image/webp" required class="text-sm">
+      <button type="submit" class="rounded bg-brand-navy-700 px-3 py-1.5 text-sm text-white">Upload</button>
+    </form>
+  </section>
+
+  <section class="rounded-lg border border-brand-grey bg-white p-4 space-y-3">
+    <h2 class="font-semibold text-brand-navy-900">Customisations</h2>
+    <p class="text-xs text-brand-navy-700">
+      Fields this deployment has changed. Everything else follows the base profile and tracks its updates.
+    </p>
+    {% if customised %}
+      <ul class="divide-y divide-brand-grey text-sm">
+        {% for field in customised %}
+          <li class="flex items-center justify-between gap-3 py-1.5">
+            <span>{{ field }}</span>
+            <form method="post" action="{% url 'dashboard_deployment_revert' %}">
+              {% csrf_token %}
+              <input type="hidden" name="country" value="{{ country_code }}">
+              <input type="hidden" name="field" value="{{ field }}">
+              <button type="submit" class="text-xs text-brand-navy-700 underline">Revert to base</button>
+            </form>
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p class="text-sm text-brand-navy-700">Nothing is customised — this deployment uses the base profile exactly.</p>
+    {% endif %}
+  </section>
+
+  <section class="rounded-lg border border-brand-grey bg-white p-4 space-y-3">
+    <h2 class="font-semibold text-brand-navy-900">Fixed when this application was built</h2>
+    <dl class="space-y-2 text-sm">
+      {% for label, reason in build_time_fields %}
+        <div><dt class="font-medium">{{ label }}</dt><dd class="text-xs text-brand-navy-700">{{ reason }}</dd></div>
+      {% endfor %}
+    </dl>
+    <form method="post" action="{% url 'dashboard_deployment_reset' %}"
+          onsubmit="return confirm('Reset every deployment setting for {{ country_code }} to the base profile?');">
+      {% csrf_token %}
+      <input type="hidden" name="country" value="{{ country_code }}">
+      <button type="submit" class="text-xs text-red-700 underline">Reset every setting to the base profile</button>
+    </form>
+  </section>
+
+  <details class="rounded-lg border border-brand-grey bg-white p-4">
+    <summary class="cursor-pointer font-semibold text-brand-navy-900">Advanced: edit the override document directly</summary>
+    <p class="mt-2 text-xs text-brand-navy-700">
+      Editable: {{ editable_fields|join:", " }}. Saving here replaces the whole document, so it
+      is the way to set a field the sections above do not yet cover.
+    </p>
+    <form method="post" action="{% url 'dashboard_deployment_save' %}" class="mt-3 space-y-3">
+      {% csrf_token %}
+      <input type="hidden" name="country" value="{{ country_code }}">
+      <textarea id="overrides" name="overrides" rows="14"
+                class="w-full rounded border border-brand-grey p-2 font-mono text-xs"
+                spellcheck="false">{{ overrides_json }}</textarea>
+      <label class="flex items-center gap-2 text-xs">
+        <input type="checkbox" name="confirm_irreversible" value="yes">
+        I understand a namespace change cannot be undone for data already exported.
+      </label>
+      <button type="submit" class="rounded bg-brand-navy-700 px-3 py-1.5 text-sm text-white">Save document</button>
+    </form>
+    <h3 class="mt-4 font-semibold text-brand-navy-900">Effective profile</h3>
+    <pre class="mt-2 max-h-96 overflow-auto rounded bg-brand-bg p-3 text-xs">{{ effective_json }}</pre>
+  </details>
+
+</div>
+{% endblock %}

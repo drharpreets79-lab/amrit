@@ -1,0 +1,5692 @@
+{
+ "source": "https://id.who.int/icd/release/10/2019",
+ "system": "http://hl7.org/fhir/sid/icd-10",
+ "release": "2019",
+ "retrieved": "2026-08-15",
+ "chapters": [
+  "I",
+  "XXII"
+ ],
+ "blocks": [
+  "J09-J18",
+  "N30-N39"
+ ],
+ "licenceNote": "ICD is published by WHO and freely available for use; WHO retains copyright and requires attribution. Titles are WHO's own, taken verbatim from the ICD API. A modified or extended list must not be presented as the classification itself.",
+ "codes": [
+  {
+   "code": "A00",
+   "display": "Cholera",
+   "parent": "A00-A09"
+  },
+  {
+   "code": "A00.0",
+   "display": "Cholera due to Vibrio cholerae 01, biovar cholerae",
+   "parent": "A00"
+  },
+  {
+   "code": "A00.1",
+   "display": "Cholera due to Vibrio cholerae 01, biovar eltor",
+   "parent": "A00"
+  },
+  {
+   "code": "A00.9",
+   "display": "Cholera, unspecified",
+   "parent": "A00"
+  },
+  {
+   "code": "A01",
+   "display": "Typhoid and paratyphoid fevers",
+   "parent": "A00-A09"
+  },
+  {
+   "code": "A01.0",
+   "display": "Typhoid fever",
+   "parent": "A01"
+  },
+  {
+   "code": "A01.1",
+   "display": "Paratyphoid fever A",
+   "parent": "A01"
+  },
+  {
+   "code": "A01.2",
+   "display": "Paratyphoid fever B",
+   "parent": "A01"
+  },
+  {
+   "code": "A01.3",
+   "display": "Paratyphoid fever C",
+   "parent": "A01"
+  },
+  {
+   "code": "A01.4",
+   "display": "Paratyphoid fever, unspecified",
+   "parent": "A01"
+  },
+  {
+   "code": "A02",
+   "display": "Other salmonella infections",
+   "parent": "A00-A09"
+  },
+  {
+   "code": "A02.0",
+   "display": "Salmonella enteritis",
+   "parent": "A02"
+  },
+  {
+   "code": "A02.1",
+   "display": "Salmonella sepsis",
+   "parent": "A02"
+  },
+  {
+   "code": "A02.2",
+   "display": "Localized salmonella infections",
+   "parent": "A02"
+  },
+  {
+   "code": "A02.8",
+   "display": "Other specified salmonella infections",
+   "parent": "A02"
+  },
+  {
+   "code": "A02.9",
+   "display": "Salmonella infection, unspecified",
+   "parent": "A02"
+  },
+  {
+   "code": "A03",
+   "display": "Shigellosis",
+   "parent": "A00-A09"
+  },
+  {
+   "code": "A03.0",
+   "display": "Shigellosis due to Shigella dysenteriae",
+   "parent": "A03"
+  },
+  {
+   "code": "A03.1",
+   "display": "Shigellosis due to Shigella flexneri",
+   "parent": "A03"
+  },
+  {
+   "code": "A03.2",
+   "display": "Shigellosis due to Shigella boydii",
+   "parent": "A03"
+  },
+  {
+   "code": "A03.3",
+   "display": "Shigellosis due to Shigella sonnei",
+   "parent": "A03"
+  },
+  {
+   "code": "A03.8",
+   "display": "Other shigellosis",
+   "parent": "A03"
+  },
+  {
+   "code": "A03.9",
+   "display": "Shigellosis, unspecified",
+   "parent": "A03"
+  },
+  {
+   "code": "A04",
+   "display": "Other bacterial intestinal infections",
+   "parent": "A00-A09"
+  },
+  {
+   "code": "A04.0",
+   "display": "Enteropathogenic Escherichia coli infection",
+   "parent": "A04"
+  },
+  {
+   "code": "A04.1",
+   "display": "Enterotoxigenic Escherichia coli infection",
+   "parent": "A04"
+  },
+  {
+   "code": "A04.2",
+   "display": "Enteroinvasive Escherichia coli infection",
+   "parent": "A04"
+  },
+  {
+   "code": "A04.3",
+   "display": "Enterohaemorrhagic Escherichia coli infection",
+   "parent": "A04"
+  },
+  {
+   "code": "A04.4",
+   "display": "Other intestinal Escherichia coli infections",
+   "parent": "A04"
+  },
+  {
+   "code": "A04.5",
+   "display": "Campylobacter enteritis",
+   "parent": "A04"
+  },
+  {
+   "code": "A04.6",
+   "display": "Enteritis due to Yersinia enterocolitica",
+   "parent": "A04"
+  },
+  {
+   "code": "A04.7",
+   "display": "Enterocolitis due to Clostridium difficile",
+   "parent": "A04"
+  },
+  {
+   "code": "A04.8",
+   "display": "Other specified bacterial intestinal infections",
+   "parent": "A04"
+  },
+  {
+   "code": "A04.9",
+   "display": "Bacterial intestinal infection, unspecified",
+   "parent": "A04"
+  },
+  {
+   "code": "A05",
+   "display": "Other bacterial foodborne intoxications, not elsewhere classified",
+   "parent": "A00-A09"
+  },
+  {
+   "code": "A05.0",
+   "display": "Foodborne staphylococcal intoxication",
+   "parent": "A05"
+  },
+  {
+   "code": "A05.1",
+   "display": "Botulism",
+   "parent": "A05"
+  },
+  {
+   "code": "A05.2",
+   "display": "Foodborne Clostridium perfringens [Clostridium welchii] intoxication",
+   "parent": "A05"
+  },
+  {
+   "code": "A05.3",
+   "display": "Foodborne Vibrio parahaemolyticus intoxication",
+   "parent": "A05"
+  },
+  {
+   "code": "A05.4",
+   "display": "Foodborne Bacillus cereus intoxication",
+   "parent": "A05"
+  },
+  {
+   "code": "A05.8",
+   "display": "Other specified bacterial foodborne intoxications",
+   "parent": "A05"
+  },
+  {
+   "code": "A05.9",
+   "display": "Bacterial foodborne intoxication, unspecified",
+   "parent": "A05"
+  },
+  {
+   "code": "A06",
+   "display": "Amoebiasis",
+   "parent": "A00-A09"
+  },
+  {
+   "code": "A06.0",
+   "display": "Acute amoebic dysentery",
+   "parent": "A06"
+  },
+  {
+   "code": "A06.1",
+   "display": "Chronic intestinal amoebiasis",
+   "parent": "A06"
+  },
+  {
+   "code": "A06.2",
+   "display": "Amoebic nondysenteric colitis",
+   "parent": "A06"
+  },
+  {
+   "code": "A06.3",
+   "display": "Amoeboma of intestine",
+   "parent": "A06"
+  },
+  {
+   "code": "A06.4",
+   "display": "Amoebic liver abscess",
+   "parent": "A06"
+  },
+  {
+   "code": "A06.5",
+   "display": "Amoebic lung abscess",
+   "parent": "A06"
+  },
+  {
+   "code": "A06.6",
+   "display": "Amoebic brain abscess",
+   "parent": "A06"
+  },
+  {
+   "code": "A06.7",
+   "display": "Cutaneous amoebiasis",
+   "parent": "A06"
+  },
+  {
+   "code": "A06.8",
+   "display": "Amoebic infection of other sites",
+   "parent": "A06"
+  },
+  {
+   "code": "A06.9",
+   "display": "Amoebiasis, unspecified",
+   "parent": "A06"
+  },
+  {
+   "code": "A07",
+   "display": "Other protozoal intestinal diseases",
+   "parent": "A00-A09"
+  },
+  {
+   "code": "A07.0",
+   "display": "Balantidiasis",
+   "parent": "A07"
+  },
+  {
+   "code": "A07.1",
+   "display": "Giardiasis [lambliasis]",
+   "parent": "A07"
+  },
+  {
+   "code": "A07.2",
+   "display": "Cryptosporidiosis",
+   "parent": "A07"
+  },
+  {
+   "code": "A07.3",
+   "display": "Isosporiasis",
+   "parent": "A07"
+  },
+  {
+   "code": "A07.8",
+   "display": "Other specified protozoal intestinal diseases",
+   "parent": "A07"
+  },
+  {
+   "code": "A07.9",
+   "display": "Protozoal intestinal disease, unspecified",
+   "parent": "A07"
+  },
+  {
+   "code": "A08",
+   "display": "Viral and other specified intestinal infections",
+   "parent": "A00-A09"
+  },
+  {
+   "code": "A08.0",
+   "display": "Rotaviral enteritis",
+   "parent": "A08"
+  },
+  {
+   "code": "A08.1",
+   "display": "Acute gastroenteropathy due to Norovirus",
+   "parent": "A08"
+  },
+  {
+   "code": "A08.2",
+   "display": "Adenoviral enteritis",
+   "parent": "A08"
+  },
+  {
+   "code": "A08.3",
+   "display": "Other viral enteritis",
+   "parent": "A08"
+  },
+  {
+   "code": "A08.4",
+   "display": "Viral intestinal infection, unspecified",
+   "parent": "A08"
+  },
+  {
+   "code": "A08.5",
+   "display": "Other specified intestinal infections",
+   "parent": "A08"
+  },
+  {
+   "code": "A09",
+   "display": "Other gastroenteritis and colitis of infectious and unspecified origin",
+   "parent": "A00-A09"
+  },
+  {
+   "code": "A09.0",
+   "display": "Other and unspecified gastroenteritis and colitis of infectious origin",
+   "parent": "A09"
+  },
+  {
+   "code": "A09.9",
+   "display": "Gastroenteritis and colitis of unspecified origin",
+   "parent": "A09"
+  },
+  {
+   "code": "A15",
+   "display": "Respiratory tuberculosis, bacteriologically and histologically confirmed",
+   "parent": "A15-A19"
+  },
+  {
+   "code": "A15.0",
+   "display": "Tuberculosis of lung, confirmed by sputum microscopy with or without culture",
+   "parent": "A15"
+  },
+  {
+   "code": "A15.1",
+   "display": "Tuberculosis of lung, confirmed by culture only",
+   "parent": "A15"
+  },
+  {
+   "code": "A15.2",
+   "display": "Tuberculosis of lung, confirmed histologically",
+   "parent": "A15"
+  },
+  {
+   "code": "A15.3",
+   "display": "Tuberculosis of lung, confirmed by unspecified means",
+   "parent": "A15"
+  },
+  {
+   "code": "A15.4",
+   "display": "Tuberculosis of intrathoracic lymph nodes, confirmed bacteriologically and histologically",
+   "parent": "A15"
+  },
+  {
+   "code": "A15.5",
+   "display": "Tuberculosis of larynx, trachea and bronchus, confirmed bacteriologically and histologically",
+   "parent": "A15"
+  },
+  {
+   "code": "A15.6",
+   "display": "Tuberculous pleurisy, confirmed bacteriologically and histologically",
+   "parent": "A15"
+  },
+  {
+   "code": "A15.7",
+   "display": "Primary respiratory tuberculosis, confirmed bacteriologically and histologically",
+   "parent": "A15"
+  },
+  {
+   "code": "A15.8",
+   "display": "Other respiratory tuberculosis, confirmed bacteriologically and histologically",
+   "parent": "A15"
+  },
+  {
+   "code": "A15.9",
+   "display": "Respiratory tuberculosis unspecified, confirmed bacteriologically and histologically",
+   "parent": "A15"
+  },
+  {
+   "code": "A16",
+   "display": "Respiratory tuberculosis, not confirmed bacteriologically or histologically",
+   "parent": "A15-A19"
+  },
+  {
+   "code": "A16.0",
+   "display": "Tuberculosis of lung, bacteriologically and histologically negative",
+   "parent": "A16"
+  },
+  {
+   "code": "A16.1",
+   "display": "Tuberculosis of lung, bacteriological and histological examination not done",
+   "parent": "A16"
+  },
+  {
+   "code": "A16.2",
+   "display": "Tuberculosis of lung, without mention of bacteriological or histological confirmation",
+   "parent": "A16"
+  },
+  {
+   "code": "A16.3",
+   "display": "Tuberculosis of intrathoracic lymph nodes, without mention of bacteriological or histological confirmation",
+   "parent": "A16"
+  },
+  {
+   "code": "A16.4",
+   "display": "Tuberculosis of larynx, trachea and bronchus, without mention of bacteriological or histological confirmation",
+   "parent": "A16"
+  },
+  {
+   "code": "A16.5",
+   "display": "Tuberculous pleurisy, without mention of bacteriological or histological confirmation",
+   "parent": "A16"
+  },
+  {
+   "code": "A16.7",
+   "display": "Primary respiratory tuberculosis without mention of bacteriological or histological confirmation",
+   "parent": "A16"
+  },
+  {
+   "code": "A16.8",
+   "display": "Other respiratory tuberculosis, without mention of bacteriological or histological confirmation",
+   "parent": "A16"
+  },
+  {
+   "code": "A16.9",
+   "display": "Respiratory tuberculosis unspecified, without mention of bacteriological or histological confirmation",
+   "parent": "A16"
+  },
+  {
+   "code": "A17",
+   "display": "Tuberculosis of nervous system",
+   "parent": "A15-A19"
+  },
+  {
+   "code": "A17.0",
+   "display": "Tuberculous meningitis",
+   "parent": "A17"
+  },
+  {
+   "code": "A17.1",
+   "display": "Meningeal tuberculoma",
+   "parent": "A17"
+  },
+  {
+   "code": "A17.8",
+   "display": "Other tuberculosis of nervous system",
+   "parent": "A17"
+  },
+  {
+   "code": "A17.9",
+   "display": "Tuberculosis of nervous system, unspecified",
+   "parent": "A17"
+  },
+  {
+   "code": "A18",
+   "display": "Tuberculosis of other organs",
+   "parent": "A15-A19"
+  },
+  {
+   "code": "A18.0",
+   "display": "Tuberculosis of bones and joints",
+   "parent": "A18"
+  },
+  {
+   "code": "A18.1",
+   "display": "Tuberculosis of genitourinary system",
+   "parent": "A18"
+  },
+  {
+   "code": "A18.2",
+   "display": "Tuberculous peripheral lymphadenopathy",
+   "parent": "A18"
+  },
+  {
+   "code": "A18.3",
+   "display": "Tuberculosis of intestines, peritoneum and mesenteric glands",
+   "parent": "A18"
+  },
+  {
+   "code": "A18.4",
+   "display": "Tuberculosis of skin and subcutaneous tissue",
+   "parent": "A18"
+  },
+  {
+   "code": "A18.5",
+   "display": "Tuberculosis of eye",
+   "parent": "A18"
+  },
+  {
+   "code": "A18.6",
+   "display": "Tuberculosis of ear",
+   "parent": "A18"
+  },
+  {
+   "code": "A18.7",
+   "display": "Tuberculosis of adrenal glands",
+   "parent": "A18"
+  },
+  {
+   "code": "A18.8",
+   "display": "Tuberculosis of other specified organs",
+   "parent": "A18"
+  },
+  {
+   "code": "A19",
+   "display": "Miliary tuberculosis",
+   "parent": "A15-A19"
+  },
+  {
+   "code": "A19.0",
+   "display": "Acute miliary tuberculosis of a single specified site",
+   "parent": "A19"
+  },
+  {
+   "code": "A19.1",
+   "display": "Acute miliary tuberculosis of multiple sites",
+   "parent": "A19"
+  },
+  {
+   "code": "A19.2",
+   "display": "Acute miliary tuberculosis, unspecified",
+   "parent": "A19"
+  },
+  {
+   "code": "A19.8",
+   "display": "Other miliary tuberculosis",
+   "parent": "A19"
+  },
+  {
+   "code": "A19.9",
+   "display": "Miliary tuberculosis, unspecified",
+   "parent": "A19"
+  },
+  {
+   "code": "A20",
+   "display": "Plague",
+   "parent": "A20-A28"
+  },
+  {
+   "code": "A20.0",
+   "display": "Bubonic plague",
+   "parent": "A20"
+  },
+  {
+   "code": "A20.1",
+   "display": "Cellulocutaneous plague",
+   "parent": "A20"
+  },
+  {
+   "code": "A20.2",
+   "display": "Pneumonic plague",
+   "parent": "A20"
+  },
+  {
+   "code": "A20.3",
+   "display": "Plague meningitis",
+   "parent": "A20"
+  },
+  {
+   "code": "A20.7",
+   "display": "Septicaemic plague",
+   "parent": "A20"
+  },
+  {
+   "code": "A20.8",
+   "display": "Other forms of plague",
+   "parent": "A20"
+  },
+  {
+   "code": "A20.9",
+   "display": "Plague, unspecified",
+   "parent": "A20"
+  },
+  {
+   "code": "A21",
+   "display": "Tularaemia",
+   "parent": "A20-A28"
+  },
+  {
+   "code": "A21.0",
+   "display": "Ulceroglandular tularaemia",
+   "parent": "A21"
+  },
+  {
+   "code": "A21.1",
+   "display": "Oculoglandular tularaemia",
+   "parent": "A21"
+  },
+  {
+   "code": "A21.2",
+   "display": "Pulmonary tularaemia",
+   "parent": "A21"
+  },
+  {
+   "code": "A21.3",
+   "display": "Gastrointestinal tularaemia",
+   "parent": "A21"
+  },
+  {
+   "code": "A21.7",
+   "display": "Generalized tularaemia",
+   "parent": "A21"
+  },
+  {
+   "code": "A21.8",
+   "display": "Other forms of tularaemia",
+   "parent": "A21"
+  },
+  {
+   "code": "A21.9",
+   "display": "Tularaemia, unspecified",
+   "parent": "A21"
+  },
+  {
+   "code": "A22",
+   "display": "Anthrax",
+   "parent": "A20-A28"
+  },
+  {
+   "code": "A22.0",
+   "display": "Cutaneous anthrax",
+   "parent": "A22"
+  },
+  {
+   "code": "A22.1",
+   "display": "Pulmonary anthrax",
+   "parent": "A22"
+  },
+  {
+   "code": "A22.2",
+   "display": "Gastrointestinal anthrax",
+   "parent": "A22"
+  },
+  {
+   "code": "A22.7",
+   "display": "Anthrax sepsis",
+   "parent": "A22"
+  },
+  {
+   "code": "A22.8",
+   "display": "Other forms of anthrax",
+   "parent": "A22"
+  },
+  {
+   "code": "A22.9",
+   "display": "Anthrax, unspecified",
+   "parent": "A22"
+  },
+  {
+   "code": "A23",
+   "display": "Brucellosis",
+   "parent": "A20-A28"
+  },
+  {
+   "code": "A23.0",
+   "display": "Brucellosis due to Brucella melitensis",
+   "parent": "A23"
+  },
+  {
+   "code": "A23.1",
+   "display": "Brucellosis due to Brucella abortus",
+   "parent": "A23"
+  },
+  {
+   "code": "A23.2",
+   "display": "Brucellosis due to Brucella suis",
+   "parent": "A23"
+  },
+  {
+   "code": "A23.3",
+   "display": "Brucellosis due to Brucella canis",
+   "parent": "A23"
+  },
+  {
+   "code": "A23.8",
+   "display": "Other brucellosis",
+   "parent": "A23"
+  },
+  {
+   "code": "A23.9",
+   "display": "Brucellosis, unspecified",
+   "parent": "A23"
+  },
+  {
+   "code": "A24",
+   "display": "Glanders and melioidosis",
+   "parent": "A20-A28"
+  },
+  {
+   "code": "A24.0",
+   "display": "Glanders",
+   "parent": "A24"
+  },
+  {
+   "code": "A24.1",
+   "display": "Acute and fulminating melioidosis",
+   "parent": "A24"
+  },
+  {
+   "code": "A24.2",
+   "display": "Subacute and chronic melioidosis",
+   "parent": "A24"
+  },
+  {
+   "code": "A24.3",
+   "display": "Other melioidosis",
+   "parent": "A24"
+  },
+  {
+   "code": "A24.4",
+   "display": "Melioidosis, unspecified",
+   "parent": "A24"
+  },
+  {
+   "code": "A25",
+   "display": "Rat-bite fevers",
+   "parent": "A20-A28"
+  },
+  {
+   "code": "A25.0",
+   "display": "Spirillosis",
+   "parent": "A25"
+  },
+  {
+   "code": "A25.1",
+   "display": "Streptobacillosis",
+   "parent": "A25"
+  },
+  {
+   "code": "A25.9",
+   "display": "Rat-bite fever, unspecified",
+   "parent": "A25"
+  },
+  {
+   "code": "A26",
+   "display": "Erysipeloid",
+   "parent": "A20-A28"
+  },
+  {
+   "code": "A26.0",
+   "display": "Cutaneous erysipeloid",
+   "parent": "A26"
+  },
+  {
+   "code": "A26.7",
+   "display": "Erysipelothrix sepsis",
+   "parent": "A26"
+  },
+  {
+   "code": "A26.8",
+   "display": "Other forms of erysipeloid",
+   "parent": "A26"
+  },
+  {
+   "code": "A26.9",
+   "display": "Erysipeloid, unspecified",
+   "parent": "A26"
+  },
+  {
+   "code": "A27",
+   "display": "Leptospirosis",
+   "parent": "A20-A28"
+  },
+  {
+   "code": "A27.0",
+   "display": "Leptospirosis icterohaemorrhagica",
+   "parent": "A27"
+  },
+  {
+   "code": "A27.8",
+   "display": "Other forms of leptospirosis",
+   "parent": "A27"
+  },
+  {
+   "code": "A27.9",
+   "display": "Leptospirosis, unspecified",
+   "parent": "A27"
+  },
+  {
+   "code": "A28",
+   "display": "Other zoonotic bacterial diseases, not elsewhere classified",
+   "parent": "A20-A28"
+  },
+  {
+   "code": "A28.0",
+   "display": "Pasteurellosis",
+   "parent": "A28"
+  },
+  {
+   "code": "A28.1",
+   "display": "Cat-scratch disease",
+   "parent": "A28"
+  },
+  {
+   "code": "A28.2",
+   "display": "Extraintestinal yersiniosis",
+   "parent": "A28"
+  },
+  {
+   "code": "A28.8",
+   "display": "Other specified zoonotic bacterial diseases, not elsewhere classified",
+   "parent": "A28"
+  },
+  {
+   "code": "A28.9",
+   "display": "Zoonotic bacterial disease, unspecified",
+   "parent": "A28"
+  },
+  {
+   "code": "A30",
+   "display": "Leprosy [Hansen disease]",
+   "parent": "A30-A49"
+  },
+  {
+   "code": "A30.0",
+   "display": "Indeterminate leprosy",
+   "parent": "A30"
+  },
+  {
+   "code": "A30.1",
+   "display": "Tuberculoid leprosy",
+   "parent": "A30"
+  },
+  {
+   "code": "A30.2",
+   "display": "Borderline tuberculoid leprosy",
+   "parent": "A30"
+  },
+  {
+   "code": "A30.3",
+   "display": "Borderline leprosy",
+   "parent": "A30"
+  },
+  {
+   "code": "A30.4",
+   "display": "Borderline lepromatous leprosy",
+   "parent": "A30"
+  },
+  {
+   "code": "A30.5",
+   "display": "Lepromatous leprosy",
+   "parent": "A30"
+  },
+  {
+   "code": "A30.8",
+   "display": "Other forms of leprosy",
+   "parent": "A30"
+  },
+  {
+   "code": "A30.9",
+   "display": "Leprosy, unspecified",
+   "parent": "A30"
+  },
+  {
+   "code": "A31",
+   "display": "Infection due to other mycobacteria",
+   "parent": "A30-A49"
+  },
+  {
+   "code": "A31.0",
+   "display": "Pulmonary mycobacterial infection",
+   "parent": "A31"
+  },
+  {
+   "code": "A31.1",
+   "display": "Cutaneous mycobacterial infection",
+   "parent": "A31"
+  },
+  {
+   "code": "A31.8",
+   "display": "Other mycobacterial infections",
+   "parent": "A31"
+  },
+  {
+   "code": "A31.9",
+   "display": "Mycobacterial infection, unspecified",
+   "parent": "A31"
+  },
+  {
+   "code": "A32",
+   "display": "Listeriosis",
+   "parent": "A30-A49"
+  },
+  {
+   "code": "A32.0",
+   "display": "Cutaneous listeriosis",
+   "parent": "A32"
+  },
+  {
+   "code": "A32.1",
+   "display": "Listerial meningitis and meningoencephalitis",
+   "parent": "A32"
+  },
+  {
+   "code": "A32.7",
+   "display": "Listerial sepsis",
+   "parent": "A32"
+  },
+  {
+   "code": "A32.8",
+   "display": "Other forms of listeriosis",
+   "parent": "A32"
+  },
+  {
+   "code": "A32.9",
+   "display": "Listeriosis, unspecified",
+   "parent": "A32"
+  },
+  {
+   "code": "A33",
+   "display": "Tetanus neonatorum",
+   "parent": "A30-A49"
+  },
+  {
+   "code": "A34",
+   "display": "Obstetrical tetanus",
+   "parent": "A30-A49"
+  },
+  {
+   "code": "A35",
+   "display": "Other tetanus",
+   "parent": "A30-A49"
+  },
+  {
+   "code": "A36",
+   "display": "Diphtheria",
+   "parent": "A30-A49"
+  },
+  {
+   "code": "A36.0",
+   "display": "Pharyngeal diphtheria",
+   "parent": "A36"
+  },
+  {
+   "code": "A36.1",
+   "display": "Nasopharyngeal diphtheria",
+   "parent": "A36"
+  },
+  {
+   "code": "A36.2",
+   "display": "Laryngeal diphtheria",
+   "parent": "A36"
+  },
+  {
+   "code": "A36.3",
+   "display": "Cutaneous diphtheria",
+   "parent": "A36"
+  },
+  {
+   "code": "A36.8",
+   "display": "Other diphtheria",
+   "parent": "A36"
+  },
+  {
+   "code": "A36.9",
+   "display": "Diphtheria, unspecified",
+   "parent": "A36"
+  },
+  {
+   "code": "A37",
+   "display": "Whooping cough",
+   "parent": "A30-A49"
+  },
+  {
+   "code": "A37.0",
+   "display": "Whooping cough due to Bordetella pertussis",
+   "parent": "A37"
+  },
+  {
+   "code": "A37.1",
+   "display": "Whooping cough due to Bordetella parapertussis",
+   "parent": "A37"
+  },
+  {
+   "code": "A37.8",
+   "display": "Whooping cough due to other Bordetella species",
+   "parent": "A37"
+  },
+  {
+   "code": "A37.9",
+   "display": "Whooping cough, unspecified",
+   "parent": "A37"
+  },
+  {
+   "code": "A38",
+   "display": "Scarlet fever",
+   "parent": "A30-A49"
+  },
+  {
+   "code": "A39",
+   "display": "Meningococcal infection",
+   "parent": "A30-A49"
+  },
+  {
+   "code": "A39.0",
+   "display": "Meningococcal meningitis",
+   "parent": "A39"
+  },
+  {
+   "code": "A39.1",
+   "display": "Waterhouse-Friderichsen syndrome",
+   "parent": "A39"
+  },
+  {
+   "code": "A39.2",
+   "display": "Acute meningococcaemia",
+   "parent": "A39"
+  },
+  {
+   "code": "A39.3",
+   "display": "Chronic meningococcaemia",
+   "parent": "A39"
+  },
+  {
+   "code": "A39.4",
+   "display": "Meningococcaemia, unspecified",
+   "parent": "A39"
+  },
+  {
+   "code": "A39.5",
+   "display": "Meningococcal heart disease",
+   "parent": "A39"
+  },
+  {
+   "code": "A39.8",
+   "display": "Other meningococcal infections",
+   "parent": "A39"
+  },
+  {
+   "code": "A39.9",
+   "display": "Meningococcal infection, unspecified",
+   "parent": "A39"
+  },
+  {
+   "code": "A40",
+   "display": "Streptococcal sepsis",
+   "parent": "A30-A49"
+  },
+  {
+   "code": "A40.0",
+   "display": "Sepsis due to streptococcus, group A",
+   "parent": "A40"
+  },
+  {
+   "code": "A40.1",
+   "display": "Sepsis due to streptococcus, group B",
+   "parent": "A40"
+  },
+  {
+   "code": "A40.2",
+   "display": "Sepsis due to streptococcus, group D and enterococcus",
+   "parent": "A40"
+  },
+  {
+   "code": "A40.3",
+   "display": "Sepsis due to Streptococcus pneumoniae",
+   "parent": "A40"
+  },
+  {
+   "code": "A40.8",
+   "display": "Other streptococcal sepsis",
+   "parent": "A40"
+  },
+  {
+   "code": "A40.9",
+   "display": "Streptococcal sepsis, unspecified",
+   "parent": "A40"
+  },
+  {
+   "code": "A41",
+   "display": "Other sepsis",
+   "parent": "A30-A49"
+  },
+  {
+   "code": "A41.0",
+   "display": "Sepsis due to Staphylococcus aureus",
+   "parent": "A41"
+  },
+  {
+   "code": "A41.1",
+   "display": "Sepsis due to other specified staphylococcus",
+   "parent": "A41"
+  },
+  {
+   "code": "A41.2",
+   "display": "Sepsis due to unspecified staphylococcus",
+   "parent": "A41"
+  },
+  {
+   "code": "A41.3",
+   "display": "Sepsis due to Haemophilus influenzae",
+   "parent": "A41"
+  },
+  {
+   "code": "A41.4",
+   "display": "Sepsis due to anaerobes",
+   "parent": "A41"
+  },
+  {
+   "code": "A41.5",
+   "display": "Sepsis due to other Gram-negative organisms",
+   "parent": "A41"
+  },
+  {
+   "code": "A41.8",
+   "display": "Other specified sepsis",
+   "parent": "A41"
+  },
+  {
+   "code": "A41.9",
+   "display": "Sepsis, unspecified",
+   "parent": "A41"
+  },
+  {
+   "code": "A42",
+   "display": "Actinomycosis",
+   "parent": "A30-A49"
+  },
+  {
+   "code": "A42.0",
+   "display": "Pulmonary actinomycosis",
+   "parent": "A42"
+  },
+  {
+   "code": "A42.1",
+   "display": "Abdominal actinomycosis",
+   "parent": "A42"
+  },
+  {
+   "code": "A42.2",
+   "display": "Cervicofacial actinomycosis",
+   "parent": "A42"
+  },
+  {
+   "code": "A42.7",
+   "display": "Actinomycotic sepsis",
+   "parent": "A42"
+  },
+  {
+   "code": "A42.8",
+   "display": "Other forms of actinomycosis",
+   "parent": "A42"
+  },
+  {
+   "code": "A42.9",
+   "display": "Actinomycosis, unspecified",
+   "parent": "A42"
+  },
+  {
+   "code": "A43",
+   "display": "Nocardiosis",
+   "parent": "A30-A49"
+  },
+  {
+   "code": "A43.0",
+   "display": "Pulmonary nocardiosis",
+   "parent": "A43"
+  },
+  {
+   "code": "A43.1",
+   "display": "Cutaneous nocardiosis",
+   "parent": "A43"
+  },
+  {
+   "code": "A43.8",
+   "display": "Other forms of nocardiosis",
+   "parent": "A43"
+  },
+  {
+   "code": "A43.9",
+   "display": "Nocardiosis, unspecified",
+   "parent": "A43"
+  },
+  {
+   "code": "A44",
+   "display": "Bartonellosis",
+   "parent": "A30-A49"
+  },
+  {
+   "code": "A44.0",
+   "display": "Systemic bartonellosis",
+   "parent": "A44"
+  },
+  {
+   "code": "A44.1",
+   "display": "Cutaneous and mucocutaneous bartonellosis",
+   "parent": "A44"
+  },
+  {
+   "code": "A44.8",
+   "display": "Other forms of bartonellosis",
+   "parent": "A44"
+  },
+  {
+   "code": "A44.9",
+   "display": "Bartonellosis, unspecified",
+   "parent": "A44"
+  },
+  {
+   "code": "A46",
+   "display": "Erysipelas",
+   "parent": "A30-A49"
+  },
+  {
+   "code": "A48",
+   "display": "Other bacterial diseases, not elsewhere classified",
+   "parent": "A30-A49"
+  },
+  {
+   "code": "A48.0",
+   "display": "Gas gangrene",
+   "parent": "A48"
+  },
+  {
+   "code": "A48.1",
+   "display": "Legionnaires disease",
+   "parent": "A48"
+  },
+  {
+   "code": "A48.2",
+   "display": "Nonpneumonic Legionnaires disease [Pontiac fever]",
+   "parent": "A48"
+  },
+  {
+   "code": "A48.3",
+   "display": "Toxic shock syndrome",
+   "parent": "A48"
+  },
+  {
+   "code": "A48.4",
+   "display": "Brazilian purpuric fever",
+   "parent": "A48"
+  },
+  {
+   "code": "A48.8",
+   "display": "Other specified bacterial diseases",
+   "parent": "A48"
+  },
+  {
+   "code": "A49",
+   "display": "Bacterial infection of unspecified site",
+   "parent": "A30-A49"
+  },
+  {
+   "code": "A49.0",
+   "display": "Staphylococcal infection, unspecified site",
+   "parent": "A49"
+  },
+  {
+   "code": "A49.1",
+   "display": "Streptococcal and enterococcal infection, unspecified site",
+   "parent": "A49"
+  },
+  {
+   "code": "A49.2",
+   "display": "Haemophilus influenzae infection, unspecified site",
+   "parent": "A49"
+  },
+  {
+   "code": "A49.3",
+   "display": "Mycoplasma infection, unspecified site",
+   "parent": "A49"
+  },
+  {
+   "code": "A49.8",
+   "display": "Other bacterial infections of unspecified site",
+   "parent": "A49"
+  },
+  {
+   "code": "A49.9",
+   "display": "Bacterial infection, unspecified",
+   "parent": "A49"
+  },
+  {
+   "code": "A50",
+   "display": "Congenital syphilis",
+   "parent": "A50-A64"
+  },
+  {
+   "code": "A50.0",
+   "display": "Early congenital syphilis, symptomatic",
+   "parent": "A50"
+  },
+  {
+   "code": "A50.1",
+   "display": "Early congenital syphilis, latent",
+   "parent": "A50"
+  },
+  {
+   "code": "A50.2",
+   "display": "Early congenital syphilis, unspecified",
+   "parent": "A50"
+  },
+  {
+   "code": "A50.3",
+   "display": "Late congenital syphilitic oculopathy",
+   "parent": "A50"
+  },
+  {
+   "code": "A50.4",
+   "display": "Late congenital neurosyphilis [juvenile neurosyphilis]",
+   "parent": "A50"
+  },
+  {
+   "code": "A50.5",
+   "display": "Other late congenital syphilis, symptomatic",
+   "parent": "A50"
+  },
+  {
+   "code": "A50.6",
+   "display": "Late congenital syphilis, latent",
+   "parent": "A50"
+  },
+  {
+   "code": "A50.7",
+   "display": "Late congenital syphilis, unspecified",
+   "parent": "A50"
+  },
+  {
+   "code": "A50.9",
+   "display": "Congenital syphilis, unspecified",
+   "parent": "A50"
+  },
+  {
+   "code": "A51",
+   "display": "Early syphilis",
+   "parent": "A50-A64"
+  },
+  {
+   "code": "A51.0",
+   "display": "Primary genital syphilis",
+   "parent": "A51"
+  },
+  {
+   "code": "A51.1",
+   "display": "Primary anal syphilis",
+   "parent": "A51"
+  },
+  {
+   "code": "A51.2",
+   "display": "Primary syphilis of other sites",
+   "parent": "A51"
+  },
+  {
+   "code": "A51.3",
+   "display": "Secondary syphilis of skin and mucous membranes",
+   "parent": "A51"
+  },
+  {
+   "code": "A51.4",
+   "display": "Other secondary syphilis",
+   "parent": "A51"
+  },
+  {
+   "code": "A51.5",
+   "display": "Early syphilis, latent",
+   "parent": "A51"
+  },
+  {
+   "code": "A51.9",
+   "display": "Early syphilis, unspecified",
+   "parent": "A51"
+  },
+  {
+   "code": "A52",
+   "display": "Late syphilis",
+   "parent": "A50-A64"
+  },
+  {
+   "code": "A52.0",
+   "display": "Cardiovascular syphilis",
+   "parent": "A52"
+  },
+  {
+   "code": "A52.1",
+   "display": "Symptomatic neurosyphilis",
+   "parent": "A52"
+  },
+  {
+   "code": "A52.2",
+   "display": "Asymptomatic neurosyphilis",
+   "parent": "A52"
+  },
+  {
+   "code": "A52.3",
+   "display": "Neurosyphilis, unspecified",
+   "parent": "A52"
+  },
+  {
+   "code": "A52.7",
+   "display": "Other symptomatic late syphilis",
+   "parent": "A52"
+  },
+  {
+   "code": "A52.8",
+   "display": "Late syphilis, latent",
+   "parent": "A52"
+  },
+  {
+   "code": "A52.9",
+   "display": "Late syphilis, unspecified",
+   "parent": "A52"
+  },
+  {
+   "code": "A53",
+   "display": "Other and unspecified syphilis",
+   "parent": "A50-A64"
+  },
+  {
+   "code": "A53.0",
+   "display": "Latent syphilis, unspecified as early or late",
+   "parent": "A53"
+  },
+  {
+   "code": "A53.9",
+   "display": "Syphilis, unspecified",
+   "parent": "A53"
+  },
+  {
+   "code": "A54",
+   "display": "Gonococcal infection",
+   "parent": "A50-A64"
+  },
+  {
+   "code": "A54.0",
+   "display": "Gonococcal infection of lower genitourinary tract without periurethral or accessory gland abscess",
+   "parent": "A54"
+  },
+  {
+   "code": "A54.1",
+   "display": "Gonococcal infection of lower genitourinary tract with periurethral and accessory gland abscess",
+   "parent": "A54"
+  },
+  {
+   "code": "A54.2",
+   "display": "Gonococcal pelviperitonitis and other gonococcal genitourinary infections",
+   "parent": "A54"
+  },
+  {
+   "code": "A54.3",
+   "display": "Gonococcal infection of eye",
+   "parent": "A54"
+  },
+  {
+   "code": "A54.4",
+   "display": "Gonococcal infection of musculoskeletal system",
+   "parent": "A54"
+  },
+  {
+   "code": "A54.5",
+   "display": "Gonococcal pharyngitis",
+   "parent": "A54"
+  },
+  {
+   "code": "A54.6",
+   "display": "Gonococcal infection of anus and rectum",
+   "parent": "A54"
+  },
+  {
+   "code": "A54.8",
+   "display": "Other gonococcal infections",
+   "parent": "A54"
+  },
+  {
+   "code": "A54.9",
+   "display": "Gonococcal infection, unspecified",
+   "parent": "A54"
+  },
+  {
+   "code": "A55",
+   "display": "Chlamydial lymphogranuloma (venereum)",
+   "parent": "A50-A64"
+  },
+  {
+   "code": "A56",
+   "display": "Other sexually transmitted chlamydial diseases",
+   "parent": "A50-A64"
+  },
+  {
+   "code": "A56.0",
+   "display": "Chlamydial infection of lower genitourinary tract",
+   "parent": "A56"
+  },
+  {
+   "code": "A56.1",
+   "display": "Chlamydial infection of pelviperitoneum and other genitourinary organs",
+   "parent": "A56"
+  },
+  {
+   "code": "A56.2",
+   "display": "Chlamydial infection of genitourinary tract, unspecified",
+   "parent": "A56"
+  },
+  {
+   "code": "A56.3",
+   "display": "Chlamydial infection of anus and rectum",
+   "parent": "A56"
+  },
+  {
+   "code": "A56.4",
+   "display": "Chlamydial infection of pharynx",
+   "parent": "A56"
+  },
+  {
+   "code": "A56.8",
+   "display": "Sexually transmitted chlamydial infection of other sites",
+   "parent": "A56"
+  },
+  {
+   "code": "A57",
+   "display": "Chancroid",
+   "parent": "A50-A64"
+  },
+  {
+   "code": "A58",
+   "display": "Granuloma inguinale",
+   "parent": "A50-A64"
+  },
+  {
+   "code": "A59",
+   "display": "Trichomoniasis",
+   "parent": "A50-A64"
+  },
+  {
+   "code": "A59.0",
+   "display": "Urogenital trichomoniasis",
+   "parent": "A59"
+  },
+  {
+   "code": "A59.8",
+   "display": "Trichomoniasis of other sites",
+   "parent": "A59"
+  },
+  {
+   "code": "A59.9",
+   "display": "Trichomoniasis, unspecified",
+   "parent": "A59"
+  },
+  {
+   "code": "A60",
+   "display": "Anogenital herpesviral [herpes simplex] infection",
+   "parent": "A50-A64"
+  },
+  {
+   "code": "A60.0",
+   "display": "Herpesviral infection of genitalia and urogenital tract",
+   "parent": "A60"
+  },
+  {
+   "code": "A60.1",
+   "display": "Herpesviral infection of perianal skin and rectum",
+   "parent": "A60"
+  },
+  {
+   "code": "A60.9",
+   "display": "Anogenital herpesviral infection, unspecified",
+   "parent": "A60"
+  },
+  {
+   "code": "A63",
+   "display": "Other predominantly sexually transmitted diseases, not elsewhere classified",
+   "parent": "A50-A64"
+  },
+  {
+   "code": "A63.0",
+   "display": "Anogenital (venereal) warts",
+   "parent": "A63"
+  },
+  {
+   "code": "A63.8",
+   "display": "Other specified predominantly sexually transmitted diseases",
+   "parent": "A63"
+  },
+  {
+   "code": "A64",
+   "display": "Unspecified sexually transmitted disease",
+   "parent": "A50-A64"
+  },
+  {
+   "code": "A65",
+   "display": "Nonvenereal syphilis",
+   "parent": "A65-A69"
+  },
+  {
+   "code": "A66",
+   "display": "Yaws",
+   "parent": "A65-A69"
+  },
+  {
+   "code": "A66.0",
+   "display": "Initial lesions of yaws",
+   "parent": "A66"
+  },
+  {
+   "code": "A66.1",
+   "display": "Multiple papillomata and wet crab yaws",
+   "parent": "A66"
+  },
+  {
+   "code": "A66.2",
+   "display": "Other early skin lesions of yaws",
+   "parent": "A66"
+  },
+  {
+   "code": "A66.3",
+   "display": "Hyperkeratosis of yaws",
+   "parent": "A66"
+  },
+  {
+   "code": "A66.4",
+   "display": "Gummata and ulcers of yaws",
+   "parent": "A66"
+  },
+  {
+   "code": "A66.5",
+   "display": "Gangosa",
+   "parent": "A66"
+  },
+  {
+   "code": "A66.6",
+   "display": "Bone and joint lesions of yaws",
+   "parent": "A66"
+  },
+  {
+   "code": "A66.7",
+   "display": "Other manifestations of yaws",
+   "parent": "A66"
+  },
+  {
+   "code": "A66.8",
+   "display": "Latent yaws",
+   "parent": "A66"
+  },
+  {
+   "code": "A66.9",
+   "display": "Yaws, unspecified",
+   "parent": "A66"
+  },
+  {
+   "code": "A67",
+   "display": "Pinta [carate]",
+   "parent": "A65-A69"
+  },
+  {
+   "code": "A67.0",
+   "display": "Primary lesions of pinta",
+   "parent": "A67"
+  },
+  {
+   "code": "A67.1",
+   "display": "Intermediate lesions of pinta",
+   "parent": "A67"
+  },
+  {
+   "code": "A67.2",
+   "display": "Late lesions of pinta",
+   "parent": "A67"
+  },
+  {
+   "code": "A67.3",
+   "display": "Mixed lesions of pinta",
+   "parent": "A67"
+  },
+  {
+   "code": "A67.9",
+   "display": "Pinta, unspecified",
+   "parent": "A67"
+  },
+  {
+   "code": "A68",
+   "display": "Relapsing fevers",
+   "parent": "A65-A69"
+  },
+  {
+   "code": "A68.0",
+   "display": "Louse-borne relapsing fever",
+   "parent": "A68"
+  },
+  {
+   "code": "A68.1",
+   "display": "Tick-borne relapsing fever",
+   "parent": "A68"
+  },
+  {
+   "code": "A68.9",
+   "display": "Relapsing fever, unspecified",
+   "parent": "A68"
+  },
+  {
+   "code": "A69",
+   "display": "Other spirochaetal infections",
+   "parent": "A65-A69"
+  },
+  {
+   "code": "A69.0",
+   "display": "Necrotizing ulcerative stomatitis",
+   "parent": "A69"
+  },
+  {
+   "code": "A69.1",
+   "display": "Other Vincent infections",
+   "parent": "A69"
+  },
+  {
+   "code": "A69.2",
+   "display": "Lyme disease",
+   "parent": "A69"
+  },
+  {
+   "code": "A69.8",
+   "display": "Other specified spirochaetal infections",
+   "parent": "A69"
+  },
+  {
+   "code": "A69.9",
+   "display": "Spirochaetal infection, unspecified",
+   "parent": "A69"
+  },
+  {
+   "code": "A70",
+   "display": "Chlamydia psittaci infection",
+   "parent": "A70-A74"
+  },
+  {
+   "code": "A71",
+   "display": "Trachoma",
+   "parent": "A70-A74"
+  },
+  {
+   "code": "A71.0",
+   "display": "Initial stage of trachoma",
+   "parent": "A71"
+  },
+  {
+   "code": "A71.1",
+   "display": "Active stage of trachoma",
+   "parent": "A71"
+  },
+  {
+   "code": "A71.9",
+   "display": "Trachoma, unspecified",
+   "parent": "A71"
+  },
+  {
+   "code": "A74",
+   "display": "Other diseases caused by chlamydiae",
+   "parent": "A70-A74"
+  },
+  {
+   "code": "A74.0",
+   "display": "Chlamydial conjunctivitis",
+   "parent": "A74"
+  },
+  {
+   "code": "A74.8",
+   "display": "Other chlamydial diseases",
+   "parent": "A74"
+  },
+  {
+   "code": "A74.9",
+   "display": "Chlamydial infection, unspecified",
+   "parent": "A74"
+  },
+  {
+   "code": "A75",
+   "display": "Typhus fever",
+   "parent": "A75-A79"
+  },
+  {
+   "code": "A75.0",
+   "display": "Epidemic louse-borne typhus fever due to Rickettsia prowazekii",
+   "parent": "A75"
+  },
+  {
+   "code": "A75.1",
+   "display": "Recrudescent typhus [Brill disease]",
+   "parent": "A75"
+  },
+  {
+   "code": "A75.2",
+   "display": "Typhus fever due to Rickettsia typhi",
+   "parent": "A75"
+  },
+  {
+   "code": "A75.3",
+   "display": "Typhus fever due to Rickettsia tsutsugamushi",
+   "parent": "A75"
+  },
+  {
+   "code": "A75.9",
+   "display": "Typhus fever, unspecified",
+   "parent": "A75"
+  },
+  {
+   "code": "A77",
+   "display": "Spotted fever [tick-borne rickettsioses]",
+   "parent": "A75-A79"
+  },
+  {
+   "code": "A77.0",
+   "display": "Spotted fever due to Rickettsia rickettsii",
+   "parent": "A77"
+  },
+  {
+   "code": "A77.1",
+   "display": "Spotted fever due to Rickettsia conorii",
+   "parent": "A77"
+  },
+  {
+   "code": "A77.2",
+   "display": "Spotted fever due to Rickettsia sibirica",
+   "parent": "A77"
+  },
+  {
+   "code": "A77.3",
+   "display": "Spotted fever due to Rickettsia australis",
+   "parent": "A77"
+  },
+  {
+   "code": "A77.8",
+   "display": "Other spotted fevers",
+   "parent": "A77"
+  },
+  {
+   "code": "A77.9",
+   "display": "Spotted fever, unspecified",
+   "parent": "A77"
+  },
+  {
+   "code": "A78",
+   "display": "Q fever",
+   "parent": "A75-A79"
+  },
+  {
+   "code": "A79",
+   "display": "Other rickettsioses",
+   "parent": "A75-A79"
+  },
+  {
+   "code": "A79.0",
+   "display": "Trench fever",
+   "parent": "A79"
+  },
+  {
+   "code": "A79.1",
+   "display": "Rickettsialpox due to Rickettsia akari",
+   "parent": "A79"
+  },
+  {
+   "code": "A79.8",
+   "display": "Other specified rickettsioses",
+   "parent": "A79"
+  },
+  {
+   "code": "A79.9",
+   "display": "Rickettsiosis, unspecified",
+   "parent": "A79"
+  },
+  {
+   "code": "A80",
+   "display": "Acute poliomyelitis",
+   "parent": "A80-A89"
+  },
+  {
+   "code": "A80.0",
+   "display": "Acute paralytic poliomyelitis, vaccine-associated",
+   "parent": "A80"
+  },
+  {
+   "code": "A80.1",
+   "display": "Acute paralytic poliomyelitis, wild virus, imported",
+   "parent": "A80"
+  },
+  {
+   "code": "A80.2",
+   "display": "Acute paralytic poliomyelitis, wild virus, indigenous",
+   "parent": "A80"
+  },
+  {
+   "code": "A80.3",
+   "display": "Acute paralytic poliomyelitis, other and unspecified",
+   "parent": "A80"
+  },
+  {
+   "code": "A80.4",
+   "display": "Acute nonparalytic poliomyelitis",
+   "parent": "A80"
+  },
+  {
+   "code": "A80.9",
+   "display": "Acute poliomyelitis, unspecified",
+   "parent": "A80"
+  },
+  {
+   "code": "A81",
+   "display": "Atypical virus infections of central nervous system",
+   "parent": "A80-A89"
+  },
+  {
+   "code": "A81.0",
+   "display": "Creutzfeldt-Jakob disease",
+   "parent": "A81"
+  },
+  {
+   "code": "A81.1",
+   "display": "Subacute sclerosing panencephalitis",
+   "parent": "A81"
+  },
+  {
+   "code": "A81.2",
+   "display": "Progressive multifocal leukoencephalopathy",
+   "parent": "A81"
+  },
+  {
+   "code": "A81.8",
+   "display": "Other atypical virus infections of central nervous system",
+   "parent": "A81"
+  },
+  {
+   "code": "A81.9",
+   "display": "Atypical virus infection of central nervous system, unspecified",
+   "parent": "A81"
+  },
+  {
+   "code": "A82",
+   "display": "Rabies",
+   "parent": "A80-A89"
+  },
+  {
+   "code": "A82.0",
+   "display": "Sylvatic rabies",
+   "parent": "A82"
+  },
+  {
+   "code": "A82.1",
+   "display": "Urban rabies",
+   "parent": "A82"
+  },
+  {
+   "code": "A82.9",
+   "display": "Rabies, unspecified",
+   "parent": "A82"
+  },
+  {
+   "code": "A83",
+   "display": "Mosquito-borne viral encephalitis",
+   "parent": "A80-A89"
+  },
+  {
+   "code": "A83.0",
+   "display": "Japanese encephalitis",
+   "parent": "A83"
+  },
+  {
+   "code": "A83.1",
+   "display": "Western equine encephalitis",
+   "parent": "A83"
+  },
+  {
+   "code": "A83.2",
+   "display": "Eastern equine encephalitis",
+   "parent": "A83"
+  },
+  {
+   "code": "A83.3",
+   "display": "St Louis encephalitis",
+   "parent": "A83"
+  },
+  {
+   "code": "A83.4",
+   "display": "Australian encephalitis",
+   "parent": "A83"
+  },
+  {
+   "code": "A83.5",
+   "display": "California encephalitis",
+   "parent": "A83"
+  },
+  {
+   "code": "A83.6",
+   "display": "Rocio virus disease",
+   "parent": "A83"
+  },
+  {
+   "code": "A83.8",
+   "display": "Other mosquito-borne viral encephalitis",
+   "parent": "A83"
+  },
+  {
+   "code": "A83.9",
+   "display": "Mosquito-borne viral encephalitis, unspecified",
+   "parent": "A83"
+  },
+  {
+   "code": "A84",
+   "display": "Tick-borne viral encephalitis",
+   "parent": "A80-A89"
+  },
+  {
+   "code": "A84.0",
+   "display": "Far Eastern tick-borne encephalitis [Russian spring-summer encephalitis]",
+   "parent": "A84"
+  },
+  {
+   "code": "A84.1",
+   "display": "Central European tick-borne encephalitis",
+   "parent": "A84"
+  },
+  {
+   "code": "A84.8",
+   "display": "Other tick-borne viral encephalitis",
+   "parent": "A84"
+  },
+  {
+   "code": "A84.9",
+   "display": "Tick-borne viral encephalitis, unspecified",
+   "parent": "A84"
+  },
+  {
+   "code": "A85",
+   "display": "Other viral encephalitis, not elsewhere classified",
+   "parent": "A80-A89"
+  },
+  {
+   "code": "A85.0",
+   "display": "Enteroviral encephalitis",
+   "parent": "A85"
+  },
+  {
+   "code": "A85.1",
+   "display": "Adenoviral encephalitis",
+   "parent": "A85"
+  },
+  {
+   "code": "A85.2",
+   "display": "Arthropod-borne viral encephalitis, unspecified",
+   "parent": "A85"
+  },
+  {
+   "code": "A85.8",
+   "display": "Other specified viral encephalitis",
+   "parent": "A85"
+  },
+  {
+   "code": "A86",
+   "display": "Unspecified viral encephalitis",
+   "parent": "A80-A89"
+  },
+  {
+   "code": "A87",
+   "display": "Viral meningitis",
+   "parent": "A80-A89"
+  },
+  {
+   "code": "A87.0",
+   "display": "Enteroviral meningitis",
+   "parent": "A87"
+  },
+  {
+   "code": "A87.1",
+   "display": "Adenoviral meningitis",
+   "parent": "A87"
+  },
+  {
+   "code": "A87.2",
+   "display": "Lymphocytic choriomeningitis",
+   "parent": "A87"
+  },
+  {
+   "code": "A87.8",
+   "display": "Other viral meningitis",
+   "parent": "A87"
+  },
+  {
+   "code": "A87.9",
+   "display": "Viral meningitis, unspecified",
+   "parent": "A87"
+  },
+  {
+   "code": "A88",
+   "display": "Other viral infections of central nervous system, not elsewhere classified",
+   "parent": "A80-A89"
+  },
+  {
+   "code": "A88.0",
+   "display": "Enteroviral exanthematous fever [Boston exanthem]",
+   "parent": "A88"
+  },
+  {
+   "code": "A88.1",
+   "display": "Epidemic vertigo",
+   "parent": "A88"
+  },
+  {
+   "code": "A88.8",
+   "display": "Other specified viral infections of central nervous system",
+   "parent": "A88"
+  },
+  {
+   "code": "A89",
+   "display": "Unspecified viral infection of central nervous system",
+   "parent": "A80-A89"
+  },
+  {
+   "code": "A92",
+   "display": "Other mosquito-borne viral fevers",
+   "parent": "A92-A99"
+  },
+  {
+   "code": "A92.0",
+   "display": "Chikungunya virus disease",
+   "parent": "A92"
+  },
+  {
+   "code": "A92.1",
+   "display": "O'nyong-nyong fever",
+   "parent": "A92"
+  },
+  {
+   "code": "A92.2",
+   "display": "Venezuelan equine fever",
+   "parent": "A92"
+  },
+  {
+   "code": "A92.3",
+   "display": "West Nile virus infection",
+   "parent": "A92"
+  },
+  {
+   "code": "A92.4",
+   "display": "Rift Valley fever",
+   "parent": "A92"
+  },
+  {
+   "code": "A92.5",
+   "display": "Zika virus disease",
+   "parent": "A92"
+  },
+  {
+   "code": "A92.8",
+   "display": "Other specified mosquito-borne viral fevers",
+   "parent": "A92"
+  },
+  {
+   "code": "A92.9",
+   "display": "Mosquito-borne viral fever, unspecified",
+   "parent": "A92"
+  },
+  {
+   "code": "A93",
+   "display": "Other arthropod-borne viral fevers, not elsewhere classified",
+   "parent": "A92-A99"
+  },
+  {
+   "code": "A93.0",
+   "display": "Oropouche virus disease",
+   "parent": "A93"
+  },
+  {
+   "code": "A93.1",
+   "display": "Sandfly fever",
+   "parent": "A93"
+  },
+  {
+   "code": "A93.2",
+   "display": "Colorado tick fever",
+   "parent": "A93"
+  },
+  {
+   "code": "A93.8",
+   "display": "Other specified arthropod-borne viral fevers",
+   "parent": "A93"
+  },
+  {
+   "code": "A94",
+   "display": "Unspecified arthropod-borne viral fever",
+   "parent": "A92-A99"
+  },
+  {
+   "code": "A95",
+   "display": "Yellow fever",
+   "parent": "A92-A99"
+  },
+  {
+   "code": "A95.0",
+   "display": "Sylvatic yellow fever",
+   "parent": "A95"
+  },
+  {
+   "code": "A95.1",
+   "display": "Urban yellow fever",
+   "parent": "A95"
+  },
+  {
+   "code": "A95.9",
+   "display": "Yellow fever, unspecified",
+   "parent": "A95"
+  },
+  {
+   "code": "A96",
+   "display": "Arenaviral haemorrhagic fever",
+   "parent": "A92-A99"
+  },
+  {
+   "code": "A96.0",
+   "display": "Junin haemorrhagic fever",
+   "parent": "A96"
+  },
+  {
+   "code": "A96.1",
+   "display": "Machupo haemorrhagic fever",
+   "parent": "A96"
+  },
+  {
+   "code": "A96.2",
+   "display": "Lassa fever",
+   "parent": "A96"
+  },
+  {
+   "code": "A96.8",
+   "display": "Other arenaviral haemorrhagic fevers",
+   "parent": "A96"
+  },
+  {
+   "code": "A96.9",
+   "display": "Arenaviral haemorrhagic fever, unspecified",
+   "parent": "A96"
+  },
+  {
+   "code": "A97",
+   "display": "Dengue",
+   "parent": "A92-A99"
+  },
+  {
+   "code": "A97.0",
+   "display": "Dengue without warning signs",
+   "parent": "A97"
+  },
+  {
+   "code": "A97.1",
+   "display": "Dengue with warning signs",
+   "parent": "A97"
+  },
+  {
+   "code": "A97.2",
+   "display": "Severe Dengue",
+   "parent": "A97"
+  },
+  {
+   "code": "A97.9",
+   "display": "Dengue, unspecified",
+   "parent": "A97"
+  },
+  {
+   "code": "A98",
+   "display": "Other viral haemorrhagic fevers, not elsewhere classified",
+   "parent": "A92-A99"
+  },
+  {
+   "code": "A98.0",
+   "display": "Crimean-Congo haemorrhagic fever",
+   "parent": "A98"
+  },
+  {
+   "code": "A98.1",
+   "display": "Omsk haemorrhagic fever",
+   "parent": "A98"
+  },
+  {
+   "code": "A98.2",
+   "display": "Kyasanur Forest disease",
+   "parent": "A98"
+  },
+  {
+   "code": "A98.3",
+   "display": "Marburg virus disease",
+   "parent": "A98"
+  },
+  {
+   "code": "A98.4",
+   "display": "Ebola virus disease",
+   "parent": "A98"
+  },
+  {
+   "code": "A98.5",
+   "display": "Haemorrhagic fever with renal syndrome",
+   "parent": "A98"
+  },
+  {
+   "code": "A98.8",
+   "display": "Other specified viral haemorrhagic fevers",
+   "parent": "A98"
+  },
+  {
+   "code": "A99",
+   "display": "Unspecified viral haemorrhagic fever",
+   "parent": "A92-A99"
+  },
+  {
+   "code": "B00",
+   "display": "Herpesviral [herpes simplex] infections",
+   "parent": "B00-B09"
+  },
+  {
+   "code": "B00.0",
+   "display": "Eczema herpeticum",
+   "parent": "B00"
+  },
+  {
+   "code": "B00.1",
+   "display": "Herpesviral vesicular dermatitis",
+   "parent": "B00"
+  },
+  {
+   "code": "B00.2",
+   "display": "Herpesviral gingivostomatitis and pharyngotonsillitis",
+   "parent": "B00"
+  },
+  {
+   "code": "B00.3",
+   "display": "Herpesviral meningitis",
+   "parent": "B00"
+  },
+  {
+   "code": "B00.4",
+   "display": "Herpesviral encephalitis",
+   "parent": "B00"
+  },
+  {
+   "code": "B00.5",
+   "display": "Herpesviral ocular disease",
+   "parent": "B00"
+  },
+  {
+   "code": "B00.7",
+   "display": "Disseminated herpesviral disease",
+   "parent": "B00"
+  },
+  {
+   "code": "B00.8",
+   "display": "Other forms of herpesviral infection",
+   "parent": "B00"
+  },
+  {
+   "code": "B00.9",
+   "display": "Herpesviral infection, unspecified",
+   "parent": "B00"
+  },
+  {
+   "code": "B01",
+   "display": "Varicella [chickenpox]",
+   "parent": "B00-B09"
+  },
+  {
+   "code": "B01.0",
+   "display": "Varicella meningitis",
+   "parent": "B01"
+  },
+  {
+   "code": "B01.1",
+   "display": "Varicella encephalitis",
+   "parent": "B01"
+  },
+  {
+   "code": "B01.2",
+   "display": "Varicella pneumonia",
+   "parent": "B01"
+  },
+  {
+   "code": "B01.8",
+   "display": "Varicella with other complications",
+   "parent": "B01"
+  },
+  {
+   "code": "B01.9",
+   "display": "Varicella without complication",
+   "parent": "B01"
+  },
+  {
+   "code": "B02",
+   "display": "Zoster [herpes zoster]",
+   "parent": "B00-B09"
+  },
+  {
+   "code": "B02.0",
+   "display": "Zoster encephalitis",
+   "parent": "B02"
+  },
+  {
+   "code": "B02.1",
+   "display": "Zoster meningitis",
+   "parent": "B02"
+  },
+  {
+   "code": "B02.2",
+   "display": "Zoster with other nervous system involvement",
+   "parent": "B02"
+  },
+  {
+   "code": "B02.3",
+   "display": "Zoster ocular disease",
+   "parent": "B02"
+  },
+  {
+   "code": "B02.7",
+   "display": "Disseminated zoster",
+   "parent": "B02"
+  },
+  {
+   "code": "B02.8",
+   "display": "Zoster with other complications",
+   "parent": "B02"
+  },
+  {
+   "code": "B02.9",
+   "display": "Zoster without complication",
+   "parent": "B02"
+  },
+  {
+   "code": "B03",
+   "display": "Smallpox",
+   "parent": "B00-B09"
+  },
+  {
+   "code": "B04",
+   "display": "Monkeypox",
+   "parent": "B00-B09"
+  },
+  {
+   "code": "B05",
+   "display": "Measles",
+   "parent": "B00-B09"
+  },
+  {
+   "code": "B05.0",
+   "display": "Measles complicated by encephalitis",
+   "parent": "B05"
+  },
+  {
+   "code": "B05.1",
+   "display": "Measles complicated by meningitis",
+   "parent": "B05"
+  },
+  {
+   "code": "B05.2",
+   "display": "Measles complicated by pneumonia",
+   "parent": "B05"
+  },
+  {
+   "code": "B05.3",
+   "display": "Measles complicated by otitis media",
+   "parent": "B05"
+  },
+  {
+   "code": "B05.4",
+   "display": "Measles with intestinal complications",
+   "parent": "B05"
+  },
+  {
+   "code": "B05.8",
+   "display": "Measles with other complications",
+   "parent": "B05"
+  },
+  {
+   "code": "B05.9",
+   "display": "Measles without complication",
+   "parent": "B05"
+  },
+  {
+   "code": "B06",
+   "display": "Rubella [German measles]",
+   "parent": "B00-B09"
+  },
+  {
+   "code": "B06.0",
+   "display": "Rubella with neurological complications",
+   "parent": "B06"
+  },
+  {
+   "code": "B06.8",
+   "display": "Rubella with other complications",
+   "parent": "B06"
+  },
+  {
+   "code": "B06.9",
+   "display": "Rubella without complication",
+   "parent": "B06"
+  },
+  {
+   "code": "B07",
+   "display": "Viral warts",
+   "parent": "B00-B09"
+  },
+  {
+   "code": "B08",
+   "display": "Other viral infections characterized by skin and mucous membrane lesions, not elsewhere classified",
+   "parent": "B00-B09"
+  },
+  {
+   "code": "B08.0",
+   "display": "Other orthopoxvirus infections",
+   "parent": "B08"
+  },
+  {
+   "code": "B08.1",
+   "display": "Molluscum contagiosum",
+   "parent": "B08"
+  },
+  {
+   "code": "B08.2",
+   "display": "Exanthema subitum [sixth disease]",
+   "parent": "B08"
+  },
+  {
+   "code": "B08.3",
+   "display": "Erythema infectiosum [fifth disease]",
+   "parent": "B08"
+  },
+  {
+   "code": "B08.4",
+   "display": "Enteroviral vesicular stomatitis with exanthem",
+   "parent": "B08"
+  },
+  {
+   "code": "B08.5",
+   "display": "Enteroviral vesicular pharyngitis",
+   "parent": "B08"
+  },
+  {
+   "code": "B08.8",
+   "display": "Other specified viral infections characterized by skin and mucous membrane lesions",
+   "parent": "B08"
+  },
+  {
+   "code": "B09",
+   "display": "Unspecified viral infection characterized by skin and mucous membrane lesions",
+   "parent": "B00-B09"
+  },
+  {
+   "code": "B15",
+   "display": "Acute hepatitis A",
+   "parent": "B15-B19"
+  },
+  {
+   "code": "B15.0",
+   "display": "Hepatitis A with hepatic coma",
+   "parent": "B15"
+  },
+  {
+   "code": "B15.9",
+   "display": "Hepatitis A without hepatic coma",
+   "parent": "B15"
+  },
+  {
+   "code": "B16",
+   "display": "Acute hepatitis B",
+   "parent": "B15-B19"
+  },
+  {
+   "code": "B16.0",
+   "display": "Acute hepatitis B with delta-agent (coinfection) with hepatic coma",
+   "parent": "B16"
+  },
+  {
+   "code": "B16.1",
+   "display": "Acute hepatitis B with delta-agent (coinfection) without hepatic coma",
+   "parent": "B16"
+  },
+  {
+   "code": "B16.2",
+   "display": "Acute hepatitis B without delta-agent with hepatic coma",
+   "parent": "B16"
+  },
+  {
+   "code": "B16.9",
+   "display": "Acute hepatitis B without delta-agent and without hepatic coma",
+   "parent": "B16"
+  },
+  {
+   "code": "B17",
+   "display": "Other acute viral hepatitis",
+   "parent": "B15-B19"
+  },
+  {
+   "code": "B17.0",
+   "display": "Acute delta-(super)infection in chronic hepatitis B",
+   "parent": "B17"
+  },
+  {
+   "code": "B17.1",
+   "display": "Acute hepatitis C",
+   "parent": "B17"
+  },
+  {
+   "code": "B17.2",
+   "display": "Acute hepatitis E",
+   "parent": "B17"
+  },
+  {
+   "code": "B17.8",
+   "display": "Other specified acute viral hepatitis",
+   "parent": "B17"
+  },
+  {
+   "code": "B17.9",
+   "display": "Acute viral hepatitis, unspecified",
+   "parent": "B17"
+  },
+  {
+   "code": "B18",
+   "display": "Chronic viral hepatitis",
+   "parent": "B15-B19"
+  },
+  {
+   "code": "B18.0",
+   "display": "Chronic viral hepatitis B with delta-agent",
+   "parent": "B18"
+  },
+  {
+   "code": "B18.00",
+   "display": "Chronic viral hepatitis B with delta-agent : immune-tolerant phase",
+   "parent": "B18.0"
+  },
+  {
+   "code": "B18.09",
+   "display": "Chronic viral hepatitis B with delta-agent : other and unspecified phase",
+   "parent": "B18.0"
+  },
+  {
+   "code": "B18.1",
+   "display": "Chronic viral hepatitis B without delta-agent",
+   "parent": "B18"
+  },
+  {
+   "code": "B18.10",
+   "display": "Chronic viral hepatitis B without delta-agent : immune-tolerant phase",
+   "parent": "B18.1"
+  },
+  {
+   "code": "B18.19",
+   "display": "Chronic viral hepatitis B without delta-agent : other and unspecified phase",
+   "parent": "B18.1"
+  },
+  {
+   "code": "B18.2",
+   "display": "Chronic viral hepatitis C",
+   "parent": "B18"
+  },
+  {
+   "code": "B18.8",
+   "display": "Other chronic viral hepatitis",
+   "parent": "B18"
+  },
+  {
+   "code": "B18.9",
+   "display": "Chronic viral hepatitis, unspecified",
+   "parent": "B18"
+  },
+  {
+   "code": "B19",
+   "display": "Unspecified viral hepatitis",
+   "parent": "B15-B19"
+  },
+  {
+   "code": "B19.0",
+   "display": "Unspecified viral hepatitis with hepatic coma",
+   "parent": "B19"
+  },
+  {
+   "code": "B19.9",
+   "display": "Unspecified viral hepatitis without hepatic coma",
+   "parent": "B19"
+  },
+  {
+   "code": "B20",
+   "display": "Human immunodeficiency virus [HIV] disease resulting in infectious and parasitic diseases",
+   "parent": "B20-B24"
+  },
+  {
+   "code": "B20.0",
+   "display": "HIV disease resulting in mycobacterial infection",
+   "parent": "B20"
+  },
+  {
+   "code": "B20.1",
+   "display": "HIV disease resulting in other bacterial infections",
+   "parent": "B20"
+  },
+  {
+   "code": "B20.2",
+   "display": "HIV disease resulting in cytomegaloviral disease",
+   "parent": "B20"
+  },
+  {
+   "code": "B20.3",
+   "display": "HIV disease resulting in other viral infections",
+   "parent": "B20"
+  },
+  {
+   "code": "B20.4",
+   "display": "HIV disease resulting in candidiasis",
+   "parent": "B20"
+  },
+  {
+   "code": "B20.5",
+   "display": "HIV disease resulting in other mycoses",
+   "parent": "B20"
+  },
+  {
+   "code": "B20.6",
+   "display": "HIV disease resulting in Pneumocystis jirovecii pneumonia",
+   "parent": "B20"
+  },
+  {
+   "code": "B20.7",
+   "display": "HIV disease resulting in multiple infections",
+   "parent": "B20"
+  },
+  {
+   "code": "B20.8",
+   "display": "HIV disease resulting in other infectious and parasitic diseases",
+   "parent": "B20"
+  },
+  {
+   "code": "B20.9",
+   "display": "HIV disease resulting in unspecified infectious or parasitic disease",
+   "parent": "B20"
+  },
+  {
+   "code": "B21",
+   "display": "Human immunodeficiency virus [HIV] disease resulting in malignant neoplasms",
+   "parent": "B20-B24"
+  },
+  {
+   "code": "B21.0",
+   "display": "HIV disease resulting in Kaposi sarcoma",
+   "parent": "B21"
+  },
+  {
+   "code": "B21.1",
+   "display": "HIV disease resulting in Burkitt lymphoma",
+   "parent": "B21"
+  },
+  {
+   "code": "B21.2",
+   "display": "HIV disease resulting in other types of non-Hodgkin lymphoma",
+   "parent": "B21"
+  },
+  {
+   "code": "B21.3",
+   "display": "HIV disease resulting in other malignant neoplasms of lymphoid, haematopoietic and related tissue",
+   "parent": "B21"
+  },
+  {
+   "code": "B21.7",
+   "display": "HIV disease resulting in multiple malignant neoplasms",
+   "parent": "B21"
+  },
+  {
+   "code": "B21.8",
+   "display": "HIV disease resulting in other malignant neoplasms",
+   "parent": "B21"
+  },
+  {
+   "code": "B21.9",
+   "display": "HIV disease resulting in unspecified malignant neoplasm",
+   "parent": "B21"
+  },
+  {
+   "code": "B22",
+   "display": "Human immunodeficiency virus [HIV] disease resulting in other specified diseases",
+   "parent": "B20-B24"
+  },
+  {
+   "code": "B22.0",
+   "display": "HIV disease resulting in encephalopathy",
+   "parent": "B22"
+  },
+  {
+   "code": "B22.1",
+   "display": "HIV disease resulting in lymphoid interstitial pneumonitis",
+   "parent": "B22"
+  },
+  {
+   "code": "B22.2",
+   "display": "HIV disease resulting in wasting syndrome",
+   "parent": "B22"
+  },
+  {
+   "code": "B22.7",
+   "display": "HIV disease resulting in multiple diseases classified elsewhere",
+   "parent": "B22"
+  },
+  {
+   "code": "B23",
+   "display": "Human immunodeficiency virus [HIV] disease resulting in other conditions",
+   "parent": "B20-B24"
+  },
+  {
+   "code": "B23.0",
+   "display": "Acute HIV infection syndrome",
+   "parent": "B23"
+  },
+  {
+   "code": "B23.1",
+   "display": "HIV disease resulting in (persistent) generalized lymphadenopathy",
+   "parent": "B23"
+  },
+  {
+   "code": "B23.2",
+   "display": "HIV disease resulting in haematological and immunological abnormalities, not elsewhere classified",
+   "parent": "B23"
+  },
+  {
+   "code": "B23.8",
+   "display": "HIV disease resulting in other specified conditions",
+   "parent": "B23"
+  },
+  {
+   "code": "B24",
+   "display": "Unspecified human immunodeficiency virus [HIV] disease",
+   "parent": "B20-B24"
+  },
+  {
+   "code": "B25",
+   "display": "Cytomegaloviral disease",
+   "parent": "B25-B34"
+  },
+  {
+   "code": "B25.0",
+   "display": "Cytomegaloviral pneumonitis",
+   "parent": "B25"
+  },
+  {
+   "code": "B25.1",
+   "display": "Cytomegaloviral hepatitis",
+   "parent": "B25"
+  },
+  {
+   "code": "B25.2",
+   "display": "Cytomegaloviral pancreatitis",
+   "parent": "B25"
+  },
+  {
+   "code": "B25.8",
+   "display": "Other cytomegaloviral diseases",
+   "parent": "B25"
+  },
+  {
+   "code": "B25.9",
+   "display": "Cytomegaloviral disease, unspecified",
+   "parent": "B25"
+  },
+  {
+   "code": "B26",
+   "display": "Mumps",
+   "parent": "B25-B34"
+  },
+  {
+   "code": "B26.0",
+   "display": "Mumps orchitis",
+   "parent": "B26"
+  },
+  {
+   "code": "B26.1",
+   "display": "Mumps meningitis",
+   "parent": "B26"
+  },
+  {
+   "code": "B26.2",
+   "display": "Mumps encephalitis",
+   "parent": "B26"
+  },
+  {
+   "code": "B26.3",
+   "display": "Mumps pancreatitis",
+   "parent": "B26"
+  },
+  {
+   "code": "B26.8",
+   "display": "Mumps with other complications",
+   "parent": "B26"
+  },
+  {
+   "code": "B26.9",
+   "display": "Mumps without complication",
+   "parent": "B26"
+  },
+  {
+   "code": "B27",
+   "display": "Infectious mononucleosis",
+   "parent": "B25-B34"
+  },
+  {
+   "code": "B27.0",
+   "display": "Gammaherpesviral mononucleosis",
+   "parent": "B27"
+  },
+  {
+   "code": "B27.1",
+   "display": "Cytomegaloviral mononucleosis",
+   "parent": "B27"
+  },
+  {
+   "code": "B27.8",
+   "display": "Other infectious mononucleosis",
+   "parent": "B27"
+  },
+  {
+   "code": "B27.9",
+   "display": "Infectious mononucleosis, unspecified",
+   "parent": "B27"
+  },
+  {
+   "code": "B30",
+   "display": "Viral conjunctivitis",
+   "parent": "B25-B34"
+  },
+  {
+   "code": "B30.0",
+   "display": "Keratoconjunctivitis due to adenovirus",
+   "parent": "B30"
+  },
+  {
+   "code": "B30.1",
+   "display": "Conjunctivitis due to adenovirus",
+   "parent": "B30"
+  },
+  {
+   "code": "B30.2",
+   "display": "Viral pharyngoconjunctivitis",
+   "parent": "B30"
+  },
+  {
+   "code": "B30.3",
+   "display": "Acute epidemic haemorrhagic conjunctivitis (enteroviral)",
+   "parent": "B30"
+  },
+  {
+   "code": "B30.8",
+   "display": "Other viral conjunctivitis",
+   "parent": "B30"
+  },
+  {
+   "code": "B30.9",
+   "display": "Viral conjunctivitis, unspecified",
+   "parent": "B30"
+  },
+  {
+   "code": "B33",
+   "display": "Other viral diseases, not elsewhere classified",
+   "parent": "B25-B34"
+  },
+  {
+   "code": "B33.0",
+   "display": "Epidemic myalgia",
+   "parent": "B33"
+  },
+  {
+   "code": "B33.1",
+   "display": "Ross River disease",
+   "parent": "B33"
+  },
+  {
+   "code": "B33.2",
+   "display": "Viral carditis",
+   "parent": "B33"
+  },
+  {
+   "code": "B33.3",
+   "display": "Retrovirus infections, not elsewhere classified",
+   "parent": "B33"
+  },
+  {
+   "code": "B33.4",
+   "display": "Hantavirus (cardio-)pulmonary syndrome [HPS] [HCPS]",
+   "parent": "B33"
+  },
+  {
+   "code": "B33.8",
+   "display": "Other specified viral diseases",
+   "parent": "B33"
+  },
+  {
+   "code": "B34",
+   "display": "Viral infection of unspecified site",
+   "parent": "B25-B34"
+  },
+  {
+   "code": "B34.0",
+   "display": "Adenovirus infection, unspecified site",
+   "parent": "B34"
+  },
+  {
+   "code": "B34.1",
+   "display": "Enterovirus infection, unspecified site",
+   "parent": "B34"
+  },
+  {
+   "code": "B34.2",
+   "display": "Coronavirus infection, unspecified site",
+   "parent": "B34"
+  },
+  {
+   "code": "B34.3",
+   "display": "Parvovirus infection, unspecified site",
+   "parent": "B34"
+  },
+  {
+   "code": "B34.4",
+   "display": "Papovavirus infection, unspecified site",
+   "parent": "B34"
+  },
+  {
+   "code": "B34.8",
+   "display": "Other viral infections of unspecified site",
+   "parent": "B34"
+  },
+  {
+   "code": "B34.9",
+   "display": "Viral infection, unspecified",
+   "parent": "B34"
+  },
+  {
+   "code": "B35",
+   "display": "Dermatophytosis",
+   "parent": "B35-B49"
+  },
+  {
+   "code": "B35.0",
+   "display": "Tinea barbae and tinea capitis",
+   "parent": "B35"
+  },
+  {
+   "code": "B35.1",
+   "display": "Tinea unguium",
+   "parent": "B35"
+  },
+  {
+   "code": "B35.2",
+   "display": "Tinea manuum",
+   "parent": "B35"
+  },
+  {
+   "code": "B35.3",
+   "display": "Tinea pedis",
+   "parent": "B35"
+  },
+  {
+   "code": "B35.4",
+   "display": "Tinea corporis",
+   "parent": "B35"
+  },
+  {
+   "code": "B35.5",
+   "display": "Tinea imbricata",
+   "parent": "B35"
+  },
+  {
+   "code": "B35.6",
+   "display": "Tinea inguinalis [Tinea cruris]",
+   "parent": "B35"
+  },
+  {
+   "code": "B35.8",
+   "display": "Other dermatophytoses",
+   "parent": "B35"
+  },
+  {
+   "code": "B35.9",
+   "display": "Dermatophytosis, unspecified",
+   "parent": "B35"
+  },
+  {
+   "code": "B36",
+   "display": "Other superficial mycoses",
+   "parent": "B35-B49"
+  },
+  {
+   "code": "B36.0",
+   "display": "Pityriasis versicolor",
+   "parent": "B36"
+  },
+  {
+   "code": "B36.1",
+   "display": "Tinea nigra",
+   "parent": "B36"
+  },
+  {
+   "code": "B36.2",
+   "display": "White piedra",
+   "parent": "B36"
+  },
+  {
+   "code": "B36.3",
+   "display": "Black piedra",
+   "parent": "B36"
+  },
+  {
+   "code": "B36.8",
+   "display": "Other specified superficial mycoses",
+   "parent": "B36"
+  },
+  {
+   "code": "B36.9",
+   "display": "Superficial mycosis, unspecified",
+   "parent": "B36"
+  },
+  {
+   "code": "B37",
+   "display": "Candidiasis",
+   "parent": "B35-B49"
+  },
+  {
+   "code": "B37.0",
+   "display": "Candidal stomatitis",
+   "parent": "B37"
+  },
+  {
+   "code": "B37.1",
+   "display": "Pulmonary candidiasis",
+   "parent": "B37"
+  },
+  {
+   "code": "B37.2",
+   "display": "Candidiasis of skin and nail",
+   "parent": "B37"
+  },
+  {
+   "code": "B37.3",
+   "display": "Candidiasis of vulva and vagina",
+   "parent": "B37"
+  },
+  {
+   "code": "B37.4",
+   "display": "Candidiasis of other urogenital sites",
+   "parent": "B37"
+  },
+  {
+   "code": "B37.5",
+   "display": "Candidal meningitis",
+   "parent": "B37"
+  },
+  {
+   "code": "B37.6",
+   "display": "Candidal endocarditis",
+   "parent": "B37"
+  },
+  {
+   "code": "B37.7",
+   "display": "Candidal sepsis",
+   "parent": "B37"
+  },
+  {
+   "code": "B37.8",
+   "display": "Candidiasis of other sites",
+   "parent": "B37"
+  },
+  {
+   "code": "B37.9",
+   "display": "Candidiasis, unspecified",
+   "parent": "B37"
+  },
+  {
+   "code": "B38",
+   "display": "Coccidioidomycosis",
+   "parent": "B35-B49"
+  },
+  {
+   "code": "B38.0",
+   "display": "Acute pulmonary coccidioidomycosis",
+   "parent": "B38"
+  },
+  {
+   "code": "B38.1",
+   "display": "Chronic pulmonary coccidioidomycosis",
+   "parent": "B38"
+  },
+  {
+   "code": "B38.2",
+   "display": "Pulmonary coccidioidomycosis, unspecified",
+   "parent": "B38"
+  },
+  {
+   "code": "B38.3",
+   "display": "Cutaneous coccidioidomycosis",
+   "parent": "B38"
+  },
+  {
+   "code": "B38.4",
+   "display": "Coccidioidomycosis meningitis",
+   "parent": "B38"
+  },
+  {
+   "code": "B38.7",
+   "display": "Disseminated coccidioidomycosis",
+   "parent": "B38"
+  },
+  {
+   "code": "B38.8",
+   "display": "Other forms of coccidioidomycosis",
+   "parent": "B38"
+  },
+  {
+   "code": "B38.9",
+   "display": "Coccidioidomycosis, unspecified",
+   "parent": "B38"
+  },
+  {
+   "code": "B39",
+   "display": "Histoplasmosis",
+   "parent": "B35-B49"
+  },
+  {
+   "code": "B39.0",
+   "display": "Acute pulmonary histoplasmosis capsulati",
+   "parent": "B39"
+  },
+  {
+   "code": "B39.1",
+   "display": "Chronic pulmonary histoplasmosis capsulati",
+   "parent": "B39"
+  },
+  {
+   "code": "B39.2",
+   "display": "Pulmonary histoplasmosis capsulati, unspecified",
+   "parent": "B39"
+  },
+  {
+   "code": "B39.3",
+   "display": "Disseminated histoplasmosis capsulati",
+   "parent": "B39"
+  },
+  {
+   "code": "B39.4",
+   "display": "Histoplasmosis capsulati, unspecified",
+   "parent": "B39"
+  },
+  {
+   "code": "B39.5",
+   "display": "Histoplasmosis duboisii",
+   "parent": "B39"
+  },
+  {
+   "code": "B39.9",
+   "display": "Histoplasmosis, unspecified",
+   "parent": "B39"
+  },
+  {
+   "code": "B40",
+   "display": "Blastomycosis",
+   "parent": "B35-B49"
+  },
+  {
+   "code": "B40.0",
+   "display": "Acute pulmonary blastomycosis",
+   "parent": "B40"
+  },
+  {
+   "code": "B40.1",
+   "display": "Chronic pulmonary blastomycosis",
+   "parent": "B40"
+  },
+  {
+   "code": "B40.2",
+   "display": "Pulmonary blastomycosis, unspecified",
+   "parent": "B40"
+  },
+  {
+   "code": "B40.3",
+   "display": "Cutaneous blastomycosis",
+   "parent": "B40"
+  },
+  {
+   "code": "B40.7",
+   "display": "Disseminated blastomycosis",
+   "parent": "B40"
+  },
+  {
+   "code": "B40.8",
+   "display": "Other forms of blastomycosis",
+   "parent": "B40"
+  },
+  {
+   "code": "B40.9",
+   "display": "Blastomycosis, unspecified",
+   "parent": "B40"
+  },
+  {
+   "code": "B41",
+   "display": "Paracoccidioidomycosis",
+   "parent": "B35-B49"
+  },
+  {
+   "code": "B41.0",
+   "display": "Pulmonary paracoccidioidomycosis",
+   "parent": "B41"
+  },
+  {
+   "code": "B41.7",
+   "display": "Disseminated paracoccidioidomycosis",
+   "parent": "B41"
+  },
+  {
+   "code": "B41.8",
+   "display": "Other forms of paracoccidioidomycosis",
+   "parent": "B41"
+  },
+  {
+   "code": "B41.9",
+   "display": "Paracoccidioidomycosis, unspecified",
+   "parent": "B41"
+  },
+  {
+   "code": "B42",
+   "display": "Sporotrichosis",
+   "parent": "B35-B49"
+  },
+  {
+   "code": "B42.0",
+   "display": "Pulmonary sporotrichosis",
+   "parent": "B42"
+  },
+  {
+   "code": "B42.1",
+   "display": "Lymphocutaneous sporotrichosis",
+   "parent": "B42"
+  },
+  {
+   "code": "B42.7",
+   "display": "Disseminated sporotrichosis",
+   "parent": "B42"
+  },
+  {
+   "code": "B42.8",
+   "display": "Other forms of sporotrichosis",
+   "parent": "B42"
+  },
+  {
+   "code": "B42.9",
+   "display": "Sporotrichosis, unspecified",
+   "parent": "B42"
+  },
+  {
+   "code": "B43",
+   "display": "Chromomycosis and phaeomycotic abscess",
+   "parent": "B35-B49"
+  },
+  {
+   "code": "B43.0",
+   "display": "Cutaneous chromomycosis",
+   "parent": "B43"
+  },
+  {
+   "code": "B43.1",
+   "display": "Phaeomycotic brain abscess",
+   "parent": "B43"
+  },
+  {
+   "code": "B43.2",
+   "display": "Subcutaneous phaeomycotic abscess and cyst",
+   "parent": "B43"
+  },
+  {
+   "code": "B43.8",
+   "display": "Other forms of chromomycosis",
+   "parent": "B43"
+  },
+  {
+   "code": "B43.9",
+   "display": "Chromomycosis, unspecified",
+   "parent": "B43"
+  },
+  {
+   "code": "B44",
+   "display": "Aspergillosis",
+   "parent": "B35-B49"
+  },
+  {
+   "code": "B44.0",
+   "display": "Invasive pulmonary aspergillosis",
+   "parent": "B44"
+  },
+  {
+   "code": "B44.1",
+   "display": "Other pulmonary aspergillosis",
+   "parent": "B44"
+  },
+  {
+   "code": "B44.2",
+   "display": "Tonsillar aspergillosis",
+   "parent": "B44"
+  },
+  {
+   "code": "B44.7",
+   "display": "Disseminated aspergillosis",
+   "parent": "B44"
+  },
+  {
+   "code": "B44.8",
+   "display": "Other forms of aspergillosis",
+   "parent": "B44"
+  },
+  {
+   "code": "B44.9",
+   "display": "Aspergillosis, unspecified",
+   "parent": "B44"
+  },
+  {
+   "code": "B45",
+   "display": "Cryptococcosis",
+   "parent": "B35-B49"
+  },
+  {
+   "code": "B45.0",
+   "display": "Pulmonary cryptococcosis",
+   "parent": "B45"
+  },
+  {
+   "code": "B45.1",
+   "display": "Cerebral cryptococcosis",
+   "parent": "B45"
+  },
+  {
+   "code": "B45.2",
+   "display": "Cutaneous cryptococcosis",
+   "parent": "B45"
+  },
+  {
+   "code": "B45.3",
+   "display": "Osseous cryptococcosis",
+   "parent": "B45"
+  },
+  {
+   "code": "B45.7",
+   "display": "Disseminated cryptococcosis",
+   "parent": "B45"
+  },
+  {
+   "code": "B45.8",
+   "display": "Other forms of cryptococcosis",
+   "parent": "B45"
+  },
+  {
+   "code": "B45.9",
+   "display": "Cryptococcosis, unspecified",
+   "parent": "B45"
+  },
+  {
+   "code": "B46",
+   "display": "Zygomycosis",
+   "parent": "B35-B49"
+  },
+  {
+   "code": "B46.0",
+   "display": "Pulmonary mucormycosis",
+   "parent": "B46"
+  },
+  {
+   "code": "B46.1",
+   "display": "Rhinocerebral mucormycosis",
+   "parent": "B46"
+  },
+  {
+   "code": "B46.2",
+   "display": "Gastrointestinal mucormycosis",
+   "parent": "B46"
+  },
+  {
+   "code": "B46.3",
+   "display": "Cutaneous mucormycosis",
+   "parent": "B46"
+  },
+  {
+   "code": "B46.4",
+   "display": "Disseminated mucormycosis",
+   "parent": "B46"
+  },
+  {
+   "code": "B46.5",
+   "display": "Mucormycosis, unspecified",
+   "parent": "B46"
+  },
+  {
+   "code": "B46.8",
+   "display": "Other zygomycoses",
+   "parent": "B46"
+  },
+  {
+   "code": "B46.9",
+   "display": "Zygomycosis, unspecified",
+   "parent": "B46"
+  },
+  {
+   "code": "B47",
+   "display": "Mycetoma",
+   "parent": "B35-B49"
+  },
+  {
+   "code": "B47.0",
+   "display": "Eumycetoma",
+   "parent": "B47"
+  },
+  {
+   "code": "B47.1",
+   "display": "Actinomycetoma",
+   "parent": "B47"
+  },
+  {
+   "code": "B47.9",
+   "display": "Mycetoma, unspecified",
+   "parent": "B47"
+  },
+  {
+   "code": "B48",
+   "display": "Other mycoses, not elsewhere classified",
+   "parent": "B35-B49"
+  },
+  {
+   "code": "B48.0",
+   "display": "Lobomycosis",
+   "parent": "B48"
+  },
+  {
+   "code": "B48.1",
+   "display": "Rhinosporidiosis",
+   "parent": "B48"
+  },
+  {
+   "code": "B48.2",
+   "display": "Allescheriasis",
+   "parent": "B48"
+  },
+  {
+   "code": "B48.3",
+   "display": "Geotrichosis",
+   "parent": "B48"
+  },
+  {
+   "code": "B48.4",
+   "display": "Penicillosis",
+   "parent": "B48"
+  },
+  {
+   "code": "B48.5",
+   "display": "Pneumocystosis",
+   "parent": "B48"
+  },
+  {
+   "code": "B48.7",
+   "display": "Opportunistic mycoses",
+   "parent": "B48"
+  },
+  {
+   "code": "B48.8",
+   "display": "Other specified mycoses",
+   "parent": "B48"
+  },
+  {
+   "code": "B49",
+   "display": "Unspecified mycosis",
+   "parent": "B35-B49"
+  },
+  {
+   "code": "B50",
+   "display": "Plasmodium falciparum malaria",
+   "parent": "B50-B64"
+  },
+  {
+   "code": "B50.0",
+   "display": "Plasmodium falciparum malaria with cerebral complications",
+   "parent": "B50"
+  },
+  {
+   "code": "B50.8",
+   "display": "Other severe and complicated Plasmodium falciparum malaria",
+   "parent": "B50"
+  },
+  {
+   "code": "B50.9",
+   "display": "Plasmodium falciparum malaria, unspecified",
+   "parent": "B50"
+  },
+  {
+   "code": "B51",
+   "display": "Plasmodium vivax malaria",
+   "parent": "B50-B64"
+  },
+  {
+   "code": "B51.0",
+   "display": "Plasmodium vivax malaria with rupture of spleen",
+   "parent": "B51"
+  },
+  {
+   "code": "B51.8",
+   "display": "Plasmodium vivax malaria with other complications",
+   "parent": "B51"
+  },
+  {
+   "code": "B51.9",
+   "display": "Plasmodium vivax malaria without complication",
+   "parent": "B51"
+  },
+  {
+   "code": "B52",
+   "display": "Plasmodium malariae malaria",
+   "parent": "B50-B64"
+  },
+  {
+   "code": "B52.0",
+   "display": "Plasmodium malariae malaria with nephropathy",
+   "parent": "B52"
+  },
+  {
+   "code": "B52.8",
+   "display": "Plasmodium malariae malaria with other complications",
+   "parent": "B52"
+  },
+  {
+   "code": "B52.9",
+   "display": "Plasmodium malariae malaria without complication",
+   "parent": "B52"
+  },
+  {
+   "code": "B53",
+   "display": "Other parasitologically confirmed malaria",
+   "parent": "B50-B64"
+  },
+  {
+   "code": "B53.0",
+   "display": "Plasmodium ovale malaria",
+   "parent": "B53"
+  },
+  {
+   "code": "B53.1",
+   "display": "Malaria due to simian plasmodia",
+   "parent": "B53"
+  },
+  {
+   "code": "B53.8",
+   "display": "Other parasitologically confirmed malaria, not elsewhere classified",
+   "parent": "B53"
+  },
+  {
+   "code": "B54",
+   "display": "Unspecified malaria",
+   "parent": "B50-B64"
+  },
+  {
+   "code": "B55",
+   "display": "Leishmaniasis",
+   "parent": "B50-B64"
+  },
+  {
+   "code": "B55.0",
+   "display": "Visceral leishmaniasis",
+   "parent": "B55"
+  },
+  {
+   "code": "B55.1",
+   "display": "Cutaneous leishmaniasis",
+   "parent": "B55"
+  },
+  {
+   "code": "B55.2",
+   "display": "Mucocutaneous leishmaniasis",
+   "parent": "B55"
+  },
+  {
+   "code": "B55.9",
+   "display": "Leishmaniasis, unspecified",
+   "parent": "B55"
+  },
+  {
+   "code": "B56",
+   "display": "African trypanosomiasis",
+   "parent": "B50-B64"
+  },
+  {
+   "code": "B56.0",
+   "display": "Gambiense trypanosomiasis",
+   "parent": "B56"
+  },
+  {
+   "code": "B56.1",
+   "display": "Rhodesiense trypanosomiasis",
+   "parent": "B56"
+  },
+  {
+   "code": "B56.9",
+   "display": "African trypanosomiasis, unspecified",
+   "parent": "B56"
+  },
+  {
+   "code": "B57",
+   "display": "Chagas disease",
+   "parent": "B50-B64"
+  },
+  {
+   "code": "B57.0",
+   "display": "Acute Chagas disease with heart involvement",
+   "parent": "B57"
+  },
+  {
+   "code": "B57.1",
+   "display": "Acute Chagas disease without heart involvement",
+   "parent": "B57"
+  },
+  {
+   "code": "B57.2",
+   "display": "Chagas disease (chronic) with heart involvement",
+   "parent": "B57"
+  },
+  {
+   "code": "B57.3",
+   "display": "Chagas disease (chronic) with digestive system involvement",
+   "parent": "B57"
+  },
+  {
+   "code": "B57.4",
+   "display": "Chagas disease (chronic) with nervous system involvement",
+   "parent": "B57"
+  },
+  {
+   "code": "B57.5",
+   "display": "Chagas disease (chronic) with other organ involvement",
+   "parent": "B57"
+  },
+  {
+   "code": "B58",
+   "display": "Toxoplasmosis",
+   "parent": "B50-B64"
+  },
+  {
+   "code": "B58.0",
+   "display": "Toxoplasma oculopathy",
+   "parent": "B58"
+  },
+  {
+   "code": "B58.1",
+   "display": "Toxoplasma hepatitis",
+   "parent": "B58"
+  },
+  {
+   "code": "B58.2",
+   "display": "Toxoplasma meningoencephalitis",
+   "parent": "B58"
+  },
+  {
+   "code": "B58.3",
+   "display": "Pulmonary toxoplasmosis",
+   "parent": "B58"
+  },
+  {
+   "code": "B58.8",
+   "display": "Toxoplasmosis with other organ involvement",
+   "parent": "B58"
+  },
+  {
+   "code": "B58.9",
+   "display": "Toxoplasmosis, unspecified",
+   "parent": "B58"
+  },
+  {
+   "code": "B60",
+   "display": "Other protozoal diseases, not elsewhere classified",
+   "parent": "B50-B64"
+  },
+  {
+   "code": "B60.0",
+   "display": "Babesiosis",
+   "parent": "B60"
+  },
+  {
+   "code": "B60.1",
+   "display": "Acanthamoebiasis",
+   "parent": "B60"
+  },
+  {
+   "code": "B60.2",
+   "display": "Naegleriasis",
+   "parent": "B60"
+  },
+  {
+   "code": "B60.8",
+   "display": "Other specified protozoal diseases",
+   "parent": "B60"
+  },
+  {
+   "code": "B64",
+   "display": "Unspecified protozoal disease",
+   "parent": "B50-B64"
+  },
+  {
+   "code": "B65",
+   "display": "Schistosomiasis [bilharziasis]",
+   "parent": "B65-B83"
+  },
+  {
+   "code": "B65.0",
+   "display": "Schistosomiasis due to Schistosoma haematobium [urinary schistosomiasis]",
+   "parent": "B65"
+  },
+  {
+   "code": "B65.1",
+   "display": "Schistosomiasis due to Schistosoma mansoni [intestinal schistosomiasis]",
+   "parent": "B65"
+  },
+  {
+   "code": "B65.2",
+   "display": "Schistosomiasis due to Schistosoma japonicum",
+   "parent": "B65"
+  },
+  {
+   "code": "B65.3",
+   "display": "Cercarial dermatitis",
+   "parent": "B65"
+  },
+  {
+   "code": "B65.8",
+   "display": "Other schistosomiases",
+   "parent": "B65"
+  },
+  {
+   "code": "B65.9",
+   "display": "Schistosomiasis, unspecified",
+   "parent": "B65"
+  },
+  {
+   "code": "B66",
+   "display": "Other fluke infections",
+   "parent": "B65-B83"
+  },
+  {
+   "code": "B66.0",
+   "display": "Opisthorchiasis",
+   "parent": "B66"
+  },
+  {
+   "code": "B66.1",
+   "display": "Clonorchiasis",
+   "parent": "B66"
+  },
+  {
+   "code": "B66.2",
+   "display": "Dicrocoeliasis",
+   "parent": "B66"
+  },
+  {
+   "code": "B66.3",
+   "display": "Fascioliasis",
+   "parent": "B66"
+  },
+  {
+   "code": "B66.4",
+   "display": "Paragonimiasis",
+   "parent": "B66"
+  },
+  {
+   "code": "B66.5",
+   "display": "Fasciolopsiasis",
+   "parent": "B66"
+  },
+  {
+   "code": "B66.8",
+   "display": "Other specified fluke infections",
+   "parent": "B66"
+  },
+  {
+   "code": "B66.9",
+   "display": "Fluke infection, unspecified",
+   "parent": "B66"
+  },
+  {
+   "code": "B67",
+   "display": "Echinococcosis",
+   "parent": "B65-B83"
+  },
+  {
+   "code": "B67.0",
+   "display": "Echinococcus granulosus infection of liver",
+   "parent": "B67"
+  },
+  {
+   "code": "B67.1",
+   "display": "Echinococcus granulosus infection of lung",
+   "parent": "B67"
+  },
+  {
+   "code": "B67.2",
+   "display": "Echinococcus granulosus infection of bone",
+   "parent": "B67"
+  },
+  {
+   "code": "B67.3",
+   "display": "Echinococcus granulosus infection, other and multiple sites",
+   "parent": "B67"
+  },
+  {
+   "code": "B67.4",
+   "display": "Echinococcus granulosus infection, unspecified",
+   "parent": "B67"
+  },
+  {
+   "code": "B67.5",
+   "display": "Echinococcus multilocularis infection of liver",
+   "parent": "B67"
+  },
+  {
+   "code": "B67.6",
+   "display": "Echinococcus multilocularis infection, other and multiple sites",
+   "parent": "B67"
+  },
+  {
+   "code": "B67.7",
+   "display": "Echinococcus multilocularis infection, unspecified",
+   "parent": "B67"
+  },
+  {
+   "code": "B67.8",
+   "display": "Echinococcosis, unspecified, of liver",
+   "parent": "B67"
+  },
+  {
+   "code": "B67.9",
+   "display": "Echinococcosis, other and unspecified",
+   "parent": "B67"
+  },
+  {
+   "code": "B68",
+   "display": "Taeniasis",
+   "parent": "B65-B83"
+  },
+  {
+   "code": "B68.0",
+   "display": "Taenia solium taeniasis",
+   "parent": "B68"
+  },
+  {
+   "code": "B68.1",
+   "display": "Taenia saginata taeniasis",
+   "parent": "B68"
+  },
+  {
+   "code": "B68.9",
+   "display": "Taeniasis, unspecified",
+   "parent": "B68"
+  },
+  {
+   "code": "B69",
+   "display": "Cysticercosis",
+   "parent": "B65-B83"
+  },
+  {
+   "code": "B69.0",
+   "display": "Cysticercosis of central nervous system",
+   "parent": "B69"
+  },
+  {
+   "code": "B69.1",
+   "display": "Cysticercosis of eye",
+   "parent": "B69"
+  },
+  {
+   "code": "B69.8",
+   "display": "Cysticercosis of other sites",
+   "parent": "B69"
+  },
+  {
+   "code": "B69.9",
+   "display": "Cysticercosis, unspecified",
+   "parent": "B69"
+  },
+  {
+   "code": "B70",
+   "display": "Diphyllobothriasis and sparganosis",
+   "parent": "B65-B83"
+  },
+  {
+   "code": "B70.0",
+   "display": "Diphyllobothriasis",
+   "parent": "B70"
+  },
+  {
+   "code": "B70.1",
+   "display": "Sparganosis",
+   "parent": "B70"
+  },
+  {
+   "code": "B71",
+   "display": "Other cestode infections",
+   "parent": "B65-B83"
+  },
+  {
+   "code": "B71.0",
+   "display": "Hymenolepiasis",
+   "parent": "B71"
+  },
+  {
+   "code": "B71.1",
+   "display": "Dipylidiasis",
+   "parent": "B71"
+  },
+  {
+   "code": "B71.8",
+   "display": "Other specified cestode infections",
+   "parent": "B71"
+  },
+  {
+   "code": "B71.9",
+   "display": "Cestode infection, unspecified",
+   "parent": "B71"
+  },
+  {
+   "code": "B72",
+   "display": "Dracunculiasis",
+   "parent": "B65-B83"
+  },
+  {
+   "code": "B73",
+   "display": "Onchocerciasis",
+   "parent": "B65-B83"
+  },
+  {
+   "code": "B74",
+   "display": "Filariasis",
+   "parent": "B65-B83"
+  },
+  {
+   "code": "B74.0",
+   "display": "Filariasis due to Wuchereria bancrofti",
+   "parent": "B74"
+  },
+  {
+   "code": "B74.1",
+   "display": "Filariasis due to Brugia malayi",
+   "parent": "B74"
+  },
+  {
+   "code": "B74.2",
+   "display": "Filariasis due to Brugia timori",
+   "parent": "B74"
+  },
+  {
+   "code": "B74.3",
+   "display": "Loiasis",
+   "parent": "B74"
+  },
+  {
+   "code": "B74.4",
+   "display": "Mansonelliasis",
+   "parent": "B74"
+  },
+  {
+   "code": "B74.8",
+   "display": "Other filariases",
+   "parent": "B74"
+  },
+  {
+   "code": "B74.9",
+   "display": "Filariasis, unspecified",
+   "parent": "B74"
+  },
+  {
+   "code": "B75",
+   "display": "Trichinellosis",
+   "parent": "B65-B83"
+  },
+  {
+   "code": "B76",
+   "display": "Hookworm diseases",
+   "parent": "B65-B83"
+  },
+  {
+   "code": "B76.0",
+   "display": "Ancylostomiasis",
+   "parent": "B76"
+  },
+  {
+   "code": "B76.1",
+   "display": "Necatoriasis",
+   "parent": "B76"
+  },
+  {
+   "code": "B76.8",
+   "display": "Other hookworm diseases",
+   "parent": "B76"
+  },
+  {
+   "code": "B76.9",
+   "display": "Hookworm disease, unspecified",
+   "parent": "B76"
+  },
+  {
+   "code": "B77",
+   "display": "Ascariasis",
+   "parent": "B65-B83"
+  },
+  {
+   "code": "B77.0",
+   "display": "Ascariasis with intestinal complications",
+   "parent": "B77"
+  },
+  {
+   "code": "B77.8",
+   "display": "Ascariasis with other complications",
+   "parent": "B77"
+  },
+  {
+   "code": "B77.9",
+   "display": "Ascariasis, unspecified",
+   "parent": "B77"
+  },
+  {
+   "code": "B78",
+   "display": "Strongyloidiasis",
+   "parent": "B65-B83"
+  },
+  {
+   "code": "B78.0",
+   "display": "Intestinal strongyloidiasis",
+   "parent": "B78"
+  },
+  {
+   "code": "B78.1",
+   "display": "Cutaneous strongyloidiasis",
+   "parent": "B78"
+  },
+  {
+   "code": "B78.7",
+   "display": "Disseminated strongyloidiasis",
+   "parent": "B78"
+  },
+  {
+   "code": "B78.9",
+   "display": "Strongyloidiasis, unspecified",
+   "parent": "B78"
+  },
+  {
+   "code": "B79",
+   "display": "Trichuriasis",
+   "parent": "B65-B83"
+  },
+  {
+   "code": "B80",
+   "display": "Enterobiasis",
+   "parent": "B65-B83"
+  },
+  {
+   "code": "B81",
+   "display": "Other intestinal helminthiases, not elsewhere classified",
+   "parent": "B65-B83"
+  },
+  {
+   "code": "B81.0",
+   "display": "Anisakiasis",
+   "parent": "B81"
+  },
+  {
+   "code": "B81.1",
+   "display": "Intestinal capillariasis",
+   "parent": "B81"
+  },
+  {
+   "code": "B81.2",
+   "display": "Trichostrongyliasis",
+   "parent": "B81"
+  },
+  {
+   "code": "B81.3",
+   "display": "Intestinal angiostrongyliasis",
+   "parent": "B81"
+  },
+  {
+   "code": "B81.4",
+   "display": "Mixed intestinal helminthiases",
+   "parent": "B81"
+  },
+  {
+   "code": "B81.8",
+   "display": "Other specified intestinal helminthiases",
+   "parent": "B81"
+  },
+  {
+   "code": "B82",
+   "display": "Unspecified intestinal parasitism",
+   "parent": "B65-B83"
+  },
+  {
+   "code": "B82.0",
+   "display": "Intestinal helminthiasis, unspecified",
+   "parent": "B82"
+  },
+  {
+   "code": "B82.9",
+   "display": "Intestinal parasitism, unspecified",
+   "parent": "B82"
+  },
+  {
+   "code": "B83",
+   "display": "Other helminthiases",
+   "parent": "B65-B83"
+  },
+  {
+   "code": "B83.0",
+   "display": "Visceral larva migrans",
+   "parent": "B83"
+  },
+  {
+   "code": "B83.1",
+   "display": "Gnathostomiasis",
+   "parent": "B83"
+  },
+  {
+   "code": "B83.2",
+   "display": "Angiostrongyliasis due to Parastrongylus cantonensis",
+   "parent": "B83"
+  },
+  {
+   "code": "B83.3",
+   "display": "Syngamiasis",
+   "parent": "B83"
+  },
+  {
+   "code": "B83.4",
+   "display": "Internal hirudiniasis",
+   "parent": "B83"
+  },
+  {
+   "code": "B83.8",
+   "display": "Other specified helminthiases",
+   "parent": "B83"
+  },
+  {
+   "code": "B83.9",
+   "display": "Helminthiasis, unspecified",
+   "parent": "B83"
+  },
+  {
+   "code": "B85",
+   "display": "Pediculosis and phthiriasis",
+   "parent": "B85-B89"
+  },
+  {
+   "code": "B85.0",
+   "display": "Pediculosis due to Pediculus humanus capitis",
+   "parent": "B85"
+  },
+  {
+   "code": "B85.1",
+   "display": "Pediculosis due to Pediculus humanus corporis",
+   "parent": "B85"
+  },
+  {
+   "code": "B85.2",
+   "display": "Pediculosis, unspecified",
+   "parent": "B85"
+  },
+  {
+   "code": "B85.3",
+   "display": "Phthiriasis",
+   "parent": "B85"
+  },
+  {
+   "code": "B85.4",
+   "display": "Mixed pediculosis and phthiriasis",
+   "parent": "B85"
+  },
+  {
+   "code": "B86",
+   "display": "Scabies",
+   "parent": "B85-B89"
+  },
+  {
+   "code": "B87",
+   "display": "Myiasis",
+   "parent": "B85-B89"
+  },
+  {
+   "code": "B87.0",
+   "display": "Cutaneous myiasis",
+   "parent": "B87"
+  },
+  {
+   "code": "B87.1",
+   "display": "Wound myiasis",
+   "parent": "B87"
+  },
+  {
+   "code": "B87.2",
+   "display": "Ocular myiasis",
+   "parent": "B87"
+  },
+  {
+   "code": "B87.3",
+   "display": "Nasopharyngeal myiasis",
+   "parent": "B87"
+  },
+  {
+   "code": "B87.4",
+   "display": "Aural myiasis",
+   "parent": "B87"
+  },
+  {
+   "code": "B87.8",
+   "display": "Myiasis of other sites",
+   "parent": "B87"
+  },
+  {
+   "code": "B87.9",
+   "display": "Myiasis, unspecified",
+   "parent": "B87"
+  },
+  {
+   "code": "B88",
+   "display": "Other infestations",
+   "parent": "B85-B89"
+  },
+  {
+   "code": "B88.0",
+   "display": "Other acariasis",
+   "parent": "B88"
+  },
+  {
+   "code": "B88.1",
+   "display": "Tungiasis [sandflea infestation]",
+   "parent": "B88"
+  },
+  {
+   "code": "B88.2",
+   "display": "Other arthropod infestations",
+   "parent": "B88"
+  },
+  {
+   "code": "B88.3",
+   "display": "External hirudiniasis",
+   "parent": "B88"
+  },
+  {
+   "code": "B88.8",
+   "display": "Other specified infestations",
+   "parent": "B88"
+  },
+  {
+   "code": "B88.9",
+   "display": "Infestation, unspecified",
+   "parent": "B88"
+  },
+  {
+   "code": "B89",
+   "display": "Unspecified parasitic disease",
+   "parent": "B85-B89"
+  },
+  {
+   "code": "B90",
+   "display": "Sequelae of tuberculosis",
+   "parent": "B90-B94"
+  },
+  {
+   "code": "B90.0",
+   "display": "Sequelae of central nervous system tuberculosis",
+   "parent": "B90"
+  },
+  {
+   "code": "B90.1",
+   "display": "Sequelae of genitourinary tuberculosis",
+   "parent": "B90"
+  },
+  {
+   "code": "B90.2",
+   "display": "Sequelae of tuberculosis of bones and joints",
+   "parent": "B90"
+  },
+  {
+   "code": "B90.8",
+   "display": "Sequelae of tuberculosis of other organs",
+   "parent": "B90"
+  },
+  {
+   "code": "B90.9",
+   "display": "Sequelae of respiratory and unspecified tuberculosis",
+   "parent": "B90"
+  },
+  {
+   "code": "B91",
+   "display": "Sequelae of poliomyelitis",
+   "parent": "B90-B94"
+  },
+  {
+   "code": "B92",
+   "display": "Sequelae of leprosy",
+   "parent": "B90-B94"
+  },
+  {
+   "code": "B94",
+   "display": "Sequelae of other and unspecified infectious and parasitic diseases",
+   "parent": "B90-B94"
+  },
+  {
+   "code": "B94.0",
+   "display": "Sequelae of trachoma",
+   "parent": "B94"
+  },
+  {
+   "code": "B94.1",
+   "display": "Sequelae of viral encephalitis",
+   "parent": "B94"
+  },
+  {
+   "code": "B94.2",
+   "display": "Sequelae of viral hepatitis",
+   "parent": "B94"
+  },
+  {
+   "code": "B94.8",
+   "display": "Sequelae of other specified infectious and parasitic diseases",
+   "parent": "B94"
+  },
+  {
+   "code": "B94.9",
+   "display": "Sequelae of unspecified infectious or parasitic disease",
+   "parent": "B94"
+  },
+  {
+   "code": "B95",
+   "display": "Streptococcus and staphylococcus as the cause of diseases classified to other chapters",
+   "parent": "B95-B98"
+  },
+  {
+   "code": "B95.0",
+   "display": "Streptococcus, group A, as the cause of diseases classified to other chapters",
+   "parent": "B95"
+  },
+  {
+   "code": "B95.1",
+   "display": "Streptococcus, group B, as the cause of diseases classified to other chapters",
+   "parent": "B95"
+  },
+  {
+   "code": "B95.2",
+   "display": "Streptococcus group D and enterococcus as the cause of diseases classified to other chapters",
+   "parent": "B95"
+  },
+  {
+   "code": "B95.3",
+   "display": "Streptococcus pneumoniae as the cause of diseases classified to other chapters",
+   "parent": "B95"
+  },
+  {
+   "code": "B95.4",
+   "display": "Other streptococcus as the cause of diseases classified to other chapters",
+   "parent": "B95"
+  },
+  {
+   "code": "B95.5",
+   "display": "Unspecified streptococcus as the cause of diseases classified to other chapters",
+   "parent": "B95"
+  },
+  {
+   "code": "B95.6",
+   "display": "Staphylococcus aureus as the cause of diseases classified to other chapters",
+   "parent": "B95"
+  },
+  {
+   "code": "B95.7",
+   "display": "Other staphylococcus as the cause of diseases classified to other chapters",
+   "parent": "B95"
+  },
+  {
+   "code": "B95.8",
+   "display": "Unspecified staphylococcus as the cause of diseases classified to other chapters",
+   "parent": "B95"
+  },
+  {
+   "code": "B96",
+   "display": "Other specified bacterial agents as the cause of diseases classified to other chapters",
+   "parent": "B95-B98"
+  },
+  {
+   "code": "B96.0",
+   "display": "Mycoplasma pneumoniae [M. pneumoniae] as the cause of diseases classified to other chapters",
+   "parent": "B96"
+  },
+  {
+   "code": "B96.1",
+   "display": "Klebsiella pneumoniae [K. pneumoniae] as the cause of diseases classified to other chapters",
+   "parent": "B96"
+  },
+  {
+   "code": "B96.2",
+   "display": "Escherichia coli [E. coli] as the cause of diseases classified to other chapters",
+   "parent": "B96"
+  },
+  {
+   "code": "B96.3",
+   "display": "Haemophilus influenzae [H. influenzae] as the cause of diseases classified to other chapters",
+   "parent": "B96"
+  },
+  {
+   "code": "B96.4",
+   "display": "Proteus (mirabilis)(morganii) as the cause of diseases classified to other chapters",
+   "parent": "B96"
+  },
+  {
+   "code": "B96.5",
+   "display": "Pseudomonas (aeruginosa) as the cause of diseases classified to other chapters",
+   "parent": "B96"
+  },
+  {
+   "code": "B96.6",
+   "display": "Bacillus fragilis [B. fragilis] as the cause of diseases classified to other chapters",
+   "parent": "B96"
+  },
+  {
+   "code": "B96.7",
+   "display": "Clostridium perfringens [C. perfringens] as the cause of diseases classified to other chapters",
+   "parent": "B96"
+  },
+  {
+   "code": "B96.8",
+   "display": "Other specified bacterial agents as the cause of diseases classified to other chapters",
+   "parent": "B96"
+  },
+  {
+   "code": "B97",
+   "display": "Viral agents as the cause of diseases classified to other chapters",
+   "parent": "B95-B98"
+  },
+  {
+   "code": "B97.0",
+   "display": "Adenovirus as the cause of diseases classified to other chapters",
+   "parent": "B97"
+  },
+  {
+   "code": "B97.1",
+   "display": "Enterovirus as the cause of diseases classified to other chapters",
+   "parent": "B97"
+  },
+  {
+   "code": "B97.2",
+   "display": "Coronavirus as the cause of diseases classified to other chapters",
+   "parent": "B97"
+  },
+  {
+   "code": "B97.3",
+   "display": "Retrovirus as the cause of diseases classified to other chapters",
+   "parent": "B97"
+  },
+  {
+   "code": "B97.4",
+   "display": "Respiratory syncytial virus as the cause of diseases classified to other chapters",
+   "parent": "B97"
+  },
+  {
+   "code": "B97.5",
+   "display": "Reovirus as the cause of diseases classified to other chapters",
+   "parent": "B97"
+  },
+  {
+   "code": "B97.6",
+   "display": "Parvovirus as the cause of diseases classified to other chapters",
+   "parent": "B97"
+  },
+  {
+   "code": "B97.7",
+   "display": "Papillomavirus as the cause of diseases classified to other chapters",
+   "parent": "B97"
+  },
+  {
+   "code": "B97.8",
+   "display": "Other viral agents as the cause of diseases classified to other chapters",
+   "parent": "B97"
+  },
+  {
+   "code": "B98",
+   "display": "Other specified infectious agents as the cause of diseases classified to other chapters",
+   "parent": "B95-B98"
+  },
+  {
+   "code": "B98.0",
+   "display": "Helicobacter pylori [H.pylori] as the cause of diseases classified to other chapters",
+   "parent": "B98"
+  },
+  {
+   "code": "B98.1",
+   "display": "Vibrio vulnificus as the cause of diseases classified to other chapters",
+   "parent": "B98"
+  },
+  {
+   "code": "B99",
+   "display": "Other and unspecified infectious diseases",
+   "parent": "B99-B99"
+  },
+  {
+   "code": "I",
+   "display": "Certain infectious and parasitic diseases",
+   "parent": ""
+  },
+  {
+   "code": "J09",
+   "display": "Influenza due to identified zoonotic or pandemic influenza virus",
+   "parent": "J09-J18"
+  },
+  {
+   "code": "J10",
+   "display": "Influenza due to identified seasonal influenza virus",
+   "parent": "J09-J18"
+  },
+  {
+   "code": "J10.0",
+   "display": "Influenza with pneumonia, seasonal influenza virus identified",
+   "parent": "J10"
+  },
+  {
+   "code": "J10.1",
+   "display": "Influenza with other respiratory manifestations, seasonal influenza virus identified",
+   "parent": "J10"
+  },
+  {
+   "code": "J10.8",
+   "display": "Influenza with other manifestations, seasonal influenza virus identified",
+   "parent": "J10"
+  },
+  {
+   "code": "J11",
+   "display": "Influenza, virus not identified",
+   "parent": "J09-J18"
+  },
+  {
+   "code": "J11.0",
+   "display": "Influenza with pneumonia, virus not identified",
+   "parent": "J11"
+  },
+  {
+   "code": "J11.1",
+   "display": "Influenza with other respiratory manifestations, virus not identified",
+   "parent": "J11"
+  },
+  {
+   "code": "J11.8",
+   "display": "Influenza with other manifestations, virus not identified",
+   "parent": "J11"
+  },
+  {
+   "code": "J12",
+   "display": "Viral pneumonia, not elsewhere classified",
+   "parent": "J09-J18"
+  },
+  {
+   "code": "J12.0",
+   "display": "Adenoviral pneumonia",
+   "parent": "J12"
+  },
+  {
+   "code": "J12.1",
+   "display": "Respiratory syncytial virus pneumonia",
+   "parent": "J12"
+  },
+  {
+   "code": "J12.2",
+   "display": "Parainfluenza virus pneumonia",
+   "parent": "J12"
+  },
+  {
+   "code": "J12.3",
+   "display": "Human metapneumovirus pneumonia",
+   "parent": "J12"
+  },
+  {
+   "code": "J12.8",
+   "display": "Other viral pneumonia",
+   "parent": "J12"
+  },
+  {
+   "code": "J12.9",
+   "display": "Viral pneumonia, unspecified",
+   "parent": "J12"
+  },
+  {
+   "code": "J13",
+   "display": "Pneumonia due to Streptococcus pneumoniae",
+   "parent": "J09-J18"
+  },
+  {
+   "code": "J14",
+   "display": "Pneumonia due to Haemophilus influenzae",
+   "parent": "J09-J18"
+  },
+  {
+   "code": "J15",
+   "display": "Bacterial pneumonia, not elsewhere classified",
+   "parent": "J09-J18"
+  },
+  {
+   "code": "J15.0",
+   "display": "Pneumonia due to Klebsiella pneumoniae",
+   "parent": "J15"
+  },
+  {
+   "code": "J15.1",
+   "display": "Pneumonia due to Pseudomonas",
+   "parent": "J15"
+  },
+  {
+   "code": "J15.2",
+   "display": "Pneumonia due to staphylococcus",
+   "parent": "J15"
+  },
+  {
+   "code": "J15.3",
+   "display": "Pneumonia due to streptococcus, group B",
+   "parent": "J15"
+  },
+  {
+   "code": "J15.4",
+   "display": "Pneumonia due to other streptococci",
+   "parent": "J15"
+  },
+  {
+   "code": "J15.5",
+   "display": "Pneumonia due to Escherichia coli",
+   "parent": "J15"
+  },
+  {
+   "code": "J15.6",
+   "display": "Pneumonia due to other Gram-negative bacteria",
+   "parent": "J15"
+  },
+  {
+   "code": "J15.7",
+   "display": "Pneumonia due to Mycoplasma pneumoniae",
+   "parent": "J15"
+  },
+  {
+   "code": "J15.8",
+   "display": "Other bacterial pneumonia",
+   "parent": "J15"
+  },
+  {
+   "code": "J15.9",
+   "display": "Bacterial pneumonia, unspecified",
+   "parent": "J15"
+  },
+  {
+   "code": "J16",
+   "display": "Pneumonia due to other infectious organisms, not elsewhere classified",
+   "parent": "J09-J18"
+  },
+  {
+   "code": "J16.0",
+   "display": "Chlamydial pneumonia",
+   "parent": "J16"
+  },
+  {
+   "code": "J16.8",
+   "display": "Pneumonia due to other specified infectious organisms",
+   "parent": "J16"
+  },
+  {
+   "code": "J17",
+   "display": "Pneumonia in diseases classified elsewhere",
+   "parent": "J09-J18"
+  },
+  {
+   "code": "J17.0",
+   "display": "Pneumonia in bacterial diseases classified elsewhere",
+   "parent": "J17"
+  },
+  {
+   "code": "J17.1",
+   "display": "Pneumonia in viral diseases classified elsewhere",
+   "parent": "J17"
+  },
+  {
+   "code": "J17.2",
+   "display": "Pneumonia in mycoses",
+   "parent": "J17"
+  },
+  {
+   "code": "J17.3",
+   "display": "Pneumonia in parasitic diseases",
+   "parent": "J17"
+  },
+  {
+   "code": "J17.8",
+   "display": "Pneumonia in other diseases classified elsewhere",
+   "parent": "J17"
+  },
+  {
+   "code": "J18",
+   "display": "Pneumonia, organism unspecified",
+   "parent": "J09-J18"
+  },
+  {
+   "code": "J18.0",
+   "display": "Bronchopneumonia, unspecified",
+   "parent": "J18"
+  },
+  {
+   "code": "J18.1",
+   "display": "Lobar pneumonia, unspecified",
+   "parent": "J18"
+  },
+  {
+   "code": "J18.2",
+   "display": "Hypostatic pneumonia, unspecified",
+   "parent": "J18"
+  },
+  {
+   "code": "J18.8",
+   "display": "Other pneumonia, organism unspecified",
+   "parent": "J18"
+  },
+  {
+   "code": "J18.9",
+   "display": "Pneumonia, unspecified",
+   "parent": "J18"
+  },
+  {
+   "code": "N30",
+   "display": "Cystitis",
+   "parent": "N30-N39"
+  },
+  {
+   "code": "N30.0",
+   "display": "Acute cystitis",
+   "parent": "N30"
+  },
+  {
+   "code": "N30.1",
+   "display": "Interstitial cystitis (chronic)",
+   "parent": "N30"
+  },
+  {
+   "code": "N30.2",
+   "display": "Other chronic cystitis",
+   "parent": "N30"
+  },
+  {
+   "code": "N30.3",
+   "display": "Trigonitis",
+   "parent": "N30"
+  },
+  {
+   "code": "N30.4",
+   "display": "Irradiation cystitis",
+   "parent": "N30"
+  },
+  {
+   "code": "N30.8",
+   "display": "Other cystitis",
+   "parent": "N30"
+  },
+  {
+   "code": "N30.9",
+   "display": "Cystitis, unspecified",
+   "parent": "N30"
+  },
+  {
+   "code": "N31",
+   "display": "Neuromuscular dysfunction of bladder, not elsewhere classified",
+   "parent": "N30-N39"
+  },
+  {
+   "code": "N31.0",
+   "display": "Uninhibited neuropathic bladder, not elsewhere classified",
+   "parent": "N31"
+  },
+  {
+   "code": "N31.1",
+   "display": "Reflex neuropathic bladder, not elsewhere classified",
+   "parent": "N31"
+  },
+  {
+   "code": "N31.2",
+   "display": "Flaccid neuropathic bladder, not elsewhere classified",
+   "parent": "N31"
+  },
+  {
+   "code": "N31.8",
+   "display": "Other neuromuscular dysfunction of bladder",
+   "parent": "N31"
+  },
+  {
+   "code": "N31.9",
+   "display": "Neuromuscular dysfunction of bladder, unspecified",
+   "parent": "N31"
+  },
+  {
+   "code": "N32",
+   "display": "Other disorders of bladder",
+   "parent": "N30-N39"
+  },
+  {
+   "code": "N32.0",
+   "display": "Bladder-neck obstruction",
+   "parent": "N32"
+  },
+  {
+   "code": "N32.1",
+   "display": "Vesicointestinal fistula",
+   "parent": "N32"
+  },
+  {
+   "code": "N32.2",
+   "display": "Vesical fistula, not elsewhere classified",
+   "parent": "N32"
+  },
+  {
+   "code": "N32.3",
+   "display": "Diverticulum of bladder",
+   "parent": "N32"
+  },
+  {
+   "code": "N32.4",
+   "display": "Rupture of bladder, nontraumatic",
+   "parent": "N32"
+  },
+  {
+   "code": "N32.8",
+   "display": "Other specified disorders of bladder",
+   "parent": "N32"
+  },
+  {
+   "code": "N32.9",
+   "display": "Bladder disorder, unspecified",
+   "parent": "N32"
+  },
+  {
+   "code": "N33",
+   "display": "Bladder disorders in diseases classified elsewhere",
+   "parent": "N30-N39"
+  },
+  {
+   "code": "N33.0",
+   "display": "Tuberculous cystitis",
+   "parent": "N33"
+  },
+  {
+   "code": "N33.8",
+   "display": "Bladder disorders in other diseases classified elsewhere",
+   "parent": "N33"
+  },
+  {
+   "code": "N34",
+   "display": "Urethritis and urethral syndrome",
+   "parent": "N30-N39"
+  },
+  {
+   "code": "N34.0",
+   "display": "Urethral abscess",
+   "parent": "N34"
+  },
+  {
+   "code": "N34.1",
+   "display": "Nonspecific urethritis",
+   "parent": "N34"
+  },
+  {
+   "code": "N34.2",
+   "display": "Other urethritis",
+   "parent": "N34"
+  },
+  {
+   "code": "N34.3",
+   "display": "Urethral syndrome, unspecified",
+   "parent": "N34"
+  },
+  {
+   "code": "N35",
+   "display": "Urethral stricture",
+   "parent": "N30-N39"
+  },
+  {
+   "code": "N35.0",
+   "display": "Post-traumatic urethral stricture",
+   "parent": "N35"
+  },
+  {
+   "code": "N35.1",
+   "display": "Postinfective urethral stricture, not elsewhere classified",
+   "parent": "N35"
+  },
+  {
+   "code": "N35.8",
+   "display": "Other urethral stricture",
+   "parent": "N35"
+  },
+  {
+   "code": "N35.9",
+   "display": "Urethral stricture, unspecified",
+   "parent": "N35"
+  },
+  {
+   "code": "N36",
+   "display": "Other disorders of urethra",
+   "parent": "N30-N39"
+  },
+  {
+   "code": "N36.0",
+   "display": "Urethral fistula",
+   "parent": "N36"
+  },
+  {
+   "code": "N36.1",
+   "display": "Urethral diverticulum",
+   "parent": "N36"
+  },
+  {
+   "code": "N36.2",
+   "display": "Urethral caruncle",
+   "parent": "N36"
+  },
+  {
+   "code": "N36.3",
+   "display": "Prolapsed urethral mucosa",
+   "parent": "N36"
+  },
+  {
+   "code": "N36.8",
+   "display": "Other specified disorders of urethra",
+   "parent": "N36"
+  },
+  {
+   "code": "N36.9",
+   "display": "Urethral disorder, unspecified",
+   "parent": "N36"
+  },
+  {
+   "code": "N37",
+   "display": "Urethral disorders in diseases classified elsewhere",
+   "parent": "N30-N39"
+  },
+  {
+   "code": "N37.0",
+   "display": "Urethritis in diseases classified elsewhere",
+   "parent": "N37"
+  },
+  {
+   "code": "N37.8",
+   "display": "Other urethral disorders in diseases classified elsewhere",
+   "parent": "N37"
+  },
+  {
+   "code": "N39",
+   "display": "Other disorders of urinary system",
+   "parent": "N30-N39"
+  },
+  {
+   "code": "N39.0",
+   "display": "Urinary tract infection, site not specified",
+   "parent": "N39"
+  },
+  {
+   "code": "N39.1",
+   "display": "Persistent proteinuria, unspecified",
+   "parent": "N39"
+  },
+  {
+   "code": "N39.2",
+   "display": "Orthostatic proteinuria, unspecified",
+   "parent": "N39"
+  },
+  {
+   "code": "N39.3",
+   "display": "Stress incontinence",
+   "parent": "N39"
+  },
+  {
+   "code": "N39.4",
+   "display": "Other specified urinary incontinence",
+   "parent": "N39"
+  },
+  {
+   "code": "N39.8",
+   "display": "Other specified disorders of urinary system",
+   "parent": "N39"
+  },
+  {
+   "code": "N39.9",
+   "display": "Disorder of urinary system, unspecified",
+   "parent": "N39"
+  },
+  {
+   "code": "U04",
+   "display": "Severe acute respiratory syndrome [SARS]",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U04.9",
+   "display": "Severe acute respiratory syndrome [SARS], unspecified",
+   "parent": "U04"
+  },
+  {
+   "code": "U07",
+   "display": "Emergency use of U07",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U07.0",
+   "display": "Vaping-related disorder",
+   "parent": "U07"
+  },
+  {
+   "code": "U07.1",
+   "display": "COVID-19, virus identified",
+   "parent": "U07"
+  },
+  {
+   "code": "U07.2",
+   "display": "COVID-19, virus not identified",
+   "parent": "U07"
+  },
+  {
+   "code": "U08",
+   "display": "Personal history of COVID-19",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U08.9",
+   "display": "Personal history of COVID-19, unspecified",
+   "parent": "U08"
+  },
+  {
+   "code": "U09",
+   "display": "Post COVID-19 condition",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U09.9",
+   "display": "Post COVID-19 condition, unspecified",
+   "parent": "U09"
+  },
+  {
+   "code": "U10",
+   "display": "Multisystem inflammatory syndrome associated with COVID-19",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U10.9",
+   "display": "Multisystem inflammatory syndrome associated with COVID-19, unspecified",
+   "parent": "U10"
+  },
+  {
+   "code": "U11",
+   "display": "Need for immunization against COVID-19",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U11.9",
+   "display": "Need for immunization against COVID-19, unspecified",
+   "parent": "U11"
+  },
+  {
+   "code": "U12",
+   "display": "COVID-19 vaccines causing adverse effects in therapeutic use",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U12.9",
+   "display": "COVID-19 vaccines causing adverse effects in therapeutic use, unspecified",
+   "parent": "U12"
+  },
+  {
+   "code": "U13",
+   "display": "Emergency use of U13",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U13.9",
+   "display": "Emergency use of U13.9",
+   "parent": "U13"
+  },
+  {
+   "code": "U14",
+   "display": "Emergency use of U14",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U14.9",
+   "display": "Emergency use of U14.9",
+   "parent": "U14"
+  },
+  {
+   "code": "U15",
+   "display": "Emergency use of U15",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U15.9",
+   "display": "Emergency use of U15.9",
+   "parent": "U15"
+  },
+  {
+   "code": "U16",
+   "display": "Emergency use of U16",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U16.9",
+   "display": "Emergency use of U16.9",
+   "parent": "U16"
+  },
+  {
+   "code": "U17",
+   "display": "Emergency use of U17",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U17.9",
+   "display": "Emergency use of U17.9",
+   "parent": "U17"
+  },
+  {
+   "code": "U18",
+   "display": "Emergency use of U18",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U18.9",
+   "display": "Emergency use of U18.9",
+   "parent": "U18"
+  },
+  {
+   "code": "U19",
+   "display": "Emergency use of U19",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U19.9",
+   "display": "Emergency use of U19.9",
+   "parent": "U19"
+  },
+  {
+   "code": "U20",
+   "display": "Emergency use of U20",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U20.9",
+   "display": "Emergency use of U20.9",
+   "parent": "U20"
+  },
+  {
+   "code": "U21",
+   "display": "Emergency use of U21",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U21.9",
+   "display": "Emergency use of U21.9",
+   "parent": "U21"
+  },
+  {
+   "code": "U22",
+   "display": "Emergency use of U22",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U22.9",
+   "display": "Emergency use of U22.9",
+   "parent": "U22"
+  },
+  {
+   "code": "U23",
+   "display": "Emergency use of U23",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U23.9",
+   "display": "Emergency use of U23.9",
+   "parent": "U23"
+  },
+  {
+   "code": "U24",
+   "display": "Emergency use of U24",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U24.9",
+   "display": "Emergency use of U24.9",
+   "parent": "U24"
+  },
+  {
+   "code": "U25",
+   "display": "Emergency use of U25",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U25.9",
+   "display": "Emergency use of U25.9",
+   "parent": "U25"
+  },
+  {
+   "code": "U26",
+   "display": "Emergency use of U26",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U26.9",
+   "display": "Emergency use of U26.9",
+   "parent": "U26"
+  },
+  {
+   "code": "U27",
+   "display": "Emergency use of U27",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U27.9",
+   "display": "Emergency use of U27.9",
+   "parent": "U27"
+  },
+  {
+   "code": "U28",
+   "display": "Emergency use of U28",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U28.9",
+   "display": "Emergency use of U28.9",
+   "parent": "U28"
+  },
+  {
+   "code": "U29",
+   "display": "Emergency use of U29",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U29.9",
+   "display": "Emergency use of U29.9",
+   "parent": "U29"
+  },
+  {
+   "code": "U30",
+   "display": "Emergency use of U30",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U30.9",
+   "display": "Emergency use of U30.9",
+   "parent": "U30"
+  },
+  {
+   "code": "U31",
+   "display": "Emergency use of U31",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U31.9",
+   "display": "Emergency use of U31.9",
+   "parent": "U31"
+  },
+  {
+   "code": "U32",
+   "display": "Emergency use of U32",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U32.9",
+   "display": "Emergency use of U32.9",
+   "parent": "U32"
+  },
+  {
+   "code": "U33",
+   "display": "Emergency use of U33",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U33.9",
+   "display": "Emergency use of U33.9",
+   "parent": "U33"
+  },
+  {
+   "code": "U34",
+   "display": "Emergency use of U34",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U34.9",
+   "display": "Emergency use of U34.9",
+   "parent": "U34"
+  },
+  {
+   "code": "U35",
+   "display": "Emergency use of U35",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U35.9",
+   "display": "Emergency use of U35.9",
+   "parent": "U35"
+  },
+  {
+   "code": "U36",
+   "display": "Emergency use of U36",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U36.9",
+   "display": "Emergency use of U36.9",
+   "parent": "U36"
+  },
+  {
+   "code": "U37",
+   "display": "Emergency use of U37",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U37.9",
+   "display": "Emergency use of U37.9",
+   "parent": "U37"
+  },
+  {
+   "code": "U38",
+   "display": "Emergency use of U38",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U38.9",
+   "display": "Emergency use of U38.9",
+   "parent": "U38"
+  },
+  {
+   "code": "U39",
+   "display": "Emergency use of U39",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U39.9",
+   "display": "Emergency use of U39.9",
+   "parent": "U39"
+  },
+  {
+   "code": "U40",
+   "display": "Emergency use of U40",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U40.9",
+   "display": "Emergency use of U40.9",
+   "parent": "U40"
+  },
+  {
+   "code": "U41",
+   "display": "Emergency use of U41",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U41.9",
+   "display": "Emergency use of U41.9",
+   "parent": "U41"
+  },
+  {
+   "code": "U42",
+   "display": "Emergency use of U42",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U42.9",
+   "display": "Emergency use of U42.9",
+   "parent": "U42"
+  },
+  {
+   "code": "U43",
+   "display": "Emergency use of U43",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U43.9",
+   "display": "Emergency use of U43.9",
+   "parent": "U43"
+  },
+  {
+   "code": "U44",
+   "display": "Emergency use of U44",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U44.9",
+   "display": "Emergency use of U44.9",
+   "parent": "U44"
+  },
+  {
+   "code": "U45",
+   "display": "Emergency use of U45",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U45.9",
+   "display": "Emergency use of U45.9",
+   "parent": "U45"
+  },
+  {
+   "code": "U46",
+   "display": "Emergency use of U46",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U46.9",
+   "display": "Emergency use of U46.9",
+   "parent": "U46"
+  },
+  {
+   "code": "U47",
+   "display": "Emergency use of U47",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U47.9",
+   "display": "Emergency use of U47.9",
+   "parent": "U47"
+  },
+  {
+   "code": "U48",
+   "display": "Emergency use of U48",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U48.9",
+   "display": "Emergency use of U48.9",
+   "parent": "U48"
+  },
+  {
+   "code": "U49",
+   "display": "Emergency use of U49",
+   "parent": "U00-U49"
+  },
+  {
+   "code": "U49.9",
+   "display": "Emergency use of U49.9",
+   "parent": "U49"
+  },
+  {
+   "code": "U82",
+   "display": "Resistance to betalactam antibiotics",
+   "parent": "U82-U85"
+  },
+  {
+   "code": "U82.0",
+   "display": "Resistance to penicillin",
+   "parent": "U82"
+  },
+  {
+   "code": "U82.1",
+   "display": "Resistance to methicillin",
+   "parent": "U82"
+  },
+  {
+   "code": "U82.2",
+   "display": "Extended spectrum betalactamase (ESBL) resistance",
+   "parent": "U82"
+  },
+  {
+   "code": "U82.8",
+   "display": "Resistance to other betalactam antibiotics",
+   "parent": "U82"
+  },
+  {
+   "code": "U82.9",
+   "display": "Resistance to betalactam antibiotics, unspecified",
+   "parent": "U82"
+  },
+  {
+   "code": "U83",
+   "display": "Resistance to other antibiotics",
+   "parent": "U82-U85"
+  },
+  {
+   "code": "U83.0",
+   "display": "Resistance to vancomycin",
+   "parent": "U83"
+  },
+  {
+   "code": "U83.1",
+   "display": "Resistance to other vancomycin related antibiotics",
+   "parent": "U83"
+  },
+  {
+   "code": "U83.2",
+   "display": "Resistance to quinolones",
+   "parent": "U83"
+  },
+  {
+   "code": "U83.7",
+   "display": "Resistance to multiple antibiotics",
+   "parent": "U83"
+  },
+  {
+   "code": "U83.8",
+   "display": "Resistance to other single specified antibiotic",
+   "parent": "U83"
+  },
+  {
+   "code": "U83.9",
+   "display": "Resistance to unspecified antibiotic",
+   "parent": "U83"
+  },
+  {
+   "code": "U84",
+   "display": "Resistance to other antimicrobial drugs",
+   "parent": "U82-U85"
+  },
+  {
+   "code": "U84.0",
+   "display": "Resistance to antiparasitic drug(s)",
+   "parent": "U84"
+  },
+  {
+   "code": "U84.1",
+   "display": "Resistance to antifungal drug(s)",
+   "parent": "U84"
+  },
+  {
+   "code": "U84.2",
+   "display": "Resistance to antiviral drug(s)",
+   "parent": "U84"
+  },
+  {
+   "code": "U84.3",
+   "display": "Resistance to tuberculostatic drug(s)",
+   "parent": "U84"
+  },
+  {
+   "code": "U84.7",
+   "display": "Resistance to multiple antimicrobial drugs",
+   "parent": "U84"
+  },
+  {
+   "code": "U84.8",
+   "display": "Resistance to other specified antimicrobial drug",
+   "parent": "U84"
+  },
+  {
+   "code": "U84.9",
+   "display": "Resistance to unspecified antimicrobial drugs",
+   "parent": "U84"
+  },
+  {
+   "code": "U85",
+   "display": "Resistance to antineoplastic drugs",
+   "parent": "U82-U85"
+  },
+  {
+   "code": "XXII",
+   "display": "Codes for special purposes",
+   "parent": ""
+  }
+ ]
+}

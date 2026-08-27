@@ -1,0 +1,156 @@
+{
+  "description": "Geocoding fixture, shared by both runtimes. A facility that resolves to one point on the desktop and another on the portal is the same defect as not resolving at all, so app/src/shared/geo-directory.ts and server/amrit_central_server/geo/directory.py both read this file and must produce these exact answers. Coordinates come from the bundled GeoNames shards (shared/geo-directory/) and are rounded to four decimals there, so they are compared exactly.",
+  "cases": [
+    {
+      "name": "An Indian PIN code resolves to its post office, with the state and district it sits in",
+      "country_code": "IND",
+      "postal_code": "682011",
+      "expect": {
+        "candidate_count": 1,
+        "first": {
+          "locality": "Ernakulam H.O",
+          "admin_area": "Kerala",
+          "dependent_locality": "Ernakulam",
+          "latitude": 9.967,
+          "longitude": 76.3159,
+          "precision": "postal_area"
+        },
+        "postal_code_unknown": false,
+        "country_has_no_postal_directory": false
+      }
+    },
+    {
+      "name": "A code covering several places offers all of them rather than silently choosing one",
+      "country_code": "IND",
+      "postal_code": "110001",
+      "expect": {
+        "candidate_count_at_least": 3,
+        "first": {
+          "locality": "New Delhi G.P.O.",
+          "admin_area": "Delhi",
+          "latitude": 28.6369,
+          "longitude": 77.2183,
+          "precision": "postal_area"
+        },
+        "postal_code_unknown": false,
+        "country_has_no_postal_directory": false
+      }
+    },
+    {
+      "name": "Separators an operator types are not stored by the directory and must not defeat the lookup",
+      "country_code": "JPN",
+      "postal_code": "1540023",
+      "expect": {
+        "candidate_count_at_least": 1,
+        "first": {
+          "locality": "Wakabayashi",
+          "admin_area": "Tokyo To",
+          "latitude": 35.6465,
+          "longitude": 139.6597,
+          "precision": "postal_area"
+        },
+        "postal_code_unknown": false,
+        "country_has_no_postal_directory": false
+      }
+    },
+    {
+      "name": "A full UK postcode resolves through its outward code, which is all the directory may carry",
+      "country_code": "GBR",
+      "postal_code": "EC1Y 8SY",
+      "expect": {
+        "candidate_count_at_least": 1,
+        "first": {
+          "locality": "London",
+          "admin_area": "England",
+          "latitude": 51.5232,
+          "longitude": -0.0933,
+          "precision": "postal_area"
+        },
+        "postal_code_unknown": false,
+        "country_has_no_postal_directory": false
+      }
+    },
+    {
+      "name": "A United States ZIP resolves to its city and county",
+      "country_code": "USA",
+      "postal_code": "30329",
+      "expect": {
+        "candidate_count_at_least": 1,
+        "first": {
+          "locality": "Atlanta",
+          "admin_area": "Georgia",
+          "dependent_locality": "DeKalb",
+          "latitude": 33.8236,
+          "longitude": -84.3214,
+          "precision": "postal_area"
+        },
+        "postal_code_unknown": false,
+        "country_has_no_postal_directory": false
+      }
+    },
+    {
+      "name": "A code the directory does not list is reported as unknown, never refused",
+      "country_code": "IND",
+      "postal_code": "999999",
+      "expect": {
+        "candidate_count": 0,
+        "postal_code_unknown": true,
+        "country_has_no_postal_directory": false,
+        "point_precision": "country"
+      }
+    },
+    {
+      "name": "A country with no postal system says so, and a typed code is not called wrong",
+      "country_code": "AGO",
+      "postal_code": "1000",
+      "expect": {
+        "candidate_count": 0,
+        "postal_code_unknown": false,
+        "country_has_no_postal_directory": true,
+        "point_precision": "country"
+      }
+    },
+    {
+      "name": "A country with no postal system resolves by the name of the town instead",
+      "country_code": "AGO",
+      "locality": "Saurimo",
+      "expect": {
+        "candidate_count_at_least": 1,
+        "first": {
+          "locality": "Saurimo",
+          "latitude": -9.6608,
+          "longitude": 20.3915,
+          "precision": "locality"
+        },
+        "postal_code_unknown": false,
+        "country_has_no_postal_directory": true
+      }
+    },
+    {
+      "name": "With neither a code nor a town, the reporting unit's centroid places the facility coarsely",
+      "country_code": "IND",
+      "subdivision_code": "IN-KL",
+      "expect": {
+        "candidate_count": 0,
+        "postal_code_unknown": false,
+        "country_has_no_postal_directory": false,
+        "point": {
+          "latitude": 10.3425,
+          "longitude": 76.191,
+          "precision": "subdivision"
+        }
+      }
+    },
+    {
+      "name": "A country with no bundled shard is unavailable, which is not the same as having no match",
+      "country_code": "ZZZ",
+      "postal_code": "12345",
+      "expect": {
+        "available": false,
+        "candidate_count": 0
+      }
+    }
+  ],
+  "precision_order": ["postal_area", "locality", "subdivision", "country"],
+  "attribution": "Contains data from GeoNames (www.geonames.org), CC BY 4.0."
+}

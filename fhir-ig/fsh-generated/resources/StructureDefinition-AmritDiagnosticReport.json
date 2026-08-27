@@ -1,0 +1,66 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "AmritDiagnosticReport",
+  "url": "https://amrit.invalid/StructureDefinition/AmritDiagnosticReport",
+  "name": "AmritDiagnosticReport",
+  "title": "AMRIT microbiology report",
+  "status": "draft",
+  "description": "The culture and susceptibility report: LOINC 18725-2, every observation referenced, the coded diagnosis in conclusionCode.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "DiagnosticReport",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DiagnosticReport.code.coding",
+        "path": "DiagnosticReport.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "DiagnosticReport.code.coding:loinc",
+        "path": "DiagnosticReport.code.coding",
+        "sliceName": "loinc",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "DiagnosticReport.code.coding:loinc.system",
+        "path": "DiagnosticReport.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "DiagnosticReport.code.coding:loinc.code",
+        "path": "DiagnosticReport.code.coding.code",
+        "fixedCode": "18725-2"
+      },
+      {
+        "id": "DiagnosticReport.subject",
+        "path": "DiagnosticReport.subject",
+        "min": 1
+      },
+      {
+        "id": "DiagnosticReport.specimen",
+        "path": "DiagnosticReport.specimen",
+        "min": 1
+      },
+      {
+        "id": "DiagnosticReport.result",
+        "path": "DiagnosticReport.result",
+        "min": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "eyebrow": "Governance",
+  "title": "Audit trail",
+  "purpose": "Inspect traceable local operations across configuration, imports, records, exports, federation and optional AI services.",
+  "refresh": "Refresh",
+  "loaded": "Loaded events",
+  "successful": "Successful",
+  "warningsErrors": "Warnings / errors",
+  "searchPlaceholder": "Search operation, summary or details…",
+  "filterStatus": "Filter audit status",
+  "allOutcomes": "All outcomes",
+  "warnings": "Warnings",
+  "errors": "Errors",
+  "eventsShown": "{{count}} events shown",
+  "loading": "Loading audit events…",
+  "caption": "Local audit trail",
+  "emptyTitle": "No audit events match",
+  "emptyFiltered": "Adjust the search or outcome filter.",
+  "emptyNone": "Auditable actions will appear as the application is used.",
+  "columns": {
+    "time": "Time",
+    "operation": "Operation",
+    "summary": "Summary",
+    "outcome": "Outcome",
+    "details": "Details"
+  },
+  "inspect": "Inspect",
+  "event": "Audit event",
+  "close": "Close",
+  "help": {
+    "recorded": "The trail records operation time, type, outcome and a redacted summary. Secrets and direct authentication tokens are excluded.",
+    "retention": "Audit visibility supports troubleshooting and governance, but institutional retention, signing and external archival policies remain the administrator’s responsibility."
+  }
+}
